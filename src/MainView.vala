@@ -21,10 +21,40 @@
 public class Bluetooth.MainView : Gtk.Paned {
     private Gtk.ListBox list_box;
     private Gtk.Stack stack;
-    private Bluetooth.Services.ObjectManager manager;
+    private unowned Services.ObjectManager manager;
 
-    public MainView () {
-        
+    public MainView (Services.ObjectManager manager) {
+        this.manager = manager;
+
+        foreach (var device in manager.get_devices ()) {
+            var row = new DeviceRow (device);
+            list_box.add (row);
+        }
+
+        manager.device_added.connect ((device) => {
+            var row = new DeviceRow (device);
+            list_box.add (row);
+            if (list_box.get_selected_row () == null) {
+                list_box.select_row (row);
+                list_box.row_activated (row);
+            }
+        });
+
+        if (manager.retreive_finished) {
+            weak Gtk.ListBoxRow? first_row = list_box.get_row_at_index (0);
+            if (first_row != null) {
+                list_box.select_row (first_row);
+                list_box.row_activated (first_row);
+            }
+        } else {
+            manager.notify["retreive-finished"].connect (() => {
+                weak Gtk.ListBoxRow? first_row = list_box.get_row_at_index (0);
+                if (first_row != null) {
+                    list_box.select_row (first_row);
+                    list_box.row_activated (first_row);
+                }
+            });
+        }
     }
 
     construct {
@@ -57,37 +87,6 @@ public class Bluetooth.MainView : Gtk.Paned {
 
         pack1 (left_grid, false, false);
         pack2 (stack, true, false);
-
-        manager = new Bluetooth.Services.ObjectManager ();
-        foreach (var device in manager.get_devices ()) {
-            var row = new DeviceRow (device);
-            list_box.add (row);
-        }
-
-        if (manager.retreive_finished) {
-            weak Gtk.ListBoxRow? first_row = list_box.get_row_at_index (0);
-            if (first_row != null) {
-                list_box.select_row (first_row);
-                list_box.row_activated (first_row);
-            }
-        } else {
-            manager.notify["retreive-finished"].connect (() => {
-                weak Gtk.ListBoxRow? first_row = list_box.get_row_at_index (0);
-                if (first_row != null) {
-                    list_box.select_row (first_row);
-                    list_box.row_activated (first_row);
-                }
-            });
-        }
-
-        manager.device_added.connect ((device) => {
-            var row = new DeviceRow (device);
-            list_box.add (row);
-            if (list_box.get_selected_row () == null) {
-                list_box.select_row (row);
-                list_box.row_activated (row);
-            }
-        });
 
         add_button.clicked.connect (() => {
             try {

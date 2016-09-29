@@ -20,6 +20,7 @@
 
 public class Bluetooth.Plug : Switchboard.Plug {
     private MainView main_view;
+    private Services.ObjectManager manager;
 
     public Plug () {
         Object (category: Category.NETWORK,
@@ -27,11 +28,13 @@ public class Bluetooth.Plug : Switchboard.Plug {
             display_name: _("Bluetooth"),
             description: _("Configure Bluetooth Settings"),
             icon: "bluetooth");
+        manager = new Bluetooth.Services.ObjectManager ();
+        manager.bind_property ("has-object", this, "can-show", GLib.BindingFlags.SYNC_CREATE);
     }
 
     public override Gtk.Widget get_widget () {
         if (main_view == null) {
-            main_view = new MainView ();
+            main_view = new MainView (manager);
         }
 
         return main_view;
