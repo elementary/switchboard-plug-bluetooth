@@ -1,0 +1,14 @@
+                              Install
+-----------------------------------------------------------------
+
+- Build the Date&Time Plug
+
+    bzr branch lp:datetime-plug
+    cd datetime-plug
+    mkdir build; cd build
+    cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+    make
+    sudo make install
+
+If you encounter any issues, please file a bug at:
+https://launchpad.net/datetime-plug/+filebug
