@@ -14,6 +14,12 @@ include (ValaPrecompile)
 # Add all your vala files and requires packages to the List below to include them in the build
 vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Plug.vala
+    MainView.vala
+    DeviceRow.vala
+    DeviceView.vala
+    Services/Adapter.vala
+    Services/Device.vala
+    Services/Manager.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     gtk+-3.0

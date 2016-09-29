@@ -19,10 +19,10 @@
  */
 
 public class Bluetooth.Plug : Switchboard.Plug {
-    private Gtk.Grid main_grid;
+    private MainView main_view;
 
     public Plug () {
-        Object (category: Category.HARDWARE,
+        Object (category: Category.NETWORK,
             code_name: "network-pantheon-bluetooth",
             display_name: _("Bluetooth"),
             description: _("Configure Bluetooth Settings"),
@@ -30,19 +30,19 @@ public class Bluetooth.Plug : Switchboard.Plug {
     }
 
     public override Gtk.Widget get_widget () {
-        if (main_grid == null) {
-            main_grid = new Gtk.Grid ();
+        if (main_view == null) {
+            main_view = new MainView ();
         }
 
-        return main_grid;
+        return main_view;
     }
 
     public override void shown () {
-        
+        main_view.discoverable (true);
     }
 
     public override void hidden () {
-        
+        main_view.discoverable (false);
     }
 
     public override void search_callback (string location) {
