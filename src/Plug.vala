@@ -23,11 +23,14 @@ public class Bluetooth.Plug : Switchboard.Plug {
     private Services.ObjectManager manager;
 
     public Plug () {
+        var settings = new Gee.TreeMap<string, string?> (null, null);
+        settings.set ("network/bluetooth", null);
         Object (category: Category.NETWORK,
             code_name: "network-pantheon-bluetooth",
             display_name: _("Bluetooth"),
             description: _("Configure Bluetooth Settings"),
-            icon: "bluetooth");
+            icon: "bluetooth",
+            supported_settings: settings);
         manager = new Bluetooth.Services.ObjectManager ();
         manager.bind_property ("has-object", this, "can-show", GLib.BindingFlags.SYNC_CREATE);
     }
