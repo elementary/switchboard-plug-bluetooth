@@ -1,14 +1,14 @@
                               Install
 -----------------------------------------------------------------
 
-- Build the Date&Time Plug
+- Build the Bluetooth Plug
 
-    bzr branch lp:datetime-plug
-    cd datetime-plug
+    bzr branch lp:switchboard-plug-bluetooth
+    cd switchboard-plug-bluetooth
     mkdir build; cd build
     cmake .. -DCMAKE_INSTALL_PREFIX=/usr
     make
     sudo make install
 
 If you encounter any issues, please file a bug at:
-https://launchpad.net/datetime-plug/+filebug
+https://launchpad.net/switchboard-plug-bluetooth/+filebug
