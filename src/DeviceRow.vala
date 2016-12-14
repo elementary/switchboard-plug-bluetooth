@@ -23,9 +23,11 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     private Gtk.Label label;
     private Gtk.Image image;
     private Gtk.Image state;
+    private Gtk.Switch enable_switch;
 
     public DeviceRow (Services.Device device) {
         this.device = device;
+        enable_switch.active = device.connected;
         label.label = device.name;
         image.icon_name = device.icon;
         if (device.connected) {
@@ -40,6 +42,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 } else {
                     state.icon_name = "user-offline";
                 }
+                enable_switch.active = device.connected;
             }
 
             var name = changed.lookup_value("Name", new VariantType("s"));
@@ -73,8 +76,15 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
         label = new Gtk.Label (null);
         label.ellipsize = Pango.EllipsizeMode.END;
+
+        enable_switch = new Gtk.Switch ();
+        enable_switch.halign = Gtk.Align.END;
+        enable_switch.hexpand = true;
+        enable_switch.valign = Gtk.Align.CENTER;
+
         grid.add (overay);
         grid.add (label);
+        grid.add (enable_switch);
         add (grid);
         show_all ();
     }

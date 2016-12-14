@@ -18,9 +18,8 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Bluetooth.MainView : Gtk.Paned {
+public class Bluetooth.MainView : Gtk.Grid {
     private Gtk.ListBox list_box;
-    private Gtk.Stack stack;
     private unowned Services.ObjectManager manager;
 
     public MainView (Services.ObjectManager manager) {
@@ -58,7 +57,14 @@ public class Bluetooth.MainView : Gtk.Paned {
     }
 
     construct {
-        orientation = Gtk.Orientation.HORIZONTAL;
+        var bluetooth_icon = new Gtk.Image.from_icon_name ("bluetooth", Gtk.IconSize.DIALOG);
+        bluetooth_icon.halign = Gtk.Align.START;
+
+        var title = new Gtk.Label (_("Bluetooth"));
+        title.get_style_context ().add_class ("h2");
+        title.halign = Gtk.Align.START;
+        title.hexpand = true;
+
         list_box = new Gtk.ListBox ();
         list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare_rows);
         list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
@@ -66,9 +72,12 @@ public class Bluetooth.MainView : Gtk.Paned {
         list_box.activate_on_single_click = true;
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.width_request = 200;
         scrolled.expand = true;
         scrolled.add (list_box);
+
+        var frame = new Gtk.Frame (null);
+        frame.margin_top = 24;
+        frame.add (scrolled);
 
         var add_button = new Gtk.ToolButton (null, null);
         add_button.icon_name = "list-add-symbolic";
@@ -78,15 +87,13 @@ public class Bluetooth.MainView : Gtk.Paned {
         toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         toolbar.add (add_button);
 
-        var left_grid = new Gtk.Grid ();
-        left_grid.orientation = Gtk.Orientation.VERTICAL;
-        left_grid.add (scrolled);
-        left_grid.add (toolbar);
-
-        stack = new Gtk.Stack ();
-
-        pack1 (left_grid, false, false);
-        pack2 (stack, true, false);
+        column_spacing = 12;
+        margin = 24;
+        orientation = Gtk.Orientation.VERTICAL;
+        attach (bluetooth_icon, 0, 0, 1, 1);
+        attach (title, 1, 0, 1, 1);
+        attach (frame, 0, 1, 2, 1);
+        attach (toolbar, 0, 2, 2, 1);
 
         add_button.clicked.connect (() => {
             try {
@@ -94,18 +101,6 @@ public class Bluetooth.MainView : Gtk.Paned {
                 appinfo.launch_uris (null, null);
             } catch (Error e) {
                 warning (e.message);
-            }
-        });
-
-        list_box.row_activated.connect ((row) => {
-            unowned Services.Device device = ((DeviceRow) row).device;
-            weak Gtk.Widget? widget = stack.get_child_by_name (device.address);
-            if (widget == null) {
-                var device_view = new DeviceView (device);
-                stack.add_named (device_view, device.address);
-                stack.set_visible_child (device_view);
-            } else {
-                stack.set_visible_child (widget);
             }
         });
 
@@ -152,7 +147,7 @@ public class Bluetooth.MainView : Gtk.Paned {
 
         public HeaderAdapter (Services.Adapter adapter) {
             this.adapter = adapter;
-            label.label = adapter.name;
+            label.label = _("Now Discoverable as \"%s\"").printf (adapter.name);
             adapter_switch.active = adapter.powered;
             (adapter as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
                 var powered = changed.lookup_value("Powered", new VariantType("b"));
@@ -162,7 +157,7 @@ public class Bluetooth.MainView : Gtk.Paned {
 
                 var name = changed.lookup_value("Name", new VariantType("s"));
                 if (name != null) {
-                    label.label = adapter.name;
+                    label.label = _("Now Discoverable as %s").printf (adapter.name);
                 }
             });
         }
