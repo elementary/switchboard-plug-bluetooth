@@ -118,12 +118,9 @@ public class Bluetooth.MainView : Gtk.Paned {
                 unowned Services.Device device = ((DeviceRow) row).device;
                 try {
                     Bluetooth.Services.Adapter adapter = Bus.get_proxy_sync (BusType.SYSTEM, "org.bluez", device.adapter, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
-                    string path = (string) device.adapter + "/dev_" + device.address;
-                    path = path.replace (":", "_");
                     try {
-                        adapter.remove_device (new ObjectPath (path));
-                    }
-                    catch (Error e) {
+                        adapter.remove_device (new ObjectPath(((DBusProxy) device).g_object_path));
+                    } catch (Error e) {
                         debug ("Removing bluetooth device failed: %s", e.message);
                     }
                 } catch (Error e) {
