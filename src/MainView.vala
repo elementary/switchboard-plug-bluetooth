@@ -82,10 +82,12 @@ public class Bluetooth.MainView : Gtk.Paned {
 
         var add_button = new Gtk.ToolButton (null, null);
         add_button.icon_name = "list-add-symbolic";
+        add_button.tooltip_text = _("Discover new device");
 
         var remove_button = new Gtk.ToolButton (null, null);
         remove_button.icon_name = "list-remove-symbolic";
         remove_button.sensitive = false;
+        remove_button.tooltip_text = _("Forget selected device");
 
         var toolbar = new Gtk.Toolbar ();
         toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
