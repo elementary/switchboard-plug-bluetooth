@@ -16,6 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
+ *              Oleksandr Lynok <oleksandr.lynok@gmail.com>
  */
 
 public class Bluetooth.MainView : Gtk.Paned {
@@ -37,6 +38,15 @@ public class Bluetooth.MainView : Gtk.Paned {
             if (list_box.get_selected_row () == null) {
                 list_box.select_row (row);
                 list_box.row_activated (row);
+            }
+        });
+
+        manager.device_removed.connect ((device) => {
+            foreach (var row in list_box.get_children ()) {
+                if (((DeviceRow) row).device == device) {
+                    list_box.remove (row);
+                    break;
+                }
             }
         });
 
@@ -73,10 +83,15 @@ public class Bluetooth.MainView : Gtk.Paned {
         var add_button = new Gtk.ToolButton (null, null);
         add_button.icon_name = "list-add-symbolic";
 
+        var remove_button = new Gtk.ToolButton (null, null);
+        remove_button.icon_name = "list-remove-symbolic";
+        remove_button.sensitive = false;
+
         var toolbar = new Gtk.Toolbar ();
         toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
         toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         toolbar.add (add_button);
+        toolbar.add (remove_button);
 
         var left_grid = new Gtk.Grid ();
         left_grid.orientation = Gtk.Orientation.VERTICAL;
@@ -97,7 +112,25 @@ public class Bluetooth.MainView : Gtk.Paned {
             }
         });
 
+        remove_button.clicked.connect (() => {
+            var row = list_box.get_selected_row ();
+            if (row != null) {
+                unowned Services.Device device = ((DeviceRow) row).device;
+                try {
+                    Bluetooth.Services.Adapter adapter = Bus.get_proxy_sync (BusType.SYSTEM, "org.bluez", device.adapter, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
+                    try {
+                        adapter.remove_device (new ObjectPath(((DBusProxy) device).g_object_path));
+                    } catch (Error e) {
+                        debug ("Removing bluetooth device failed: %s", e.message);
+                    }
+                } catch (Error e) {
+                    debug ("Connecting to bluetooth adapter failed: %s", e.message);
+                }
+            }
+        });
+
         list_box.row_activated.connect ((row) => {
+            remove_button.sensitive = true;
             unowned Services.Device device = ((DeviceRow) row).device;
             weak Gtk.Widget? widget = stack.get_child_by_name (device.address);
             if (widget == null) {
@@ -107,6 +140,10 @@ public class Bluetooth.MainView : Gtk.Paned {
             } else {
                 stack.set_visible_child (widget);
             }
+        });
+
+        list_box.unselect_all.connect (() => {
+            remove_button.sensitive = false;
         });
 
         show_all ();
