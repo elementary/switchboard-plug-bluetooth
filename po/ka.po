@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-12-14 20:29-0600\n"
-"PO-Revision-Date: 2016-12-15 05:14+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-12-15 05:26+0000\n"
+"Last-Translator: Beqa Arabuli <arabulibeqa@yahoo.com>\n"
 "Language-Team: Georgian <ka@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-15 05:14+0000\n"
+"X-Launchpad-Export-Date: 2016-12-16 06:01+0000\n"
 "X-Generator: Launchpad (build 18293)\n"
 
 #: ../src/MainView.vala:85
@@ -32,3 +32,561 @@ msgstr ""
 #: ../src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
 msgstr ""
+
+#~ msgid "Date & Time"
+#~ msgstr "თარიღი & დრო"
+
+#~ msgid "Network Time:"
+#~ msgstr "ქსელის დრო:"
+
+#~ msgid "Time Format:"
+#~ msgstr "დროის ფორმატი:"
+
+#~ msgid "24h"
+#~ msgstr "24ს"
+
+#~ msgid "AM/PM"
+#~ msgstr "AM/PM"
+
+#~ msgid "Time Zone:"
+#~ msgstr "სასაათო სარტყელი:"
+
+#~ msgid "Network Time"
+#~ msgstr "ქსელის დრო"
+
+#~ msgid "Time"
+#~ msgstr "დრო"
+
+#~ msgid "Date"
+#~ msgstr "თარიღი"
+
+#~ msgid "Time Zone"
+#~ msgstr "სასაათო სარტყელი"
+
+#~ msgid "Time Format"
+#~ msgstr "დროის ფორმატი"
+
+#~ msgid "Europe/Andorra"
+#~ msgstr "ევროპა/ანდორა"
+
+#~ msgid "Asia/Dubai"
+#~ msgstr "აზია/დუბაი"
+
+#~ msgid "Asia/Kabul"
+#~ msgstr "აზია/ქაბული"
+
+#~ msgid "America/Antigua"
+#~ msgstr "ამერიკა/ანტიგუა"
+
+#~ msgid "America/Anguilla"
+#~ msgstr "ამერიკა/ანგილია"
+
+#~ msgid "Europe/Tirane"
+#~ msgstr "ევროპა/ტირანა"
+
+#~ msgid "Asia/Yerevan"
+#~ msgstr "აზია/ერევანი"
+
+#~ msgid "Africa/Luanda"
+#~ msgstr "აფრიკა/ლუანდა"
+
+#~ msgid "Antarctica/McMurdo"
+#~ msgstr "ანტარქტიკა/მაკ-მერდო"
+
+#~ msgid "McMurdo, South Pole, Scott (New Zealand time)"
+#~ msgstr "მაკ-მერდო, სამხრეთი პოლუსი, სკოტი (ახალი ზელანდიის დრო)"
+
+#~ msgid "Antarctica/Rothera"
+#~ msgstr "ანტარქტიკა/როთერა"
+
+#~ msgid "Rothera Station, Adelaide Island"
+#~ msgstr "როთერას სადგური, კუნძული ადელაიდა"
+
+#~ msgid "Antarctica/Palmer"
+#~ msgstr "ანტარქტიკა/პალმერი"
+
+#~ msgid "Palmer Station, Anvers Island"
+#~ msgstr "პალმერის სადგური, კუნძული ანვერსი"
+
+#~ msgid "Antarctica/Mawson"
+#~ msgstr "ანტარქტიკა/მოუსონი"
+
+#~ msgid "Mawson Station, Holme Bay"
+#~ msgstr "მოუსონის სადგური, ჰოლმის ყურე"
+
+#~ msgid "Antarctica/Davis"
+#~ msgstr "ანტარქტიკა/დევისი"
+
+#~ msgid "Davis Station, Vestfold Hills"
+#~ msgstr "დევისის სადგური, ვესთფოლდ ჰილსი"
+
+#~ msgid "Antarctica/Casey"
+#~ msgstr "ანტარქტიკა/კეისი"
+
+#~ msgid "Casey Station, Bailey Peninsula"
+#~ msgstr "კეისის სადგური, ბეილის ნახევარკუნძული"
+
+#~ msgid "Antarctica/Vostok"
+#~ msgstr "ანტარქტიკა/ვოსტოკი"
+
+#~ msgid "Vostok Station, Lake Vostok"
+#~ msgstr "ვოსტოკის სადგური, ვოსტოკის ტბა"
+
+#~ msgid "Antarctica/DumontDUrville"
+#~ msgstr "ანტარქტიკა/დიუმონ-დურვილი"
+
+#~ msgid "Dumont-d'Urville Station, Adelie Land"
+#~ msgstr "დიუმონ-დურვილის სადგური, ადელის მიწა"
+
+#~ msgid "Antarctica/Syowa"
+#~ msgstr "ანტარქტიკა/სეოვა"
+
+#~ msgid "Syowa Station, E Ongul I"
+#~ msgstr "სეოვას სადგური, ე ონგულ ი"
+
+#~ msgid "Antarctica/Troll"
+#~ msgstr "ანტარქტიკა/ტროლი"
+
+#~ msgid "Troll Station, Queen Maud Land"
+#~ msgstr "ტროლის სადგური, ქუინ მაუდ ლენდი"
+
+#~ msgid "America/Argentina/Buenos_Aires"
+#~ msgstr "ამერიკა/არგენტინა/ბუენოს_აირესი"
+
+#~ msgid "Buenos Aires (BA, CF)"
+#~ msgstr "ბუენოს-აირესი (BA, CF)"
+
+#~ msgid "America/Argentina/Cordoba"
+#~ msgstr "ამერიკა/არგენტინა/კორდობა"
+
+#~ msgid "most locations (CB, CC, CN, ER, FM, MN, SE, SF)"
+#~ msgstr "მდებარეობების უმეტესობა (CB, CC, CN, ER, FM, MN, SE, SF)"
+
+#~ msgid "America/Argentina/Salta"
+#~ msgstr "ამერიკა/არგენტინა/სალტა"
+
+#~ msgid "(SA, LP, NQ, RN)"
+#~ msgstr "(SA, LP, NQ, RN)"
+
+#~ msgid "America/Argentina/Jujuy"
+#~ msgstr "ამერიკა/არგენტინა/ჯუჯუი"
+
+#~ msgid "Jujuy (JY)"
+#~ msgstr "ჯუჯუი (JY)"
+
+#~ msgid "America/Argentina/Tucuman"
+#~ msgstr "ამერიკა/არგენტინა/ტუკუმენი"
+
+#~ msgid "Tucuman (TM)"
+#~ msgstr "ტუკუმენი (TM)"
+
+#~ msgid "America/Argentina/Catamarca"
+#~ msgstr "ამერიკა/არგენტინა/კატამარკა"
+
+#~ msgid "Catamarca (CT), Chubut (CH)"
+#~ msgstr "კატამარკა (CT), ჩუბუტი (CH)"
+
+#~ msgid "America/Argentina/La_Rioja"
+#~ msgstr "ამერიკა/არგენტინა/ლა-რიოჰა"
+
+#~ msgid "La Rioja (LR)"
+#~ msgstr "ლა-რიოჰა (LR)"
+
+#~ msgid "Pacific/Pago_Pago"
+#~ msgstr "წყნარი ოკეანე/პაგო-პაგო"
+
+#~ msgid "Europe/Vienna"
+#~ msgstr "ევროპა/ვენა"
+
+#~ msgid "Australia/Lord_Howe"
+#~ msgstr "ავსტრალია/ლორდ-ჰაუ"
+
+#~ msgid "Lord Howe Island"
+#~ msgstr "კუნძული ლორდ-ჰოუ"
+
+#~ msgid "Australia/Hobart"
+#~ msgstr "ავსტრალია/ჰობარტი"
+
+#~ msgid "Australia/Melbourne"
+#~ msgstr "ავსტრალია/მელბურნი"
+
+#~ msgid "Australia/Sydney"
+#~ msgstr "ავსტრალია/სიდნეი"
+
+#~ msgid "Australia/Darwin"
+#~ msgstr "ავსტრალია/დარვინი"
+
+#~ msgid "Asia/Baku"
+#~ msgstr "აზია/ბაქო"
+
+#~ msgid "Europe/Sarajevo"
+#~ msgstr "ევროპა/სარაევო"
+
+#~ msgid "Europe/Brussels"
+#~ msgstr "ევროპა/ბრუსელი"
+
+#~ msgid "Europe/Sofia"
+#~ msgstr "ევროპა/სოფია"
+
+#~ msgid "Asia/Bahrain"
+#~ msgstr "აზია/ბაჰრეინი"
+
+#~ msgid "Asia/Brunei"
+#~ msgstr "აზია/ბრუნეი"
+
+#~ msgid "America/Rio_Branco"
+#~ msgstr "ამერიკა/რიო_ბრანკო"
+
+#~ msgid "Europe/Minsk"
+#~ msgstr "ევროპა/მინსკი"
+
+#~ msgid "America/Toronto"
+#~ msgstr "ამერიკა/ტორონტო"
+
+#~ msgid "America/Edmonton"
+#~ msgstr "ამერიკა/ედმონტონი"
+
+#~ msgid "America/Vancouver"
+#~ msgstr "ამერიკა/ვანკუვერი"
+
+#~ msgid "Europe/Zurich"
+#~ msgstr "ევროპა/ციურიხი"
+
+#~ msgid "America/Santiago"
+#~ msgstr "ამერიკა/სანტიაგო"
+
+#~ msgid "Asia/Shanghai"
+#~ msgstr "აზია/შანხაი"
+
+#~ msgid "America/Bogota"
+#~ msgstr "ამერიკა/ბოოტა"
+
+#~ msgid "America/Costa_Rica"
+#~ msgstr "ამერიკა/კოსტა_რიკა"
+
+#~ msgid "America/Havana"
+#~ msgstr "ამერიკა/ჰავანა"
+
+#~ msgid "Asia/Nicosia"
+#~ msgstr "აზია/ნიკოსია"
+
+#~ msgid "Europe/Prague"
+#~ msgstr "ევროპა/პრაღა"
+
+#~ msgid "Europe/Berlin"
+#~ msgstr "ევროპა/ბერლინი"
+
+#~ msgid "Africa/Djibouti"
+#~ msgstr "აფრიკა/ჯიბუტი"
+
+#~ msgid "Europe/Copenhagen"
+#~ msgstr "ევროპა/კოპენჰაგენი"
+
+#~ msgid "America/Dominica"
+#~ msgstr "ამერიკა/დომინიკა"
+
+#~ msgid "Africa/Algiers"
+#~ msgstr "აფრიკა/ალჟირი"
+
+#~ msgid "Europe/Tallinn"
+#~ msgstr "ევროპა/ტალინი"
+
+#~ msgid "Africa/Cairo"
+#~ msgstr "აფრიკა/ქაირო"
+
+#~ msgid "Europe/Madrid"
+#~ msgstr "ევროპა/მადრიდი"
+
+#~ msgid "Europe/Helsinki"
+#~ msgstr "ევროპა/ჰელსინკი"
+
+#~ msgid "Europe/Paris"
+#~ msgstr "ევროპა/პარიზი"
+
+#~ msgid "Europe/London"
+#~ msgstr "ევროპა/ლონდონი"
+
+#~ msgid "Asia/Tbilisi"
+#~ msgstr "აზია/თბილისი"
+
+#~ msgid "Europe/Gibraltar"
+#~ msgstr "ევროპა/გიბრალტარი"
+
+#~ msgid "Europe/Athens"
+#~ msgstr "ევრობა/ათენი"
+
+#~ msgid "Asia/Hong_Kong"
+#~ msgstr "აზია/ჰონგ_კონგი"
+
+#~ msgid "Europe/Zagreb"
+#~ msgstr "ევროპა/ზაგრები"
+
+#~ msgid "Europe/Budapest"
+#~ msgstr "ევროპა/ბუდაპეშტი"
+
+#~ msgid "Asia/Jakarta"
+#~ msgstr "აზია/ჯაკარტა"
+
+#~ msgid "Europe/Dublin"
+#~ msgstr "ევროპა/დუბლინი"
+
+#~ msgid "Asia/Baghdad"
+#~ msgstr "აზია/ბაღდადი"
+
+#~ msgid "Asia/Tehran"
+#~ msgstr "აზია/თეირანი"
+
+#~ msgid "Europe/Rome"
+#~ msgstr "ევროპა/რომი"
+
+#~ msgid "America/Jamaica"
+#~ msgstr "ამერიკა/იამაიკა"
+
+#~ msgid "Asia/Tokyo"
+#~ msgstr "აზია/ტოკიო"
+
+#~ msgid "Africa/Nairobi"
+#~ msgstr "აფრიკა/ნაირობი"
+
+#~ msgid "Asia/Bishkek"
+#~ msgstr "აზია/ბიშკეკი"
+
+#~ msgid "Asia/Kuwait"
+#~ msgstr "აზია/კუვეიტი"
+
+#~ msgid "America/Cayman"
+#~ msgstr "ამერიკა/კაიმანი"
+
+#~ msgid "Asia/Beirut"
+#~ msgstr "აზია/ბეირუთი"
+
+#~ msgid "Europe/Vilnius"
+#~ msgstr "ევროპა/ვილნიუსი"
+
+#~ msgid "Europe/Luxembourg"
+#~ msgstr "ევროპა/ლუქსემბურგი"
+
+#~ msgid "Europe/Riga"
+#~ msgstr "ევროპა/რიგა"
+
+#~ msgid "Africa/Casablanca"
+#~ msgstr "აფრიკა/კასაბლანკა"
+
+#~ msgid "Europe/Monaco"
+#~ msgstr "ევროპა/მონაკო"
+
+#~ msgid "Europe/Malta"
+#~ msgstr "ევროპა/მალტა"
+
+#~ msgid "America/Mexico_City"
+#~ msgstr "ამერიკა/მეხიკო"
+
+#~ msgid "America/Monterrey"
+#~ msgstr "ამერიკა/მონტერეი"
+
+#~ msgid "America/Chihuahua"
+#~ msgstr "ამერიკა/ჩიხუახუა"
+
+#~ msgid "America/Tijuana"
+#~ msgstr "ამერიკა/ტიხუანა"
+
+#~ msgid "Asia/Kuala_Lumpur"
+#~ msgstr "აზია/კუალა_ლიმპური"
+
+#~ msgid "Africa/Maputo"
+#~ msgstr "აფრიკა/მაპუტო"
+
+#~ msgid "Africa/Lagos"
+#~ msgstr "აფრიკა/ლაგოსი"
+
+#~ msgid "America/Managua"
+#~ msgstr "ამერიკა/მანაგუა"
+
+#~ msgid "Europe/Amsterdam"
+#~ msgstr "ევროპა/ამსტერდამი"
+
+#~ msgid "Europe/Oslo"
+#~ msgstr "ევროპა/ოსლო"
+
+#~ msgid "America/Panama"
+#~ msgstr "ამერიკა/პანამა"
+
+#~ msgid "Asia/Manila"
+#~ msgstr "აზია/მანილა"
+
+#~ msgid "Asia/Karachi"
+#~ msgstr "აზია/კარაჩი"
+
+#~ msgid "Europe/Warsaw"
+#~ msgstr "ევროპა/ვარშავა"
+
+#~ msgid "America/Puerto_Rico"
+#~ msgstr "ამერიკა/პუერტო_რიკო"
+
+#~ msgid "Asia/Gaza"
+#~ msgstr "აზია/ღაზა"
+
+#~ msgid "Europe/Lisbon"
+#~ msgstr "ევროპა/ლისაბონი"
+
+#~ msgid "Europe/Belgrade"
+#~ msgstr "ევროპა/ბელგრადი"
+
+#~ msgid "Europe/Kaliningrad"
+#~ msgstr "ევროპა/კალინინგრადი"
+
+#~ msgid "Europe/Moscow"
+#~ msgstr "ევროპა/მოსკოვი"
+
+#~ msgid "Europe/Simferopol"
+#~ msgstr "ევროპა/სიმფეროპოლი"
+
+#~ msgid "Europe/Samara"
+#~ msgstr "ევროპა/სამარა"
+
+#~ msgid "Asia/Yekaterinburg"
+#~ msgstr "აზია/ეკატერინბურგი"
+
+#~ msgid "Asia/Omsk"
+#~ msgstr "აზია/ომსკი"
+
+#~ msgid "Asia/Novosibirsk"
+#~ msgstr "აზია/ნოვოსიბირსკი"
+
+#~ msgid "Asia/Krasnoyarsk"
+#~ msgstr "აზია/კრასნოიარსკი"
+
+#~ msgid "Asia/Irkutsk"
+#~ msgstr "აზია/ირკუტსკი"
+
+#~ msgid "Asia/Yakutsk"
+#~ msgstr "აზია/იაკუტსკი"
+
+#~ msgid "Asia/Vladivostok"
+#~ msgstr "აზია/ვლადივოსტოკი"
+
+#~ msgid "Asia/Sakhalin"
+#~ msgstr "აზია/სახალინი"
+
+#~ msgid "Asia/Magadan"
+#~ msgstr "აზია/მაგადანი"
+
+#~ msgid "Asia/Kamchatka"
+#~ msgstr "აზია/კამჩატკა"
+
+#~ msgid "Europe/Stockholm"
+#~ msgstr "ევროპა/სტოკჰოლმი"
+
+#~ msgid "Asia/Singapore"
+#~ msgstr "აზია/სინგაპური"
+
+#~ msgid "Europe/Ljubljana"
+#~ msgstr "ევროპა/ლიუბლიანა"
+
+#~ msgid "Europe/Bratislava"
+#~ msgstr "ევროპა/ბრატისლავა"
+
+#~ msgid "Europe/San_Marino"
+#~ msgstr "ევროპა/სან_მარინო"
+
+#~ msgid "Africa/Dakar"
+#~ msgstr "აფრიკა/დაკარი"
+
+#~ msgid "America/El_Salvador"
+#~ msgstr "ამერიკა/ელ_სალვადორი"
+
+#~ msgid "Africa/Mbabane"
+#~ msgstr "აფრიკა/მაბაბანე"
+
+#~ msgid "Asia/Bangkok"
+#~ msgstr "აზია/ბანგკოკი"
+
+#~ msgid "Asia/Dushanbe"
+#~ msgstr "აზია/დუშანბე"
+
+#~ msgid "Africa/Tunis"
+#~ msgstr "აფრიკა/ტუნისი"
+
+#~ msgid "Europe/Istanbul"
+#~ msgstr "ევროპა/სტამბული"
+
+#~ msgid "Europe/Kiev"
+#~ msgstr "ევროპა/კიევი"
+
+#~ msgid "Europe/Zaporozhye"
+#~ msgstr "ევროპა/ზაპოროჟიე"
+
+#~ msgid "America/New_York"
+#~ msgstr "ამერიკა/ნიუ_იორკი"
+
+#~ msgid "America/Detroit"
+#~ msgstr "ამერიკა/დეტროიტი"
+
+#~ msgid "America/Kentucky/Louisville"
+#~ msgstr "ამერიკა/კენტუკი/ლუიზვილი"
+
+#~ msgid "America/Indiana/Indianapolis"
+#~ msgstr "ამერიკა/ინდიანა/ინდიანაპოლისი"
+
+#~ msgid "America/Chicago"
+#~ msgstr "ამერიკა/ჩიკაგო"
+
+#~ msgid "America/North_Dakota/Center"
+#~ msgstr "ამერიკა/ჩრდ_დაკოტა/ცენტრი"
+
+#~ msgid "America/Denver"
+#~ msgstr "ამერიკა/დენვერი"
+
+#~ msgid "America/Phoenix"
+#~ msgstr "ამერიკა/ფენიქსი"
+
+#~ msgid "America/Los_Angeles"
+#~ msgstr "ამერიკა/ლოს_ანჯელესი"
+
+#~ msgid "America/Montevideo"
+#~ msgstr "ამერიკა/მონტევიდეო"
+
+#~ msgid "Asia/Tashkent"
+#~ msgstr "აზია/ტაშკენტი"
+
+#~ msgid "Europe/Vatican"
+#~ msgstr "ევროპა/პატიკანი"
+
+#~ msgid "Asia/Aden"
+#~ msgstr "აზია/ადენი"
+
+#~ msgid "Indian/Mayotte"
+#~ msgstr "ინდოეთის ოკეანე/მაიოტი"
+
+#~ msgid "Africa/Johannesburg"
+#~ msgstr "აფრიკა/იოჰანესბურგი"
+
+#~ msgid "Africa/Lusaka"
+#~ msgstr "აფრიკა/ლუსაკა"
+
+#~ msgid "Africa/Harare"
+#~ msgstr "აფრიკა/ჰარარე"
+
+#~ msgid "Africa"
+#~ msgstr "აფრიკა"
+
+#~ msgid "America"
+#~ msgstr "ამერიკა"
+
+#~ msgid "Antarctica"
+#~ msgstr "ანტარქტიკა"
+
+#~ msgid "Asia"
+#~ msgstr "აზია"
+
+#~ msgid "Atlantic"
+#~ msgstr "ატლანტიკა"
+
+#~ msgid "Europe"
+#~ msgstr "ევროპა"
+
+#~ msgid "Indian"
+#~ msgstr "ინდოეთის ოკეანე"
+
+#~ msgid "Pacific"
+#~ msgstr "წყნარი ოკეანე"

@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-12-14 20:29-0600\n"
-"PO-Revision-Date: 2016-12-15 05:14+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-12-15 05:22+0000\n"
+"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-15 05:14+0000\n"
+"X-Launchpad-Export-Date: 2016-12-16 06:01+0000\n"
 "X-Generator: Launchpad (build 18293)\n"
 
 #: ../src/MainView.vala:85
@@ -32,3 +32,1909 @@ msgstr ""
 #: ../src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
 msgstr ""
+
+#~ msgid "Date & Time"
+#~ msgstr "Date & Heure"
+
+#~ msgid "Configure date, time, and select time zone"
+#~ msgstr "Configurer la date, l'heure et sélectionner le fuseau horaire"
+
+#~ msgid "Network Time:"
+#~ msgstr "Heure réseau :"
+
+#~ msgid "Time Format:"
+#~ msgstr "Format du Temps :"
+
+#~ msgid "24h"
+#~ msgstr "24h"
+
+#~ msgid "AM/PM"
+#~ msgstr "AM/PM"
+
+#~ msgid "Time Zone:"
+#~ msgstr "Fuseau horaire :"
+
+#~ msgid "Network Time"
+#~ msgstr "Heure réseau"
+
+#~ msgid "Time"
+#~ msgstr "Heure"
+
+#~ msgid "Date"
+#~ msgstr "Date"
+
+#~ msgid "Time Zone"
+#~ msgstr "Fuseau horaire"
+
+#~ msgid "Time Format"
+#~ msgstr "Format de l'heure"
+
+#~ msgid "Europe/Andorra"
+#~ msgstr "Europe/Andorre"
+
+#~ msgid "Asia/Dubai"
+#~ msgstr "Asie/Dubai"
+
+#~ msgid "Asia/Kabul"
+#~ msgstr "Asie/Kaboul"
+
+#~ msgid "America/Antigua"
+#~ msgstr "Amérique/Antigua"
+
+#~ msgid "America/Anguilla"
+#~ msgstr "Amérique/Anguilla"
+
+#~ msgid "Europe/Tirane"
+#~ msgstr "Europe/Tirana"
+
+#~ msgid "Asia/Yerevan"
+#~ msgstr "Asie/Erevan"
+
+#~ msgid "Africa/Luanda"
+#~ msgstr "Afrique/Luanda"
+
+#~ msgid "Antarctica/McMurdo"
+#~ msgstr "Antarctique/McMurdo"
+
+#~ msgid "McMurdo, South Pole, Scott (New Zealand time)"
+#~ msgstr ""
+#~ "Bases antarctiques McMurdo et Scott, Pôle Sud (Heure de Nouvelle-Zélande)"
+
+#~ msgid "Antarctica/Rothera"
+#~ msgstr "Antarctique/Rothera"
+
+#~ msgid "Rothera Station, Adelaide Island"
+#~ msgstr "Base antarctique Rothera, Île Adélaïde"
+
+#~ msgid "Antarctica/Palmer"
+#~ msgstr "Antarctique/Palmer"
+
+#~ msgid "Palmer Station, Anvers Island"
+#~ msgstr "Station Palmer, Île Anvers"
+
+#~ msgid "Antarctica/Mawson"
+#~ msgstr "Antarctique/Mawson"
+
+#~ msgid "Mawson Station, Holme Bay"
+#~ msgstr "Base antarctique Mawson, Holme Bay"
+
+#~ msgid "Antarctica/Davis"
+#~ msgstr "Antarctique/Davis"
+
+#~ msgid "Davis Station, Vestfold Hills"
+#~ msgstr "Base antarctique Davis, Vestfold Hills"
+
+#~ msgid "Antarctica/Casey"
+#~ msgstr "Antarctique/Casey"
+
+#~ msgid "Casey Station, Bailey Peninsula"
+#~ msgstr "Base antarctique Casey, Péninsule de Bailey"
+
+#~ msgid "Antarctica/Vostok"
+#~ msgstr "Antarctique/Vostok"
+
+#~ msgid "Vostok Station, Lake Vostok"
+#~ msgstr "Base antarctique Vostok, Lac Vostok"
+
+#~ msgid "Antarctica/DumontDUrville"
+#~ msgstr "Antarctique/DumontDUrville"
+
+#~ msgid "Dumont-d'Urville Station, Adelie Land"
+#~ msgstr "Base antarctique Dumont d'Urville, Terre Adélie"
+
+#~ msgid "Antarctica/Syowa"
+#~ msgstr "Antarctique/Syowa"
+
+#~ msgid "Syowa Station, E Ongul I"
+#~ msgstr "Station Syowa, E Ongul I"
+
+#~ msgid "Antarctica/Troll"
+#~ msgstr "Antarctique/Troll"
+
+#~ msgid "Troll Station, Queen Maud Land"
+#~ msgstr "Base antarctique Troll, Terre de la Reine-Maud"
+
+#~ msgid "America/Argentina/Buenos_Aires"
+#~ msgstr "Amérique/Argentine/Buenos_Aires"
+
+#~ msgid "Buenos Aires (BA, CF)"
+#~ msgstr "Buenos Aires (BA, CF)"
+
+#~ msgid "America/Argentina/Cordoba"
+#~ msgstr "Amérique/Argentine/Cordoba"
+
+#~ msgid "most locations (CB, CC, CN, ER, FM, MN, SE, SF)"
+#~ msgstr "lieux divers (CB, CC, CN, ER, FM, MN, SE, SF)"
+
+#~ msgid "America/Argentina/Salta"
+#~ msgstr "Amérique/Argentine/Salta"
+
+#~ msgid "(SA, LP, NQ, RN)"
+#~ msgstr "(SA, LP, NQ, RN)"
+
+#~ msgid "America/Argentina/Jujuy"
+#~ msgstr "Amérique/Argentine/Jujuy"
+
+#~ msgid "Jujuy (JY)"
+#~ msgstr "Jujuy (JY)"
+
+#~ msgid "America/Argentina/Tucuman"
+#~ msgstr "Amérique/Argentine/Tucuman"
+
+#~ msgid "Tucuman (TM)"
+#~ msgstr "Tucuman (TM)"
+
+#~ msgid "America/Argentina/Catamarca"
+#~ msgstr "Amérique/Argentine/Catamarca"
+
+#~ msgid "Catamarca (CT), Chubut (CH)"
+#~ msgstr "Catamarca (CT), Chubut (CH)"
+
+#~ msgid "America/Argentina/La_Rioja"
+#~ msgstr "Amérique/Argentine/La_Rioja"
+
+#~ msgid "La Rioja (LR)"
+#~ msgstr "La Rioja (LR)"
+
+#~ msgid "America/Argentina/San_Juan"
+#~ msgstr "Amérique/Argentine/San_Juan"
+
+#~ msgid "San Juan (SJ)"
+#~ msgstr "San Juan (SJ)"
+
+#~ msgid "America/Argentina/Mendoza"
+#~ msgstr "Amérique/Argentine/Mendoza"
+
+#~ msgid "Mendoza (MZ)"
+#~ msgstr "Mendoza (MZ)"
+
+#~ msgid "America/Argentina/San_Luis"
+#~ msgstr "Amérique/Argentine/San_Luis"
+
+#~ msgid "San Luis (SL)"
+#~ msgstr "San Luis (SL)"
+
+#~ msgid "America/Argentina/Rio_Gallegos"
+#~ msgstr "Amérique/Argentine/Rio_Gallegos"
+
+#~ msgid "Santa Cruz (SC)"
+#~ msgstr "Santa Cruz (SC)"
+
+#~ msgid "America/Argentina/Ushuaia"
+#~ msgstr "Amérique/Argentine/Ushuaia"
+
+#~ msgid "Tierra del Fuego (TF)"
+#~ msgstr "Terre de Feu (TF)"
+
+#~ msgid "Pacific/Pago_Pago"
+#~ msgstr "Pacifique/Pago_Pago"
+
+#~ msgid "Europe/Vienna"
+#~ msgstr "Europe/Vienne"
+
+#~ msgid "Australia/Lord_Howe"
+#~ msgstr "Australie/Lord_Howe"
+
+#~ msgid "Lord Howe Island"
+#~ msgstr "île Lord Howe"
+
+#~ msgid "Antarctica/Macquarie"
+#~ msgstr "Antarctique/Macquarie"
+
+#~ msgid "Macquarie Island"
+#~ msgstr "Île de Macquarie"
+
+#~ msgid "Australia/Hobart"
+#~ msgstr "Australie/Hobart"
+
+#~ msgid "Tasmania - most locations"
+#~ msgstr "Tasmanie - lieux divers"
+
+#~ msgid "Australia/Currie"
+#~ msgstr "Australie/Currie"
+
+#~ msgid "Tasmania - King Island"
+#~ msgstr "Tasmanie - Île King"
+
+#~ msgid "Australia/Melbourne"
+#~ msgstr "Australie/Melbourne"
+
+#~ msgid "Victoria"
+#~ msgstr "Victoria"
+
+#~ msgid "Australia/Sydney"
+#~ msgstr "Australie/Sydney"
+
+#~ msgid "New South Wales - most locations"
+#~ msgstr "Nouvelle-Galles du Sud - lieux divers"
+
+#~ msgid "Australia/Broken_Hill"
+#~ msgstr "Australie/Broken_Hill"
+
+#~ msgid "New South Wales - Yancowinna"
+#~ msgstr "Nouvelle-Galles du Sud - Yancowinna"
+
+#~ msgid "Australia/Brisbane"
+#~ msgstr "Australie/Brisbane"
+
+#~ msgid "Queensland - most locations"
+#~ msgstr "Queensland - lieux divers"
+
+#~ msgid "Australia/Lindeman"
+#~ msgstr "Australie/Lindeman"
+
+#~ msgid "Queensland - Holiday Islands"
+#~ msgstr "Queensland - Îles Holiday"
+
+#~ msgid "Australia/Adelaide"
+#~ msgstr "Australie/Adelaïde"
+
+#~ msgid "South Australia"
+#~ msgstr "Australie du Sud"
+
+#~ msgid "Australia/Darwin"
+#~ msgstr "Australie/Darwin"
+
+#~ msgid "Northern Territory"
+#~ msgstr "Territoire du Nord"
+
+#~ msgid "Australia/Perth"
+#~ msgstr "Australie/Perth"
+
+#~ msgid "Western Australia - most locations"
+#~ msgstr "Australie de l'Ouest - lieux divers"
+
+#~ msgid "Australia/Eucla"
+#~ msgstr "Australie/Eucla"
+
+#~ msgid "Western Australia - Eucla area"
+#~ msgstr "Australie de l'Ouest - zone de l'Eucla"
+
+#~ msgid "America/Aruba"
+#~ msgstr "Amérique/Aruba"
+
+#~ msgid "Europe/Mariehamn"
+#~ msgstr "Europe/Mariehamn"
+
+#~ msgid "Asia/Baku"
+#~ msgstr "Asie/Bakou"
+
+#~ msgid "Europe/Sarajevo"
+#~ msgstr "Europe/Sarajevo"
+
+#~ msgid "America/Barbados"
+#~ msgstr "Amérique/Barbade"
+
+#~ msgid "Asia/Dhaka"
+#~ msgstr "Asie/Dhaka"
+
+#~ msgid "Europe/Brussels"
+#~ msgstr "Europe/Bruxelles"
+
+#~ msgid "Africa/Ouagadougou"
+#~ msgstr "Afrique/Ouagadougou"
+
+#~ msgid "Europe/Sofia"
+#~ msgstr "Europe/Sofia"
+
+#~ msgid "Asia/Bahrain"
+#~ msgstr "Asie/Bahraïn"
+
+#~ msgid "Africa/Bujumbura"
+#~ msgstr "Afrique/Bujumbura"
+
+#~ msgid "Africa/Porto-Novo"
+#~ msgstr "Afrique/Porto-Novo"
+
+#~ msgid "America/St_Barthelemy"
+#~ msgstr "Amérique/Saint_Barthélemy"
+
+#~ msgid "Atlantic/Bermuda"
+#~ msgstr "Atlantique/Bermudes"
+
+#~ msgid "Asia/Brunei"
+#~ msgstr "Asie/Brunei"
+
+#~ msgid "America/La_Paz"
+#~ msgstr "Amérique/La_Paz"
+
+#~ msgid "America/Kralendijk"
+#~ msgstr "Amérique/Kralendijk"
+
+#~ msgid "America/Noronha"
+#~ msgstr "Amérique/Noronha"
+
+#~ msgid "Atlantic islands"
+#~ msgstr "Îles de l'Atlantique"
+
+#~ msgid "America/Belem"
+#~ msgstr "Amérique/Belém"
+
+#~ msgid "Amapa, E Para"
+#~ msgstr "Amapa, Est du Paraguay"
+
+#~ msgid "America/Fortaleza"
+#~ msgstr "Amérique/Fortaleza"
+
+#~ msgid "NE Brazil (MA, PI, CE, RN, PB)"
+#~ msgstr "Nord-Est du Brésil (MA, PI, CE, RN, PB)"
+
+#~ msgid "America/Recife"
+#~ msgstr "Amérique/Recife"
+
+#~ msgid "Pernambuco"
+#~ msgstr "Pernambuco"
+
+#~ msgid "America/Araguaina"
+#~ msgstr "Amérique/Araguaina"
+
+#~ msgid "Tocantins"
+#~ msgstr "Tocantins"
+
+#~ msgid "America/Maceio"
+#~ msgstr "Amérique/Maceio"
+
+#~ msgid "Alagoas, Sergipe"
+#~ msgstr "Alagoas, Sergipe"
+
+#~ msgid "America/Bahia"
+#~ msgstr "Amérique/Bahia"
+
+#~ msgid "Bahia"
+#~ msgstr "Bahia"
+
+#~ msgid "America/Sao_Paulo"
+#~ msgstr "Amérique/Sao_Paulo"
+
+#~ msgid "S & SE Brazil (GO, DF, MG, ES, RJ, SP, PR, SC, RS)"
+#~ msgstr "Sud et du Sud-Est du Brésil (GO, DF, MG, ES, RJ, SP, PR, SC, RS)"
+
+#~ msgid "America/Campo_Grande"
+#~ msgstr "Amérique/Campo_Grande"
+
+#~ msgid "Mato Grosso do Sul"
+#~ msgstr "Mato Grosso du Sud"
+
+#~ msgid "America/Cuiaba"
+#~ msgstr "Amérique/Cuiaba"
+
+#~ msgid "Mato Grosso"
+#~ msgstr "Mato Grosso"
+
+#~ msgid "America/Santarem"
+#~ msgstr "Amérique/Santarém"
+
+#~ msgid "W Para"
+#~ msgstr "Ouest du Paraguay"
+
+#~ msgid "America/Porto_Velho"
+#~ msgstr "Amérique/Porto_Velho"
+
+#~ msgid "Rondonia"
+#~ msgstr "Rondonia"
+
+#~ msgid "America/Boa_Vista"
+#~ msgstr "Amerique/Boa_Vista"
+
+#~ msgid "Roraima"
+#~ msgstr "Roraima"
+
+#~ msgid "America/Manaus"
+#~ msgstr "Amérique/Manaus"
+
+#~ msgid "E Amazonas"
+#~ msgstr "Est de l'Amazone"
+
+#~ msgid "America/Eirunepe"
+#~ msgstr "Amérique/Eirunepe"
+
+#~ msgid "W Amazonas"
+#~ msgstr "Ouest de l'Amazonas"
+
+#~ msgid "America/Rio_Branco"
+#~ msgstr "Amérique/Rio_Branco"
+
+#~ msgid "Acre"
+#~ msgstr "Acre"
+
+#~ msgid "America/Nassau"
+#~ msgstr "Amérique/Nassau"
+
+#~ msgid "Asia/Thimphu"
+#~ msgstr "Asie/Thimphu"
+
+#~ msgid "Africa/Gaborone"
+#~ msgstr "Afrique/Gaborone"
+
+#~ msgid "Europe/Minsk"
+#~ msgstr "Europe/Minsk"
+
+#~ msgid "America/Belize"
+#~ msgstr "Amérique/Belize"
+
+#~ msgid "America/St_Johns"
+#~ msgstr "Amérique/St_Johns"
+
+#~ msgid "Newfoundland Time, including SE Labrador"
+#~ msgstr "Heure de Terre-Neuve, inclut le Labrador du Sud-Est"
+
+#~ msgid "America/Halifax"
+#~ msgstr "Amérique/Halifax"
+
+#~ msgid "Atlantic Time - Nova Scotia (peninsula), PEI"
+#~ msgstr "Heure de l'Atlantique - Nouvelle-Écosse (péninsule), PEI"
+
+#~ msgid "America/Glace_Bay"
+#~ msgstr "Amérique/Glace_Bay"
+
+#~ msgid "Atlantic Time - Nova Scotia (Cape Breton)"
+#~ msgstr "Heure de l'Atlantique - Nouvelle-Écosse (Île du Cap-Breton), PEI"
+
+#~ msgid "America/Moncton"
+#~ msgstr "Amérique/Moncton"
+
+#~ msgid "Atlantic Time - New Brunswick"
+#~ msgstr "Heure de l'Atlantique - Nouveau-Brunswick"
+
+#~ msgid "America/Goose_Bay"
+#~ msgstr "Amérique/Goose_Bay"
+
+#~ msgid "Atlantic Time - Labrador - most locations"
+#~ msgstr "Heure de l'Atlantique - Labrador - lieux divers"
+
+#~ msgid "America/Blanc-Sablon"
+#~ msgstr "Amérique/Blanc-Sablon"
+
+#~ msgid "Atlantic Standard Time - Quebec - Lower North Shore"
+#~ msgstr "Heure de l'Atlantique - Québec - Côte Nord"
+
+#~ msgid "America/Toronto"
+#~ msgstr "Amérique/Toronto"
+
+#~ msgid "Eastern Time - Ontario & Quebec - most locations"
+#~ msgstr "Heure de l'Est - Ontario & Québec - lieux divers"
+
+#~ msgid "America/Nipigon"
+#~ msgstr "Amérique/Nipigon"
+
+#~ msgid ""
+#~ "Eastern Time - Ontario & Quebec - places that did not observe DST 1967-1973"
+#~ msgstr ""
+#~ "Heure de l'Est - Ontario & Québec - lieux n'ayant pas respecté le DST 1967-"
+#~ "1973"
+
+#~ msgid "America/Thunder_Bay"
+#~ msgstr "Amérique/Thunder_Bay"
+
+#~ msgid "Eastern Time - Thunder Bay, Ontario"
+#~ msgstr "Heure de l'Est - Thunder Bay, Ontario"
+
+#~ msgid "America/Iqaluit"
+#~ msgstr "Amérique/Iqaluit"
+
+#~ msgid "Eastern Time - east Nunavut - most locations"
+#~ msgstr "Heure de l'Est - Nunavut de l'Est - lieux divers"
+
+#~ msgid "America/Pangnirtung"
+#~ msgstr "Amérique/Pangnirtung"
+
+#~ msgid "Eastern Time - Pangnirtung, Nunavut"
+#~ msgstr "Heure de l'Est - Pangnirtung, Nunavut"
+
+#~ msgid "America/Resolute"
+#~ msgstr "Amérique/Resolute"
+
+#~ msgid "Central Time - Resolute, Nunavut"
+#~ msgstr "Heure du Centre - Resolute, Nunavut"
+
+#~ msgid "America/Atikokan"
+#~ msgstr "Amérique/Atikokan"
+
+#~ msgid "Eastern Standard Time - Atikokan, Ontario and Southampton I, Nunavut"
+#~ msgstr "Heure de l'Est - Atikokan, Ontario et Southampton I, Nunavut"
+
+#~ msgid "America/Rankin_Inlet"
+#~ msgstr "Amérique/Rankin_Inlet"
+
+#~ msgid "Central Time - central Nunavut"
+#~ msgstr "Heure du Centre - Nunavut du Centre"
+
+#~ msgid "America/Winnipeg"
+#~ msgstr "Amérique/Winnipeg"
+
+#~ msgid "Central Time - Manitoba & west Ontario"
+#~ msgstr "Heure du Centre - Manitôbe & Ontario de l'Ouest"
+
+#~ msgid "America/Rainy_River"
+#~ msgstr "Amérique/Rainy_River"
+
+#~ msgid "Central Time - Rainy River & Fort Frances, Ontario"
+#~ msgstr "Heure du Centre - Rainy River & Fort Frances, Ontario"
+
+#~ msgid "America/Regina"
+#~ msgstr "Amérique/Regina"
+
+#~ msgid "Central Standard Time - Saskatchewan - most locations"
+#~ msgstr "Heure du Centre - Saskatchewan - lieux divers"
+
+#~ msgid "America/Swift_Current"
+#~ msgstr "Amérique/Swift_Current"
+
+#~ msgid "Central Standard Time - Saskatchewan - midwest"
+#~ msgstr "Heure du Centre - Saskatchewan - Middle West"
+
+#~ msgid "America/Edmonton"
+#~ msgstr "Amérique/Edmonton"
+
+#~ msgid "Mountain Time - Alberta, east British Columbia & west Saskatchewan"
+#~ msgstr ""
+#~ "Heure des Montagnes - Alberta, Colombie-Britannique de l'Est & Saskatchewan "
+#~ "de l'Ouest"
+
+#~ msgid "America/Cambridge_Bay"
+#~ msgstr "Amerique/Cambridge_Bay"
+
+#~ msgid "Mountain Time - west Nunavut"
+#~ msgstr "Heure des Montagnes - Nunavut de l'Ouest"
+
+#~ msgid "America/Yellowknife"
+#~ msgstr "Amérique/Yellowknife"
+
+#~ msgid "Mountain Time - central Northwest Territories"
+#~ msgstr "Heure des Montagnes - Centre des Territoires du Nord-Ouest"
+
+#~ msgid "America/Inuvik"
+#~ msgstr "Amérique/Inuvik"
+
+#~ msgid "Mountain Time - west Northwest Territories"
+#~ msgstr "Heure des Montagnes - Ouest des Territoires du Nord-Ouest"
+
+#~ msgid "America/Creston"
+#~ msgstr "Amérique/Creston"
+
+#~ msgid "Mountain Standard Time - Creston, British Columbia"
+#~ msgstr "Heure des Montagnes - Creston, Colombie Britannique"
+
+#~ msgid "America/Dawson_Creek"
+#~ msgstr "Amérique/Dawson_Creek"
+
+#~ msgid ""
+#~ "Mountain Standard Time - Dawson Creek & Fort Saint John, British Columbia"
+#~ msgstr ""
+#~ "Heure des Montagnes - Dawson Creek & Fort Saint John, Colombie-Britannique"
+
+#~ msgid "America/Fort_Nelson"
+#~ msgstr "Amérique/Fort Nelson"
+
+#~ msgid "Mountain Standard Time - Fort Nelson, British Columbia"
+#~ msgstr "Heure des Montagnes - Fort Nelson, Columbie Britanique"
+
+#~ msgid "America/Vancouver"
+#~ msgstr "Amérique/Vancouver"
+
+#~ msgid "Pacific Time - west British Columbia"
+#~ msgstr "Heure du Pacifique - Colombie-Britannique de l'Ouest"
+
+#~ msgid "America/Whitehorse"
+#~ msgstr "Amérique/Whitehorse"
+
+#~ msgid "Pacific Time - south Yukon"
+#~ msgstr "Heure du Pacifique - Yukon du Sud"
+
+#~ msgid "America/Dawson"
+#~ msgstr "Amérique/Dawson"
+
+#~ msgid "Pacific Time - north Yukon"
+#~ msgstr "Heure du Pacifique - Yukon du Nord"
+
+#~ msgid "Indian/Cocos"
+#~ msgstr "Inde/Cocos"
+
+#~ msgid "Africa/Kinshasa"
+#~ msgstr "Afrique/Kinshasa"
+
+#~ msgid "west Dem. Rep. of Congo"
+#~ msgstr "Ouest de la République démocratique du Congo"
+
+#~ msgid "Africa/Lubumbashi"
+#~ msgstr "Afrique/Lubumbashi"
+
+#~ msgid "east Dem. Rep. of Congo"
+#~ msgstr "Est de la République démocratique du Congo"
+
+#~ msgid "Africa/Bangui"
+#~ msgstr "Afrique/Bangui"
+
+#~ msgid "Africa/Brazzaville"
+#~ msgstr "Afrique/Brazzaville"
+
+#~ msgid "Europe/Zurich"
+#~ msgstr "Europe/Zurich"
+
+#~ msgid "Africa/Abidjan"
+#~ msgstr "Afrique/Abidjan"
+
+#~ msgid "Pacific/Rarotonga"
+#~ msgstr "Pacifique/Rarotonga"
+
+#~ msgid "America/Santiago"
+#~ msgstr "Amérique/Santiago"
+
+#~ msgid "most locations"
+#~ msgstr "lieux divers"
+
+#~ msgid "Pacific/Easter"
+#~ msgstr "Pacifique/Île de Pâques"
+
+#~ msgid "Easter Island"
+#~ msgstr "Île de Pâques"
+
+#~ msgid "Africa/Douala"
+#~ msgstr "Afrique/Douala"
+
+#~ msgid "Asia/Shanghai"
+#~ msgstr "Asie/Shanghai"
+
+#~ msgid "Beijing Time"
+#~ msgstr "Temps de Pékin"
+
+#~ msgid "Asia/Urumqi"
+#~ msgstr "Asie/Urumqi"
+
+#~ msgid "Xinjiang Time"
+#~ msgstr "Heure du Xinjiang"
+
+#~ msgid "America/Bogota"
+#~ msgstr "Amérique/Bogota"
+
+#~ msgid "America/Costa_Rica"
+#~ msgstr "Amérique/Costa_Rica"
+
+#~ msgid "America/Havana"
+#~ msgstr "Amérique/La Havane"
+
+#~ msgid "Atlantic/Cape_Verde"
+#~ msgstr "Atlantique/Cap_Vert"
+
+#~ msgid "America/Curacao"
+#~ msgstr "Amérique/Curaçao"
+
+#~ msgid "Indian/Christmas"
+#~ msgstr "Inde/Christmas"
+
+#~ msgid "Asia/Nicosia"
+#~ msgstr "Asie/Nicosie"
+
+#~ msgid "Europe/Prague"
+#~ msgstr "Europe/Prague"
+
+#~ msgid "Europe/Berlin"
+#~ msgstr "Europe/Berlin"
+
+#~ msgid "Europe/Busingen"
+#~ msgstr "Europe/Büsingen"
+
+#~ msgid "Busingen"
+#~ msgstr "Büsingen"
+
+#~ msgid "Africa/Djibouti"
+#~ msgstr "Afrique/Djibouti"
+
+#~ msgid "Europe/Copenhagen"
+#~ msgstr "Europe/Copenhague"
+
+#~ msgid "America/Dominica"
+#~ msgstr "Amérique/Dominique"
+
+#~ msgid "America/Santo_Domingo"
+#~ msgstr "Amérique/Saint_Domingue"
+
+#~ msgid "Africa/Algiers"
+#~ msgstr "Afrique/Alger"
+
+#~ msgid "America/Guayaquil"
+#~ msgstr "Amérique/Guayaquil"
+
+#~ msgid "mainland"
+#~ msgstr "principale région"
+
+#~ msgid "Pacific/Galapagos"
+#~ msgstr "Pacifique/Galapagos"
+
+#~ msgid "Galapagos Islands"
+#~ msgstr "Îles Galápagos"
+
+#~ msgid "Europe/Tallinn"
+#~ msgstr "Europe/Tallinn"
+
+#~ msgid "Africa/Cairo"
+#~ msgstr "Afrique/Le Caire"
+
+#~ msgid "Africa/El_Aaiun"
+#~ msgstr "Afrique/El_Aaiun"
+
+#~ msgid "Africa/Asmara"
+#~ msgstr "Afrique/Asmara"
+
+#~ msgid "Europe/Madrid"
+#~ msgstr "Europe/Madrid"
+
+#~ msgid "Africa/Ceuta"
+#~ msgstr "Afrique/Ceuta"
+
+#~ msgid "Ceuta & Melilla"
+#~ msgstr "Ceuta & Melilla"
+
+#~ msgid "Atlantic/Canary"
+#~ msgstr "Atlantique/Canaries"
+
+#~ msgid "Canary Islands"
+#~ msgstr "Îles Canaries"
+
+#~ msgid "Africa/Addis_Ababa"
+#~ msgstr "Afrique/Addis_Abeba"
+
+#~ msgid "Europe/Helsinki"
+#~ msgstr "Europe/Helsinki"
+
+#~ msgid "Pacific/Fiji"
+#~ msgstr "Pacifique/Fidji"
+
+#~ msgid "Atlantic/Stanley"
+#~ msgstr "Atlantique/Stanley"
+
+#~ msgid "Pacific/Chuuk"
+#~ msgstr "Pacifique/Chuuk"
+
+#~ msgid "Chuuk (Truk) and Yap"
+#~ msgstr "Chuuk (Truk) et Yap"
+
+#~ msgid "Pacific/Pohnpei"
+#~ msgstr "Pacifique/Pohnpei"
+
+#~ msgid "Pohnpei (Ponape)"
+#~ msgstr "Pohnpei (Ponape)"
+
+#~ msgid "Pacific/Kosrae"
+#~ msgstr "Pacifique/Kosraé"
+
+#~ msgid "Kosrae"
+#~ msgstr "Kosrae"
+
+#~ msgid "Atlantic/Faroe"
+#~ msgstr "Atlantique/Féroé"
+
+#~ msgid "Europe/Paris"
+#~ msgstr "Europe/Paris"
+
+#~ msgid "Africa/Libreville"
+#~ msgstr "Afrique/Libreville"
+
+#~ msgid "Europe/London"
+#~ msgstr "Europe/Londres"
+
+#~ msgid "America/Grenada"
+#~ msgstr "Amérique/Grenade"
+
+#~ msgid "Asia/Tbilisi"
+#~ msgstr "Asie/Tbilissi"
+
+#~ msgid "America/Cayenne"
+#~ msgstr "Amérique/Cayenne"
+
+#~ msgid "Europe/Guernsey"
+#~ msgstr "Europe/Guernsey"
+
+#~ msgid "Africa/Accra"
+#~ msgstr "Afrique/Accra"
+
+#~ msgid "Europe/Gibraltar"
+#~ msgstr "Europe/Gibraltar"
+
+#~ msgid "America/Godthab"
+#~ msgstr "Amérique/Godthab"
+
+#~ msgid "America/Danmarkshavn"
+#~ msgstr "Amérique/Danmarkshavn"
+
+#~ msgid "east coast, north of Scoresbysund"
+#~ msgstr "Ittoqqortoormiit du Nord, côte Est"
+
+#~ msgid "America/Scoresbysund"
+#~ msgstr "Amérique/Scoresbysund"
+
+#~ msgid "Scoresbysund / Ittoqqortoormiit"
+#~ msgstr "Scoresbysund / Ittoqqortoormiit"
+
+#~ msgid "America/Thule"
+#~ msgstr "Amérique/Thule"
+
+#~ msgid "Thule / Pituffik"
+#~ msgstr "Thule / Pituffik"
+
+#~ msgid "Africa/Banjul"
+#~ msgstr "Afrique/Banjul"
+
+#~ msgid "Africa/Conakry"
+#~ msgstr "Afrique/Conakry"
+
+#~ msgid "America/Guadeloupe"
+#~ msgstr "Amérique/Guadeloupe"
+
+#~ msgid "Africa/Malabo"
+#~ msgstr "Afrique/Malabo"
+
+#~ msgid "Europe/Athens"
+#~ msgstr "Europe/Athènes"
+
+#~ msgid "Atlantic/South_Georgia"
+#~ msgstr "Atlantique/Géorgie_du_sud"
+
+#~ msgid "America/Guatemala"
+#~ msgstr "Amérique/Guatemala"
+
+#~ msgid "Pacific/Guam"
+#~ msgstr "Pacifique/Guam"
+
+#~ msgid "Africa/Bissau"
+#~ msgstr "Afrique/Bissau"
+
+#~ msgid "America/Guyana"
+#~ msgstr "Amérique/Guyane"
+
+#~ msgid "Asia/Hong_Kong"
+#~ msgstr "Asie/Hong_Kong"
+
+#~ msgid "America/Tegucigalpa"
+#~ msgstr "Amérique/Tegucigalpa"
+
+#~ msgid "Europe/Zagreb"
+#~ msgstr "Europe/Zagreb"
+
+#~ msgid "America/Port-au-Prince"
+#~ msgstr "Amérique/Port_au_Prince"
+
+#~ msgid "Europe/Budapest"
+#~ msgstr "Europe/Budapest"
+
+#~ msgid "Asia/Jakarta"
+#~ msgstr "Asie/Jakarta"
+
+#~ msgid "Java & Sumatra"
+#~ msgstr "Java & Sumatra"
+
+#~ msgid "Asia/Pontianak"
+#~ msgstr "Asie/Pontianak"
+
+#~ msgid "west & central Borneo"
+#~ msgstr "Bornéo Ouest et Centrale"
+
+#~ msgid "Asia/Makassar"
+#~ msgstr "Asie/Makassar"
+
+#~ msgid ""
+#~ "east & south Borneo, Sulawesi (Celebes), Bali, Nusa Tengarra, west Timor"
+#~ msgstr ""
+#~ "Bornéo Est et Sud, Sulawesi (Célèbes), Bali, Petites Îles de la Sonde "
+#~ "orientales, Timor occidental"
+
+#~ msgid "Asia/Jayapura"
+#~ msgstr "Asie/Jayapura"
+
+#~ msgid "west New Guinea (Irian Jaya) & Malukus (Moluccas)"
+#~ msgstr "Nouvelle Guinée occidentale (Irian Jaya) & Moluques (Maluku)"
+
+#~ msgid "Europe/Dublin"
+#~ msgstr "Europe/Dublin"
+
+#~ msgid "Asia/Jerusalem"
+#~ msgstr "Asie/Jérusalem"
+
+#~ msgid "Europe/Isle_of_Man"
+#~ msgstr "Europe/Isle_Of_Man"
+
+#~ msgid "Asia/Kolkata"
+#~ msgstr "Asie/Calcutta"
+
+#~ msgid "Indian/Chagos"
+#~ msgstr "Inde/Chagos"
+
+#~ msgid "Asia/Baghdad"
+#~ msgstr "Asie/Bagdad"
+
+#~ msgid "Asia/Tehran"
+#~ msgstr "Asie/Téhéran"
+
+#~ msgid "Atlantic/Reykjavik"
+#~ msgstr "Atlantique/Reykjavik"
+
+#~ msgid "Europe/Rome"
+#~ msgstr "Europe/Rome"
+
+#~ msgid "Europe/Jersey"
+#~ msgstr "Europe/Jersey"
+
+#~ msgid "America/Jamaica"
+#~ msgstr "Amérique/Jamaïque"
+
+#~ msgid "Asia/Amman"
+#~ msgstr "Asie/Amman"
+
+#~ msgid "Asia/Tokyo"
+#~ msgstr "Asie/Tokyo"
+
+#~ msgid "Africa/Nairobi"
+#~ msgstr "Afrique/Nairobi"
+
+#~ msgid "Asia/Bishkek"
+#~ msgstr "Asie/Bishkek"
+
+#~ msgid "Asia/Phnom_Penh"
+#~ msgstr "Asie/Phnom_Penh"
+
+#~ msgid "Pacific/Tarawa"
+#~ msgstr "Pacifique/Tarawa"
+
+#~ msgid "Gilbert Islands"
+#~ msgstr "Îles Gilbert"
+
+#~ msgid "Pacific/Enderbury"
+#~ msgstr "Pacifique/Enderbury"
+
+#~ msgid "Phoenix Islands"
+#~ msgstr "Îles Phœnix"
+
+#~ msgid "Pacific/Kiritimati"
+#~ msgstr "Pacifique/Kiritimati"
+
+#~ msgid "Line Islands"
+#~ msgstr "Îles de la Ligne"
+
+#~ msgid "Indian/Comoro"
+#~ msgstr "Inde/Comores"
+
+#~ msgid "America/St_Kitts"
+#~ msgstr "Amérique/St_Kitts"
+
+#~ msgid "Asia/Pyongyang"
+#~ msgstr "Asie/Pyongyang"
+
+#~ msgid "Asia/Seoul"
+#~ msgstr "Asie/Séoul"
+
+#~ msgid "Asia/Kuwait"
+#~ msgstr "Asie/Koweit"
+
+#~ msgid "America/Cayman"
+#~ msgstr "Amérique/Cayman"
+
+#~ msgid "Asia/Almaty"
+#~ msgstr "Asie/Almaty"
+
+#~ msgid "Asia/Qyzylorda"
+#~ msgstr "Asie/Qyzylorda"
+
+#~ msgid "Qyzylorda (Kyzylorda, Kzyl-Orda)"
+#~ msgstr "Kyzylorda"
+
+#~ msgid "Asia/Aqtobe"
+#~ msgstr "Asie/Aqtobe"
+
+#~ msgid "Aqtobe (Aktobe)"
+#~ msgstr "Aktioubé"
+
+#~ msgid "Asia/Aqtau"
+#~ msgstr "Asie/Aqtau"
+
+#~ msgid "Atyrau (Atirau, Gur'yev), Mangghystau (Mankistau)"
+#~ msgstr "Atyraou, Manguistaou"
+
+#~ msgid "Asia/Oral"
+#~ msgstr "Asie/Oral"
+
+#~ msgid "West Kazakhstan"
+#~ msgstr "Kazakhstan-Occidental"
+
+#~ msgid "Asia/Vientiane"
+#~ msgstr "Asie/Vientiane"
+
+#~ msgid "Asia/Beirut"
+#~ msgstr "Asie/Beyrouth"
+
+#~ msgid "America/St_Lucia"
+#~ msgstr "Amérique/Sainte_Lucie"
+
+#~ msgid "Europe/Vaduz"
+#~ msgstr "Europe/Vaduz"
+
+#~ msgid "Asia/Colombo"
+#~ msgstr "Asie/Colombo"
+
+#~ msgid "Africa/Monrovia"
+#~ msgstr "Afrique/Monrovia"
+
+#~ msgid "Africa/Maseru"
+#~ msgstr "Afrique/Maseru"
+
+#~ msgid "Europe/Vilnius"
+#~ msgstr "Europe/Vilnius"
+
+#~ msgid "Europe/Luxembourg"
+#~ msgstr "Europe/Luxembourg"
+
+#~ msgid "Europe/Riga"
+#~ msgstr "Europe/Riga"
+
+#~ msgid "Africa/Tripoli"
+#~ msgstr "Afrique/Tripoli"
+
+#~ msgid "Africa/Casablanca"
+#~ msgstr "Afrique/Casablanca"
+
+#~ msgid "Europe/Monaco"
+#~ msgstr "Europe/Monaco"
+
+#~ msgid "Europe/Chisinau"
+#~ msgstr "Europe/Chisinau"
+
+#~ msgid "Europe/Podgorica"
+#~ msgstr "Europe/Podgorica"
+
+#~ msgid "America/Marigot"
+#~ msgstr "Amérique/Marigot"
+
+#~ msgid "Indian/Antananarivo"
+#~ msgstr "Inde/Antananarivo"
+
+#~ msgid "Pacific/Majuro"
+#~ msgstr "Pacifique/Majuro"
+
+#~ msgid "Pacific/Kwajalein"
+#~ msgstr "Pacifique/Kwajalein"
+
+#~ msgid "Kwajalein"
+#~ msgstr "Kwajalein"
+
+#~ msgid "Europe/Skopje"
+#~ msgstr "Europe/Skopje"
+
+#~ msgid "Africa/Bamako"
+#~ msgstr "Afrique/Bamako"
+
+#~ msgid "Asia/Rangoon"
+#~ msgstr "Asie/Rangoon"
+
+#~ msgid "Asia/Ulaanbaatar"
+#~ msgstr "Asie/Ulaanbaatar"
+
+#~ msgid "Asia/Hovd"
+#~ msgstr "Asie/Hovd"
+
+#~ msgid "Bayan-Olgiy, Govi-Altai, Hovd, Uvs, Zavkhan"
+#~ msgstr "Bayan-Olgiy, Govi-Altai, Hovd, Uvs, Zavkhan"
+
+#~ msgid "Asia/Choibalsan"
+#~ msgstr "Asie/Choibalsan"
+
+#~ msgid "Dornod, Sukhbaatar"
+#~ msgstr "Dornod, Sukhbaatar"
+
+#~ msgid "Asia/Macau"
+#~ msgstr "Asie/Macao"
+
+#~ msgid "Pacific/Saipan"
+#~ msgstr "Pacifique/Saipan"
+
+#~ msgid "America/Martinique"
+#~ msgstr "Amérique/Martinique"
+
+#~ msgid "Africa/Nouakchott"
+#~ msgstr "Afrique/Nouakchott"
+
+#~ msgid "America/Montserrat"
+#~ msgstr "Amérique/Montserrat"
+
+#~ msgid "Europe/Malta"
+#~ msgstr "Europe/Malte"
+
+#~ msgid "Indian/Mauritius"
+#~ msgstr "Inde/Maurice"
+
+#~ msgid "Indian/Maldives"
+#~ msgstr "Inde/Maldives"
+
+#~ msgid "Africa/Blantyre"
+#~ msgstr "Afrique/Blantyre"
+
+#~ msgid "America/Mexico_City"
+#~ msgstr "Amérique/Mexico"
+
+#~ msgid "Central Time - most locations"
+#~ msgstr "Heure du Centre - lieux divers"
+
+#~ msgid "America/Cancun"
+#~ msgstr "Amérique/Cancun"
+
+#~ msgid "Eastern Standard Time - Quintana Roo"
+#~ msgstr "Heure de l'Est - Quintana Roo"
+
+#~ msgid "America/Merida"
+#~ msgstr "Amérique/Merida"
+
+#~ msgid "Central Time - Campeche, Yucatan"
+#~ msgstr "Heure du Centre - État du Campeche, Yucatan"
+
+#~ msgid "America/Monterrey"
+#~ msgstr "Amérique/Monterrey"
+
+#~ msgid ""
+#~ "Mexican Central Time - Coahuila, Durango, Nuevo Leon, Tamaulipas away from "
+#~ "US border"
+#~ msgstr ""
+#~ "Heure du Centre, Méxique - Coahuila, État du Durango, Nouveau León, "
+#~ "Tamaulipas"
+
+#~ msgid "America/Matamoros"
+#~ msgstr "Amérique/Matamoros"
+
+#~ msgid ""
+#~ "US Central Time - Coahuila, Durango, Nuevo Leon, Tamaulipas near US border"
+#~ msgstr ""
+#~ "Heure du Centre des États-Unis - Coahuila, État du Durango, Nouveau León, "
+#~ "Tamaulipas"
+
+#~ msgid "America/Mazatlan"
+#~ msgstr "Amérique/Mazatlan"
+
+#~ msgid "Mountain Time - S Baja, Nayarit, Sinaloa"
+#~ msgstr "Heure des Montagnes - S Baja, Nayarit, Sinaloa"
+
+#~ msgid "America/Chihuahua"
+#~ msgstr "Amérique/Chihuahua"
+
+#~ msgid "Mexican Mountain Time - Chihuahua away from US border"
+#~ msgstr ""
+#~ "Heure des Montagnes Méxicaines - État de Chihuahua loin de la frontière"
+
+#~ msgid "America/Ojinaga"
+#~ msgstr "Amérique/Ojinaga"
+
+#~ msgid "US Mountain Time - Chihuahua near US border"
+#~ msgstr "Heure des Montagnes des États-Unis - État de Chihuahua"
+
+#~ msgid "America/Hermosillo"
+#~ msgstr "Amerique/Hermosillo"
+
+#~ msgid "Mountain Standard Time - Sonora"
+#~ msgstr "Heure des Montagnes - Sonora"
+
+#~ msgid "America/Tijuana"
+#~ msgstr "Amérique/Tijuana"
+
+#~ msgid "US Pacific Time - Baja California near US border"
+#~ msgstr ""
+#~ "Heure des États-Unis / Côte Pacifique - Baja California proche de la "
+#~ "frontière US"
+
+#~ msgid "America/Santa_Isabel"
+#~ msgstr "Amérique/Santa_Isabel"
+
+#~ msgid "Mexican Pacific Time - Baja California away from US border"
+#~ msgstr ""
+#~ "Heure du Méxique côte Pacifique - Baja California loin de la frontière"
+
+#~ msgid "America/Bahia_Banderas"
+#~ msgstr "Amérique/Bahia_Banderas"
+
+#~ msgid "Mexican Central Time - Bahia de Banderas"
+#~ msgstr "Heure mexicaine du Centre - Bahia de Banderas"
+
+#~ msgid "Asia/Kuala_Lumpur"
+#~ msgstr "Asie/Kuala_Lumpur"
+
+#~ msgid "peninsular Malaysia"
+#~ msgstr "Malaisie péninsulaire"
+
+#~ msgid "Asia/Kuching"
+#~ msgstr "Asie/Kuching"
+
+#~ msgid "Sabah & Sarawak"
+#~ msgstr "Sabah & Sarawak"
+
+#~ msgid "Africa/Maputo"
+#~ msgstr "Afrique/Maputo"
+
+#~ msgid "Africa/Windhoek"
+#~ msgstr "Afrique/Windhoek"
+
+#~ msgid "Pacific/Noumea"
+#~ msgstr "Pacifique/Nouméa"
+
+#~ msgid "Africa/Niamey"
+#~ msgstr "Afrique/Niamey"
+
+#~ msgid "Pacific/Norfolk"
+#~ msgstr "Pacifique/Norfolk"
+
+#~ msgid "Africa/Lagos"
+#~ msgstr "Afrique/Lagos"
+
+#~ msgid "America/Managua"
+#~ msgstr "Amérique/Managua"
+
+#~ msgid "Europe/Amsterdam"
+#~ msgstr "Europe/Amsterdam"
+
+#~ msgid "Europe/Oslo"
+#~ msgstr "Europe/Oslo"
+
+#~ msgid "Asia/Kathmandu"
+#~ msgstr "Asie/Katmandou"
+
+#~ msgid "Pacific/Nauru"
+#~ msgstr "Pacifique/Nauru"
+
+#~ msgid "Pacific/Niue"
+#~ msgstr "Pacifique/Niue"
+
+#~ msgid "Pacific/Auckland"
+#~ msgstr "Pacifique/Auckland"
+
+#~ msgid "Pacific/Chatham"
+#~ msgstr "Pacifique/Chatham"
+
+#~ msgid "Chatham Islands"
+#~ msgstr "Îles Chatham"
+
+#~ msgid "Asia/Muscat"
+#~ msgstr "Asie/Muscat"
+
+#~ msgid "America/Panama"
+#~ msgstr "Amérique/Panama"
+
+#~ msgid "America/Lima"
+#~ msgstr "Amérique/Lima"
+
+#~ msgid "Pacific/Tahiti"
+#~ msgstr "Pacifique/Tahiti"
+
+#~ msgid "Society Islands"
+#~ msgstr "Îles de la Société"
+
+#~ msgid "Pacific/Marquesas"
+#~ msgstr "Pacifique/Marquesas"
+
+#~ msgid "Marquesas Islands"
+#~ msgstr "Îles Marquises"
+
+#~ msgid "Pacific/Gambier"
+#~ msgstr "Pacifique/Gambier"
+
+#~ msgid "Gambier Islands"
+#~ msgstr "Îles Gambier"
+
+#~ msgid "Pacific/Port_Moresby"
+#~ msgstr "Pacifique/Port_Moresby"
+
+#~ msgid "Pacific/Bougainville"
+#~ msgstr "Pacifique/Bougainville"
+
+#~ msgid "Bougainville"
+#~ msgstr "Bougainville"
+
+#~ msgid "Asia/Manila"
+#~ msgstr "Asie/Manille"
+
+#~ msgid "Asia/Karachi"
+#~ msgstr "Asie/Karachi"
+
+#~ msgid "Europe/Warsaw"
+#~ msgstr "Europe/Varsovie"
+
+#~ msgid "America/Miquelon"
+#~ msgstr "Amérique/Miquelon"
+
+#~ msgid "Pacific/Pitcairn"
+#~ msgstr "Pacifique/Pitcairn"
+
+#~ msgid "America/Puerto_Rico"
+#~ msgstr "Amérique/Puerto_Rico"
+
+#~ msgid "Asia/Gaza"
+#~ msgstr "Asie/Gaza"
+
+#~ msgid "Gaza Strip"
+#~ msgstr "Bande de Gaza"
+
+#~ msgid "Asia/Hebron"
+#~ msgstr "Asie/Hébron"
+
+#~ msgid "West Bank"
+#~ msgstr "Cisjordanie"
+
+#~ msgid "Europe/Lisbon"
+#~ msgstr "Europe/Lisbonne"
+
+#~ msgid "Atlantic/Madeira"
+#~ msgstr "Atlantique/Madère"
+
+#~ msgid "Madeira Islands"
+#~ msgstr "Îles Madère"
+
+#~ msgid "Atlantic/Azores"
+#~ msgstr "Atlantique/Açores"
+
+#~ msgid "Azores"
+#~ msgstr "Açores"
+
+#~ msgid "Pacific/Palau"
+#~ msgstr "Pacifique/Palau"
+
+#~ msgid "America/Asuncion"
+#~ msgstr "Amérique/Asuncion"
+
+#~ msgid "Asia/Qatar"
+#~ msgstr "Asie/Qatar"
+
+#~ msgid "Indian/Reunion"
+#~ msgstr "Inde/Réunion"
+
+#~ msgid "Europe/Bucharest"
+#~ msgstr "Europe/Bucarest"
+
+#~ msgid "Europe/Belgrade"
+#~ msgstr "Europe/Belgrade"
+
+#~ msgid "Europe/Kaliningrad"
+#~ msgstr "Europe/Kaliningrad"
+
+#~ msgid "Moscow-01 - Kaliningrad"
+#~ msgstr "Moscou-01 - Kaliningrad"
+
+#~ msgid "Europe/Moscow"
+#~ msgstr "Europe/Moscou"
+
+#~ msgid "Moscow+00 - west Russia"
+#~ msgstr "Moscou+00 - Russie de l'Ouest"
+
+#~ msgid "Europe/Simferopol"
+#~ msgstr "Europe/Simferopol"
+
+#~ msgid "Moscow+00 - Crimea"
+#~ msgstr "Moscou+00 - Crimée"
+
+#~ msgid "Europe/Volgograd"
+#~ msgstr "Europe/Volgograd"
+
+#~ msgid "Moscow+00 - Caspian Sea"
+#~ msgstr "Moscou+00 - Mer Caspienne"
+
+#~ msgid "Europe/Samara"
+#~ msgstr "Europe/Samara"
+
+#~ msgid "Moscow+00 (Moscow+01 after 2014-10-26) - Samara, Udmurtia"
+#~ msgstr "Moscou+00 (Moscou+01 après le 26-10-2014) - Samara, Oudmourtie"
+
+#~ msgid "Asia/Yekaterinburg"
+#~ msgstr "Asie/Ekaterinbourg"
+
+#~ msgid "Moscow+02 - Urals"
+#~ msgstr "Moscou+02 - Oural"
+
+#~ msgid "Asia/Omsk"
+#~ msgstr "Asie/Omsk"
+
+#~ msgid "Moscow+03 - west Siberia"
+#~ msgstr "Moscou+03 - Sibérie de l'Ouest"
+
+#~ msgid "Asia/Novosibirsk"
+#~ msgstr "Asie/Novosibirsk"
+
+#~ msgid "Moscow+03 - Novosibirsk"
+#~ msgstr "Moscou+03 - Novossibirsk"
+
+#~ msgid "Asia/Novokuznetsk"
+#~ msgstr "Asie/Novokuznetsk"
+
+#~ msgid "Moscow+03 (Moscow+04 after 2014-10-26) - Kemerovo"
+#~ msgstr "Moscou+03 (Moscou+04 après le 26-10-2014) - Kemerovo"
+
+#~ msgid "Asia/Krasnoyarsk"
+#~ msgstr "Asie/Krasnoyarsk"
+
+#~ msgid "Moscow+04 - Yenisei River"
+#~ msgstr "Moscou+04 - Rivière Ienisseï"
+
+#~ msgid "Asia/Irkutsk"
+#~ msgstr "Asie/Irkutsk"
+
+#~ msgid "Moscow+05 - Lake Baikal"
+#~ msgstr "Moscou+05 - Lac Baïkal"
+
+#~ msgid "Asia/Chita"
+#~ msgstr "Asie/Chita"
+
+#~ msgid "Moscow+06 (Moscow+05 after 2014-10-26) - Zabaykalsky"
+#~ msgstr "Moscou+06 (Moscou+05 après le 26-10-2014) - Transbaïkalie"
+
+#~ msgid "Asia/Yakutsk"
+#~ msgstr "Asie/Yakoutsk"
+
+#~ msgid "Moscow+06 - Lena River"
+#~ msgstr "Moscou+06 - Fleuve Léna"
+
+#~ msgid "Asia/Khandyga"
+#~ msgstr "Asie/Khandyga"
+
+#~ msgid "Moscow+06 - Tomponsky, Ust-Maysky"
+#~ msgstr "Moscou+06 - Tomponsky, Oust-Maïsky"
+
+#~ msgid "Asia/Vladivostok"
+#~ msgstr "Asie/Vladivostok"
+
+#~ msgid "Moscow+07 - Amur River"
+#~ msgstr "Moscou+07 - Fleuve Amour"
+
+#~ msgid "Asia/Sakhalin"
+#~ msgstr "Asie/Sakhaline"
+
+#~ msgid "Moscow+07 - Sakhalin Island"
+#~ msgstr "Moscou+07 - Île Sakhalin"
+
+#~ msgid "Asia/Ust-Nera"
+#~ msgstr "Asie/Oust-Nera"
+
+#~ msgid "Moscow+07 - Oymyakonsky"
+#~ msgstr "Moscou+07 - Oymyakonsky"
+
+#~ msgid "Asia/Magadan"
+#~ msgstr "Asie/Magadan"
+
+#~ msgid "Moscow+08 (Moscow+07 after 2014-10-26) - Magadan"
+#~ msgstr "Moscou+08 (Moscou+07 après le 26-10-2014) - Magadan"
+
+#~ msgid "Asia/Srednekolymsk"
+#~ msgstr "Asie/Srednekolymsk"
+
+#~ msgid "Moscow+08 - E Sakha, N Kuril Is"
+#~ msgstr "Moscou+08 - E Sakha, N Kuril Is"
+
+#~ msgid "Asia/Kamchatka"
+#~ msgstr "Asie/Kamchatka"
+
+#~ msgid "Moscow+08 (Moscow+09 after 2014-10-26) - Kamchatka"
+#~ msgstr "Moscou+08 (Moscou+09 après le 26-10-2014) - Kamchatka"
+
+#~ msgid "Asia/Anadyr"
+#~ msgstr "Asie/Anadyr"
+
+#~ msgid "Moscow+08 (Moscow+09 after 2014-10-26) - Bering Sea"
+#~ msgstr "Moscou+08 (Moscou+09 après le 26-10-2014) - Mer de Béring"
+
+#~ msgid "Africa/Kigali"
+#~ msgstr "Afrique/Kigali"
+
+#~ msgid "Asia/Riyadh"
+#~ msgstr "Asie/Riyadh"
+
+#~ msgid "Pacific/Guadalcanal"
+#~ msgstr "Pacifique/Guadalcanal"
+
+#~ msgid "Indian/Mahe"
+#~ msgstr "Inde/Mahé"
+
+#~ msgid "Africa/Khartoum"
+#~ msgstr "Afrique/Khartoum"
+
+#~ msgid "Europe/Stockholm"
+#~ msgstr "Europe/Stockholm"
+
+#~ msgid "Asia/Singapore"
+#~ msgstr "Asie/Singapour"
+
+#~ msgid "Atlantic/St_Helena"
+#~ msgstr "Atlantique/Sainte_Hélène"
+
+#~ msgid "Europe/Ljubljana"
+#~ msgstr "Europe/Ljubljana"
+
+#~ msgid "Arctic/Longyearbyen"
+#~ msgstr "Arctique/Longyearbyen"
+
+#~ msgid "Europe/Bratislava"
+#~ msgstr "Europe/Bratislava"
+
+#~ msgid "Africa/Freetown"
+#~ msgstr "Afrique/Freetown"
+
+#~ msgid "Europe/San_Marino"
+#~ msgstr "Europe/Saint_Marin"
+
+#~ msgid "Africa/Dakar"
+#~ msgstr "Afrique/Dakar"
+
+#~ msgid "Africa/Mogadishu"
+#~ msgstr "Afrique/Mogadiscio"
+
+#~ msgid "America/Paramaribo"
+#~ msgstr "Amérique/Paramaribo"
+
+#~ msgid "Africa/Juba"
+#~ msgstr "Afrique/Juba"
+
+#~ msgid "Africa/Sao_Tome"
+#~ msgstr "Afrique/Sao_Tomé"
+
+#~ msgid "America/El_Salvador"
+#~ msgstr "Amérique/El_Salvador"
+
+#~ msgid "America/Lower_Princes"
+#~ msgstr "Amérique/Lower_Princes"
+
+#~ msgid "Asia/Damascus"
+#~ msgstr "Asie/Damas"
+
+#~ msgid "Africa/Mbabane"
+#~ msgstr "Afrique/Mbabane"
+
+#~ msgid "America/Grand_Turk"
+#~ msgstr "Amérique/Grand_Turk"
+
+#~ msgid "Africa/Ndjamena"
+#~ msgstr "Afrique/NDjamena"
+
+#~ msgid "Indian/Kerguelen"
+#~ msgstr "Inde/Kerguélen"
+
+#~ msgid "Africa/Lome"
+#~ msgstr "Afrique/Lomé"
+
+#~ msgid "Asia/Bangkok"
+#~ msgstr "Asie/Bangkok"
+
+#~ msgid "Asia/Dushanbe"
+#~ msgstr "Asie/Dushanbe"
+
+#~ msgid "Pacific/Fakaofo"
+#~ msgstr "Pacifique/Fakaofo"
+
+#~ msgid "Asia/Dili"
+#~ msgstr "Asie/Dili"
+
+#~ msgid "Asia/Ashgabat"
+#~ msgstr "Asie/Ashgabat"
+
+#~ msgid "Africa/Tunis"
+#~ msgstr "Afrique/Tunis"
+
+#~ msgid "Pacific/Tongatapu"
+#~ msgstr "Pacifique/Tongatapu"
+
+#~ msgid "Europe/Istanbul"
+#~ msgstr "Europe/Istanbul"
+
+#~ msgid "America/Port_of_Spain"
+#~ msgstr "Amérique/Port_of_Spain"
+
+#~ msgid "Pacific/Funafuti"
+#~ msgstr "Pacifique/Funafuti"
+
+#~ msgid "Asia/Taipei"
+#~ msgstr "Asie/Taipei"
+
+#~ msgid "Africa/Dar_es_Salaam"
+#~ msgstr "Afrique/Dar_Es_Salaam"
+
+#~ msgid "Europe/Kiev"
+#~ msgstr "Europe/Kiev"
+
+#~ msgid "Europe/Uzhgorod"
+#~ msgstr "Europe/Uzhgorod"
+
+#~ msgid "Ruthenia"
+#~ msgstr "Ruthénie"
+
+#~ msgid "Europe/Zaporozhye"
+#~ msgstr "Europe/Zaporozhye"
+
+#~ msgid "Zaporozh'ye, E Lugansk / Zaporizhia, E Luhansk"
+#~ msgstr "Zaporijia, Louhansk de l'Est"
+
+#~ msgid "Africa/Kampala"
+#~ msgstr "Afrique/Kampala"
+
+#~ msgid "Pacific/Johnston"
+#~ msgstr "Pacifique/Johnston"
+
+#~ msgid "Johnston Atoll"
+#~ msgstr "Atoll de Johnston"
+
+#~ msgid "Pacific/Midway"
+#~ msgstr "Pacifique/Midway"
+
+#~ msgid "Midway Islands"
+#~ msgstr "Atoll de Midway"
+
+#~ msgid "Pacific/Wake"
+#~ msgstr "Pacifique/Wake"
+
+#~ msgid "Wake Island"
+#~ msgstr "Wake"
+
+#~ msgid "America/New_York"
+#~ msgstr "Amérique/New_York"
+
+#~ msgid "Eastern Time"
+#~ msgstr "Heure de l'Est"
+
+#~ msgid "America/Detroit"
+#~ msgstr "Amérique/Detroit"
+
+#~ msgid "Eastern Time - Michigan - most locations"
+#~ msgstr "Heure de l'Est - Michigan - lieux divers"
+
+#~ msgid "America/Kentucky/Louisville"
+#~ msgstr "Amérique/Kentucky/Louisville"
+
+#~ msgid "Eastern Time - Kentucky - Louisville area"
+#~ msgstr "Heure de l'Est - Kentucky - Zone de Louisville"
+
+#~ msgid "America/Kentucky/Monticello"
+#~ msgstr "Amérique/Kentucky/Monticello"
+
+#~ msgid "Eastern Time - Kentucky - Wayne County"
+#~ msgstr "Heure de l'Est - Kentucky - Comté de Wayne"
+
+#~ msgid "America/Indiana/Indianapolis"
+#~ msgstr "Amérique/Indiana/Indianapolis"
+
+#~ msgid "Eastern Time - Indiana - most locations"
+#~ msgstr "Heure de l'Est - Indiana - lieux divers"
+
+#~ msgid "America/Indiana/Vincennes"
+#~ msgstr "Amérique/Indiana/Vincennes"
+
+#~ msgid "Eastern Time - Indiana - Daviess, Dubois, Knox & Martin Counties"
+#~ msgstr "Heure de l'Est - Indiana - Comtés de Daviess, Dubois, Knox & Martin"
+
+#~ msgid "America/Indiana/Winamac"
+#~ msgstr "Amérique/Indiana/Winamac"
+
+#~ msgid "Eastern Time - Indiana - Pulaski County"
+#~ msgstr "Heure de l'Est - Indiana - Comté de Pulaski"
+
+#~ msgid "America/Indiana/Marengo"
+#~ msgstr "Amérique/Indiana/Marengo"
+
+#~ msgid "Eastern Time - Indiana - Crawford County"
+#~ msgstr "Heure de l'Est - Indiana - Comté de Crawford"
+
+#~ msgid "America/Indiana/Petersburg"
+#~ msgstr "Amérique/Indiana/Petersburg"
+
+#~ msgid "Eastern Time - Indiana - Pike County"
+#~ msgstr "Heure de l'Est - Indiana - Comté de Pike"
+
+#~ msgid "America/Indiana/Vevay"
+#~ msgstr "Amérique/Indiana/Vevay"
+
+#~ msgid "Eastern Time - Indiana - Switzerland County"
+#~ msgstr "Heure de l'Est - Indiana - Comté de Switzerland"
+
+#~ msgid "America/Chicago"
+#~ msgstr "Amérique/Chicago"
+
+#~ msgid "Central Time"
+#~ msgstr "Heure du Centre"
+
+#~ msgid "America/Indiana/Tell_City"
+#~ msgstr "Amérique/Indiana/Tell_City"
+
+#~ msgid "Central Time - Indiana - Perry County"
+#~ msgstr "Heure du Centre - Indiana - Comté de Perry"
+
+#~ msgid "America/Indiana/Knox"
+#~ msgstr "Amérique/Indiana/Knox"
+
+#~ msgid "Central Time - Indiana - Starke County"
+#~ msgstr "Heure du Centre - Indiana - Comté de Starke"
+
+#~ msgid "America/Menominee"
+#~ msgstr "Amérique/Menominee"
+
+#~ msgid ""
+#~ "Central Time - Michigan - Dickinson, Gogebic, Iron & Menominee Counties"
+#~ msgstr ""
+#~ "Heure du Centre - Michigan - Comtés de Dickinson, Gogebic, Iron & Menominee"
+
+#~ msgid "America/North_Dakota/Center"
+#~ msgstr "Amérique/Dakota_du_Nord/Centre"
+
+#~ msgid "Central Time - North Dakota - Oliver County"
+#~ msgstr "Heure du Centre - Dakota du Nord - Comté d'Oliver"
+
+#~ msgid "America/North_Dakota/New_Salem"
+#~ msgstr "Amérique/Dakota_du_Nord/New_Salem"
+
+#~ msgid "Central Time - North Dakota - Morton County (except Mandan area)"
+#~ msgstr ""
+#~ "Heure du Centre - Dakota du Nord - Comté du Morton (sauf la région Mandan)"
+
+#~ msgid "America/North_Dakota/Beulah"
+#~ msgstr "Amérique/Dakota_du_Nord/Beulah"
+
+#~ msgid "Central Time - North Dakota - Mercer County"
+#~ msgstr "Heure du Centre - Dakota du Nord - Comté de Mercer"
+
+#~ msgid "America/Denver"
+#~ msgstr "Amérique/Denver"
+
+#~ msgid "Mountain Time"
+#~ msgstr "Heure des Montagnes"
+
+#~ msgid "America/Boise"
+#~ msgstr "Amérique/Boise"
+
+#~ msgid "Mountain Time - south Idaho & east Oregon"
+#~ msgstr "Heure des Montagnes - Idaho du Sud & Orégon de l'Est"
+
+#~ msgid "America/Phoenix"
+#~ msgstr "Amérique/Phoenix"
+
+#~ msgid "Mountain Standard Time - Arizona (except Navajo)"
+#~ msgstr "Heure des Montagnes - Arizona (sauf Navajo)"
+
+#~ msgid "America/Los_Angeles"
+#~ msgstr "Amérique/Los_Angeles"
+
+#~ msgid "Pacific Time"
+#~ msgstr "Heure du Pacifique"
+
+#~ msgid "America/Metlakatla"
+#~ msgstr "Amérique/Metlakatla"
+
+#~ msgid "Pacific Standard Time - Annette Island, Alaska"
+#~ msgstr "Heure du Pacifique - Île Annette, Alaska"
+
+#~ msgid "America/Anchorage"
+#~ msgstr "Amérique/Anchorage"
+
+#~ msgid "Alaska Time"
+#~ msgstr "Heure de l'Alaska"
+
+#~ msgid "America/Juneau"
+#~ msgstr "Amérique/Juneau"
+
+#~ msgid "Alaska Time - Alaska panhandle"
+#~ msgstr "Heure de l'Alaska - Queue de poêle de l'Alaska"
+
+#~ msgid "America/Sitka"
+#~ msgstr "Amérique/Sitka"
+
+#~ msgid "Alaska Time - southeast Alaska panhandle"
+#~ msgstr "Heure de l'Alaska - Queue de poêle du sud-est"
+
+#~ msgid "America/Yakutat"
+#~ msgstr "Amérique/Yakutat"
+
+#~ msgid "Alaska Time - Alaska panhandle neck"
+#~ msgstr "Heure de l'Alaska - Queue de poêle de l'Alaska"
+
+#~ msgid "America/Nome"
+#~ msgstr "Amérique/Nome"
+
+#~ msgid "Alaska Time - west Alaska"
+#~ msgstr "Heure de l'Alaska - Alaska de l'Ouest"
+
+#~ msgid "America/Adak"
+#~ msgstr "Amérique/Adak"
+
+#~ msgid "Aleutian Islands"
+#~ msgstr "Îles Aléoutiennes"
+
+#~ msgid "Pacific/Honolulu"
+#~ msgstr "Pacifique/Honolulu"
+
+#~ msgid "Hawaii"
+#~ msgstr "USA/Hawaï"
+
+#~ msgid "America/Montevideo"
+#~ msgstr "Amérique/Montevideo"
+
+#~ msgid "Asia/Samarkand"
+#~ msgstr "Asie/Samarkand"
+
+#~ msgid "west Uzbekistan"
+#~ msgstr "Ouzbékistan de l'Ouest"
+
+#~ msgid "Asia/Tashkent"
+#~ msgstr "Asie/Tachkent"
+
+#~ msgid "east Uzbekistan"
+#~ msgstr "Ouzbékistan de l'Est"
+
+#~ msgid "Europe/Vatican"
+#~ msgstr "Europe/Vatican"
+
+#~ msgid "America/St_Vincent"
+#~ msgstr "Amérique/St_Vincent"
+
+#~ msgid "America/Caracas"
+#~ msgstr "Amérique/Caracas"
+
+#~ msgid "America/Tortola"
+#~ msgstr "Amérique/Tortola"
+
+#~ msgid "America/St_Thomas"
+#~ msgstr "Amérique/St_Thomas"
+
+#~ msgid "Asia/Ho_Chi_Minh"
+#~ msgstr "Asie/Ho_Chi_Minh"
+
+#~ msgid "Pacific/Efate"
+#~ msgstr "Pacifique/Efate"
+
+#~ msgid "Pacific/Wallis"
+#~ msgstr "Pacifique/Wallis"
+
+#~ msgid "Pacific/Apia"
+#~ msgstr "Pacifique/Apia"
+
+#~ msgid "Asia/Aden"
+#~ msgstr "Asie/Aden"
+
+#~ msgid "Indian/Mayotte"
+#~ msgstr "Inde/Mayotte"
+
+#~ msgid "Africa/Johannesburg"
+#~ msgstr "Afrique/Johannesburg"
+
+#~ msgid "Africa/Lusaka"
+#~ msgstr "Afrique/Lusaka"
+
+#~ msgid "Africa/Harare"
+#~ msgstr "Afrique/Harare"
+
+#~ msgid "Africa"
+#~ msgstr "Afrique"
+
+#~ msgid "America"
+#~ msgstr "Amérique"
+
+#~ msgid "Antarctica"
+#~ msgstr "Antarctique"
+
+#~ msgid "Asia"
+#~ msgstr "Asie"
+
+#~ msgid "Atlantic"
+#~ msgstr "Atlantique"
+
+#~ msgid "Europe"
+#~ msgstr "Europe"
+
+#~ msgid "Indian"
+#~ msgstr "Indien"
+
+#~ msgid "Pacific"
+#~ msgstr "Pacifique"

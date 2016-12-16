@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-12-14 20:29-0600\n"
-"PO-Revision-Date: 2016-12-15 05:14+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-12-15 05:41+0000\n"
+"Last-Translator: Daniel Fore <Unknown>\n"
 "Language-Team: Vietnamese <vi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-15 05:14+0000\n"
+"X-Launchpad-Export-Date: 2016-12-16 06:02+0000\n"
 "X-Generator: Launchpad (build 18293)\n"
 
 #: ../src/MainView.vala:85
@@ -32,3 +32,1032 @@ msgstr ""
 #: ../src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
 msgstr ""
+
+#~ msgid "Europe/Andorra"
+#~ msgstr "Châu Âu/Andorra"
+
+#~ msgid "Asia/Dubai"
+#~ msgstr "Châu Á/Dubai"
+
+#~ msgid "Asia/Kabul"
+#~ msgstr "Châu Á/Kabul"
+
+#~ msgid "America/Antigua"
+#~ msgstr "Châu Mỹ/Antigua"
+
+#~ msgid "America/Anguilla"
+#~ msgstr "Châu Mỹ/Anguilla"
+
+#~ msgid "Europe/Tirane"
+#~ msgstr "Châu Âu/Tirane"
+
+#~ msgid "Asia/Yerevan"
+#~ msgstr "Châu Á/Yerevan"
+
+#~ msgid "Africa/Luanda"
+#~ msgstr "Châu Phi/Luanda"
+
+#~ msgid "Pacific/Pago_Pago"
+#~ msgstr "Thái Bình Dương/Pago_Pago"
+
+#~ msgid "Europe/Vienna"
+#~ msgstr "Châu Âu/Vienna"
+
+#~ msgid "Australia/Lord_Howe"
+#~ msgstr "Châu Úc/Lord_Howe"
+
+#~ msgid "Australia/Hobart"
+#~ msgstr "Châu Úc/Hobart"
+
+#~ msgid "Australia/Melbourne"
+#~ msgstr "Châu Úc/Melbourne"
+
+#~ msgid "Australia/Sydney"
+#~ msgstr "Châu Úc/Sydney"
+
+#~ msgid "Australia/Broken_Hill"
+#~ msgstr "Châu Úc/Broken_Hill"
+
+#~ msgid "Australia/Brisbane"
+#~ msgstr "Châu Úc/Brisbane"
+
+#~ msgid "Australia/Lindeman"
+#~ msgstr "Châu Úc/Lindeman"
+
+#~ msgid "Australia/Adelaide"
+#~ msgstr "Châu Úc/Adelaide"
+
+#~ msgid "Australia/Darwin"
+#~ msgstr "Châu Úc/Darwin"
+
+#~ msgid "Australia/Perth"
+#~ msgstr "Châu Úc/Perth"
+
+#~ msgid "America/Aruba"
+#~ msgstr "Châu Mỹ/Aruba"
+
+#~ msgid "Asia/Baku"
+#~ msgstr "Châu Á/Baku"
+
+#~ msgid "Europe/Sarajevo"
+#~ msgstr "Châu Âu/Sarajevo"
+
+#~ msgid "America/Barbados"
+#~ msgstr "Châu Mỹ/Barbados"
+
+#~ msgid "Asia/Dhaka"
+#~ msgstr "Châu Á/Dhaka"
+
+#~ msgid "Europe/Brussels"
+#~ msgstr "Châu Âu/Brussels"
+
+#~ msgid "Africa/Ouagadougou"
+#~ msgstr "Châu Phi/Ouagadougou"
+
+#~ msgid "Europe/Sofia"
+#~ msgstr "Châu Âu/Sofia"
+
+#~ msgid "Asia/Bahrain"
+#~ msgstr "Châu Á/Bahrain"
+
+#~ msgid "Africa/Bujumbura"
+#~ msgstr "Châu Phi/Bujumbura"
+
+#~ msgid "Africa/Porto-Novo"
+#~ msgstr "Châu Phi/Porto-Novo"
+
+#~ msgid "Atlantic/Bermuda"
+#~ msgstr "Đại Tây Dương/Bermuda"
+
+#~ msgid "Asia/Brunei"
+#~ msgstr "Châu Á/Brunei"
+
+#~ msgid "America/La_Paz"
+#~ msgstr "Châu Mỹ/La_Paz"
+
+#~ msgid "America/Noronha"
+#~ msgstr "Châu Mỹ/Noronha"
+
+#~ msgid "America/Belem"
+#~ msgstr "Châu Mỹ/Belem"
+
+#~ msgid "America/Fortaleza"
+#~ msgstr "Châu Mỹ/Fortaleza"
+
+#~ msgid "America/Recife"
+#~ msgstr "Châu Mỹ/Recife"
+
+#~ msgid "America/Araguaina"
+#~ msgstr "Châu Mỹ/Araguaina"
+
+#~ msgid "America/Maceio"
+#~ msgstr "Châu Mỹ/Maceio"
+
+#~ msgid "America/Sao_Paulo"
+#~ msgstr "Châu Mỹ/Sao_Paulo"
+
+#~ msgid "America/Cuiaba"
+#~ msgstr "Châu Mỹ/Cuiaba"
+
+#~ msgid "America/Porto_Velho"
+#~ msgstr "Châu Mỹ/Porto_Velho"
+
+#~ msgid "America/Boa_Vista"
+#~ msgstr "Châu Mỹ/Boa_Vista"
+
+#~ msgid "America/Manaus"
+#~ msgstr "Châu Mỹ/Manaus"
+
+#~ msgid "America/Eirunepe"
+#~ msgstr "Châu Mỹ/Eirunepe"
+
+#~ msgid "America/Rio_Branco"
+#~ msgstr "Châu Mỹ/Rio_Branco"
+
+#~ msgid "America/Nassau"
+#~ msgstr "Châu Mỹ/Nassau"
+
+#~ msgid "Asia/Thimphu"
+#~ msgstr "Châu Á/Thimphu"
+
+#~ msgid "Africa/Gaborone"
+#~ msgstr "Châu Phi/Gaborone"
+
+#~ msgid "Europe/Minsk"
+#~ msgstr "Châu Âu/Minsk"
+
+#~ msgid "America/Belize"
+#~ msgstr "Châu Mỹ/Belize"
+
+#~ msgid "America/St_Johns"
+#~ msgstr "Châu Mỹ/St_Johns"
+
+#~ msgid "America/Halifax"
+#~ msgstr "Châu Mỹ/Halifax"
+
+#~ msgid "America/Glace_Bay"
+#~ msgstr "Châu Mỹ/Glace_Bay"
+
+#~ msgid "America/Goose_Bay"
+#~ msgstr "Châu Mỹ/Goose_Bay"
+
+#~ msgid "America/Nipigon"
+#~ msgstr "Châu Mỹ/Nipigon"
+
+#~ msgid "America/Thunder_Bay"
+#~ msgstr "Châu Mỹ/Thunder_Bay"
+
+#~ msgid "America/Iqaluit"
+#~ msgstr "Châu Mỹ/Iqaluit"
+
+#~ msgid "America/Pangnirtung"
+#~ msgstr "Châu Mỹ/Pangnirtung"
+
+#~ msgid "America/Rankin_Inlet"
+#~ msgstr "Châu Mỹ/Rankin_Inlet"
+
+#~ msgid "America/Winnipeg"
+#~ msgstr "Châu Mỹ/Winnipeg"
+
+#~ msgid "America/Rainy_River"
+#~ msgstr "Châu Mỹ/Rainy_River"
+
+#~ msgid "America/Regina"
+#~ msgstr "Châu Mỹ/Regina"
+
+#~ msgid "America/Swift_Current"
+#~ msgstr "Châu Mỹ/Swift_Current"
+
+#~ msgid "America/Edmonton"
+#~ msgstr "Châu Mỹ/Edmonton"
+
+#~ msgid "America/Cambridge_Bay"
+#~ msgstr "Châu Mỹ/Cambridge_Bay"
+
+#~ msgid "America/Yellowknife"
+#~ msgstr "Châu Mỹ/Yellowknife"
+
+#~ msgid "America/Inuvik"
+#~ msgstr "Châu Mỹ/Inuvik"
+
+#~ msgid "America/Dawson_Creek"
+#~ msgstr "Châu Mỹ/Dawson_Creek"
+
+#~ msgid "America/Vancouver"
+#~ msgstr "Châu Mỹ/Vancouver"
+
+#~ msgid "America/Whitehorse"
+#~ msgstr "Châu Mỹ/Whitehorse"
+
+#~ msgid "America/Dawson"
+#~ msgstr "Châu Mỹ/Dawson"
+
+#~ msgid "Indian/Cocos"
+#~ msgstr "Ấn Độ Dương/Cocos"
+
+#~ msgid "Africa/Kinshasa"
+#~ msgstr "Châu Phi/Kinshasa"
+
+#~ msgid "Africa/Lubumbashi"
+#~ msgstr "Châu Phi/Lubumbashi"
+
+#~ msgid "Africa/Bangui"
+#~ msgstr "Châu Phi/Bangui"
+
+#~ msgid "Africa/Brazzaville"
+#~ msgstr "Châu Phi/Brazzaville"
+
+#~ msgid "Europe/Zurich"
+#~ msgstr "Châu Âu/Zurich"
+
+#~ msgid "Africa/Abidjan"
+#~ msgstr "Châu Phi/Abidjan"
+
+#~ msgid "Pacific/Rarotonga"
+#~ msgstr "Thái Bình Dương/Rarotonga"
+
+#~ msgid "America/Santiago"
+#~ msgstr "Châu Mỹ/Santiago"
+
+#~ msgid "Africa/Douala"
+#~ msgstr "Châu Phi/Douala"
+
+#~ msgid "Asia/Shanghai"
+#~ msgstr "Châu Á/Shanghai"
+
+#~ msgid "Asia/Urumqi"
+#~ msgstr "Châu Á/Urumqi"
+
+#~ msgid "America/Bogota"
+#~ msgstr "Châu Mỹ/Bogota"
+
+#~ msgid "America/Costa_Rica"
+#~ msgstr "Châu Mỹ/Costa_Rica"
+
+#~ msgid "America/Havana"
+#~ msgstr "Châu Mỹ/Havana"
+
+#~ msgid "Atlantic/Cape_Verde"
+#~ msgstr "Đại Tây Dương/Cape_Verde"
+
+#~ msgid "America/Curacao"
+#~ msgstr "Châu Mỹ/Curacao"
+
+#~ msgid "Indian/Christmas"
+#~ msgstr "Ấn Độ Dương/Christmas"
+
+#~ msgid "Asia/Nicosia"
+#~ msgstr "Châu Á/Nicosia"
+
+#~ msgid "Europe/Prague"
+#~ msgstr "Châu Âu/Prague"
+
+#~ msgid "Europe/Berlin"
+#~ msgstr "Châu Âu/Berlin"
+
+#~ msgid "Africa/Djibouti"
+#~ msgstr "Châu Phi/Djibouti"
+
+#~ msgid "Europe/Copenhagen"
+#~ msgstr "Châu Âu/Copenhagen"
+
+#~ msgid "America/Dominica"
+#~ msgstr "Châu Mỹ/Dominica"
+
+#~ msgid "America/Santo_Domingo"
+#~ msgstr "Châu Mỹ/Santo_Domingo"
+
+#~ msgid "Africa/Algiers"
+#~ msgstr "Châu Phi/Algiers"
+
+#~ msgid "America/Guayaquil"
+#~ msgstr "Châu Mỹ/Guayaquil"
+
+#~ msgid "Pacific/Galapagos"
+#~ msgstr "Thái Bình Dương/Galapagos"
+
+#~ msgid "Europe/Tallinn"
+#~ msgstr "Châu Âu/Tallinn"
+
+#~ msgid "Africa/Cairo"
+#~ msgstr "Châu Phi/Cairo"
+
+#~ msgid "Africa/El_Aaiun"
+#~ msgstr "Châu Phi/El_Aaiun"
+
+#~ msgid "Europe/Madrid"
+#~ msgstr "Châu Âu/Madrid"
+
+#~ msgid "Africa/Ceuta"
+#~ msgstr "Châu Phi/Ceuta"
+
+#~ msgid "Atlantic/Canary"
+#~ msgstr "Đại Tây Dương/Canary"
+
+#~ msgid "Africa/Addis_Ababa"
+#~ msgstr "Châu Phi/Addis_Ababa"
+
+#~ msgid "Europe/Helsinki"
+#~ msgstr "Châu Âu/Helsinki"
+
+#~ msgid "Pacific/Fiji"
+#~ msgstr "Thái Bình Dương/Fiji"
+
+#~ msgid "Atlantic/Stanley"
+#~ msgstr "Đại Tây Dương/Stanley"
+
+#~ msgid "Pacific/Kosrae"
+#~ msgstr "Thái Bình Dương/Kosrae"
+
+#~ msgid "Europe/Paris"
+#~ msgstr "Châu Âu/Paris"
+
+#~ msgid "Africa/Libreville"
+#~ msgstr "Châu Phi/Libreville"
+
+#~ msgid "Europe/London"
+#~ msgstr "Châu Âu/London"
+
+#~ msgid "America/Grenada"
+#~ msgstr "Châu Mỹ/Grenada"
+
+#~ msgid "Asia/Tbilisi"
+#~ msgstr "Châu Á/Tbilisi"
+
+#~ msgid "America/Cayenne"
+#~ msgstr "Châu Mỹ/Cayenne"
+
+#~ msgid "Africa/Accra"
+#~ msgstr "Châu Phi/Accra"
+
+#~ msgid "Europe/Gibraltar"
+#~ msgstr "Châu Âu/Gibraltar"
+
+#~ msgid "America/Godthab"
+#~ msgstr "Châu Mỹ/Godthab"
+
+#~ msgid "America/Danmarkshavn"
+#~ msgstr "Châu Mỹ/Danmarkshavn"
+
+#~ msgid "America/Scoresbysund"
+#~ msgstr "Châu Mỹ/Scoresbysund"
+
+#~ msgid "America/Thule"
+#~ msgstr "Châu Mỹ/Thule"
+
+#~ msgid "Africa/Banjul"
+#~ msgstr "Châu Phi/Banjul"
+
+#~ msgid "Africa/Conakry"
+#~ msgstr "Châu Phi/Conakry"
+
+#~ msgid "America/Guadeloupe"
+#~ msgstr "Châu Mỹ/Guadeloupe"
+
+#~ msgid "Africa/Malabo"
+#~ msgstr "Châu Phi/Malabo"
+
+#~ msgid "Europe/Athens"
+#~ msgstr "Châu Âu/Athens"
+
+#~ msgid "Atlantic/South_Georgia"
+#~ msgstr "Đại Tây Dương/South_Georgia"
+
+#~ msgid "America/Guatemala"
+#~ msgstr "Châu Mỹ/Guatemala"
+
+#~ msgid "Pacific/Guam"
+#~ msgstr "Thái Bình Dương/Guam"
+
+#~ msgid "Africa/Bissau"
+#~ msgstr "Châu Phi/Bissau"
+
+#~ msgid "America/Guyana"
+#~ msgstr "Châu Mỹ/Guyana"
+
+#~ msgid "Asia/Hong_Kong"
+#~ msgstr "Châu Á/Hồng Kông"
+
+#~ msgid "America/Tegucigalpa"
+#~ msgstr "Châu Mỹ/Tegucigalpa"
+
+#~ msgid "Europe/Zagreb"
+#~ msgstr "Châu Âu/Zagreb"
+
+#~ msgid "America/Port-au-Prince"
+#~ msgstr "Châu Mỹ/Port-au-Prince"
+
+#~ msgid "Europe/Budapest"
+#~ msgstr "Châu Âu/Budapest"
+
+#~ msgid "Asia/Jakarta"
+#~ msgstr "Châu Á/Jakarta"
+
+#~ msgid "Asia/Pontianak"
+#~ msgstr "Châu Á/Pontianak"
+
+#~ msgid "Asia/Makassar"
+#~ msgstr "Châu Á/Makassar"
+
+#~ msgid "Asia/Jayapura"
+#~ msgstr "Châu Á/Jayapura"
+
+#~ msgid "Europe/Dublin"
+#~ msgstr "Châu Âu/Dublin"
+
+#~ msgid "Asia/Jerusalem"
+#~ msgstr "Châu Á/Jerusalem"
+
+#~ msgid "Indian/Chagos"
+#~ msgstr "Ấn Độ Dương/Chagos"
+
+#~ msgid "Asia/Baghdad"
+#~ msgstr "Châu Á/Baghdad"
+
+#~ msgid "Asia/Tehran"
+#~ msgstr "Châu Á/Tehran"
+
+#~ msgid "Atlantic/Reykjavik"
+#~ msgstr "Đại Tây Dương/Reykjavik"
+
+#~ msgid "Europe/Rome"
+#~ msgstr "Châu Âu/Rome"
+
+#~ msgid "America/Jamaica"
+#~ msgstr "Châu Mỹ/Jamaica"
+
+#~ msgid "Asia/Amman"
+#~ msgstr "Châu Á/Amman"
+
+#~ msgid "Asia/Tokyo"
+#~ msgstr "Châu Á/Tokyo"
+
+#~ msgid "Africa/Nairobi"
+#~ msgstr "Châu Phi/Nairobi"
+
+#~ msgid "Asia/Bishkek"
+#~ msgstr "Châu Á/Bishkek"
+
+#~ msgid "Asia/Phnom_Penh"
+#~ msgstr "Châu Á/Phnom_Penh"
+
+#~ msgid "Pacific/Tarawa"
+#~ msgstr "Thái Bình Dương/Tarawa"
+
+#~ msgid "Pacific/Enderbury"
+#~ msgstr "Thái Bình Dương/Enderbury"
+
+#~ msgid "Pacific/Kiritimati"
+#~ msgstr "Thái Bình Dương/Kiritimati"
+
+#~ msgid "Indian/Comoro"
+#~ msgstr "Ấn Độ Dương/Comoro"
+
+#~ msgid "America/St_Kitts"
+#~ msgstr "Châu Mỹ/St_Kitts"
+
+#~ msgid "Asia/Pyongyang"
+#~ msgstr "Châu Á/Pyongyang"
+
+#~ msgid "Asia/Seoul"
+#~ msgstr "Châu Á/Seoul"
+
+#~ msgid "Asia/Kuwait"
+#~ msgstr "Châu Á/Kuwait"
+
+#~ msgid "America/Cayman"
+#~ msgstr "Châu Mỹ/Cayman"
+
+#~ msgid "Asia/Almaty"
+#~ msgstr "Châu Á/Almaty"
+
+#~ msgid "Asia/Qyzylorda"
+#~ msgstr "Châu Á/Qyzylorda"
+
+#~ msgid "Asia/Aqtobe"
+#~ msgstr "Châu Á/Aqtobe"
+
+#~ msgid "Asia/Aqtau"
+#~ msgstr "Châu Á/Aqtau"
+
+#~ msgid "Asia/Oral"
+#~ msgstr "Châu Á/Oral"
+
+#~ msgid "Asia/Vientiane"
+#~ msgstr "Châu Á/Vientiane"
+
+#~ msgid "Asia/Beirut"
+#~ msgstr "Châu Á/Beirut"
+
+#~ msgid "America/St_Lucia"
+#~ msgstr "Châu Mỹ/St_Lucia"
+
+#~ msgid "Europe/Vaduz"
+#~ msgstr "Châu Âu/Vaduz"
+
+#~ msgid "Asia/Colombo"
+#~ msgstr "Châu Á/Colombo"
+
+#~ msgid "Africa/Monrovia"
+#~ msgstr "Châu Phi/Monrovia"
+
+#~ msgid "Africa/Maseru"
+#~ msgstr "Châu Phi/Maseru"
+
+#~ msgid "Europe/Vilnius"
+#~ msgstr "Châu Âu/Vilnius"
+
+#~ msgid "Europe/Luxembourg"
+#~ msgstr "Châu Âu/Luxembourg"
+
+#~ msgid "Europe/Riga"
+#~ msgstr "Châu Âu/Riga"
+
+#~ msgid "Africa/Tripoli"
+#~ msgstr "Châu Phi/Tripoli"
+
+#~ msgid "Africa/Casablanca"
+#~ msgstr "Châu Phi/Casablanca"
+
+#~ msgid "Europe/Monaco"
+#~ msgstr "Châu Âu/Monaco"
+
+#~ msgid "Europe/Chisinau"
+#~ msgstr "Châu Âu/Chisinau"
+
+#~ msgid "Indian/Antananarivo"
+#~ msgstr "Ấn Độ Dương/Antananarivo"
+
+#~ msgid "Pacific/Majuro"
+#~ msgstr "Thái Bình Dương/Majuro"
+
+#~ msgid "Pacific/Kwajalein"
+#~ msgstr "Thái Bình Dương/Kwajalein"
+
+#~ msgid "Kwajalein"
+#~ msgstr "Kwajalein"
+
+#~ msgid "Europe/Skopje"
+#~ msgstr "Châu Âu/Skopje"
+
+#~ msgid "Africa/Bamako"
+#~ msgstr "Châu Phi/Bamako"
+
+#~ msgid "Asia/Rangoon"
+#~ msgstr "Châu Á/Rangoon"
+
+#~ msgid "Asia/Ulaanbaatar"
+#~ msgstr "Châu Á/Ulaanbaatar"
+
+#~ msgid "Asia/Hovd"
+#~ msgstr "Châu Á/Hovd"
+
+#~ msgid "Asia/Choibalsan"
+#~ msgstr "Châu Á/Choibalsan"
+
+#~ msgid "Asia/Macau"
+#~ msgstr "Châu Á/Macau"
+
+#~ msgid "Pacific/Saipan"
+#~ msgstr "Thái Bình Dương/Saipan"
+
+#~ msgid "America/Martinique"
+#~ msgstr "Châu Mỹ/Martinique"
+
+#~ msgid "Africa/Nouakchott"
+#~ msgstr "Châu Phi/Nouakchott"
+
+#~ msgid "America/Montserrat"
+#~ msgstr "Châu Mỹ/Montserrat"
+
+#~ msgid "Europe/Malta"
+#~ msgstr "Châu Âu/Malta"
+
+#~ msgid "Indian/Mauritius"
+#~ msgstr "Ấn Độ Dương/Mauritius"
+
+#~ msgid "Indian/Maldives"
+#~ msgstr "Ấn Độ Dương/Maldives"
+
+#~ msgid "Africa/Blantyre"
+#~ msgstr "Châu Phi/Blantyre"
+
+#~ msgid "America/Mexico_City"
+#~ msgstr "Châu Mỹ/Mexico_City"
+
+#~ msgid "America/Cancun"
+#~ msgstr "Châu Mỹ/Cancun"
+
+#~ msgid "America/Merida"
+#~ msgstr "Châu Mỹ/Merida"
+
+#~ msgid "America/Monterrey"
+#~ msgstr "Châu Mỹ/Monterrey"
+
+#~ msgid "America/Mazatlan"
+#~ msgstr "Châu Mỹ/Mazatlan"
+
+#~ msgid "America/Chihuahua"
+#~ msgstr "Châu Mỹ/Chihuahua"
+
+#~ msgid "America/Hermosillo"
+#~ msgstr "Châu Mỹ/Hermosillo"
+
+#~ msgid "America/Tijuana"
+#~ msgstr "Châu Mỹ/Tijuana"
+
+#~ msgid "Asia/Kuala_Lumpur"
+#~ msgstr "Châu Á/Kuala_Lumpur"
+
+#~ msgid "Asia/Kuching"
+#~ msgstr "Châu Á/Kuching"
+
+#~ msgid "Africa/Maputo"
+#~ msgstr "Châu Phi/Maputo"
+
+#~ msgid "Africa/Windhoek"
+#~ msgstr "Châu Phi/Windhoek"
+
+#~ msgid "Pacific/Noumea"
+#~ msgstr "Thái Bình Dương/Noumea"
+
+#~ msgid "Africa/Niamey"
+#~ msgstr "Châu Phi/Niamey"
+
+#~ msgid "Pacific/Norfolk"
+#~ msgstr "Thái Bình Dương/Norfolk"
+
+#~ msgid "Africa/Lagos"
+#~ msgstr "Châu Phi/Lagos"
+
+#~ msgid "America/Managua"
+#~ msgstr "Châu Mỹ/Managua"
+
+#~ msgid "Europe/Amsterdam"
+#~ msgstr "Châu Âu/Amsterdam"
+
+#~ msgid "Europe/Oslo"
+#~ msgstr "Châu Âu/Oslo"
+
+#~ msgid "Pacific/Nauru"
+#~ msgstr "Thái Bình Dương/Nauru"
+
+#~ msgid "Pacific/Niue"
+#~ msgstr "Thái Bình Dương/Niue"
+
+#~ msgid "Pacific/Auckland"
+#~ msgstr "Thái Bình Dương/Auckland"
+
+#~ msgid "Pacific/Chatham"
+#~ msgstr "Thái Bình Dương/Chatham"
+
+#~ msgid "Asia/Muscat"
+#~ msgstr "Châu Á/Muscat"
+
+#~ msgid "America/Panama"
+#~ msgstr "Châu Mỹ/Panama"
+
+#~ msgid "America/Lima"
+#~ msgstr "Châu Mỹ/Lima"
+
+#~ msgid "Pacific/Tahiti"
+#~ msgstr "Thái Bình Dương/Tahiti"
+
+#~ msgid "Pacific/Marquesas"
+#~ msgstr "Thái Bình Dương/Marquesas"
+
+#~ msgid "Pacific/Gambier"
+#~ msgstr "Thái Bình Dương/Gambier"
+
+#~ msgid "Pacific/Port_Moresby"
+#~ msgstr "Thái Bình Dương/Port_Moresby"
+
+#~ msgid "Asia/Manila"
+#~ msgstr "Châu Á/Manila"
+
+#~ msgid "Asia/Karachi"
+#~ msgstr "Châu Á/Karachi"
+
+#~ msgid "Europe/Warsaw"
+#~ msgstr "Châu Âu/Warsaw"
+
+#~ msgid "America/Miquelon"
+#~ msgstr "Châu Mỹ/Miquelon"
+
+#~ msgid "Pacific/Pitcairn"
+#~ msgstr "Thái Bình Dương/Pitcairn"
+
+#~ msgid "America/Puerto_Rico"
+#~ msgstr "Châu Mỹ/Puerto_Rico"
+
+#~ msgid "Asia/Gaza"
+#~ msgstr "Châu Á/Gaza"
+
+#~ msgid "Europe/Lisbon"
+#~ msgstr "Châu Âu/Lisbon"
+
+#~ msgid "Atlantic/Madeira"
+#~ msgstr "Đại Tây Dương/Madeira"
+
+#~ msgid "Atlantic/Azores"
+#~ msgstr "Đại Tây Dương/Azores"
+
+#~ msgid "Pacific/Palau"
+#~ msgstr "Thái Bình Dương/Palau"
+
+#~ msgid "America/Asuncion"
+#~ msgstr "Châu Mỹ/Asuncion"
+
+#~ msgid "Asia/Qatar"
+#~ msgstr "Châu Á/Qatar"
+
+#~ msgid "Indian/Reunion"
+#~ msgstr "Ấn Độ Dương/Reunion"
+
+#~ msgid "Europe/Bucharest"
+#~ msgstr "Châu Âu/Bucharest"
+
+#~ msgid "Europe/Belgrade"
+#~ msgstr "Châu Âu/Belgrade"
+
+#~ msgid "Europe/Kaliningrad"
+#~ msgstr "Châu Âu/Kaliningrad"
+
+#~ msgid "Europe/Moscow"
+#~ msgstr "Châu Âu/Moscow"
+
+#~ msgid "Europe/Simferopol"
+#~ msgstr "Châu Âu/Simferopol"
+
+#~ msgid "Europe/Samara"
+#~ msgstr "Châu Âu/Samara"
+
+#~ msgid "Asia/Yekaterinburg"
+#~ msgstr "Châu Á/Yekaterinburg"
+
+#~ msgid "Asia/Omsk"
+#~ msgstr "Châu Á/Omsk"
+
+#~ msgid "Asia/Novosibirsk"
+#~ msgstr "Châu Á/Novosibirsk"
+
+#~ msgid "Asia/Krasnoyarsk"
+#~ msgstr "Châu Á/Krasnoyarsk"
+
+#~ msgid "Asia/Irkutsk"
+#~ msgstr "Châu Á/Irkutsk"
+
+#~ msgid "Asia/Yakutsk"
+#~ msgstr "Châu Á/Yakutsk"
+
+#~ msgid "Asia/Vladivostok"
+#~ msgstr "Châu Á/Vladivostok"
+
+#~ msgid "Asia/Sakhalin"
+#~ msgstr "Châu Á/Sakhalin"
+
+#~ msgid "Asia/Magadan"
+#~ msgstr "Châu Á/Magadan"
+
+#~ msgid "Asia/Kamchatka"
+#~ msgstr "Châu Á/Kamchatka"
+
+#~ msgid "Asia/Anadyr"
+#~ msgstr "Châu Á/Anadyr"
+
+#~ msgid "Africa/Kigali"
+#~ msgstr "Châu Phi/Kigali"
+
+#~ msgid "Asia/Riyadh"
+#~ msgstr "Châu Á/Riyadh"
+
+#~ msgid "Pacific/Guadalcanal"
+#~ msgstr "Thái Bình Dương/Guadalcanal"
+
+#~ msgid "Indian/Mahe"
+#~ msgstr "Ấn Độ Dương/Mahe"
+
+#~ msgid "Africa/Khartoum"
+#~ msgstr "Châu Phi/Khartoum"
+
+#~ msgid "Europe/Stockholm"
+#~ msgstr "Châu Âu/Stockholm"
+
+#~ msgid "Asia/Singapore"
+#~ msgstr "Châu Á/Singapore"
+
+#~ msgid "Atlantic/St_Helena"
+#~ msgstr "Đại Tây Dương/St_Helena"
+
+#~ msgid "Europe/Ljubljana"
+#~ msgstr "Châu Âu/Ljubljana"
+
+#~ msgid "Europe/Bratislava"
+#~ msgstr "Châu Âu/Bratislava"
+
+#~ msgid "Africa/Freetown"
+#~ msgstr "Châu Phi/Freetown"
+
+#~ msgid "Europe/San_Marino"
+#~ msgstr "Châu Âu/San_Marino"
+
+#~ msgid "Africa/Dakar"
+#~ msgstr "Châu Phi/Dakar"
+
+#~ msgid "Africa/Mogadishu"
+#~ msgstr "Châu Phi/Mogadishu"
+
+#~ msgid "America/Paramaribo"
+#~ msgstr "Châu Mỹ/Paramaribo"
+
+#~ msgid "Africa/Sao_Tome"
+#~ msgstr "Châu Phi/Sao_Tome"
+
+#~ msgid "America/El_Salvador"
+#~ msgstr "Châu Mỹ/El_Salvador"
+
+#~ msgid "Asia/Damascus"
+#~ msgstr "Châu Á/Damascus"
+
+#~ msgid "Africa/Mbabane"
+#~ msgstr "Châu Phi/Mbabane"
+
+#~ msgid "America/Grand_Turk"
+#~ msgstr "Châu Mỹ/Grand_Turk"
+
+#~ msgid "Africa/Ndjamena"
+#~ msgstr "Châu Phi/Ndjamena"
+
+#~ msgid "Indian/Kerguelen"
+#~ msgstr "Ấn Độ Dương/Kerguelen"
+
+#~ msgid "Africa/Lome"
+#~ msgstr "Châu Phi/Lome"
+
+#~ msgid "Asia/Bangkok"
+#~ msgstr "Châu Á/Bangkok"
+
+#~ msgid "Asia/Dushanbe"
+#~ msgstr "Châu Á/Dushanbe"
+
+#~ msgid "Pacific/Fakaofo"
+#~ msgstr "Thái Bình Dương/Fakaofo"
+
+#~ msgid "Asia/Dili"
+#~ msgstr "Châu Á/Dili"
+
+#~ msgid "Asia/Ashgabat"
+#~ msgstr "Châu Á/Ashgabat"
+
+#~ msgid "Africa/Tunis"
+#~ msgstr "Châu Phi/Tunis"
+
+#~ msgid "Pacific/Tongatapu"
+#~ msgstr "Thái Bình Dương/Tongatapu"
+
+#~ msgid "Europe/Istanbul"
+#~ msgstr "Châu Âu/Istanbul"
+
+#~ msgid "America/Port_of_Spain"
+#~ msgstr "Châu Mỹ/Port_of_Spain"
+
+#~ msgid "Pacific/Funafuti"
+#~ msgstr "Thái Bình Dương/Funafuti"
+
+#~ msgid "Asia/Taipei"
+#~ msgstr "Châu Á/Taipei"
+
+#~ msgid "Africa/Dar_es_Salaam"
+#~ msgstr "Châu Phi/Dar_es_Salaam"
+
+#~ msgid "Europe/Kiev"
+#~ msgstr "Châu Âu/Kiev"
+
+#~ msgid "Europe/Uzhgorod"
+#~ msgstr "Châu Âu/Uzhgorod"
+
+#~ msgid "Europe/Zaporozhye"
+#~ msgstr "Châu Âu/Zaporozhye"
+
+#~ msgid "Africa/Kampala"
+#~ msgstr "Châu Phi/Kampala"
+
+#~ msgid "Pacific/Johnston"
+#~ msgstr "Thái Bình Dương/Johnston"
+
+#~ msgid "Pacific/Midway"
+#~ msgstr "Thái Bình Dương/Midway"
+
+#~ msgid "Pacific/Wake"
+#~ msgstr "Thái Bình Dương/Wake"
+
+#~ msgid "America/New_York"
+#~ msgstr "Châu Mỹ/New_York"
+
+#~ msgid "America/Detroit"
+#~ msgstr "Châu Mỹ/Detroit"
+
+#~ msgid "America/Kentucky/Louisville"
+#~ msgstr "Châu Mỹ/Kentucky/Louisville"
+
+#~ msgid "America/Kentucky/Monticello"
+#~ msgstr "Châu Mỹ/Kentucky/Monticello"
+
+#~ msgid "America/Indiana/Indianapolis"
+#~ msgstr "Châu Mỹ/Indiana/Indianapolis"
+
+#~ msgid "America/Indiana/Marengo"
+#~ msgstr "Châu Mỹ/Indiana/Marengo"
+
+#~ msgid "America/Indiana/Vevay"
+#~ msgstr "Châu Mỹ/Indiana/Vevay"
+
+#~ msgid "America/Chicago"
+#~ msgstr "Châu Mỹ/Chicago"
+
+#~ msgid "America/Indiana/Knox"
+#~ msgstr "Châu Mỹ/Indiana/Knox"
+
+#~ msgid "America/Menominee"
+#~ msgstr "Châu Mỹ/Menominee"
+
+#~ msgid "America/North_Dakota/Center"
+#~ msgstr "Châu Mỹ/North_Dakota/Center"
+
+#~ msgid "America/Denver"
+#~ msgstr "Châu Mỹ/Denver"
+
+#~ msgid "America/Boise"
+#~ msgstr "Châu Mỹ/Boise"
+
+#~ msgid "America/Phoenix"
+#~ msgstr "Châu Mỹ/Phoenix"
+
+#~ msgid "America/Los_Angeles"
+#~ msgstr "Châu Mỹ/Los_Angeles"
+
+#~ msgid "America/Anchorage"
+#~ msgstr "Châu Mỹ/Anchorage"
+
+#~ msgid "America/Juneau"
+#~ msgstr "Châu Mỹ/Juneau"
+
+#~ msgid "America/Yakutat"
+#~ msgstr "Châu Mỹ/Yakutat"
+
+#~ msgid "America/Nome"
+#~ msgstr "Châu Mỹ/Nome"
+
+#~ msgid "America/Adak"
+#~ msgstr "Châu Mỹ/Adak"
+
+#~ msgid "Pacific/Honolulu"
+#~ msgstr "Thái Bình Dương/Honolulu"
+
+#~ msgid "America/Montevideo"
+#~ msgstr "Châu Mỹ/Montevideo"
+
+#~ msgid "Asia/Samarkand"
+#~ msgstr "Châu Á/Samarkand"
+
+#~ msgid "Asia/Tashkent"
+#~ msgstr "Châu Á/Tashkent"
+
+#~ msgid "Europe/Vatican"
+#~ msgstr "Châu Âu/Vatican"
+
+#~ msgid "America/St_Vincent"
+#~ msgstr "Châu Mỹ/St_Vincent"
+
+#~ msgid "America/Caracas"
+#~ msgstr "Châu Mỹ/Caracas"
+
+#~ msgid "America/Tortola"
+#~ msgstr "Châu Mỹ/Tortola"
+
+#~ msgid "America/St_Thomas"
+#~ msgstr "Châu Mỹ/St_Thomas"
+
+#~ msgid "Pacific/Efate"
+#~ msgstr "Thái Bình Dương/Efate"
+
+#~ msgid "Pacific/Wallis"
+#~ msgstr "Thái Bình Dương/Wallis"
+
+#~ msgid "Pacific/Apia"
+#~ msgstr "Thái Bình Dương/Apia"
+
+#~ msgid "Asia/Aden"
+#~ msgstr "Châu Á/Aden"
+
+#~ msgid "Indian/Mayotte"
+#~ msgstr "Ấn Độ Dương/Mayotte"
+
+#~ msgid "Africa/Johannesburg"
+#~ msgstr "Châu Phi/Johannesburg"
+
+#~ msgid "Africa/Lusaka"
+#~ msgstr "Châu Phi/Lusaka"
+
+#~ msgid "Africa/Harare"
+#~ msgstr "Châu Phi/Harare"

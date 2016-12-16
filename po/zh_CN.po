@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-12-14 20:29-0600\n"
-"PO-Revision-Date: 2016-12-15 05:14+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-12-15 05:42+0000\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-15 05:15+0000\n"
+"X-Launchpad-Export-Date: 2016-12-16 06:03+0000\n"
 "X-Generator: Launchpad (build 18293)\n"
 
 #: ../src/MainView.vala:85
@@ -32,3 +32,1891 @@ msgstr ""
 #: ../src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
 msgstr ""
+
+#~ msgid "Date & Time"
+#~ msgstr "日期和时间"
+
+#~ msgid "Configure date, time, and select time zone"
+#~ msgstr "配置时间、日期和时区"
+
+#~ msgid "Network Time:"
+#~ msgstr "网络时间："
+
+#~ msgid "Time Format:"
+#~ msgstr "时间格式："
+
+#~ msgid "24h"
+#~ msgstr "24小时制"
+
+#~ msgid "AM/PM"
+#~ msgstr "上午/下午"
+
+#~ msgid "Time Zone:"
+#~ msgstr "时区："
+
+#~ msgid "Network Time"
+#~ msgstr "网络时间"
+
+#~ msgid "Time"
+#~ msgstr "时间"
+
+#~ msgid "Date"
+#~ msgstr "日期"
+
+#~ msgid "Time Zone"
+#~ msgstr "时区"
+
+#~ msgid "Time Format"
+#~ msgstr "时间格式"
+
+#~ msgid "Europe/Andorra"
+#~ msgstr "欧洲/安道尔"
+
+#~ msgid "Asia/Dubai"
+#~ msgstr "亚洲/迪拜"
+
+#~ msgid "Asia/Kabul"
+#~ msgstr "亚洲/喀布尔"
+
+#~ msgid "America/Antigua"
+#~ msgstr "美洲/安提瓜"
+
+#~ msgid "America/Anguilla"
+#~ msgstr "美洲/安圭拉"
+
+#~ msgid "Europe/Tirane"
+#~ msgstr "欧洲/地拉那"
+
+#~ msgid "Asia/Yerevan"
+#~ msgstr "亚洲/埃里温"
+
+#~ msgid "Africa/Luanda"
+#~ msgstr "非洲/罗安达"
+
+#~ msgid "Antarctica/McMurdo"
+#~ msgstr "南极洲/麦克默多"
+
+#~ msgid "McMurdo, South Pole, Scott (New Zealand time)"
+#~ msgstr "麦克默多站，南极洲，斯科特基地（新西兰时间）"
+
+#~ msgid "Antarctica/Rothera"
+#~ msgstr "南极洲∕罗瑟拉"
+
+#~ msgid "Rothera Station, Adelaide Island"
+#~ msgstr "罗瑟拉站，阿德莱德岛"
+
+#~ msgid "Antarctica/Palmer"
+#~ msgstr "南极洲/帕默"
+
+#~ msgid "Palmer Station, Anvers Island"
+#~ msgstr "帕默站，安弗斯岛"
+
+#~ msgid "Antarctica/Mawson"
+#~ msgstr "南极洲/莫森"
+
+#~ msgid "Mawson Station, Holme Bay"
+#~ msgstr "莫森站，霍姆湾"
+
+#~ msgid "Antarctica/Davis"
+#~ msgstr "南极洲/戴维斯"
+
+#~ msgid "Davis Station, Vestfold Hills"
+#~ msgstr "戴维斯站，韦斯特福尔德丘陵"
+
+#~ msgid "Antarctica/Casey"
+#~ msgstr "南极洲/凯西"
+
+#~ msgid "Casey Station, Bailey Peninsula"
+#~ msgstr "凯西站，贝利半岛"
+
+#~ msgid "Antarctica/Vostok"
+#~ msgstr "南极洲/东方站"
+
+#~ msgid "Vostok Station, Lake Vostok"
+#~ msgstr "沃斯托克科考站，沃斯托克湖"
+
+#~ msgid "Antarctica/DumontDUrville"
+#~ msgstr "南极洲/杜蒙特迪维尔"
+
+#~ msgid "Dumont-d'Urville Station, Adelie Land"
+#~ msgstr "迪蒙·迪维尔站，阿黛利地带"
+
+#~ msgid "Antarctica/Syowa"
+#~ msgstr "南极洲/昭和"
+
+#~ msgid "Syowa Station, E Ongul I"
+#~ msgstr "昭和站，翁古尔岛东部"
+
+#~ msgid "Antarctica/Troll"
+#~ msgstr "南极洲/特洛站"
+
+#~ msgid "Troll Station, Queen Maud Land"
+#~ msgstr "特洛站，毛德皇后地"
+
+#~ msgid "America/Argentina/Buenos_Aires"
+#~ msgstr "美洲/阿根廷/布宜诺斯艾利斯"
+
+#~ msgid "Buenos Aires (BA, CF)"
+#~ msgstr "布宜诺斯艾利斯（BA，CF）"
+
+#~ msgid "America/Argentina/Cordoba"
+#~ msgstr "美洲/阿根廷/科尔多瓦"
+
+#~ msgid "most locations (CB, CC, CN, ER, FM, MN, SE, SF)"
+#~ msgstr "大部分地区（CB，CC，CN，ER，FM，MN，SE，SF）"
+
+#~ msgid "America/Argentina/Salta"
+#~ msgstr "美洲/阿根廷/萨尔塔"
+
+#~ msgid "(SA, LP, NQ, RN)"
+#~ msgstr "(SA，LP，NQ，RN）"
+
+#~ msgid "America/Argentina/Jujuy"
+#~ msgstr "美洲/阿根廷/胡惠"
+
+#~ msgid "Jujuy (JY)"
+#~ msgstr "胡惠（JY）"
+
+#~ msgid "America/Argentina/Tucuman"
+#~ msgstr "美洲/阿根廷/图库曼"
+
+#~ msgid "Tucuman (TM)"
+#~ msgstr "图库曼（TM）"
+
+#~ msgid "America/Argentina/Catamarca"
+#~ msgstr "美洲/阿根廷/卡塔马卡"
+
+#~ msgid "Catamarca (CT), Chubut (CH)"
+#~ msgstr "卡塔马卡（CT）,丘布特（CH）"
+
+#~ msgid "America/Argentina/La_Rioja"
+#~ msgstr "美洲/阿根廷/拉里奥哈"
+
+#~ msgid "La Rioja (LR)"
+#~ msgstr "拉里奥哈（LR）"
+
+#~ msgid "America/Argentina/San_Juan"
+#~ msgstr "美洲/阿根廷/圣胡安"
+
+#~ msgid "San Juan (SJ)"
+#~ msgstr "圣胡安（SJ）"
+
+#~ msgid "America/Argentina/Mendoza"
+#~ msgstr "美洲/阿根廷/门多萨"
+
+#~ msgid "Mendoza (MZ)"
+#~ msgstr "门多萨（MZ）"
+
+#~ msgid "America/Argentina/San_Luis"
+#~ msgstr "美洲/阿根廷/圣路易斯"
+
+#~ msgid "San Luis (SL)"
+#~ msgstr "圣路易斯（SL）"
+
+#~ msgid "America/Argentina/Rio_Gallegos"
+#~ msgstr "美洲∕阿根廷∕里奥加耶戈斯"
+
+#~ msgid "Santa Cruz (SC)"
+#~ msgstr "圣克鲁斯（SC）"
+
+#~ msgid "America/Argentina/Ushuaia"
+#~ msgstr "美洲/阿根廷/乌斯怀亚"
+
+#~ msgid "Tierra del Fuego (TF)"
+#~ msgstr "火地岛（TF）"
+
+#~ msgid "Pacific/Pago_Pago"
+#~ msgstr "太平洋/帕果帕果"
+
+#~ msgid "Europe/Vienna"
+#~ msgstr "欧洲/维也纳"
+
+#~ msgid "Australia/Lord_Howe"
+#~ msgstr "澳洲/豪勋爵"
+
+#~ msgid "Lord Howe Island"
+#~ msgstr "豪勋爵岛"
+
+#~ msgid "Antarctica/Macquarie"
+#~ msgstr "南极洲/麦夸里"
+
+#~ msgid "Macquarie Island"
+#~ msgstr "麦夸里岛"
+
+#~ msgid "Australia/Hobart"
+#~ msgstr "澳洲/霍巴特"
+
+#~ msgid "Tasmania - most locations"
+#~ msgstr "塔斯马尼亚 - 大部分地区"
+
+#~ msgid "Australia/Currie"
+#~ msgstr "澳洲∕柯里"
+
+#~ msgid "Tasmania - King Island"
+#~ msgstr "塔斯马尼亚 - 金岛"
+
+#~ msgid "Australia/Melbourne"
+#~ msgstr "澳洲/墨尔本"
+
+#~ msgid "Victoria"
+#~ msgstr "维多利亚"
+
+#~ msgid "Australia/Sydney"
+#~ msgstr "澳洲/悉尼"
+
+#~ msgid "New South Wales - most locations"
+#~ msgstr "新南威尔士 - 大部分地区"
+
+#~ msgid "Australia/Broken_Hill"
+#~ msgstr "澳洲∕布罗肯希尔"
+
+#~ msgid "New South Wales - Yancowinna"
+#~ msgstr "新南威尔士 - 扬科维纳"
+
+#~ msgid "Australia/Brisbane"
+#~ msgstr "澳洲/布里斯班"
+
+#~ msgid "Queensland - most locations"
+#~ msgstr "昆士兰 - 大部分地区"
+
+#~ msgid "Australia/Lindeman"
+#~ msgstr "澳洲/林德曼"
+
+#~ msgid "Queensland - Holiday Islands"
+#~ msgstr "昆士兰 - 假日群岛"
+
+#~ msgid "Australia/Adelaide"
+#~ msgstr "澳洲∕阿德莱德"
+
+#~ msgid "South Australia"
+#~ msgstr "南澳大利亚"
+
+#~ msgid "Australia/Darwin"
+#~ msgstr "澳洲/达尔文"
+
+#~ msgid "Northern Territory"
+#~ msgstr "北区"
+
+#~ msgid "Australia/Perth"
+#~ msgstr "澳洲/珀斯"
+
+#~ msgid "Western Australia - most locations"
+#~ msgstr "澳大利亚西部 - 大部分地区"
+
+#~ msgid "Australia/Eucla"
+#~ msgstr "澳洲/尤克拉"
+
+#~ msgid "Western Australia - Eucla area"
+#~ msgstr "澳大利亚西部 - 尤克拉地区"
+
+#~ msgid "America/Aruba"
+#~ msgstr "美洲/阿鲁巴"
+
+#~ msgid "Europe/Mariehamn"
+#~ msgstr "欧洲∕玛丽港"
+
+#~ msgid "Asia/Baku"
+#~ msgstr "亚洲/巴库"
+
+#~ msgid "Europe/Sarajevo"
+#~ msgstr "欧洲/萨拉热窝"
+
+#~ msgid "America/Barbados"
+#~ msgstr "美洲/巴巴多斯"
+
+#~ msgid "Asia/Dhaka"
+#~ msgstr "亚洲/达卡"
+
+#~ msgid "Europe/Brussels"
+#~ msgstr "欧洲/布鲁塞尔"
+
+#~ msgid "Africa/Ouagadougou"
+#~ msgstr "非洲/瓦加杜古"
+
+#~ msgid "Europe/Sofia"
+#~ msgstr "欧洲/索非亚"
+
+#~ msgid "Asia/Bahrain"
+#~ msgstr "亚洲/巴林"
+
+#~ msgid "Africa/Bujumbura"
+#~ msgstr "非洲/布琼布拉"
+
+#~ msgid "Africa/Porto-Novo"
+#~ msgstr "非洲/波多诺伏"
+
+#~ msgid "America/St_Barthelemy"
+#~ msgstr "美洲∕圣巴泰勒米"
+
+#~ msgid "Atlantic/Bermuda"
+#~ msgstr "大西洋/百慕达"
+
+#~ msgid "Asia/Brunei"
+#~ msgstr "亚洲/文莱"
+
+#~ msgid "America/La_Paz"
+#~ msgstr "美洲/拉巴斯"
+
+#~ msgid "America/Kralendijk"
+#~ msgstr "美洲/克拉伦代克"
+
+#~ msgid "America/Noronha"
+#~ msgstr "美洲/诺罗尼亚"
+
+#~ msgid "Atlantic islands"
+#~ msgstr "大西洋群岛"
+
+#~ msgid "America/Belem"
+#~ msgstr "美洲/贝伦"
+
+#~ msgid "Amapa, E Para"
+#~ msgstr "阿马帕，巴拉东部"
+
+#~ msgid "America/Fortaleza"
+#~ msgstr "美洲/福塔莱萨"
+
+#~ msgid "NE Brazil (MA, PI, CE, RN, PB)"
+#~ msgstr "巴西东北部（MA，PI，CE，RN，PB）"
+
+#~ msgid "America/Recife"
+#~ msgstr "美洲/雷西腓"
+
+#~ msgid "Pernambuco"
+#~ msgstr "伯南布哥"
+
+#~ msgid "America/Araguaina"
+#~ msgstr "美洲/阿拉瓜伊那"
+
+#~ msgid "Tocantins"
+#~ msgstr "托坎廷斯"
+
+#~ msgid "America/Maceio"
+#~ msgstr "美洲/马塞约"
+
+#~ msgid "Alagoas, Sergipe"
+#~ msgstr "阿拉戈斯，塞尔希培"
+
+#~ msgid "America/Bahia"
+#~ msgstr "美洲/巴伊亚"
+
+#~ msgid "Bahia"
+#~ msgstr "巴伊亚"
+
+#~ msgid "America/Sao_Paulo"
+#~ msgstr "美洲/圣保罗"
+
+#~ msgid "S & SE Brazil (GO, DF, MG, ES, RJ, SP, PR, SC, RS)"
+#~ msgstr "巴西南部和东南部（GO，DF，MG，ES，RJ，SP，PR，SC，RS）"
+
+#~ msgid "America/Campo_Grande"
+#~ msgstr "美洲/大坎普"
+
+#~ msgid "Mato Grosso do Sul"
+#~ msgstr "马托格罗索南部"
+
+#~ msgid "America/Cuiaba"
+#~ msgstr "美洲/库亚巴"
+
+#~ msgid "Mato Grosso"
+#~ msgstr "马托格罗索"
+
+#~ msgid "America/Santarem"
+#~ msgstr "美国/圣塔伦"
+
+#~ msgid "W Para"
+#~ msgstr "巴拉西部"
+
+#~ msgid "America/Porto_Velho"
+#~ msgstr "美洲/韦柳港"
+
+#~ msgid "Rondonia"
+#~ msgstr "朗多尼亚"
+
+#~ msgid "America/Boa_Vista"
+#~ msgstr "美洲/博阿维斯塔"
+
+#~ msgid "Roraima"
+#~ msgstr "罗赖马"
+
+#~ msgid "America/Manaus"
+#~ msgstr "美洲/马瑙斯"
+
+#~ msgid "E Amazonas"
+#~ msgstr "亚马逊东部"
+
+#~ msgid "America/Eirunepe"
+#~ msgstr "美洲/埃鲁内佩"
+
+#~ msgid "W Amazonas"
+#~ msgstr "亚马孙西部"
+
+#~ msgid "America/Rio_Branco"
+#~ msgstr "美洲/里奥布朗库"
+
+#~ msgid "Acre"
+#~ msgstr "阿克里"
+
+#~ msgid "America/Nassau"
+#~ msgstr "美洲/拿骚"
+
+#~ msgid "Asia/Thimphu"
+#~ msgstr "亚洲/廷布"
+
+#~ msgid "Africa/Gaborone"
+#~ msgstr "非洲/哈博罗内"
+
+#~ msgid "Europe/Minsk"
+#~ msgstr "欧洲/明思克"
+
+#~ msgid "America/Belize"
+#~ msgstr "美洲/伯利茲"
+
+#~ msgid "America/St_Johns"
+#~ msgstr "美洲/圣约翰斯"
+
+#~ msgid "Newfoundland Time, including SE Labrador"
+#~ msgstr "纽芬兰时间，包括拉布拉多东南部"
+
+#~ msgid "America/Halifax"
+#~ msgstr "美洲/哈利法克斯"
+
+#~ msgid "Atlantic Time - Nova Scotia (peninsula), PEI"
+#~ msgstr "大西洋时间 - 新斯科舍(半岛), PEI"
+
+#~ msgid "America/Glace_Bay"
+#~ msgstr "美洲/格莱斯湾"
+
+#~ msgid "Atlantic Time - Nova Scotia (Cape Breton)"
+#~ msgstr "大西洋时间 - 新斯科舍(布雷顿角)"
+
+#~ msgid "America/Moncton"
+#~ msgstr "美洲∕蒙克顿"
+
+#~ msgid "Atlantic Time - New Brunswick"
+#~ msgstr "大西洋时间 - 新不伦瑞克"
+
+#~ msgid "America/Goose_Bay"
+#~ msgstr "美洲/古斯湾"
+
+#~ msgid "Atlantic Time - Labrador - most locations"
+#~ msgstr "大西洋时间 - 拉布拉多 - 大部分地区"
+
+#~ msgid "America/Blanc-Sablon"
+#~ msgstr "美洲∕布朗萨布隆"
+
+#~ msgid "Atlantic Standard Time - Quebec - Lower North Shore"
+#~ msgstr "大西洋标准时间 - 魁北克 - 下北岸"
+
+#~ msgid "America/Toronto"
+#~ msgstr "美洲/多伦多"
+
+#~ msgid "Eastern Time - Ontario & Quebec - most locations"
+#~ msgstr "东部时间-安大略和魁北克省-大部分地区"
+
+#~ msgid "America/Nipigon"
+#~ msgstr "美洲/尼皮贡"
+
+#~ msgid ""
+#~ "Eastern Time - Ontario & Quebec - places that did not observe DST 1967-1973"
+#~ msgstr "东部时间 - 安大略和魁北克 - 不遵循 DST 1967-1973 的地区"
+
+#~ msgid "America/Thunder_Bay"
+#~ msgstr "美洲/桑德湾"
+
+#~ msgid "Eastern Time - Thunder Bay, Ontario"
+#~ msgstr "东部时间 - 桑德湾，安大略"
+
+#~ msgid "America/Iqaluit"
+#~ msgstr "美洲/伊卡卢伊特"
+
+#~ msgid "Eastern Time - east Nunavut - most locations"
+#~ msgstr "东部时间 - 纽纳瓦特东部 - 大部分地区"
+
+#~ msgid "America/Pangnirtung"
+#~ msgstr "美洲/庞纳唐"
+
+#~ msgid "Eastern Time - Pangnirtung, Nunavut"
+#~ msgstr "东部时间 - 庞纳唐，纽纳瓦特"
+
+#~ msgid "America/Resolute"
+#~ msgstr "美洲∕雷索卢特"
+
+#~ msgid "Central Time - Resolute, Nunavut"
+#~ msgstr "中部时间-努纳武特省雷索卢特"
+
+#~ msgid "America/Atikokan"
+#~ msgstr "美洲∕阿蒂科肯"
+
+#~ msgid "Eastern Standard Time - Atikokan, Ontario and Southampton I, Nunavut"
+#~ msgstr "东部标准时间 - 阿蒂科肯，安大略和南安普敦岛，纽纳瓦特"
+
+#~ msgid "America/Rankin_Inlet"
+#~ msgstr "美洲/兰金因莱特"
+
+#~ msgid "Central Time - central Nunavut"
+#~ msgstr "中部时间 - 纽纳瓦特中部"
+
+#~ msgid "America/Winnipeg"
+#~ msgstr "美洲/温尼伯"
+
+#~ msgid "Central Time - Manitoba & west Ontario"
+#~ msgstr "中部时间 - 马尼托巴和安大略西部"
+
+#~ msgid "America/Rainy_River"
+#~ msgstr "美洲/雷尼里弗"
+
+#~ msgid "Central Time - Rainy River & Fort Frances, Ontario"
+#~ msgstr "中部时间 - 雷尼河和弗朗西斯堡，安大略"
+
+#~ msgid "America/Regina"
+#~ msgstr "美洲/里贾那"
+
+#~ msgid "Central Standard Time - Saskatchewan - most locations"
+#~ msgstr "中部标准时间 - 萨斯喀彻温 - 大部分地区"
+
+#~ msgid "America/Swift_Current"
+#~ msgstr "美洲/斯威夫特卡伦特"
+
+#~ msgid "Central Standard Time - Saskatchewan - midwest"
+#~ msgstr "中部标准时间 - 萨斯喀彻温 - 中西部"
+
+#~ msgid "America/Edmonton"
+#~ msgstr "美洲/埃德蒙顿"
+
+#~ msgid "Mountain Time - Alberta, east British Columbia & west Saskatchewan"
+#~ msgstr "山地时间 - 艾伯塔，不列颠哥伦比亚东部和萨斯喀彻温西部"
+
+#~ msgid "America/Cambridge_Bay"
+#~ msgstr "美洲/剑桥湾"
+
+#~ msgid "Mountain Time - west Nunavut"
+#~ msgstr "山地时间 - 纽纳瓦特西部"
+
+#~ msgid "America/Yellowknife"
+#~ msgstr "美洲/耶洛奈夫"
+
+#~ msgid "Mountain Time - central Northwest Territories"
+#~ msgstr "山地时间 - 西北区中部"
+
+#~ msgid "America/Inuvik"
+#~ msgstr "美洲/伊努维克"
+
+#~ msgid "Mountain Time - west Northwest Territories"
+#~ msgstr "山地时间 - 西西北区"
+
+#~ msgid "America/Creston"
+#~ msgstr "美洲/克雷斯顿"
+
+#~ msgid "Mountain Standard Time - Creston, British Columbia"
+#~ msgstr "山地标准时间-不列颠哥伦比亚省克雷斯顿"
+
+#~ msgid "America/Dawson_Creek"
+#~ msgstr "美洲/道森克里克"
+
+#~ msgid ""
+#~ "Mountain Standard Time - Dawson Creek & Fort Saint John, British Columbia"
+#~ msgstr "山地标准时间 - 道生克里克和圣约翰堡，不列颠哥伦比亚"
+
+#~ msgid "America/Fort_Nelson"
+#~ msgstr "北美洲/纳尔逊堡"
+
+#~ msgid "Mountain Standard Time - Fort Nelson, British Columbia"
+#~ msgstr "山地时间 - 纳尔逊堡, 不列颠哥伦比亚"
+
+#~ msgid "America/Vancouver"
+#~ msgstr "美洲/温哥华"
+
+#~ msgid "Pacific Time - west British Columbia"
+#~ msgstr "太平洋时间 - 西不列颠哥伦比亚"
+
+#~ msgid "America/Whitehorse"
+#~ msgstr "美洲/怀特霍斯"
+
+#~ msgid "Pacific Time - south Yukon"
+#~ msgstr "太平洋时间 - 育空南部"
+
+#~ msgid "America/Dawson"
+#~ msgstr "美洲/道森"
+
+#~ msgid "Pacific Time - north Yukon"
+#~ msgstr "太平洋时间 - 育空北部"
+
+#~ msgid "Indian/Cocos"
+#~ msgstr "印度洋/可可斯"
+
+#~ msgid "Africa/Kinshasa"
+#~ msgstr "非洲/金沙萨"
+
+#~ msgid "west Dem. Rep. of Congo"
+#~ msgstr "刚果民主共和国西部"
+
+#~ msgid "Africa/Lubumbashi"
+#~ msgstr "非洲/卢本巴希"
+
+#~ msgid "east Dem. Rep. of Congo"
+#~ msgstr "刚果民主共和国东部"
+
+#~ msgid "Africa/Bangui"
+#~ msgstr "非洲/班吉"
+
+#~ msgid "Africa/Brazzaville"
+#~ msgstr "非洲/布拉扎维"
+
+#~ msgid "Europe/Zurich"
+#~ msgstr "欧洲/苏黎世"
+
+#~ msgid "Africa/Abidjan"
+#~ msgstr "非洲/阿比让"
+
+#~ msgid "Pacific/Rarotonga"
+#~ msgstr "太平洋/拉罗汤加"
+
+#~ msgid "America/Santiago"
+#~ msgstr "美洲/圣地亚哥"
+
+#~ msgid "most locations"
+#~ msgstr "大部分地区"
+
+#~ msgid "Pacific/Easter"
+#~ msgstr "太平洋/复活节"
+
+#~ msgid "Easter Island"
+#~ msgstr "复活节岛"
+
+#~ msgid "Africa/Douala"
+#~ msgstr "非洲/杜阿拉"
+
+#~ msgid "Asia/Shanghai"
+#~ msgstr "亚洲/上海"
+
+#~ msgid "Beijing Time"
+#~ msgstr "北京时间"
+
+#~ msgid "Asia/Urumqi"
+#~ msgstr "亚洲/乌鲁木齐"
+
+#~ msgid "Xinjiang Time"
+#~ msgstr "新疆时间"
+
+#~ msgid "America/Bogota"
+#~ msgstr "美洲/波哥大"
+
+#~ msgid "America/Costa_Rica"
+#~ msgstr "美洲/哥斯达黎加"
+
+#~ msgid "America/Havana"
+#~ msgstr "美洲/哈瓦那"
+
+#~ msgid "Atlantic/Cape_Verde"
+#~ msgstr "大西洋/佛得角"
+
+#~ msgid "America/Curacao"
+#~ msgstr "美洲/库拉索岛"
+
+#~ msgid "Indian/Christmas"
+#~ msgstr "印度洋/圣诞"
+
+#~ msgid "Asia/Nicosia"
+#~ msgstr "亚洲/尼科西亚"
+
+#~ msgid "Europe/Prague"
+#~ msgstr "欧洲/布拉格"
+
+#~ msgid "Europe/Berlin"
+#~ msgstr "欧洲/柏林"
+
+#~ msgid "Europe/Busingen"
+#~ msgstr "欧洲/布辛根"
+
+#~ msgid "Busingen"
+#~ msgstr "布辛根"
+
+#~ msgid "Africa/Djibouti"
+#~ msgstr "非洲/吉布提"
+
+#~ msgid "Europe/Copenhagen"
+#~ msgstr "欧洲/哥本哈根"
+
+#~ msgid "America/Dominica"
+#~ msgstr "美洲/多米尼加"
+
+#~ msgid "America/Santo_Domingo"
+#~ msgstr "美洲/圣多明戈"
+
+#~ msgid "Africa/Algiers"
+#~ msgstr "非洲/阿尔及尔"
+
+#~ msgid "America/Guayaquil"
+#~ msgstr "美洲/瓜亚基尔"
+
+#~ msgid "mainland"
+#~ msgstr "大陆"
+
+#~ msgid "Pacific/Galapagos"
+#~ msgstr "太平洋/加拉帕戈斯"
+
+#~ msgid "Galapagos Islands"
+#~ msgstr "加拉帕戈斯群岛"
+
+#~ msgid "Europe/Tallinn"
+#~ msgstr "欧洲/塔林"
+
+#~ msgid "Africa/Cairo"
+#~ msgstr "非洲/开罗"
+
+#~ msgid "Africa/El_Aaiun"
+#~ msgstr "非洲/阿尤恩"
+
+#~ msgid "Africa/Asmara"
+#~ msgstr "非洲/阿斯马拉"
+
+#~ msgid "Europe/Madrid"
+#~ msgstr "欧洲/马德里"
+
+#~ msgid "Africa/Ceuta"
+#~ msgstr "非洲/休达"
+
+#~ msgid "Ceuta & Melilla"
+#~ msgstr "休达和梅利利亚"
+
+#~ msgid "Atlantic/Canary"
+#~ msgstr "大西洋/加那利"
+
+#~ msgid "Canary Islands"
+#~ msgstr "加那利群岛"
+
+#~ msgid "Africa/Addis_Ababa"
+#~ msgstr "非洲/亚的斯亚贝巴"
+
+#~ msgid "Europe/Helsinki"
+#~ msgstr "欧洲/赫尔辛基"
+
+#~ msgid "Pacific/Fiji"
+#~ msgstr "太平洋/斐济"
+
+#~ msgid "Atlantic/Stanley"
+#~ msgstr "大西洋/斯坦利"
+
+#~ msgid "Pacific/Chuuk"
+#~ msgstr "太平洋/楚克"
+
+#~ msgid "Chuuk (Truk) and Yap"
+#~ msgstr "楚克（特鲁克）和雅普"
+
+#~ msgid "Pacific/Pohnpei"
+#~ msgstr "太平洋/波纳佩"
+
+#~ msgid "Pohnpei (Ponape)"
+#~ msgstr "波纳佩（波纳佩岛）"
+
+#~ msgid "Pacific/Kosrae"
+#~ msgstr "太平洋/科斯雷"
+
+#~ msgid "Kosrae"
+#~ msgstr "科斯雷岛"
+
+#~ msgid "Atlantic/Faroe"
+#~ msgstr "大西洋/法罗"
+
+#~ msgid "Europe/Paris"
+#~ msgstr "欧洲/巴黎"
+
+#~ msgid "Africa/Libreville"
+#~ msgstr "非洲/利伯维尔"
+
+#~ msgid "Europe/London"
+#~ msgstr "欧洲/伦敦"
+
+#~ msgid "America/Grenada"
+#~ msgstr "美洲/格林纳达"
+
+#~ msgid "Asia/Tbilisi"
+#~ msgstr "亚洲/第比利斯"
+
+#~ msgid "America/Cayenne"
+#~ msgstr "美洲/卡宴"
+
+#~ msgid "Europe/Guernsey"
+#~ msgstr "欧洲∕根西"
+
+#~ msgid "Africa/Accra"
+#~ msgstr "非洲/阿克拉"
+
+#~ msgid "Europe/Gibraltar"
+#~ msgstr "欧洲/直布罗陀"
+
+#~ msgid "America/Godthab"
+#~ msgstr "美洲/高特哈"
+
+#~ msgid "America/Danmarkshavn"
+#~ msgstr "美洲/丹麦沙文"
+
+#~ msgid "east coast, north of Scoresbysund"
+#~ msgstr "东海岸，斯科斯比松北部"
+
+#~ msgid "America/Scoresbysund"
+#~ msgstr "美洲/斯科斯比松"
+
+#~ msgid "Scoresbysund / Ittoqqortoormiit"
+#~ msgstr "斯科斯比松/伊托科尔托米特"
+
+#~ msgid "America/Thule"
+#~ msgstr "美洲/图勒"
+
+#~ msgid "Thule / Pituffik"
+#~ msgstr "图勒/皮图菲克"
+
+#~ msgid "Africa/Banjul"
+#~ msgstr "非洲/班珠"
+
+#~ msgid "Africa/Conakry"
+#~ msgstr "非洲/科纳克里"
+
+#~ msgid "America/Guadeloupe"
+#~ msgstr "美洲/瓜德卢普"
+
+#~ msgid "Africa/Malabo"
+#~ msgstr "非洲/马拉博"
+
+#~ msgid "Europe/Athens"
+#~ msgstr "欧洲/雅典"
+
+#~ msgid "Atlantic/South_Georgia"
+#~ msgstr "大西洋/南乔治亚"
+
+#~ msgid "America/Guatemala"
+#~ msgstr "美洲/危地马拉"
+
+#~ msgid "Pacific/Guam"
+#~ msgstr "太平洋/关岛"
+
+#~ msgid "Africa/Bissau"
+#~ msgstr "非洲/比绍"
+
+#~ msgid "America/Guyana"
+#~ msgstr "美洲/圭亚那"
+
+#~ msgid "Asia/Hong_Kong"
+#~ msgstr "亚洲/香港"
+
+#~ msgid "America/Tegucigalpa"
+#~ msgstr "美洲/特古西加尔巴"
+
+#~ msgid "Europe/Zagreb"
+#~ msgstr "欧洲/萨格勒布"
+
+#~ msgid "America/Port-au-Prince"
+#~ msgstr "美洲/太子港"
+
+#~ msgid "Europe/Budapest"
+#~ msgstr "欧洲/布达佩斯"
+
+#~ msgid "Asia/Jakarta"
+#~ msgstr "亚洲/雅加达"
+
+#~ msgid "Java & Sumatra"
+#~ msgstr "爪哇和苏门答腊"
+
+#~ msgid "Asia/Pontianak"
+#~ msgstr "亚洲/坤甸"
+
+#~ msgid "west & central Borneo"
+#~ msgstr "婆罗洲西和中部"
+
+#~ msgid "Asia/Makassar"
+#~ msgstr "亚洲∕望加锡"
+
+#~ msgid ""
+#~ "east & south Borneo, Sulawesi (Celebes), Bali, Nusa Tengarra, west Timor"
+#~ msgstr "东/南婆罗州，苏拉威西岛（西里伯斯岛），巴厘岛，努沙登加拉群岛，西帝汶"
+
+#~ msgid "Asia/Jayapura"
+#~ msgstr "亚洲/查亚普拉"
+
+#~ msgid "west New Guinea (Irian Jaya) & Malukus (Moluccas)"
+#~ msgstr "西新几内亚（伊里安查亚）& 马鲁古群岛（摩鹿加群岛）"
+
+#~ msgid "Europe/Dublin"
+#~ msgstr "欧洲/都柏林"
+
+#~ msgid "Asia/Jerusalem"
+#~ msgstr "亚洲/耶路撒冷"
+
+#~ msgid "Europe/Isle_of_Man"
+#~ msgstr "欧洲∕马恩岛"
+
+#~ msgid "Asia/Kolkata"
+#~ msgstr "亚洲/加尔各答"
+
+#~ msgid "Indian/Chagos"
+#~ msgstr "印度洋/查戈斯"
+
+#~ msgid "Asia/Baghdad"
+#~ msgstr "亚洲/巴格达"
+
+#~ msgid "Asia/Tehran"
+#~ msgstr "亚洲/德黑兰"
+
+#~ msgid "Atlantic/Reykjavik"
+#~ msgstr "大西洋/雷克雅未克"
+
+#~ msgid "Europe/Rome"
+#~ msgstr "欧洲/罗马"
+
+#~ msgid "Europe/Jersey"
+#~ msgstr "欧洲∕耶尔赛"
+
+#~ msgid "America/Jamaica"
+#~ msgstr "美洲/牙买加"
+
+#~ msgid "Asia/Amman"
+#~ msgstr "亚洲/安曼"
+
+#~ msgid "Asia/Tokyo"
+#~ msgstr "亚洲/东京"
+
+#~ msgid "Africa/Nairobi"
+#~ msgstr "非洲/内罗比"
+
+#~ msgid "Asia/Bishkek"
+#~ msgstr "亚洲/比什凯克"
+
+#~ msgid "Asia/Phnom_Penh"
+#~ msgstr "亚洲/金边"
+
+#~ msgid "Pacific/Tarawa"
+#~ msgstr "太平洋/塔拉瓦环礁"
+
+#~ msgid "Gilbert Islands"
+#~ msgstr "吉尔伯特群岛"
+
+#~ msgid "Pacific/Enderbury"
+#~ msgstr "太平洋/恩德伯里"
+
+#~ msgid "Phoenix Islands"
+#~ msgstr "菲尼克斯群岛"
+
+#~ msgid "Pacific/Kiritimati"
+#~ msgstr "太平洋/基里马斯岛"
+
+#~ msgid "Line Islands"
+#~ msgstr "莱恩群岛"
+
+#~ msgid "Indian/Comoro"
+#~ msgstr "印度洋/科摩罗"
+
+#~ msgid "America/St_Kitts"
+#~ msgstr "美洲/圣基茨"
+
+#~ msgid "Asia/Pyongyang"
+#~ msgstr "亚洲/平壤"
+
+#~ msgid "Asia/Seoul"
+#~ msgstr "亚洲/首尔"
+
+#~ msgid "Asia/Kuwait"
+#~ msgstr "亚洲/科威特"
+
+#~ msgid "America/Cayman"
+#~ msgstr "美洲/开曼"
+
+#~ msgid "Asia/Almaty"
+#~ msgstr "亚洲/阿拉木图"
+
+#~ msgid "Asia/Qyzylorda"
+#~ msgstr "亚洲∕克孜勒奥尔达"
+
+#~ msgid "Qyzylorda (Kyzylorda, Kzyl-Orda)"
+#~ msgstr "克孜勒奥尔达(克孜勒奥尔达）"
+
+#~ msgid "Asia/Aqtobe"
+#~ msgstr "亚洲/阿克托比"
+
+#~ msgid "Aqtobe (Aktobe)"
+#~ msgstr "阿克托比（阿克托别）"
+
+#~ msgid "Asia/Aqtau"
+#~ msgstr "亚洲/阿克套"
+
+#~ msgid "Atyrau (Atirau, Gur'yev), Mangghystau (Mankistau)"
+#~ msgstr "阿特劳（阿特劳，古里耶夫），曼格斯套（曼吉斯陶）"
+
+#~ msgid "Asia/Oral"
+#~ msgstr "亚洲∕奥勒尔"
+
+#~ msgid "West Kazakhstan"
+#~ msgstr "哈萨克斯坦西部"
+
+#~ msgid "Asia/Vientiane"
+#~ msgstr "亚洲/万象"
+
+#~ msgid "Asia/Beirut"
+#~ msgstr "亚洲/贝鲁特"
+
+#~ msgid "America/St_Lucia"
+#~ msgstr "美洲/圣卢西亚"
+
+#~ msgid "Europe/Vaduz"
+#~ msgstr "欧洲/瓦杜兹"
+
+#~ msgid "Asia/Colombo"
+#~ msgstr "亚洲/科伦坡"
+
+#~ msgid "Africa/Monrovia"
+#~ msgstr "非洲/蒙罗维亚"
+
+#~ msgid "Africa/Maseru"
+#~ msgstr "非洲/马塞卢"
+
+#~ msgid "Europe/Vilnius"
+#~ msgstr "欧洲/维尔纽斯"
+
+#~ msgid "Europe/Luxembourg"
+#~ msgstr "欧洲/卢森堡"
+
+#~ msgid "Europe/Riga"
+#~ msgstr "欧洲/里察"
+
+#~ msgid "Africa/Tripoli"
+#~ msgstr "非洲/的黎波里"
+
+#~ msgid "Africa/Casablanca"
+#~ msgstr "非洲/卡萨布兰卡"
+
+#~ msgid "Europe/Monaco"
+#~ msgstr "欧洲/摩纳哥"
+
+#~ msgid "Europe/Chisinau"
+#~ msgstr "欧洲/基希讷乌"
+
+#~ msgid "Europe/Podgorica"
+#~ msgstr "欧洲/波德戈里察"
+
+#~ msgid "America/Marigot"
+#~ msgstr "美洲∕马里戈特"
+
+#~ msgid "Indian/Antananarivo"
+#~ msgstr "印度洋/安塔那那利佛"
+
+#~ msgid "Pacific/Majuro"
+#~ msgstr "太平洋/马朱罗岛"
+
+#~ msgid "Pacific/Kwajalein"
+#~ msgstr "太平洋/夸贾莱因"
+
+#~ msgid "Kwajalein"
+#~ msgstr "夸贾莱因"
+
+#~ msgid "Europe/Skopje"
+#~ msgstr "欧洲/斯科普里"
+
+#~ msgid "Africa/Bamako"
+#~ msgstr "非洲/巴马科"
+
+#~ msgid "Asia/Rangoon"
+#~ msgstr "亚洲/仰光"
+
+#~ msgid "Asia/Ulaanbaatar"
+#~ msgstr "亚洲/乌兰巴托"
+
+#~ msgid "Asia/Hovd"
+#~ msgstr "亚洲/科布多"
+
+#~ msgid "Bayan-Olgiy, Govi-Altai, Hovd, Uvs, Zavkhan"
+#~ msgstr "巴彦 - 乌列盖，戈壁阿尔泰，科布多，乌布苏，扎布汗"
+
+#~ msgid "Asia/Choibalsan"
+#~ msgstr "亚洲∕乔巴山"
+
+#~ msgid "Dornod, Sukhbaatar"
+#~ msgstr "东方，苏赫巴托尔"
+
+#~ msgid "Asia/Macau"
+#~ msgstr "亚洲/澳门"
+
+#~ msgid "Pacific/Saipan"
+#~ msgstr "太平洋/塞班"
+
+#~ msgid "America/Martinique"
+#~ msgstr "美洲/马蒂尼克"
+
+#~ msgid "Africa/Nouakchott"
+#~ msgstr "非洲/努瓦克肖特"
+
+#~ msgid "America/Montserrat"
+#~ msgstr "美洲/蒙塞拉特"
+
+#~ msgid "Europe/Malta"
+#~ msgstr "欧洲/马尔他"
+
+#~ msgid "Indian/Mauritius"
+#~ msgstr "印度洋/毛里求斯"
+
+#~ msgid "Indian/Maldives"
+#~ msgstr "印度洋/马尔代夫"
+
+#~ msgid "Africa/Blantyre"
+#~ msgstr "非洲/布兰太尔"
+
+#~ msgid "America/Mexico_City"
+#~ msgstr "美洲/墨西哥城"
+
+#~ msgid "Central Time - most locations"
+#~ msgstr "中部时间 - 大部分地区"
+
+#~ msgid "America/Cancun"
+#~ msgstr "美洲/坎昆"
+
+#~ msgid "Eastern Standard Time - Quintana Roo"
+#~ msgstr "东部标准时间 - 金塔纳罗奥州"
+
+#~ msgid "America/Merida"
+#~ msgstr "美洲/梅里达"
+
+#~ msgid "Central Time - Campeche, Yucatan"
+#~ msgstr "中部时间 - 康佩什，尤卡坦"
+
+#~ msgid "America/Monterrey"
+#~ msgstr "美洲/蒙特雷"
+
+#~ msgid ""
+#~ "Mexican Central Time - Coahuila, Durango, Nuevo Leon, Tamaulipas away from "
+#~ "US border"
+#~ msgstr "墨西哥中部时间 - 远离美国边境的科阿韦拉，杜兰戈，新莱昂，塔毛利帕斯"
+
+#~ msgid "America/Matamoros"
+#~ msgstr "美洲/马塔莫罗斯"
+
+#~ msgid ""
+#~ "US Central Time - Coahuila, Durango, Nuevo Leon, Tamaulipas near US border"
+#~ msgstr "美国中部时间 - 靠近美国边境的科阿韦拉，杜兰戈，新莱昂，塔毛利帕斯"
+
+#~ msgid "America/Mazatlan"
+#~ msgstr "美洲/马萨特兰"
+
+#~ msgid "Mountain Time - S Baja, Nayarit, Sinaloa"
+#~ msgstr "山地时间 - 巴哈南部，纳亚里特，锡那罗亚"
+
+#~ msgid "America/Chihuahua"
+#~ msgstr "美洲/奇瓦瓦"
+
+#~ msgid "Mexican Mountain Time - Chihuahua away from US border"
+#~ msgstr "墨西哥山地时间 - 美国边境的奇瓦瓦"
+
+#~ msgid "America/Ojinaga"
+#~ msgstr "美洲/奥希纳加"
+
+#~ msgid "US Mountain Time - Chihuahua near US border"
+#~ msgstr "美国山地时间 - 靠近美国边境的奇瓦瓦"
+
+#~ msgid "America/Hermosillo"
+#~ msgstr "美洲/哈模斯罗"
+
+#~ msgid "Mountain Standard Time - Sonora"
+#~ msgstr "山地标准时间 - 索诺拉"
+
+#~ msgid "America/Tijuana"
+#~ msgstr "美洲/提华纳"
+
+#~ msgid "US Pacific Time - Baja California near US border"
+#~ msgstr "美国太平洋地区时间 - 靠近美国边境的下加利福尼亚"
+
+#~ msgid "America/Santa_Isabel"
+#~ msgstr "美国/圣伊莎贝尔"
+
+#~ msgid "Mexican Pacific Time - Baja California away from US border"
+#~ msgstr "墨西哥太平洋地区时间 - 远离美国边境的下加利福尼亚"
+
+#~ msgid "America/Bahia_Banderas"
+#~ msgstr "美洲/巴伊亚_班德拉斯"
+
+#~ msgid "Mexican Central Time - Bahia de Banderas"
+#~ msgstr "墨西哥支部时间 - 巴伊亚德班德拉斯"
+
+#~ msgid "Asia/Kuala_Lumpur"
+#~ msgstr "亚洲/吉隆坡"
+
+#~ msgid "peninsular Malaysia"
+#~ msgstr "马来西亚半岛"
+
+#~ msgid "Asia/Kuching"
+#~ msgstr "亚洲/古晋"
+
+#~ msgid "Sabah & Sarawak"
+#~ msgstr "萨巴赫和萨拉瓦克"
+
+#~ msgid "Africa/Maputo"
+#~ msgstr "非洲/马普托"
+
+#~ msgid "Africa/Windhoek"
+#~ msgstr "非洲/温得和克"
+
+#~ msgid "Pacific/Noumea"
+#~ msgstr "太平洋/努美阿"
+
+#~ msgid "Africa/Niamey"
+#~ msgstr "非洲/尼亚美"
+
+#~ msgid "Pacific/Norfolk"
+#~ msgstr "太平洋/诺福克岛"
+
+#~ msgid "Africa/Lagos"
+#~ msgstr "非洲/拉各斯"
+
+#~ msgid "America/Managua"
+#~ msgstr "美洲/马那瓜"
+
+#~ msgid "Europe/Amsterdam"
+#~ msgstr "欧洲/阿姆斯特丹"
+
+#~ msgid "Europe/Oslo"
+#~ msgstr "欧洲/奥斯陆"
+
+#~ msgid "Asia/Kathmandu"
+#~ msgstr "亚洲/加德满都"
+
+#~ msgid "Pacific/Nauru"
+#~ msgstr "太平洋/瑙鲁"
+
+#~ msgid "Pacific/Niue"
+#~ msgstr "太平洋/纽埃"
+
+#~ msgid "Pacific/Auckland"
+#~ msgstr "太平洋/奥克兰"
+
+#~ msgid "Pacific/Chatham"
+#~ msgstr "太平洋/查塔姆"
+
+#~ msgid "Chatham Islands"
+#~ msgstr "查塔姆群岛"
+
+#~ msgid "Asia/Muscat"
+#~ msgstr "亚洲/马斯喀特"
+
+#~ msgid "America/Panama"
+#~ msgstr "美洲/巴拿马"
+
+#~ msgid "America/Lima"
+#~ msgstr "美洲/利马"
+
+#~ msgid "Pacific/Tahiti"
+#~ msgstr "太平洋/塔希提岛"
+
+#~ msgid "Society Islands"
+#~ msgstr "社会群岛"
+
+#~ msgid "Pacific/Marquesas"
+#~ msgstr "太平洋/马克萨斯"
+
+#~ msgid "Marquesas Islands"
+#~ msgstr "马克萨斯群岛"
+
+#~ msgid "Pacific/Gambier"
+#~ msgstr "太平洋/甘比尔"
+
+#~ msgid "Gambier Islands"
+#~ msgstr "甘比尔群岛"
+
+#~ msgid "Pacific/Port_Moresby"
+#~ msgstr "太平洋/莫尔兹比港"
+
+#~ msgid "Pacific/Bougainville"
+#~ msgstr "太平洋/布干维尔岛"
+
+#~ msgid "Bougainville"
+#~ msgstr "布干维尔岛"
+
+#~ msgid "Asia/Manila"
+#~ msgstr "亚洲/马尼拉"
+
+#~ msgid "Asia/Karachi"
+#~ msgstr "亚洲/卡拉奇"
+
+#~ msgid "Europe/Warsaw"
+#~ msgstr "欧洲/华沙"
+
+#~ msgid "America/Miquelon"
+#~ msgstr "美洲/密克隆"
+
+#~ msgid "Pacific/Pitcairn"
+#~ msgstr "太平洋/皮特凯恩"
+
+#~ msgid "America/Puerto_Rico"
+#~ msgstr "美洲/波多黎各"
+
+#~ msgid "Asia/Gaza"
+#~ msgstr "亚洲/加沙"
+
+#~ msgid "Gaza Strip"
+#~ msgstr "加沙地带"
+
+#~ msgid "Asia/Hebron"
+#~ msgstr "亚洲/希布伦"
+
+#~ msgid "West Bank"
+#~ msgstr "约旦河西岸"
+
+#~ msgid "Europe/Lisbon"
+#~ msgstr "欧洲/里斯本"
+
+#~ msgid "Atlantic/Madeira"
+#~ msgstr "大西洋/马德拉"
+
+#~ msgid "Madeira Islands"
+#~ msgstr "马德拉群岛"
+
+#~ msgid "Atlantic/Azores"
+#~ msgstr "大西洋/阿索雷斯"
+
+#~ msgid "Azores"
+#~ msgstr "阿索雷斯"
+
+#~ msgid "Pacific/Palau"
+#~ msgstr "太平洋/帕劳"
+
+#~ msgid "America/Asuncion"
+#~ msgstr "美洲/阿孙西翁"
+
+#~ msgid "Asia/Qatar"
+#~ msgstr "亚洲/卡塔尔"
+
+#~ msgid "Indian/Reunion"
+#~ msgstr "印度洋/留尼旺"
+
+#~ msgid "Europe/Bucharest"
+#~ msgstr "欧洲/布加勒斯特"
+
+#~ msgid "Europe/Belgrade"
+#~ msgstr "欧洲/贝尔格莱德"
+
+#~ msgid "Europe/Kaliningrad"
+#~ msgstr "欧洲/加里宁格勒"
+
+#~ msgid "Moscow-01 - Kaliningrad"
+#~ msgstr "莫斯科-01 - 加里宁格勒"
+
+#~ msgid "Europe/Moscow"
+#~ msgstr "欧洲/莫斯科"
+
+#~ msgid "Moscow+00 - west Russia"
+#~ msgstr "莫斯科+00 - 西俄罗斯"
+
+#~ msgid "Europe/Simferopol"
+#~ msgstr "欧洲/辛菲罗波尔"
+
+#~ msgid "Moscow+00 - Crimea"
+#~ msgstr "莫斯科+00-克里米亚"
+
+#~ msgid "Europe/Volgograd"
+#~ msgstr "欧洲∕伏尔加格勒"
+
+#~ msgid "Moscow+00 - Caspian Sea"
+#~ msgstr "莫斯科+00 - 里海"
+
+#~ msgid "Europe/Samara"
+#~ msgstr "欧洲/萨马拉"
+
+#~ msgid "Moscow+00 (Moscow+01 after 2014-10-26) - Samara, Udmurtia"
+#~ msgstr "莫斯科+00 (莫斯科+01 2014年10月26日后) - 萨马拉，乌德穆尔特共和国"
+
+#~ msgid "Asia/Yekaterinburg"
+#~ msgstr "亚洲/叶卡杰琳堡"
+
+#~ msgid "Moscow+02 - Urals"
+#~ msgstr "莫斯科+02 - 乌拉尔"
+
+#~ msgid "Asia/Omsk"
+#~ msgstr "亚洲/鄂木斯克"
+
+#~ msgid "Moscow+03 - west Siberia"
+#~ msgstr "莫斯科+03 - 西西伯利亚"
+
+#~ msgid "Asia/Novosibirsk"
+#~ msgstr "亚洲/新西伯利亚"
+
+#~ msgid "Moscow+03 - Novosibirsk"
+#~ msgstr "莫斯科+03 - 新西伯利亚"
+
+#~ msgid "Asia/Novokuznetsk"
+#~ msgstr "亚洲/新库兹涅茨克"
+
+#~ msgid "Moscow+03 (Moscow+04 after 2014-10-26) - Kemerovo"
+#~ msgstr "莫斯科+03（莫斯科+04 2014年10月26日后）-克麦罗沃"
+
+#~ msgid "Asia/Krasnoyarsk"
+#~ msgstr "亚洲/克拉斯诺亚尔斯克"
+
+#~ msgid "Moscow+04 - Yenisei River"
+#~ msgstr "莫斯科+04 - 叶尼塞河"
+
+#~ msgid "Asia/Irkutsk"
+#~ msgstr "亚洲/伊尔库次克"
+
+#~ msgid "Moscow+05 - Lake Baikal"
+#~ msgstr "莫斯科+05 - 贝加尔湖"
+
+#~ msgid "Asia/Chita"
+#~ msgstr "亚洲/ 赤塔"
+
+#~ msgid "Moscow+06 (Moscow+05 after 2014-10-26) - Zabaykalsky"
+#~ msgstr "莫斯科+06（莫斯科+05 2014年10月26日后）外贝加尔边疆区"
+
+#~ msgid "Asia/Yakutsk"
+#~ msgstr "亚洲/雅库茨克"
+
+#~ msgid "Moscow+06 - Lena River"
+#~ msgstr "莫斯科+06 - 勒拿河"
+
+#~ msgid "Asia/Khandyga"
+#~ msgstr "亚洲/汉德加"
+
+#~ msgid "Moscow+06 - Tomponsky, Ust-Maysky"
+#~ msgstr "莫斯科+06 -Tomponsky 特区， Ust-Maysky 特区"
+
+#~ msgid "Asia/Vladivostok"
+#~ msgstr "亚洲/海参崴"
+
+#~ msgid "Moscow+07 - Amur River"
+#~ msgstr "莫斯科+07 - 阿穆尔河 (黑龙江)"
+
+#~ msgid "Asia/Sakhalin"
+#~ msgstr "亚洲∕萨哈林"
+
+#~ msgid "Moscow+07 - Sakhalin Island"
+#~ msgstr "莫斯科+07 - 库页岛"
+
+#~ msgid "Asia/Ust-Nera"
+#~ msgstr "亚洲/乌斯季涅拉"
+
+#~ msgid "Moscow+07 - Oymyakonsky"
+#~ msgstr "莫斯科+07-奥伊米亚康"
+
+#~ msgid "Asia/Magadan"
+#~ msgstr "亚洲/马加丹"
+
+#~ msgid "Moscow+08 (Moscow+07 after 2014-10-26) - Magadan"
+#~ msgstr "莫斯科+08（莫斯科+07 2014年10月26日后）-马加丹"
+
+#~ msgid "Asia/Srednekolymsk"
+#~ msgstr "亚洲/中科雷姆斯克"
+
+#~ msgid "Moscow+08 - E Sakha, N Kuril Is"
+#~ msgstr "莫斯科+08 - 萨哈西，千岛群岛北"
+
+#~ msgid "Asia/Kamchatka"
+#~ msgstr "亚洲/堪察加"
+
+#~ msgid "Moscow+08 (Moscow+09 after 2014-10-26) - Kamchatka"
+#~ msgstr "莫斯科+08（莫斯科+09 2014年10月26日后）-堪察加半岛"
+
+#~ msgid "Asia/Anadyr"
+#~ msgstr "亚洲/阿纳德尔"
+
+#~ msgid "Moscow+08 (Moscow+09 after 2014-10-26) - Bering Sea"
+#~ msgstr "莫斯科+08（莫斯科+09 2014年10月26日后）-白令海"
+
+#~ msgid "Africa/Kigali"
+#~ msgstr "非洲/基加利"
+
+#~ msgid "Asia/Riyadh"
+#~ msgstr "亚洲/利雅得"
+
+#~ msgid "Pacific/Guadalcanal"
+#~ msgstr "太平洋/瓜达尔卡纳尔"
+
+#~ msgid "Indian/Mahe"
+#~ msgstr "印度洋/马埃"
+
+#~ msgid "Africa/Khartoum"
+#~ msgstr "非洲/喀土穆"
+
+#~ msgid "Europe/Stockholm"
+#~ msgstr "欧洲/斯德哥尔摩"
+
+#~ msgid "Asia/Singapore"
+#~ msgstr "亚洲/新加坡"
+
+#~ msgid "Atlantic/St_Helena"
+#~ msgstr "大西洋/圣海伦纳"
+
+#~ msgid "Europe/Ljubljana"
+#~ msgstr "欧洲/卢布尔雅那"
+
+#~ msgid "Arctic/Longyearbyen"
+#~ msgstr "北极/朗伊尔城"
+
+#~ msgid "Europe/Bratislava"
+#~ msgstr "欧洲/布拉迪斯拉发"
+
+#~ msgid "Africa/Freetown"
+#~ msgstr "非洲/弗里敦"
+
+#~ msgid "Europe/San_Marino"
+#~ msgstr "欧洲/圣马力诺"
+
+#~ msgid "Africa/Dakar"
+#~ msgstr "非洲/达喀尔"
+
+#~ msgid "Africa/Mogadishu"
+#~ msgstr "非洲/摩加迪沙"
+
+#~ msgid "America/Paramaribo"
+#~ msgstr "美洲/帕拉马里博"
+
+#~ msgid "Africa/Juba"
+#~ msgstr "非洲/朱巴"
+
+#~ msgid "Africa/Sao_Tome"
+#~ msgstr "非洲/圣多美"
+
+#~ msgid "America/El_Salvador"
+#~ msgstr "美洲/萨尔瓦多"
+
+#~ msgid "America/Lower_Princes"
+#~ msgstr "美洲/下太子区"
+
+#~ msgid "Asia/Damascus"
+#~ msgstr "亚洲/大马士革"
+
+#~ msgid "Africa/Mbabane"
+#~ msgstr "非洲/姆巴巴内"
+
+#~ msgid "America/Grand_Turk"
+#~ msgstr "美洲/大特克"
+
+#~ msgid "Africa/Ndjamena"
+#~ msgstr "非洲/恩贾梅纳"
+
+#~ msgid "Indian/Kerguelen"
+#~ msgstr "印度洋/凯尔格朗"
+
+#~ msgid "Africa/Lome"
+#~ msgstr "非洲/洛美"
+
+#~ msgid "Asia/Bangkok"
+#~ msgstr "亚洲/曼谷"
+
+#~ msgid "Asia/Dushanbe"
+#~ msgstr "亚洲/杜尚別"
+
+#~ msgid "Pacific/Fakaofo"
+#~ msgstr "太平洋/法考福"
+
+#~ msgid "Asia/Dili"
+#~ msgstr "亚洲/帝力"
+
+#~ msgid "Asia/Ashgabat"
+#~ msgstr "亚洲/阿什哈巴德"
+
+#~ msgid "Africa/Tunis"
+#~ msgstr "非洲/突尼斯"
+
+#~ msgid "Pacific/Tongatapu"
+#~ msgstr "太平洋/汤加塔布"
+
+#~ msgid "Europe/Istanbul"
+#~ msgstr "欧洲/伊斯坦布尔"
+
+#~ msgid "America/Port_of_Spain"
+#~ msgstr "美洲/西班牙港"
+
+#~ msgid "Pacific/Funafuti"
+#~ msgstr "太平洋/富那富提"
+
+#~ msgid "Asia/Taipei"
+#~ msgstr "亚洲/台北"
+
+#~ msgid "Africa/Dar_es_Salaam"
+#~ msgstr "非洲/达累斯萨拉姆"
+
+#~ msgid "Europe/Kiev"
+#~ msgstr "欧洲/基辅"
+
+#~ msgid "Europe/Uzhgorod"
+#~ msgstr "欧洲/乌日戈罗德"
+
+#~ msgid "Ruthenia"
+#~ msgstr "罗塞尼亚"
+
+#~ msgid "Europe/Zaporozhye"
+#~ msgstr "欧洲/扎波罗热"
+
+#~ msgid "Zaporozh'ye, E Lugansk / Zaporizhia, E Luhansk"
+#~ msgstr "扎波罗热，卢甘斯克东部/扎波罗热，卢甘斯克东部"
+
+#~ msgid "Africa/Kampala"
+#~ msgstr "非洲/坎帕拉"
+
+#~ msgid "Pacific/Johnston"
+#~ msgstr "太平洋/约翰斯顿"
+
+#~ msgid "Johnston Atoll"
+#~ msgstr "约翰斯顿环礁"
+
+#~ msgid "Pacific/Midway"
+#~ msgstr "太平洋/中途"
+
+#~ msgid "Midway Islands"
+#~ msgstr "中途群岛"
+
+#~ msgid "Pacific/Wake"
+#~ msgstr "太平洋/威克"
+
+#~ msgid "Wake Island"
+#~ msgstr "威克岛"
+
+#~ msgid "America/New_York"
+#~ msgstr "美洲/纽约"
+
+#~ msgid "Eastern Time"
+#~ msgstr "东部时间"
+
+#~ msgid "America/Detroit"
+#~ msgstr "美洲/底特律"
+
+#~ msgid "Eastern Time - Michigan - most locations"
+#~ msgstr "东部时间 - 密歇根 - 大部分地区"
+
+#~ msgid "America/Kentucky/Louisville"
+#~ msgstr "美洲/肯塔基/路易斯维尔"
+
+#~ msgid "Eastern Time - Kentucky - Louisville area"
+#~ msgstr "东部时间 - 肯塔基 - 路易斯维尔地区"
+
+#~ msgid "America/Kentucky/Monticello"
+#~ msgstr "美洲/肯塔基/蒙蒂塞洛"
+
+#~ msgid "Eastern Time - Kentucky - Wayne County"
+#~ msgstr "东部时间 - 肯塔基 - 韦恩县"
+
+#~ msgid "America/Indiana/Indianapolis"
+#~ msgstr "美洲/印第安纳/印第安纳波利斯"
+
+#~ msgid "Eastern Time - Indiana - most locations"
+#~ msgstr "东部时间 - 印地安纳 - 大部分地区"
+
+#~ msgid "America/Indiana/Vincennes"
+#~ msgstr "美洲∕印第安纳∕温森斯"
+
+#~ msgid "Eastern Time - Indiana - Daviess, Dubois, Knox & Martin Counties"
+#~ msgstr "东部时间 - 印地安纳 - 戴维斯，杜波依斯，诺克斯和马丁县"
+
+#~ msgid "America/Indiana/Winamac"
+#~ msgstr "美洲∕印第安纳∕威纳马克"
+
+#~ msgid "Eastern Time - Indiana - Pulaski County"
+#~ msgstr "东部时间 - 印地安纳 - 珀拉斯凯县"
+
+#~ msgid "America/Indiana/Marengo"
+#~ msgstr "美洲/印第安纳/马伦戈"
+
+#~ msgid "Eastern Time - Indiana - Crawford County"
+#~ msgstr "东部时间 - 印地安那 - 克劳福德县"
+
+#~ msgid "America/Indiana/Petersburg"
+#~ msgstr "美洲∕印第安那∕彼得斯堡"
+
+#~ msgid "Eastern Time - Indiana - Pike County"
+#~ msgstr "东部时间 - 印地安那 - 派克县"
+
+#~ msgid "America/Indiana/Vevay"
+#~ msgstr "美洲/印第安那/韦韦"
+
+#~ msgid "Eastern Time - Indiana - Switzerland County"
+#~ msgstr "东部时间 - 印地安纳 - 瑞士县"
+
+#~ msgid "America/Chicago"
+#~ msgstr "美洲/芝加哥"
+
+#~ msgid "Central Time"
+#~ msgstr "中部时间"
+
+#~ msgid "America/Indiana/Tell_City"
+#~ msgstr "美洲∕印第安纳∕特尔城"
+
+#~ msgid "Central Time - Indiana - Perry County"
+#~ msgstr "中部时间 - 印地安纳 - 佩里县"
+
+#~ msgid "America/Indiana/Knox"
+#~ msgstr "美洲/印第安纳/诺克斯"
+
+#~ msgid "Central Time - Indiana - Starke County"
+#~ msgstr "中部时间 - 印地安纳 - 斯塔克县"
+
+#~ msgid "America/Menominee"
+#~ msgstr "美洲/梅诺米尼"
+
+#~ msgid ""
+#~ "Central Time - Michigan - Dickinson, Gogebic, Iron & Menominee Counties"
+#~ msgstr "中部时间 - 密歇根 - 迪金森，戈吉比克，艾恩和梅诺米尼县"
+
+#~ msgid "America/North_Dakota/Center"
+#~ msgstr "美洲∕北达科他∕中部"
+
+#~ msgid "Central Time - North Dakota - Oliver County"
+#~ msgstr "中部时间 - 北达科他 - 奥利弗县"
+
+#~ msgid "America/North_Dakota/New_Salem"
+#~ msgstr "美洲∕北达科他∕纽沙伦"
+
+#~ msgid "Central Time - North Dakota - Morton County (except Mandan area)"
+#~ msgstr "中部时间 - 北达科他 - 莫顿县（曼丹地区除外）"
+
+#~ msgid "America/North_Dakota/Beulah"
+#~ msgstr "美国/北达科他州/比尤拉"
+
+#~ msgid "Central Time - North Dakota - Mercer County"
+#~ msgstr "中部时间-北达科他州-莫塞郡"
+
+#~ msgid "America/Denver"
+#~ msgstr "美洲/丹佛"
+
+#~ msgid "Mountain Time"
+#~ msgstr "山地时间"
+
+#~ msgid "America/Boise"
+#~ msgstr "美洲/博伊西"
+
+#~ msgid "Mountain Time - south Idaho & east Oregon"
+#~ msgstr "山地时间 - 爱达荷南部和俄勒冈东部"
+
+#~ msgid "America/Phoenix"
+#~ msgstr "美洲/凤凰城"
+
+#~ msgid "Mountain Standard Time - Arizona (except Navajo)"
+#~ msgstr "山地标准时间-亚利桑那州（除纳瓦霍外）"
+
+#~ msgid "America/Los_Angeles"
+#~ msgstr "美洲/洛杉矶"
+
+#~ msgid "Pacific Time"
+#~ msgstr "太平洋时间"
+
+#~ msgid "America/Metlakatla"
+#~ msgstr "美国/梅特拉卡特拉"
+
+#~ msgid "Pacific Standard Time - Annette Island, Alaska"
+#~ msgstr "太平洋标准时间-安妮特岛，阿拉斯加"
+
+#~ msgid "America/Anchorage"
+#~ msgstr "美洲/安克雷奇"
+
+#~ msgid "Alaska Time"
+#~ msgstr "阿拉斯加时间"
+
+#~ msgid "America/Juneau"
+#~ msgstr "美洲/朱诺"
+
+#~ msgid "Alaska Time - Alaska panhandle"
+#~ msgstr "阿拉斯加时间 - 阿拉斯加狭地"
+
+#~ msgid "America/Sitka"
+#~ msgstr "美国/锡特卡"
+
+#~ msgid "Alaska Time - southeast Alaska panhandle"
+#~ msgstr "阿拉斯加时间-阿拉斯加东南部狭长地带"
+
+#~ msgid "America/Yakutat"
+#~ msgstr "美洲/亚库塔特"
+
+#~ msgid "Alaska Time - Alaska panhandle neck"
+#~ msgstr "阿拉斯加时间 - 阿拉斯加狭地颈"
+
+#~ msgid "America/Nome"
+#~ msgstr "美洲/诺姆"
+
+#~ msgid "Alaska Time - west Alaska"
+#~ msgstr "阿拉斯加时间 - 阿拉斯加西部"
+
+#~ msgid "America/Adak"
+#~ msgstr "美洲/阿达克"
+
+#~ msgid "Aleutian Islands"
+#~ msgstr "阿留申群岛"
+
+#~ msgid "Pacific/Honolulu"
+#~ msgstr "太平洋/火奴鲁鲁（檀香山）"
+
+#~ msgid "Hawaii"
+#~ msgstr "夏威夷岛"
+
+#~ msgid "America/Montevideo"
+#~ msgstr "美洲/蒙特维的亚"
+
+#~ msgid "Asia/Samarkand"
+#~ msgstr "亚洲/撒马尔罕"
+
+#~ msgid "west Uzbekistan"
+#~ msgstr "乌兹别克斯坦西部"
+
+#~ msgid "Asia/Tashkent"
+#~ msgstr "亚洲/塔什干"
+
+#~ msgid "east Uzbekistan"
+#~ msgstr "乌兹别克斯坦东部"
+
+#~ msgid "Europe/Vatican"
+#~ msgstr "欧洲/梵蒂冈"
+
+#~ msgid "America/St_Vincent"
+#~ msgstr "美洲/圣文森特"
+
+#~ msgid "America/Caracas"
+#~ msgstr "美洲/加拉加斯"
+
+#~ msgid "America/Tortola"
+#~ msgstr "美洲/托尔托拉"
+
+#~ msgid "America/St_Thomas"
+#~ msgstr "美洲/圣托马斯"
+
+#~ msgid "Asia/Ho_Chi_Minh"
+#~ msgstr "亚洲∕胡志明"
+
+#~ msgid "Pacific/Efate"
+#~ msgstr "太平洋/埃法特"
+
+#~ msgid "Pacific/Wallis"
+#~ msgstr "太平洋/瓦利斯"
+
+#~ msgid "Pacific/Apia"
+#~ msgstr "太平洋/阿皮亚"
+
+#~ msgid "Asia/Aden"
+#~ msgstr "亚洲/亚丁"
+
+#~ msgid "Indian/Mayotte"
+#~ msgstr "印度洋/马约特"
+
+#~ msgid "Africa/Johannesburg"
+#~ msgstr "非洲/约翰内斯堡"
+
+#~ msgid "Africa/Lusaka"
+#~ msgstr "非洲/卢萨卡"
+
+#~ msgid "Africa/Harare"
+#~ msgstr "非洲/哈拉雷"
+
+#~ msgid "Africa"
+#~ msgstr "非洲"
+
+#~ msgid "America"
+#~ msgstr "美洲"
+
+#~ msgid "Antarctica"
+#~ msgstr "南极洲"
+
+#~ msgid "Asia"
+#~ msgstr "亚洲"
+
+#~ msgid "Atlantic"
+#~ msgstr "大西洋"
+
+#~ msgid "Europe"
+#~ msgstr "欧洲"
+
+#~ msgid "Indian"
+#~ msgstr "印度洋"
+
+#~ msgid "Pacific"
+#~ msgstr "太平洋"

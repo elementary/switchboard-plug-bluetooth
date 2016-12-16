@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-12-14 20:29-0600\n"
-"PO-Revision-Date: 2016-12-15 05:14+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-12-15 05:28+0000\n"
+"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: Malayalam <ml@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-15 05:14+0000\n"
+"X-Launchpad-Export-Date: 2016-12-16 06:02+0000\n"
 "X-Generator: Launchpad (build 18293)\n"
 
 #: ../src/MainView.vala:85
@@ -32,3 +32,1700 @@ msgstr ""
 #: ../src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
 msgstr ""
+
+#~ msgid "Europe/Andorra"
+#~ msgstr "യൂറോപ്പ്/ആന്‍ഡോറ"
+
+#~ msgid "Asia/Dubai"
+#~ msgstr "ഏഷ്യ/ദുബായ്"
+
+#~ msgid "Asia/Kabul"
+#~ msgstr "ഏഷ്യ/കാബുള്‍"
+
+#~ msgid "America/Antigua"
+#~ msgstr "അമേരിക്ക/ആന്റിഗ്വാ"
+
+#~ msgid "America/Anguilla"
+#~ msgstr "അമേരിക്ക/ആന്‍ഗ്വില"
+
+#~ msgid "Europe/Tirane"
+#~ msgstr "യൂറോപ്പ്/റ്റിറാനെ"
+
+#~ msgid "Asia/Yerevan"
+#~ msgstr "ഏഷ്യ/യെറെവാന്‍"
+
+#~ msgid "Africa/Luanda"
+#~ msgstr "ആഫ്രിക്ക/ലുവാന്‍ഡാ"
+
+#~ msgid "Antarctica/McMurdo"
+#~ msgstr "അന്റാര്‍ട്ടിക്ക/മാക്ക്മാര്‍ഡോ"
+
+#~ msgid "Antarctica/Rothera"
+#~ msgstr "അന്റാര്‍ട്ടിക്ക/റൊഥേറാ"
+
+#~ msgid "Rothera Station, Adelaide Island"
+#~ msgstr "റോഥേറാ സ്റ്റേഷന്‍, അഡെലേയിഡ് ഐലന്‍ഡ്"
+
+#~ msgid "Antarctica/Palmer"
+#~ msgstr "അന്റാര്‍ട്ടിക്ക/പാമെര്‍"
+
+#~ msgid "Palmer Station, Anvers Island"
+#~ msgstr "പാമര്‍ സ്റ്റേഷന്‍, അന്‍വര്‍സ് ഐലന്‍ഡ്"
+
+#~ msgid "Antarctica/Mawson"
+#~ msgstr "അന്റാര്‍ട്ടിക്ക/മോസണ്‍"
+
+#~ msgid "Mawson Station, Holme Bay"
+#~ msgstr "മോസണ്‍ സ്റ്റേഷന്‍, ഹോം ബേ"
+
+#~ msgid "Antarctica/Davis"
+#~ msgstr "അന്റാര്‍ട്ടിക്ക/ഡേവിസ്"
+
+#~ msgid "Davis Station, Vestfold Hills"
+#~ msgstr "ഡേവിസ് സ്റ്റേഷന്‍, വെസ്റ്റ്ഫോള്‍ഡ് ഹില്‍സ്"
+
+#~ msgid "Antarctica/Casey"
+#~ msgstr "അന്റാര്‍ട്ടിക്ക/റാര്‍ട്ടിത്/കാസ്സെയ്"
+
+#~ msgid "Casey Station, Bailey Peninsula"
+#~ msgstr "സെസീ സ്റ്റേഷന്‍, ബെയിലീ പെനിന്‍സുലാ"
+
+#~ msgid "Antarctica/Vostok"
+#~ msgstr "അന്റാര്‍ട്ടിക്ക/വോസ്ഥോക്ക്"
+
+#~ msgid "Antarctica/DumontDUrville"
+#~ msgstr "അന്റാര്‍ട്ടിക്ക/ഡുമോണ്‍ട്ടുര്‍വില്ലി"
+
+#~ msgid "Antarctica/Syowa"
+#~ msgstr "അന്റാര്‍ട്ടിക്ക/സ്യോവാ"
+
+#~ msgid "Syowa Station, E Ongul I"
+#~ msgstr "സ്യോവാ സ്റ്റേഷന്‍, കിഴക്കന്‍ ഒങ്കുല്‍ ഐ"
+
+#~ msgid "America/Argentina/Buenos_Aires"
+#~ msgstr "അമേരിക്ക/അര്‍ജന്റീന/ബ്വേനസ്_ആരീസ്"
+
+#~ msgid "Buenos Aires (BA, CF)"
+#~ msgstr "ബ്യൂണോസ് എയര്‍സ് (ബിഎ, സിഎഫ്)"
+
+#~ msgid "America/Argentina/Cordoba"
+#~ msgstr "അമേരിക്ക/അര്‍ജന്റീന/കൊര്‍ഡോബ"
+
+#~ msgid "most locations (CB, CC, CN, ER, FM, MN, SE, SF)"
+#~ msgstr "മിക്ക് സ്ഥലങ്ങള്‍ (CB, CC, CN, ER, FM, MN, SE, SF)"
+
+#~ msgid "America/Argentina/Salta"
+#~ msgstr "അമേരിക്ക/അര്‍ജന്റീന/സാല്‍ട്ടാ"
+
+#~ msgid "(SA, LP, NQ, RN)"
+#~ msgstr "(SA, LP, NQ, RN)"
+
+#~ msgid "America/Argentina/Jujuy"
+#~ msgstr "അമേരിക്ക/അര്‍ജന്റീന/ഹൂവീ"
+
+#~ msgid "Jujuy (JY)"
+#~ msgstr "ജുജൂയ് (JY)"
+
+#~ msgid "America/Argentina/Tucuman"
+#~ msgstr "അമേരിക്ക/അര്‍ജന്റീന/റ്റുക്കുമാന്‍"
+
+#~ msgid "Tucuman (TM)"
+#~ msgstr "ടുക്കുമാന്‍ (TM)"
+
+#~ msgid "America/Argentina/Catamarca"
+#~ msgstr "അമേരിക്ക/അര്‍ജന്റീന/കാറ്റാമാര്‍ക്ക"
+
+#~ msgid "Catamarca (CT), Chubut (CH)"
+#~ msgstr "ക്യാറ്റമാര്‍കാ (CT), ക്യൂബട്ട് (CH)"
+
+#~ msgid "America/Argentina/La_Rioja"
+#~ msgstr "അമേരിക്ക/അര്‍ജന്റീന/ല_റിയോജ"
+
+#~ msgid "La Rioja (LR)"
+#~ msgstr "ലാ റിയോജാ (LR)"
+
+#~ msgid "America/Argentina/San_Juan"
+#~ msgstr "അമേരിക്ക/അര്‍ജന്റീന/സാന്‍_വാന്‍"
+
+#~ msgid "San Juan (SJ)"
+#~ msgstr "സാന്‍ ജുവാന്‍ (SJ)"
+
+#~ msgid "America/Argentina/Mendoza"
+#~ msgstr "അമേരിക്ക/അര്‍ജന്റീന/മെന്‍ഡോസ"
+
+#~ msgid "Mendoza (MZ)"
+#~ msgstr "മെന്‍ഡോസാ (MZ)"
+
+#~ msgid "America/Argentina/San_Luis"
+#~ msgstr "അമേരിക്ക/അര്‍ജന്റീന/സാന്‍_ലൂയിസ്"
+
+#~ msgid "San Luis (SL)"
+#~ msgstr "സാന്‍ ലൂയിസ് (SL)"
+
+#~ msgid "America/Argentina/Rio_Gallegos"
+#~ msgstr "അമേരിക്ക/അര്‍ജന്റീന/റിയോ_ഗല്ലെഗോസ്"
+
+#~ msgid "Santa Cruz (SC)"
+#~ msgstr "സാന്റാ ക്രൂസ് (SC)"
+
+#~ msgid "America/Argentina/Ushuaia"
+#~ msgstr "അമേരിക്ക/അര്‍ജന്റീന/ഉഷ്വായാ"
+
+#~ msgid "Tierra del Fuego (TF)"
+#~ msgstr "ടിയറാ ഡെല്‍ ഫ്യൂഗോ (TF)"
+
+#~ msgid "Pacific/Pago_Pago"
+#~ msgstr "പസിഫിക്ക്/പാഗോ_പാഗോ"
+
+#~ msgid "Europe/Vienna"
+#~ msgstr "യൂറോപ്പ്/വിയെന്ന"
+
+#~ msgid "Australia/Lord_Howe"
+#~ msgstr "ഓസ്ട്രേലിയ/ലോര്‍ഡ്_ഹോവ്"
+
+#~ msgid "Lord Howe Island"
+#~ msgstr "ലോര്‍ഡ് ഹോവ് ഐലന്‍ഡ്"
+
+#~ msgid "Antarctica/Macquarie"
+#~ msgstr "അന്റാര്‍ട്ടിക്ക/മാക്വാരീ"
+
+#~ msgid "Australia/Hobart"
+#~ msgstr "ഓസ്ട്രേലിയ/ഹൊബാര്‍ട്ട്"
+
+#~ msgid "Tasmania - most locations"
+#~ msgstr "ടാസ്മാനിയാ - മിക്ക സ്ഥലങ്ങള്‍"
+
+#~ msgid "Australia/Currie"
+#~ msgstr "ഓസ്ട്രേലിയ/ക്യറീ"
+
+#~ msgid "Tasmania - King Island"
+#~ msgstr "ടാസ്മാനിയാ - കിങ് ഐലന്‍ഡ്"
+
+#~ msgid "Australia/Melbourne"
+#~ msgstr "ഓസ്ട്രേലിയ/മെല്‍ബോണ്‍"
+
+#~ msgid "Victoria"
+#~ msgstr "വിക്ടോറിയ"
+
+#~ msgid "Australia/Sydney"
+#~ msgstr "ഓസ്ട്രേലിയ/സിഡ്നി"
+
+#~ msgid "New South Wales - most locations"
+#~ msgstr "ന്യൂ സൌത്ത് വെയില്‍സ് - മിക്ക സ്ഥലങ്ങള്‍"
+
+#~ msgid "Australia/Broken_Hill"
+#~ msgstr "ഓസ്ട്രേലിയ/ബ്രോക്കണ്‍_ഹില്‍"
+
+#~ msgid "New South Wales - Yancowinna"
+#~ msgstr "ന്യൂ സൌത്ത് വെയില്‍സ് - യാന്‍കോവിന്നാ"
+
+#~ msgid "Australia/Brisbane"
+#~ msgstr "ഓസ്ട്രേലിയ/ബ്രിസ്ബന്‍"
+
+#~ msgid "Queensland - most locations"
+#~ msgstr "ക്വീന്‍സ്‌ലാന്‍ഡ് - മിക്ക് സ്ഥലങ്ങള്‍"
+
+#~ msgid "Australia/Lindeman"
+#~ msgstr "ഓസ്ട്രേലിയ/ലിന്‍ട്മാന്‍"
+
+#~ msgid "Queensland - Holiday Islands"
+#~ msgstr "ക്വീന്‍സ്‌ലാന്‍ഡ് - ഹോളിഡേ ഐലന്‍ഡുകള്‍"
+
+#~ msgid "Australia/Adelaide"
+#~ msgstr "ഓസ്ട്രേലിയ/അഡെലേയ്ട്"
+
+#~ msgid "South Australia"
+#~ msgstr "തെക്കന്‍ ഓസ്ട്രേലിയാ"
+
+#~ msgid "Australia/Darwin"
+#~ msgstr "ഓസ്ട്രേലിയ/ഡാര്‍വിന്‍"
+
+#~ msgid "Northern Territory"
+#~ msgstr "നോര്‍ത്തേണ്‍ ടെറിട്ടറി"
+
+#~ msgid "Australia/Perth"
+#~ msgstr "ഓസ്ട്രേലിയ/പെര്‍ത്ത്"
+
+#~ msgid "Western Australia - most locations"
+#~ msgstr "പടിഞ്ഞാറന്‍ ഒസ്ട്രേലിയാ - മിക്ക് സ്ഥലങ്ങള്‍"
+
+#~ msgid "Australia/Eucla"
+#~ msgstr "ഓസ്ട്രേലിയ/യൂക്ലാ"
+
+#~ msgid "Western Australia - Eucla area"
+#~ msgstr "പടിഞ്ഞാറാന്‍ ഓസ്ട്രേലിയാ - യൂക്ലാ"
+
+#~ msgid "America/Aruba"
+#~ msgstr "അമേരിക്ക/അറൂബ"
+
+#~ msgid "Europe/Mariehamn"
+#~ msgstr "യൂറോപ്പ്/മാരീഹം"
+
+#~ msgid "Asia/Baku"
+#~ msgstr "ഏഷ്യ/ബാക്കു"
+
+#~ msgid "Europe/Sarajevo"
+#~ msgstr "യൂറോപ്പ്/സരാജെവൊ"
+
+#~ msgid "America/Barbados"
+#~ msgstr "അമേരിക്ക/ബര്‍ബാഡോസ്"
+
+#~ msgid "Asia/Dhaka"
+#~ msgstr "ഏഷ്യ/ഡാക്കാ"
+
+#~ msgid "Europe/Brussels"
+#~ msgstr "യൂറോപ്പ്/ബ്രസ്സല്‍സ്"
+
+#~ msgid "Africa/Ouagadougou"
+#~ msgstr "ആഫ്രിക്ക/വാഗഡൂഗൂ"
+
+#~ msgid "Europe/Sofia"
+#~ msgstr "യൂറോപ്പ്/സോഫിയ"
+
+#~ msgid "Asia/Bahrain"
+#~ msgstr "ഏഷ്യ/ബെഹറിന്‍"
+
+#~ msgid "Africa/Bujumbura"
+#~ msgstr "ആഫ്രിക്ക/ബുജംബൂറെ"
+
+#~ msgid "Africa/Porto-Novo"
+#~ msgstr "ആഫ്രിക്ക/പോര്‍ട്ടോ -നോവോ"
+
+#~ msgid "America/St_Barthelemy"
+#~ msgstr "അമേരിക്ക/സെന്റ് _ബര്‍ഥലേമി"
+
+#~ msgid "Atlantic/Bermuda"
+#~ msgstr "അറ്റ്ലാന്റിക്/ബര്‍മൂഡാ"
+
+#~ msgid "Asia/Brunei"
+#~ msgstr "ഏഷ്യ/ബ്രൂണെ"
+
+#~ msgid "America/La_Paz"
+#~ msgstr "അമേരിക്ക/ലാ_പാസ്"
+
+#~ msgid "America/Noronha"
+#~ msgstr "അമേരിക്ക/നൊറോണ"
+
+#~ msgid "Atlantic islands"
+#~ msgstr "അറ്റ്ലാന്റിക് ഐലന്‍ഡുകള്‍"
+
+#~ msgid "America/Belem"
+#~ msgstr "അമേരിക്ക/ബെലെം"
+
+#~ msgid "Amapa, E Para"
+#~ msgstr "അമാപാ, ഇ പാരാ"
+
+#~ msgid "America/Fortaleza"
+#~ msgstr "അമേരിക്ക/ഫോര്‍ട്ടലെയ്സാ"
+
+#~ msgid "NE Brazil (MA, PI, CE, RN, PB)"
+#~ msgstr "തെക്ക് കിഴക്കന്‍ ബ്രസീല്‍ (MA, PI, CE, RN, PB)"
+
+#~ msgid "America/Recife"
+#~ msgstr "അമേരിക്ക/റെസീഫെ"
+
+#~ msgid "Pernambuco"
+#~ msgstr "പെര്‍നാബുക്കോ"
+
+#~ msgid "America/Araguaina"
+#~ msgstr "അമേരിക്ക/അരഗ്വൈന"
+
+#~ msgid "Tocantins"
+#~ msgstr "ടോക്കാന്റിസ്"
+
+#~ msgid "America/Maceio"
+#~ msgstr "അമേരിക്ക/മാസെയോ"
+
+#~ msgid "Alagoas, Sergipe"
+#~ msgstr "അലാഗോവാസ്, സെര്‍ഗൈപ്പ്"
+
+#~ msgid "America/Bahia"
+#~ msgstr "അമേരിക്ക/ബാഹ്യാ"
+
+#~ msgid "Bahia"
+#~ msgstr "ബാഹിയാ"
+
+#~ msgid "America/Sao_Paulo"
+#~ msgstr "അമേരിക്ക/സാവോ_പൌലോ"
+
+#~ msgid "S & SE Brazil (GO, DF, MG, ES, RJ, SP, PR, SC, RS)"
+#~ msgstr "S & SE ബ്രസീല്‍ (GO, DF, MG, ES, RJ, SP, PR, SC, RS)"
+
+#~ msgid "America/Campo_Grande"
+#~ msgstr "അമേരിക്ക/ക്യാമ്പോ_ഗ്രാന്ഡേ"
+
+#~ msgid "Mato Grosso do Sul"
+#~ msgstr "മാറ്റോ ഗ്രോസ്സോ ഡോ സുല്‍"
+
+#~ msgid "America/Cuiaba"
+#~ msgstr "അമേരിക്ക/കുയേബ"
+
+#~ msgid "Mato Grosso"
+#~ msgstr "മാറ്റോ ഗ്രോസ്സോ"
+
+#~ msgid "America/Santarem"
+#~ msgstr "അമേരിക്ക/സാന്‍ടറെം"
+
+#~ msgid "W Para"
+#~ msgstr "പടിഞ്ഞാറന്‍ പാരാ"
+
+#~ msgid "America/Porto_Velho"
+#~ msgstr "അമേരിക്ക/പോര്‍ട്ടോ_വെലോ"
+
+#~ msgid "Rondonia"
+#~ msgstr "റോണ്ടിയാ"
+
+#~ msgid "America/Boa_Vista"
+#~ msgstr "അമേരിക്ക/ബ്വാ_വിസ്താ"
+
+#~ msgid "Roraima"
+#~ msgstr "റൊറൈമാ"
+
+#~ msgid "America/Manaus"
+#~ msgstr "അമേരിക്ക/മെനൌസ്"
+
+#~ msgid "E Amazonas"
+#~ msgstr "കിഴക്കന്‍ അമേസോണാസ്"
+
+#~ msgid "America/Eirunepe"
+#~ msgstr "അമേരിക്ക/യൂറിനെയ്പ്പ്"
+
+#~ msgid "W Amazonas"
+#~ msgstr "പടിഞ്ഞാറന്‍ അമേസോണാസ്"
+
+#~ msgid "America/Rio_Branco"
+#~ msgstr "അമേരിക്ക/റിയോ_ബ്രാന്‍ക്കോ"
+
+#~ msgid "Acre"
+#~ msgstr "ഏക്കര്‍"
+
+#~ msgid "America/Nassau"
+#~ msgstr "അമേരിക്ക/നാസ്സോ"
+
+#~ msgid "Asia/Thimphu"
+#~ msgstr "ഏഷ്യ/ഥിംമ്പു"
+
+#~ msgid "Africa/Gaborone"
+#~ msgstr "ആഫ്രിക്ക/ഗബറോണീ"
+
+#~ msgid "Europe/Minsk"
+#~ msgstr "യൂറോപ്പ്/മിന്‍സ്ക്ക്"
+
+#~ msgid "America/Belize"
+#~ msgstr "അമേരിക്ക/ബെലീസ്"
+
+#~ msgid "America/St_Johns"
+#~ msgstr "അമേരിക്ക/സെന്റ്_ജോണ്‍സ്"
+
+#~ msgid "Newfoundland Time, including SE Labrador"
+#~ msgstr "ന്യൂഫൌണ്ട്ലാന്‍ഡ് സമയം, SE ലാബ്രഡോര്‍ ഉള്‍പ്പടെ"
+
+#~ msgid "America/Halifax"
+#~ msgstr "അമേരിക്ക/ഹാലിഫാക്സ്"
+
+#~ msgid "America/Glace_Bay"
+#~ msgstr "അമേരിക്ക/ഗ്ളെയ്സ്_ബെ"
+
+#~ msgid "America/Moncton"
+#~ msgstr "അമേരിക്ക/മോന്‍ക്ട്ടണ്‍"
+
+#~ msgid "Atlantic Time - New Brunswick"
+#~ msgstr "അറ്റ്ലാന്റിക് സമയം - ന്യൂ ബ്രൂണ്‍സ്‌വിക്ക്"
+
+#~ msgid "America/Goose_Bay"
+#~ msgstr "അമേരിക്ക/ഗൂസ്_ബെ"
+
+#~ msgid "Atlantic Time - Labrador - most locations"
+#~ msgstr "അറ്റ്ലാന്റിക് സമയം - ലാബ്രഡോര്‍ - മിക്ക സ്ഥലങ്ങള്‍"
+
+#~ msgid "America/Blanc-Sablon"
+#~ msgstr "അമേരിക്ക/ബ്ളാന്‍ക്-സാബ്ളോണ്‍"
+
+#~ msgid "Atlantic Standard Time - Quebec - Lower North Shore"
+#~ msgstr ""
+#~ "അറ്റ്ലാന്റിക് സ്റ്റാന്‍ഡേര്‍ഡ് സമയം - ക്യൂബെക് - ലോവര്‍ നോര്‍ത്ത് സ്റ്റോര്‍"
+
+#~ msgid "America/Toronto"
+#~ msgstr "അമേരിക്ക/ടൊറൊണ്‍ട്ടോ"
+
+#~ msgid "America/Nipigon"
+#~ msgstr "അമേരിക്ക/നിപ്പിഗോണ്‍"
+
+#~ msgid ""
+#~ "Eastern Time - Ontario & Quebec - places that did not observe DST 1967-1973"
+#~ msgstr ""
+#~ "കിഴക്കന്‍ സമയം - ഒണ്‍ടാരിയോ & ക്യൂബെക് - DST 1967-1973 പാലിച്ചിട്ടില്ലാത്ത "
+#~ "സ്ഥലങ്ങള്‍"
+
+#~ msgid "America/Thunder_Bay"
+#~ msgstr "അമേരിക്ക/തണ്‍ഡര്‍_ബെ"
+
+#~ msgid "Eastern Time - Thunder Bay, Ontario"
+#~ msgstr "കിഴക്കന്‍ സമയം - തണ്ടര്‍ ബേ, ഒണ്‍ടാരിയോ"
+
+#~ msgid "America/Iqaluit"
+#~ msgstr "അമേരിക്ക/ഇക്കലൂയിറ്റ്"
+
+#~ msgid "Eastern Time - east Nunavut - most locations"
+#~ msgstr "കിഴക്കന്‍ സമയം - കിഴക്ക് നുനാവത് - മിക്ക സ്ഥലങ്ങള്‍"
+
+#~ msgid "America/Pangnirtung"
+#~ msgstr "അമേരിക്ക/പാങ്നിര്‍ട്ടങ്"
+
+#~ msgid "Eastern Time - Pangnirtung, Nunavut"
+#~ msgstr "കിഴക്കന്‍ സമയം - പാങ്നിര്‍ട്ടങ്, നുനാവത്"
+
+#~ msgid "America/Resolute"
+#~ msgstr "അമേരിക്ക/റിസൊല്യൂട്ട്"
+
+#~ msgid "America/Atikokan"
+#~ msgstr "അമേരിക്ക/അറ്റികോക്കന്‍"
+
+#~ msgid "Eastern Standard Time - Atikokan, Ontario and Southampton I, Nunavut"
+#~ msgstr ""
+#~ "കിഴക്കന്‍ സ്റ്റാന്‍ഡേര്‍ഡ് സമയം - അറ്റിക്കോക്കന്‍, ഒന്‍ടാറിയോ, സൌത്താംപ്ടന്‍ "
+#~ "ഐ, നുനാവത്"
+
+#~ msgid "America/Rankin_Inlet"
+#~ msgstr "അമേരിക്ക/റാന്കിന്‍_ഇന്‍ലെറ്റ്"
+
+#~ msgid "Central Time - central Nunavut"
+#~ msgstr "സെന്‍ട്രല്‍ സമയം - മദ്ധ്യ നുനാവത്"
+
+#~ msgid "America/Winnipeg"
+#~ msgstr "അമേരിക്ക/വിന്നിപ്പെഗ്"
+
+#~ msgid "Central Time - Manitoba & west Ontario"
+#~ msgstr "സെന്‍ട്രല്‍ സമയം - മാനിറ്റോബാ & പടിഞ്ഞാറ് ഒണ്‍ടാരിയോ"
+
+#~ msgid "America/Rainy_River"
+#~ msgstr "അമേരിക്ക/റെയ്നി_റിവര്‍"
+
+#~ msgid "Central Time - Rainy River & Fort Frances, Ontario"
+#~ msgstr "സെന്‍ട്രല്‍ സമയം - റെയിനി റിവര്‍ & ഫോര്‍ട്ട് ഫ്രാന്‍സസ്, ഒണ്‍ടാരിയോ"
+
+#~ msgid "America/Regina"
+#~ msgstr "അമേരിക്ക/റെജീന"
+
+#~ msgid "Central Standard Time - Saskatchewan - most locations"
+#~ msgstr "സെന്‍ട്രല്‍ സ്റ്റാന്‍ഡേര്‍ഡ് സമയം - സസ്കാച്ചെവന്‍ - മിക്ക സ്ഥലങ്ങള്‍"
+
+#~ msgid "America/Swift_Current"
+#~ msgstr "അമേരിക്ക/സ്വിഫ്റ്റ്_കറണ്‍ട്ട്"
+
+#~ msgid "Central Standard Time - Saskatchewan - midwest"
+#~ msgstr "സെന്‍ട്രല്‍ സ്റ്റാന്‍ഡേര്‍ഡ് സമയം - സാസ്കാച്ചെവാന്‍ - മിഡ്‌വെസ്റ്റ്"
+
+#~ msgid "America/Edmonton"
+#~ msgstr "അമേരിക്ക/എട്മണ്‍ട്ടണ്‍"
+
+#~ msgid "Mountain Time - Alberta, east British Columbia & west Saskatchewan"
+#~ msgstr ""
+#~ "മൌണ്ടന്‍ സമയം - ആല്‍ബേര്‍ട്ടാ, കിഴക്ക് ബ്രിട്ടിഷ് കൊളംബിയാ & പടിഞ്ഞാറന്‍ "
+#~ "സാസ്കച്ചേവന്‍"
+
+#~ msgid "America/Cambridge_Bay"
+#~ msgstr "അമേരിക്ക/ക്കേബ്രിഡ്ജ്_ബെ"
+
+#~ msgid "Mountain Time - west Nunavut"
+#~ msgstr "മൌണ്ടന്‍ സമയം - പടിഞ്ഞാറന്‍ നുനാവത്"
+
+#~ msgid "America/Yellowknife"
+#~ msgstr "അമേരിക്ക/യെല്ലോനൈഫ്"
+
+#~ msgid "Mountain Time - central Northwest Territories"
+#~ msgstr "മൌണ്ടന്‍ സമയം - മദ്ധ്യ വടക്ക് പടിഞ്ഞാറന്‍ ടെറിട്ടറികള്‍"
+
+#~ msgid "America/Inuvik"
+#~ msgstr "അമേരിക്ക/ഇനുവിക്ക്"
+
+#~ msgid "Mountain Time - west Northwest Territories"
+#~ msgstr "മൌണ്ടന്‍ സമയം - പടിഞ്ഞാറ് വടക്ക് പടിഞ്ഞാറന്‍ ടെറിട്ടറികള്‍"
+
+#~ msgid "America/Dawson_Creek"
+#~ msgstr "അമേരിക്ക/ഡോസന്‍_ക്രീക്ക്"
+
+#~ msgid ""
+#~ "Mountain Standard Time - Dawson Creek & Fort Saint John, British Columbia"
+#~ msgstr ""
+#~ "മൌണ്ടന്‍ സ്റ്റാന്‍ഡേര്‍ഡ് സമയം - ഡോസണ്‍ ക്രീക്ക് & ഫോര്‍ട്ട് സെയിന്റ് ജോണ്‍, "
+#~ "ബ്രിട്ടിഷ് കൊളംബിയാ"
+
+#~ msgid "America/Vancouver"
+#~ msgstr "അമേരിക്ക/വാന്‍ക്കൂവര്‍"
+
+#~ msgid "Pacific Time - west British Columbia"
+#~ msgstr "പസിഫിക് സമയം - പടിഞ്ഞാറന്‍ ബ്രിട്ടിഷ് കൊളംബിയാ"
+
+#~ msgid "America/Whitehorse"
+#~ msgstr "അമേരിക്ക/വൈറ്റ്ഹോഴ്സ്"
+
+#~ msgid "Pacific Time - south Yukon"
+#~ msgstr "പസിഫിക് സമയം - തെക്ക് യുക്കോണ്‍"
+
+#~ msgid "America/Dawson"
+#~ msgstr "അമേരിക്ക/ഡോസന്‍"
+
+#~ msgid "Pacific Time - north Yukon"
+#~ msgstr "പസിഫിക് സമയം - വടക്ക് യൂക്കണ്‍"
+
+#~ msgid "Indian/Cocos"
+#~ msgstr "ഇഡ്യന്‍/കൊക്കോസ്"
+
+#~ msgid "Africa/Kinshasa"
+#~ msgstr "ആഫ്രിക്ക/കിന്‍ഷാസാ"
+
+#~ msgid "west Dem. Rep. of Congo"
+#~ msgstr "പടിഞ്ഞാറന്‍ ഡെമോക്രാറ്റിക് ഓഫ് കോങ്കോ"
+
+#~ msgid "Africa/Lubumbashi"
+#~ msgstr "ആഫ്രിക്ക/ലുബുംബാഷീ"
+
+#~ msgid "east Dem. Rep. of Congo"
+#~ msgstr "കിഴക്കന്‍ ഡെമോക്രാറ്റിക് ഓഫ് കോങ്കോ"
+
+#~ msgid "Africa/Bangui"
+#~ msgstr "ആഫ്രിക്ക/ബാങെയ്"
+
+#~ msgid "Africa/Brazzaville"
+#~ msgstr "ആഫ്രിക്ക/ബ്രാസ്സെവില്‍"
+
+#~ msgid "Europe/Zurich"
+#~ msgstr "യൂറോപ്പ്/സ്യൂറിക്ക്"
+
+#~ msgid "Africa/Abidjan"
+#~ msgstr "ആഫ്രിക്ക/ആബിജാന്‍"
+
+#~ msgid "Pacific/Rarotonga"
+#~ msgstr "പസിഫിക്ക്/രരോട്ടൊന്‍ഗ"
+
+#~ msgid "America/Santiago"
+#~ msgstr "അമേരിക്ക/സാന്റിയാഗോ"
+
+#~ msgid "most locations"
+#~ msgstr "മിക്ക സ്ഥലങ്ങള്‍"
+
+#~ msgid "Pacific/Easter"
+#~ msgstr "പസിഫിക്ക്/ഈസ്റ്റര്‍"
+
+#~ msgid "Africa/Douala"
+#~ msgstr "ആഫ്രിക്ക/ഡ്വാലാ"
+
+#~ msgid "Asia/Shanghai"
+#~ msgstr "ഏഷ്യ/ഷാന്‍ഗൈ"
+
+#~ msgid "Asia/Urumqi"
+#~ msgstr "ഏഷ്യ/ഉറുംഖി"
+
+#~ msgid "America/Bogota"
+#~ msgstr "അമേരിക്ക/ബൊഗോറ്റാ"
+
+#~ msgid "America/Costa_Rica"
+#~ msgstr "അമേരിക്ക/കോസ്റ്റാ_റിക്കാ"
+
+#~ msgid "America/Havana"
+#~ msgstr "അമേരിക്ക/ഹവാനാ"
+
+#~ msgid "Atlantic/Cape_Verde"
+#~ msgstr "അറ്റ്ലാന്റിക്/കെയ്പ്പ്_വെര്‍ദി"
+
+#~ msgid "America/Curacao"
+#~ msgstr "അമേരിക്ക/കുറേസൌ"
+
+#~ msgid "Indian/Christmas"
+#~ msgstr "ഇഡ്യന്‍/ക്രിസ്മസ്"
+
+#~ msgid "Asia/Nicosia"
+#~ msgstr "ഏഷ്യ/നിക്കോഷ്യാ"
+
+#~ msgid "Europe/Prague"
+#~ msgstr "യൂറോപ്പ്/പ്രാഗ്"
+
+#~ msgid "Europe/Berlin"
+#~ msgstr "യൂറോപ്പ്/ബെര്‍ലിന്‍"
+
+#~ msgid "Africa/Djibouti"
+#~ msgstr "ആഫ്രിക്ക/ജിബോട്ടി"
+
+#~ msgid "Europe/Copenhagen"
+#~ msgstr "യൂറോപ്പ്/കൊപ്പെന്‍ഹാഗന്‍"
+
+#~ msgid "America/Dominica"
+#~ msgstr "അമേരിക്ക/ഡൊമെനിക്ക"
+
+#~ msgid "America/Santo_Domingo"
+#~ msgstr "അമേരിക്ക/സാന്റോ _ഡൊമിന്‍ഗോ"
+
+#~ msgid "Africa/Algiers"
+#~ msgstr "ആഫ്രിക്ക/അല്‍ജിയേഴ്സ്"
+
+#~ msgid "America/Guayaquil"
+#~ msgstr "അമേരിക്ക/ഗ്വായാക്കീല്‍"
+
+#~ msgid "mainland"
+#~ msgstr "മെയിന്‍ലാന്‍ഡ്"
+
+#~ msgid "Pacific/Galapagos"
+#~ msgstr "പസിഫിക്ക്/ഗലാപ്പാഗോസ്"
+
+#~ msgid "Galapagos Islands"
+#~ msgstr "ഗാലാപാഗോസ് ഐലന്‍ഡുകള്‍"
+
+#~ msgid "Europe/Tallinn"
+#~ msgstr "യൂറോപ്പ്/റ്റാലിന്‍"
+
+#~ msgid "Africa/Cairo"
+#~ msgstr "ആഫ്രിക്ക/കെയ്റോ"
+
+#~ msgid "Africa/El_Aaiun"
+#~ msgstr "ആഫ്രിക്ക/എല്‍_ആയും"
+
+#~ msgid "Africa/Asmara"
+#~ msgstr "ആഫ്രിക്ക/അസ്മാറാ"
+
+#~ msgid "Europe/Madrid"
+#~ msgstr "യൂറോപ്പ്/മാഡ്രിഡ്"
+
+#~ msgid "Africa/Ceuta"
+#~ msgstr "ആഫ്രിക്ക/സ്യൂട്ടെ"
+
+#~ msgid "Ceuta & Melilla"
+#~ msgstr "സ്യൂട്ടാ & മെലീലാ"
+
+#~ msgid "Atlantic/Canary"
+#~ msgstr "അറ്റ്ലാന്റിക്/കാനറി"
+
+#~ msgid "Canary Islands"
+#~ msgstr "കാനറി ഐലന്‍ഡുകള്‍"
+
+#~ msgid "Africa/Addis_Ababa"
+#~ msgstr "ആഫ്രിക്ക/അഡ്ഡിസ്സ്_അബാബാ"
+
+#~ msgid "Europe/Helsinki"
+#~ msgstr "യൂറോപ്പ്/ഹെല്‍സിന്‍ഖി"
+
+#~ msgid "Pacific/Fiji"
+#~ msgstr "പസിഫിക്ക്/ഫിജി"
+
+#~ msgid "Atlantic/Stanley"
+#~ msgstr "അറ്റ്ലാന്റിക്/സ്റ്റാന്‍ലി"
+
+#~ msgid "Pacific/Chuuk"
+#~ msgstr "പസിഫിക്ക്/ചുക്ക്"
+
+#~ msgid "Chuuk (Truk) and Yap"
+#~ msgstr "ചുക്ക് (ട്രുക്ക്) ആന്‍ഡ് യാപ്"
+
+#~ msgid "Pacific/Pohnpei"
+#~ msgstr "പസിഫിക്ക്/പോന്‍പെയ്"
+
+#~ msgid "Pohnpei (Ponape)"
+#~ msgstr "പോന്‍പെയ് (പോണേപ്പ്)"
+
+#~ msgid "Pacific/Kosrae"
+#~ msgstr "പസിഫിക്ക്/കൊസ്രെ"
+
+#~ msgid "Kosrae"
+#~ msgstr "കോസ്രേ"
+
+#~ msgid "Atlantic/Faroe"
+#~ msgstr "അറ്റ്ലാന്റിക്/ഫെറോ"
+
+#~ msgid "Europe/Paris"
+#~ msgstr "യൂറോപ്പ്/പാരീസ്"
+
+#~ msgid "Africa/Libreville"
+#~ msgstr "ആഫ്രിക്ക/ലിബ്രേവില്‍"
+
+#~ msgid "Europe/London"
+#~ msgstr "യൂറോപ്പ്/ലണ്ടന്‍"
+
+#~ msgid "America/Grenada"
+#~ msgstr "അമേരിക്ക/ഗ്രനേഡാ"
+
+#~ msgid "Asia/Tbilisi"
+#~ msgstr "ഏഷ്യ/ഥെബിലിസി"
+
+#~ msgid "America/Cayenne"
+#~ msgstr "അമേരിക്ക/കയേന്‍"
+
+#~ msgid "Europe/Guernsey"
+#~ msgstr "യൂറോപ്പ്/ജേര്‍ണ്സീ"
+
+#~ msgid "Africa/Accra"
+#~ msgstr "ആഫ്രിക്ക/അക്ക്റാ"
+
+#~ msgid "Europe/Gibraltar"
+#~ msgstr "യൂറോപ്പ്/ഗിബ്രാല്റ്റര്‍"
+
+#~ msgid "America/Godthab"
+#~ msgstr "അമേരിക്ക/ഗോഡ്ഥാബ്"
+
+#~ msgid "America/Danmarkshavn"
+#~ msgstr "അമേരിക്ക/ഡന്‍മാര്‍ക്ക്ഷാവന്‍"
+
+#~ msgid "east coast, north of Scoresbysund"
+#~ msgstr "കിഴക്കന്‍ കോസ്റ്റ്, വടക്ക് സ്കോര്‍സ്ബൈസന്‍ഡ്"
+
+#~ msgid "America/Scoresbysund"
+#~ msgstr "അമേരിക്ക/സ്ക്കോഴ്സ്ബൈസണ്‍ഡ്"
+
+#~ msgid "Scoresbysund / Ittoqqortoormiit"
+#~ msgstr "സ്ക്കോര്‍സ്ബൈസന്‍ഡ് / ഇട്ടോക്കോര്‍ട്ടൂര്‍മിറ്റ്"
+
+#~ msgid "America/Thule"
+#~ msgstr "അമേരിക്ക/തുലേ"
+
+#~ msgid "Thule / Pituffik"
+#~ msgstr "തൂലേ / പിടുഫിക്ക്"
+
+#~ msgid "Africa/Banjul"
+#~ msgstr "ആഫ്രിക്ക/ബാന്‍ജൂള്‍"
+
+#~ msgid "Africa/Conakry"
+#~ msgstr "ആഫ്രിക്ക/കൊണാക്ക്രിി"
+
+#~ msgid "America/Guadeloupe"
+#~ msgstr "അമേരിക്ക/ഗ്വാഡ്ലോപ്പ്"
+
+#~ msgid "Africa/Malabo"
+#~ msgstr "ആഫ്രിക്ക/മലാബൊ"
+
+#~ msgid "Europe/Athens"
+#~ msgstr "യൂറോപ്പ്/ഏഥന്‍സ്"
+
+#~ msgid "Atlantic/South_Georgia"
+#~ msgstr "അറ്റ്ലാന്റിക്/സൌത്ത്_ജോര്‍ജ്യാ"
+
+#~ msgid "America/Guatemala"
+#~ msgstr "അമേരിക്ക/ഗ്വാട്ടിമാല"
+
+#~ msgid "Pacific/Guam"
+#~ msgstr "പസിഫിക്ക്/ഗ്വാം"
+
+#~ msgid "Africa/Bissau"
+#~ msgstr "ആഫ്രിക്ക/ബിസ്സൌ"
+
+#~ msgid "America/Guyana"
+#~ msgstr "അമേരിക്ക/ഗയാനാ"
+
+#~ msgid "Asia/Hong_Kong"
+#~ msgstr "ഏഷ്യ/ഹോങ്_കോങ്"
+
+#~ msgid "America/Tegucigalpa"
+#~ msgstr "അമേരിക്ക/ടെഗൂസിഗല്‍പ്പ"
+
+#~ msgid "Europe/Zagreb"
+#~ msgstr "യൂറോപ്പ്/സാഗ്രെബ്"
+
+#~ msgid "America/Port-au-Prince"
+#~ msgstr "അമേരിക്ക/പോര്‍ട്ട്-ഔ-പ്രിന്‍സ്"
+
+#~ msgid "Europe/Budapest"
+#~ msgstr "യൂറോപ്പ്/ബുഡാപെസ്റ്റ്"
+
+#~ msgid "Asia/Jakarta"
+#~ msgstr "ഏഷ്യ/ജക്കാര്‍ത്ത"
+
+#~ msgid "Java & Sumatra"
+#~ msgstr "ജാവാ & സുമത്രാ"
+
+#~ msgid "Asia/Pontianak"
+#~ msgstr "ഏഷ്യ/പൊണ്‍ട്ടിയാനാക്ക്"
+
+#~ msgid "west & central Borneo"
+#~ msgstr "പടിഞ്ഞാറന്‍ മദ്ധ്യ ബോര്‍ണിയോ"
+
+#~ msgid "Asia/Makassar"
+#~ msgstr "ഏഷ്യ/മാക്കസ്സര്‍"
+
+#~ msgid "Asia/Jayapura"
+#~ msgstr "ഏഷ്യ/ജയപ്പുപ"
+
+#~ msgid "Europe/Dublin"
+#~ msgstr "യൂറോപ്പ്/ഡ്യൂബ്ളിന്‍"
+
+#~ msgid "Asia/Jerusalem"
+#~ msgstr "ഏഷ്യ/ജേറുസലേം"
+
+#~ msgid "Europe/Isle_of_Man"
+#~ msgstr "യൂറോപ്പ്/ഐല്‍ ഓഫ് മാന്‍"
+
+#~ msgid "Asia/Kolkata"
+#~ msgstr "ഏഷ്യ/കോല്‍ക്കട്ട"
+
+#~ msgid "Indian/Chagos"
+#~ msgstr "ഇഡ്യന്‍/ഷാഗോസ്"
+
+#~ msgid "Asia/Baghdad"
+#~ msgstr "ഏഷ്യ/ബാഗ്ദാദ്"
+
+#~ msgid "Asia/Tehran"
+#~ msgstr "ഏഷ്യ/ടെഹ്രന്‍"
+
+#~ msgid "Atlantic/Reykjavik"
+#~ msgstr "അറ്റ്ലാന്റിക്/റെഖ്യാവെക്ക്"
+
+#~ msgid "Europe/Rome"
+#~ msgstr "യൂറോപ്പ്/റോം"
+
+#~ msgid "Europe/Jersey"
+#~ msgstr "യൂറോപ്പ്/ജേര്‍സീ"
+
+#~ msgid "America/Jamaica"
+#~ msgstr "അമേരിക്ക/ജമെയ്ക്കാ"
+
+#~ msgid "Asia/Amman"
+#~ msgstr "ഏഷ്യ/അമ്മാന്‍"
+
+#~ msgid "Asia/Tokyo"
+#~ msgstr "ഏഷ്യ/ടോക്ക്യോ"
+
+#~ msgid "Africa/Nairobi"
+#~ msgstr "ആഫ്രിക്ക/നൈറോബി"
+
+#~ msgid "Asia/Bishkek"
+#~ msgstr "ഏഷ്യ/ബിഷ്കേക്ക്"
+
+#~ msgid "Asia/Phnom_Penh"
+#~ msgstr "ഏഷ്യ/പെനോം_പെന്‍"
+
+#~ msgid "Pacific/Tarawa"
+#~ msgstr "പസിഫിക്ക്/തരാവാ"
+
+#~ msgid "Gilbert Islands"
+#~ msgstr "ഗില്‍ബേര്‍ട്ട് ഐലന്‍ഡുകള്‍"
+
+#~ msgid "Pacific/Enderbury"
+#~ msgstr "പസിഫിക്ക്/എന്‍ഡര്‍ബ്യൂറി"
+
+#~ msgid "Phoenix Islands"
+#~ msgstr "ഫീണിക്സ് ഐലന്‍ഡുകള്‍"
+
+#~ msgid "Pacific/Kiritimati"
+#~ msgstr "പസിഫിക്ക്/കെരിസ്മസ്"
+
+#~ msgid "Line Islands"
+#~ msgstr "ലൈന്‍ ഐലന്‍ഡുകള്‍"
+
+#~ msgid "Indian/Comoro"
+#~ msgstr "ഇഡ്യന്‍/കൊമോറൊ"
+
+#~ msgid "America/St_Kitts"
+#~ msgstr "അമേരിക്ക/സെന്റ്_കിറ്റ്സ്"
+
+#~ msgid "Asia/Pyongyang"
+#~ msgstr "ഏഷ്യ/പ്യോംങ്ഗ്യാങ്"
+
+#~ msgid "Asia/Seoul"
+#~ msgstr "ഏഷ്യ/സോള്‍"
+
+#~ msgid "Asia/Kuwait"
+#~ msgstr "ഏഷ്യ/കുവൈത്ത്"
+
+#~ msgid "America/Cayman"
+#~ msgstr "അമേരിക്ക/കെയ്മാന്‍"
+
+#~ msgid "Asia/Almaty"
+#~ msgstr "ഏഷ്യ/അല്‍മാട്ടി"
+
+#~ msgid "Asia/Qyzylorda"
+#~ msgstr "ഏഷ്യ/ഖ്വിസിലോര്‍ഡാ"
+
+#~ msgid "Qyzylorda (Kyzylorda, Kzyl-Orda)"
+#~ msgstr "ഖിസിലോര്‍ഡാ"
+
+#~ msgid "Asia/Aqtobe"
+#~ msgstr "ഏഷ്യ/അക്ക്റ്റോബെ"
+
+#~ msgid "Aqtobe (Aktobe)"
+#~ msgstr "അക്ടോബ്"
+
+#~ msgid "Asia/Aqtau"
+#~ msgstr "ഏഷ്യ/ആക്ക്റ്റൌ"
+
+#~ msgid "Atyrau (Atirau, Gur'yev), Mangghystau (Mankistau)"
+#~ msgstr "അറ്റിറൌ (അറ്റിറൌ, ഗുര്‍യെവ്), മാങ്കിസ്റ്റൌ (മാന്‍കിസ്റ്റൌ)"
+
+#~ msgid "Asia/Oral"
+#~ msgstr "ഏഷ്യ/ഒറാല്‍"
+
+#~ msgid "West Kazakhstan"
+#~ msgstr "പടിഞ്ഞാറന്‍ കസക്സ്ഥാന്‍"
+
+#~ msgid "Asia/Vientiane"
+#~ msgstr "ഏഷ്യ/വിയന്റിയാന്‍"
+
+#~ msgid "Asia/Beirut"
+#~ msgstr "ഏഷ്യ/ബെയ്റൂട്ട്"
+
+#~ msgid "America/St_Lucia"
+#~ msgstr "അമേരിക്ക/സെന്റ്_ലീസിയാ"
+
+#~ msgid "Europe/Vaduz"
+#~ msgstr "യൂറോപ്പ്/വാഡൂസ്"
+
+#~ msgid "Asia/Colombo"
+#~ msgstr "ഏഷ്യ/കോളോബൊ"
+
+#~ msgid "Africa/Monrovia"
+#~ msgstr "ആഫ്രിക്ക/മൊണ്‍റോവ്യാ"
+
+#~ msgid "Africa/Maseru"
+#~ msgstr "ആഫ്രിക്ക/മസേറു"
+
+#~ msgid "Europe/Vilnius"
+#~ msgstr "യൂറോപ്പ്/വില്‍നെയസ്"
+
+#~ msgid "Europe/Luxembourg"
+#~ msgstr "യൂറോപ്പ്/ലക്സംബര്‍ഗ്"
+
+#~ msgid "Europe/Riga"
+#~ msgstr "യൂറോപ്പ്/റിഗ"
+
+#~ msgid "Africa/Tripoli"
+#~ msgstr "ആഫ്രിക്ക/ട്രിപ്പോളി"
+
+#~ msgid "Africa/Casablanca"
+#~ msgstr "ആഫ്രിക്ക/കസാബ്ളാന്‍ഖാ"
+
+#~ msgid "Europe/Monaco"
+#~ msgstr "യൂറോപ്പ്/മൊണാക്കൊ"
+
+#~ msgid "Europe/Chisinau"
+#~ msgstr "യൂറോപ്പ്/ഖിഷിനൌ"
+
+#~ msgid "Europe/Podgorica"
+#~ msgstr "യൂറോപ്പ്/പോഡ്ഗോറിക്കാ"
+
+#~ msgid "America/Marigot"
+#~ msgstr "അമേരിക്ക/മാരിഗോട്ട്"
+
+#~ msgid "Indian/Antananarivo"
+#~ msgstr "ഇഡ്യന്‍/ആന്റനാനാരിവൊ"
+
+#~ msgid "Pacific/Majuro"
+#~ msgstr "പസിഫിക്ക്/മജൂറോ"
+
+#~ msgid "Pacific/Kwajalein"
+#~ msgstr "പസിഫിക്ക്/ക്വാജലന്‍"
+
+#~ msgid "Kwajalein"
+#~ msgstr "ക്വാജലന്‍"
+
+#~ msgid "Europe/Skopje"
+#~ msgstr "യൂറോപ്പ്/സ്ക്കോപ്പ്യെ"
+
+#~ msgid "Africa/Bamako"
+#~ msgstr "ആഫ്രിക്ക/ബമാക്കോ"
+
+#~ msgid "Asia/Rangoon"
+#~ msgstr "ഏഷ്യ/രണ്‍ഗൂണ്‍"
+
+#~ msgid "Asia/Ulaanbaatar"
+#~ msgstr "ഏഷ്യ/ഉലാന്‍ബാത്തര്‍"
+
+#~ msgid "Asia/Hovd"
+#~ msgstr "ഏഷ്യ/ഹോവ്ഡ്"
+
+#~ msgid "Bayan-Olgiy, Govi-Altai, Hovd, Uvs, Zavkhan"
+#~ msgstr "ബായാന്‍-ഒല്‍ജിയ്, ഗോവി-അല്‍ട്ടായി, ഹോവ്ഡ്, ഉവ്സ്, സാവ്ക്കാന്‍"
+
+#~ msgid "Asia/Choibalsan"
+#~ msgstr "ഏഷ്യ/ഷൊയിബാല്‍സന്‍"
+
+#~ msgid "Dornod, Sukhbaatar"
+#~ msgstr "ഡോര്‍നോഡ്, സുക്ബാത്തര്‍"
+
+#~ msgid "Asia/Macau"
+#~ msgstr "ഏഷ്യ/മക്കാവു"
+
+#~ msgid "Pacific/Saipan"
+#~ msgstr "പസിഫിക്ക്/സായിപ്പാന്‍"
+
+#~ msgid "America/Martinique"
+#~ msgstr "അമേരിക്ക/മാര്‍ട്ടിനെക്ക്"
+
+#~ msgid "Africa/Nouakchott"
+#~ msgstr "ആഫ്രിക്ക/ന്വാക്ഷോട്ട്"
+
+#~ msgid "America/Montserrat"
+#~ msgstr "അമേരിക്ക/മോണ്‍ട്ട്സെറാറ്റ്"
+
+#~ msgid "Europe/Malta"
+#~ msgstr "യൂറോപ്പ്/മാല്‍റ്റാ"
+
+#~ msgid "Indian/Mauritius"
+#~ msgstr "ഇഡ്യന്‍/മൊറീഷ്യസ്"
+
+#~ msgid "Indian/Maldives"
+#~ msgstr "ഇഡ്യന്‍/മാല്‍ഡീവ്സ്"
+
+#~ msgid "Africa/Blantyre"
+#~ msgstr "ആഫ്രിക്ക/ബ്ളാന്‍ടൈര്‍"
+
+#~ msgid "America/Mexico_City"
+#~ msgstr "അമേരിക്ക/മെക്സിക്കോ_സിറ്റി"
+
+#~ msgid "Central Time - most locations"
+#~ msgstr "സെന്‍ട്രല്‍ സമയം - മിക്ക സ്ഥലങ്ങള്‍"
+
+#~ msgid "America/Cancun"
+#~ msgstr "അമേരിക്ക/ക്യാന്‍കൂണ്‍"
+
+#~ msgid "America/Merida"
+#~ msgstr "അമേരിക്ക/മെറീഡാ"
+
+#~ msgid "Central Time - Campeche, Yucatan"
+#~ msgstr "സെന്‍ട്രല്‍ സമയം - കാംപീച്ച്, യുകാറ്റാന്‍"
+
+#~ msgid "America/Monterrey"
+#~ msgstr "അമേരിക്ക/മോണ്‍ട്ടെറീ"
+
+#~ msgid ""
+#~ "Mexican Central Time - Coahuila, Durango, Nuevo Leon, Tamaulipas away from "
+#~ "US border"
+#~ msgstr ""
+#~ "മെക്സിക്കന്‍ സെന്‍ട്രല്‍ സമയം - കോവാഹ്യൂലാ, ഡുറാങ്കോ, ന്യൂവോ ലിയോണ്‍, "
+#~ "ടമൌലിപാസ്, യുഎസ് അതിര്‍ത്തിയില്‍ നിന്നും ദൂരെ"
+
+#~ msgid "America/Matamoros"
+#~ msgstr "അമേരിക്ക/മറ്റമോറോസ്"
+
+#~ msgid ""
+#~ "US Central Time - Coahuila, Durango, Nuevo Leon, Tamaulipas near US border"
+#~ msgstr ""
+#~ "യുഎസ് സെന്‍ട്രല്‍ സമയം - കോവാഹ്യൂലാ, ഡുറാങ്കോ, ന്യൂവോ ലിയോണ്‍, ടമൌലിപാസ്, "
+#~ "യുഎസ് അതിര്‍ത്തിയ്ക്കടുത്തു്"
+
+#~ msgid "America/Mazatlan"
+#~ msgstr "അമേരിക്ക/മാസറ്റ്ലാന്‍"
+
+#~ msgid "Mountain Time - S Baja, Nayarit, Sinaloa"
+#~ msgstr "മൌണ്ടന്‍ സമയം - തെക്കന്‍ ബാജാ, നായാറിത്ത്, സിനാലോവാ"
+
+#~ msgid "America/Chihuahua"
+#~ msgstr "അമേരിക്ക/ചിവാവാ"
+
+#~ msgid "Mexican Mountain Time - Chihuahua away from US border"
+#~ msgstr ""
+#~ "മെക്സിക്കന്‍ മൌണ്ടന്‍ സമയം - ചിഹ്വാഹ്വാ, യുഎസ് അതിര്‍ത്തിയില്‍ നിന്നും ദൂരെ"
+
+#~ msgid "America/Ojinaga"
+#~ msgstr "അമേരിക്ക/ഒജിനാഗാ"
+
+#~ msgid "US Mountain Time - Chihuahua near US border"
+#~ msgstr "യുഎസ് മൌണ്ടന്‍ സമയം - ചിഹ്വാഹ്വാ, യുഎസ് അതിര്‍ത്തിയ്ക്കടുത്തു്"
+
+#~ msgid "America/Hermosillo"
+#~ msgstr "അമേരിക്ക/ഹെര്‍മോസിലോ"
+
+#~ msgid "Mountain Standard Time - Sonora"
+#~ msgstr "മൌണ്ടന്‍ സ്റ്റാന്‍ഡേര്‍ഡ് സമയം - സൊണോറാ"
+
+#~ msgid "America/Tijuana"
+#~ msgstr "അമേരിക്ക/തിജ്വാനാ"
+
+#~ msgid "US Pacific Time - Baja California near US border"
+#~ msgstr ""
+#~ "യുഎസ് പസിഫിക് സമയം - ബാജാ കാലിഫോര്‍ണിയാ, യുഎസ് അതിര്‍ത്തിയിക്കടുത്തു്"
+
+#~ msgid "America/Santa_Isabel"
+#~ msgstr "അമേരിക്ക/സാന്റാ_ഇസബെല്‍"
+
+#~ msgid "Mexican Pacific Time - Baja California away from US border"
+#~ msgstr ""
+#~ "മെക്സിക്കന്‍ പെസിഫിക് സമയം - ബാജാ കാലിഫോര്‍ണിയാ യുഎസ് അതിര്‍ത്തിയില്‍ "
+#~ "നിന്നും ദൂരെ"
+
+#~ msgid "America/Bahia_Banderas"
+#~ msgstr "അമേരിക്ക/ബാഹിയാ_ബാന്‍ഡെരാസ്"
+
+#~ msgid "Mexican Central Time - Bahia de Banderas"
+#~ msgstr "മെക്സിക്കന്‍ സെന്‍ട്രല്‍ സമയം - ബാഹിസാ ഡീ ബാന്‍ഡെരാസ്"
+
+#~ msgid "Asia/Kuala_Lumpur"
+#~ msgstr "ഏഷ്യ/ക്വാലാ_ലമ്പൂര്‍"
+
+#~ msgid "peninsular Malaysia"
+#~ msgstr "പെനിന്‍സുലര്‍ മലേഷ്യാ"
+
+#~ msgid "Asia/Kuching"
+#~ msgstr "ഏഷ്യ/കച്ചിംങ്"
+
+#~ msgid "Sabah & Sarawak"
+#~ msgstr "സബാഹ് & സാറാവാക്"
+
+#~ msgid "Africa/Maputo"
+#~ msgstr "ആഫ്രിക്ക/മപൂറ്റൊ"
+
+#~ msgid "Africa/Windhoek"
+#~ msgstr "ആഫ്രിക്ക/വിന്‍ഡ്ഹുക്ക്"
+
+#~ msgid "Pacific/Noumea"
+#~ msgstr "പസിഫിക്ക്/നവോമ്യ"
+
+#~ msgid "Africa/Niamey"
+#~ msgstr "ആഫ്രിക്ക/നിയാമെ"
+
+#~ msgid "Pacific/Norfolk"
+#~ msgstr "പസിഫിക്ക്/നോര്‍ഫോക്ക്"
+
+#~ msgid "Africa/Lagos"
+#~ msgstr "ആഫ്രിക്ക/ലാഗോസ്"
+
+#~ msgid "America/Managua"
+#~ msgstr "അമേരിക്ക/മനാഗ്വാ"
+
+#~ msgid "Europe/Amsterdam"
+#~ msgstr "യൂറോപ്പ്/ആമ്സറ്റര്‍‍ഡാം"
+
+#~ msgid "Europe/Oslo"
+#~ msgstr "യൂറോപ്പ്/ഓസ്ലോ"
+
+#~ msgid "Asia/Kathmandu"
+#~ msgstr "ഏഷ്യ/കാട്മണ്ടു"
+
+#~ msgid "Pacific/Nauru"
+#~ msgstr "പസിഫിക്ക്/നൌറൊ"
+
+#~ msgid "Pacific/Niue"
+#~ msgstr "പസിഫിക്ക്/നെയൂവെ"
+
+#~ msgid "Pacific/Auckland"
+#~ msgstr "പസിഫിക്ക്/ഓക്ക്ലാന്‍ഡ്"
+
+#~ msgid "Pacific/Chatham"
+#~ msgstr "പസിഫിക്ക്/ചാഥാം"
+
+#~ msgid "Chatham Islands"
+#~ msgstr "ചാഥം ഐലന്‍ഡുകള്‍"
+
+#~ msgid "Asia/Muscat"
+#~ msgstr "ഏഷ്യ/മസ്ക്കറ്റ്"
+
+#~ msgid "America/Panama"
+#~ msgstr "അമേരിക്ക/പനാമ"
+
+#~ msgid "America/Lima"
+#~ msgstr "അമേരിക്ക/ലിമാ"
+
+#~ msgid "Pacific/Tahiti"
+#~ msgstr "പസിഫിക്ക്/തഹിത്തി"
+
+#~ msgid "Society Islands"
+#~ msgstr "സൊസൈറ്റി ഐലന്‍ഡുകള്‍"
+
+#~ msgid "Pacific/Marquesas"
+#~ msgstr "പസിഫിക്ക്/മാരക്ക്വെസാസ്"
+
+#~ msgid "Marquesas Islands"
+#~ msgstr "മാര്‍ക്വിസാസ് ഐലന്‍ഡുകള്‍"
+
+#~ msgid "Pacific/Gambier"
+#~ msgstr "പസിഫിക്ക്/ഗാംബിയര്‍"
+
+#~ msgid "Gambier Islands"
+#~ msgstr "ഗാംബിയര്‍ ഐലന്‍ഡുകള്‍"
+
+#~ msgid "Pacific/Port_Moresby"
+#~ msgstr "പസിഫിക്ക്/പോര്‍ട്ട്_മോര്‍സ്ബീ"
+
+#~ msgid "Asia/Manila"
+#~ msgstr "ഏഷ്യ/മാനില"
+
+#~ msgid "Asia/Karachi"
+#~ msgstr "ഏഷ്യ/കറാച്ചി"
+
+#~ msgid "Europe/Warsaw"
+#~ msgstr "യൂറോപ്പ്/വാര്‍സൌ"
+
+#~ msgid "America/Miquelon"
+#~ msgstr "അമേരിക്ക/മിക്ക്വിലോണ്‍"
+
+#~ msgid "Pacific/Pitcairn"
+#~ msgstr "പസിഫിക്ക്/പിറ്റ്കെയിന്‍"
+
+#~ msgid "America/Puerto_Rico"
+#~ msgstr "അമേരിക്ക/പ്യൂര്‍ട്ടോ_റിക്കോ"
+
+#~ msgid "Asia/Gaza"
+#~ msgstr "ഏഷ്യ/ഗാസാ"
+
+#~ msgid "Europe/Lisbon"
+#~ msgstr "യൂറോപ്പ്/ലിസ്ബണ്‍"
+
+#~ msgid "Atlantic/Madeira"
+#~ msgstr "അറ്റ്ലാന്റിക്/മദീയ്റ"
+
+#~ msgid "Madeira Islands"
+#~ msgstr "മഡയിറാ ഐലന്‍ഡുകള്‍"
+
+#~ msgid "Atlantic/Azores"
+#~ msgstr "അറ്റ്ലാന്റിക്/അസോഴ്സ്"
+
+#~ msgid "Azores"
+#~ msgstr "അസോര്‍സ്"
+
+#~ msgid "Pacific/Palau"
+#~ msgstr "പസിഫിക്ക്/പാലൌ"
+
+#~ msgid "America/Asuncion"
+#~ msgstr "അമേരിക്ക/അസൂണ്‍സ്യോന്‍"
+
+#~ msgid "Asia/Qatar"
+#~ msgstr "ഏഷ്യ/ഖത്തര്‍"
+
+#~ msgid "Indian/Reunion"
+#~ msgstr "ഇഡ്യന്‍/റീയൂണ്യന്‍"
+
+#~ msgid "Europe/Bucharest"
+#~ msgstr "യൂറോപ്പ്/ബുക്കേറസ്റ്റ്"
+
+#~ msgid "Europe/Belgrade"
+#~ msgstr "യൂറോപ്പ്/ബെല്‍ഗ്രേഡ്"
+
+#~ msgid "Europe/Kaliningrad"
+#~ msgstr "യൂറോപ്പ്/കലിനിന്‍ഗ്രാഡ്"
+
+#~ msgid "Moscow-01 - Kaliningrad"
+#~ msgstr "മോസ്കൌ-01 - കാലിങ്ഗ്രാഡ്"
+
+#~ msgid "Europe/Moscow"
+#~ msgstr "യൂറോപ്പ്/മോസ്ക്കൊ"
+
+#~ msgid "Moscow+00 - west Russia"
+#~ msgstr "മോസ്കൌ+00 - പടിഞ്ഞാറന്‍ റഷ്യാ"
+
+#~ msgid "Europe/Simferopol"
+#~ msgstr "യൂറോപ്പ്/സിംഫെറോപ്പല്‍"
+
+#~ msgid "Europe/Volgograd"
+#~ msgstr "യൂറോപ്പ്/വോള്‍ഗോഗ്രാഡ്"
+
+#~ msgid "Moscow+00 - Caspian Sea"
+#~ msgstr "മോസ്കൌ+00 - കാസ്പിയന്‍ സീ"
+
+#~ msgid "Europe/Samara"
+#~ msgstr "യൂറോപ്പ്/സമേറ"
+
+#~ msgid "Asia/Yekaterinburg"
+#~ msgstr "ഏഷ്യ/യെക്കാത്തറിന്‍ബര്‍ഗ്"
+
+#~ msgid "Moscow+02 - Urals"
+#~ msgstr "മോസ്കൌ+02 - ഉറല്‍സ്"
+
+#~ msgid "Asia/Omsk"
+#~ msgstr "ഏഷ്യ/ഓമ്സ്ക്ക്"
+
+#~ msgid "Moscow+03 - west Siberia"
+#~ msgstr "മോസ്കൌ+03 - പടിഞ്ഞാറ് സൈബേരിയാ"
+
+#~ msgid "Asia/Novosibirsk"
+#~ msgstr "ഏഷ്യ/നൊവോസിബിര്‍സ്ക്"
+
+#~ msgid "Moscow+03 - Novosibirsk"
+#~ msgstr "മോസ്ക്കോ+03  - നൊവോസിബിര്‍സ്ക്"
+
+#~ msgid "Asia/Novokuznetsk"
+#~ msgstr "ഏഷ്യ/നോവോകസ്നെട്സ്ക്"
+
+#~ msgid "Asia/Krasnoyarsk"
+#~ msgstr "ഏഷ്യ/ക്രാസ്നൊയാര്‍സ്ക്"
+
+#~ msgid "Moscow+04 - Yenisei River"
+#~ msgstr "മോസ്കൌ+04 - യെനിസീ റിവര്‍"
+
+#~ msgid "Asia/Irkutsk"
+#~ msgstr "ഏഷ്യ/ഐര്‍ക്കട്ട്സ്ക്ക്"
+
+#~ msgid "Moscow+05 - Lake Baikal"
+#~ msgstr "മോസ്കൌ+05 - ലെയിക്ക് ബെയിക്കല്‍"
+
+#~ msgid "Asia/Yakutsk"
+#~ msgstr "ഏഷ്യ/യെക്കൂട്ട്സ്ക്ക്"
+
+#~ msgid "Moscow+06 - Lena River"
+#~ msgstr "മോസ്കൌ+06 - ലെനാ റിവര്‍"
+
+#~ msgid "Asia/Vladivostok"
+#~ msgstr "ഏഷ്യ/വ്ളാഡിവോസ്ഥോക്ക്"
+
+#~ msgid "Moscow+07 - Amur River"
+#~ msgstr "മോസ്കൌ+07 - അമൂര്‍ റിവര്‍"
+
+#~ msgid "Asia/Sakhalin"
+#~ msgstr "ഏഷ്യ/സാഖാലിന്‍"
+
+#~ msgid "Moscow+07 - Sakhalin Island"
+#~ msgstr "മോസ്കൌ+07 - സാഖാലിന്‍ ഐലന്‍ഡ്"
+
+#~ msgid "Asia/Magadan"
+#~ msgstr "ഏഷ്യ/മാഗഡന്‍"
+
+#~ msgid "Asia/Kamchatka"
+#~ msgstr "ഏഷ്യ/കംച്ചട്ട്ക്ക"
+
+#~ msgid "Asia/Anadyr"
+#~ msgstr "ഏഷ്യ/ആനെഡിര്‍"
+
+#~ msgid "Africa/Kigali"
+#~ msgstr "ആഫ്രിക്ക/കിഗാളി"
+
+#~ msgid "Asia/Riyadh"
+#~ msgstr "ഏഷ്യ/റിയാദ്"
+
+#~ msgid "Pacific/Guadalcanal"
+#~ msgstr "പസിഫിക്ക്/ഗ്വഡാല്‍കനാല്‍"
+
+#~ msgid "Indian/Mahe"
+#~ msgstr "ഇഡ്യന്‍/മാഹെ"
+
+#~ msgid "Africa/Khartoum"
+#~ msgstr "ആഫ്രിക്ക/ഖാര്‍ഥും"
+
+#~ msgid "Europe/Stockholm"
+#~ msgstr "യൂറോപ്പ്/സ്റ്റോക്ക്ഹോം"
+
+#~ msgid "Asia/Singapore"
+#~ msgstr "ഏഷ്യ/സിംഗപൂര്‍"
+
+#~ msgid "Atlantic/St_Helena"
+#~ msgstr "അറ്റ്ലാന്റിക്/സെന്റര്‍_ഹെലെനാ"
+
+#~ msgid "Europe/Ljubljana"
+#~ msgstr "യൂറോപ്പ്/ലുബ്ളെയാന"
+
+#~ msgid "Arctic/Longyearbyen"
+#~ msgstr "ആര്‍ട്ടിക്ക്/ലോങിയര്‍ബയന്‍"
+
+#~ msgid "Europe/Bratislava"
+#~ msgstr "യൂറോപ്പ്/ബ്രാറ്റിസ്ലോവാ"
+
+#~ msgid "Africa/Freetown"
+#~ msgstr "ആഫ്രിക്ക/ഫ്രീടൌണ്‍"
+
+#~ msgid "Europe/San_Marino"
+#~ msgstr "യൂറോപ്പ്/സാന്‍_മാറിനൊ"
+
+#~ msgid "Africa/Dakar"
+#~ msgstr "ആഫ്രിക്ക/ഡക്കാര്‍"
+
+#~ msgid "Africa/Mogadishu"
+#~ msgstr "ആഫ്രിക്ക/മൊഗാഡിഷു"
+
+#~ msgid "America/Paramaribo"
+#~ msgstr "അമേരിക്ക/പരാമാരിബോ"
+
+#~ msgid "Africa/Sao_Tome"
+#~ msgstr "ആഫ്രിക്ക/സാവോ_റ്റോമെ"
+
+#~ msgid "America/El_Salvador"
+#~ msgstr "അമേരിക്ക/എല്‍_സാല്‍വഡോര്‍"
+
+#~ msgid "Asia/Damascus"
+#~ msgstr "ഏഷ്യ/ഡമാസ്കസ്"
+
+#~ msgid "Africa/Mbabane"
+#~ msgstr "ആഫ്രിക്ക/എംബാബാന്‍"
+
+#~ msgid "America/Grand_Turk"
+#~ msgstr "അമേരിക്ക/ഗ്രാന്‍ഡ്_റ്റര്‍ക്ക്"
+
+#~ msgid "Africa/Ndjamena"
+#~ msgstr "ആഫ്രിക്ക/എന്‍ജാമെനാ"
+
+#~ msgid "Indian/Kerguelen"
+#~ msgstr "ഇഡ്യന്‍/കെര്‍ഗ്വേലന്‍"
+
+#~ msgid "Africa/Lome"
+#~ msgstr "ആഫ്രിക്ക/ലോമെ"
+
+#~ msgid "Asia/Bangkok"
+#~ msgstr "ഏഷ്യ/ബാങ്കോക്ക്"
+
+#~ msgid "Asia/Dushanbe"
+#~ msgstr "ഏഷ്യ/ദുഷാനബെ"
+
+#~ msgid "Pacific/Fakaofo"
+#~ msgstr "പസിഫിക്ക്/ഫക്കോഫൊ"
+
+#~ msgid "Asia/Dili"
+#~ msgstr "ഏഷ്യ/ഡിലി"
+
+#~ msgid "Asia/Ashgabat"
+#~ msgstr "ഏഷ്യ/അഷ്ഗാബാത്ത്"
+
+#~ msgid "Africa/Tunis"
+#~ msgstr "ആഫ്രിക്ക/ട്യീണിസ്"
+
+#~ msgid "Pacific/Tongatapu"
+#~ msgstr "പസിഫിക്ക്/റ്റോങാറ്റപ്പു"
+
+#~ msgid "Europe/Istanbul"
+#~ msgstr "യൂറോപ്പ്/ഇസ്റ്റാന്‍ബുല്‍"
+
+#~ msgid "America/Port_of_Spain"
+#~ msgstr "അമേരിക്ക/പോര്‍ട്ട്_ഓഫ്_സ്പയിന്‍"
+
+#~ msgid "Pacific/Funafuti"
+#~ msgstr "പസിഫിക്ക്/ഫുണാഫുത്തി"
+
+#~ msgid "Asia/Taipei"
+#~ msgstr "ഏഷ്യ/ഥൈപെയ്"
+
+#~ msgid "Africa/Dar_es_Salaam"
+#~ msgstr "ആഫ്രിക്ക/ഡാര്‍_എസ്_സലാം"
+
+#~ msgid "Europe/Kiev"
+#~ msgstr "യൂറോപ്പ്/കെയിവ്"
+
+#~ msgid "Europe/Uzhgorod"
+#~ msgstr "യൂറോപ്പ്/ഉസ്ഗൊറോഡ്"
+
+#~ msgid "Ruthenia"
+#~ msgstr "റൂഥേനിയാ"
+
+#~ msgid "Europe/Zaporozhye"
+#~ msgstr "യൂറോപ്പ്/സാപ്പൊറോസി"
+
+#~ msgid "Zaporozh'ye, E Lugansk / Zaporizhia, E Luhansk"
+#~ msgstr ""
+#~ "സാപോറോസ്യേ, കിഴക്കന്‍ ലുഗാന്‍സ്ക് / സാപോറിസിയാ, കിഴക്കന്‍ ലുഹാന്‍സ്ക്"
+
+#~ msgid "Africa/Kampala"
+#~ msgstr "ആഫ്രിക്ക/കംപാലാ"
+
+#~ msgid "Pacific/Johnston"
+#~ msgstr "പസിഫിക്ക്/ജോണ്‍സ്റ്റണ്‍"
+
+#~ msgid "Johnston Atoll"
+#~ msgstr "ജോണ്‍സ്റ്റണ്‍ അറ്റോള്‍"
+
+#~ msgid "Pacific/Midway"
+#~ msgstr "പസിഫിക്ക്/മിഡ്‌വേ"
+
+#~ msgid "Midway Islands"
+#~ msgstr "മിഡ്‌വേ ഐലന്‍ഡുകള്‍"
+
+#~ msgid "Pacific/Wake"
+#~ msgstr "പസിഫിക്ക്/വെയ്ക്ക്"
+
+#~ msgid "Wake Island"
+#~ msgstr "വെയിക്ക് ഐലന്‍ഡ്"
+
+#~ msgid "America/New_York"
+#~ msgstr "അമേരിക്ക/ന്യൂ_യോര്‍ക്ക്"
+
+#~ msgid "Eastern Time"
+#~ msgstr "കിഴക്കന്‍ സമയം"
+
+#~ msgid "America/Detroit"
+#~ msgstr "അമേരിക്ക/ഡെട്രോയിറ്റ്"
+
+#~ msgid "Eastern Time - Michigan - most locations"
+#~ msgstr "കിഴക്കന്‍ സമയം - മിച്ചിഗന്‍ - മിക്ക സ്ഥലങ്ങള്‍"
+
+#~ msgid "America/Kentucky/Louisville"
+#~ msgstr "അമേരിക്ക/കെണ്‍ട്ടക്കി/ലൂയിവില്‍"
+
+#~ msgid "Eastern Time - Kentucky - Louisville area"
+#~ msgstr "കിഴക്കന്‍ സമയം - കെന്‍ട്ടക്കി - ലൂയിസ്‌വില്ലി"
+
+#~ msgid "America/Kentucky/Monticello"
+#~ msgstr "അമേരിക്ക/കെണ്‍ട്ടക്കി/മോണ്‍ട്ടേഛിലോ"
+
+#~ msgid "Eastern Time - Kentucky - Wayne County"
+#~ msgstr "കിഴക്കന്‍ സമയം - കെണ്‍ട്ടക്കി - വായിന്‍ കൌണ്ടി"
+
+#~ msgid "America/Indiana/Indianapolis"
+#~ msgstr "അമേരിക്ക/ഇന്‍ഡ്യാന/ഇന്‍ഡ്യാനപോളിസ്"
+
+#~ msgid "Eastern Time - Indiana - most locations"
+#~ msgstr "കിഴക്കന്‍ സമയം - ഇന്‍ഡ്യാനാ - മിക്ക സ്ഥലങ്ങള്‍"
+
+#~ msgid "America/Indiana/Vincennes"
+#~ msgstr "അമേരിക്ക/ഇന്‍ഡ്യാനാ/വിന്‍സെന്നസ്"
+
+#~ msgid "Eastern Time - Indiana - Daviess, Dubois, Knox & Martin Counties"
+#~ msgstr ""
+#~ "കിഴക്കന്‍ സമയം - ഇന്‍ഡ്യാനാ - ഡേവിയസ്, ഡുബോയിസ്, നോക്സ് & മാര്‍ട്ടിന്‍ "
+#~ "കൊണ്ടീസ്"
+
+#~ msgid "America/Indiana/Winamac"
+#~ msgstr "അമേരിക്ക/ഇന്‍ഡ്യാനാ/വിനാമാക്"
+
+#~ msgid "Eastern Time - Indiana - Pulaski County"
+#~ msgstr "കിഴക്കന്‍ സമയം - ഇന്‍ഡ്യാനാ - പുലാസ്കി കൌണ്ടി"
+
+#~ msgid "America/Indiana/Marengo"
+#~ msgstr "അമേരിക്ക/ഇന്‍ഡ്യാന/മാരെന്‍ഗോ"
+
+#~ msgid "Eastern Time - Indiana - Crawford County"
+#~ msgstr "കിഴക്കന്‍ സമയം - ഇന്‍ഡ്യാനാ - ക്രൌഫോര്‍ഡ് കൌണ്ടി"
+
+#~ msgid "America/Indiana/Petersburg"
+#~ msgstr "അമേരിക്ക/ഇന്‍ഡ്യാനാ/പീറ്റേര്‍സ്ബര്‍ഗ്"
+
+#~ msgid "Eastern Time - Indiana - Pike County"
+#~ msgstr "കിഴക്കന്‍ സമയം - ഇന്‍ഡ്യാനാ - പൈക്ക് കൌണ്ടി"
+
+#~ msgid "America/Indiana/Vevay"
+#~ msgstr "അമേരിക്ക/ഇന്‍ഡ്യാന/വെവായ്"
+
+#~ msgid "Eastern Time - Indiana - Switzerland County"
+#~ msgstr "കിഴക്കന്‍ സമയം - ഇന്‍ഡ്യാനാ - സ്വിറ്റ്സര്‍ലാന്‍ഡ് കൌണ്ടി"
+
+#~ msgid "America/Chicago"
+#~ msgstr "അമേരിക്ക/ഷിക്കാഗോ"
+
+#~ msgid "Central Time"
+#~ msgstr "സെന്‍ട്രല്‍ സമയം"
+
+#~ msgid "America/Indiana/Tell_City"
+#~ msgstr "അമേരിക്ക/ഇന്‍ഡ്യാന/ടെല്‍ _സിറ്റി"
+
+#~ msgid "Central Time - Indiana - Perry County"
+#~ msgstr "സെന്‍ട്രല്‍ സമയം - ഇന്‍ഡ്യാനാ - പെറി കൌണ്ടി"
+
+#~ msgid "America/Indiana/Knox"
+#~ msgstr "അമേരിക്ക/ഇന്‍ഡ്യാന/നോക്സ്"
+
+#~ msgid "Central Time - Indiana - Starke County"
+#~ msgstr "സെന്‍ട്രല്‍ സമയം - ഇന്‍ഡ്യാനാ - സ്റ്റാര്‍ക്ക് കൌണ്ടി"
+
+#~ msgid "America/Menominee"
+#~ msgstr "അമേരിക്ക/മെനോമിനീ"
+
+#~ msgid ""
+#~ "Central Time - Michigan - Dickinson, Gogebic, Iron & Menominee Counties"
+#~ msgstr ""
+#~ "സെന്‍ട്രല്‍ സമയം - മിച്ചിഗന്‍ - ഡിക്കിന്‍സണ്‍, ജോജെബിക്ക്, അയണ്‍ & മെനോമിനീ "
+#~ "കൌണ്ടീസ്"
+
+#~ msgid "America/North_Dakota/Center"
+#~ msgstr "അമേരിക്ക/നോര്‍ത്ത്_ഡക്കോറ്റ/സെന്റര്‍"
+
+#~ msgid "Central Time - North Dakota - Oliver County"
+#~ msgstr "സെന്‍ട്രല്‍ സമയം - വടക്ക് ഡക്കോട്ടാ - ഒലിവര്‍ കൌണ്ടി"
+
+#~ msgid "America/North_Dakota/New_Salem"
+#~ msgstr "അമേരിക്ക/നോര്‍ത്ത്_ഡക്കോറ്റ/ന്യൂ_സലേം"
+
+#~ msgid "Central Time - North Dakota - Morton County (except Mandan area)"
+#~ msgstr ""
+#~ "സെന്‍ട്രല്‍ സമയം - വടക്ക് ഡക്കോട്ടാ - മോര്‍ട്ടണ്‍ കൌണ്ടി (മാന്‍ഡന്‍ ഒഴിച്ചു്)"
+
+#~ msgid "America/Denver"
+#~ msgstr "അമേരിക്ക/ഡെന്‍വര്‍"
+
+#~ msgid "Mountain Time"
+#~ msgstr "മൌണ്ടന്‍ സമയം"
+
+#~ msgid "America/Boise"
+#~ msgstr "അമേരിക്ക/ബൊയിസ്"
+
+#~ msgid "Mountain Time - south Idaho & east Oregon"
+#~ msgstr "മൌണ്ടന്‍ സമയം - തെക്ക് ഇഡാഹോ & കിഴക്ക് ഓര്‍ഗാനോ"
+
+#~ msgid "America/Phoenix"
+#~ msgstr "അമേരിക്ക/ഫീനിക്സ്"
+
+#~ msgid "America/Los_Angeles"
+#~ msgstr "അമേരിക്ക/ലോസ്_ആന്ചലസ്"
+
+#~ msgid "Pacific Time"
+#~ msgstr "പസിഫിക്ക് സമയം"
+
+#~ msgid "America/Anchorage"
+#~ msgstr "അമേരിക്ക/ആഘറേജ്"
+
+#~ msgid "Alaska Time"
+#~ msgstr "അലാസ്ക്കാ സമയം"
+
+#~ msgid "America/Juneau"
+#~ msgstr "അമേരിക്ക/ജൂനൊ"
+
+#~ msgid "Alaska Time - Alaska panhandle"
+#~ msgstr "അലാസ്കാ സമയം - അലാസ്കാ പാന്‍ഹാന്‍ഡില്‍"
+
+#~ msgid "America/Yakutat"
+#~ msgstr "അമേരിക്ക/യാക്കുറ്റാറ്റ്"
+
+#~ msgid "Alaska Time - Alaska panhandle neck"
+#~ msgstr "അലാസ്കാ സമയം - അലാസ്കാ പാന്‍ഹാന്‍ഡില്‍ നെക്ക്"
+
+#~ msgid "America/Nome"
+#~ msgstr "അമേരിക്ക/നോം"
+
+#~ msgid "Alaska Time - west Alaska"
+#~ msgstr "അലാസ്കാ സമയം - പടിഞ്ഞാറന്‍ അലാസ്കാ"
+
+#~ msgid "America/Adak"
+#~ msgstr "അമേരിക്ക/എഡാക്ക്"
+
+#~ msgid "Aleutian Islands"
+#~ msgstr "അലൂഷ്യന്‍ ഐലന്‍ഡുകള്‍"
+
+#~ msgid "Pacific/Honolulu"
+#~ msgstr "പസിഫിക്ക്/ഹൊണോലുലു"
+
+#~ msgid "Hawaii"
+#~ msgstr "ഹവായ്"
+
+#~ msgid "America/Montevideo"
+#~ msgstr "അമേരിക്ക/മോണ്‍ട്ടെവീഡിയോ"
+
+#~ msgid "Asia/Samarkand"
+#~ msgstr "ഏഷ്യ/സമര്‍ക്കണ്ഡ്"
+
+#~ msgid "west Uzbekistan"
+#~ msgstr "പടിഞ്ഞാറന്‍ ഉസ്ബെക്കിസ്ഥാന്‍"
+
+#~ msgid "Asia/Tashkent"
+#~ msgstr "ഏഷ്യ/ഥഷ്ക്കെന്ത്"
+
+#~ msgid "east Uzbekistan"
+#~ msgstr "കിഴക്കന്‍ ഉസ്ബെക്കിസ്ഥാന്‍"
+
+#~ msgid "Europe/Vatican"
+#~ msgstr "യൂറോപ്പ്/വത്തിക്കാന്‍"
+
+#~ msgid "America/St_Vincent"
+#~ msgstr "അമേരിക്ക/സെന്റ്_വിന്‍സെന്റ്"
+
+#~ msgid "America/Caracas"
+#~ msgstr "അമേരിക്ക/കാറക്കാസ്"
+
+#~ msgid "America/Tortola"
+#~ msgstr "അമേരിക്ക/ടൊര്‍ട്ടോളാ"
+
+#~ msgid "America/St_Thomas"
+#~ msgstr "അമേരിക്ക/സെന്റ്_തോമസ്"
+
+#~ msgid "Asia/Ho_Chi_Minh"
+#~ msgstr "ഏഷ്യ/ഹോ_ചീ_മിന്‍ഹ്"
+
+#~ msgid "Pacific/Efate"
+#~ msgstr "പസിഫിക്ക്/എഫെയ്റ്റ്"
+
+#~ msgid "Pacific/Wallis"
+#~ msgstr "പസിഫിക്ക്/വാല്ലിസ്"
+
+#~ msgid "Pacific/Apia"
+#~ msgstr "പസിഫിക്ക്/ആപ്പിയ"
+
+#~ msgid "Asia/Aden"
+#~ msgstr "ഏഷ്യ/ഏഡന്‍"
+
+#~ msgid "Indian/Mayotte"
+#~ msgstr "ഇഡ്യന്‍/മയോട്ടെ"
+
+#~ msgid "Africa/Johannesburg"
+#~ msgstr "ആഫ്രിക്ക/ജോഹന്നസ്ബര്‍ഗ്"
+
+#~ msgid "Africa/Lusaka"
+#~ msgstr "ആഫ്രിക്ക/ലുസാക്കാ"
+
+#~ msgid "Africa/Harare"
+#~ msgstr "ആഫ്രിക്ക/ഹറാറെ"

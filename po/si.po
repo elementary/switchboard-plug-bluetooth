@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-12-14 20:29-0600\n"
-"PO-Revision-Date: 2016-12-15 05:14+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-12-15 05:34+0000\n"
+"Last-Translator: Daniel Fore <Unknown>\n"
 "Language-Team: Sinhalese <si@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-15 05:14+0000\n"
+"X-Launchpad-Export-Date: 2016-12-16 06:02+0000\n"
 "X-Generator: Launchpad (build 18293)\n"
 
 #: ../src/MainView.vala:85
@@ -32,3 +32,1140 @@ msgstr ""
 #: ../src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
 msgstr ""
+
+#~ msgid "Europe/Andorra"
+#~ msgstr "යුරෝපය/ඇන්ඩෝරා"
+
+#~ msgid "Asia/Dubai"
+#~ msgstr "අසියාව/ඩුබායි"
+
+#~ msgid "Asia/Kabul"
+#~ msgstr "අසියාව/කාබුල්"
+
+#~ msgid "America/Antigua"
+#~ msgstr "ඇමෙරිකාව/ඇන්ටිගුවා"
+
+#~ msgid "America/Anguilla"
+#~ msgstr "ඇමෙරිකාව/ඇන්ගුයිලා"
+
+#~ msgid "Europe/Tirane"
+#~ msgstr "යුරෝපය/ටිරෙන්"
+
+#~ msgid "Asia/Yerevan"
+#~ msgstr "අසියාව/යෙරෙවාන්"
+
+#~ msgid "Africa/Luanda"
+#~ msgstr "අප්‍රිකාව/ලුඅන්ඩා"
+
+#~ msgid "Antarctica/McMurdo"
+#~ msgstr "ඇන්ටාක්ටිකාව/මැක්මර්ඩෝ"
+
+#~ msgid "Antarctica/Rothera"
+#~ msgstr "ඇන්ටාක්ටිකාව/රොතේරා"
+
+#~ msgid "Antarctica/Palmer"
+#~ msgstr "ඇන්ටාක්ටිකාව/පාමර්"
+
+#~ msgid "Antarctica/Mawson"
+#~ msgstr "ඇන්ටාක්ටිකාව/මෝසන්"
+
+#~ msgid "Antarctica/Davis"
+#~ msgstr "ඇන්ටාක්ටිකාව/ඩේවිස්"
+
+#~ msgid "Antarctica/Casey"
+#~ msgstr "ඇන්ටාක්ටිකාව/කැසේ"
+
+#~ msgid "Antarctica/Vostok"
+#~ msgstr "ඇන්ටාක්ටිකාව/වොස්ටොක්"
+
+#~ msgid "Antarctica/DumontDUrville"
+#~ msgstr "ඇන්ටාක්ටිකාව/ඩුමොන්ට්ඩර්විල්"
+
+#~ msgid "Antarctica/Syowa"
+#~ msgstr "ඇන්ටාක්ටිකාව/සියෝවා"
+
+#~ msgid "America/Argentina/Buenos_Aires"
+#~ msgstr "ඇමෙරිකාව/අර්ජෙන්ටිනාව/බුවනෝර්ස්_අයර්ස්"
+
+#~ msgid "America/Argentina/Cordoba"
+#~ msgstr "ඇමෙරිකාව/අර්ජෙන්ටිනාව/කොර්ඩොබා"
+
+#~ msgid "America/Argentina/Jujuy"
+#~ msgstr "ඇමෙරිකාව/අර්ජෙන්ටිනාව/ජූජුයි"
+
+#~ msgid "America/Argentina/Tucuman"
+#~ msgstr "ඇමෙරිකාව/අර්ජෙන්ටිනාව/ටුකුමාන්"
+
+#~ msgid "America/Argentina/Catamarca"
+#~ msgstr "ඇමෙරිකාව/අර්ජෙන්ටිනාව/කැටමර්කාව"
+
+#~ msgid "America/Argentina/La_Rioja"
+#~ msgstr "ඇමෙරිකාව/අර්ජෙන්ටිනාව/ලා_රියෝජා"
+
+#~ msgid "America/Argentina/San_Juan"
+#~ msgstr "ඇමෙරිකාව/අර්ජෙන්ටිනාව/සෑන්_ජුවෑන්"
+
+#~ msgid "America/Argentina/Mendoza"
+#~ msgstr "ඇමෙරිකාව/අර්ජෙන්ටිනාව/මෙන්ඩෝසා"
+
+#~ msgid "America/Argentina/Rio_Gallegos"
+#~ msgstr "ඇමෙරිකාව/අර්ජෙන්ටිනාව/රියෝ_ගැල්ලෙගොස්"
+
+#~ msgid "America/Argentina/Ushuaia"
+#~ msgstr "ඇමෙරිකාව/අර්ජෙන්ටිනාව/උෂුයේයියා"
+
+#~ msgid "Pacific/Pago_Pago"
+#~ msgstr "පැසිපික්/පාගෝ_පාගෝ"
+
+#~ msgid "Europe/Vienna"
+#~ msgstr "යුරෝපය/වියානා"
+
+#~ msgid "Australia/Lord_Howe"
+#~ msgstr "ඕස්ට්‍රේලියාච/ලෝර්ඩ්_හෝව්"
+
+#~ msgid "Australia/Hobart"
+#~ msgstr "ඕස්ට්‍රේලියාච/හෝබාර්ට්"
+
+#~ msgid "Australia/Currie"
+#~ msgstr "ඕස්ට්‍රේලියාච/කුරී"
+
+#~ msgid "Australia/Melbourne"
+#~ msgstr "ඕස්ට්‍රේලියාච/මෙල්බෝන්"
+
+#~ msgid "Australia/Sydney"
+#~ msgstr "ඕස්ට්‍රේලියාච/සිඩ්නි"
+
+#~ msgid "Australia/Broken_Hill"
+#~ msgstr "ඕස්ට්‍රේලියාච/බ්‍රෝකන්_හිල්"
+
+#~ msgid "Australia/Brisbane"
+#~ msgstr "ඕස්ට්‍රේලියාච/බ්‍රිස්බේන්"
+
+#~ msgid "Australia/Lindeman"
+#~ msgstr "ඕස්ට්‍රේලියාච/ලින්ඩ්මාන්"
+
+#~ msgid "Australia/Adelaide"
+#~ msgstr "ඕස්ට්‍රේලියාච/ඇඩිලේඩ්"
+
+#~ msgid "Australia/Darwin"
+#~ msgstr "ඕස්ට්‍රේලියාච/ඩාර්වින්"
+
+#~ msgid "Australia/Perth"
+#~ msgstr "ඕස්ට්‍රේලියාච/පර්ත්"
+
+#~ msgid "America/Aruba"
+#~ msgstr "ඇමරිකාව/ඇරුබා"
+
+#~ msgid "Europe/Mariehamn"
+#~ msgstr "යුරෝපය/මැරීහැම්න්"
+
+#~ msgid "Asia/Baku"
+#~ msgstr "අසියාව/බකූ"
+
+#~ msgid "Europe/Sarajevo"
+#~ msgstr "යුරෝපය/සරයේවෝ"
+
+#~ msgid "America/Barbados"
+#~ msgstr "ඇමරිකාව/බාර්බෙඩාස්"
+
+#~ msgid "Asia/Dhaka"
+#~ msgstr "අසියාව/ඩකා"
+
+#~ msgid "Europe/Brussels"
+#~ msgstr "යුරෝපය/බ්‍රසල්ස්"
+
+#~ msgid "Africa/Ouagadougou"
+#~ msgstr "අප්‍රිකාව/ඕවාගොඩෞගෝ"
+
+#~ msgid "Europe/Sofia"
+#~ msgstr "යුරෝපය/සොෆියා"
+
+#~ msgid "Asia/Bahrain"
+#~ msgstr "අසියාව/බහරේන්"
+
+#~ msgid "Africa/Bujumbura"
+#~ msgstr "අප්‍රිකාව/බුජුම්බරා"
+
+#~ msgid "Africa/Porto-Novo"
+#~ msgstr "අප්‍රිකාව/පෝර්ටෝ-නෝවෝ"
+
+#~ msgid "Atlantic/Bermuda"
+#~ msgstr "අත්ලාන්තික්/බර්මුඩා"
+
+#~ msgid "Asia/Brunei"
+#~ msgstr "අසියාව/බෲනායි"
+
+#~ msgid "America/La_Paz"
+#~ msgstr "ඇමරිකාව/ලා_පෑස්"
+
+#~ msgid "America/Noronha"
+#~ msgstr "ඇමරිකාව/නොරොන්හා"
+
+#~ msgid "America/Belem"
+#~ msgstr "ඇමරිකාව/බේලෙම්"
+
+#~ msgid "America/Fortaleza"
+#~ msgstr "ඇමරිකාව/ෆෝර්ටලේසා"
+
+#~ msgid "America/Recife"
+#~ msgstr "ඇමරිකාව/රේසිෆ්"
+
+#~ msgid "America/Araguaina"
+#~ msgstr "ඇමෙරිකාව/ඇරගුයිනා"
+
+#~ msgid "America/Maceio"
+#~ msgstr "ඇමරිකාව/මැසියෝ"
+
+#~ msgid "America/Bahia"
+#~ msgstr "ඇමරිකාව/බාහියා"
+
+#~ msgid "America/Sao_Paulo"
+#~ msgstr "ඇමරිකාව/සාවෝ_පාලෝ"
+
+#~ msgid "America/Campo_Grande"
+#~ msgstr "ඇමරිකාව/කැම්පො_ග්‍රැන්ඩෙ"
+
+#~ msgid "America/Cuiaba"
+#~ msgstr "ඇමරිකාව/කයුයිබා"
+
+#~ msgid "America/Porto_Velho"
+#~ msgstr "ඇමරිකාව/පෝර්ටෝ_වෙල්හෝ"
+
+#~ msgid "America/Boa_Vista"
+#~ msgstr "ඇමරිකාව/බොවා_විස්ටා"
+
+#~ msgid "America/Manaus"
+#~ msgstr "ඇමරිකාව/මැනැයුස්"
+
+#~ msgid "America/Eirunepe"
+#~ msgstr "ඇමරිකාව/අයිරුනෙපෙ"
+
+#~ msgid "America/Rio_Branco"
+#~ msgstr "ඇමරිකාව/රියෝ_බ්‍රැන්කෝ"
+
+#~ msgid "America/Nassau"
+#~ msgstr "ඇමරිකාව/නස්සායු"
+
+#~ msgid "Asia/Thimphu"
+#~ msgstr "අසියාව/තිම්පු"
+
+#~ msgid "Africa/Gaborone"
+#~ msgstr "අප්‍රිකාව/ගැබොරෝන්"
+
+#~ msgid "Europe/Minsk"
+#~ msgstr "යුරෝපය/මින්ස්ක්"
+
+#~ msgid "America/Belize"
+#~ msgstr "ඇමරිකාව/බෙලිස්"
+
+#~ msgid "America/St_Johns"
+#~ msgstr "ඇමරිකාව/ශාන්ත්ත_ජෝන්ස්"
+
+#~ msgid "America/Halifax"
+#~ msgstr "ඇමරිකාව/හේලිෆැක්ස්"
+
+#~ msgid "America/Glace_Bay"
+#~ msgstr "ඇමරිකාව/ග්ලේස්_බොක්ක"
+
+#~ msgid "America/Moncton"
+#~ msgstr "ඇමරිකාව/මොන්ක්ටෝන්"
+
+#~ msgid "America/Goose_Bay"
+#~ msgstr "ඇමරිකාව/ගූස්_බොක්ක"
+
+#~ msgid "America/Blanc-Sablon"
+#~ msgstr "ඇමරිකාව/බ්ලැන්ක්-සැබ්ලොන්"
+
+#~ msgid "America/Toronto"
+#~ msgstr "ඇමරිකාව/ටොරොන්ටෝ"
+
+#~ msgid "America/Nipigon"
+#~ msgstr "ඇමරිකාව/නිපිගන්"
+
+#~ msgid "America/Thunder_Bay"
+#~ msgstr "ඇමරිකාව/තන්ඩර්_බොක්ක"
+
+#~ msgid "America/Iqaluit"
+#~ msgstr "ඇමරිකාව/ඉකාලුයිට්"
+
+#~ msgid "America/Pangnirtung"
+#~ msgstr "ඇමරිකාව/පැනග්නර්ටන්ග්"
+
+#~ msgid "America/Atikokan"
+#~ msgstr "ඇමරිකාව/ඇටිකොකාන්"
+
+#~ msgid "America/Rankin_Inlet"
+#~ msgstr "ඇමරිකාව/රැන්කින්_ඉන්ලට්"
+
+#~ msgid "America/Winnipeg"
+#~ msgstr "ඇමරිකාව/වින්නිපෙග්"
+
+#~ msgid "America/Rainy_River"
+#~ msgstr "ඇමරිකාව/රේනි_රිවර්"
+
+#~ msgid "America/Regina"
+#~ msgstr "ඇමරිකාව/රෙජිනා"
+
+#~ msgid "America/Swift_Current"
+#~ msgstr "ඇමරිකාව/ශීඝ්‍ර_වත්මන්"
+
+#~ msgid "America/Edmonton"
+#~ msgstr "ඇමරිකාව/එඩ්මන්ටන්"
+
+#~ msgid "America/Cambridge_Bay"
+#~ msgstr "ඇමරිකාව/කේම්බ්‍රිජ්_බොක්ක"
+
+#~ msgid "America/Yellowknife"
+#~ msgstr "ඇමරිකාව/යෙලෝනයිෆ්"
+
+#~ msgid "America/Inuvik"
+#~ msgstr "ඇමරිකාව/ඉනුවික්"
+
+#~ msgid "America/Dawson_Creek"
+#~ msgstr "ඇමරිකාව/ඩෝසන්_ක්‍රීක්"
+
+#~ msgid "America/Vancouver"
+#~ msgstr "ඇමරිකාව/වැන්කූවර්"
+
+#~ msgid "America/Whitehorse"
+#~ msgstr "ඇමරිකාව/වයිට්හෝර්ස්"
+
+#~ msgid "America/Dawson"
+#~ msgstr "ඇමරිකාව/ඩෝසන්"
+
+#~ msgid "Indian/Cocos"
+#~ msgstr "ඉන්දියානු/කොකොස්"
+
+#~ msgid "Africa/Kinshasa"
+#~ msgstr "අප්‍රිකාව/කින්ෂාසා"
+
+#~ msgid "Africa/Lubumbashi"
+#~ msgstr "අප්‍රිකාව/ලුබුම්බාෂි"
+
+#~ msgid "Africa/Bangui"
+#~ msgstr "අප්‍රිකාව/බැන්ගුයි"
+
+#~ msgid "Africa/Brazzaville"
+#~ msgstr "අප්‍රිකාව/බ්‍රැස්සාවිල්"
+
+#~ msgid "Europe/Zurich"
+#~ msgstr "යුරෝපය/සූරික්"
+
+#~ msgid "Africa/Abidjan"
+#~ msgstr "අප්‍රිකාව/අබිජාන්"
+
+#~ msgid "Pacific/Rarotonga"
+#~ msgstr "පැසිපික්/රැරොටොන්ගා"
+
+#~ msgid "America/Santiago"
+#~ msgstr "ඇමරිකාව/සන්තියාගු"
+
+#~ msgid "Africa/Douala"
+#~ msgstr "අප්‍රිකාව/ඩුආලා"
+
+#~ msgid "Asia/Shanghai"
+#~ msgstr "අසියාව/ෂැංග්හායි"
+
+#~ msgid "Asia/Urumqi"
+#~ msgstr "අසියාව/උරුම්කි"
+
+#~ msgid "America/Bogota"
+#~ msgstr "ඇමරිකාව/බොගෝටා"
+
+#~ msgid "America/Costa_Rica"
+#~ msgstr "ඇමරිකාව/කොස්ටා_රිකා"
+
+#~ msgid "America/Havana"
+#~ msgstr "ඇමරිකාව/හවානා"
+
+#~ msgid "Atlantic/Cape_Verde"
+#~ msgstr "අත්ලාන්තික්/කේප්_වර්ඩෙ"
+
+#~ msgid "America/Curacao"
+#~ msgstr "ඇමරිකාව/කුරාකාවෝ"
+
+#~ msgid "Indian/Christmas"
+#~ msgstr "ඉන්දියානු/ක්‍රිස්ට්මස්"
+
+#~ msgid "Asia/Nicosia"
+#~ msgstr "අසියාව/නිකෝසියාව"
+
+#~ msgid "Europe/Prague"
+#~ msgstr "යුරෝපය/ප්‍රාග්"
+
+#~ msgid "Europe/Berlin"
+#~ msgstr "යුරෝපය/බර්ලින්"
+
+#~ msgid "Africa/Djibouti"
+#~ msgstr "අප්‍රිකාව/ජිබූටි"
+
+#~ msgid "Europe/Copenhagen"
+#~ msgstr "යුරෝපය/කොපෙන්හාගෙන්"
+
+#~ msgid "America/Dominica"
+#~ msgstr "ඇමරිකාව/ඩොමිනිකා"
+
+#~ msgid "America/Santo_Domingo"
+#~ msgstr "ඇමරිකාව/සැන්ටෝ_ඩොමින්ගෝ"
+
+#~ msgid "Africa/Algiers"
+#~ msgstr "අප්‍රිකාව/ඇල්ජියර්ස්"
+
+#~ msgid "America/Guayaquil"
+#~ msgstr "ඇමරිකාව/ගෝයාක්විල්"
+
+#~ msgid "Pacific/Galapagos"
+#~ msgstr "පැසිපික්/ගලැපැගොස්"
+
+#~ msgid "Europe/Tallinn"
+#~ msgstr "යුරෝපය/ටල්ලින්"
+
+#~ msgid "Africa/Cairo"
+#~ msgstr "අප්‍රිකාව/කයිරෝ"
+
+#~ msgid "Africa/El_Aaiun"
+#~ msgstr "අප්‍රිකාව/එල්_ආයුන්"
+
+#~ msgid "Europe/Madrid"
+#~ msgstr "යුරෝපය/මෑඩ්රීඩ්"
+
+#~ msgid "Africa/Ceuta"
+#~ msgstr "අප්‍රිකාව/කියුටා"
+
+#~ msgid "Atlantic/Canary"
+#~ msgstr "අත්ලාන්තික්/කැනාරි"
+
+#~ msgid "Africa/Addis_Ababa"
+#~ msgstr "අප්‍රිකාව/අඩ්ඩිස්_අබබා"
+
+#~ msgid "Europe/Helsinki"
+#~ msgstr "යුරෝපය/හෙල්සින්කි"
+
+#~ msgid "Pacific/Fiji"
+#~ msgstr "පැසිපික්/ෆිජි"
+
+#~ msgid "Atlantic/Stanley"
+#~ msgstr "අත්ලාන්තික්/ස්ටැන්ලි"
+
+#~ msgid "Pacific/Kosrae"
+#~ msgstr "පැසිපික්/කොස්රේ"
+
+#~ msgid "Europe/Paris"
+#~ msgstr "යුරෝපය/පැරිස්"
+
+#~ msgid "Africa/Libreville"
+#~ msgstr "අප්‍රිකාව/ලිබ්‍රවිල්"
+
+#~ msgid "Europe/London"
+#~ msgstr "යුරෝපය/ලන්ඩන්"
+
+#~ msgid "America/Grenada"
+#~ msgstr "ඇමරිකාව/ග්‍රෙනඩාව"
+
+#~ msgid "Asia/Tbilisi"
+#~ msgstr "අසියාව/බිලිසි"
+
+#~ msgid "America/Cayenne"
+#~ msgstr "ඇමරිකාව/කේයින්නෙ"
+
+#~ msgid "Europe/Guernsey"
+#~ msgstr "යුරෝපය/ගුවර්න්සි"
+
+#~ msgid "Africa/Accra"
+#~ msgstr "අප්‍රිකාව/අක්‍රා"
+
+#~ msgid "Europe/Gibraltar"
+#~ msgstr "යුරෝපය/ගිබ්‍රෝල්ටාර්"
+
+#~ msgid "America/Godthab"
+#~ msgstr "ඇමරිකාව/ගෝඩ්තාබ්"
+
+#~ msgid "America/Danmarkshavn"
+#~ msgstr "ඇමරිකාව/ඩැන්මාර්ක්සෂාව්න්"
+
+#~ msgid "America/Scoresbysund"
+#~ msgstr "ඇමරිකාව/ස්කොර්ස්බිසන්ඩ්"
+
+#~ msgid "America/Thule"
+#~ msgstr "ඇමරිකාව/තූල්"
+
+#~ msgid "Africa/Banjul"
+#~ msgstr "අප්‍රිකාව/බැන්ජුල්"
+
+#~ msgid "Africa/Conakry"
+#~ msgstr "අප්‍රිකාව/කොනාක්‍රි"
+
+#~ msgid "America/Guadeloupe"
+#~ msgstr "ඇමරිකාව/ගෝඩෙලූප්"
+
+#~ msgid "Africa/Malabo"
+#~ msgstr "අප්‍රිකාව/මාලබෝ"
+
+#~ msgid "Europe/Athens"
+#~ msgstr "යුරෝපය/ඇතන්ස්"
+
+#~ msgid "Atlantic/South_Georgia"
+#~ msgstr "අත්ලාන්තික්/දකුණු_ජෝජියාව"
+
+#~ msgid "America/Guatemala"
+#~ msgstr "ඇමරිකාව/ගෝතමාලාව"
+
+#~ msgid "Pacific/Guam"
+#~ msgstr "පැසිපික්/ගෝම්"
+
+#~ msgid "Africa/Bissau"
+#~ msgstr "අප්‍රිකාව/බිස්සායු"
+
+#~ msgid "America/Guyana"
+#~ msgstr "ඇමරිකාව/ගයානාව"
+
+#~ msgid "Asia/Hong_Kong"
+#~ msgstr "අසියාව/හොං_කොං"
+
+#~ msgid "America/Tegucigalpa"
+#~ msgstr "ඇමරිකාව/ටෙගුසිගාල්පා"
+
+#~ msgid "Europe/Zagreb"
+#~ msgstr "යුරෝපය/සැග්රෙබ්"
+
+#~ msgid "America/Port-au-Prince"
+#~ msgstr "ඇමරිකාව/පොර්ට්-ආවු-ප්‍රිනස්"
+
+#~ msgid "Europe/Budapest"
+#~ msgstr "යුරෝපය/බුඩපෙස්ට්"
+
+#~ msgid "Asia/Jakarta"
+#~ msgstr "අසියාව/ජකර්තා"
+
+#~ msgid "Asia/Pontianak"
+#~ msgstr "අසියාව/පොන්ටියානක්"
+
+#~ msgid "Asia/Makassar"
+#~ msgstr "අසියාව/මකැස්සාර්"
+
+#~ msgid "Asia/Jayapura"
+#~ msgstr "අසියාව/ජයවර්ධන_පුර"
+
+#~ msgid "Europe/Dublin"
+#~ msgstr "යුරෝපය/ඩබ්ලින්"
+
+#~ msgid "Asia/Jerusalem"
+#~ msgstr "අසියාව/ජෙරුසලම"
+
+#~ msgid "Europe/Isle_of_Man"
+#~ msgstr "යුරෝපය/අයිල්_ඔෆ්_මෑන්"
+
+#~ msgid "Indian/Chagos"
+#~ msgstr "ඉන්දියානු/චාගොස්"
+
+#~ msgid "Asia/Baghdad"
+#~ msgstr "අසියාව/බෑග්ඩෑග්"
+
+#~ msgid "Asia/Tehran"
+#~ msgstr "අසියාව/ටෙහෙරානය"
+
+#~ msgid "Atlantic/Reykjavik"
+#~ msgstr "අත්ලාන්තික්/රෙක්යාවික්"
+
+#~ msgid "Europe/Rome"
+#~ msgstr "යුරෝපය/රෝමය"
+
+#~ msgid "Europe/Jersey"
+#~ msgstr "යුරෝපය/ජර්සි"
+
+#~ msgid "America/Jamaica"
+#~ msgstr "ඇමරිකාව/ජැමෙයිකාව"
+
+#~ msgid "Asia/Amman"
+#~ msgstr "අසියාව/අම්මාන්"
+
+#~ msgid "Asia/Tokyo"
+#~ msgstr "අසියාව/ටෝකියෝ"
+
+#~ msgid "Africa/Nairobi"
+#~ msgstr "අප්‍රිකාව/නයිරෝබි"
+
+#~ msgid "Asia/Bishkek"
+#~ msgstr "අසියාව/බිෂ්කෙක්"
+
+#~ msgid "Asia/Phnom_Penh"
+#~ msgstr "අසියාව/නොම්_පෙන්"
+
+#~ msgid "Pacific/Tarawa"
+#~ msgstr "පැසිපික්/ටරාවා"
+
+#~ msgid "Pacific/Enderbury"
+#~ msgstr "පැසිපික්/එන්ඩබරි"
+
+#~ msgid "Pacific/Kiritimati"
+#~ msgstr "පැසිපික්/කිරිටිමාටි"
+
+#~ msgid "Indian/Comoro"
+#~ msgstr "ඉන්දියානු/කොමොරෝ"
+
+#~ msgid "America/St_Kitts"
+#~ msgstr "ඇමරිකාව/ශාන්ත_කිට්ස්"
+
+#~ msgid "Asia/Pyongyang"
+#~ msgstr "අසියාව/යොංයෑං"
+
+#~ msgid "Asia/Seoul"
+#~ msgstr "අසියාව/සෝල්"
+
+#~ msgid "Asia/Kuwait"
+#~ msgstr "අසියාව/කුවේට්"
+
+#~ msgid "America/Cayman"
+#~ msgstr "ඇමරිකාව/කේමන්"
+
+#~ msgid "Asia/Almaty"
+#~ msgstr "අසියාව/ඕල්මැටි"
+
+#~ msgid "Asia/Qyzylorda"
+#~ msgstr "අසියාව/කිසිලෝර්ඩා"
+
+#~ msgid "Asia/Aqtobe"
+#~ msgstr "අසියාව/ඇක්ටෝබ්"
+
+#~ msgid "Asia/Aqtau"
+#~ msgstr "අසියාව/ඇක්ටාවු"
+
+#~ msgid "Asia/Oral"
+#~ msgstr "අසියාව/ඕරල්"
+
+#~ msgid "Asia/Vientiane"
+#~ msgstr "අසියාව/වියටියෙන්"
+
+#~ msgid "Asia/Beirut"
+#~ msgstr "අසියාව/බීරූට්"
+
+#~ msgid "America/St_Lucia"
+#~ msgstr "ඇමරිකාව/සාන්ත_ලුසියා"
+
+#~ msgid "Europe/Vaduz"
+#~ msgstr "යුරෝපය/වැඩුස්"
+
+#~ msgid "Asia/Colombo"
+#~ msgstr "අසියාව/කොළඹ"
+
+#~ msgid "Africa/Monrovia"
+#~ msgstr "අප්‍රිකාව/මොනොරොවියා"
+
+#~ msgid "Africa/Maseru"
+#~ msgstr "අප්‍රිකාව/මැසෙරු"
+
+#~ msgid "Europe/Vilnius"
+#~ msgstr "යුරෝපය/විල්නියුස්"
+
+#~ msgid "Europe/Luxembourg"
+#~ msgstr "යුරෝපය/ලක්සම්බර්ග්"
+
+#~ msgid "Europe/Riga"
+#~ msgstr "යුරෝපය/රිගා"
+
+#~ msgid "Africa/Tripoli"
+#~ msgstr "අප්‍රිකාව/ට්‍රිපොලි"
+
+#~ msgid "Africa/Casablanca"
+#~ msgstr "අප්‍රිකාව/කැසබලැන්කා"
+
+#~ msgid "Europe/Monaco"
+#~ msgstr "යුරෝපය/මොනාකෝ"
+
+#~ msgid "Europe/Chisinau"
+#~ msgstr "යුරෝපය/චිසිනාවු"
+
+#~ msgid "Europe/Podgorica"
+#~ msgstr "යුරෝපය/පොඩ්ගොරිකාග්‍රාඩ්"
+
+#~ msgid "Indian/Antananarivo"
+#~ msgstr "ඉන්දියානු/ඇන්ටනානාරිවෝ"
+
+#~ msgid "Pacific/Majuro"
+#~ msgstr "පැසිපික්/මාජුරෝ"
+
+#~ msgid "Pacific/Kwajalein"
+#~ msgstr "පැසිපික්/ක්වාජලීන්"
+
+#~ msgid "Kwajalein"
+#~ msgstr "ක්වජලීන්"
+
+#~ msgid "Europe/Skopje"
+#~ msgstr "යුරෝපය/ස්කෝයෙ"
+
+#~ msgid "Africa/Bamako"
+#~ msgstr "අප්‍රිකාව/බැමාකෝ"
+
+#~ msgid "Asia/Rangoon"
+#~ msgstr "අසියාව/රැන්ගූන්"
+
+#~ msgid "Asia/Ulaanbaatar"
+#~ msgstr "අසියාව/උලාන්බාටර්"
+
+#~ msgid "Asia/Hovd"
+#~ msgstr "අසියාව/හෝව්ඩ්"
+
+#~ msgid "Asia/Choibalsan"
+#~ msgstr "අසියාව/චොයිබල්සාන්"
+
+#~ msgid "Asia/Macau"
+#~ msgstr "අසියාව/මැකෝ"
+
+#~ msgid "Pacific/Saipan"
+#~ msgstr "පැසිපික්/සායිපාන්"
+
+#~ msgid "America/Martinique"
+#~ msgstr "ඇමරිකාව/මාර්ටිනික්"
+
+#~ msgid "Africa/Nouakchott"
+#~ msgstr "අප්‍රිකාව/නොයුආක්චොට්"
+
+#~ msgid "America/Montserrat"
+#~ msgstr "ඇමරිකාව/මොන්ට්සෙරාට්"
+
+#~ msgid "Europe/Malta"
+#~ msgstr "යුරෝපය/මෝල්ටා"
+
+#~ msgid "Indian/Mauritius"
+#~ msgstr "ඉන්දියානු/මරූටි"
+
+#~ msgid "Indian/Maldives"
+#~ msgstr "ඉන්දියානු/මාලදිවයින"
+
+#~ msgid "Africa/Blantyre"
+#~ msgstr "අප්‍රිකාව/බ්ලැන්ටියර්"
+
+#~ msgid "America/Mexico_City"
+#~ msgstr "ඇමරිකාව/මෙක්සිකෝ _නගරය"
+
+#~ msgid "America/Cancun"
+#~ msgstr "ඇමරිකාව/කන්කුන්"
+
+#~ msgid "America/Merida"
+#~ msgstr "ඇමරිකාව/මෙරිඩා"
+
+#~ msgid "America/Monterrey"
+#~ msgstr "ඇමරිකාව/මොන්ටෙර්රෙයි"
+
+#~ msgid "America/Mazatlan"
+#~ msgstr "ඇමරිකාව/මැසැට්ලෑන්"
+
+#~ msgid "America/Chihuahua"
+#~ msgstr "ඇමරිකාව/චිහුවාහා"
+
+#~ msgid "America/Hermosillo"
+#~ msgstr "ඇමරිකාව/හර්මොසිල්ලෝ"
+
+#~ msgid "America/Tijuana"
+#~ msgstr "ඇමරිකාව/ටිජුවානා"
+
+#~ msgid "Asia/Kuala_Lumpur"
+#~ msgstr "අසියාව/ක්වාලා_ලම්පූර්"
+
+#~ msgid "Asia/Kuching"
+#~ msgstr "අසියාව/කුචින්ග්"
+
+#~ msgid "Africa/Maputo"
+#~ msgstr "අප්‍රිකාව/මැපූටෝ"
+
+#~ msgid "Africa/Windhoek"
+#~ msgstr "අප්‍රිකාව/වින්ඩ්හෝක්"
+
+#~ msgid "Pacific/Noumea"
+#~ msgstr "පැසිපික්/නෞමෙයා"
+
+#~ msgid "Africa/Niamey"
+#~ msgstr "අප්‍රිකාව/නියාමෙයි"
+
+#~ msgid "Pacific/Norfolk"
+#~ msgstr "පැසිපික්/නෝෆෝක්"
+
+#~ msgid "Africa/Lagos"
+#~ msgstr "අප්‍රිකාව/ලාගොස්"
+
+#~ msgid "America/Managua"
+#~ msgstr "ඇමරිකාව/මැනගුවා"
+
+#~ msgid "Europe/Amsterdam"
+#~ msgstr "යුරෝපය/ඇමස්ටර්ඩෑම්"
+
+#~ msgid "Europe/Oslo"
+#~ msgstr "යුරෝපය/ඔස්ලෝ"
+
+#~ msgid "Pacific/Nauru"
+#~ msgstr "පැසිපික්/නෝරු"
+
+#~ msgid "Pacific/Niue"
+#~ msgstr "පැසිපික්/නියූ"
+
+#~ msgid "Pacific/Auckland"
+#~ msgstr "පැසිපික්/ඕක්ලන්තය"
+
+#~ msgid "Pacific/Chatham"
+#~ msgstr "පැසිපික්/චැතම්"
+
+#~ msgid "Asia/Muscat"
+#~ msgstr "අසියාව/මස්කට්"
+
+#~ msgid "America/Panama"
+#~ msgstr "ඇමරිකාව/පැනමාව"
+
+#~ msgid "America/Lima"
+#~ msgstr "ඇමරිකාව/ලීමා"
+
+#~ msgid "Pacific/Tahiti"
+#~ msgstr "පැසිපික්/තයිටි"
+
+#~ msgid "Pacific/Marquesas"
+#~ msgstr "පැසිපික්/මාර්ක්‍යුසාස්"
+
+#~ msgid "Pacific/Gambier"
+#~ msgstr "පැසිපික්/ගැම්බියර්"
+
+#~ msgid "Pacific/Port_Moresby"
+#~ msgstr "පැසිපික්/පෝර්ට්_මොර්ස්බි"
+
+#~ msgid "Asia/Manila"
+#~ msgstr "අසියාව/මැනිලා"
+
+#~ msgid "Asia/Karachi"
+#~ msgstr "අසියාව/කරච්චිය"
+
+#~ msgid "Europe/Warsaw"
+#~ msgstr "යුරෝපය/වෝර්සෝව්"
+
+#~ msgid "America/Miquelon"
+#~ msgstr "ඇමරිකාව/මික්විලෝන්"
+
+#~ msgid "Pacific/Pitcairn"
+#~ msgstr "පැසිපික්/පිට්කෙයාර්න්"
+
+#~ msgid "America/Puerto_Rico"
+#~ msgstr "ඇමරිකාව/පොර්ටෝ_රිකෝ"
+
+#~ msgid "Asia/Gaza"
+#~ msgstr "අසියාව/ගාසා"
+
+#~ msgid "Europe/Lisbon"
+#~ msgstr "යුරෝපය/ලිස්බොන්"
+
+#~ msgid "Atlantic/Madeira"
+#~ msgstr "අත්ලාන්තික්/මැඩේයිරා"
+
+#~ msgid "Atlantic/Azores"
+#~ msgstr "අත්ලාන්තික්/ඇසෝරස්"
+
+#~ msgid "Pacific/Palau"
+#~ msgstr "පැසිපික්/පාලෝ"
+
+#~ msgid "America/Asuncion"
+#~ msgstr "ඇමරිකාව/ඇසුන්සියොන්"
+
+#~ msgid "Asia/Qatar"
+#~ msgstr "අසියාව/කටාර්"
+
+#~ msgid "Indian/Reunion"
+#~ msgstr "ඉන්දියානු/රීයුනියන්"
+
+#~ msgid "Europe/Bucharest"
+#~ msgstr "යුරෝපය/බුකරස්ට්"
+
+#~ msgid "Europe/Belgrade"
+#~ msgstr "යුරෝපය/බෙල්ග්‍රේඩ්"
+
+#~ msgid "Europe/Kaliningrad"
+#~ msgstr "යුරෝපය/කලිනින්ග්‍රාඩ්"
+
+#~ msgid "Europe/Moscow"
+#~ msgstr "යුරෝපය/මොස්කව්"
+
+#~ msgid "Europe/Simferopol"
+#~ msgstr "යුරෝපය/සිම්ෆෙරොපොල්"
+
+#~ msgid "Europe/Volgograd"
+#~ msgstr "යුරෝපය/වෝලොග්‍රාඩ්"
+
+#~ msgid "Europe/Samara"
+#~ msgstr "යුරෝපය/සමාරා"
+
+#~ msgid "Asia/Yekaterinburg"
+#~ msgstr "ආසියාව/යෙකාටෙරින්බර්ග්"
+
+#~ msgid "Asia/Omsk"
+#~ msgstr "අසියාව/ඕම්ස්ක්"
+
+#~ msgid "Asia/Novosibirsk"
+#~ msgstr "අසියාව/නොවොසිබ්‍රිස්ක්"
+
+#~ msgid "Asia/Krasnoyarsk"
+#~ msgstr "අසියාව/ක්‍රැස්නොයාර්ස්ක්"
+
+#~ msgid "Asia/Irkutsk"
+#~ msgstr "අසියාව/ඉර්කට්ස්ක්"
+
+#~ msgid "Asia/Yakutsk"
+#~ msgstr "අසියාව/යකුට්ස්ක්"
+
+#~ msgid "Asia/Vladivostok"
+#~ msgstr "අසියාව/ව්ලැඩිවොස්ටොක්"
+
+#~ msgid "Asia/Sakhalin"
+#~ msgstr "අසියාව/සකාලින්"
+
+#~ msgid "Asia/Magadan"
+#~ msgstr "අසියාව/මැගඩෑන්"
+
+#~ msgid "Asia/Kamchatka"
+#~ msgstr "අසියාව/කම්චට්කා"
+
+#~ msgid "Asia/Anadyr"
+#~ msgstr "අසියාව/ඇනඩිර්"
+
+#~ msgid "Africa/Kigali"
+#~ msgstr "අප්‍රිකාව/කිලාගි"
+
+#~ msgid "Asia/Riyadh"
+#~ msgstr "අසියාව/රියාද්"
+
+#~ msgid "Pacific/Guadalcanal"
+#~ msgstr "පැසිපික්/ගෝඩල්කැනෑල්"
+
+#~ msgid "Indian/Mahe"
+#~ msgstr "ඉන්දියානු/මේහෙ"
+
+#~ msgid "Africa/Khartoum"
+#~ msgstr "අප්‍රිකාව/කාර්ටූම්"
+
+#~ msgid "Europe/Stockholm"
+#~ msgstr "යුරෝපය/ස්ටොක්හෝම්"
+
+#~ msgid "Asia/Singapore"
+#~ msgstr "අසියාව/සිංගප්පූරුව"
+
+#~ msgid "Atlantic/St_Helena"
+#~ msgstr "අත්ලාන්තික්/ශාන්ත_හෙලෙනා"
+
+#~ msgid "Europe/Ljubljana"
+#~ msgstr "යුරෝපය/ලුබ්ජානා"
+
+#~ msgid "Arctic/Longyearbyen"
+#~ msgstr "ආර්ක්ටික්/ලෝන්ග්ඉයර්බ්යෙන්"
+
+#~ msgid "Europe/Bratislava"
+#~ msgstr "යුරෝපය/බ්‍රැටිස්ලාවා"
+
+#~ msgid "Africa/Freetown"
+#~ msgstr "අප්‍රිකාව/ෆ්‍රීටවුන්"
+
+#~ msgid "Europe/San_Marino"
+#~ msgstr "යුරෝපය/සැන්_මැරිනෝ"
+
+#~ msgid "Africa/Dakar"
+#~ msgstr "අප්‍රිකාව/ඩකාර්"
+
+#~ msgid "Africa/Mogadishu"
+#~ msgstr "අප්‍රිකාව/මොගඩිෂු"
+
+#~ msgid "America/Paramaribo"
+#~ msgstr "ඇමරිකාව/පැරමාරිබෝ"
+
+#~ msgid "Africa/Sao_Tome"
+#~ msgstr "අප්‍රිකාව/සාවො_ටෝම්"
+
+#~ msgid "America/El_Salvador"
+#~ msgstr "ඇමරිකාව/එල්_සැල්වදෝරය"
+
+#~ msgid "Asia/Damascus"
+#~ msgstr "අසියාව/ඩෙමස්කස්"
+
+#~ msgid "Africa/Mbabane"
+#~ msgstr "අප්‍රිකාව/ම්බැබේන්"
+
+#~ msgid "America/Grand_Turk"
+#~ msgstr "ඇමරිකාව/ග්‍රෑන්ඩ්_ටර්ක්"
+
+#~ msgid "Africa/Ndjamena"
+#~ msgstr "අප්‍රිකාව/ජැමිනා"
+
+#~ msgid "Indian/Kerguelen"
+#~ msgstr "ඉන්දියානු/කර්ගුයිලෙන්"
+
+#~ msgid "Africa/Lome"
+#~ msgstr "අප්‍රිකාව/ලෝම්"
+
+#~ msgid "Asia/Bangkok"
+#~ msgstr "අසියාව/බැංකොක්"
+
+#~ msgid "Asia/Dushanbe"
+#~ msgstr "අසියාව/ඩුෂාන්බෙ"
+
+#~ msgid "Pacific/Fakaofo"
+#~ msgstr "පැසිපික්/ෆැකාවොෆො"
+
+#~ msgid "Asia/Dili"
+#~ msgstr "අසියාව/ඩිලි"
+
+#~ msgid "Asia/Ashgabat"
+#~ msgstr "අසියාව/ඇශ්ගාබාට්"
+
+#~ msgid "Africa/Tunis"
+#~ msgstr "අප්‍රිකාව/ටියුනිස්"
+
+#~ msgid "Pacific/Tongatapu"
+#~ msgstr "පැසිපික්/ටොන්ගටාපු"
+
+#~ msgid "Europe/Istanbul"
+#~ msgstr "යුරෝපය/ඉස්තානබුල්"
+
+#~ msgid "America/Port_of_Spain"
+#~ msgstr "ඇමරිකාව/පෝර්ට්_ඔෆ්_ස්පේන්"
+
+#~ msgid "Pacific/Funafuti"
+#~ msgstr "පැසිපික්/ෆුනාෆුටි"
+
+#~ msgid "Asia/Taipei"
+#~ msgstr "අසියාව/තායිපෙ"
+
+#~ msgid "Africa/Dar_es_Salaam"
+#~ msgstr "අප්‍රිකාව/ඩාර්_එස්_සලාම්"
+
+#~ msgid "Europe/Kiev"
+#~ msgstr "යුරෝපය/කීයෙව්"
+
+#~ msgid "Europe/Uzhgorod"
+#~ msgstr "යුරෝපය/උස්ගොරෝඩ්"
+
+#~ msgid "Europe/Zaporozhye"
+#~ msgstr "යුරෝපය/සැපොරොස්හයි"
+
+#~ msgid "Africa/Kampala"
+#~ msgstr "අප්‍රිකාව/කම්පාලා"
+
+#~ msgid "Pacific/Johnston"
+#~ msgstr "පැසිපික්/ජොන්ස්ටන්"
+
+#~ msgid "Pacific/Midway"
+#~ msgstr "පැසිපික්/මිඩ්වේ"
+
+#~ msgid "Pacific/Wake"
+#~ msgstr "පැසිපික්/වේක්"
+
+#~ msgid "America/New_York"
+#~ msgstr "ඇමරිකාව/නිව්_යෝර්ක්"
+
+#~ msgid "America/Detroit"
+#~ msgstr "ඇමරිකාව/ඩේට්‍රියට්"
+
+#~ msgid "America/Kentucky/Louisville"
+#~ msgstr "ඇමරිකාව/කෙන්ටකි/ලුයිස්විල්"
+
+#~ msgid "America/Kentucky/Monticello"
+#~ msgstr "ඇමරිකාව/කෙන්ටකි/මොන්ටිසෙල්ලෝ"
+
+#~ msgid "America/Indiana/Indianapolis"
+#~ msgstr "ඇමරිකාව/ඉන්දියානාව/ඉන්දියානාපොලිස්"
+
+#~ msgid "America/Indiana/Vincennes"
+#~ msgstr "ඇමරිකාව/ඉන්දියානාව/වින්සෙන්ස්"
+
+#~ msgid "America/Indiana/Marengo"
+#~ msgstr "ඇමරිකාව/ඉන්දියානාව/මෙරෙන්ගෝ"
+
+#~ msgid "America/Indiana/Petersburg"
+#~ msgstr "ඇමරිකාව/ඉන්දියානාව/පීටර්ස්බර්ග්"
+
+#~ msgid "America/Indiana/Vevay"
+#~ msgstr "ඇමරිකාව/ඉන්දියානාව/වෙවෙයි"
+
+#~ msgid "America/Chicago"
+#~ msgstr "ඇමරිකාව/චිකාගෝ"
+
+#~ msgid "America/Indiana/Knox"
+#~ msgstr "ඇමරිකාව/ඉන්දියානාව/ක්නොක්ස්"
+
+#~ msgid "America/Menominee"
+#~ msgstr "ඇමරිකාව/මෙනොමිනී"
+
+#~ msgid "America/North_Dakota/Center"
+#~ msgstr "ඇමරිකාව/උතුරු_ඩකෝටා/මධ්‍යම"
+
+#~ msgid "America/North_Dakota/New_Salem"
+#~ msgstr "ඇමරිකාව/උතුරු_ඩකෝටා/නව_සාලෙම්"
+
+#~ msgid "America/Denver"
+#~ msgstr "ඇමරිකාව/ඩෙන්වර්"
+
+#~ msgid "America/Boise"
+#~ msgstr "ඇමරිකාව/බොයිස්"
+
+#~ msgid "America/Phoenix"
+#~ msgstr "ඇමරිකාව/ෆීනික්ස්"
+
+#~ msgid "America/Los_Angeles"
+#~ msgstr "ඇමරිකාව/ලොස්_ඇන්ජලිස්"
+
+#~ msgid "America/Anchorage"
+#~ msgstr "ඇමෙරිකාව/ඇන්කොරාජ්"
+
+#~ msgid "America/Juneau"
+#~ msgstr "ඇමරිකාව/ජුනේයු"
+
+#~ msgid "America/Yakutat"
+#~ msgstr "ඇමරිකාව/යකුටැට්"
+
+#~ msgid "America/Nome"
+#~ msgstr "ඇමරිකාව/නෝම්"
+
+#~ msgid "America/Adak"
+#~ msgstr "ඇමෙරිකාව/ඇඩක්"
+
+#~ msgid "Pacific/Honolulu"
+#~ msgstr "පැසිපික්/හොනලුලූ"
+
+#~ msgid "America/Montevideo"
+#~ msgstr "ඇමරිකාව/මොන්ටෙවිඩියෝ"
+
+#~ msgid "Asia/Samarkand"
+#~ msgstr "අසියාව/සැමර්කාන්ඩ්"
+
+#~ msgid "Asia/Tashkent"
+#~ msgstr "අසියාව/තාෂ්කෙන්ට්"
+
+#~ msgid "Europe/Vatican"
+#~ msgstr "යුරෝපය/වතිකානුව"
+
+#~ msgid "America/St_Vincent"
+#~ msgstr "ඇමරිකාව/ශාන්ත_වින්සන්"
+
+#~ msgid "America/Caracas"
+#~ msgstr "ඇමරිකාව/කැරකාස්"
+
+#~ msgid "America/Tortola"
+#~ msgstr "ඇමරිකාව/ටොර්ටෝලා"
+
+#~ msgid "America/St_Thomas"
+#~ msgstr "ඇමරිකාව/ශාන්ත_තෝමස්"
+
+#~ msgid "Pacific/Efate"
+#~ msgstr "පැසිපික්/එෆේට්"
+
+#~ msgid "Pacific/Wallis"
+#~ msgstr "පැසිපික්/වෝලිස්"
+
+#~ msgid "Pacific/Apia"
+#~ msgstr "පැසිපික්/ඇපියා"
+
+#~ msgid "Asia/Aden"
+#~ msgstr "අසියාව/ඒඩන්"
+
+#~ msgid "Indian/Mayotte"
+#~ msgstr "ඉන්දියානු/මේයොට්"
+
+#~ msgid "Africa/Johannesburg"
+#~ msgstr "අප්‍රිකාව/ජොහැනස්බර්ග්"
+
+#~ msgid "Africa/Lusaka"
+#~ msgstr "අප්‍රිකාව/ලුසාකා"
+
+#~ msgid "Africa/Harare"
+#~ msgstr "අප්‍රිකාව/හරාරෙ"
