@@ -80,5 +80,29 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 image.icon_name = device.icon;
             }
         });
+
+        enable_switch.notify["active"].connect (() => {
+            if (enable_switch.active && !device.connected) {
+                new Thread<void*> (null, () => {
+                    try {
+                        device.connect ();
+                    } catch (Error e) {
+                        state.icon_name = "user-busy";
+                        critical (e.message);
+                    }
+                    return null;
+                });
+            } else if (!enable_switch.active && device.connected) {
+                new Thread<void*> (null, () => {
+                    try {
+                        device.disconnect ();
+                    } catch (Error e) {
+                        state.icon_name = "user-busy";
+                        critical (e.message);
+                    }
+                    return null;
+                });
+            }
+        });
     }
 }
