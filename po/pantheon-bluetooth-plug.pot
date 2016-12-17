@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-14 20:29-0600\n"
+"POT-Creation-Date: 2016-12-16 18:01-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/MainView.vala:85
-msgid "Discover new device"
-msgstr ""
-
-#: ../src/MainView.vala:90
-msgid "Forget selected device"
-msgstr ""
-
-#: ../src/Plug.vala:30
+#: ../src/Plug.vala:30 ../src/MainView.vala:73
 msgid "Bluetooth"
 msgstr ""
 
 #: ../src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
+msgstr ""
+
+#: ../src/MainView.vala:94
+msgid "Discover new device"
+msgstr ""
+
+#: ../src/MainView.vala:99
+msgid "Forget selected device"
+msgstr ""
+
+#: ../src/MainView.vala:192
+msgid "Now Discoverable as \"%s\""
+msgstr ""
+
+#: ../src/MainView.vala:202
+msgid "Now Discoverable as %s"
 msgstr ""
