@@ -181,42 +181,4 @@ public class Bluetooth.MainView : Gtk.Grid {
             row1.set_header (null);
         }
     }
-
-    public class HeaderAdapter : Gtk.Grid {
-        unowned Services.Adapter adapter;
-        Gtk.Label label;
-        Gtk.Switch adapter_switch;
-
-        public HeaderAdapter (Services.Adapter adapter) {
-            this.adapter = adapter;
-            label.label = _("Now Discoverable as \"%s\"").printf (adapter.name);
-            adapter_switch.active = adapter.powered;
-            (adapter as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
-                var powered = changed.lookup_value("Powered", new VariantType("b"));
-                if (powered != null) {
-                    adapter_switch.active = adapter.powered;
-                }
-
-                var name = changed.lookup_value("Name", new VariantType("s"));
-                if (name != null) {
-                    label.label = _("Now Discoverable as %s").printf (adapter.name);
-                }
-            });
-        }
-
-        construct {
-            margin = 3;
-            label = new Gtk.Label (null);
-            label.get_style_context ().add_class ("h4");
-            label.hexpand = true;
-            label.xalign = 0;
-            label.valign = Gtk.Align.CENTER;
-            label.ellipsize = Pango.EllipsizeMode.END;
-            adapter_switch = new Gtk.Switch ();
-            adapter_switch.valign = Gtk.Align.CENTER;
-            add (label);
-            add (adapter_switch);
-            show_all ();
-        }
-    }
 }
