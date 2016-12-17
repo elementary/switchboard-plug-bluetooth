@@ -19,17 +19,46 @@
  */
 
 public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
-    public Services.Device device;
+    public Services.Device device { get; construct; }
     private Gtk.Label label;
     private Gtk.Image image;
     private Gtk.Image state;
     private Gtk.Switch enable_switch;
 
     public DeviceRow (Services.Device device) {
-        this.device = device;
+        Object (device: device);
+    }
+
+    construct {
+        image = new Gtk.Image.from_icon_name (device.icon, Gtk.IconSize.DND);
+
+        state = new Gtk.Image.from_icon_name ("user-offline", Gtk.IconSize.MENU);
+        state.halign = Gtk.Align.END;
+        state.valign = Gtk.Align.END;
+
+        var overay = new Gtk.Overlay ();
+        overay.add (image);
+        overay.add_overlay (state);
+
+        label = new Gtk.Label (device.name);
+        label.ellipsize = Pango.EllipsizeMode.END;
+
+        enable_switch = new Gtk.Switch ();
         enable_switch.active = device.connected;
-        label.label = device.name;
-        image.icon_name = device.icon;
+        enable_switch.halign = Gtk.Align.END;
+        enable_switch.hexpand = true;
+        enable_switch.valign = Gtk.Align.CENTER;
+
+        var grid = new Gtk.Grid ();
+        grid.margin = 6;
+        grid.column_spacing = 6;
+        grid.orientation = Gtk.Orientation.HORIZONTAL;
+        grid.add (overay);
+        grid.add (label);
+        grid.add (enable_switch);
+        add (grid);
+        show_all ();
+
         if (device.connected) {
             state.icon_name = "user-available";
         }
@@ -55,37 +84,5 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 image.icon_name = device.icon;
             }
         });
-    }
-
-    construct {
-        var grid = new Gtk.Grid ();
-        grid.margin = 6;
-        grid.column_spacing = 6;
-        grid.orientation = Gtk.Orientation.HORIZONTAL;
-
-        image = new Gtk.Image ();
-        image.icon_size = Gtk.IconSize.DND;
-
-        state = new Gtk.Image.from_icon_name ("user-offline", Gtk.IconSize.MENU);
-        state.halign = Gtk.Align.END;
-        state.valign = Gtk.Align.END;
-
-        var overay = new Gtk.Overlay ();
-        overay.add (image);
-        overay.add_overlay (state);
-
-        label = new Gtk.Label (null);
-        label.ellipsize = Pango.EllipsizeMode.END;
-
-        enable_switch = new Gtk.Switch ();
-        enable_switch.halign = Gtk.Align.END;
-        enable_switch.hexpand = true;
-        enable_switch.valign = Gtk.Align.CENTER;
-
-        grid.add (overay);
-        grid.add (label);
-        grid.add (enable_switch);
-        add (grid);
-        show_all ();
     }
 }
