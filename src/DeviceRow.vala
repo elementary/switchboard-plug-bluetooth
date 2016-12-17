@@ -23,6 +23,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     private Gtk.Label label;
     private Gtk.Image image;
     private Gtk.Image state;
+    private Gtk.Label state_label;
     private Gtk.Switch enable_switch;
 
     public DeviceRow (Services.Device device) {
@@ -32,6 +33,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         image.icon_name = device.icon;
         if (device.connected) {
             state.icon_name = "user-available";
+            state_label.label = "<span font_size='small'>" + _("Connected") + "</span>";
         }
 
         (device as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
@@ -39,8 +41,10 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             if (connected != null) {
                 if (device.connected) {
                     state.icon_name = "user-available";
+                    state_label.label = "<span font_size='small'>" + _("Connected") + "</span>";
                 } else {
                     state.icon_name = "user-offline";
+                    state_label.label = "<span font_size='small'>" + _("Not Connected") + "</span>";
                 }
                 enable_switch.active = device.connected;
             }
@@ -61,7 +65,6 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         var grid = new Gtk.Grid ();
         grid.margin = 6;
         grid.column_spacing = 6;
-        grid.orientation = Gtk.Orientation.HORIZONTAL;
 
         image = new Gtk.Image ();
         image.icon_size = Gtk.IconSize.DND;
@@ -69,6 +72,10 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         state = new Gtk.Image.from_icon_name ("user-offline", Gtk.IconSize.MENU);
         state.halign = Gtk.Align.END;
         state.valign = Gtk.Align.END;
+
+        state_label = new Gtk.Label ("<span font_size='small'>" + _("Not Connected") + "</span>");
+        state_label.halign = Gtk.Align.START;
+        state_label.use_markup = true;
 
         var overay = new Gtk.Overlay ();
         overay.add (image);
@@ -82,9 +89,10 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         enable_switch.hexpand = true;
         enable_switch.valign = Gtk.Align.CENTER;
 
-        grid.add (overay);
-        grid.add (label);
-        grid.add (enable_switch);
+        grid.attach (overay, 0, 0, 1, 2);
+        grid.attach (label, 1, 0, 1, 1);
+        grid.attach (state_label, 1, 1, 1, 1);
+        grid.attach (enable_switch, 2, 0, 1, 2);
         add (grid);
         show_all ();
     }
