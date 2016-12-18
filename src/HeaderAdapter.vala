@@ -39,6 +39,7 @@ public class Bluetooth.HeaderAdapter : Gtk.Grid {
 
         adapter_switch = new Gtk.Switch ();
         adapter_switch.active = adapter.powered;
+        adapter_switch.margin_end = 3;
         adapter_switch.valign = Gtk.Align.CENTER;
 
         add (label);
@@ -54,6 +55,14 @@ public class Bluetooth.HeaderAdapter : Gtk.Grid {
             var name = changed.lookup_value ("Name", new VariantType ("s"));
             if (name != null) {
                 label.label = _("Now Discoverable as \"%s\"").printf (adapter.name);
+            }
+        });
+
+        adapter_switch.notify["active"].connect (() => {
+            if (adapter_switch.active & !adapter.powered) {
+                adapter.powered = true;
+            } else if (!adapter_switch.active & adapter.powered) {
+                adapter.powered = false;
             }
         });
     }
