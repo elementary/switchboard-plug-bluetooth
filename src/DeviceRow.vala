@@ -20,30 +20,41 @@
 
 public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     public Services.Device device { get; construct; }
-    private Gtk.Label label;
-    private Gtk.Image image;
+
+    private enum Status {
+        CONNECTED,
+        CONNECTING,
+        DISCONNECTING,
+        NOT_CONNECTED,
+        UNABLE_TO_CONNECT
+    }
+
     private Gtk.Image state;
-    private Gtk.Switch enable_switch;
+    private Gtk.Label state_label;
 
     public DeviceRow (Services.Device device) {
         Object (device: device);
     }
 
     construct {
-        image = new Gtk.Image.from_icon_name (device.icon, Gtk.IconSize.DND);
+        var image = new Gtk.Image.from_icon_name (device.icon, Gtk.IconSize.DND);
 
         state = new Gtk.Image.from_icon_name ("user-offline", Gtk.IconSize.MENU);
         state.halign = Gtk.Align.END;
         state.valign = Gtk.Align.END;
 
+        state_label = new Gtk.Label (null);
+        state_label.halign = Gtk.Align.START;
+        state_label.use_markup = true;
+
         var overay = new Gtk.Overlay ();
         overay.add (image);
         overay.add_overlay (state);
 
-        label = new Gtk.Label (device.name);
+        var label = new Gtk.Label (device.name);
         label.ellipsize = Pango.EllipsizeMode.END;
 
-        enable_switch = new Gtk.Switch ();
+        var enable_switch = new Gtk.Switch ();
         enable_switch.active = device.connected;
         enable_switch.halign = Gtk.Align.END;
         enable_switch.hexpand = true;
@@ -53,36 +64,91 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         grid.margin = 6;
         grid.column_spacing = 6;
         grid.orientation = Gtk.Orientation.HORIZONTAL;
-        grid.add (overay);
-        grid.add (label);
-        grid.add (enable_switch);
+        grid.attach (overay, 0, 0, 1, 2);
+        grid.attach (label, 1, 0, 1, 1);
+        grid.attach (state_label, 1, 1, 1, 1);
+        grid.attach (enable_switch, 2, 0, 1, 2);
+
         add (grid);
         show_all ();
 
         if (device.connected) {
-            state.icon_name = "user-available";
+            set_status (Status.CONNECTED);
+        } else {
+            set_status (Status.NOT_CONNECTED);
         }
 
         (device as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
-            var connected = changed.lookup_value("Connected", new VariantType("b"));
+            var connected = changed.lookup_value ("Connected", new VariantType ("b"));
             if (connected != null) {
                 if (device.connected) {
-                    state.icon_name = "user-available";
+                    set_status (Status.CONNECTED);
                 } else {
-                    state.icon_name = "user-offline";
+                    set_status (Status.NOT_CONNECTED);
                 }
                 enable_switch.active = device.connected;
             }
 
-            var name = changed.lookup_value("Name", new VariantType("s"));
+            var name = changed.lookup_value ("Name", new VariantType ("s"));
             if (name != null) {
                 label.label = device.name;
             }
 
-            var icon = changed.lookup_value("Icon", new VariantType("s"));
+            var icon = changed.lookup_value ("Icon", new VariantType ("s"));
             if (icon != null) {
                 image.icon_name = device.icon;
             }
         });
+
+        enable_switch.notify["active"].connect (() => {
+            if (enable_switch.active && !device.connected) {
+                set_status (Status.CONNECTING);
+                new Thread<void*> (null, () => {
+                    try {
+                        device.connect ();
+                    } catch (Error e) {
+                        set_status (Status.UNABLE_TO_CONNECT);
+                        critical (e.message);
+                    }
+                    return null;
+                });
+            } else if (!enable_switch.active && device.connected) {
+                set_status (Status.DISCONNECTING);
+                new Thread<void*> (null, () => {
+                    try {
+                        device.disconnect ();
+                    } catch (Error e) {
+                        state.icon_name = "user-busy";
+                        critical (e.message);
+                    }
+                    return null;
+                });
+            }
+        });
+    }
+
+    private void set_status (Status status) {
+        switch (status) {
+            case Status.CONNECTED:
+                state.icon_name = "user-available";
+                state_label.label = "<span font_size='small'>%s</span>".printf (_("Connected"));
+                break;
+            case Status.CONNECTING:
+                state.icon_name = "user-away";
+                state_label.label = "<span font_size='small'>%s</span>".printf (_("Connecting…"));
+                break;
+            case Status.DISCONNECTING:
+                state.icon_name = "user-away";
+                state_label.label = "<span font_size='small'>%s</span>".printf (_("Disconnecting…"));
+                break;
+            case Status.NOT_CONNECTED:
+                state.icon_name = "user-offline";
+                state_label.label = "<span font_size='small'>%s</span>".printf (_("Not Connected"));
+                break;
+            case Status.UNABLE_TO_CONNECT:
+                state.icon_name = "user-busy";
+                state_label.label = "<span font_size='small'>%s</span>".printf (_("Unable to Connnect"));
+                break;
+        }
     }
 }
