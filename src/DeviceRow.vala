@@ -20,20 +20,41 @@
 
 public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     public Services.Device device { get; construct; }
+    private static Gtk.SizeGroup size_group;
 
     private enum Status {
         CONNECTED,
         CONNECTING,
         DISCONNECTING,
         NOT_CONNECTED,
-        UNABLE_TO_CONNECT
+        UNABLE_TO_CONNECT;
+
+        public string to_string () {
+            switch (this) {
+                case CONNECTED:
+                    return _("Connected");
+                case CONNECTING:
+                    return _("Connecting…");
+                case DISCONNECTING:
+                    return _("Disconnecting…");
+                case UNABLE_TO_CONNECT:
+                    return _("Unable to Connnect");
+                default:
+                    return _("Not Connected");
+            }
+        }
     }
 
+    private Gtk.Button connect_button;
     private Gtk.Image state;
     private Gtk.Label state_label;
 
     public DeviceRow (Services.Device device) {
         Object (device: device);
+    }
+
+    static construct {
+        size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
     }
 
     construct {
@@ -55,11 +76,11 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         label.ellipsize = Pango.EllipsizeMode.END;
         label.xalign = 0;
 
-        var enable_switch = new Gtk.Switch ();
-        enable_switch.active = device.connected;
-        enable_switch.halign = Gtk.Align.END;
-        enable_switch.hexpand = true;
-        enable_switch.valign = Gtk.Align.CENTER;
+        connect_button = new Gtk.Button ();
+        connect_button.halign = Gtk.Align.END;
+        connect_button.hexpand = true;
+        connect_button.valign = Gtk.Align.CENTER;
+        size_group.add_widget (connect_button);
 
         var grid = new Gtk.Grid ();
         grid.margin = 6;
@@ -68,7 +89,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         grid.attach (overay, 0, 0, 1, 2);
         grid.attach (label, 1, 0, 1, 1);
         grid.attach (state_label, 1, 1, 1, 1);
-        grid.attach (enable_switch, 2, 0, 1, 2);
+        grid.attach (connect_button, 2, 0, 1, 2);
 
         add (grid);
         show_all ();
@@ -87,7 +108,6 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 } else {
                     set_status (Status.NOT_CONNECTED);
                 }
-                enable_switch.active = device.connected;
             }
 
             var name = changed.lookup_value ("Name", new VariantType ("s"));
@@ -101,8 +121,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             }
         });
 
-        enable_switch.notify["active"].connect (() => {
-            if (enable_switch.active && !device.connected) {
+        connect_button.clicked.connect (() => {
+            if (!device.connected) {
                 set_status (Status.CONNECTING);
                 new Thread<void*> (null, () => {
                     try {
@@ -113,7 +133,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                     }
                     return null;
                 });
-            } else if (!enable_switch.active && device.connected) {
+            } else {
                 set_status (Status.DISCONNECTING);
                 new Thread<void*> (null, () => {
                     try {
@@ -129,26 +149,30 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     }
 
     private void set_status (Status status) {
+        state_label.label = GLib.Markup.printf_escaped ("<span font_size='small'>%s</span>", status.to_string ());
+
         switch (status) {
             case Status.CONNECTED:
+                connect_button.label = _("Disconnect");
+                connect_button.sensitive = true;
                 state.icon_name = "user-available";
-                state_label.label = "<span font_size='small'>%s</span>".printf (_("Connected"));
                 break;
             case Status.CONNECTING:
+                connect_button.sensitive = false;
                 state.icon_name = "user-away";
-                state_label.label = "<span font_size='small'>%s</span>".printf (_("Connecting…"));
                 break;
             case Status.DISCONNECTING:
+                connect_button.sensitive = false;
                 state.icon_name = "user-away";
-                state_label.label = "<span font_size='small'>%s</span>".printf (_("Disconnecting…"));
                 break;
             case Status.NOT_CONNECTED:
+                connect_button.label = _("Connect");
+                connect_button.sensitive = true;
                 state.icon_name = "user-offline";
-                state_label.label = "<span font_size='small'>%s</span>".printf (_("Not Connected"));
                 break;
             case Status.UNABLE_TO_CONNECT:
+                connect_button.sensitive = true;
                 state.icon_name = "user-busy";
-                state_label.label = "<span font_size='small'>%s</span>".printf (_("Unable to Connnect"));
                 break;
         }
     }
