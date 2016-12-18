@@ -74,11 +74,17 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
         var label = new Gtk.Label (device.name);
         label.ellipsize = Pango.EllipsizeMode.END;
+        label.hexpand = true;
         label.xalign = 0;
 
+        var settings_button = new Gtk.LinkButton ("settings://network/share/bluetooth");
+        settings_button.always_show_image = true;
+        settings_button.image = new Gtk.Image.from_icon_name ("view-more-horizontal-symbolic", Gtk.IconSize.MENU);
+        settings_button.label = null;
+        settings_button.margin_end = 3;
+        settings_button.tooltip_text = _("Sharing Settings");
+
         connect_button = new Gtk.Button ();
-        connect_button.halign = Gtk.Align.END;
-        connect_button.hexpand = true;
         connect_button.valign = Gtk.Align.CENTER;
         size_group.add_widget (connect_button);
 
@@ -89,10 +95,35 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         grid.attach (overay, 0, 0, 1, 2);
         grid.attach (label, 1, 0, 1, 1);
         grid.attach (state_label, 1, 1, 1, 1);
-        grid.attach (connect_button, 2, 0, 1, 2);
+        grid.attach (settings_button, 2, 0, 1, 2);
+        grid.attach (connect_button, 3, 0, 1, 2);
 
         add (grid);
         show_all ();
+
+        switch (device.icon) {
+            case "audio-card":
+                settings_button.uri = "settings://sound";
+                settings_button.tooltip_text = _("Sound Settings");
+                break;
+            case "input-gaming":
+            case "input-keyboard":
+                settings_button.uri = "settings://input/keyboard";
+                settings_button.tooltip_text = _("Keyboard Settings");
+                break;
+            case "input-mouse":
+                settings_button.uri = "settings://input/mouse";
+                settings_button.tooltip_text = _("Mouse & Touchpad Settings");
+                break;
+            case "input-tablet":
+                settings_button.uri = "settings://input/wacom";
+                settings_button.tooltip_text = _("Drawing Tablet Settings");
+                break;
+            case "printer":
+                settings_button.uri = "settings://printer";
+                settings_button.tooltip_text = _("Printer Settings");
+                break;
+        }
 
         if (device.connected) {
             set_status (Status.CONNECTED);
