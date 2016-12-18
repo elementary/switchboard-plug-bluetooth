@@ -16,6 +16,7 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Plug.vala
     MainView.vala
     DeviceRow.vala
+    HeaderAdapter.vala
     Services/Adapter.vala
     Services/Device.vala
     Services/Manager.vala
