@@ -69,6 +69,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         state_label.use_markup = true;
 
         var overay = new Gtk.Overlay ();
+        overay.tooltip_text = device.address;
         overay.add (image);
         overay.add_overlay (state);
 
