@@ -12,7 +12,7 @@ Homepage: https://launchpad.net/switchboard-plug-bluetooth
 
 Package: switchboard-plug-bluetooth
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, laptop-detect
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Enhances: switchboard
 Conflicts: switchboard-plug-gcc-bluetooth
 Replaces: switchboard-plug-gcc-bluetooth
