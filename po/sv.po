@@ -8,83 +8,83 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-12-18 12:24-0800\n"
-"PO-Revision-Date: 2016-12-15 05:38+0000\n"
-"Last-Translator: Daniel Fore <Unknown>\n"
+"PO-Revision-Date: 2016-12-19 21:41+0000\n"
+"Last-Translator: Joachim Johansson <Unknown>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
+"X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
 #: ../src/Plug.vala:30 ../src/MainView.vala:73
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: ../src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "Bluetooth-inställningar"
 
 #: ../src/DeviceRow.vala:35
 msgid "Connected"
-msgstr ""
+msgstr "Ansluten"
 
 #: ../src/DeviceRow.vala:37
 msgid "Connecting…"
-msgstr ""
+msgstr "Ansluter…"
 
 #: ../src/DeviceRow.vala:39
 msgid "Disconnecting…"
-msgstr ""
+msgstr "Kopplar från…"
 
 #: ../src/DeviceRow.vala:41
 msgid "Unable to Connnect"
-msgstr ""
+msgstr "Det går inte att ansluta"
 
 #: ../src/DeviceRow.vala:43
 msgid "Not Connected"
-msgstr ""
+msgstr "Inte ansluten"
 
 #: ../src/DeviceRow.vala:85
 msgid "Sharing Settings"
-msgstr ""
+msgstr "Delningsinställningar"
 
 #: ../src/DeviceRow.vala:107
 msgid "Sound Settings"
-msgstr ""
+msgstr "Ljudinställningar"
 
 #: ../src/DeviceRow.vala:112
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "Tangentbordsinställningar"
 
 #: ../src/DeviceRow.vala:116
 msgid "Mouse & Touchpad Settings"
-msgstr ""
+msgstr "Inställningar för mus och styrplatta"
 
 #: ../src/DeviceRow.vala:120
 msgid "Drawing Tablet Settings"
-msgstr ""
+msgstr "Inställningar för ritplatta"
 
 #: ../src/DeviceRow.vala:124
 msgid "Printer Settings"
-msgstr ""
+msgstr "Skrivarinställningar"
 
 #: ../src/DeviceRow.vala:187
 msgid "Disconnect"
-msgstr ""
+msgstr "Koppla från"
 
 #: ../src/DeviceRow.vala:200
 msgid "Connect"
-msgstr ""
+msgstr "Anslut"
 
 #: ../src/MainView.vala:94
 msgid "Discover new device"
-msgstr ""
+msgstr "Sök efter ny enhet"
 
 #: ../src/MainView.vala:99
 msgid "Forget selected device"
-msgstr ""
+msgstr "Glöm vald enhet"
 
 #: ../src/HeaderAdapter.vala:33 ../src/HeaderAdapter.vala:57
 msgid "Now Discoverable as \"%s\""
-msgstr ""
+msgstr "Nu sökbar som \"%s\""
