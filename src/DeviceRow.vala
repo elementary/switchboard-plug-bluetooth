@@ -20,6 +20,7 @@
 
 public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     public Services.Device device { get; construct; }
+    public unowned Services.Adapter adapter { get; construct; }
     private static Gtk.SizeGroup size_group;
 
     private enum Status {
@@ -49,8 +50,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     private Gtk.Image state;
     private Gtk.Label state_label;
 
-    public DeviceRow (Services.Device device) {
-        Object (device: device);
+    public DeviceRow (Services.Device device, Services.Adapter adapter) {
+        Object (device: device, adapter: adapter);
     }
 
     static construct {
@@ -131,6 +132,15 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         } else {
             set_status (Status.NOT_CONNECTED);
         }
+
+        set_sensitive (adapter.powered);
+
+        (adapter as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
+            var powered = changed.lookup_value ("Powered", new VariantType ("b"));
+            if (powered != null) {
+                set_sensitive (adapter.powered);
+            }
+        });
 
         (device as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
             var connected = changed.lookup_value ("Connected", new VariantType ("b"));
