@@ -27,12 +27,14 @@ public class Bluetooth.MainView : Gtk.Grid {
         this.manager = manager;
 
         foreach (var device in manager.get_devices ()) {
-            var row = new DeviceRow (device);
+            var adapter = manager.get_adapter_from_path (device.adapter);
+            var row = new DeviceRow (device, adapter);
             list_box.add (row);
         }
 
         manager.device_added.connect ((device) => {
-            var row = new DeviceRow (device);
+            var adapter = manager.get_adapter_from_path (device.adapter);
+            var row = new DeviceRow (device, adapter);
             list_box.add (row);
             if (list_box.get_selected_row () == null) {
                 list_box.select_row (row);
