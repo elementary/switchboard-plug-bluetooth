@@ -8,83 +8,83 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-12-18 12:24-0800\n"
-"PO-Revision-Date: 2016-12-15 05:40+0000\n"
-"Last-Translator: Sadık Poyraz <sadikpoyraz01@gmail.com>\n"
+"PO-Revision-Date: 2016-12-31 16:03+0000\n"
+"Last-Translator: İbrahim Ethem Göl <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
+"X-Launchpad-Export-Date: 2017-01-01 05:47+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
 #: ../src/Plug.vala:30 ../src/MainView.vala:73
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: ../src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "Bluetooth Ayarlarını Yapılandırma"
 
 #: ../src/DeviceRow.vala:35
 msgid "Connected"
-msgstr ""
+msgstr "Bağlı"
 
 #: ../src/DeviceRow.vala:37
 msgid "Connecting…"
-msgstr ""
+msgstr "Bağlanılıyor ..."
 
 #: ../src/DeviceRow.vala:39
 msgid "Disconnecting…"
-msgstr ""
+msgstr "Bağlantı kesiliyor ..."
 
 #: ../src/DeviceRow.vala:41
 msgid "Unable to Connnect"
-msgstr ""
+msgstr "Bağlanılamıyor"
 
 #: ../src/DeviceRow.vala:43
 msgid "Not Connected"
-msgstr ""
+msgstr "Bağlı değil"
 
 #: ../src/DeviceRow.vala:85
 msgid "Sharing Settings"
-msgstr ""
+msgstr "Paylaşım Ayarları"
 
 #: ../src/DeviceRow.vala:107
 msgid "Sound Settings"
-msgstr ""
+msgstr "Ses Ayarları"
 
 #: ../src/DeviceRow.vala:112
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "Klavye Ayarları"
 
 #: ../src/DeviceRow.vala:116
 msgid "Mouse & Touchpad Settings"
-msgstr ""
+msgstr "Fare & Dokunmatik Yüzey Ayarları"
 
 #: ../src/DeviceRow.vala:120
 msgid "Drawing Tablet Settings"
-msgstr ""
+msgstr "Çizim Tableti Ayarları"
 
 #: ../src/DeviceRow.vala:124
 msgid "Printer Settings"
-msgstr ""
+msgstr "Yazıcı Ayarları"
 
 #: ../src/DeviceRow.vala:187
 msgid "Disconnect"
-msgstr ""
+msgstr "Bağlantıyı Kes"
 
 #: ../src/DeviceRow.vala:200
 msgid "Connect"
-msgstr ""
+msgstr "Bağlan"
 
 #: ../src/MainView.vala:94
 msgid "Discover new device"
-msgstr ""
+msgstr "Yeni cihaz keşfet"
 
 #: ../src/MainView.vala:99
 msgid "Forget selected device"
-msgstr ""
+msgstr "Seçilen cihazı unut"
 
 #: ../src/HeaderAdapter.vala:33 ../src/HeaderAdapter.vala:57
 msgid "Now Discoverable as \"%s\""
-msgstr ""
+msgstr "Şimdi \"%s\" olarak keşfedilebilir"
