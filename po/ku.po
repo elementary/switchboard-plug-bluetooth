@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-12-18 12:24-0800\n"
-"PO-Revision-Date: 2017-01-28 15:27+0000\n"
+"PO-Revision-Date: 2017-02-10 20:43+0000\n"
 "Last-Translator: Rokar <Unknown>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-29 05:17+0000\n"
-"X-Generator: Launchpad (build 18315)\n"
+"X-Launchpad-Export-Date: 2017-02-11 05:57+0000\n"
+"X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/Plug.vala:30 ../src/MainView.vala:73
 msgid "Bluetooth"
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../src/DeviceRow.vala:187
 msgid "Disconnect"
-msgstr ""
+msgstr "Veqetîne"
 
 #: ../src/DeviceRow.vala:200
 msgid "Connect"
