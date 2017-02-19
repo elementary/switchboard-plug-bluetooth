@@ -69,10 +69,10 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         state_label.xalign = 0;
         state_label.use_markup = true;
 
-        var overay = new Gtk.Overlay ();
-        overay.tooltip_text = device.address;
-        overay.add (image);
-        overay.add_overlay (state);
+        var overlay = new Gtk.Overlay ();
+        overlay.tooltip_text = device.address;
+        overlay.add (image);
+        overlay.add_overlay (state);
 
         var label = new Gtk.Label (device.name);
         label.ellipsize = Pango.EllipsizeMode.END;
@@ -94,7 +94,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         grid.margin = 6;
         grid.column_spacing = 6;
         grid.orientation = Gtk.Orientation.HORIZONTAL;
-        grid.attach (overay, 0, 0, 1, 2);
+        grid.attach (overlay, 0, 0, 1, 2);
         grid.attach (label, 1, 0, 1, 1);
         grid.attach (state_label, 1, 1, 1, 1);
         grid.attach (settings_button, 2, 0, 1, 2);
