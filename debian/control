@@ -14,8 +14,6 @@ Package: switchboard-plug-bluetooth
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Enhances: switchboard
-Conflicts: switchboard-plug-gcc-bluetooth
-Replaces: switchboard-plug-gcc-bluetooth
 Description: Bluetooth plug for Switchboard
  This plug configures bluetooth devices.
 
