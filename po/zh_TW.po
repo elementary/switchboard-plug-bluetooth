@@ -6,85 +6,89 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-18 12:24-0800\n"
-"PO-Revision-Date: 2016-12-15 05:43+0000\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
+"PO-Revision-Date: 2017-04-11 10:00+0000\n"
+"Last-Translator: Rex <r1218r1218@gmail.com>\n"
+"Language-Team: Chinese (Traditional) "
+"<https://l10n.elementary.io/projects/switchboard/switchboard-plug-"
+"bluetooth/zh_TW/>\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: ../src/Plug.vala:30 ../src/MainView.vala:73
 msgid "Bluetooth"
-msgstr ""
+msgstr "藍芽"
 
 #: ../src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "藍芽設定"
 
 #: ../src/DeviceRow.vala:35
 msgid "Connected"
-msgstr ""
+msgstr "已連結"
 
 #: ../src/DeviceRow.vala:37
 msgid "Connecting…"
-msgstr ""
+msgstr "連結中…"
 
 #: ../src/DeviceRow.vala:39
 msgid "Disconnecting…"
-msgstr ""
+msgstr "中斷連結中…"
 
 #: ../src/DeviceRow.vala:41
 msgid "Unable to Connnect"
-msgstr ""
+msgstr "無法連結"
 
 #: ../src/DeviceRow.vala:43
 msgid "Not Connected"
-msgstr ""
+msgstr "未連結"
 
 #: ../src/DeviceRow.vala:85
 msgid "Sharing Settings"
-msgstr ""
+msgstr "共享設定"
 
 #: ../src/DeviceRow.vala:107
 msgid "Sound Settings"
-msgstr ""
+msgstr "音訊設定"
 
 #: ../src/DeviceRow.vala:112
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "鍵盤設定"
 
 #: ../src/DeviceRow.vala:116
 msgid "Mouse & Touchpad Settings"
-msgstr ""
+msgstr "滑鼠與觸控板設定"
 
 #: ../src/DeviceRow.vala:120
 msgid "Drawing Tablet Settings"
-msgstr ""
+msgstr "繪畫板設定"
 
 #: ../src/DeviceRow.vala:124
 msgid "Printer Settings"
-msgstr ""
+msgstr "印表機設定"
 
 #: ../src/DeviceRow.vala:187
 msgid "Disconnect"
-msgstr ""
+msgstr "中斷連結"
 
 #: ../src/DeviceRow.vala:200
 msgid "Connect"
-msgstr ""
+msgstr "連結"
 
 #: ../src/MainView.vala:94
 msgid "Discover new device"
-msgstr ""
+msgstr "搜索新裝置"
 
 #: ../src/MainView.vala:99
 msgid "Forget selected device"
-msgstr ""
+msgstr "忘記選取裝置"
 
 #: ../src/HeaderAdapter.vala:33 ../src/HeaderAdapter.vala:57
 msgid "Now Discoverable as \"%s\""
-msgstr ""
+msgstr "可被偵測為 %s"
