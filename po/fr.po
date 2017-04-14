@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-18 12:24-0800\n"
-"PO-Revision-Date: 2017-04-14 23:13+0000\n"
+"PO-Revision-Date: 2017-04-14 23:33+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-bluetooth/fr/>\n"
@@ -30,11 +30,11 @@ msgstr "Configurer les paramètre bluetooth"
 
 #: ../src/DeviceRow.vala:35
 msgid "Connected"
-msgstr "Conecté"
+msgstr "Connecté"
 
 #: ../src/DeviceRow.vala:37
 msgid "Connecting…"
-msgstr "Connexion..."
+msgstr "Connexion…"
 
 #: ../src/DeviceRow.vala:39
 msgid "Disconnecting…"
