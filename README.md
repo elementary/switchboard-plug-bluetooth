@@ -1,6 +1,14 @@
 # Switchboard Bluetooth Plug
+[![l10n](https://l10n.elementary.io/widgets/switchboard/switchboard-plug-bluetooth/svg-badge.svg)](https://l10n.elementary.io/projects/switchboard/switchboard-plug-bluetooth)
 
 ## Building and Installation
+
+You'll need the following dependencies:
+
+* cmake
+* libgranite-dev
+* libswitchboard-2.0-dev
+* valac
 
 It's recommended to create a clean build environment
 
