@@ -8,84 +8,87 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-18 12:24-0800\n"
-"PO-Revision-Date: 2016-12-15 05:19+0000\n"
-"Last-Translator: Daniel Fore <Unknown>\n"
-"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2017-07-11 12:07+0000\n"
+"Last-Translator: Mattias Ezequiel Mignone <memignone@gmail.com>\n"
+"Language-Team: English (United Kingdom) "
+"<https://l10n.elementary.io/projects/switchboard/switchboard-plug-"
+"bluetooth/en_GB/>\n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: ../src/Plug.vala:30 ../src/MainView.vala:73
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: ../src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "Configure Bluetooth Settings"
 
 #: ../src/DeviceRow.vala:35
 msgid "Connected"
-msgstr ""
+msgstr "Connected"
 
 #: ../src/DeviceRow.vala:37
 msgid "Connecting…"
-msgstr ""
+msgstr "Connecting…"
 
 #: ../src/DeviceRow.vala:39
 msgid "Disconnecting…"
-msgstr ""
+msgstr "Disconnecting…"
 
 #: ../src/DeviceRow.vala:41
 msgid "Unable to Connnect"
-msgstr ""
+msgstr "Unable to Connnect"
 
 #: ../src/DeviceRow.vala:43
 msgid "Not Connected"
-msgstr ""
+msgstr "Not Connected"
 
 #: ../src/DeviceRow.vala:85
 msgid "Sharing Settings"
-msgstr ""
+msgstr "Sharing Settings"
 
 #: ../src/DeviceRow.vala:107
 msgid "Sound Settings"
-msgstr ""
+msgstr "Sound Settings"
 
 #: ../src/DeviceRow.vala:112
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "Keyboard Settings"
 
 #: ../src/DeviceRow.vala:116
 msgid "Mouse & Touchpad Settings"
-msgstr ""
+msgstr "Mouse & Touchpad Settings"
 
 #: ../src/DeviceRow.vala:120
 msgid "Drawing Tablet Settings"
-msgstr ""
+msgstr "Drawing Tablet Settings"
 
 #: ../src/DeviceRow.vala:124
 msgid "Printer Settings"
-msgstr ""
+msgstr "Printer Settings"
 
 #: ../src/DeviceRow.vala:187
 msgid "Disconnect"
-msgstr ""
+msgstr "Disconnect"
 
 #: ../src/DeviceRow.vala:200
 msgid "Connect"
-msgstr ""
+msgstr "Connect"
 
 #: ../src/MainView.vala:94
 msgid "Discover new device"
-msgstr ""
+msgstr "Discover new device"
 
 #: ../src/MainView.vala:99
 msgid "Forget selected device"
-msgstr ""
+msgstr "Forget selected device"
 
 #: ../src/HeaderAdapter.vala:33 ../src/HeaderAdapter.vala:57
 msgid "Now Discoverable as \"%s\""
-msgstr ""
+msgstr "Now Discoverable as \"%s\""
