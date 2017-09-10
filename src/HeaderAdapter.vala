@@ -75,7 +75,7 @@ public class Bluetooth.HeaderAdapter : Gtk.Grid {
     }
 
     private void update_label () {
-        critical (adapter.discoverable.to_string ());
+        info ("Discoverable: %s".printf(adapter.discoverable.to_string ()));
         if (adapter.discoverable) {
             label.label = _("Now Discoverable as \"%s\"").printf (adapter.name);
         } else {
