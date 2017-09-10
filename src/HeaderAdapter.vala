@@ -30,12 +30,14 @@ public class Bluetooth.HeaderAdapter : Gtk.Grid {
     construct {
         margin = 3;
 
-        label = new Gtk.Label (_("Now Discoverable as \"%s\"").printf (adapter.name));
+        label = new Gtk.Label (null);
         label.get_style_context ().add_class ("h4");
         label.hexpand = true;
         label.xalign = 0;
         label.valign = Gtk.Align.CENTER;
         label.ellipsize = Pango.EllipsizeMode.END;
+
+        update_label ();
 
         adapter_switch = new Gtk.Switch ();
         adapter_switch.active = adapter.powered;
@@ -54,7 +56,12 @@ public class Bluetooth.HeaderAdapter : Gtk.Grid {
 
             var name = changed.lookup_value ("Name", new VariantType ("s"));
             if (name != null) {
-                label.label = _("Now Discoverable as \"%s\"").printf (adapter.name);
+                update_label ();
+            }
+
+            var discoverable = changed.lookup_value ("Discoverable", new VariantType ("b"));
+            if (discoverable != null) {
+                update_label ();
             }
         });
 
@@ -65,5 +72,14 @@ public class Bluetooth.HeaderAdapter : Gtk.Grid {
                 adapter.powered = false;
             }
         });
+    }
+
+    private void update_label () {
+        critical (adapter.discoverable.to_string ());
+        if (adapter.discoverable) {
+            label.label = _("Now Discoverable as \"%s\"").printf (adapter.name);
+        } else {
+            label.label = _("Device is Not Discoverable");
+        }
     }
 }
