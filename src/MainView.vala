@@ -77,9 +77,17 @@ public class Bluetooth.MainView : Gtk.Grid {
         title.halign = Gtk.Align.START;
         title.hexpand = true;
 
+        var empty_alert = new Granite.Widgets.AlertView (
+            _("Pair Bluetooth Devices"),
+            _("Add devices to this list by clicking the icon in the toolbar below."),
+            "insert-link"
+        );
+        empty_alert.show_all ();
+
         list_box = new Gtk.ListBox ();
         list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare_rows);
         list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
+        list_box.set_placeholder (empty_alert);
         list_box.selection_mode = Gtk.SelectionMode.BROWSE;
         list_box.activate_on_single_click = true;
 
