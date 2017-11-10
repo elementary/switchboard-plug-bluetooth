@@ -78,8 +78,8 @@ public class Bluetooth.MainView : Gtk.Grid {
         title.hexpand = true;
 
         var empty_alert = new Granite.Widgets.AlertView (
-            _("Pair Bluetooth Devices"),
-            _("Add devices to this list by selecting the icon in the toolbar below."),
+            _("No Paired Devices"),
+            _("Pair a device using the icon in the toolbar below."),
             "insert-link"
         );
         empty_alert.show_all ();
