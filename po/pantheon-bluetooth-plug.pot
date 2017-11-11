@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-18 12:24-0800\n"
+"POT-Creation-Date: 2017-11-11 09:42-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,74 +17,82 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/Plug.vala:30 ../src/MainView.vala:73
-msgid "Bluetooth"
-msgstr ""
-
-#: ../src/Plug.vala:31
-msgid "Configure Bluetooth Settings"
-msgstr ""
-
-#: ../src/DeviceRow.vala:35
+#: ../src/DeviceRow.vala:36
 msgid "Connected"
 msgstr ""
 
-#: ../src/DeviceRow.vala:37
+#: ../src/DeviceRow.vala:38
 msgid "Connecting…"
 msgstr ""
 
-#: ../src/DeviceRow.vala:39
+#: ../src/DeviceRow.vala:40
 msgid "Disconnecting…"
 msgstr ""
 
-#: ../src/DeviceRow.vala:41
+#: ../src/DeviceRow.vala:42
 msgid "Unable to Connnect"
 msgstr ""
 
-#: ../src/DeviceRow.vala:43
+#: ../src/DeviceRow.vala:44
 msgid "Not Connected"
 msgstr ""
 
-#: ../src/DeviceRow.vala:85
+#: ../src/DeviceRow.vala:87
 msgid "Sharing Settings"
 msgstr ""
 
-#: ../src/DeviceRow.vala:107
+#: ../src/DeviceRow.vala:109
 msgid "Sound Settings"
 msgstr ""
 
-#: ../src/DeviceRow.vala:112
+#: ../src/DeviceRow.vala:114
 msgid "Keyboard Settings"
 msgstr ""
 
-#: ../src/DeviceRow.vala:116
+#: ../src/DeviceRow.vala:118
 msgid "Mouse & Touchpad Settings"
 msgstr ""
 
-#: ../src/DeviceRow.vala:120
+#: ../src/DeviceRow.vala:122
 msgid "Drawing Tablet Settings"
 msgstr ""
 
-#: ../src/DeviceRow.vala:124
+#: ../src/DeviceRow.vala:126
 msgid "Printer Settings"
 msgstr ""
 
-#: ../src/DeviceRow.vala:187
+#: ../src/DeviceRow.vala:198
 msgid "Disconnect"
 msgstr ""
 
-#: ../src/DeviceRow.vala:200
+#: ../src/DeviceRow.vala:211
 msgid "Connect"
-msgstr ""
-
-#: ../src/MainView.vala:94
-msgid "Discover new device"
-msgstr ""
-
-#: ../src/MainView.vala:99
-msgid "Forget selected device"
 msgstr ""
 
 #: ../src/HeaderAdapter.vala:33 ../src/HeaderAdapter.vala:57
 msgid "Now Discoverable as \"%s\""
+msgstr ""
+
+#: ../src/MainView.vala:75 ../src/Plug.vala:30
+msgid "Bluetooth"
+msgstr ""
+
+#: ../src/MainView.vala:81
+msgid "No Paired Devices"
+msgstr ""
+
+#: ../src/MainView.vala:82
+msgid "Pair a device using the icon in the toolbar below."
+msgstr ""
+
+#: ../src/MainView.vala:104
+msgid "Discover new device"
+msgstr ""
+
+#: ../src/MainView.vala:109
+msgid "Forget selected device"
+msgstr ""
+
+#: ../src/Plug.vala:31
+msgid "Configure Bluetooth Settings"
 msgstr ""
