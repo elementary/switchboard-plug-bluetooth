@@ -27,6 +27,7 @@ public interface Bluetooth.Services.DBusInterface : Object {
 }
 
 public class Bluetooth.Services.ObjectManager : Object {
+    private const string SCHEMA = "org.pantheon.desktop.wingpanel.indicators.bluetooth";
     public signal void global_state_changed (bool enabled, bool connected);
     public signal void adapter_added (Bluetooth.Services.Adapter adapter);
     public signal void adapter_removed (Bluetooth.Services.Adapter adapter);
@@ -36,19 +37,24 @@ public class Bluetooth.Services.ObjectManager : Object {
     public bool has_object { get; private set; default = false; }
     public bool retreive_finished { get; private set; default = false; }
 
-    private Settings settings;
+    private Settings? settings = null;
     private Bluetooth.Services.DBusInterface object_interface;
     private Gee.HashMap<string, Bluetooth.Services.Adapter> adapters;
     private Gee.HashMap<string, Bluetooth.Services.Device> devices;
 
     public ObjectManager () {
-        
+
     }
 
     construct {
         adapters = new Gee.HashMap<string, Bluetooth.Services.Adapter> (null, null);
         devices = new Gee.HashMap<string, Bluetooth.Services.Device> (null, null);
-        settings = new Settings ("org.pantheon.desktop.wingpanel.indicators.bluetooth");
+
+        var settings_schema = SettingsSchemaSource.get_default ().lookup (SCHEMA, true);
+        if (settings_schema != null) {
+            settings = new Settings (SCHEMA);
+        }
+
         Bus.get_proxy.begin<Bluetooth.Services.DBusInterface> (BusType.SYSTEM, "org.bluez", "/", DBusProxyFlags.NONE, null, (obj, res) => {
             try {
                 object_interface = Bus.get_proxy.end (res);
@@ -211,17 +217,11 @@ public class Bluetooth.Services.ObjectManager : Object {
                 }
             }
 
-            settings.set_boolean ("bluetooth-enabled", state);
+            if (settings != null) {
+                settings.set_boolean ("bluetooth-enabled", state);
+            }
 
             return null;
         });
-    }
-
-    public void set_last_state () {
-        bool last_state = settings.get_boolean ("bluetooth-enabled");
-
-        if (get_global_state () != last_state) {
-            set_global_state (last_state);
-        }
     }
 }
