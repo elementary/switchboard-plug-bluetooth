@@ -24,7 +24,7 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
 PACKAGES
     gtk+-3.0
     switchboard-2.0
-    granite
+    granite>=0.5
     posix
 OPTIONS
     --thread
