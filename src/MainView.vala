@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2016 elementary LLC.
+ * Copyright (c) 2016-2018 elementary LLC.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,12 +19,96 @@
  *              Oleksandr Lynok <oleksandr.lynok@gmail.com>
  */
 
-public class Bluetooth.MainView : Gtk.Grid {
+public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     private Gtk.ListBox list_box;
-    private unowned Services.ObjectManager manager;
+    public Services.ObjectManager manager { get; construct set; }
 
     public MainView (Services.ObjectManager manager) {
-        this.manager = manager;
+        Object (
+            icon_name: "bluetooth",
+            manager: manager,
+            title: _("Bluetooth")
+        );
+    }
+
+    construct {
+        var empty_alert = new Granite.Widgets.AlertView (
+            _("No Paired Devices"),
+            _("Pair a device using the icon in the toolbar below."),
+            "insert-link"
+        );
+        empty_alert.show_all ();
+
+        list_box = new Gtk.ListBox ();
+        list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare_rows);
+        list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
+        list_box.set_placeholder (empty_alert);
+        list_box.selection_mode = Gtk.SelectionMode.BROWSE;
+        list_box.activate_on_single_click = true;
+
+        var scrolled = new Gtk.ScrolledWindow (null, null);
+        scrolled.expand = true;
+        scrolled.add (list_box);
+
+        var frame = new Gtk.Frame (null);
+        frame.add (scrolled);
+
+        var add_button = new Gtk.ToolButton (null, null);
+        add_button.icon_name = "list-add-symbolic";
+        add_button.tooltip_text = _("Discover new device");
+
+        var remove_button = new Gtk.ToolButton (null, null);
+        remove_button.icon_name = "list-remove-symbolic";
+        remove_button.sensitive = false;
+        remove_button.tooltip_text = _("Forget selected device");
+
+        var toolbar = new Gtk.Toolbar ();
+        toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
+        toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        toolbar.add (add_button);
+        toolbar.add (remove_button);
+
+        content_area.orientation = Gtk.Orientation.VERTICAL;
+        content_area.row_spacing = 0;
+        content_area.add (frame);
+        content_area.add (toolbar);
+
+        margin = 12;
+        margin_bottom = 0;
+
+        add_button.clicked.connect (() => {
+            try {
+                var appinfo = AppInfo.create_from_commandline ("bluetooth-wizard", null, AppInfoCreateFlags.SUPPORTS_URIS);
+                appinfo.launch_uris (null, null);
+            } catch (Error e) {
+                warning (e.message);
+            }
+        });
+
+        remove_button.clicked.connect (() => {
+            var row = list_box.get_selected_row ();
+            if (row != null) {
+                unowned Services.Device device = ((DeviceRow) row).device;
+                try {
+                    Bluetooth.Services.Adapter adapter = Bus.get_proxy_sync (BusType.SYSTEM, "org.bluez", device.adapter, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
+                    try {
+                        adapter.remove_device (new ObjectPath(((DBusProxy) device).g_object_path));
+                    } catch (Error e) {
+                        debug ("Removing bluetooth device failed: %s", e.message);
+                    }
+                } catch (Error e) {
+                    debug ("Connecting to bluetooth adapter failed: %s", e.message);
+                }
+            }
+        });
+
+        list_box.row_activated.connect (() => {
+            remove_button.sensitive = true;
+        });
+
+        list_box.unselect_all.connect (() => {
+            remove_button.sensitive = false;
+        });
 
         foreach (var device in manager.get_devices ()) {
             var adapter = manager.get_adapter_from_path (device.adapter);
@@ -66,95 +150,6 @@ public class Bluetooth.MainView : Gtk.Grid {
                 }
             });
         }
-    }
-
-    construct {
-        var bluetooth_icon = new Gtk.Image.from_icon_name ("bluetooth", Gtk.IconSize.DIALOG);
-        bluetooth_icon.halign = Gtk.Align.START;
-
-        var title = new Gtk.Label (_("Bluetooth"));
-        title.get_style_context ().add_class ("h2");
-        title.halign = Gtk.Align.START;
-        title.hexpand = true;
-
-        var empty_alert = new Granite.Widgets.AlertView (
-            _("No Paired Devices"),
-            _("Pair a device using the icon in the toolbar below."),
-            "insert-link"
-        );
-        empty_alert.show_all ();
-
-        list_box = new Gtk.ListBox ();
-        list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare_rows);
-        list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
-        list_box.set_placeholder (empty_alert);
-        list_box.selection_mode = Gtk.SelectionMode.BROWSE;
-        list_box.activate_on_single_click = true;
-
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.expand = true;
-        scrolled.add (list_box);
-
-        var frame = new Gtk.Frame (null);
-        frame.margin_top = 24;
-        frame.add (scrolled);
-
-        var add_button = new Gtk.ToolButton (null, null);
-        add_button.icon_name = "list-add-symbolic";
-        add_button.tooltip_text = _("Discover new device");
-
-        var remove_button = new Gtk.ToolButton (null, null);
-        remove_button.icon_name = "list-remove-symbolic";
-        remove_button.sensitive = false;
-        remove_button.tooltip_text = _("Forget selected device");
-
-        var toolbar = new Gtk.Toolbar ();
-        toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
-        toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-        toolbar.add (add_button);
-        toolbar.add (remove_button);
-
-        column_spacing = 12;
-        margin = 24;
-        orientation = Gtk.Orientation.VERTICAL;
-        attach (bluetooth_icon, 0, 0, 1, 1);
-        attach (title, 1, 0, 1, 1);
-        attach (frame, 0, 1, 2, 1);
-        attach (toolbar, 0, 2, 2, 1);
-
-        add_button.clicked.connect (() => {
-            try {
-                var appinfo = AppInfo.create_from_commandline ("bluetooth-wizard", null, AppInfoCreateFlags.SUPPORTS_URIS);
-                appinfo.launch_uris (null, null);
-            } catch (Error e) {
-                warning (e.message);
-            }
-        });
-
-        remove_button.clicked.connect (() => {
-            var row = list_box.get_selected_row ();
-            if (row != null) {
-                unowned Services.Device device = ((DeviceRow) row).device;
-                try {
-                    Bluetooth.Services.Adapter adapter = Bus.get_proxy_sync (BusType.SYSTEM, "org.bluez", device.adapter, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
-                    try {
-                        adapter.remove_device (new ObjectPath(((DBusProxy) device).g_object_path));
-                    } catch (Error e) {
-                        debug ("Removing bluetooth device failed: %s", e.message);
-                    }
-                } catch (Error e) {
-                    debug ("Connecting to bluetooth adapter failed: %s", e.message);
-                }
-            }
-        });
-
-        list_box.row_activated.connect (() => {
-            remove_button.sensitive = true;
-        });
-
-        list_box.unselect_all.connect (() => {
-            remove_button.sensitive = false;
-        });
 
         show_all ();
     }
