@@ -135,14 +135,14 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             }
         });
 
-        if (manager.retreive_finished) {
+        if (manager.retrieve_finished) {
             weak Gtk.ListBoxRow? first_row = list_box.get_row_at_index (0);
             if (first_row != null) {
                 list_box.select_row (first_row);
                 list_box.row_activated (first_row);
             }
         } else {
-            manager.notify["retreive-finished"].connect (() => {
+            manager.notify["retrieve-finished"].connect (() => {
                 weak Gtk.ListBoxRow? first_row = list_box.get_row_at_index (0);
                 if (first_row != null) {
                     list_box.select_row (first_row);

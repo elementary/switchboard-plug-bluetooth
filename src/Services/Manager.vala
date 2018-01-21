@@ -35,7 +35,7 @@ public class Bluetooth.Services.ObjectManager : Object {
     public signal void device_removed (Bluetooth.Services.Device device);
 
     public bool has_object { get; private set; default = false; }
-    public bool retreive_finished { get; private set; default = false; }
+    public bool retrieve_finished { get; private set; default = false; }
 
     private Settings? settings = null;
     private Bluetooth.Services.DBusInterface object_interface;
@@ -65,7 +65,7 @@ public class Bluetooth.Services.ObjectManager : Object {
                 critical (e.message);
             }
 
-            retreive_finished = true;
+            retrieve_finished = true;
         });
     }
 
