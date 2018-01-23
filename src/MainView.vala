@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2016 elementary LLC.
+ * Copyright (c) 2016-2018 elementary LLC.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,64 +19,19 @@
  *              Oleksandr Lynok <oleksandr.lynok@gmail.com>
  */
 
-public class Bluetooth.MainView : Gtk.Grid {
+public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     private Gtk.ListBox list_box;
-    private unowned Services.ObjectManager manager;
+    public Services.ObjectManager manager { get; construct set; }
 
     public MainView (Services.ObjectManager manager) {
-        this.manager = manager;
-
-        foreach (var device in manager.get_devices ()) {
-            var adapter = manager.get_adapter_from_path (device.adapter);
-            var row = new DeviceRow (device, adapter);
-            list_box.add (row);
-        }
-
-        manager.device_added.connect ((device) => {
-            var adapter = manager.get_adapter_from_path (device.adapter);
-            var row = new DeviceRow (device, adapter);
-            list_box.add (row);
-            if (list_box.get_selected_row () == null) {
-                list_box.select_row (row);
-                list_box.row_activated (row);
-            }
-        });
-
-        manager.device_removed.connect ((device) => {
-            foreach (var row in list_box.get_children ()) {
-                if (((DeviceRow) row).device == device) {
-                    list_box.remove (row);
-                    break;
-                }
-            }
-        });
-
-        if (manager.retreive_finished) {
-            weak Gtk.ListBoxRow? first_row = list_box.get_row_at_index (0);
-            if (first_row != null) {
-                list_box.select_row (first_row);
-                list_box.row_activated (first_row);
-            }
-        } else {
-            manager.notify["retreive-finished"].connect (() => {
-                weak Gtk.ListBoxRow? first_row = list_box.get_row_at_index (0);
-                if (first_row != null) {
-                    list_box.select_row (first_row);
-                    list_box.row_activated (first_row);
-                }
-            });
-        }
+        Object (
+            icon_name: "bluetooth",
+            manager: manager,
+            title: _("Bluetooth")
+        );
     }
 
     construct {
-        var bluetooth_icon = new Gtk.Image.from_icon_name ("bluetooth", Gtk.IconSize.DIALOG);
-        bluetooth_icon.halign = Gtk.Align.START;
-
-        var title = new Gtk.Label (_("Bluetooth"));
-        title.get_style_context ().add_class ("h2");
-        title.halign = Gtk.Align.START;
-        title.hexpand = true;
-
         var empty_alert = new Granite.Widgets.AlertView (
             _("No Paired Devices"),
             _("Pair a device using the icon in the toolbar below."),
@@ -96,7 +51,6 @@ public class Bluetooth.MainView : Gtk.Grid {
         scrolled.add (list_box);
 
         var frame = new Gtk.Frame (null);
-        frame.margin_top = 24;
         frame.add (scrolled);
 
         var add_button = new Gtk.ToolButton (null, null);
@@ -114,13 +68,13 @@ public class Bluetooth.MainView : Gtk.Grid {
         toolbar.add (add_button);
         toolbar.add (remove_button);
 
-        column_spacing = 12;
-        margin = 24;
-        orientation = Gtk.Orientation.VERTICAL;
-        attach (bluetooth_icon, 0, 0, 1, 1);
-        attach (title, 1, 0, 1, 1);
-        attach (frame, 0, 1, 2, 1);
-        attach (toolbar, 0, 2, 2, 1);
+        content_area.orientation = Gtk.Orientation.VERTICAL;
+        content_area.row_spacing = 0;
+        content_area.add (frame);
+        content_area.add (toolbar);
+
+        margin = 12;
+        margin_bottom = 0;
 
         add_button.clicked.connect (() => {
             try {
@@ -155,6 +109,47 @@ public class Bluetooth.MainView : Gtk.Grid {
         list_box.unselect_all.connect (() => {
             remove_button.sensitive = false;
         });
+
+        foreach (var device in manager.get_devices ()) {
+            var adapter = manager.get_adapter_from_path (device.adapter);
+            var row = new DeviceRow (device, adapter);
+            list_box.add (row);
+        }
+
+        manager.device_added.connect ((device) => {
+            var adapter = manager.get_adapter_from_path (device.adapter);
+            var row = new DeviceRow (device, adapter);
+            list_box.add (row);
+            if (list_box.get_selected_row () == null) {
+                list_box.select_row (row);
+                list_box.row_activated (row);
+            }
+        });
+
+        manager.device_removed.connect ((device) => {
+            foreach (var row in list_box.get_children ()) {
+                if (((DeviceRow) row).device == device) {
+                    list_box.remove (row);
+                    break;
+                }
+            }
+        });
+
+        if (manager.retrieve_finished) {
+            weak Gtk.ListBoxRow? first_row = list_box.get_row_at_index (0);
+            if (first_row != null) {
+                list_box.select_row (first_row);
+                list_box.row_activated (first_row);
+            }
+        } else {
+            manager.notify["retrieve-finished"].connect (() => {
+                weak Gtk.ListBoxRow? first_row = list_box.get_row_at_index (0);
+                if (first_row != null) {
+                    list_box.select_row (first_row);
+                    list_box.row_activated (first_row);
+                }
+            });
+        }
 
         show_all ();
     }
