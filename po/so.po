@@ -1,0 +1,98 @@
+# Somali translations for bluetooth-plug package.
+# Copyright (C) 2018 THE bluetooth-plug'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the bluetooth-plug package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bluetooth-plug\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-20 16:24-0600\n"
+"PO-Revision-Date: 2018-02-20 16:24-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: so\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/Plug.vala:30 src/MainView.vala:30
+msgid "Bluetooth"
+msgstr ""
+
+#: src/Plug.vala:31
+msgid "Configure Bluetooth Settings"
+msgstr ""
+
+#: src/MainView.vala:36
+msgid "No Paired Devices"
+msgstr ""
+
+#: src/MainView.vala:37
+msgid "Pair a device using the icon in the toolbar below."
+msgstr ""
+
+#: src/MainView.vala:58
+msgid "Discover new device"
+msgstr ""
+
+#: src/MainView.vala:63
+msgid "Forget selected device"
+msgstr ""
+
+#: src/HeaderAdapter.vala:33 src/HeaderAdapter.vala:57
+#, c-format
+msgid "Now Discoverable as \"%s\""
+msgstr ""
+
+#: src/DeviceRow.vala:36
+msgid "Connected"
+msgstr ""
+
+#: src/DeviceRow.vala:38
+msgid "Connecting…"
+msgstr ""
+
+#: src/DeviceRow.vala:40
+msgid "Disconnecting…"
+msgstr ""
+
+#: src/DeviceRow.vala:42
+msgid "Unable to Connnect"
+msgstr ""
+
+#: src/DeviceRow.vala:44
+msgid "Not Connected"
+msgstr ""
+
+#: src/DeviceRow.vala:87
+msgid "Sharing Settings"
+msgstr ""
+
+#: src/DeviceRow.vala:109
+msgid "Sound Settings"
+msgstr ""
+
+#: src/DeviceRow.vala:114
+msgid "Keyboard Settings"
+msgstr ""
+
+#: src/DeviceRow.vala:118
+msgid "Mouse & Touchpad Settings"
+msgstr ""
+
+#: src/DeviceRow.vala:122
+msgid "Drawing Tablet Settings"
+msgstr ""
+
+#: src/DeviceRow.vala:126
+msgid "Printer Settings"
+msgstr ""
+
+#: src/DeviceRow.vala:198
+msgid "Disconnect"
+msgstr ""
+
+#: src/DeviceRow.vala:211
+msgid "Connect"
+msgstr ""

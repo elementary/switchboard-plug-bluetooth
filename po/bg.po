@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-18 12:24-0800\n"
+"POT-Creation-Date: 2018-02-20 16:24-0600\n"
 "PO-Revision-Date: 2017-04-05 21:11+0000\n"
 "Last-Translator: Borislav Asenov Krumov <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
@@ -18,74 +18,83 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-08 06:37+0000\n"
 "X-Generator: Launchpad (build 18343)\n"
 
-#: ../src/Plug.vala:30 ../src/MainView.vala:73
+#: src/Plug.vala:30 src/MainView.vala:30
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: ../src/Plug.vala:31
+#: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
 msgstr "Настройване на Bluetooth"
 
-#: ../src/DeviceRow.vala:35
-msgid "Connected"
-msgstr "Установена е връзка"
+#: src/MainView.vala:36
+msgid "No Paired Devices"
+msgstr ""
 
-#: ../src/DeviceRow.vala:37
-msgid "Connecting…"
-msgstr "Установява се връзка…"
+#: src/MainView.vala:37
+msgid "Pair a device using the icon in the toolbar below."
+msgstr ""
 
-#: ../src/DeviceRow.vala:39
-msgid "Disconnecting…"
-msgstr "Прекъсване на връзката..."
-
-#: ../src/DeviceRow.vala:41
-msgid "Unable to Connnect"
-msgstr "Не може да се свърже"
-
-#: ../src/DeviceRow.vala:43
-msgid "Not Connected"
-msgstr "Няма връзка"
-
-#: ../src/DeviceRow.vala:85
-msgid "Sharing Settings"
-msgstr "Настройки на споделянето"
-
-#: ../src/DeviceRow.vala:107
-msgid "Sound Settings"
-msgstr "Настройки на звука"
-
-#: ../src/DeviceRow.vala:112
-msgid "Keyboard Settings"
-msgstr "Настройки на клавиатурата"
-
-#: ../src/DeviceRow.vala:116
-msgid "Mouse & Touchpad Settings"
-msgstr "Настройки на мишката и тъчпада"
-
-#: ../src/DeviceRow.vala:120
-msgid "Drawing Tablet Settings"
-msgstr "Настройки на чертожния таблет"
-
-#: ../src/DeviceRow.vala:124
-msgid "Printer Settings"
-msgstr "Настройки на принтер"
-
-#: ../src/DeviceRow.vala:187
-msgid "Disconnect"
-msgstr "Разкачване"
-
-#: ../src/DeviceRow.vala:200
-msgid "Connect"
-msgstr "Свържи се"
-
-#: ../src/MainView.vala:94
+#: src/MainView.vala:58
 msgid "Discover new device"
 msgstr "Открий нови устройства"
 
-#: ../src/MainView.vala:99
+#: src/MainView.vala:63
 msgid "Forget selected device"
 msgstr "Забрави избраното устройство"
 
-#: ../src/HeaderAdapter.vala:33 ../src/HeaderAdapter.vala:57
+#: src/HeaderAdapter.vala:33 src/HeaderAdapter.vala:57
+#, c-format
 msgid "Now Discoverable as \"%s\""
 msgstr "Ново устройство като \"%s\""
+
+#: src/DeviceRow.vala:36
+msgid "Connected"
+msgstr "Установена е връзка"
+
+#: src/DeviceRow.vala:38
+msgid "Connecting…"
+msgstr "Установява се връзка…"
+
+#: src/DeviceRow.vala:40
+msgid "Disconnecting…"
+msgstr "Прекъсване на връзката..."
+
+#: src/DeviceRow.vala:42
+msgid "Unable to Connnect"
+msgstr "Не може да се свърже"
+
+#: src/DeviceRow.vala:44
+msgid "Not Connected"
+msgstr "Няма връзка"
+
+#: src/DeviceRow.vala:87
+msgid "Sharing Settings"
+msgstr "Настройки на споделянето"
+
+#: src/DeviceRow.vala:109
+msgid "Sound Settings"
+msgstr "Настройки на звука"
+
+#: src/DeviceRow.vala:114
+msgid "Keyboard Settings"
+msgstr "Настройки на клавиатурата"
+
+#: src/DeviceRow.vala:118
+msgid "Mouse & Touchpad Settings"
+msgstr "Настройки на мишката и тъчпада"
+
+#: src/DeviceRow.vala:122
+msgid "Drawing Tablet Settings"
+msgstr "Настройки на чертожния таблет"
+
+#: src/DeviceRow.vala:126
+msgid "Printer Settings"
+msgstr "Настройки на принтер"
+
+#: src/DeviceRow.vala:198
+msgid "Disconnect"
+msgstr "Разкачване"
+
+#: src/DeviceRow.vala:211
+msgid "Connect"
+msgstr "Свържи се"

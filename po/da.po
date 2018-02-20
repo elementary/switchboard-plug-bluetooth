@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-18 12:24-0800\n"
+"POT-Creation-Date: 2018-02-20 16:24-0600\n"
 "PO-Revision-Date: 2017-03-17 14:44+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: Danish <da@li.org>\n"
@@ -18,74 +18,83 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-19 06:52+0000\n"
 "X-Generator: Launchpad (build 18332)\n"
 
-#: ../src/Plug.vala:30 ../src/MainView.vala:73
+#: src/Plug.vala:30 src/MainView.vala:30
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: ../src/Plug.vala:31
+#: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
 msgstr "Konfigurer Bluetooth-indstillinger"
 
-#: ../src/DeviceRow.vala:35
-msgid "Connected"
-msgstr "Tilsluttet"
+#: src/MainView.vala:36
+msgid "No Paired Devices"
+msgstr ""
 
-#: ../src/DeviceRow.vala:37
-msgid "Connecting…"
-msgstr "Opretter forbindelse…"
+#: src/MainView.vala:37
+msgid "Pair a device using the icon in the toolbar below."
+msgstr ""
 
-#: ../src/DeviceRow.vala:39
-msgid "Disconnecting…"
-msgstr "Afbryder forbindelse…"
-
-#: ../src/DeviceRow.vala:41
-msgid "Unable to Connnect"
-msgstr "Kan ikke oprette forbindelse"
-
-#: ../src/DeviceRow.vala:43
-msgid "Not Connected"
-msgstr "Ikke tilsluttet"
-
-#: ../src/DeviceRow.vala:85
-msgid "Sharing Settings"
-msgstr "Delingsindstillinger"
-
-#: ../src/DeviceRow.vala:107
-msgid "Sound Settings"
-msgstr "Lydindstillinger"
-
-#: ../src/DeviceRow.vala:112
-msgid "Keyboard Settings"
-msgstr "Tastaturindstillinger"
-
-#: ../src/DeviceRow.vala:116
-msgid "Mouse & Touchpad Settings"
-msgstr "Indstillinger for mus & pegeplade"
-
-#: ../src/DeviceRow.vala:120
-msgid "Drawing Tablet Settings"
-msgstr "Tegnepladeindstillinger"
-
-#: ../src/DeviceRow.vala:124
-msgid "Printer Settings"
-msgstr "Printerindstillinger"
-
-#: ../src/DeviceRow.vala:187
-msgid "Disconnect"
-msgstr "Afbryd forbindelse"
-
-#: ../src/DeviceRow.vala:200
-msgid "Connect"
-msgstr "Opret forbindelse"
-
-#: ../src/MainView.vala:94
+#: src/MainView.vala:58
 msgid "Discover new device"
 msgstr "Opdag ny enhed"
 
-#: ../src/MainView.vala:99
+#: src/MainView.vala:63
 msgid "Forget selected device"
 msgstr "Glem valgte enhed"
 
-#: ../src/HeaderAdapter.vala:33 ../src/HeaderAdapter.vala:57
+#: src/HeaderAdapter.vala:33 src/HeaderAdapter.vala:57
+#, c-format
 msgid "Now Discoverable as \"%s\""
 msgstr "Kan nu opdages som \"%s\""
+
+#: src/DeviceRow.vala:36
+msgid "Connected"
+msgstr "Tilsluttet"
+
+#: src/DeviceRow.vala:38
+msgid "Connecting…"
+msgstr "Opretter forbindelse…"
+
+#: src/DeviceRow.vala:40
+msgid "Disconnecting…"
+msgstr "Afbryder forbindelse…"
+
+#: src/DeviceRow.vala:42
+msgid "Unable to Connnect"
+msgstr "Kan ikke oprette forbindelse"
+
+#: src/DeviceRow.vala:44
+msgid "Not Connected"
+msgstr "Ikke tilsluttet"
+
+#: src/DeviceRow.vala:87
+msgid "Sharing Settings"
+msgstr "Delingsindstillinger"
+
+#: src/DeviceRow.vala:109
+msgid "Sound Settings"
+msgstr "Lydindstillinger"
+
+#: src/DeviceRow.vala:114
+msgid "Keyboard Settings"
+msgstr "Tastaturindstillinger"
+
+#: src/DeviceRow.vala:118
+msgid "Mouse & Touchpad Settings"
+msgstr "Indstillinger for mus & pegeplade"
+
+#: src/DeviceRow.vala:122
+msgid "Drawing Tablet Settings"
+msgstr "Tegnepladeindstillinger"
+
+#: src/DeviceRow.vala:126
+msgid "Printer Settings"
+msgstr "Printerindstillinger"
+
+#: src/DeviceRow.vala:198
+msgid "Disconnect"
+msgstr "Afbryd forbindelse"
+
+#: src/DeviceRow.vala:211
+msgid "Connect"
+msgstr "Opret forbindelse"
