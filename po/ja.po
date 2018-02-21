@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 16:33-0600\n"
-"PO-Revision-Date: 2017-05-12 11:27+0000\n"
-"Last-Translator: Ryo Nakano <nscnskichiro0911@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-bluetooth/ja/>\n"
+"PO-Revision-Date: 2018-02-21 14:51+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-bluetooth/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-21 05:43+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:30
@@ -30,11 +30,11 @@ msgstr "Bluetooth の設定をします"
 
 #: src/MainView.vala:36
 msgid "No Paired Devices"
-msgstr ""
+msgstr "ペアリング中のデバイスはありません"
 
 #: src/MainView.vala:37
 msgid "Pair a device using the icon in the toolbar below."
-msgstr ""
+msgstr "下のツールバー内のアイコンを使用してデバイスをペアリングしてください。"
 
 #: src/MainView.vala:58
 msgid "Discover new device"
