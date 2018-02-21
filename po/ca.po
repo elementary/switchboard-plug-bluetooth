@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 16:33-0600\n"
-"PO-Revision-Date: 2017-05-03 14:20+0000\n"
+"PO-Revision-Date: 2018-02-21 14:38+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-bluetooth/ca/>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-bluetooth/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:30
@@ -30,11 +30,11 @@ msgstr "Configureu els paràmetres del Bluetooth"
 
 #: src/MainView.vala:36
 msgid "No Paired Devices"
-msgstr ""
+msgstr "No hi ha cap dispositiu aparellat."
 
 #: src/MainView.vala:37
 msgid "Pair a device using the icon in the toolbar below."
-msgstr ""
+msgstr "Aparelleu-hi un dispositiu usant la icona de la barra d'eines de baix."
 
 #: src/MainView.vala:58
 msgid "Discover new device"
