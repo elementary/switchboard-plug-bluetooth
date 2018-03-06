@@ -1,7 +1,6 @@
 plug_files = files(
     'Plug.vala',
     'MainView.vala',
-    'HeaderAdapter.vala',
     'DeviceRow.vala',
     'Services/Manager.vala',
     'Services/Device.vala',
