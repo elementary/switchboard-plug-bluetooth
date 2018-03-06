@@ -24,6 +24,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     private static Gtk.SizeGroup size_group;
 
     private enum Status {
+        UNPAIRED,
+        PAIRING,
         CONNECTED,
         CONNECTING,
         DISCONNECTING,
@@ -32,6 +34,10 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
         public string to_string () {
             switch (this) {
+                case UNPAIRED:
+                    return _("Available");
+                case PAIRING:
+                    return _("Pairing…");
                 case CONNECTED:
                     return _("Connected");
                 case CONNECTING:
@@ -49,6 +55,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     private Gtk.Button connect_button;
     private Gtk.Image state;
     private Gtk.Label state_label;
+    private Gtk.LinkButton settings_button;
 
     public DeviceRow (Services.Device device, Services.Adapter adapter) {
         Object (device: device, adapter: adapter);
@@ -79,12 +86,15 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         label.hexpand = true;
         label.xalign = 0;
 
-        var settings_button = new Gtk.LinkButton ("settings://network/share/bluetooth");
+        settings_button = new Gtk.LinkButton ("settings://network/share/bluetooth");
         settings_button.always_show_image = true;
         settings_button.image = new Gtk.Image.from_icon_name ("view-more-horizontal-symbolic", Gtk.IconSize.MENU);
         settings_button.label = null;
         settings_button.margin_end = 3;
         settings_button.tooltip_text = _("Sharing Settings");
+        settings_button.show_all ();
+        settings_button.no_show_all = true;
+        settings_button.visible = false;
 
         connect_button = new Gtk.Button ();
         connect_button.valign = Gtk.Align.CENTER;
@@ -127,29 +137,28 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 break;
         }
 
-        if (device.connected) {
-            set_status (Status.CONNECTED);
-        } else {
-            set_status (Status.NOT_CONNECTED);
-        }
-
+        compute_status ();
         set_sensitive (adapter.powered);
 
         (adapter as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
             var powered = changed.lookup_value ("Powered", new VariantType ("b"));
             if (powered != null) {
                 set_sensitive (adapter.powered);
+                this.changed ();
             }
         });
 
         (device as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
+            var paired = changed.lookup_value ("Paired", new VariantType ("b"));
+            if (paired != null) {
+                compute_status ();
+                this.changed ();
+            }
+
             var connected = changed.lookup_value ("Connected", new VariantType ("b"));
             if (connected != null) {
-                if (device.connected) {
-                    set_status (Status.CONNECTED);
-                } else {
-                    set_status (Status.NOT_CONNECTED);
-                }
+                compute_status ();
+                this.changed ();
             }
 
             var name = changed.lookup_value ("Name", new VariantType ("s"));
@@ -159,62 +168,94 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
             var icon = changed.lookup_value ("Icon", new VariantType ("s"));
             if (icon != null) {
-                image.icon_name = device.icon;
+                image.icon_name = device.icon ?? "bluetooth";
             }
         });
 
         connect_button.clicked.connect (() => {
-            if (!device.connected) {
-                set_status (Status.CONNECTING);
-                new Thread<void*> (null, () => {
-                    try {
-                        device.connect ();
-                    } catch (Error e) {
-                        set_status (Status.UNABLE_TO_CONNECT);
-                        critical (e.message);
-                    }
-                    return null;
-                });
-            } else {
-                set_status (Status.DISCONNECTING);
-                new Thread<void*> (null, () => {
-                    try {
-                        device.disconnect ();
-                    } catch (Error e) {
-                        state.icon_name = "user-busy";
-                        critical (e.message);
-                    }
-                    return null;
-                });
-            }
+            button_clicked.begin ();
         });
+    }
+
+    private async void button_clicked () {
+        if (!device.paired) {
+            set_status (Status.PAIRING);
+            try {
+                yield device.pair ();
+            } catch (Error e) {
+                set_status (Status.UNABLE_TO_CONNECT);
+                critical (e.message);
+            }
+        } else if (!device.connected) {
+            set_status (Status.CONNECTING);
+            try {
+                yield device.connect ();
+            } catch (Error e) {
+                set_status (Status.UNABLE_TO_CONNECT);
+                critical (e.message);
+            }
+        } else {
+            set_status (Status.DISCONNECTING);
+            try {
+                yield device.disconnect ();
+            } catch (Error e) {
+                state.icon_name = "user-busy";
+                critical (e.message);
+            }
+        }
+    }
+
+    private void compute_status () {
+        if (!device.paired) {
+            set_status (Status.UNPAIRED);
+        } else if (device.connected) {
+            set_status (Status.CONNECTED);
+        } else {
+            set_status (Status.NOT_CONNECTED);
+        }
     }
 
     private void set_status (Status status) {
         state_label.label = GLib.Markup.printf_escaped ("<span font_size='small'>%s</span>", status.to_string ());
 
         switch (status) {
+            case Status.UNPAIRED:
+                connect_button.label = _("Pair");
+                connect_button.sensitive = true;
+                state.icon_name = "user-offline";
+                settings_button.visible = false;
+                break;
+            case Status.PAIRING:
+                connect_button.sensitive = false;
+                state.icon_name = "user-away";
+                settings_button.visible = false;
+                break;
             case Status.CONNECTED:
                 connect_button.label = _("Disconnect");
                 connect_button.sensitive = true;
                 state.icon_name = "user-available";
+                settings_button.visible = true;
                 break;
             case Status.CONNECTING:
                 connect_button.sensitive = false;
                 state.icon_name = "user-away";
+                settings_button.visible = false;
                 break;
             case Status.DISCONNECTING:
                 connect_button.sensitive = false;
                 state.icon_name = "user-away";
+                settings_button.visible = false;
                 break;
             case Status.NOT_CONNECTED:
                 connect_button.label = _("Connect");
                 connect_button.sensitive = true;
                 state.icon_name = "user-offline";
+                settings_button.visible = false;
                 break;
             case Status.UNABLE_TO_CONNECT:
                 connect_button.sensitive = true;
                 state.icon_name = "user-busy";
+                settings_button.visible = false;
                 break;
         }
     }

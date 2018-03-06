@@ -38,17 +38,20 @@ public class Bluetooth.Plug : Switchboard.Plug {
     public override Gtk.Widget get_widget () {
         if (main_view == null) {
             main_view = new MainView (manager);
+            main_view.quit_plug.connect (() => hidden ());
         }
 
         return main_view;
     }
 
     public override void shown () {
-        main_view.discoverable (true);
+        manager.discoverable (true);
+        manager.start_discovery.begin ();
     }
 
     public override void hidden () {
-        main_view.discoverable (false);
+        manager.discoverable (false);
+        manager.stop_discovery.begin ();
     }
 
     public override void search_callback (string location) {
