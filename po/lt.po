@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-06 11:53-0800\n"
-"PO-Revision-Date: 2018-02-21 22:14+0000\n"
+"PO-Revision-Date: 2018-03-06 23:15+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
-"Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
-"switchboard/switchboard-plug-bluetooth/lt/>\n"
+"Language-Team: Lithuanian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-bluetooth/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
-"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
+"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
@@ -30,40 +30,37 @@ msgid "Configure Bluetooth Settings"
 msgstr "Konfigūruoti Bluetooth nustatymus"
 
 #: src/MainView.vala:41
-#, fuzzy
 msgid "No Devices Found"
-msgstr "Nėra suporuotų įrenginių"
+msgstr "Nerasta jokių įrenginių"
 
 #: src/MainView.vala:42
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Įsitikinkite, kad jūsų įrenginiai yra matomi ir paruošti suporavimui."
 
 #: src/MainView.vala:64
 msgid "Forget selected device"
 msgstr "Pamiršti pasirinktą įrenginį"
 
 #: src/MainView.vala:177 src/MainView.vala:186
-#, fuzzy, c-format
+#, c-format
 msgid "Now discoverable as \"%s\""
-msgstr "Dabar, atrandamas kaip \"%s\""
+msgstr "Dabar atrandamas kaip \"%s\""
 
 #: src/MainView.vala:219
-#, fuzzy
 msgid "Paired Devices"
-msgstr "Nėra suporuotų įrenginių"
+msgstr "Suporuoti įrenginiai"
 
 #: src/MainView.vala:225
-#, fuzzy
 msgid "Nearby Devices"
-msgstr "Nėra suporuotų įrenginių"
+msgstr "Gretimi įrenginiai"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "Prieinamas"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "Suporuojama…"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
@@ -111,7 +108,7 @@ msgstr "Spausdintuvo nustatymai"
 
 #: src/DeviceRow.vala:223
 msgid "Pair"
-msgstr ""
+msgstr "Suporuoti"
 
 #: src/DeviceRow.vala:234
 msgid "Disconnect"
