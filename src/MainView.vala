@@ -208,23 +208,35 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             return 1;
         }
 
-        return device1.name.collate (device2.name);
+        var name1 = device1.name ?? device1.address;
+        var name2 = device2.name ?? device2.address;
+        return name1.collate (name2);
     }
 
     [CCode (instance_pos = -1)]
     private void title_rows (DeviceRow row1, DeviceRow? row2) {
-        if (row2 == null) {
+        if (row2 == null && row1.device.paired) {
             var label = new Gtk.Label (_("Paired Devices"));
             label.xalign = 0;
             label.margin = 3;
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
             row1.set_header (label);
-        } else if (row1.device.paired != row2.device.paired) {
+        } else if (row2 == null || row1.device.paired != row2.device.paired) {
             var label = new Gtk.Label (_("Nearby Devices"));
+            label.hexpand = true;
             label.xalign = 0;
-            label.margin = 3;
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
-            row1.set_header (label);
+            var spinner = new Gtk.Spinner ();
+            spinner.start ();
+            spinner.halign = Gtk.Align.END;
+            var grid = new Gtk.Grid ();
+            grid.margin = 3;
+            grid.margin_end = 6;
+            grid.orientation = Gtk.Orientation.HORIZONTAL;
+            grid.add (label);
+            grid.add (spinner);
+            grid.show_all ();
+            row1.set_header (grid);
         } else {
             row1.set_header (null);
         }
