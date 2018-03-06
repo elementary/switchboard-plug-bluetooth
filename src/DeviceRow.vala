@@ -59,7 +59,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var image = new Gtk.Image.from_icon_name (device.icon, Gtk.IconSize.DND);
+        var image = new Gtk.Image.from_icon_name (device.icon ?? "bluetooth", Gtk.IconSize.DND);
 
         state = new Gtk.Image.from_icon_name ("user-offline", Gtk.IconSize.MENU);
         state.halign = Gtk.Align.END;
@@ -74,7 +74,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         overlay.add (image);
         overlay.add_overlay (state);
 
-        var label = new Gtk.Label (device.name);
+        var label = new Gtk.Label (device.name ?? device.address);
         label.ellipsize = Pango.EllipsizeMode.END;
         label.hexpand = true;
         label.xalign = 0;
