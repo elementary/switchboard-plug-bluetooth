@@ -81,7 +81,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         overlay.add (image);
         overlay.add_overlay (state);
 
-        var label = new Gtk.Label (device.name);
+        var label = new Gtk.Label (device.name ?? device.address);
         label.ellipsize = Pango.EllipsizeMode.END;
         label.hexpand = true;
         label.xalign = 0;
