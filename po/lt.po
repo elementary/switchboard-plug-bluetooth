@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-06 01:54+0000\n"
+"POT-Creation-Date: 2018-03-06 11:53-0800\n"
 "PO-Revision-Date: 2018-02-21 22:14+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
@@ -31,11 +31,11 @@ msgstr "Konfigūruoti Bluetooth nustatymus"
 
 #: src/MainView.vala:41
 #, fuzzy
-msgid "No Device"
+msgid "No Devices Found"
 msgstr "Nėra suporuotų įrenginių"
 
 #: src/MainView.vala:42
-msgid "Please ensure that your devices are visible."
+msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 
 #: src/MainView.vala:64
@@ -43,16 +43,16 @@ msgid "Forget selected device"
 msgstr "Pamiršti pasirinktą įrenginį"
 
 #: src/MainView.vala:177 src/MainView.vala:186
-#, c-format
-msgid "Now Discoverable as \"%s\""
+#, fuzzy, c-format
+msgid "Now discoverable as \"%s\""
 msgstr "Dabar, atrandamas kaip \"%s\""
 
-#: src/MainView.vala:217
+#: src/MainView.vala:219
 #, fuzzy
-msgid "Paires Devices"
+msgid "Paired Devices"
 msgstr "Nėra suporuotų įrenginių"
 
-#: src/MainView.vala:223
+#: src/MainView.vala:225
 #, fuzzy
 msgid "Nearby Devices"
 msgstr "Nėra suporuotų įrenginių"

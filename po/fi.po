@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-06 01:54+0000\n"
+"POT-Creation-Date: 2018-03-06 11:53-0800\n"
 "PO-Revision-Date: 2018-02-25 00:09+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
@@ -30,11 +30,11 @@ msgstr "Määritä Bluetooth-asetukset"
 
 #: src/MainView.vala:41
 #, fuzzy
-msgid "No Device"
+msgid "No Devices Found"
 msgstr "Ei paritettuja laitteita"
 
 #: src/MainView.vala:42
-msgid "Please ensure that your devices are visible."
+msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 
 #: src/MainView.vala:64
@@ -42,16 +42,16 @@ msgid "Forget selected device"
 msgstr "Unohda valittu laite"
 
 #: src/MainView.vala:177 src/MainView.vala:186
-#, c-format
-msgid "Now Discoverable as \"%s\""
+#, fuzzy, c-format
+msgid "Now discoverable as \"%s\""
 msgstr "Nyt löydettävissä nimellä \"%s\""
 
-#: src/MainView.vala:217
+#: src/MainView.vala:219
 #, fuzzy
-msgid "Paires Devices"
+msgid "Paired Devices"
 msgstr "Ei paritettuja laitteita"
 
-#: src/MainView.vala:223
+#: src/MainView.vala:225
 #, fuzzy
 msgid "Nearby Devices"
 msgstr "Ei paritettuja laitteita"

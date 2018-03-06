@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-06 01:54+0000\n"
+"POT-Creation-Date: 2018-03-06 11:53-0800\n"
 "PO-Revision-Date: 2017-04-11 12:17+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -29,11 +29,11 @@ msgid "Configure Bluetooth Settings"
 msgstr "Nastavení Bluetooth"
 
 #: src/MainView.vala:41
-msgid "No Device"
+msgid "No Devices Found"
 msgstr ""
 
 #: src/MainView.vala:42
-msgid "Please ensure that your devices are visible."
+msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 
 #: src/MainView.vala:64
@@ -41,15 +41,15 @@ msgid "Forget selected device"
 msgstr "Zapomenout zvolené zařízení"
 
 #: src/MainView.vala:177 src/MainView.vala:186
-#, c-format
-msgid "Now Discoverable as \"%s\""
+#, fuzzy, c-format
+msgid "Now discoverable as \"%s\""
 msgstr "Nyní vyhledatelné jako %s"
 
-#: src/MainView.vala:217
-msgid "Paires Devices"
+#: src/MainView.vala:219
+msgid "Paired Devices"
 msgstr ""
 
-#: src/MainView.vala:223
+#: src/MainView.vala:225
 msgid "Nearby Devices"
 msgstr ""
 
