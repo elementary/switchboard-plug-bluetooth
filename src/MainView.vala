@@ -38,7 +38,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
 
     construct {
         var empty_alert = new Granite.Widgets.AlertView (
-            _("No Device"),
+            _("No Devices Found"),
             _("Please ensure that your devices are visible."),
             "insert-link"
         );
@@ -174,7 +174,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         main_adapter = adapter;
 
         status_switch.active = adapter.powered;
-        description = _("Now Discoverable as \"%s\"").printf (adapter.name);
+        description = _("Now discoverable as \"%s\"").printf (adapter.name);
         (adapter as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
             var powered = changed.lookup_value ("Powered", new VariantType ("b"));
             if (powered != null) {
@@ -183,7 +183,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
 
             var name = changed.lookup_value ("Name", new VariantType ("s"));
             if (name != null) {
-                description = _("Now Discoverable as \"%s\"").printf (adapter.name);
+                description = _("Now discoverable as \"%s\"").printf (adapter.name);
             }
         });
     }
@@ -214,7 +214,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     [CCode (instance_pos = -1)]
     private void title_rows (DeviceRow row1, DeviceRow? row2) {
         if (row2 == null) {
-            var label = new Gtk.Label (_("Paires Devices"));
+            var label = new Gtk.Label (_("Paired Devices"));
             label.xalign = 0;
             label.margin = 3;
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
