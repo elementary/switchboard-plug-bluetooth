@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 16:33-0600\n"
+"POT-Creation-Date: 2018-03-06 01:54+0000\n"
 "PO-Revision-Date: 2016-12-15 05:28+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: Malayalam <ml@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: src/Plug.vala:30 src/MainView.vala:30
+#: src/Plug.vala:30 src/MainView.vala:33
 msgid "Bluetooth"
 msgstr ""
 
@@ -26,75 +26,91 @@ msgstr ""
 msgid "Configure Bluetooth Settings"
 msgstr ""
 
-#: src/MainView.vala:36
-msgid "No Paired Devices"
+#: src/MainView.vala:41
+msgid "No Device"
 msgstr ""
 
-#: src/MainView.vala:37
-msgid "Pair a device using the icon in the toolbar below."
+#: src/MainView.vala:42
+msgid "Please ensure that your devices are visible."
 msgstr ""
 
-#: src/MainView.vala:58
-msgid "Discover new device"
-msgstr ""
-
-#: src/MainView.vala:63
+#: src/MainView.vala:64
 msgid "Forget selected device"
 msgstr ""
 
-#: src/HeaderAdapter.vala:33 src/HeaderAdapter.vala:57
+#: src/MainView.vala:177 src/MainView.vala:186
 #, c-format
 msgid "Now Discoverable as \"%s\""
 msgstr ""
 
-#: src/DeviceRow.vala:36
-msgid "Connected"
+#: src/MainView.vala:217
+msgid "Paires Devices"
+msgstr ""
+
+#: src/MainView.vala:223
+msgid "Nearby Devices"
 msgstr ""
 
 #: src/DeviceRow.vala:38
-msgid "Connecting…"
+msgid "Available"
 msgstr ""
 
 #: src/DeviceRow.vala:40
-msgid "Disconnecting…"
+msgid "Pairing…"
 msgstr ""
 
 #: src/DeviceRow.vala:42
-msgid "Unable to Connnect"
+msgid "Connected"
 msgstr ""
 
 #: src/DeviceRow.vala:44
+msgid "Connecting…"
+msgstr ""
+
+#: src/DeviceRow.vala:46
+msgid "Disconnecting…"
+msgstr ""
+
+#: src/DeviceRow.vala:48
+msgid "Unable to Connnect"
+msgstr ""
+
+#: src/DeviceRow.vala:50
 msgid "Not Connected"
 msgstr ""
 
-#: src/DeviceRow.vala:87
+#: src/DeviceRow.vala:94
 msgid "Sharing Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:109
+#: src/DeviceRow.vala:119
 msgid "Sound Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:114
+#: src/DeviceRow.vala:124
 msgid "Keyboard Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:118
+#: src/DeviceRow.vala:128
 msgid "Mouse & Touchpad Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:122
+#: src/DeviceRow.vala:132
 msgid "Drawing Tablet Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:126
+#: src/DeviceRow.vala:136
 msgid "Printer Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:198
+#: src/DeviceRow.vala:223
+msgid "Pair"
+msgstr ""
+
+#: src/DeviceRow.vala:234
 msgid "Disconnect"
 msgstr ""
 
-#: src/DeviceRow.vala:211
+#: src/DeviceRow.vala:250
 msgid "Connect"
 msgstr ""
