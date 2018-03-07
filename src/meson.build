@@ -4,6 +4,7 @@ plug_files = files(
     'DeviceRow.vala',
     'Services/Manager.vala',
     'Services/Device.vala',
+    'Services/Agent.vala',
     'Services/Adapter.vala'
 )
 
