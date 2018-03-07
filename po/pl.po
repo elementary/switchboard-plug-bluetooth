@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-06 11:53-0800\n"
-"PO-Revision-Date: 2018-02-25 16:44+0000\n"
+"PO-Revision-Date: 2018-03-07 06:23+0000\n"
 "Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-bluetooth/pl/>\n"
+"Language-Team: Polish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-bluetooth/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,47 +27,44 @@ msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr "Konfiguruj ustawienia bluetooth"
+msgstr "Skonfiguruj ustawienia Bluetooth"
 
 #: src/MainView.vala:41
-#, fuzzy
 msgid "No Devices Found"
-msgstr "Brak sparowanych urządzeń"
+msgstr "Nie odnaleziono urządzeń"
 
 #: src/MainView.vala:42
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Prosimy upewnić się, że urządzenia są widzialne i gotowe do sparowania."
 
 #: src/MainView.vala:64
 msgid "Forget selected device"
 msgstr "Zapomnij zaznaczone urządzenie"
 
 #: src/MainView.vala:177 src/MainView.vala:186
-#, fuzzy, c-format
+#, c-format
 msgid "Now discoverable as \"%s\""
 msgstr "Od teraz wykrywalne jako \"%s\""
 
 #: src/MainView.vala:219
-#, fuzzy
 msgid "Paired Devices"
-msgstr "Brak sparowanych urządzeń"
+msgstr "Sparowane urządzenia"
 
 #: src/MainView.vala:225
-#, fuzzy
 msgid "Nearby Devices"
-msgstr "Brak sparowanych urządzeń"
+msgstr "Urządzenia w pobliżu"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "Dostępne"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "Parowanie…"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
-msgstr "Połączony"
+msgstr "Połączono"
 
 #: src/DeviceRow.vala:44
 msgid "Connecting…"
@@ -111,7 +108,7 @@ msgstr "Ustawienia drukarki"
 
 #: src/DeviceRow.vala:223
 msgid "Pair"
-msgstr ""
+msgstr "Sparuj"
 
 #: src/DeviceRow.vala:234
 msgid "Disconnect"
