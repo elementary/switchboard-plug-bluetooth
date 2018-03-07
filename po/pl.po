@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-06 11:53-0800\n"
-"PO-Revision-Date: 2018-03-07 06:23+0000\n"
+"PO-Revision-Date: 2018-03-08 00:09+0000\n"
 "Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-bluetooth/pl/>\n"
@@ -72,7 +72,7 @@ msgstr "Łączenie…"
 
 #: src/DeviceRow.vala:46
 msgid "Disconnecting…"
-msgstr "Rozłączanie..."
+msgstr "Rozłączanie…"
 
 #: src/DeviceRow.vala:48
 msgid "Unable to Connnect"
