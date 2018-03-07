@@ -1,4 +1,5 @@
 plug_files = files(
+    'PairDialog.vala',
     'Plug.vala',
     'MainView.vala',
     'DeviceRow.vala',
