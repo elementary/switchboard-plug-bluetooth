@@ -86,12 +86,11 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         label.hexpand = true;
         label.xalign = 0;
 
-        settings_button = new Gtk.LinkButton ("settings://network/share/bluetooth");
+        settings_button = new Gtk.LinkButton ("");
         settings_button.always_show_image = true;
         settings_button.image = new Gtk.Image.from_icon_name ("view-more-horizontal-symbolic", Gtk.IconSize.MENU);
         settings_button.label = null;
         settings_button.margin_end = 3;
-        settings_button.tooltip_text = _("Sharing Settings");
         settings_button.show_all ();
         settings_button.no_show_all = true;
         settings_button.visible = false;
@@ -126,10 +125,6 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             case "input-mouse":
                 settings_button.uri = "settings://input/mouse";
                 settings_button.tooltip_text = _("Mouse & Touchpad Settings");
-                break;
-            case "input-tablet":
-                settings_button.uri = "settings://input/wacom";
-                settings_button.tooltip_text = _("Drawing Tablet Settings");
                 break;
             case "printer":
                 settings_button.uri = "settings://printer";
@@ -234,7 +229,9 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 connect_button.label = _("Disconnect");
                 connect_button.sensitive = true;
                 state.icon_name = "user-available";
-                settings_button.visible = true;
+                if (settings_button.uri != "") {
+                    settings_button.visible = true;
+                }
                 break;
             case Status.CONNECTING:
                 connect_button.sensitive = false;
