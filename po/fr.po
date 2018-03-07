@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-06 11:53-0800\n"
-"PO-Revision-Date: 2018-03-07 00:10+0000\n"
+"PO-Revision-Date: 2018-03-07 00:11+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-bluetooth/fr/>\n"
@@ -35,6 +35,7 @@ msgstr "Aucun périphérique trouvé"
 #: src/MainView.vala:42
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
+"Veuillez vérifier que vos appareils sont visibles et prêts à être associés."
 
 #: src/MainView.vala:64
 msgid "Forget selected device"
@@ -55,11 +56,11 @@ msgstr "Appareils à proximité"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "Disponible"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "Association…"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
@@ -107,7 +108,7 @@ msgstr "Paramètres de l’imprimante"
 
 #: src/DeviceRow.vala:223
 msgid "Pair"
-msgstr ""
+msgstr "Associer"
 
 #: src/DeviceRow.vala:234
 msgid "Disconnect"
