@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-06 11:53-0800\n"
-"PO-Revision-Date: 2018-03-07 00:11+0000\n"
+"PO-Revision-Date: 2018-03-07 01:06+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-bluetooth/fr/>\n"
@@ -26,11 +26,11 @@ msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr "Configurer les paramètre bluetooth"
+msgstr "Configurer les paramètres Bluetooth"
 
 #: src/MainView.vala:41
 msgid "No Devices Found"
-msgstr "Aucun périphérique trouvé"
+msgstr "Aucun appareil trouvé"
 
 #: src/MainView.vala:42
 msgid "Please ensure that your devices are visible and ready for pairing."
@@ -48,7 +48,7 @@ msgstr "Visible en tant que « %s »"
 
 #: src/MainView.vala:219
 msgid "Paired Devices"
-msgstr "Périphériques associés"
+msgstr "Appareils associés"
 
 #: src/MainView.vala:225
 msgid "Nearby Devices"
