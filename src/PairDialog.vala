@@ -18,13 +18,18 @@
 public class PairDialog : Granite.MessageDialog {
     public PairDialog (ObjectPath device) {
         Object (
+            image_icon: new ThemedIcon ("dialog-question"),
             primary_text: _("Confirm Bluetooth Pairing"),
             secondary_text: _("\"%s\" would like to pair with this device.").printf ("Helix-Sama")
         );
+
+        var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
+        confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
     }
 
     public PairDialog.with_passkey (ObjectPath device, uint32 passkey) {
         Object (
+            image_icon: new ThemedIcon ("dialog-information"),
             primary_text: _("Confirm Bluetooth Passkey"),
             secondary_text: _("Make sure the code displayed on \"%s\" matches the one below.").printf ("Helix-Sama")
         );
@@ -38,6 +43,7 @@ public class PairDialog : Granite.MessageDialog {
 
     public PairDialog.with_pin_code (ObjectPath device, string pincode) {
         Object (
+            image_icon: new ThemedIcon ("dialog-information"),
             primary_text: _("Confirm Bluetooth PIN"),
             secondary_text: _("Make sure the code displayed on \"%s\" matches the one below.").printf ("Helix-Sama")
         );
@@ -52,7 +58,6 @@ public class PairDialog : Granite.MessageDialog {
     construct {
         buttons = Gtk.ButtonsType.CANCEL;
         deletable = false;
-        image_icon = new ThemedIcon ("dialog-password");
         modal = true;
         resizable = false;
 
