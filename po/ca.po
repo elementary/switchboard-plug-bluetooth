@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-06 11:53-0800\n"
-"PO-Revision-Date: 2018-03-08 08:48+0000\n"
+"PO-Revision-Date: 2018-03-08 09:47+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-bluetooth/ca/>\n"
@@ -36,7 +36,7 @@ msgstr "No s'ha trobat cap dispositiu."
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Si us plau, assegureu-vos que els dispositius siguin visibles i que estiguin "
-"a punt per aparellar-se."
+"a punt per emparellar-se."
 
 #: src/MainView.vala:64
 msgid "Forget selected device"
@@ -45,7 +45,7 @@ msgstr "Oblida el dispositiu seleccionat"
 #: src/MainView.vala:177 src/MainView.vala:186
 #, c-format
 msgid "Now discoverable as \"%s\""
-msgstr "Ara es pot descobrir com a \"%s\"."
+msgstr "Ara és visible com a \"%s\"."
 
 #: src/MainView.vala:219
 msgid "Paired Devices"
