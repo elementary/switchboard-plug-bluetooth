@@ -8,109 +8,112 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-06 11:53-0800\n"
-"PO-Revision-Date: 2016-12-15 05:14+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: English (Canada) <en_CA@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-03-08 14:40+0000\n"
+"Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
+"Language-Team: English (Canada) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"bluetooth/en_CA/>\n"
+"Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: src/Plug.vala:30 src/MainView.vala:33
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "Configure Bluetooth Settings"
 
 #: src/MainView.vala:41
 msgid "No Devices Found"
-msgstr ""
+msgstr "No Devices Found"
 
 #: src/MainView.vala:42
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Please ensure that your devices are visible and ready for pairing."
 
 #: src/MainView.vala:64
 msgid "Forget selected device"
-msgstr ""
+msgstr "Forget selected device"
 
 #: src/MainView.vala:177 src/MainView.vala:186
 #, c-format
 msgid "Now discoverable as \"%s\""
-msgstr ""
+msgstr "Now discoverable as \"%s\""
 
 #: src/MainView.vala:219
 msgid "Paired Devices"
-msgstr ""
+msgstr "Paired Devices"
 
 #: src/MainView.vala:225
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Nearby Devices"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "Available"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "Pairing…"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
-msgstr ""
+msgstr "Connected"
 
 #: src/DeviceRow.vala:44
 msgid "Connecting…"
-msgstr ""
+msgstr "Connecting…"
 
 #: src/DeviceRow.vala:46
 msgid "Disconnecting…"
-msgstr ""
+msgstr "Disconnecting…"
 
 #: src/DeviceRow.vala:48
 msgid "Unable to Connnect"
-msgstr ""
+msgstr "Unable to Connnect"
 
 #: src/DeviceRow.vala:50
 msgid "Not Connected"
-msgstr ""
+msgstr "Not Connected"
 
 #: src/DeviceRow.vala:94
 msgid "Sharing Settings"
-msgstr ""
+msgstr "Sharing Settings"
 
 #: src/DeviceRow.vala:119
 msgid "Sound Settings"
-msgstr ""
+msgstr "Sound Settings"
 
 #: src/DeviceRow.vala:124
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "Keyboard Settings"
 
 #: src/DeviceRow.vala:128
 msgid "Mouse & Touchpad Settings"
-msgstr ""
+msgstr "Mouse & Touchpad Settings"
 
 #: src/DeviceRow.vala:132
 msgid "Drawing Tablet Settings"
-msgstr ""
+msgstr "Drawing Tablet Settings"
 
 #: src/DeviceRow.vala:136
 msgid "Printer Settings"
-msgstr ""
+msgstr "Printer Settings"
 
 #: src/DeviceRow.vala:223
 msgid "Pair"
-msgstr ""
+msgstr "Pair"
 
 #: src/DeviceRow.vala:234
 msgid "Disconnect"
-msgstr ""
+msgstr "Disconnect"
 
 #: src/DeviceRow.vala:250
 msgid "Connect"
-msgstr ""
+msgstr "Connect"
