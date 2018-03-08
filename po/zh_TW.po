@@ -8,10 +8,11 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-06 11:53-0800\n"
-"PO-Revision-Date: 2018-02-24 11:34+0000\n"
+"PO-Revision-Date: 2018-03-08 15:08+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
-"switchboard/switchboard-plug-bluetooth/zh_TW/>\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"bluetooth/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,40 +30,37 @@ msgid "Configure Bluetooth Settings"
 msgstr "藍芽設定"
 
 #: src/MainView.vala:41
-#, fuzzy
 msgid "No Devices Found"
-msgstr "無配對過的裝置"
+msgstr "找不到裝置"
 
 #: src/MainView.vala:42
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "請確認您的裝置可被探查而且準備好配對。"
 
 #: src/MainView.vala:64
 msgid "Forget selected device"
 msgstr "忘記選取裝置"
 
 #: src/MainView.vala:177 src/MainView.vala:186
-#, fuzzy, c-format
+#, c-format
 msgid "Now discoverable as \"%s\""
-msgstr "可被偵測為 %s"
+msgstr "現在可被偵測為「%s」"
 
 #: src/MainView.vala:219
-#, fuzzy
 msgid "Paired Devices"
-msgstr "無配對過的裝置"
+msgstr "已配對的裝置"
 
 #: src/MainView.vala:225
-#, fuzzy
 msgid "Nearby Devices"
-msgstr "無配對過的裝置"
+msgstr "鄰近的裝置"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "可用"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "配對中…"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
@@ -110,7 +108,7 @@ msgstr "印表機設定"
 
 #: src/DeviceRow.vala:223
 msgid "Pair"
-msgstr ""
+msgstr "配對"
 
 #: src/DeviceRow.vala:234
 msgid "Disconnect"
