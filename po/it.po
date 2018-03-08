@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-06 11:53-0800\n"
-"PO-Revision-Date: 2018-03-03 00:03+0000\n"
+"PO-Revision-Date: 2018-03-08 19:27+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
-"Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-bluetooth/it/>\n"
+"Language-Team: Italian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-bluetooth/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,40 +29,39 @@ msgid "Configure Bluetooth Settings"
 msgstr "Configura le impostazioni Bluetooth"
 
 #: src/MainView.vala:41
-#, fuzzy
 msgid "No Devices Found"
-msgstr "Nessun dispositivo accoppiato"
+msgstr "Nessun dispositivo trovato"
 
 #: src/MainView.vala:42
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
+"Assicurati che i tuoi dispositivi siano visibili e pronti per "
+"l'accoppiamento."
 
 #: src/MainView.vala:64
 msgid "Forget selected device"
 msgstr "Dimentica dispositivo selezionato"
 
 #: src/MainView.vala:177 src/MainView.vala:186
-#, fuzzy, c-format
+#, c-format
 msgid "Now discoverable as \"%s\""
 msgstr "Ora visibile come \"%s\""
 
 #: src/MainView.vala:219
-#, fuzzy
 msgid "Paired Devices"
-msgstr "Nessun dispositivo accoppiato"
+msgstr "Dispositivi accoppiati"
 
 #: src/MainView.vala:225
-#, fuzzy
 msgid "Nearby Devices"
-msgstr "Nessun dispositivo accoppiato"
+msgstr "Dispositivi vicini"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "Disponibile"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "Accoppiamento…"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
@@ -110,7 +109,7 @@ msgstr "Impostazioni di stampa"
 
 #: src/DeviceRow.vala:223
 msgid "Pair"
-msgstr ""
+msgstr "Accoppia"
 
 #: src/DeviceRow.vala:234
 msgid "Disconnect"
