@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-06 11:53-0800\n"
-"PO-Revision-Date: 2018-02-21 07:44+0000\n"
+"PO-Revision-Date: 2018-03-12 14:49+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-bluetooth/he/>\n"
+"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-bluetooth/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,40 +29,37 @@ msgid "Configure Bluetooth Settings"
 msgstr "הגדרת תצורת בלוטות׳"
 
 #: src/MainView.vala:41
-#, fuzzy
 msgid "No Devices Found"
-msgstr "אין התקנים מצומדים"
+msgstr "לא נמצאו התקנים"
 
 #: src/MainView.vala:42
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "נא לוודא שההתקנים שלך גלויים ומוכנים לצימוד."
 
 #: src/MainView.vala:64
 msgid "Forget selected device"
 msgstr "התעלמות מההתקן שנבחר"
 
 #: src/MainView.vala:177 src/MainView.vala:186
-#, fuzzy, c-format
+#, c-format
 msgid "Now discoverable as \"%s\""
 msgstr "כעת זמין לגילוי בשם „%s“"
 
 #: src/MainView.vala:219
-#, fuzzy
 msgid "Paired Devices"
-msgstr "אין התקנים מצומדים"
+msgstr "התקנים מצומדים"
 
 #: src/MainView.vala:225
-#, fuzzy
 msgid "Nearby Devices"
-msgstr "אין התקנים מצומדים"
+msgstr "התקנים בקרבת מקום"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "זמין"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "מתבצע צימוד…"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
@@ -110,7 +107,7 @@ msgstr "הגדרות מדפסת"
 
 #: src/DeviceRow.vala:223
 msgid "Pair"
-msgstr ""
+msgstr "צימוד"
 
 #: src/DeviceRow.vala:234
 msgid "Disconnect"
