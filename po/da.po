@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-06 11:53-0800\n"
-"PO-Revision-Date: 2017-03-17 14:44+0000\n"
-"Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
-"Language-Team: Danish <da@li.org>\n"
+"PO-Revision-Date: 2018-03-24 21:47+0000\n"
+"Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
+"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-bluetooth/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:52+0000\n"
-"X-Generator: Launchpad (build 18332)\n"
 
 #: src/Plug.vala:30 src/MainView.vala:33
 msgid "Bluetooth"
@@ -28,36 +30,36 @@ msgstr "Konfigurer Bluetooth-indstillinger"
 
 #: src/MainView.vala:41
 msgid "No Devices Found"
-msgstr ""
+msgstr "Ingen Enheder Fundet"
 
 #: src/MainView.vala:42
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Sørg venligst for, at dine enheder er synlige og klar til parring."
 
 #: src/MainView.vala:64
 msgid "Forget selected device"
 msgstr "Glem valgte enhed"
 
 #: src/MainView.vala:177 src/MainView.vala:186
-#, fuzzy, c-format
+#, c-format
 msgid "Now discoverable as \"%s\""
 msgstr "Kan nu opdages som \"%s\""
 
 #: src/MainView.vala:219
 msgid "Paired Devices"
-msgstr ""
+msgstr "Parrede Enheder"
 
 #: src/MainView.vala:225
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Nærværende Enheder"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "Ledig"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "Parrer…"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
@@ -105,7 +107,7 @@ msgstr "Printerindstillinger"
 
 #: src/DeviceRow.vala:223
 msgid "Pair"
-msgstr ""
+msgstr "Par"
 
 #: src/DeviceRow.vala:234
 msgid "Disconnect"
