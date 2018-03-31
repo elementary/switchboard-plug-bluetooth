@@ -1,0 +1,114 @@
+# Tigrinya translations for bluetooth-plug package.
+# Copyright (C) 2018 THE bluetooth-plug'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the bluetooth-plug package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bluetooth-plug\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-06 11:53-0800\n"
+"PO-Revision-Date: 2018-02-20 16:24-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ti\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/Plug.vala:30 src/MainView.vala:33
+msgid "Bluetooth"
+msgstr ""
+
+#: src/Plug.vala:31
+msgid "Configure Bluetooth Settings"
+msgstr ""
+
+#: src/MainView.vala:41
+msgid "No Devices Found"
+msgstr ""
+
+#: src/MainView.vala:42
+msgid "Please ensure that your devices are visible and ready for pairing."
+msgstr ""
+
+#: src/MainView.vala:64
+msgid "Forget selected device"
+msgstr ""
+
+#: src/MainView.vala:177 src/MainView.vala:186
+#, c-format
+msgid "Now discoverable as \"%s\""
+msgstr ""
+
+#: src/MainView.vala:219
+msgid "Paired Devices"
+msgstr ""
+
+#: src/MainView.vala:225
+msgid "Nearby Devices"
+msgstr ""
+
+#: src/DeviceRow.vala:38
+msgid "Available"
+msgstr ""
+
+#: src/DeviceRow.vala:40
+msgid "Pairing…"
+msgstr ""
+
+#: src/DeviceRow.vala:42
+msgid "Connected"
+msgstr ""
+
+#: src/DeviceRow.vala:44
+msgid "Connecting…"
+msgstr ""
+
+#: src/DeviceRow.vala:46
+msgid "Disconnecting…"
+msgstr ""
+
+#: src/DeviceRow.vala:48
+msgid "Unable to Connnect"
+msgstr ""
+
+#: src/DeviceRow.vala:50
+msgid "Not Connected"
+msgstr ""
+
+#: src/DeviceRow.vala:94
+msgid "Sharing Settings"
+msgstr ""
+
+#: src/DeviceRow.vala:119
+msgid "Sound Settings"
+msgstr ""
+
+#: src/DeviceRow.vala:124
+msgid "Keyboard Settings"
+msgstr ""
+
+#: src/DeviceRow.vala:128
+msgid "Mouse & Touchpad Settings"
+msgstr ""
+
+#: src/DeviceRow.vala:132
+msgid "Drawing Tablet Settings"
+msgstr ""
+
+#: src/DeviceRow.vala:136
+msgid "Printer Settings"
+msgstr ""
+
+#: src/DeviceRow.vala:223
+msgid "Pair"
+msgstr ""
+
+#: src/DeviceRow.vala:234
+msgid "Disconnect"
+msgstr ""
+
+#: src/DeviceRow.vala:250
+msgid "Connect"
+msgstr ""

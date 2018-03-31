@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-18 12:24-0800\n"
-"PO-Revision-Date: 2017-04-19 10:30+0000\n"
+"POT-Creation-Date: 2018-03-06 11:53-0800\n"
+"PO-Revision-Date: 2018-03-08 00:09+0000\n"
 "Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/switchboard"
+"Language-Team: Polish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-bluetooth/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -18,77 +18,108 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-22 05:48+0000\n"
 
-#: ../src/Plug.vala:30 ../src/MainView.vala:73
+#: src/Plug.vala:30 src/MainView.vala:33
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: ../src/Plug.vala:31
+#: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr "Konfiguruj ustawienia bluetooth"
+msgstr "Skonfiguruj ustawienia Bluetooth"
 
-#: ../src/DeviceRow.vala:35
-msgid "Connected"
-msgstr "Połączony"
+#: src/MainView.vala:41
+msgid "No Devices Found"
+msgstr "Nie odnaleziono urządzeń"
 
-#: ../src/DeviceRow.vala:37
-msgid "Connecting…"
-msgstr "Łączenie…"
+#: src/MainView.vala:42
+msgid "Please ensure that your devices are visible and ready for pairing."
+msgstr "Prosimy upewnić się, że urządzenia są widzialne i gotowe do sparowania."
 
-#: ../src/DeviceRow.vala:39
-msgid "Disconnecting…"
-msgstr "Rozłączanie..."
-
-#: ../src/DeviceRow.vala:41
-msgid "Unable to Connnect"
-msgstr "Nie można się połączyć"
-
-#: ../src/DeviceRow.vala:43
-msgid "Not Connected"
-msgstr "Niepołączony"
-
-#: ../src/DeviceRow.vala:85
-msgid "Sharing Settings"
-msgstr "Ustawienia współdzielenia"
-
-#: ../src/DeviceRow.vala:107
-msgid "Sound Settings"
-msgstr "Ustawienia dźwięku"
-
-#: ../src/DeviceRow.vala:112
-msgid "Keyboard Settings"
-msgstr "Ustawienia klawiatury"
-
-#: ../src/DeviceRow.vala:116
-msgid "Mouse & Touchpad Settings"
-msgstr "Ustawienia myszy i panelu dotykowego"
-
-#: ../src/DeviceRow.vala:120
-msgid "Drawing Tablet Settings"
-msgstr "Ustawienia tabletu graficznego"
-
-#: ../src/DeviceRow.vala:124
-msgid "Printer Settings"
-msgstr "Ustawienia drukarki"
-
-#: ../src/DeviceRow.vala:187
-msgid "Disconnect"
-msgstr "Rozłącz"
-
-#: ../src/DeviceRow.vala:200
-msgid "Connect"
-msgstr "Połącz"
-
-#: ../src/MainView.vala:94
-msgid "Discover new device"
-msgstr "Wykryj nowe urządzenie"
-
-#: ../src/MainView.vala:99
+#: src/MainView.vala:64
 msgid "Forget selected device"
 msgstr "Zapomnij zaznaczone urządzenie"
 
-#: ../src/HeaderAdapter.vala:33 ../src/HeaderAdapter.vala:57
-msgid "Now Discoverable as \"%s\""
+#: src/MainView.vala:177 src/MainView.vala:186
+#, c-format
+msgid "Now discoverable as \"%s\""
 msgstr "Od teraz wykrywalne jako \"%s\""
+
+#: src/MainView.vala:219
+msgid "Paired Devices"
+msgstr "Sparowane urządzenia"
+
+#: src/MainView.vala:225
+msgid "Nearby Devices"
+msgstr "Urządzenia w pobliżu"
+
+#: src/DeviceRow.vala:38
+msgid "Available"
+msgstr "Dostępne"
+
+#: src/DeviceRow.vala:40
+msgid "Pairing…"
+msgstr "Parowanie…"
+
+#: src/DeviceRow.vala:42
+msgid "Connected"
+msgstr "Połączono"
+
+#: src/DeviceRow.vala:44
+msgid "Connecting…"
+msgstr "Łączenie…"
+
+#: src/DeviceRow.vala:46
+msgid "Disconnecting…"
+msgstr "Rozłączanie…"
+
+#: src/DeviceRow.vala:48
+msgid "Unable to Connnect"
+msgstr "Nie można się połączyć"
+
+#: src/DeviceRow.vala:50
+msgid "Not Connected"
+msgstr "Niepołączony"
+
+#: src/DeviceRow.vala:94
+msgid "Sharing Settings"
+msgstr "Ustawienia współdzielenia"
+
+#: src/DeviceRow.vala:119
+msgid "Sound Settings"
+msgstr "Ustawienia dźwięku"
+
+#: src/DeviceRow.vala:124
+msgid "Keyboard Settings"
+msgstr "Ustawienia klawiatury"
+
+#: src/DeviceRow.vala:128
+msgid "Mouse & Touchpad Settings"
+msgstr "Ustawienia myszy i panelu dotykowego"
+
+#: src/DeviceRow.vala:132
+msgid "Drawing Tablet Settings"
+msgstr "Ustawienia tabletu graficznego"
+
+#: src/DeviceRow.vala:136
+msgid "Printer Settings"
+msgstr "Ustawienia drukarki"
+
+#: src/DeviceRow.vala:223
+msgid "Pair"
+msgstr "Sparuj"
+
+#: src/DeviceRow.vala:234
+msgid "Disconnect"
+msgstr "Rozłącz"
+
+#: src/DeviceRow.vala:250
+msgid "Connect"
+msgstr "Połącz"
+
+#~ msgid "Pair a device using the icon in the toolbar below."
+#~ msgstr "Sparuj urządzenia używając ikony na poniższym pasku narzędzi."
+
+#~ msgid "Discover new device"
+#~ msgstr "Wykryj nowe urządzenie"

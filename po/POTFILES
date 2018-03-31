@@ -1,0 +1,6 @@
+src/Plug.vala
+src/MainView.vala
+src/DeviceRow.vala
+src/Services/Manager.vala
+src/Services/Device.vala
+src/Services/Adapter.vala

@@ -1,14 +1,15 @@
 Source: switchboard-plug-bluetooth
 Section: x11
 Priority: optional
-Maintainer: Corentin Noël <corentin@elementary.io>
-Build-Depends: cmake,
-               debhelper (>= 9),
+Maintainer: elementary OS Team <builds@elementary.io>
+Build-Depends: debhelper (>= 10.5.1),
+               gettext,
                libgranite-dev,
                libswitchboard-2.0-dev,
+               meson,
                valac (>= 0.22)
-Standards-Version: 3.9.2
-Homepage: https://launchpad.net/switchboard-plug-bluetooth
+Standards-Version: 4.1.1
+Homepage: https://github.com/elementary/switchboard-plug-bluetooth
 
 Package: switchboard-plug-bluetooth
 Architecture: any
@@ -16,14 +17,3 @@ Depends: ${misc:Depends}, ${shlibs:Depends}
 Enhances: switchboard
 Description: Bluetooth plug for Switchboard
  This plug configures bluetooth devices.
-
-Package: switchboard-plug-bluetooth-dbg
-Architecture: any
-Section: debug
-Priority: extra
-Depends: switchboard-plug-bluetooth (= ${binary:Version}), ${misc:Depends}
-Enhances: switchboard-plug-bluetooth
-Description: Bluetooth plug for Switchboard (debugging symbols)
- This plug configures bluetooth devices.
- .
- This package contains debugging symbols for switchboard-plug-bluetooth.

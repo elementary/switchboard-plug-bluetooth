@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-18 12:24-0800\n"
+"POT-Creation-Date: 2018-03-06 11:53-0800\n"
 "PO-Revision-Date: 2016-12-19 21:12+0000\n"
 "Last-Translator: Rene Arts <Unknown>\n"
 "Language-Team: Dutch <nl@li.org>\n"
@@ -18,74 +18,102 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: ../src/Plug.vala:30 ../src/MainView.vala:73
+#: src/Plug.vala:30 src/MainView.vala:33
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: ../src/Plug.vala:31
+#: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
 msgstr "Configureer bluetooth instellingen"
 
-#: ../src/DeviceRow.vala:35
-msgid "Connected"
-msgstr "Verbonden"
+#: src/MainView.vala:41
+msgid "No Devices Found"
+msgstr ""
 
-#: ../src/DeviceRow.vala:37
-msgid "Connecting…"
-msgstr "Verbinding maken…"
+#: src/MainView.vala:42
+msgid "Please ensure that your devices are visible and ready for pairing."
+msgstr ""
 
-#: ../src/DeviceRow.vala:39
-msgid "Disconnecting…"
-msgstr "Verbinding verbreken…"
-
-#: ../src/DeviceRow.vala:41
-msgid "Unable to Connnect"
-msgstr "Kan geen verbinding maken"
-
-#: ../src/DeviceRow.vala:43
-msgid "Not Connected"
-msgstr "Niet verbonden"
-
-#: ../src/DeviceRow.vala:85
-msgid "Sharing Settings"
-msgstr "Instellingen delen"
-
-#: ../src/DeviceRow.vala:107
-msgid "Sound Settings"
-msgstr "Geluidsinstellingen"
-
-#: ../src/DeviceRow.vala:112
-msgid "Keyboard Settings"
-msgstr "Toetsenbordinstellingen"
-
-#: ../src/DeviceRow.vala:116
-msgid "Mouse & Touchpad Settings"
-msgstr "Muis- en touchpadinstellingen"
-
-#: ../src/DeviceRow.vala:120
-msgid "Drawing Tablet Settings"
-msgstr "Tekentabletinstellingen"
-
-#: ../src/DeviceRow.vala:124
-msgid "Printer Settings"
-msgstr "Printerinstellingen"
-
-#: ../src/DeviceRow.vala:187
-msgid "Disconnect"
-msgstr "Verbinding verbreken"
-
-#: ../src/DeviceRow.vala:200
-msgid "Connect"
-msgstr "Verbinden"
-
-#: ../src/MainView.vala:94
-msgid "Discover new device"
-msgstr "Zoeken naar nieuwe apparaten"
-
-#: ../src/MainView.vala:99
+#: src/MainView.vala:64
 msgid "Forget selected device"
 msgstr "Geselecteerd apparaat vergeten"
 
-#: ../src/HeaderAdapter.vala:33 ../src/HeaderAdapter.vala:57
-msgid "Now Discoverable as \"%s\""
+#: src/MainView.vala:177 src/MainView.vala:186
+#, fuzzy, c-format
+msgid "Now discoverable as \"%s\""
 msgstr "Nu te vinden als \"%s\""
+
+#: src/MainView.vala:219
+msgid "Paired Devices"
+msgstr ""
+
+#: src/MainView.vala:225
+msgid "Nearby Devices"
+msgstr ""
+
+#: src/DeviceRow.vala:38
+msgid "Available"
+msgstr ""
+
+#: src/DeviceRow.vala:40
+msgid "Pairing…"
+msgstr ""
+
+#: src/DeviceRow.vala:42
+msgid "Connected"
+msgstr "Verbonden"
+
+#: src/DeviceRow.vala:44
+msgid "Connecting…"
+msgstr "Verbinding maken…"
+
+#: src/DeviceRow.vala:46
+msgid "Disconnecting…"
+msgstr "Verbinding verbreken…"
+
+#: src/DeviceRow.vala:48
+msgid "Unable to Connnect"
+msgstr "Kan geen verbinding maken"
+
+#: src/DeviceRow.vala:50
+msgid "Not Connected"
+msgstr "Niet verbonden"
+
+#: src/DeviceRow.vala:94
+msgid "Sharing Settings"
+msgstr "Instellingen delen"
+
+#: src/DeviceRow.vala:119
+msgid "Sound Settings"
+msgstr "Geluidsinstellingen"
+
+#: src/DeviceRow.vala:124
+msgid "Keyboard Settings"
+msgstr "Toetsenbordinstellingen"
+
+#: src/DeviceRow.vala:128
+msgid "Mouse & Touchpad Settings"
+msgstr "Muis- en touchpadinstellingen"
+
+#: src/DeviceRow.vala:132
+msgid "Drawing Tablet Settings"
+msgstr "Tekentabletinstellingen"
+
+#: src/DeviceRow.vala:136
+msgid "Printer Settings"
+msgstr "Printerinstellingen"
+
+#: src/DeviceRow.vala:223
+msgid "Pair"
+msgstr ""
+
+#: src/DeviceRow.vala:234
+msgid "Disconnect"
+msgstr "Verbinding verbreken"
+
+#: src/DeviceRow.vala:250
+msgid "Connect"
+msgstr "Verbinden"
+
+#~ msgid "Discover new device"
+#~ msgstr "Zoeken naar nieuwe apparaten"

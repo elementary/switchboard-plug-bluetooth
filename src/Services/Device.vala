@@ -20,12 +20,12 @@
 
 [DBus (name = "org.bluez.Device1")]
 public interface Bluetooth.Services.Device : Object {
-    public abstract void cancel_pairing () throws IOError;
-    public abstract void connect () throws IOError;
-    public abstract void connect_profile (string UUID) throws IOError;
-    public abstract void disconnect () throws IOError;
-    public abstract void disconnect_profile (string UUID) throws IOError;
-    public abstract void pair () throws IOError;
+    public abstract void cancel_pairing () throws Error;
+    public abstract async void connect () throws Error;
+    public abstract void connect_profile (string UUID) throws Error;
+    public abstract async void disconnect () throws Error;
+    public abstract void disconnect_profile (string UUID) throws Error;
+    public abstract async void pair () throws Error;
 
     public abstract string[] UUIDs { owned get; }
     public abstract bool blocked { owned get; set; }

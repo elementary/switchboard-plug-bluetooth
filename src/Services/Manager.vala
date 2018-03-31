@@ -23,10 +23,11 @@ public interface Bluetooth.Services.DBusInterface : Object {
     public signal void interfaces_added (ObjectPath object_path, HashTable<string, HashTable<string, Variant>> param);
     public signal void interfaces_removed (ObjectPath object_path, string[] string_array);
 
-    public abstract HashTable<ObjectPath, HashTable<string, HashTable<string, Variant>>> get_managed_objects () throws IOError;
+    public abstract HashTable<ObjectPath, HashTable<string, HashTable<string, Variant>>> get_managed_objects () throws Error;
 }
 
 public class Bluetooth.Services.ObjectManager : Object {
+    private const string SCHEMA = "org.pantheon.desktop.wingpanel.indicators.bluetooth";
     public signal void global_state_changed (bool enabled, bool connected);
     public signal void adapter_added (Bluetooth.Services.Adapter adapter);
     public signal void adapter_removed (Bluetooth.Services.Adapter adapter);
@@ -34,21 +35,29 @@ public class Bluetooth.Services.ObjectManager : Object {
     public signal void device_removed (Bluetooth.Services.Device device);
 
     public bool has_object { get; private set; default = false; }
-    public bool retreive_finished { get; private set; default = false; }
+    public bool retrieve_finished { get; private set; default = false; }
 
-    private Settings settings;
+    private bool is_discoverable = false;
+    private bool is_discovering = false;
+
+    private Settings? settings = null;
     private Bluetooth.Services.DBusInterface object_interface;
     private Gee.HashMap<string, Bluetooth.Services.Adapter> adapters;
     private Gee.HashMap<string, Bluetooth.Services.Device> devices;
 
     public ObjectManager () {
-        
+
     }
 
     construct {
         adapters = new Gee.HashMap<string, Bluetooth.Services.Adapter> (null, null);
         devices = new Gee.HashMap<string, Bluetooth.Services.Device> (null, null);
-        settings = new Settings ("org.pantheon.desktop.wingpanel.indicators.bluetooth");
+
+        var settings_schema = SettingsSchemaSource.get_default ().lookup (SCHEMA, true);
+        if (settings_schema != null) {
+            settings = new Settings (SCHEMA);
+        }
+
         Bus.get_proxy.begin<Bluetooth.Services.DBusInterface> (BusType.SYSTEM, "org.bluez", "/", DBusProxyFlags.NONE, null, (obj, res) => {
             try {
                 object_interface = Bus.get_proxy.end (res);
@@ -59,7 +68,7 @@ public class Bluetooth.Services.ObjectManager : Object {
                 critical (e.message);
             }
 
-            retreive_finished = true;
+            retrieve_finished = true;
         });
     }
 
@@ -79,6 +88,25 @@ public class Bluetooth.Services.ObjectManager : Object {
                     if (powered != null) {
                         check_global_state ();
                     }
+
+                    var discovering = changed.lookup_value("Discovering", new VariantType("b"));
+                    if (discovering != null) {
+                        if (adapter.discovering != is_discovering) {
+                            if (is_discovering) {
+                                adapter.start_discovery.begin ();
+                            } else {
+                                adapter.stop_discovery.begin ();
+                            }
+                        }
+                        
+                    }
+
+                    var discoverable = changed.lookup_value("Discoverable", new VariantType("b"));
+                    if (discoverable != null) {
+                        if (adapter.discoverable != is_discoverable) {
+                            adapter.discoverable = is_discoverable;
+                        }
+                    }
                 });
             } catch (Error e) {
                 debug ("Connecting to bluetooth adapter failed: %s", e.message);
@@ -86,35 +114,16 @@ public class Bluetooth.Services.ObjectManager : Object {
         } else if ("org.bluez.Device1" in param) {
             try {
                 Bluetooth.Services.Device device = Bus.get_proxy_sync (BusType.SYSTEM, "org.bluez", path, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
-                if (device.paired) {
-                    lock (devices) {
-                        devices.set (path, device);
-                    }
-
-                    device_added (device);
+                lock (devices) {
+                    devices.set (path, device);
                 }
+
+                device_added (device);
 
                 (device as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
                     var connected = changed.lookup_value("Connected", new VariantType("b"));
                     if (connected != null) {
                         check_global_state ();
-                    }
-
-                    var paired = changed.lookup_value("Paired", new VariantType("b"));
-                    if (paired != null) {
-                        if (device.paired) {
-                            lock (devices) {
-                                devices.set (path, device);
-                            }
-
-                            device_added (device);
-                        } else {
-                            lock (devices) {
-                                devices.unset (path);
-                            }
-
-                            device_removed (device);
-                        }
                     }
                 });
             } catch (Error e) {
@@ -167,6 +176,41 @@ public class Bluetooth.Services.ObjectManager : Object {
         global_state_changed (get_global_state (), get_connected ());
     }
 
+    public async void start_discovery () {
+        lock (adapters) {
+            is_discovering = true;
+            foreach (var adapter in adapters.values) {
+                try {
+                    yield adapter.start_discovery ();
+                } catch (Error e) {
+                    critical (e.message);
+                }
+            }
+        }
+    }
+
+    public async void stop_discovery () {
+        lock (adapters) {
+            is_discovering = false;
+            foreach (var adapter in adapters.values) {
+                try {
+                    yield adapter.stop_discovery ();
+                } catch (Error e) {
+                    critical (e.message);
+                }
+            }
+        }
+    }
+
+    public void discoverable (bool is_discoverable) {
+        lock (adapters) {
+            this.is_discoverable = is_discoverable;
+            foreach (var adapter in adapters.values) {
+                adapter.discoverable = is_discoverable;
+            }
+        }
+    }
+
     public bool get_connected () {
         lock (devices) {
             foreach (var device in devices.values) {
@@ -191,37 +235,27 @@ public class Bluetooth.Services.ObjectManager : Object {
         return false;
     }
 
-    public void set_global_state (bool state) {
-        new Thread<void*> (null, () => {
-            lock (devices) {
-                foreach (var device in devices.values) {
-                    if (device.connected) {
-                        try {
-                            device.disconnect ();
-                        } catch (Error e) {
-                            critical (e.message);
-                        }
+    public async void set_global_state (bool state) {
+        lock (devices) {
+            foreach (var device in devices.values) {
+                if (device.connected) {
+                    try {
+                        yield device.disconnect ();
+                    } catch (Error e) {
+                        critical (e.message);
                     }
                 }
             }
+        }
 
-            lock (adapters) {
-                foreach (var adapter in adapters.values) {
-                    adapter.powered = state;
-                }
+        lock (adapters) {
+            foreach (var adapter in adapters.values) {
+                adapter.powered = state;
             }
+        }
 
+        if (settings != null) {
             settings.set_boolean ("bluetooth-enabled", state);
-
-            return null;
-        });
-    }
-
-    public void set_last_state () {
-        bool last_state = settings.get_boolean ("bluetooth-enabled");
-
-        if (get_global_state () != last_state) {
-            set_global_state (last_state);
         }
     }
 }
