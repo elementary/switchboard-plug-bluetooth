@@ -83,6 +83,7 @@ public class Bluetooth.Services.ObjectManager : Object {
                 has_object = true;
 
                 adapter_added (adapter);
+
                 (adapter as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
                     var powered = changed.lookup_value("Powered", new VariantType("b"));
                     if (powered != null) {
@@ -97,14 +98,6 @@ public class Bluetooth.Services.ObjectManager : Object {
                             } else {
                                 adapter.stop_discovery.begin ();
                             }
-                        }
-                        
-                    }
-
-                    var discoverable = changed.lookup_value("Discoverable", new VariantType("b"));
-                    if (discoverable != null) {
-                        if (adapter.discoverable != is_discoverable) {
-                            adapter.discoverable = is_discoverable;
                         }
                     }
                 });
