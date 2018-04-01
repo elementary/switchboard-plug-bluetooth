@@ -20,10 +20,9 @@
  */
 
 public class Bluetooth.MainView : Granite.SimpleSettingsPage {
-    private string UNDISCOVERABLE = _("Adapter is not discoverable");
-    private string POWERED_OFF = _("Adapter is powered off and not discoverable");
-    private string DISCOVERABLE = _("Adapter is now discoverable as \"%s\""); //TRANSLATORS: \"%s\" represents the name of the adapter
-    private string DISCOVERABLE_INFO = _("Adapter is undiscoverable when this plug is closed");
+    private string UNDISCOVERABLE = _("Not discoverable");
+    private string POWERED_OFF = _("Not discoverable while Bluetooth is powered off");
+    private string DISCOVERABLE = _("Now discoverable as \"%s\". Not discoverable when this page is closed"); //TRANSLATORS: \"%s\" represents the name of the adapter
 
     private Gtk.ListBox list_box;
     public Services.ObjectManager manager { get; construct set; }
@@ -203,8 +202,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
 
     private void update_description (string? name, bool discoverable, bool powered) {
         if (discoverable && powered) {
-            string line1 = DISCOVERABLE.printf (name ?? _("Unknown"));
-            description = line1 + "\n" + DISCOVERABLE_INFO;
+            description = DISCOVERABLE.printf (name ?? _("Unknown"));
         } else if (!powered) {
             description = POWERED_OFF;
         } else {
