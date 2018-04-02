@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-06 11:53-0800\n"
+"POT-Creation-Date: 2018-04-02 08:35-0700\n"
 "PO-Revision-Date: 2017-04-11 12:17+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:33
+#: src/Plug.vala:30 src/MainView.vala:37
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -28,28 +28,41 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Nastavení Bluetooth"
 
-#: src/MainView.vala:41
+#: src/MainView.vala:23
+#, fuzzy
+msgid "Not discoverable"
+msgstr "Nyní vyhledatelné jako %s"
+
+#: src/MainView.vala:24
+msgid "Not discoverable while Bluetooth is powered off"
+msgstr ""
+
+#: src/MainView.vala:25
+#, c-format
+msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
+msgstr ""
+
+#: src/MainView.vala:45
 msgid "No Devices Found"
 msgstr ""
 
-#: src/MainView.vala:42
+#: src/MainView.vala:46
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 
-#: src/MainView.vala:64
+#: src/MainView.vala:68
 msgid "Forget selected device"
 msgstr "Zapomenout zvolené zařízení"
 
-#: src/MainView.vala:177 src/MainView.vala:186
-#, fuzzy, c-format
-msgid "Now discoverable as \"%s\""
-msgstr "Nyní vyhledatelné jako %s"
+#: src/MainView.vala:205
+msgid "Unknown"
+msgstr ""
 
-#: src/MainView.vala:219
+#: src/MainView.vala:241
 msgid "Paired Devices"
 msgstr ""
 
-#: src/MainView.vala:225
+#: src/MainView.vala:247
 msgid "Nearby Devices"
 msgstr ""
 
@@ -81,41 +94,39 @@ msgstr "Nebylo možné se připojit"
 msgid "Not Connected"
 msgstr "Nepřipojeno"
 
-#: src/DeviceRow.vala:94
-msgid "Sharing Settings"
-msgstr "Nastavení sdílení"
-
-#: src/DeviceRow.vala:119
+#: src/DeviceRow.vala:118
 msgid "Sound Settings"
 msgstr "Nastavení zvuku"
 
-#: src/DeviceRow.vala:124
+#: src/DeviceRow.vala:123
 msgid "Keyboard Settings"
 msgstr "Nastavení klávesnice"
 
-#: src/DeviceRow.vala:128
+#: src/DeviceRow.vala:127
 msgid "Mouse & Touchpad Settings"
 msgstr "Nastavení myši a touchpadu"
 
-#: src/DeviceRow.vala:132
-msgid "Drawing Tablet Settings"
-msgstr "Nastavení grafického tabletu"
-
-#: src/DeviceRow.vala:136
+#: src/DeviceRow.vala:131
 msgid "Printer Settings"
 msgstr "Nastavení tiskárny"
 
-#: src/DeviceRow.vala:223
+#: src/DeviceRow.vala:218
 msgid "Pair"
 msgstr ""
 
-#: src/DeviceRow.vala:234
+#: src/DeviceRow.vala:229
 msgid "Disconnect"
 msgstr "Odpojit"
 
-#: src/DeviceRow.vala:250
+#: src/DeviceRow.vala:247
 msgid "Connect"
 msgstr "Připojit"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "Nastavení sdílení"
+
+#~ msgid "Drawing Tablet Settings"
+#~ msgstr "Nastavení grafického tabletu"
 
 #~ msgid "Discover new device"
 #~ msgstr "Naleznout nové zařízení"

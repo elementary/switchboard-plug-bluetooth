@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-06 11:53-0800\n"
+"POT-Creation-Date: 2018-04-02 08:35-0700\n"
 "PO-Revision-Date: 2016-12-19 20:29+0000\n"
 "Last-Translator: Caio Vitor Hungria <caio.hungria@hotmail.com>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: src/Plug.vala:30 src/MainView.vala:33
+#: src/Plug.vala:30 src/MainView.vala:37
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -26,28 +26,41 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Configurações de Bluetooth"
 
-#: src/MainView.vala:41
+#: src/MainView.vala:23
+#, fuzzy
+msgid "Not discoverable"
+msgstr "Visível como \"%s\""
+
+#: src/MainView.vala:24
+msgid "Not discoverable while Bluetooth is powered off"
+msgstr ""
+
+#: src/MainView.vala:25
+#, c-format
+msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
+msgstr ""
+
+#: src/MainView.vala:45
 msgid "No Devices Found"
 msgstr ""
 
-#: src/MainView.vala:42
+#: src/MainView.vala:46
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 
-#: src/MainView.vala:64
+#: src/MainView.vala:68
 msgid "Forget selected device"
 msgstr "Esquecer dispositivo selecionado"
 
-#: src/MainView.vala:177 src/MainView.vala:186
-#, fuzzy, c-format
-msgid "Now discoverable as \"%s\""
-msgstr "Visível como \"%s\""
+#: src/MainView.vala:205
+msgid "Unknown"
+msgstr ""
 
-#: src/MainView.vala:219
+#: src/MainView.vala:241
 msgid "Paired Devices"
 msgstr ""
 
-#: src/MainView.vala:225
+#: src/MainView.vala:247
 msgid "Nearby Devices"
 msgstr ""
 
@@ -79,41 +92,39 @@ msgstr "Não foi possível se conectar"
 msgid "Not Connected"
 msgstr "Desconectado"
 
-#: src/DeviceRow.vala:94
-msgid "Sharing Settings"
-msgstr "Configurações de compartilhamento"
-
-#: src/DeviceRow.vala:119
+#: src/DeviceRow.vala:118
 msgid "Sound Settings"
 msgstr "Configurações de som"
 
-#: src/DeviceRow.vala:124
+#: src/DeviceRow.vala:123
 msgid "Keyboard Settings"
 msgstr "Configurações de teclado"
 
-#: src/DeviceRow.vala:128
+#: src/DeviceRow.vala:127
 msgid "Mouse & Touchpad Settings"
 msgstr "Configurações de mouse & touchpad"
 
-#: src/DeviceRow.vala:132
-msgid "Drawing Tablet Settings"
-msgstr "Configurações de Mesa Digitalizadora"
-
-#: src/DeviceRow.vala:136
+#: src/DeviceRow.vala:131
 msgid "Printer Settings"
 msgstr "Configurações da impressora"
 
-#: src/DeviceRow.vala:223
+#: src/DeviceRow.vala:218
 msgid "Pair"
 msgstr ""
 
-#: src/DeviceRow.vala:234
+#: src/DeviceRow.vala:229
 msgid "Disconnect"
 msgstr "Desconectado"
 
-#: src/DeviceRow.vala:250
+#: src/DeviceRow.vala:247
 msgid "Connect"
 msgstr "Conectar"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "Configurações de compartilhamento"
+
+#~ msgid "Drawing Tablet Settings"
+#~ msgstr "Configurações de Mesa Digitalizadora"
 
 #~ msgid "Discover new device"
 #~ msgstr "Procurar novo dispositivo"
