@@ -25,6 +25,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     private string DISCOVERABLE = _("Now discoverable as \"%s\". Not discoverable when this page is closed"); //TRANSLATORS: \"%s\" represents the name of the adapter
 
     private Gtk.ListBox list_box;
+    private Gtk.Spinner spinner;
     public Services.ObjectManager manager { get; construct set; }
     private unowned Services.Adapter main_adapter;
 
@@ -170,6 +171,8 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
                 adapter.powered = status_switch.active;
                 adapter.discoverable = status_switch.active;
             }
+
+            update_spinner ();
         });
 
         show_all ();
@@ -248,9 +251,12 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             label.hexpand = true;
             label.xalign = 0;
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
-            var spinner = new Gtk.Spinner ();
-            spinner.start ();
+
+            spinner = new Gtk.Spinner ();
             spinner.halign = Gtk.Align.END;
+
+            update_spinner ();
+
             var grid = new Gtk.Grid ();
             grid.margin = 3;
             grid.margin_end = 6;
@@ -261,6 +267,14 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             row1.set_header (grid);
         } else {
             row1.set_header (null);
+        }
+    }
+
+    private void update_spinner () {
+        if (status_switch.active) {
+            spinner.start ();
+        } else {
+            spinner.stop ();
         }
     }
 }
