@@ -37,17 +37,27 @@ public class Bluetooth.Services.ObjectManager : Object {
     public bool has_object { get; private set; default = false; }
     public bool retrieve_finished { get; private set; default = false; }
 
-    private bool is_discoverable = false;
+    private bool _discoverable = false;
+    public bool discoverable {
+        get {
+            return _discoverable;
+        }
+        set {
+            lock (adapters) {
+                _discoverable = value;
+                foreach (var adapter in adapters.values) {
+                    adapter.discoverable = value;
+                }
+            }
+        }
+    }
+
     private bool is_discovering = false;
 
     private Settings? settings = null;
     private Bluetooth.Services.DBusInterface object_interface;
     private Gee.HashMap<string, Bluetooth.Services.Adapter> adapters;
     private Gee.HashMap<string, Bluetooth.Services.Device> devices;
-
-    public ObjectManager () {
-
-    }
 
     construct {
         adapters = new Gee.HashMap<string, Bluetooth.Services.Adapter> (null, null);
@@ -98,6 +108,13 @@ public class Bluetooth.Services.ObjectManager : Object {
                             } else {
                                 adapter.stop_discovery.begin ();
                             }
+                        }
+                    }
+
+                    var adapter_discoverable = changed.lookup_value ("Discoverable", new VariantType("b"));
+                    if (adapter_discoverable != null) {
+                        if (adapter.discoverable != discoverable) {
+                            adapter.discoverable = discoverable;
                         }
                     }
                 });
@@ -191,15 +208,6 @@ public class Bluetooth.Services.ObjectManager : Object {
                 } catch (Error e) {
                     critical (e.message);
                 }
-            }
-        }
-    }
-
-    public void discoverable (bool is_discoverable) {
-        lock (adapters) {
-            this.is_discoverable = is_discoverable;
-            foreach (var adapter in adapters.values) {
-                adapter.discoverable = is_discoverable;
             }
         }
     }

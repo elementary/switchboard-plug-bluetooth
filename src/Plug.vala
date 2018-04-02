@@ -45,12 +45,12 @@ public class Bluetooth.Plug : Switchboard.Plug {
     }
 
     public override void shown () {
-        manager.discoverable (true);
+        manager.discoverable = true;
         manager.start_discovery.begin ();
     }
 
     public override void hidden () {
-        manager.discoverable (false);
+        manager.discoverable = false;
         manager.stop_discovery.begin ();
     }
 
