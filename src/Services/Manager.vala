@@ -34,23 +34,9 @@ public class Bluetooth.Services.ObjectManager : Object {
     public signal void device_added (Bluetooth.Services.Device device);
     public signal void device_removed (Bluetooth.Services.Device device);
 
+    public bool discoverable { get; set; default = false; }
     public bool has_object { get; private set; default = false; }
     public bool retrieve_finished { get; private set; default = false; }
-
-    private bool _discoverable = false;
-    public bool discoverable {
-        get {
-            return _discoverable;
-        }
-        set {
-            lock (adapters) {
-                _discoverable = value;
-                foreach (var adapter in adapters.values) {
-                    adapter.discoverable = value;
-                }
-            }
-        }
-    }
 
     private bool is_discovering = false;
 
@@ -79,6 +65,14 @@ public class Bluetooth.Services.ObjectManager : Object {
             }
 
             retrieve_finished = true;
+        });
+
+        notify["discoverable"].connect (() => {
+            lock (adapters) {
+                foreach (var adapter in adapters.values) {
+                    adapter.discoverable = discoverable;
+                }
+            }
         });
     }
 
