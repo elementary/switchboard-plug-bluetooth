@@ -20,6 +20,10 @@
  */
 
 public class Bluetooth.MainView : Granite.SimpleSettingsPage {
+    private string UNDISCOVERABLE = _("Not discoverable");
+    private string POWERED_OFF = _("Not discoverable while Bluetooth is powered off");
+    private string DISCOVERABLE = _("Now discoverable as \"%s\". Not discoverable when this page is closed"); //TRANSLATORS: \"%s\" represents the name of the adapter
+
     private Gtk.ListBox list_box;
     public Services.ObjectManager manager { get; construct set; }
     private unowned Services.Adapter main_adapter;
@@ -103,11 +107,6 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             list_box.add (row);
         }
 
-        var adapters = manager.get_adapters ();
-        if (!adapters.is_empty) {
-            set_adapter (adapters.to_array ()[0]);
-        }
-
         manager.device_added.connect ((device) => {
             var adapter = manager.get_adapter_from_path (device.adapter);
             var row = new DeviceRow (device, adapter);
@@ -118,7 +117,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             }
         });
 
-        manager.device_removed.connect ((device) => {
+        manager.device_removed.connect_after ((device) => {
             foreach (var row in list_box.get_children ()) {
                 if (((DeviceRow) row).device == device) {
                     list_box.remove (row);
@@ -161,9 +160,15 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             });
         }
 
+        if (manager.has_object) {
+            set_adapter (manager.get_adapters ().to_array ()[0]);
+            status_switch.active = main_adapter.powered;
+        }
+
         status_switch.notify["active"].connect (() => {
             foreach (var adapter in manager.get_adapters ()) {
                 adapter.powered = status_switch.active;
+                adapter.discoverable = status_switch.active;
             }
         });
 
@@ -171,21 +176,38 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     }
 
     private void set_adapter (Services.Adapter adapter) {
-        main_adapter = adapter;
+        if (main_adapter != null) {
+            (main_adapter as DBusProxy).g_properties_changed.disconnect (on_adapter_properties_changed);
+        }
 
-        status_switch.active = adapter.powered;
-        description = _("Now discoverable as \"%s\"").printf (adapter.name);
-        (adapter as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
+        main_adapter = adapter;
+        (main_adapter as DBusProxy).g_properties_changed.connect (on_adapter_properties_changed);
+        update_description (main_adapter.name, main_adapter.discoverable, main_adapter.powered);
+    }
+
+    private void on_adapter_properties_changed (DBusProxy proxy, Variant changed, string[] invalid) {
+            var adapter = (Services.Adapter)proxy;
             var powered = changed.lookup_value ("Powered", new VariantType ("b"));
+            var name = changed.lookup_value ("Name", new VariantType ("s"));
+            var discoverable = changed.lookup_value ("Discoverable", new VariantType ("b"));
+
             if (powered != null) {
                 status_switch.active = adapter.powered;
             }
 
-            var name = changed.lookup_value ("Name", new VariantType ("s"));
-            if (name != null) {
-                description = _("Now discoverable as \"%s\"").printf (adapter.name);
+            if (powered != null || discoverable != null || name != null) {
+                update_description (adapter.name, adapter.discoverable, adapter.powered);
             }
-        });
+    }
+
+    private void update_description (string? name, bool discoverable, bool powered) {
+        if (discoverable && powered) {
+            description = DISCOVERABLE.printf (name ?? _("Unknown"));
+        } else if (!powered) {
+            description = POWERED_OFF;
+        } else {
+            description = UNDISCOVERABLE;
+        }
     }
 
     [CCode (instance_pos = -1)]

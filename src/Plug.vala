@@ -55,7 +55,7 @@ public class Bluetooth.Plug : Switchboard.Plug {
     }
 
     public override void search_callback (string location) {
-        
+
     }
 
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
