@@ -25,6 +25,8 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     private string DISCOVERABLE = _("Now discoverable as \"%s\". Not discoverable when this page is closed"); //TRANSLATORS: \"%s\" represents the name of the adapter
 
     private Gtk.ListBox list_box;
+    private Gtk.Spinner spinner;
+
     public Services.ObjectManager manager { get; construct set; }
     private unowned Services.Adapter main_adapter;
 
@@ -186,18 +188,23 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     }
 
     private void on_adapter_properties_changed (DBusProxy proxy, Variant changed, string[] invalid) {
-            var adapter = (Services.Adapter)proxy;
-            var powered = changed.lookup_value ("Powered", new VariantType ("b"));
-            var name = changed.lookup_value ("Name", new VariantType ("s"));
-            var discoverable = changed.lookup_value ("Discoverable", new VariantType ("b"));
+        var adapter = (Services.Adapter)proxy;
+        var powered = changed.lookup_value ("Powered", new VariantType ("b"));
+        var name = changed.lookup_value ("Name", new VariantType ("s"));
+        var discoverable = changed.lookup_value ("Discoverable", new VariantType ("b"));
+        var discovering = changed.lookup_value ("Discovering", new VariantType("b"));
 
-            if (powered != null) {
-                status_switch.active = adapter.powered;
-            }
+        if (powered != null) {
+            status_switch.active = adapter.powered;
+        }
 
-            if (powered != null || discoverable != null || name != null) {
-                update_description (adapter.name, adapter.discoverable, adapter.powered);
-            }
+        if (powered != null || discoverable != null || name != null) {
+            update_description (adapter.name, adapter.discoverable, adapter.powered);
+        }
+
+        if (discovering != null) {
+            spinner.active = adapter.discovering;
+        }
     }
 
     private void update_description (string? name, bool discoverable, bool powered) {
@@ -248,9 +255,10 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             label.hexpand = true;
             label.xalign = 0;
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
-            var spinner = new Gtk.Spinner ();
-            spinner.start ();
+
+            spinner = new Gtk.Spinner ();
             spinner.halign = Gtk.Align.END;
+
             var grid = new Gtk.Grid ();
             grid.margin = 3;
             grid.margin_end = 6;
