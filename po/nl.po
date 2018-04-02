@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-06 11:53-0800\n"
-"PO-Revision-Date: 2016-12-19 21:12+0000\n"
-"Last-Translator: Rene Arts <Unknown>\n"
-"Language-Team: Dutch <nl@li.org>\n"
+"PO-Revision-Date: 2018-04-02 00:05+0000\n"
+"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
+"Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-bluetooth/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: src/Plug.vala:30 src/MainView.vala:33
 msgid "Bluetooth"
@@ -39,9 +41,9 @@ msgid "Forget selected device"
 msgstr "Geselecteerd apparaat vergeten"
 
 #: src/MainView.vala:177 src/MainView.vala:186
-#, fuzzy, c-format
+#, c-format
 msgid "Now discoverable as \"%s\""
-msgstr "Nu te vinden als \"%s\""
+msgstr "Nu vindbaar als \"%s\""
 
 #: src/MainView.vala:219
 msgid "Paired Devices"
