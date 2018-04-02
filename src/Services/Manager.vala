@@ -105,7 +105,7 @@ public class Bluetooth.Services.ObjectManager : Object {
                         }
                     }
 
-                    var adapter_discoverable = changed.lookup_value ("Discoverable", new VariantType("b"));
+                    var adapter_discoverable = changed.lookup_value ("Discoverable", new VariantType ("b"));
                     if (adapter_discoverable != null) {
                         if (adapter.discoverable != discoverable) {
                             adapter.discoverable = discoverable;
