@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 08:35-0700\n"
-"PO-Revision-Date: 2018-03-09 00:06+0000\n"
+"PO-Revision-Date: 2018-04-03 14:32+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-bluetooth/ca/>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-bluetooth/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,18 +29,18 @@ msgid "Configure Bluetooth Settings"
 msgstr "Configureu els paràmetres del Bluetooth"
 
 #: src/MainView.vala:23
-#, fuzzy
 msgid "Not discoverable"
-msgstr "Ara és visible com a \"%s\"."
+msgstr "No és visible"
 
 #: src/MainView.vala:24
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "No és visible mentre el Bluetooth estigui apagat."
 
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
+"Ara és visible com a \"%s\". No ho serà quan aquesta pàgina estigui tancada."
 
 #: src/MainView.vala:45
 msgid "No Devices Found"
@@ -58,7 +58,7 @@ msgstr "Oblida el dispositiu seleccionat"
 
 #: src/MainView.vala:205
 msgid "Unknown"
-msgstr ""
+msgstr "Desconegut"
 
 #: src/MainView.vala:241
 msgid "Paired Devices"
