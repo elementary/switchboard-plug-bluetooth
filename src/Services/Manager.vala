@@ -89,27 +89,19 @@ public class Bluetooth.Services.ObjectManager : Object {
                 adapter_added (adapter);
 
                 (adapter as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
-                    var powered = changed.lookup_value("Powered", new VariantType("b"));
+                    var powered = changed.lookup_value ("Powered", GLib.VariantType.BOOLEAN);
                     if (powered != null) {
                         check_global_state ();
                     }
 
-                    var discovering = changed.lookup_value("Discovering", new VariantType("b"));
+                    var discovering = changed.lookup_value ("Discovering", GLib.VariantType.BOOLEAN);
                     if (discovering != null) {
-                        if (adapter.discovering != is_discovering) {
-                            if (is_discovering) {
-                                adapter.start_discovery.begin ();
-                            } else {
-                                adapter.stop_discovery.begin ();
-                            }
-                        }
+                        check_discovering ();
                     }
 
-                    var adapter_discoverable = changed.lookup_value ("Discoverable", new VariantType ("b"));
+                    var adapter_discoverable = changed.lookup_value ("Discoverable", GLib.VariantType.BOOLEAN);
                     if (adapter_discoverable != null) {
-                        if (adapter.discoverable != discoverable) {
-                            adapter.discoverable = discoverable;
-                        }
+                        check_discoverable ();
                     }
                 });
             } catch (Error e) {
@@ -125,13 +117,33 @@ public class Bluetooth.Services.ObjectManager : Object {
                 device_added (device);
 
                 (device as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
-                    var connected = changed.lookup_value("Connected", new VariantType("b"));
+                    var connected = changed.lookup_value ("Connected", GLib.VariantType.BOOLEAN);
                     if (connected != null) {
                         check_global_state ();
                     }
                 });
             } catch (Error e) {
                 debug ("Connecting to bluetooth device failed: %s", e.message);
+            }
+        }
+    }
+
+    public void check_discovering () {
+        foreach (var adapter in adapters.values) {
+            if (adapter.discovering != is_discovering) {
+                if (is_discovering) {
+                    adapter.start_discovery.begin ();
+                } else {
+                    adapter.stop_discovery.begin ();
+                }
+            }
+        }
+    }
+
+    public void check_discoverable () {
+        foreach (var adapter in adapters.values) {
+            if (adapter.discoverable != discoverable) {
+                adapter.discoverable = discoverable;
             }
         }
     }
