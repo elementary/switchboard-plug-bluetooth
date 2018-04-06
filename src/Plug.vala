@@ -20,7 +20,7 @@
 
 public class Bluetooth.Plug : Switchboard.Plug {
     private MainView main_view;
-    private Services.ObjectManager manager;
+    private Services.ObjectManager?  manager = null;
 
     public Plug () {
         var settings = new Gee.TreeMap<string, string?> (null, null);
@@ -31,12 +31,15 @@ public class Bluetooth.Plug : Switchboard.Plug {
             description: _("Configure Bluetooth Settings"),
             icon: "bluetooth",
             supported_settings: settings);
-        manager = new Bluetooth.Services.ObjectManager ();
-        manager.bind_property ("has-object", this, "can-show", GLib.BindingFlags.SYNC_CREATE);
     }
 
     public override Gtk.Widget get_widget () {
         if (main_view == null) {
+            if (manager == null) {
+                manager = new Bluetooth.Services.ObjectManager ();
+                manager.bind_property ("has-object", this, "can-show", GLib.BindingFlags.SYNC_CREATE);
+            }
+
             main_view = new MainView (manager);
             main_view.quit_plug.connect (() => hidden ());
         }
