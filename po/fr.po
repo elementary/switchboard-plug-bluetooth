@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 08:35-0700\n"
-"PO-Revision-Date: 2018-04-04 00:07+0000\n"
+"PO-Revision-Date: 2018-04-07 00:09+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-bluetooth/fr/>\n"
@@ -34,7 +34,7 @@ msgstr "Non visible"
 
 #: src/MainView.vala:24
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr "Invisible tant que le Bluetooth est éteint"
+msgstr "Non visible tant que le Bluetooth est éteint"
 
 #: src/MainView.vala:25
 #, c-format
@@ -58,7 +58,7 @@ msgstr "Oublier cet appareil"
 
 #: src/MainView.vala:205
 msgid "Unknown"
-msgstr ""
+msgstr "Inconnu"
 
 #: src/MainView.vala:241
 msgid "Paired Devices"
