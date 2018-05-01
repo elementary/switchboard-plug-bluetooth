@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 08:35-0700\n"
-"PO-Revision-Date: 2018-04-03 13:00+0000\n"
+"PO-Revision-Date: 2018-05-04 00:06+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-bluetooth/he/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/Plug.vala:30 src/MainView.vala:37
 msgid "Bluetooth"
-msgstr "בלוטות׳"
+msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
