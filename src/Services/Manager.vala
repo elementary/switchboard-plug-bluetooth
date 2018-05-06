@@ -28,7 +28,6 @@ public interface Bluetooth.Services.DBusInterface : Object {
 
 public class Bluetooth.Services.ObjectManager : Object {
     private const string SCHEMA = "org.pantheon.desktop.wingpanel.indicators.bluetooth";
-    public signal void global_state_changed (bool enabled, bool connected);
     public signal void adapter_added (Bluetooth.Services.Adapter adapter);
     public signal void adapter_removed (Bluetooth.Services.Adapter adapter);
     public signal void device_added (Bluetooth.Services.Device device);
@@ -38,7 +37,9 @@ public class Bluetooth.Services.ObjectManager : Object {
     public bool has_object { get; private set; default = false; }
     public bool retrieve_finished { get; private set; default = false; }
 
-    private bool is_discovering = false;
+    public bool is_discovering {get; private set; default = false; }
+    public bool is_powered {get; private set; default = false; }
+    public bool is_connected {get; private set; default = false; }
 
     private Settings? settings = null;
     private Bluetooth.Services.DBusInterface object_interface;
@@ -104,6 +105,8 @@ public class Bluetooth.Services.ObjectManager : Object {
                         check_discoverable ();
                     }
                 });
+
+                check_global_state ();
             } catch (Error e) {
                 debug ("Connecting to bluetooth adapter failed: %s", e.message);
             }
@@ -122,6 +125,8 @@ public class Bluetooth.Services.ObjectManager : Object {
                         check_global_state ();
                     }
                 });
+
+                check_global_state ();
             } catch (Error e) {
                 debug ("Connecting to bluetooth device failed: %s", e.message);
             }
@@ -170,6 +175,16 @@ public class Bluetooth.Services.ObjectManager : Object {
         }
     }
 
+    public string? get_name () {
+        lock (adapters) {
+            if (adapters.is_empty) {
+                return null;
+            } else {
+                return adapters.values.to_array ()[0].name;
+            }
+        }
+    }
+
     public Gee.Collection<Bluetooth.Services.Adapter> get_adapters () {
         lock (adapters) {
             return adapters.values;
@@ -188,8 +203,25 @@ public class Bluetooth.Services.ObjectManager : Object {
         }
     }
 
-    private void check_global_state () {
-        global_state_changed (get_global_state (), get_connected ());
+    public void check_global_state () {
+        /* As this is called within a signal handler and emits a signal
+         * it should be in a Idle loop  else races occur */
+        Idle.add (() => {
+            var powered = get_global_state ();
+            var connected = get_connected ();
+
+            /* Only signal if actually changed */
+            if (powered != is_powered || connected != is_connected) {
+                if (!powered) {
+                    discoverable = false;
+                }
+
+                is_connected = connected;
+                is_powered = powered;
+            }
+
+            return false;
+        });
     }
 
     public async void start_discovery () {
@@ -210,7 +242,9 @@ public class Bluetooth.Services.ObjectManager : Object {
             is_discovering = false;
             foreach (var adapter in adapters.values) {
                 try {
-                    yield adapter.stop_discovery ();
+                    if (adapter.powered && adapter.discovering) {
+                        yield adapter.stop_discovery ();
+                    }
                 } catch (Error e) {
                     critical (e.message);
                 }
@@ -243,26 +277,43 @@ public class Bluetooth.Services.ObjectManager : Object {
     }
 
     public async void set_global_state (bool state) {
-        lock (devices) {
-            foreach (var device in devices.values) {
-                if (device.connected) {
-                    try {
-                        yield device.disconnect ();
-                    } catch (Error e) {
-                        critical (e.message);
-                    }
-                }
-            }
+        if (state == is_powered) {
+            return;
+        }
+
+        /* Set discoverable first so description is correct */
+        discoverable = state;
+        is_powered = state;
+
+        if (!state) {
+            yield stop_discovery ();
         }
 
         lock (adapters) {
             foreach (var adapter in adapters.values) {
                 adapter.powered = state;
+                adapter.discoverable = state;
             }
         }
 
         if (settings != null) {
             settings.set_boolean ("bluetooth-enabled", state);
+        }
+
+        if (!state) {
+            lock (devices) {
+                foreach (var device in devices.values) {
+                    if (device.connected) {
+                        try {
+                            yield device.disconnect ();
+                        } catch (Error e) {
+                            critical (e.message);
+                        }
+                    }
+                }
+            }
+        } else {
+            start_discovery.begin ();
         }
     }
 }
