@@ -232,6 +232,14 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             return 1;
         }
 
+        if (device1.name != null && device2.name == null) {
+            return -1;
+        }
+
+        if (device1.name == null && device2.name != null) {
+            return 1;
+        }
+
         var name1 = device1.name ?? device1.address;
         var name2 = device2.name ?? device2.address;
         return name1.collate (name2);
