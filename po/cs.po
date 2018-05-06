@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 08:35-0700\n"
-"PO-Revision-Date: 2018-05-07 00:03+0000\n"
+"PO-Revision-Date: 2018-05-16 13:48+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-bluetooth/cs/>\n"
@@ -48,6 +48,7 @@ msgstr "Žádná nalezená zařízení"
 #: src/MainView.vala:46
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
+"Prosím zajistěte, že vaše zařízení jsou viditelná a připravená k párování."
 
 #: src/MainView.vala:68
 msgid "Forget selected device"
