@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 08:35-0700\n"
-"PO-Revision-Date: 2018-04-05 14:20+0000\n"
-"Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
+"PO-Revision-Date: 2018-05-10 00:09+0000\n"
+"Last-Translator: martin fromont <martin.fromont1@gmail.com>\n"
 "Language-Team: English (Canada) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
 "bluetooth/en_CA/>\n"
@@ -56,7 +56,7 @@ msgstr "Forget selected device"
 
 #: src/MainView.vala:205
 msgid "Unknown"
-msgstr "Unknown"
+msgstr "Inconnu"
 
 #: src/MainView.vala:241
 msgid "Paired Devices"
@@ -80,7 +80,7 @@ msgstr "Connected"
 
 #: src/DeviceRow.vala:44
 msgid "Connecting…"
-msgstr "Connecting…"
+msgstr "Connexion…"
 
 #: src/DeviceRow.vala:46
 msgid "Disconnecting…"
