@@ -8,44 +8,49 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 08:35-0700\n"
-"PO-Revision-Date: 2016-12-15 05:14+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French (Canada) <fr_CA@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-05-10 00:09+0000\n"
+"Last-Translator: martin fromont <martin.fromont1@gmail.com>\n"
+"Language-Team: French (Canada) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"bluetooth/fr_CA/>\n"
+"Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: src/Plug.vala:30 src/MainView.vala:37
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "Configurer les paramètres Bluetooth"
 
 #: src/MainView.vala:23
 msgid "Not discoverable"
-msgstr ""
+msgstr "Non visible"
 
 #: src/MainView.vala:24
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "Non visible tant que le Bluetooth est éteint"
 
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
+"Maintenant visible en tant que «%s». Invisible lorsque cette page est fermée"
 
 #: src/MainView.vala:45
 msgid "No Devices Found"
-msgstr ""
+msgstr "Aucun appareil trouvé"
 
 #: src/MainView.vala:46
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
+"Veuillez vérifier que vos appareils sont visibles et prêts à être associés."
 
 #: src/MainView.vala:68
 msgid "Forget selected device"
@@ -73,7 +78,7 @@ msgstr ""
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
-msgstr ""
+msgstr "Connecté"
 
 #: src/DeviceRow.vala:44
 msgid "Connecting…"
