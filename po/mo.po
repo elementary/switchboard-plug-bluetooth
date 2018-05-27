@@ -8,111 +8,118 @@ msgstr ""
 "Project-Id-Version: bluetooth-plug\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 08:35-0700\n"
-"PO-Revision-Date: 2018-02-20 16:24-0600\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2018-05-27 16:06+0000\n"
+"Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
+"Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-bluetooth/mo/>\n"
 "Language: mo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 
 #: src/Plug.vala:30 src/MainView.vala:37
 msgid "Bluetooth"
-msgstr ""
+msgstr "Blue tooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "Configurați setările Bluetooth"
 
 #: src/MainView.vala:23
 msgid "Not discoverable"
-msgstr ""
+msgstr "Nu poate fi descoperit"
 
 #: src/MainView.vala:24
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "Nu poate fi descoperit în timp ce Bluetooth este oprit"
 
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
+"Acum descoperit ca \"%s 1\". Nu poate fi detectat când această pagină este "
+"închisă"
 
 #: src/MainView.vala:45
 msgid "No Devices Found"
-msgstr ""
+msgstr "Nu au fost găsite dispozitive"
 
 #: src/MainView.vala:46
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
+"Asigurați-vă că dispozitivele dvs. sunt vizibile și sunt pregătite pentru "
+"împerechere."
 
 #: src/MainView.vala:68
 msgid "Forget selected device"
-msgstr ""
+msgstr "Uitați dispozitivul selectat"
 
 #: src/MainView.vala:205
 msgid "Unknown"
-msgstr ""
+msgstr "Necunoscut"
 
 #: src/MainView.vala:241
 msgid "Paired Devices"
-msgstr ""
+msgstr "Dispozitive asociate"
 
 #: src/MainView.vala:247
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Aparate din apropiere"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "Disponibil"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "Împerecherea …"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
-msgstr ""
+msgstr "Conectat"
 
 #: src/DeviceRow.vala:44
 msgid "Connecting…"
-msgstr ""
+msgstr "Conectare…"
 
 #: src/DeviceRow.vala:46
 msgid "Disconnecting…"
-msgstr ""
+msgstr "Se deconectează …"
 
 #: src/DeviceRow.vala:48
 msgid "Unable to Connnect"
-msgstr ""
+msgstr "Imposibil de conectat"
 
 #: src/DeviceRow.vala:50
 msgid "Not Connected"
-msgstr ""
+msgstr "Nu este conectat"
 
 #: src/DeviceRow.vala:118
 msgid "Sound Settings"
-msgstr ""
+msgstr "Setări de sunet"
 
 #: src/DeviceRow.vala:123
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "Setările tastaturii"
 
 #: src/DeviceRow.vala:127
 msgid "Mouse & Touchpad Settings"
-msgstr ""
+msgstr "Setări ptr mouse și touchpad"
 
 #: src/DeviceRow.vala:131
 msgid "Printer Settings"
-msgstr ""
+msgstr "Setările imprimantei"
 
 #: src/DeviceRow.vala:218
 msgid "Pair"
-msgstr ""
+msgstr "Pereche"
 
 #: src/DeviceRow.vala:229
 msgid "Disconnect"
-msgstr ""
+msgstr "Deconectă"
 
 #: src/DeviceRow.vala:247
 msgid "Connect"
-msgstr ""
+msgstr "Conectează"
