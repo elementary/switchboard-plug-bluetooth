@@ -9,8 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 08:35-0700\n"
 "PO-Revision-Date: 2018-05-29 00:19+0000\n"
-"Last-Translator: Israel Felipe de Lima Araújo S <israelita.felipe@gmail.com>"
-"\n"
+"Last-Translator: Geovanni Pacheco <geovanni.m.pacheco@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
 "bluetooth/pt_BR/>\n"
@@ -65,11 +64,11 @@ msgstr "Desconhecido"
 
 #: src/MainView.vala:241
 msgid "Paired Devices"
-msgstr ""
+msgstr "Dispositivos pareados"
 
 #: src/MainView.vala:247
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Dispositivos próximos"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
