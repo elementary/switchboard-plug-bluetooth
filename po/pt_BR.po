@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 08:35-0700\n"
 "PO-Revision-Date: 2018-05-29 00:20+0000\n"
-"Last-Translator: Fernando da Silva Sousa <wild.nando@gmail.com>\n"
+"Last-Translator: Geovanni Pacheco <geovanni.m.pacheco@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
 "bluetooth/pt_BR/>\n"
@@ -116,7 +116,7 @@ msgstr "Configurações da impressora"
 
 #: src/DeviceRow.vala:218
 msgid "Pair"
-msgstr ""
+msgstr "Pareado"
 
 #: src/DeviceRow.vala:229
 msgid "Disconnect"
