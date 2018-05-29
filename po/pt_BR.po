@@ -9,7 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 08:35-0700\n"
 "PO-Revision-Date: 2018-05-29 00:19+0000\n"
-"Last-Translator: Fernando da Silva Sousa <wild.nando@gmail.com>\n"
+"Last-Translator: Israel Felipe de Lima Araújo S <israelita.felipe@gmail.com>"
+"\n"
 "Language-Team: Portuguese (Brazil) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
 "bluetooth/pt_BR/>\n"
@@ -60,7 +61,7 @@ msgstr "Esquecer dispositivo selecionado"
 
 #: src/MainView.vala:205
 msgid "Unknown"
-msgstr ""
+msgstr "Desconhecido"
 
 #: src/MainView.vala:241
 msgid "Paired Devices"
