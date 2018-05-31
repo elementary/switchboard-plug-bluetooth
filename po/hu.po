@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 08:35-0700\n"
-"PO-Revision-Date: 2018-05-31 00:03+0000\n"
+"PO-Revision-Date: 2018-06-01 00:08+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-bluetooth/hu/>\n"
@@ -26,15 +26,15 @@ msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "Állítsa be a Bluetooth eszközöket"
 
 #: src/MainView.vala:23
 msgid "Not discoverable"
-msgstr ""
+msgstr "Nem észlelhető"
 
 #: src/MainView.vala:24
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "Nem észlelhető, amíg a Bluetooth ki van kapcsolva"
 
 #: src/MainView.vala:25
 #, c-format
@@ -43,15 +43,17 @@ msgstr ""
 
 #: src/MainView.vala:45
 msgid "No Devices Found"
-msgstr ""
+msgstr "Nem találhatók eszközök"
 
 #: src/MainView.vala:46
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
+"Győződjön meg róla, hogy a készülékek láthatóak és készen állnak a "
+"párosításra."
 
 #: src/MainView.vala:68
 msgid "Forget selected device"
-msgstr ""
+msgstr "Kijelölt eszköz elfelejtése"
 
 #: src/MainView.vala:205
 msgid "Unknown"
@@ -59,19 +61,19 @@ msgstr "Ismeretlen"
 
 #: src/MainView.vala:241
 msgid "Paired Devices"
-msgstr ""
+msgstr "Párosított eszközök"
 
 #: src/MainView.vala:247
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Közeli eszközök"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "Elérhető"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "Párosítás…"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
@@ -83,40 +85,40 @@ msgstr "Kapcsolódás…"
 
 #: src/DeviceRow.vala:46
 msgid "Disconnecting…"
-msgstr ""
+msgstr "Kapcsolat bontása…"
 
 #: src/DeviceRow.vala:48
 msgid "Unable to Connnect"
-msgstr ""
+msgstr "Nem lehet csatlakozni"
 
 #: src/DeviceRow.vala:50
 msgid "Not Connected"
-msgstr ""
+msgstr "Nincs kapcsolódva"
 
 #: src/DeviceRow.vala:118
 msgid "Sound Settings"
-msgstr ""
+msgstr "Hangbeállítások"
 
 #: src/DeviceRow.vala:123
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "Billentyűzet beállítások"
 
 #: src/DeviceRow.vala:127
 msgid "Mouse & Touchpad Settings"
-msgstr ""
+msgstr "Egér és Touchpad beállítások"
 
 #: src/DeviceRow.vala:131
 msgid "Printer Settings"
-msgstr ""
+msgstr "Nyomtató beállítások"
 
 #: src/DeviceRow.vala:218
 msgid "Pair"
-msgstr ""
+msgstr "Pár"
 
 #: src/DeviceRow.vala:229
 msgid "Disconnect"
-msgstr ""
+msgstr "Szétkapcsolás"
 
 #: src/DeviceRow.vala:247
 msgid "Connect"
-msgstr ""
+msgstr "Kapcsolódás"
