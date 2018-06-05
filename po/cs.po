@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 08:35-0700\n"
-"PO-Revision-Date: 2017-04-11 12:17+0000\n"
+"PO-Revision-Date: 2018-05-16 13:48+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-bluetooth/cs/>\n"
+"Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-bluetooth/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:37
@@ -26,29 +26,29 @@ msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr "Nastavení Bluetooth"
+msgstr "Upravit nastavení Bluetooth"
 
 #: src/MainView.vala:23
-#, fuzzy
 msgid "Not discoverable"
-msgstr "Nyní vyhledatelné jako %s"
+msgstr "Nedohledatelné"
 
 #: src/MainView.vala:24
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "Nedohledatelné, když je Bluetooth vypnutý"
 
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr ""
+msgstr "Nyní dohledatelné jako \"%s\". Nedohledatelné po zavření této stránky"
 
 #: src/MainView.vala:45
 msgid "No Devices Found"
-msgstr ""
+msgstr "Žádná nalezená zařízení"
 
 #: src/MainView.vala:46
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
+"Prosím zajistěte, že vaše zařízení jsou viditelná a připravená k párování."
 
 #: src/MainView.vala:68
 msgid "Forget selected device"
@@ -56,23 +56,23 @@ msgstr "Zapomenout zvolené zařízení"
 
 #: src/MainView.vala:205
 msgid "Unknown"
-msgstr ""
+msgstr "Neznámé"
 
 #: src/MainView.vala:241
 msgid "Paired Devices"
-msgstr ""
+msgstr "Spárovaná zařízení"
 
 #: src/MainView.vala:247
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Zařízení v okolí"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "Dostupná"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "Párování…"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
@@ -88,7 +88,7 @@ msgstr "Odpojování…"
 
 #: src/DeviceRow.vala:48
 msgid "Unable to Connnect"
-msgstr "Nebylo možné se připojit"
+msgstr "Nelze se připojit"
 
 #: src/DeviceRow.vala:50
 msgid "Not Connected"
@@ -112,7 +112,7 @@ msgstr "Nastavení tiskárny"
 
 #: src/DeviceRow.vala:218
 msgid "Pair"
-msgstr ""
+msgstr "Spárovat"
 
 #: src/DeviceRow.vala:229
 msgid "Disconnect"
