@@ -1,4 +1,8 @@
-project('bluetooth', 'vala', 'c')
+project(
+    'bluetooth',
+    'vala', 'c',
+    version: '0.1.1'
+)
 
 gettext_name = meson.project_name() + '-plug'
 gnome = import('gnome')
