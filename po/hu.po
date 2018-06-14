@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 08:35-0700\n"
-"PO-Revision-Date: 2018-06-14 08:13+0000\n"
+"PO-Revision-Date: 2018-06-15 00:11+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-bluetooth/hu/>\n"
@@ -39,7 +39,7 @@ msgstr "Nem észlelhető, amíg a Bluetooth ki van kapcsolva"
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr "Most már látható mint \"%s\". Nem lesz látható ha bezárja ezt az oldalt"
+msgstr "Most látható mint \"%s\". Nem lesz látható ha bezárja ezt az oldalt"
 
 #: src/MainView.vala:45
 msgid "No Devices Found"
