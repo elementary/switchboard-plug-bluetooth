@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bluetooth-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-02 08:35-0700\n"
+"POT-Creation-Date: 2018-06-27 08:44-0700\n"
 "PO-Revision-Date: 2018-02-20 16:24-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/Plug.vala:30 src/MainView.vala:37
+#: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
 msgstr ""
 
@@ -37,27 +37,27 @@ msgstr ""
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 
-#: src/MainView.vala:45
+#: src/MainView.vala:47
 msgid "No Devices Found"
 msgstr ""
 
-#: src/MainView.vala:46
+#: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 
-#: src/MainView.vala:68
+#: src/MainView.vala:70
 msgid "Forget selected device"
 msgstr ""
 
-#: src/MainView.vala:205
+#: src/MainView.vala:212
 msgid "Unknown"
 msgstr ""
 
-#: src/MainView.vala:241
+#: src/MainView.vala:256
 msgid "Paired Devices"
 msgstr ""
 
-#: src/MainView.vala:247
+#: src/MainView.vala:262
 msgid "Nearby Devices"
 msgstr ""
 

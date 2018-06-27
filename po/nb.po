@@ -7,12 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-02 08:35-0700\n"
+"POT-Creation-Date: 2018-06-27 08:44-0700\n"
 "PO-Revision-Date: 2018-05-31 00:03+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål "
-"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
-"bluetooth/nb/>\n"
+"Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-bluetooth/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-04-08 06:37+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:37
+#: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
 msgstr "Blåtann"
 
@@ -43,27 +42,27 @@ msgstr "Kan ikke oppdages når Blåtann er skrudd av"
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "Nå oppdagbar som \"%s\". Ikke oppdagbar når denne siden er lukket"
 
-#: src/MainView.vala:45
+#: src/MainView.vala:47
 msgid "No Devices Found"
 msgstr "Fant ingen enheter"
 
-#: src/MainView.vala:46
+#: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Forsikre deg om at din enhet er synlig og parringsklar."
 
-#: src/MainView.vala:68
+#: src/MainView.vala:70
 msgid "Forget selected device"
 msgstr "Glem valgt enhet"
 
-#: src/MainView.vala:205
+#: src/MainView.vala:212
 msgid "Unknown"
 msgstr "Ukjent"
 
-#: src/MainView.vala:241
+#: src/MainView.vala:256
 msgid "Paired Devices"
 msgstr "Parrede enheter"
 
-#: src/MainView.vala:247
+#: src/MainView.vala:262
 msgid "Nearby Devices"
 msgstr "Enheter i nærheten"
 

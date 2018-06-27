@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-02 08:35-0700\n"
+"POT-Creation-Date: 2018-06-27 08:44-0700\n"
 "PO-Revision-Date: 2018-04-03 14:32+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-bluetooth/ca/>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-bluetooth/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:37
+#: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -42,29 +42,29 @@ msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Ara és visible com a \"%s\". No ho serà quan aquesta pàgina estigui tancada."
 
-#: src/MainView.vala:45
+#: src/MainView.vala:47
 msgid "No Devices Found"
 msgstr "No s'ha trobat cap dispositiu."
 
-#: src/MainView.vala:46
+#: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Si us plau, assegureu-vos que els dispositius siguin visibles i que estiguin "
 "a punt per emparellar-se."
 
-#: src/MainView.vala:68
+#: src/MainView.vala:70
 msgid "Forget selected device"
 msgstr "Oblida el dispositiu seleccionat"
 
-#: src/MainView.vala:205
+#: src/MainView.vala:212
 msgid "Unknown"
 msgstr "Desconegut"
 
-#: src/MainView.vala:241
+#: src/MainView.vala:256
 msgid "Paired Devices"
 msgstr "Dispositius emparellats"
 
-#: src/MainView.vala:247
+#: src/MainView.vala:262
 msgid "Nearby Devices"
 msgstr "Dispositius propers"
 

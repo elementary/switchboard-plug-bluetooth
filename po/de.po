@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-02 08:35-0700\n"
+"POT-Creation-Date: 2018-06-27 08:44-0700\n"
 "PO-Revision-Date: 2018-04-14 12:30+0000\n"
 "Last-Translator: Jörg Arnold <j0ar@posteo.de>\n"
-"Language-Team: German <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-bluetooth/de/>\n"
+"Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-bluetooth/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-14 08:29+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:37
+#: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -39,31 +39,32 @@ msgstr "Nicht sichtbar, wenn Bluetooth ausgeschaltet ist"
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr "Jetzt als %s sichtbar. Nicht sichtbar, wenn diese Seite geschlossen ist"
+msgstr ""
+"Jetzt als %s sichtbar. Nicht sichtbar, wenn diese Seite geschlossen ist"
 
-#: src/MainView.vala:45
+#: src/MainView.vala:47
 msgid "No Devices Found"
 msgstr "Kein Gerät erkannt"
 
-#: src/MainView.vala:46
+#: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Bitte stellen Sie sicher, dass Ihre Geräte sichtbar und bereit zum Koppeln "
 "sind."
 
-#: src/MainView.vala:68
+#: src/MainView.vala:70
 msgid "Forget selected device"
 msgstr "Ausgewähltes Gerät entfernen"
 
-#: src/MainView.vala:205
+#: src/MainView.vala:212
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: src/MainView.vala:241
+#: src/MainView.vala:256
 msgid "Paired Devices"
 msgstr "Gekoppelte Geräte"
 
-#: src/MainView.vala:247
+#: src/MainView.vala:262
 msgid "Nearby Devices"
 msgstr "Geräte in Ihrer Nähe"
 

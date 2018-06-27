@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-02 08:35-0700\n"
+"POT-Creation-Date: 2018-06-27 08:44-0700\n"
 "PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
-"Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-bluetooth/hu/>\n"
+"Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-bluetooth/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:37
+#: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -41,29 +41,29 @@ msgstr "Nem észlelhető, amíg a Bluetooth ki van kapcsolva"
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "Most látható mint \"%s\". Nem lesz látható ha bezárja ezt az oldalt"
 
-#: src/MainView.vala:45
+#: src/MainView.vala:47
 msgid "No Devices Found"
 msgstr "Nem találhatók eszközök"
 
-#: src/MainView.vala:46
+#: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Győződjön meg róla, hogy a készülékek láthatóak és készen állnak a "
 "párosításra."
 
-#: src/MainView.vala:68
+#: src/MainView.vala:70
 msgid "Forget selected device"
 msgstr "Kijelölt eszköz elfelejtése"
 
-#: src/MainView.vala:205
+#: src/MainView.vala:212
 msgid "Unknown"
 msgstr "Ismeretlen"
 
-#: src/MainView.vala:241
+#: src/MainView.vala:256
 msgid "Paired Devices"
 msgstr "Párosított eszközök"
 
-#: src/MainView.vala:247
+#: src/MainView.vala:262
 msgid "Nearby Devices"
 msgstr "Közeli eszközök"
 

@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-02 08:35-0700\n"
+"POT-Creation-Date: 2018-06-27 08:44-0700\n"
 "PO-Revision-Date: 2018-06-13 00:08+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
-"Language-Team: Indonesian <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-bluetooth/id/>\n"
+"Language-Team: Indonesian <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-bluetooth/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-25 05:27+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:37
+#: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -43,27 +43,27 @@ msgstr ""
 "Sekarang dapat ditemukan sebagai \"%s\". Tidak dapat ditemukan saat halaman "
 "ini ditutup"
 
-#: src/MainView.vala:45
+#: src/MainView.vala:47
 msgid "No Devices Found"
 msgstr "Tidak ada Perangkat Ditemukan"
 
-#: src/MainView.vala:46
+#: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Pastikan perangkat Anda terlihat dan siap dipasangkan."
 
-#: src/MainView.vala:68
+#: src/MainView.vala:70
 msgid "Forget selected device"
 msgstr "Lupakan alat terpilih"
 
-#: src/MainView.vala:205
+#: src/MainView.vala:212
 msgid "Unknown"
 msgstr "Tidak diketahui"
 
-#: src/MainView.vala:241
+#: src/MainView.vala:256
 msgid "Paired Devices"
 msgstr "Perangkat yang Disandingkan"
 
-#: src/MainView.vala:247
+#: src/MainView.vala:262
 msgid "Nearby Devices"
 msgstr "Perangkat Terdekat"
 

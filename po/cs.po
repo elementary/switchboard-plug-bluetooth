@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-02 08:35-0700\n"
+"POT-Creation-Date: 2018-06-27 08:44-0700\n"
 "PO-Revision-Date: 2018-05-16 13:48+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-bluetooth/cs/>\n"
+"Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-bluetooth/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:37
+#: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -41,28 +41,28 @@ msgstr "Nedohledatelné, když je Bluetooth vypnutý"
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "Nyní dohledatelné jako \"%s\". Nedohledatelné po zavření této stránky"
 
-#: src/MainView.vala:45
+#: src/MainView.vala:47
 msgid "No Devices Found"
 msgstr "Žádná nalezená zařízení"
 
-#: src/MainView.vala:46
+#: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Prosím zajistěte, že vaše zařízení jsou viditelná a připravená k párování."
 
-#: src/MainView.vala:68
+#: src/MainView.vala:70
 msgid "Forget selected device"
 msgstr "Zapomenout zvolené zařízení"
 
-#: src/MainView.vala:205
+#: src/MainView.vala:212
 msgid "Unknown"
 msgstr "Neznámé"
 
-#: src/MainView.vala:241
+#: src/MainView.vala:256
 msgid "Paired Devices"
 msgstr "Spárovaná zařízení"
 
-#: src/MainView.vala:247
+#: src/MainView.vala:262
 msgid "Nearby Devices"
 msgstr "Zařízení v okolí"
 
