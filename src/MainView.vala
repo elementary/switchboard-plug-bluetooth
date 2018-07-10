@@ -46,7 +46,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         var empty_alert = new Granite.Widgets.AlertView (
             _("No Devices Found"),
             _("Please ensure that your devices are visible and ready for pairing."),
-            "dialog-information"
+            ""
         );
         empty_alert.show_all ();
 
