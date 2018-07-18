@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 08:44-0700\n"
-"PO-Revision-Date: 2018-04-14 23:15+0000\n"
+"PO-Revision-Date: 2018-07-18 00:06+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/da/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:52+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:39
@@ -83,7 +83,7 @@ msgstr "Opretter forbindelse…"
 
 #: src/DeviceRow.vala:46
 msgid "Disconnecting…"
-msgstr "Afbryder forbindelse…"
+msgstr "Afbryder…"
 
 #: src/DeviceRow.vala:48
 msgid "Unable to Connnect"

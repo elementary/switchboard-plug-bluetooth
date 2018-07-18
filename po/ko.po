@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 08:44-0700\n"
-"PO-Revision-Date: 2018-06-04 02:29+0000\n"
+"PO-Revision-Date: 2018-07-18 00:06+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ko/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:39
@@ -39,7 +39,7 @@ msgstr "블루투스의 전원이 꺼져서 찾을 수 없음"
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr "이제 \"%s\"으로 찾을 수 있음. 이 페이지를 닫으면 찾을 수 없습니다"
+msgstr "이제 \"%s\"로 검색됩니다. 이 페이지를 닫으면 검색되지 않습니다"
 
 #: src/MainView.vala:47
 msgid "No Devices Found"
@@ -83,7 +83,7 @@ msgstr "연결하고 있습니다…"
 
 #: src/DeviceRow.vala:46
 msgid "Disconnecting…"
-msgstr "연결을 끊고 있습니다…"
+msgstr "연결 끊는 중…"
 
 #: src/DeviceRow.vala:48
 msgid "Unable to Connnect"
