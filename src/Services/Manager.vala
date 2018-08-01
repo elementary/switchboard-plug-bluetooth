@@ -26,6 +26,13 @@ public interface Bluetooth.Services.DBusInterface : Object {
     public abstract HashTable<ObjectPath, HashTable<string, HashTable<string, Variant>>> get_managed_objects () throws Error;
 }
 
+[DBus (name = "org.bluez.AgentManager1")]
+public interface Bluetooth.Services.AgentManager : Object {
+    public abstract void register_agent (ObjectPath agent, string capability) throws Error;
+    public abstract void request_default_agent (ObjectPath agent) throws Error;
+    public abstract void unregister_agent (ObjectPath agent) throws Error;
+}
+
 public class Bluetooth.Services.ObjectManager : Object {
     private const string SCHEMA = "org.pantheon.desktop.wingpanel.indicators.bluetooth";
     public signal void global_state_changed (bool enabled, bool connected);
@@ -39,9 +46,12 @@ public class Bluetooth.Services.ObjectManager : Object {
     public bool retrieve_finished { get; private set; default = false; }
 
     private bool is_discovering = false;
+    private bool is_registered = false;
 
     private Settings? settings = null;
     private Bluetooth.Services.DBusInterface object_interface;
+    private Bluetooth.Services.AgentManager agent_manager;
+    private Bluetooth.Services.Agent agent;
     private Gee.HashMap<string, Bluetooth.Services.Adapter> adapters;
     private Gee.HashMap<string, Bluetooth.Services.Device> devices;
 
@@ -185,6 +195,51 @@ public class Bluetooth.Services.ObjectManager : Object {
     public Bluetooth.Services.Adapter? get_adapter_from_path (string path) {
         lock (adapters) {
             return adapters.get (path);
+        }
+    }
+
+    private async void create_agent () {
+        try {
+            agent_manager = yield Bus.get_proxy<Bluetooth.Services.AgentManager> (BusType.SYSTEM, "org.bluez", "/org/bluez", DBusProxyFlags.NONE);
+        } catch (Error e) {
+            critical (e.message);
+        }
+
+        agent = new Bluetooth.Services.Agent ();
+        agent.notify["ready"].connect (() => {
+            if (is_registered) {
+                register_agent ();
+            }
+        });
+
+        agent.unregistered.connect (() => {
+            is_registered = false;
+        });
+    }
+
+    public async void register_agent () {
+        is_registered = true;
+        if (agent_manager == null) {
+            yield create_agent ();
+        }
+
+        if (agent.ready) {
+            try {
+                agent_manager.register_agent (agent.get_path (), "DisplayYesNo");
+            } catch (Error e) {
+                critical (e.message);
+            }
+        }
+    }
+
+    public async void unregister_agent () {
+        is_registered = false;
+        if (agent.ready) {
+            try {
+                agent_manager.unregister_agent (agent.get_path ());
+            } catch (Error e) {
+                critical (e.message);
+            }
         }
     }
 
