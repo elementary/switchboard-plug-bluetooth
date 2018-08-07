@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 08:44-0700\n"
-"PO-Revision-Date: 2018-07-18 00:06+0000\n"
+"PO-Revision-Date: 2018-08-08 00:01+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ko/>\n"
@@ -111,7 +111,7 @@ msgstr "프린터 설정"
 
 #: src/DeviceRow.vala:218
 msgid "Pair"
-msgstr "페어"
+msgstr "연결"
 
 #: src/DeviceRow.vala:229
 msgid "Disconnect"
