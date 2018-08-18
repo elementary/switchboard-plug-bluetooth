@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 08:44-0700\n"
-"PO-Revision-Date: 2018-07-09 20:53+0000\n"
+"PO-Revision-Date: 2018-08-19 00:09+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/sl/>\n"
@@ -40,9 +40,7 @@ msgstr "Računalnika ni mogoče odkriti dokler je Bluetooth izklopljen"
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr ""
-"Računalnik je mogoče odkriti kot \"%s\". Če je ta stran zaprta, računalnika "
-"ni mogoče odkriti."
+msgstr "Računalnik je mogoče odkriti kot \"%s\" dokler je ta stran odprta."
 
 #: src/MainView.vala:47
 msgid "No Devices Found"
