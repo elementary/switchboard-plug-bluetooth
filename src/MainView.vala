@@ -26,6 +26,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
 
     private Gtk.ListBox list_box;
     private Gtk.Spinner spinner;
+    private Gtk.ToolButton remove_button;
 
     public Services.ObjectManager manager { get; construct set; }
     private unowned Services.Adapter main_adapter;
@@ -64,7 +65,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         var frame = new Gtk.Frame (null);
         frame.add (scrolled);
 
-        var remove_button = new Gtk.ToolButton (null, null);
+        remove_button = new Gtk.ToolButton (null, null);
         remove_button.icon_name = "list-remove-symbolic";
         remove_button.sensitive = false;
         remove_button.tooltip_text = _("Forget selected device");
@@ -95,23 +96,19 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             }
         });
 
-        list_box.row_activated.connect ((row) => {
-            remove_button.sensitive = ((DeviceRow) row).device.paired;
-        });
-
-        list_box.unselect_all.connect (() => {
-            remove_button.sensitive = false;
-        });
+        list_box.selected_rows_changed.connect (update_toolbar);
 
         foreach (var device in manager.get_devices ()) {
             var adapter = manager.get_adapter_from_path (device.adapter);
             var row = new DeviceRow (device, adapter);
+            row.status_changed.connect(update_toolbar);
             list_box.add (row);
         }
 
         manager.device_added.connect ((device) => {
             var adapter = manager.get_adapter_from_path (device.adapter);
             var row = new DeviceRow (device, adapter);
+            row.status_changed.connect(update_toolbar);
             list_box.add (row);
             if (list_box.get_selected_row () == null) {
                 list_box.select_row (row);
@@ -176,7 +173,16 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
 
         show_all ();
     }
-
+    
+    private void update_toolbar() {
+        var selected_row = (DeviceRow) list_box.get_selected_row();
+        if (selected_row == null) {
+            remove_button.sensitive = false;
+            return;
+        }
+        remove_button.sensitive = selected_row.device.paired;
+    }
+    
     private void set_adapter (Services.Adapter adapter) {
         if (main_adapter != null) {
             (main_adapter as DBusProxy).g_properties_changed.disconnect (on_adapter_properties_changed);
