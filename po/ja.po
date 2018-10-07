@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 08:44-0700\n"
-"PO-Revision-Date: 2018-09-29 00:09+0000\n"
+"PO-Revision-Date: 2018-10-08 00:05+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ja/>\n"
@@ -51,7 +51,7 @@ msgstr "デバイスが検出可能でペアリングの準備ができている
 
 #: src/MainView.vala:70
 msgid "Forget selected device"
-msgstr "選択したデバイスの解除"
+msgstr "選択されたデバイスを解除"
 
 #: src/MainView.vala:212
 msgid "Unknown"
