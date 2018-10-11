@@ -177,6 +177,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             set_status (Status.PAIRING);
             try {
                 yield device.pair ();
+                device.trusted = true;
             } catch (Error e) {
                 set_status (Status.UNABLE_TO_CONNECT);
                 critical (e.message);
