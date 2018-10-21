@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:40-0700\n"
-"PO-Revision-Date: 2016-12-19 21:41+0000\n"
-"Last-Translator: Joachim Johansson <Unknown>\n"
-"Language-Team: Swedish <sv@li.org>\n"
+"PO-Revision-Date: 2018-10-22 15:37+0000\n"
+"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
+"Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-bluetooth/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
@@ -24,29 +26,28 @@ msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr "Bluetooth-inställningar"
+msgstr "Konfigurera Bluetooth-inställningar"
 
 #: src/MainView.vala:23
-#, fuzzy
 msgid "Not discoverable"
-msgstr "Nu sökbar som \"%s\""
+msgstr "Inte sökbar"
 
 #: src/MainView.vala:24
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "Inte sökbar medan Bluetooth är avslaget"
 
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr ""
+msgstr "Nu sökbar som \"%s\". Inte sökbar när den här sidan är stängd"
 
 #: src/MainView.vala:47
 msgid "No Devices Found"
-msgstr ""
+msgstr "Inga enheter funna"
 
 #: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Försäkra dig om att dina enheter är synliga och redo att paras."
 
 #: src/MainView.vala:70
 msgid "Forget selected device"
@@ -54,23 +55,23 @@ msgstr "Glöm vald enhet"
 
 #: src/MainView.vala:212
 msgid "Unknown"
-msgstr ""
+msgstr "Okänd"
 
 #: src/MainView.vala:256
 msgid "Paired Devices"
-msgstr ""
+msgstr "Parade enheter"
 
 #: src/MainView.vala:262
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Enheter i närheten"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "Tillgänglig"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "Parar…"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
@@ -102,7 +103,7 @@ msgstr "Tangentbordsinställningar"
 
 #: src/DeviceRow.vala:127
 msgid "Mouse & Touchpad Settings"
-msgstr "Inställningar för mus och styrplatta"
+msgstr "Inställningar för mus och pekplatta"
 
 #: src/DeviceRow.vala:131
 msgid "Printer Settings"
@@ -110,7 +111,7 @@ msgstr "Skrivarinställningar"
 
 #: src/DeviceRow.vala:219
 msgid "Pair"
-msgstr ""
+msgstr "Para"
 
 #: src/DeviceRow.vala:230
 msgid "Disconnect"
