@@ -89,7 +89,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
                 unowned Services.Device device = ((DeviceRow) row).device;
                 unowned Services.Adapter adapter = ((DeviceRow) row).adapter;
                 try {
-                    adapter.remove_device (new ObjectPath(((DBusProxy) device).g_object_path));
+                    adapter.remove_device (new ObjectPath (((DBusProxy) device).g_object_path));
                 } catch (Error e) {
                     debug ("Removing bluetooth device failed: %s", e.message);
                 }
@@ -101,14 +101,14 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         foreach (var device in manager.get_devices ()) {
             var adapter = manager.get_adapter_from_path (device.adapter);
             var row = new DeviceRow (device, adapter);
-            row.status_changed.connect(update_toolbar);
+            row.status_changed.connect (update_toolbar);
             list_box.add (row);
         }
 
         manager.device_added.connect ((device) => {
             var adapter = manager.get_adapter_from_path (device.adapter);
             var row = new DeviceRow (device, adapter);
-            row.status_changed.connect(update_toolbar);
+            row.status_changed.connect (update_toolbar);
             list_box.add (row);
             if (list_box.get_selected_row () == null) {
                 list_box.select_row (row);
@@ -173,16 +173,17 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
 
         show_all ();
     }
-    
-    private void update_toolbar() {
-        var selected_row = (DeviceRow) list_box.get_selected_row();
+
+    private void update_toolbar () {
+        var selected_row = (DeviceRow) list_box.get_selected_row ();
         if (selected_row == null) {
             remove_button.sensitive = false;
             return;
         }
+
         remove_button.sensitive = selected_row.device.paired;
     }
-    
+
     private void set_adapter (Services.Adapter adapter) {
         if (main_adapter != null) {
             (main_adapter as DBusProxy).g_properties_changed.disconnect (on_adapter_properties_changed);
@@ -198,7 +199,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         var powered = changed.lookup_value ("Powered", new VariantType ("b"));
         var name = changed.lookup_value ("Name", new VariantType ("s"));
         var discoverable = changed.lookup_value ("Discoverable", new VariantType ("b"));
-        var discovering = changed.lookup_value ("Discovering", new VariantType("b"));
+        var discovering = changed.lookup_value ("Discovering", new VariantType ("b"));
 
         if (powered != null) {
             status_switch.active = adapter.powered;
