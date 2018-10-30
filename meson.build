@@ -1,7 +1,7 @@
 project(
     'bluetooth',
     'vala', 'c',
-    version: '0.1.1'
+    version: '2.1.2'
 )
 
 gettext_name = meson.project_name() + '-plug'
