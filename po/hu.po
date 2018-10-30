@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:44-0700\n"
+"POT-Creation-Date: 2018-10-13 15:40-0700\n"
 "PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
@@ -111,14 +111,14 @@ msgstr "Egér és Touchpad beállítások"
 msgid "Printer Settings"
 msgstr "Nyomtató beállítások"
 
-#: src/DeviceRow.vala:218
+#: src/DeviceRow.vala:219
 msgid "Pair"
 msgstr "Pár"
 
-#: src/DeviceRow.vala:229
+#: src/DeviceRow.vala:230
 msgid "Disconnect"
 msgstr "Szétkapcsolás"
 
-#: src/DeviceRow.vala:247
+#: src/DeviceRow.vala:248
 msgid "Connect"
 msgstr "Kapcsolódás"

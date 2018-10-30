@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:44-0700\n"
-"PO-Revision-Date: 2018-04-29 14:06+0000\n"
-"Last-Translator: Ciaran Ainsworth <cda@whistlingkappa.com>\n"
+"POT-Creation-Date: 2018-10-13 15:40-0700\n"
+"PO-Revision-Date: 2018-10-29 11:10+0000\n"
+"Last-Translator: Ciaran Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://weblate.elementary.io/"
 "projects/switchboard/switchboard-plug-bluetooth/en_GB/>\n"
 "Language: en_GB\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:39
@@ -87,7 +87,7 @@ msgstr "Disconnecting…"
 
 #: src/DeviceRow.vala:48
 msgid "Unable to Connnect"
-msgstr "Unable to Connnect"
+msgstr "Unable to Connect"
 
 #: src/DeviceRow.vala:50
 msgid "Not Connected"
@@ -109,15 +109,15 @@ msgstr "Mouse & Touchpad Settings"
 msgid "Printer Settings"
 msgstr "Printer Settings"
 
-#: src/DeviceRow.vala:218
+#: src/DeviceRow.vala:219
 msgid "Pair"
 msgstr "Pair"
 
-#: src/DeviceRow.vala:229
+#: src/DeviceRow.vala:230
 msgid "Disconnect"
 msgstr "Disconnect"
 
-#: src/DeviceRow.vala:247
+#: src/DeviceRow.vala:248
 msgid "Connect"
 msgstr "Connect"
 

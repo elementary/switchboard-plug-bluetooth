@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:44-0700\n"
+"POT-Creation-Date: 2018-10-13 15:40-0700\n"
 "PO-Revision-Date: 2018-04-03 11:30+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
@@ -112,15 +112,15 @@ msgstr "Ustawienia myszy i panelu dotykowego"
 msgid "Printer Settings"
 msgstr "Ustawienia drukarki"
 
-#: src/DeviceRow.vala:218
+#: src/DeviceRow.vala:219
 msgid "Pair"
 msgstr "Sparuj"
 
-#: src/DeviceRow.vala:229
+#: src/DeviceRow.vala:230
 msgid "Disconnect"
 msgstr "Rozłącz"
 
-#: src/DeviceRow.vala:247
+#: src/DeviceRow.vala:248
 msgid "Connect"
 msgstr "Połącz"
 
