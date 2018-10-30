@@ -23,6 +23,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     public unowned Services.Adapter adapter { get; construct; }
     private static Gtk.SizeGroup size_group;
 
+    public signal void status_changed ();
+
     private enum Status {
         UNPAIRED,
         PAIRING,
@@ -256,5 +258,6 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 settings_button.visible = false;
                 break;
         }
+        status_changed ();
     }
 }
