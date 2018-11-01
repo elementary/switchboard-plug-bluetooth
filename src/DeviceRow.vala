@@ -73,7 +73,6 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         state = new Gtk.Image.from_icon_name ("user-offline", Gtk.IconSize.MENU);
         state.halign = Gtk.Align.END;
         state.valign = Gtk.Align.END;
-        state.visible = false;
 
         state_label = new Gtk.Label (null);
         state_label.xalign = 0;
