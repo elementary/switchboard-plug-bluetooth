@@ -165,6 +165,12 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         }
 
         status_switch.notify["active"].connect (() => {
+            if (status_switch.active) {
+                icon_name = "bluetooth";
+            } else {
+                icon_name = "bluetooth-disabled";
+            }
+
             foreach (var adapter in manager.get_adapters ()) {
                 adapter.powered = status_switch.active;
                 adapter.discoverable = status_switch.active;
