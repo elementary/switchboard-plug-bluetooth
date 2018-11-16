@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:44-0700\n"
-"PO-Revision-Date: 2018-04-14 12:30+0000\n"
-"Last-Translator: Jörg Arnold <j0ar@posteo.de>\n"
+"POT-Creation-Date: 2018-10-13 15:40-0700\n"
+"PO-Revision-Date: 2018-08-19 00:09+0000\n"
+"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/de/>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-14 08:29+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:39
@@ -86,7 +86,7 @@ msgstr "Verbindung wird hergestellt …"
 
 #: src/DeviceRow.vala:46
 msgid "Disconnecting…"
-msgstr "Verbindung wird getrennt …"
+msgstr "Verbindung wird getrennt…"
 
 #: src/DeviceRow.vala:48
 msgid "Unable to Connnect"
@@ -112,15 +112,15 @@ msgstr "Maus- und Touchpad-Einstellungen"
 msgid "Printer Settings"
 msgstr "Druckereinstellungen"
 
-#: src/DeviceRow.vala:218
+#: src/DeviceRow.vala:219
 msgid "Pair"
 msgstr "Koppeln"
 
-#: src/DeviceRow.vala:229
+#: src/DeviceRow.vala:230
 msgid "Disconnect"
 msgstr "Verbindung trennen"
 
-#: src/DeviceRow.vala:247
+#: src/DeviceRow.vala:248
 msgid "Connect"
 msgstr "Verbinden"
 

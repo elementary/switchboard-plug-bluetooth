@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:44-0700\n"
+"POT-Creation-Date: 2018-10-13 15:40-0700\n"
 "PO-Revision-Date: 2018-04-02 16:15+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
@@ -110,15 +110,15 @@ msgstr "Pelės ir jutiklinio kilimėlio nustatymai"
 msgid "Printer Settings"
 msgstr "Spausdintuvo nustatymai"
 
-#: src/DeviceRow.vala:218
+#: src/DeviceRow.vala:219
 msgid "Pair"
 msgstr "Suporuoti"
 
-#: src/DeviceRow.vala:229
+#: src/DeviceRow.vala:230
 msgid "Disconnect"
 msgstr "Atsijungti"
 
-#: src/DeviceRow.vala:247
+#: src/DeviceRow.vala:248
 msgid "Connect"
 msgstr "Prisijungti"
 

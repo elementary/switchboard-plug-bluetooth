@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:44-0700\n"
-"PO-Revision-Date: 2018-06-13 00:08+0000\n"
+"POT-Creation-Date: 2018-10-13 15:40-0700\n"
+"PO-Revision-Date: 2018-09-29 00:09+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-bluetooth/id/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-25 05:27+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:39
@@ -85,7 +85,7 @@ msgstr "Menyambung…"
 
 #: src/DeviceRow.vala:46
 msgid "Disconnecting…"
-msgstr "Memutuskan…"
+msgstr "Memutus sambungan…"
 
 #: src/DeviceRow.vala:48
 msgid "Unable to Connnect"
@@ -111,15 +111,15 @@ msgstr "Pengaturan Tetikus & Touchpad"
 msgid "Printer Settings"
 msgstr "Pengaturan Printer"
 
-#: src/DeviceRow.vala:218
+#: src/DeviceRow.vala:219
 msgid "Pair"
 msgstr "Pasang"
 
-#: src/DeviceRow.vala:229
+#: src/DeviceRow.vala:230
 msgid "Disconnect"
 msgstr "Memutuskan"
 
-#: src/DeviceRow.vala:247
+#: src/DeviceRow.vala:248
 msgid "Connect"
 msgstr "Sambung"
 
