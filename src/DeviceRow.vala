@@ -23,6 +23,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     public unowned Services.Adapter adapter { get; construct; }
     private static Gtk.SizeGroup size_group;
 
+    public signal void status_changed ();
+
     private enum Status {
         UNPAIRED,
         PAIRING,
@@ -177,6 +179,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             set_status (Status.PAIRING);
             try {
                 yield device.pair ();
+                device.trusted = true;
             } catch (Error e) {
                 set_status (Status.UNABLE_TO_CONNECT);
                 critical (e.message);
@@ -212,13 +215,16 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
     private void set_status (Status status) {
         state_label.label = GLib.Markup.printf_escaped ("<span font_size='small'>%s</span>", status.to_string ());
+        state.no_show_all = false;
+        state.visible = true;
 
         switch (status) {
             case Status.UNPAIRED:
                 connect_button.label = _("Pair");
                 connect_button.sensitive = true;
-                state.icon_name = "user-offline";
                 settings_button.visible = false;
+                state.no_show_all = true;
+                state.visible = false;
                 break;
             case Status.PAIRING:
                 connect_button.sensitive = false;
@@ -255,5 +261,6 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 settings_button.visible = false;
                 break;
         }
+        status_changed ();
     }
 }

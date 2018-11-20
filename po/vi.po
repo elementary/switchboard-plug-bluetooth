@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-02 08:35-0700\n"
+"POT-Creation-Date: 2018-10-13 15:40-0700\n"
 "PO-Revision-Date: 2016-12-15 05:41+0000\n"
 "Last-Translator: Daniel Fore <Unknown>\n"
 "Language-Team: Vietnamese <vi@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: src/Plug.vala:30 src/MainView.vala:37
+#: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
 msgstr ""
 
@@ -39,27 +39,27 @@ msgstr ""
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 
-#: src/MainView.vala:45
+#: src/MainView.vala:47
 msgid "No Devices Found"
 msgstr ""
 
-#: src/MainView.vala:46
+#: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 
-#: src/MainView.vala:68
+#: src/MainView.vala:70
 msgid "Forget selected device"
 msgstr ""
 
-#: src/MainView.vala:205
+#: src/MainView.vala:212
 msgid "Unknown"
 msgstr ""
 
-#: src/MainView.vala:241
+#: src/MainView.vala:256
 msgid "Paired Devices"
 msgstr ""
 
-#: src/MainView.vala:247
+#: src/MainView.vala:262
 msgid "Nearby Devices"
 msgstr ""
 
@@ -107,14 +107,14 @@ msgstr ""
 msgid "Printer Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:218
+#: src/DeviceRow.vala:219
 msgid "Pair"
 msgstr ""
 
-#: src/DeviceRow.vala:229
+#: src/DeviceRow.vala:230
 msgid "Disconnect"
 msgstr ""
 
-#: src/DeviceRow.vala:247
+#: src/DeviceRow.vala:248
 msgid "Connect"
 msgstr ""

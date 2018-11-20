@@ -27,6 +27,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     private Gtk.ListBox list_box;
     private Gtk.Spinner spinner;
     private Gtk.Label discovering_label;
+    private Gtk.ToolButton remove_button;
 
     public Services.ObjectManager manager { get; construct set; }
 
@@ -46,7 +47,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         var empty_alert = new Granite.Widgets.AlertView (
             _("No Devices Found"),
             _("Please ensure that your devices are visible and ready for pairing."),
-            "dialog-information"
+            ""
         );
         empty_alert.show_all ();
 
@@ -84,7 +85,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         var frame = new Gtk.Frame (null);
         frame.add (scrolled);
 
-        var remove_button = new Gtk.ToolButton (null, null);
+        remove_button = new Gtk.ToolButton (null, null);
         remove_button.icon_name = "list-remove-symbolic";
         remove_button.sensitive = false;
         remove_button.tooltip_text = _("Forget selected device");
@@ -109,20 +110,14 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
                 unowned Services.Device device = ((DeviceRow) row).device;
                 unowned Services.Adapter adapter = ((DeviceRow) row).adapter;
                 try {
-                    adapter.remove_device (new ObjectPath(((DBusProxy) device).g_object_path));
+                    adapter.remove_device (new ObjectPath (((DBusProxy) device).g_object_path));
                 } catch (Error e) {
                     debug ("Removing bluetooth device failed: %s", e.message);
                 }
             }
         });
 
-        list_box.row_activated.connect ((row) => {
-            remove_button.sensitive = ((DeviceRow) row).device.paired;
-        });
-
-        list_box.unselect_all.connect (() => {
-            remove_button.sensitive = false;
-        });
+        list_box.selected_rows_changed.connect (update_toolbar);
 
         if (manager.retrieve_finished) {
             complete_setup  ();
@@ -143,6 +138,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         foreach (var device in manager.get_devices ()) {
             var adapter = manager.get_adapter_from_path (device.adapter);
             var row = new DeviceRow (device, adapter);
+            row.status_changed.connect (update_toolbar);
             list_box.add (row);
         }
 
@@ -160,6 +156,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
        manager.device_added.connect ((device) => {
             var adapter = manager.get_adapter_from_path (device.adapter);
             var row = new DeviceRow (device, adapter);
+            row.status_changed.connect (update_toolbar);
             list_box.add (row);
             if (list_box.get_selected_row () == null) {
                 list_box.select_row (row);
@@ -198,6 +195,17 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             spinner.active = manager.is_discovering;
             discovering_label.visible = spinner.active;
         });
+        show_all ();
+    }
+
+    private void update_toolbar () {
+        var selected_row = (DeviceRow) list_box.get_selected_row ();
+        if (selected_row == null) {
+            remove_button.sensitive = false;
+            return;
+        }
+
+        remove_button.sensitive = selected_row.device.paired;
     }
 
     private void update_description () {

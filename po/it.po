@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-02 08:35-0700\n"
+"POT-Creation-Date: 2018-10-13 15:40-0700\n"
 "PO-Revision-Date: 2018-05-13 09:57+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
-"Language-Team: Italian <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-bluetooth/it/>\n"
+"Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-bluetooth/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-25 05:27+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:37
+#: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -42,29 +42,29 @@ msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Ora rilevabile come \"%s\". Non rilevabile quando questa pagina è chiusa"
 
-#: src/MainView.vala:45
+#: src/MainView.vala:47
 msgid "No Devices Found"
 msgstr "Nessun dispositivo trovato"
 
-#: src/MainView.vala:46
+#: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Assicurati che i tuoi dispositivi siano visibili e pronti per "
 "l'accoppiamento."
 
-#: src/MainView.vala:68
+#: src/MainView.vala:70
 msgid "Forget selected device"
 msgstr "Dimentica dispositivo selezionato"
 
-#: src/MainView.vala:205
+#: src/MainView.vala:212
 msgid "Unknown"
 msgstr "Sconosciuto"
 
-#: src/MainView.vala:241
+#: src/MainView.vala:256
 msgid "Paired Devices"
 msgstr "Dispositivi accoppiati"
 
-#: src/MainView.vala:247
+#: src/MainView.vala:262
 msgid "Nearby Devices"
 msgstr "Dispositivi vicini"
 
@@ -112,15 +112,15 @@ msgstr "Impostazioni mouse e touchpad"
 msgid "Printer Settings"
 msgstr "Impostazioni di stampa"
 
-#: src/DeviceRow.vala:218
+#: src/DeviceRow.vala:219
 msgid "Pair"
 msgstr "Accoppia"
 
-#: src/DeviceRow.vala:229
+#: src/DeviceRow.vala:230
 msgid "Disconnect"
 msgstr "Disconnetti"
 
-#: src/DeviceRow.vala:247
+#: src/DeviceRow.vala:248
 msgid "Connect"
 msgstr "Connetti"
 

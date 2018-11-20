@@ -7,20 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-02 08:35-0700\n"
-"PO-Revision-Date: 2018-05-29 00:13+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
-"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-bluetooth/ja/>\n"
+"POT-Creation-Date: 2018-10-13 15:40-0700\n"
+"PO-Revision-Date: 2018-10-08 00:05+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-bluetooth/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-21 05:43+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:37
+#: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -39,29 +39,29 @@ msgstr "Bluetooth の電源がオフの間は検出できません"
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr "\"%s\" として検出できません。このページが閉じている時は検出できません"
+msgstr "\"%s\" として検出できます。このページが閉じている時は検出できません"
 
-#: src/MainView.vala:45
+#: src/MainView.vala:47
 msgid "No Devices Found"
 msgstr "デバイスが見つかりませんでした"
 
-#: src/MainView.vala:46
+#: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "デバイスが検出可能でペアリングの準備ができているか確認してください。"
 
-#: src/MainView.vala:68
+#: src/MainView.vala:70
 msgid "Forget selected device"
-msgstr "選択したデバイスの解除"
+msgstr "選択されたデバイスを解除"
 
-#: src/MainView.vala:205
+#: src/MainView.vala:212
 msgid "Unknown"
 msgstr "不明"
 
-#: src/MainView.vala:241
+#: src/MainView.vala:256
 msgid "Paired Devices"
 msgstr "ペアリング中のデバイス"
 
-#: src/MainView.vala:247
+#: src/MainView.vala:262
 msgid "Nearby Devices"
 msgstr "近くのデバイス"
 
@@ -109,15 +109,15 @@ msgstr "マウスとタッチパッドの設定"
 msgid "Printer Settings"
 msgstr "プリンターの設定"
 
-#: src/DeviceRow.vala:218
+#: src/DeviceRow.vala:219
 msgid "Pair"
 msgstr "ペアリング"
 
-#: src/DeviceRow.vala:229
+#: src/DeviceRow.vala:230
 msgid "Disconnect"
 msgstr "切断"
 
-#: src/DeviceRow.vala:247
+#: src/DeviceRow.vala:248
 msgid "Connect"
 msgstr "接続"
 

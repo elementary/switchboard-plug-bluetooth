@@ -7,20 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-02 08:35-0700\n"
-"PO-Revision-Date: 2017-04-13 08:56+0000\n"
+"POT-Creation-Date: 2018-10-13 15:40-0700\n"
+"PO-Revision-Date: 2018-08-12 13:57+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
-"switchboard/switchboard-plug-bluetooth/zh_CN/>\n"
+"Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-bluetooth/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-21 05:43+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:37
+#: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
 msgstr "蓝牙"
 
@@ -29,50 +29,49 @@ msgid "Configure Bluetooth Settings"
 msgstr "配置蓝牙设置"
 
 #: src/MainView.vala:23
-#, fuzzy
 msgid "Not discoverable"
-msgstr "现被检测为“%s”"
+msgstr "无法被检测到"
 
 #: src/MainView.vala:24
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "蓝牙设备关闭时无法被检测到"
 
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr ""
+msgstr "当前能以 \"%s\" 的身份被检测到，关闭此页面后将无法被检测到"
 
-#: src/MainView.vala:45
+#: src/MainView.vala:47
 msgid "No Devices Found"
-msgstr ""
+msgstr "未找到任何设备"
 
-#: src/MainView.vala:46
+#: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "请确保您的设备可见且已准备好匹配。"
 
-#: src/MainView.vala:68
+#: src/MainView.vala:70
 msgid "Forget selected device"
-msgstr "遗忘已选定设备"
+msgstr "忘记选定设备"
 
-#: src/MainView.vala:205
+#: src/MainView.vala:212
 msgid "Unknown"
-msgstr ""
+msgstr "未知设备"
 
-#: src/MainView.vala:241
+#: src/MainView.vala:256
 msgid "Paired Devices"
-msgstr ""
+msgstr "已匹配设备"
 
-#: src/MainView.vala:247
+#: src/MainView.vala:262
 msgid "Nearby Devices"
-msgstr ""
+msgstr "附近的设备"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "可用设备"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "匹配中…"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
@@ -104,21 +103,21 @@ msgstr "键盘设置"
 
 #: src/DeviceRow.vala:127
 msgid "Mouse & Touchpad Settings"
-msgstr "鼠标和触摸板设置"
+msgstr "鼠标和触控板设置"
 
 #: src/DeviceRow.vala:131
 msgid "Printer Settings"
 msgstr "打印机设置"
 
-#: src/DeviceRow.vala:218
+#: src/DeviceRow.vala:219
 msgid "Pair"
-msgstr ""
+msgstr "匹配"
 
-#: src/DeviceRow.vala:229
+#: src/DeviceRow.vala:230
 msgid "Disconnect"
 msgstr "断开连接"
 
-#: src/DeviceRow.vala:247
+#: src/DeviceRow.vala:248
 msgid "Connect"
 msgstr "连接"
 
