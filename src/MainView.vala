@@ -120,7 +120,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         list_box.selected_rows_changed.connect (update_toolbar);
 
         if (manager.retrieve_finished) {
-            complete_setup  ();
+            complete_setup ();
         } else {
             manager.notify["retrieve-finished"].connect (complete_setup);
         }
@@ -130,8 +130,6 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         });
 
         show_all ();
-
-            /* This header may not appear, so cannot contain discovery spinner */
     }
 
     private void complete_setup () {
@@ -142,7 +140,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             list_box.add (row);
         }
 
-        weak Gtk.ListBoxRow? first_row = list_box.get_row_at_index (0);
+        var first_row = list_box.get_row_at_index (0);
         if (first_row != null) {
             list_box.select_row (first_row);
             list_box.row_activated (first_row);
@@ -254,7 +252,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     }
 
     [CCode (instance_pos = -1)]
-    private void title_rows (DeviceRow? row1, DeviceRow? row2) {
+    private void title_rows (DeviceRow row1, DeviceRow? row2) {
         if (row2 == null && row1.device.paired) {
             var label = new Gtk.Label (_("Paired Devices"));
             label.xalign = 0;
