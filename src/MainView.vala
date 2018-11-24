@@ -183,19 +183,6 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             }
         });
 
-        status_switch.notify["active"].connect (() => {
-            if (status_switch.active) {
-                icon_name = "bluetooth";
-            } else {
-                icon_name = "bluetooth-disabled";
-            }
-
-            foreach (var adapter in manager.get_adapters ()) {
-                adapter.powered = status_switch.active;
-                adapter.discoverable = status_switch.active;
-            }
-        }
-
         manager.notify["is-powered"].connect (() => {
             status_switch.active = manager.is_powered;
             update_description ();
@@ -227,6 +214,12 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             description = POWERED_OFF;
         } else {
             description = UNDISCOVERABLE;
+        }
+
+        if (status_switch.active) {
+            icon_name = "bluetooth";
+        } else {
+            icon_name = "bluetooth-disabled";
         }
     }
 
