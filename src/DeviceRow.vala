@@ -215,13 +215,16 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
     private void set_status (Status status) {
         state_label.label = GLib.Markup.printf_escaped ("<span font_size='small'>%s</span>", status.to_string ());
+        state.no_show_all = false;
+        state.visible = true;
 
         switch (status) {
             case Status.UNPAIRED:
                 connect_button.label = _("Pair");
                 connect_button.sensitive = true;
-                state.icon_name = "user-offline";
                 settings_button.visible = false;
+                state.no_show_all = true;
+                state.visible = false;
                 break;
             case Status.PAIRING:
                 connect_button.sensitive = false;

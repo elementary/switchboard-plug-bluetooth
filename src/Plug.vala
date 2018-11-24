@@ -31,6 +31,7 @@ public class Bluetooth.Plug : Switchboard.Plug {
             description: _("Configure Bluetooth Settings"),
             icon: "bluetooth",
             supported_settings: settings);
+
         manager = new Bluetooth.Services.ObjectManager ();
         manager.bind_property ("has-object", this, "can-show", GLib.BindingFlags.SYNC_CREATE);
     }
@@ -45,13 +46,11 @@ public class Bluetooth.Plug : Switchboard.Plug {
     }
 
     public override void shown () {
-        manager.discoverable = true;
-        manager.start_discovery.begin ();
+        manager.set_global_state.begin (true); /* Also sets discoverable true and starts discovery */
     }
 
     public override void hidden () {
-        manager.discoverable = false;
-        manager.stop_discovery.begin ();
+        manager.discoverable = false; /* Does not change is_powered or connections*/
     }
 
     public override void search_callback (string location) {

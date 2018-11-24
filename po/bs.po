@@ -8,113 +8,117 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:40-0700\n"
-"PO-Revision-Date: 2016-12-15 05:16+0000\n"
-"Last-Translator: Adnan Hodzic <adnan@hodzic.org>\n"
-"Language-Team: Bosnian <bs@li.org>\n"
+"PO-Revision-Date: 2018-11-07 01:45+0000\n"
+"Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
+"Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-bluetooth/bs/>\n"
 "Language: bs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "Prilagodite podešavanja Bluetootha"
 
 #: src/MainView.vala:23
 msgid "Not discoverable"
-msgstr ""
+msgstr "Nije vidljiv"
 
 #: src/MainView.vala:24
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "Nije vidljiv kada je Bluetooth isključen"
 
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
+"Sada je vidljiv kao \"%s\". Neće biti vidljiv kada se ova stranica zatvori"
 
 #: src/MainView.vala:47
 msgid "No Devices Found"
-msgstr ""
+msgstr "Nisu pronađeni uređaji"
 
 #: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Provjerite jesu li Vaši uređaji vidljivi i spremni za povezivanje."
 
 #: src/MainView.vala:70
 msgid "Forget selected device"
-msgstr ""
+msgstr "Zaboravi odabrani uređaj"
 
 #: src/MainView.vala:212
 msgid "Unknown"
-msgstr ""
+msgstr "Nepoznato"
 
 #: src/MainView.vala:256
 msgid "Paired Devices"
-msgstr ""
+msgstr "Povezani uređaji"
 
 #: src/MainView.vala:262
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Uređaji u blizini"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "Dostupno"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "Povezivanje…"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
-msgstr ""
+msgstr "Povezano"
 
 #: src/DeviceRow.vala:44
 msgid "Connecting…"
-msgstr ""
+msgstr "Povezivanje…"
 
 #: src/DeviceRow.vala:46
 msgid "Disconnecting…"
-msgstr ""
+msgstr "Prekidanje veze…"
 
 #: src/DeviceRow.vala:48
 msgid "Unable to Connnect"
-msgstr ""
+msgstr "Nemoguće povezivanje"
 
 #: src/DeviceRow.vala:50
 msgid "Not Connected"
-msgstr ""
+msgstr "Nije povezano"
 
 #: src/DeviceRow.vala:118
 msgid "Sound Settings"
-msgstr ""
+msgstr "Podešavanja zvuka"
 
 #: src/DeviceRow.vala:123
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "Podešavanja tastature"
 
 #: src/DeviceRow.vala:127
 msgid "Mouse & Touchpad Settings"
-msgstr ""
+msgstr "Podešavanja miša i touchpada"
 
 #: src/DeviceRow.vala:131
 msgid "Printer Settings"
-msgstr ""
+msgstr "Podešavanja štampača"
 
 #: src/DeviceRow.vala:219
 msgid "Pair"
-msgstr ""
+msgstr "Spoji"
 
 #: src/DeviceRow.vala:230
 msgid "Disconnect"
-msgstr ""
+msgstr "Prekini vezu"
 
 #: src/DeviceRow.vala:248
 msgid "Connect"
-msgstr ""
+msgstr "Poveži"
