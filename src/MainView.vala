@@ -216,7 +216,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             description = UNDISCOVERABLE;
         }
 
-        if (status_switch.active) {
+        if (powered) {
             icon_name = "bluetooth";
         } else {
             icon_name = "bluetooth-disabled";
