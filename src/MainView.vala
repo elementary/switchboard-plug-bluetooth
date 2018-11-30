@@ -184,13 +184,12 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
 
 
         manager.notify["is-powered"].connect (() => {
-            status_switch.active = manager.is_powered;
             update_description ();
         });
 
-        manager.notify["is-discovering"].connect (() => {
-            discovering_revealer.set_reveal_child (manager.is_discovering);
-        });
+        manager.bind_property ("is-discovering", discovering_revealer, "reveal-child", GLib.BindingFlags.DEFAULT);
+        manager.bind_property ("is-powered", status_switch, "active", GLib.BindingFlags.DEFAULT);
+
         show_all ();
     }
 
