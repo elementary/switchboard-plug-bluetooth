@@ -25,9 +25,8 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     private string DISCOVERABLE = _("Now discoverable as \"%s\". Not discoverable when this page is closed"); //TRANSLATORS: \"%s\" represents the name of the adapter
 
     private Gtk.ListBox list_box;
-    private Gtk.Spinner spinner;
-    private Gtk.Label discovering_label;
-    private Gtk.ToolButton remove_button;
+    private Gtk.Button remove_button;
+    private Gtk.Revealer discovering_revealer;
 
     public Services.ObjectManager manager { get; construct set; }
 
@@ -51,26 +50,6 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         );
         empty_alert.show_all ();
 
-        discovering_label = new Gtk.Label (_("Discovering"));
-        discovering_label.hexpand = true;
-        discovering_label.xalign = 0;
-        discovering_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
-
-        spinner = new Gtk.Spinner ();
-        spinner.halign = Gtk.Align.END;
-
-        var discovering_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
-        var grid = new Gtk.Grid ();
-        grid.orientation = Gtk.Orientation.HORIZONTAL;
-        grid.column_spacing = 6;
-        grid.margin = 3;
-        grid.add (discovering_label);
-        grid.add (spinner);
-        grid.hexpand = false;
-        grid.halign = Gtk.Align.START;
-        discovering_grid.add (grid);
-        discovering_grid.show_all ();
-
         list_box = new Gtk.ListBox ();
         list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare_rows);
         list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
@@ -82,24 +61,44 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         scrolled.expand = true;
         scrolled.add (list_box);
 
-        var frame = new Gtk.Frame (null);
-        frame.add (scrolled);
-
-        remove_button = new Gtk.ToolButton (null, null);
-        remove_button.icon_name = "list-remove-symbolic";
+        remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
         remove_button.sensitive = false;
         remove_button.tooltip_text = _("Forget selected device");
 
-        var toolbar = new Gtk.Toolbar ();
-        toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
+        var discovering_label = new Gtk.Label (_("Discovering"));
+
+        var spinner = new Gtk.Spinner ();
+        spinner.active = true;
+
+        var discovering_grid = new Gtk.Grid ();
+        discovering_grid.halign = Gtk.Align.END;
+        discovering_grid.valign = Gtk.Align.CENTER;
+        discovering_grid.hexpand = true;
+        discovering_grid.column_spacing = 6;
+        discovering_grid.margin_end = 3;
+        discovering_grid.add (discovering_label);
+        discovering_grid.add (spinner);
+
+        discovering_revealer = new Gtk.Revealer ();
+        discovering_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
+        discovering_revealer.add (discovering_grid);
+
+        var toolbar = new Gtk.ActionBar ();
         toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         toolbar.add (remove_button);
+        toolbar.add (discovering_revealer);
+
+        var grid = new Gtk.Grid ();
+        grid.orientation = Gtk.Orientation.VERTICAL;
+        grid.add (scrolled);
+        grid.add (toolbar);
+
+        var frame = new Gtk.Frame (null);
+        frame.add (grid);
 
         content_area.orientation = Gtk.Orientation.VERTICAL;
         content_area.row_spacing = 0;
-        content_area.add (discovering_grid);
         content_area.add (frame);
-        content_area.add (toolbar);
 
         margin = 12;
         margin_bottom = 0;
@@ -185,14 +184,12 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
 
 
         manager.notify["is-powered"].connect (() => {
-            status_switch.active = manager.is_powered;
             update_description ();
         });
 
-        manager.notify["is-discovering"].connect (() => {
-            spinner.active = manager.is_discovering;
-            discovering_label.visible = spinner.active;
-        });
+        manager.bind_property ("is-discovering", discovering_revealer, "reveal-child", GLib.BindingFlags.DEFAULT);
+        manager.bind_property ("is-powered", status_switch, "active", GLib.BindingFlags.DEFAULT);
+
         show_all ();
     }
 
