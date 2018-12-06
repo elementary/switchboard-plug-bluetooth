@@ -182,7 +182,6 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             }
         });
 
-
         manager.notify["is-powered"].connect (() => {
             update_description ();
         });
@@ -212,6 +211,12 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             description = POWERED_OFF;
         } else {
             description = UNDISCOVERABLE;
+        }
+
+        if (powered) {
+            icon_name = "bluetooth";
+        } else {
+            icon_name = "bluetooth-disabled";
         }
     }
 
