@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:40-0700\n"
-"PO-Revision-Date: 2018-10-18 00:11+0000\n"
+"PO-Revision-Date: 2018-12-23 19:00+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/mr/>\n"
@@ -26,32 +26,33 @@ msgstr "ब्लूटुथ"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "ब्लूटूथ सेटिंग्ज कॉन्फिगर करा"
 
 #: src/MainView.vala:23
 msgid "Not discoverable"
-msgstr ""
+msgstr "शोधण्यायोग्य नाही"
 
 #: src/MainView.vala:24
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "ब्लूटुथ बंद असताना शोधण्यायोग्य नाही"
 
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr ""
+msgstr "आता \"%s\" म्हणून शोधण्यायोग्य. हे पृष्ठ बंद असताना शोधण्यायोग्य नाही"
 
 #: src/MainView.vala:47
 msgid "No Devices Found"
-msgstr ""
+msgstr "कोणतीही डिव्हाइसेस सापडली नाहीत"
 
 #: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
+"कृपया आपले डिव्हाइस दृश्यमान आणि जोडण्यासाठी सज्ज असल्याचे सुनिश्चित करा."
 
 #: src/MainView.vala:70
 msgid "Forget selected device"
-msgstr ""
+msgstr "निवडलेले डिव्हाइस विसरून जा"
 
 #: src/MainView.vala:212
 msgid "Unknown"
@@ -59,19 +60,19 @@ msgstr "अज्ञात"
 
 #: src/MainView.vala:256
 msgid "Paired Devices"
-msgstr ""
+msgstr "जोडलेले डिव्हाइसेस"
 
 #: src/MainView.vala:262
 msgid "Nearby Devices"
-msgstr ""
+msgstr "जवळपासचे डिव्हाइसेस"
 
 #: src/DeviceRow.vala:38
 msgid "Available"
-msgstr ""
+msgstr "उपलब्ध"
 
 #: src/DeviceRow.vala:40
 msgid "Pairing…"
-msgstr ""
+msgstr "जोडत आहे …"
 
 #: src/DeviceRow.vala:42
 msgid "Connected"
@@ -87,36 +88,36 @@ msgstr "कनेक्शन विस्कळीत केले जात �
 
 #: src/DeviceRow.vala:48
 msgid "Unable to Connnect"
-msgstr ""
+msgstr "कनेक्ट करण्यात अक्षम"
 
 #: src/DeviceRow.vala:50
 msgid "Not Connected"
-msgstr ""
+msgstr "जोडलेले नाही"
 
 #: src/DeviceRow.vala:118
 msgid "Sound Settings"
-msgstr ""
+msgstr "ध्वनी सेटिंग्ज"
 
 #: src/DeviceRow.vala:123
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "कीबोर्ड सेटिंग्ज"
 
 #: src/DeviceRow.vala:127
 msgid "Mouse & Touchpad Settings"
-msgstr ""
+msgstr "माऊस आणि टचपॅड सेटिंग्ज"
 
 #: src/DeviceRow.vala:131
 msgid "Printer Settings"
-msgstr ""
+msgstr "प्रिंटर सेटिंग्ज"
 
 #: src/DeviceRow.vala:219
 msgid "Pair"
-msgstr ""
+msgstr "जोडा"
 
 #: src/DeviceRow.vala:230
 msgid "Disconnect"
-msgstr ""
+msgstr "डिस्कनेक्ट करा"
 
 #: src/DeviceRow.vala:248
 msgid "Connect"
-msgstr ""
+msgstr "कनेक्ट करा"
