@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:40-0700\n"
+"POT-Creation-Date: 2018-12-27 19:44+0100\n"
 "PO-Revision-Date: 2018-04-02 16:14+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
@@ -49,75 +49,81 @@ msgstr "找不到裝置"
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "請確認您的裝置可被探查而且準備好配對。"
 
-#: src/MainView.vala:70
+#: src/MainView.vala:66
 msgid "Forget selected device"
 msgstr "忘記選取裝置"
 
-#: src/MainView.vala:212
+#: src/MainView.vala:68
+#, fuzzy
+msgid "Discovering"
+msgstr "中斷連結中…"
+
+#: src/MainView.vala:209
 msgid "Unknown"
 msgstr "未知"
 
-#: src/MainView.vala:256
+#: src/MainView.vala:259
 msgid "Paired Devices"
 msgstr "已配對的裝置"
 
-#: src/MainView.vala:262
+#. This header may not appear, so cannot contain discovery spinner
+#: src/MainView.vala:266
 msgid "Nearby Devices"
 msgstr "鄰近的裝置"
 
-#: src/DeviceRow.vala:38
+#: src/DeviceRow.vala:40
 msgid "Available"
 msgstr "可用"
 
-#: src/DeviceRow.vala:40
+#: src/DeviceRow.vala:42
 msgid "Pairing…"
 msgstr "配對中…"
 
-#: src/DeviceRow.vala:42
+#: src/DeviceRow.vala:44
 msgid "Connected"
 msgstr "已連結"
 
-#: src/DeviceRow.vala:44
+#: src/DeviceRow.vala:46
 msgid "Connecting…"
 msgstr "連結中…"
 
-#: src/DeviceRow.vala:46
+#: src/DeviceRow.vala:48
 msgid "Disconnecting…"
 msgstr "中斷連結中…"
 
-#: src/DeviceRow.vala:48
+#: src/DeviceRow.vala:50
 msgid "Unable to Connnect"
 msgstr "無法連結"
 
-#: src/DeviceRow.vala:50
+#: src/DeviceRow.vala:52
 msgid "Not Connected"
 msgstr "未連結"
 
-#: src/DeviceRow.vala:118
+#: src/DeviceRow.vala:120
 msgid "Sound Settings"
 msgstr "音訊設定"
 
-#: src/DeviceRow.vala:123
+#: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
 msgstr "鍵盤設定"
 
-#: src/DeviceRow.vala:127
+#: src/DeviceRow.vala:129
 msgid "Mouse & Touchpad Settings"
 msgstr "滑鼠與觸控板設定"
 
-#: src/DeviceRow.vala:131
+#: src/DeviceRow.vala:133
 msgid "Printer Settings"
 msgstr "印表機設定"
 
-#: src/DeviceRow.vala:219
+#: src/DeviceRow.vala:223
 msgid "Pair"
 msgstr "配對"
 
-#: src/DeviceRow.vala:230
+#: src/DeviceRow.vala:235
 msgid "Disconnect"
 msgstr "中斷連結"
 
-#: src/DeviceRow.vala:248
+#: src/DeviceRow.vala:253
 msgid "Connect"
 msgstr "連結"
 
