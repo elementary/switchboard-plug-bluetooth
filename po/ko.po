@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-27 19:44+0100\n"
-"PO-Revision-Date: 2018-08-08 00:01+0000\n"
+"PO-Revision-Date: 2018-12-28 03:37+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ko/>\n"
@@ -54,9 +54,8 @@ msgid "Forget selected device"
 msgstr "선택했던 장치 지우기"
 
 #: src/MainView.vala:68
-#, fuzzy
 msgid "Discovering"
-msgstr "연결 끊는 중…"
+msgstr "검색 중입니다"
 
 #: src/MainView.vala:209
 msgid "Unknown"
