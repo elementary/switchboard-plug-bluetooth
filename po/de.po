@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-27 19:44+0100\n"
-"PO-Revision-Date: 2018-08-19 00:09+0000\n"
+"PO-Revision-Date: 2019-01-02 21:34+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/de/>\n"
@@ -57,9 +57,8 @@ msgid "Forget selected device"
 msgstr "Ausgewähltes Gerät entfernen"
 
 #: src/MainView.vala:68
-#, fuzzy
 msgid "Discovering"
-msgstr "Verbindung wird getrennt…"
+msgstr "Erkennen"
 
 #: src/MainView.vala:209
 msgid "Unknown"
