@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-27 19:44+0100\n"
-"PO-Revision-Date: 2019-01-06 12:32+0000\n"
+"PO-Revision-Date: 2019-01-07 00:03+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-bluetooth/nn/>\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: src/Plug.vala:30 src/MainView.vala:39
 msgid "Bluetooth"
-msgstr "Blåtann"
+msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr "Konfigurer blåtann-instillingar"
+msgstr "Konfigurer Bluetooth-innstillingar"
 
 #: src/MainView.vala:23
 msgid "Not discoverable"
@@ -81,7 +81,7 @@ msgstr "Koplar til…"
 
 #: src/DeviceRow.vala:44
 msgid "Connected"
-msgstr "Kopla til"
+msgstr "Tilkopla"
 
 #: src/DeviceRow.vala:46
 msgid "Connecting…"
@@ -89,7 +89,7 @@ msgstr "Koplar til…"
 
 #: src/DeviceRow.vala:48
 msgid "Disconnecting…"
-msgstr "Koplar av…"
+msgstr "Koplar frå…"
 
 #: src/DeviceRow.vala:50
 msgid "Unable to Connnect"
@@ -121,7 +121,7 @@ msgstr "Kople til"
 
 #: src/DeviceRow.vala:235
 msgid "Disconnect"
-msgstr "Kople av"
+msgstr "Kople frå"
 
 #: src/DeviceRow.vala:253
 msgid "Connect"
