@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-27 19:44+0100\n"
-"PO-Revision-Date: 2018-12-23 19:00+0000\n"
+"PO-Revision-Date: 2019-01-06 17:19+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/mr/>\n"
@@ -54,9 +54,8 @@ msgid "Forget selected device"
 msgstr "निवडलेले डिव्हाइस विसरून जा"
 
 #: src/MainView.vala:68
-#, fuzzy
 msgid "Discovering"
-msgstr "कनेक्शन विस्कळीत केले जात आहे …"
+msgstr "शोधत आहे"
 
 #: src/MainView.vala:209
 msgid "Unknown"
