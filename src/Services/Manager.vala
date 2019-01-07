@@ -277,7 +277,7 @@ public class Bluetooth.Services.ObjectManager : Object {
     }
 
     public async void set_global_state (bool state) {
-        if (state == is_powered) {
+        if (state == is_powered && discoverable == state && is_discovering == state) {
             return;
         }
 

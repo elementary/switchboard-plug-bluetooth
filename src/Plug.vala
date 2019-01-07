@@ -51,6 +51,7 @@ public class Bluetooth.Plug : Switchboard.Plug {
 
     public override void hidden () {
         manager.discoverable = false; /* Does not change is_powered or connections*/
+        manager.stop_discovery.begin ();
     }
 
     public override void search_callback (string location) {

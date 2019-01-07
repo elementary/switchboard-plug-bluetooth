@@ -182,6 +182,10 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             }
         });
 
+        manager.notify["discoverable"].connect (() => {
+            update_description ();
+        });
+
         manager.notify["is-powered"].connect (() => {
             update_description ();
         });
