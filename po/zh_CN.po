@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-27 19:44+0100\n"
-"PO-Revision-Date: 2018-08-12 13:57+0000\n"
+"PO-Revision-Date: 2019-01-14 13:36+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-bluetooth/zh_Hans/>\n"
@@ -54,9 +54,8 @@ msgid "Forget selected device"
 msgstr "忘记选定设备"
 
 #: src/MainView.vala:68
-#, fuzzy
 msgid "Discovering"
-msgstr "正在断开连接…"
+msgstr "正在寻找设备"
 
 #: src/MainView.vala:209
 msgid "Unknown"
