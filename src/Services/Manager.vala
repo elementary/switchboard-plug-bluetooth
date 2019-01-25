@@ -27,7 +27,7 @@ public interface Bluetooth.Services.DBusInterface : Object {
 }
 
 public class Bluetooth.Services.ObjectManager : Object {
-    private const string SCHEMA = "org.pantheon.desktop.wingpanel.indicators.bluetooth";
+    private const string SCHEMA = "io.elementary.desktop.wingpanel.bluetooth";
     public signal void adapter_added (Bluetooth.Services.Adapter adapter);
     public signal void adapter_removed (Bluetooth.Services.Adapter adapter);
     public signal void device_added (Bluetooth.Services.Device device);
