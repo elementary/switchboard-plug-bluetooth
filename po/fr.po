@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:40-0700\n"
-"PO-Revision-Date: 2018-04-07 00:09+0000\n"
+"POT-Creation-Date: 2018-12-27 19:44+0100\n"
+"PO-Revision-Date: 2018-12-27 18:45+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-21 05:43+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:39
@@ -52,75 +52,80 @@ msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Veuillez vérifier que vos appareils sont visibles et prêts à être associés."
 
-#: src/MainView.vala:70
+#: src/MainView.vala:66
 msgid "Forget selected device"
 msgstr "Oublier cet appareil"
 
-#: src/MainView.vala:212
+#: src/MainView.vala:68
+msgid "Discovering"
+msgstr "Recherche"
+
+#: src/MainView.vala:209
 msgid "Unknown"
 msgstr "Inconnu"
 
-#: src/MainView.vala:256
+#: src/MainView.vala:259
 msgid "Paired Devices"
 msgstr "Appareils associés"
 
-#: src/MainView.vala:262
+#. This header may not appear, so cannot contain discovery spinner
+#: src/MainView.vala:266
 msgid "Nearby Devices"
 msgstr "Appareils à proximité"
 
-#: src/DeviceRow.vala:38
+#: src/DeviceRow.vala:40
 msgid "Available"
 msgstr "Disponible"
 
-#: src/DeviceRow.vala:40
+#: src/DeviceRow.vala:42
 msgid "Pairing…"
 msgstr "Association…"
 
-#: src/DeviceRow.vala:42
+#: src/DeviceRow.vala:44
 msgid "Connected"
 msgstr "Connecté"
 
-#: src/DeviceRow.vala:44
+#: src/DeviceRow.vala:46
 msgid "Connecting…"
 msgstr "Connexion…"
 
-#: src/DeviceRow.vala:46
+#: src/DeviceRow.vala:48
 msgid "Disconnecting…"
 msgstr "Déconnexion…"
 
-#: src/DeviceRow.vala:48
+#: src/DeviceRow.vala:50
 msgid "Unable to Connnect"
 msgstr "Connexion impossible"
 
-#: src/DeviceRow.vala:50
+#: src/DeviceRow.vala:52
 msgid "Not Connected"
 msgstr "Non connecté"
 
-#: src/DeviceRow.vala:118
+#: src/DeviceRow.vala:120
 msgid "Sound Settings"
 msgstr "Paramètres du son"
 
-#: src/DeviceRow.vala:123
+#: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
 msgstr "Paramètres du clavier"
 
-#: src/DeviceRow.vala:127
+#: src/DeviceRow.vala:129
 msgid "Mouse & Touchpad Settings"
 msgstr "Paramètres de la souris et du pavé tactile"
 
-#: src/DeviceRow.vala:131
+#: src/DeviceRow.vala:133
 msgid "Printer Settings"
 msgstr "Paramètres de l’imprimante"
 
-#: src/DeviceRow.vala:219
+#: src/DeviceRow.vala:223
 msgid "Pair"
 msgstr "Associer"
 
-#: src/DeviceRow.vala:230
+#: src/DeviceRow.vala:235
 msgid "Disconnect"
 msgstr "Déconnecter"
 
-#: src/DeviceRow.vala:248
+#: src/DeviceRow.vala:253
 msgid "Connect"
 msgstr "Connecter"
 

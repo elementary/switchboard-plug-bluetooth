@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:40-0700\n"
+"POT-Creation-Date: 2018-12-27 19:44+0100\n"
 "PO-Revision-Date: 2018-05-16 13:48+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
@@ -50,75 +50,81 @@ msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Prosím zajistěte, že vaše zařízení jsou viditelná a připravená k párování."
 
-#: src/MainView.vala:70
+#: src/MainView.vala:66
 msgid "Forget selected device"
 msgstr "Zapomenout zvolené zařízení"
 
-#: src/MainView.vala:212
+#: src/MainView.vala:68
+#, fuzzy
+msgid "Discovering"
+msgstr "Odpojování…"
+
+#: src/MainView.vala:209
 msgid "Unknown"
 msgstr "Neznámé"
 
-#: src/MainView.vala:256
+#: src/MainView.vala:259
 msgid "Paired Devices"
 msgstr "Spárovaná zařízení"
 
-#: src/MainView.vala:262
+#. This header may not appear, so cannot contain discovery spinner
+#: src/MainView.vala:266
 msgid "Nearby Devices"
 msgstr "Zařízení v okolí"
 
-#: src/DeviceRow.vala:38
+#: src/DeviceRow.vala:40
 msgid "Available"
 msgstr "Dostupná"
 
-#: src/DeviceRow.vala:40
+#: src/DeviceRow.vala:42
 msgid "Pairing…"
 msgstr "Párování…"
 
-#: src/DeviceRow.vala:42
+#: src/DeviceRow.vala:44
 msgid "Connected"
 msgstr "Připojeno"
 
-#: src/DeviceRow.vala:44
+#: src/DeviceRow.vala:46
 msgid "Connecting…"
 msgstr "Připojování…"
 
-#: src/DeviceRow.vala:46
+#: src/DeviceRow.vala:48
 msgid "Disconnecting…"
 msgstr "Odpojování…"
 
-#: src/DeviceRow.vala:48
+#: src/DeviceRow.vala:50
 msgid "Unable to Connnect"
 msgstr "Nelze se připojit"
 
-#: src/DeviceRow.vala:50
+#: src/DeviceRow.vala:52
 msgid "Not Connected"
 msgstr "Nepřipojeno"
 
-#: src/DeviceRow.vala:118
+#: src/DeviceRow.vala:120
 msgid "Sound Settings"
 msgstr "Nastavení zvuku"
 
-#: src/DeviceRow.vala:123
+#: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
 msgstr "Nastavení klávesnice"
 
-#: src/DeviceRow.vala:127
+#: src/DeviceRow.vala:129
 msgid "Mouse & Touchpad Settings"
 msgstr "Nastavení myši a touchpadu"
 
-#: src/DeviceRow.vala:131
+#: src/DeviceRow.vala:133
 msgid "Printer Settings"
 msgstr "Nastavení tiskárny"
 
-#: src/DeviceRow.vala:219
+#: src/DeviceRow.vala:223
 msgid "Pair"
 msgstr "Spárovat"
 
-#: src/DeviceRow.vala:230
+#: src/DeviceRow.vala:235
 msgid "Disconnect"
 msgstr "Odpojit"
 
-#: src/DeviceRow.vala:248
+#: src/DeviceRow.vala:253
 msgid "Connect"
 msgstr "Připojit"
 

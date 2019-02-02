@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:40-0700\n"
+"POT-Creation-Date: 2018-12-27 19:44+0100\n"
 "PO-Revision-Date: 2018-10-22 15:37+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
@@ -49,75 +49,81 @@ msgstr "Inga enheter funna"
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Försäkra dig om att dina enheter är synliga och redo att paras."
 
-#: src/MainView.vala:70
+#: src/MainView.vala:66
 msgid "Forget selected device"
 msgstr "Glöm vald enhet"
 
-#: src/MainView.vala:212
+#: src/MainView.vala:68
+#, fuzzy
+msgid "Discovering"
+msgstr "Kopplar från…"
+
+#: src/MainView.vala:209
 msgid "Unknown"
 msgstr "Okänd"
 
-#: src/MainView.vala:256
+#: src/MainView.vala:259
 msgid "Paired Devices"
 msgstr "Parade enheter"
 
-#: src/MainView.vala:262
+#. This header may not appear, so cannot contain discovery spinner
+#: src/MainView.vala:266
 msgid "Nearby Devices"
 msgstr "Enheter i närheten"
 
-#: src/DeviceRow.vala:38
+#: src/DeviceRow.vala:40
 msgid "Available"
 msgstr "Tillgänglig"
 
-#: src/DeviceRow.vala:40
+#: src/DeviceRow.vala:42
 msgid "Pairing…"
 msgstr "Parar…"
 
-#: src/DeviceRow.vala:42
+#: src/DeviceRow.vala:44
 msgid "Connected"
 msgstr "Ansluten"
 
-#: src/DeviceRow.vala:44
+#: src/DeviceRow.vala:46
 msgid "Connecting…"
 msgstr "Ansluter…"
 
-#: src/DeviceRow.vala:46
+#: src/DeviceRow.vala:48
 msgid "Disconnecting…"
 msgstr "Kopplar från…"
 
-#: src/DeviceRow.vala:48
+#: src/DeviceRow.vala:50
 msgid "Unable to Connnect"
 msgstr "Det går inte att ansluta"
 
-#: src/DeviceRow.vala:50
+#: src/DeviceRow.vala:52
 msgid "Not Connected"
 msgstr "Inte ansluten"
 
-#: src/DeviceRow.vala:118
+#: src/DeviceRow.vala:120
 msgid "Sound Settings"
 msgstr "Ljudinställningar"
 
-#: src/DeviceRow.vala:123
+#: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
 msgstr "Tangentbordsinställningar"
 
-#: src/DeviceRow.vala:127
+#: src/DeviceRow.vala:129
 msgid "Mouse & Touchpad Settings"
 msgstr "Inställningar för mus och pekplatta"
 
-#: src/DeviceRow.vala:131
+#: src/DeviceRow.vala:133
 msgid "Printer Settings"
 msgstr "Skrivarinställningar"
 
-#: src/DeviceRow.vala:219
+#: src/DeviceRow.vala:223
 msgid "Pair"
 msgstr "Para"
 
-#: src/DeviceRow.vala:230
+#: src/DeviceRow.vala:235
 msgid "Disconnect"
 msgstr "Koppla från"
 
-#: src/DeviceRow.vala:248
+#: src/DeviceRow.vala:253
 msgid "Connect"
 msgstr "Anslut"
 

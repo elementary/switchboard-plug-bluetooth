@@ -25,11 +25,10 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     private string DISCOVERABLE = _("Now discoverable as \"%s\". Not discoverable when this page is closed"); //TRANSLATORS: \"%s\" represents the name of the adapter
 
     private Gtk.ListBox list_box;
-    private Gtk.Spinner spinner;
-    private Gtk.ToolButton remove_button;
+    private Gtk.Button remove_button;
+    private Gtk.Revealer discovering_revealer;
 
     public Services.ObjectManager manager { get; construct set; }
-    private unowned Services.Adapter main_adapter;
 
     public signal void quit_plug ();
 
@@ -62,23 +61,44 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         scrolled.expand = true;
         scrolled.add (list_box);
 
-        var frame = new Gtk.Frame (null);
-        frame.add (scrolled);
-
-        remove_button = new Gtk.ToolButton (null, null);
-        remove_button.icon_name = "list-remove-symbolic";
+        remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
         remove_button.sensitive = false;
         remove_button.tooltip_text = _("Forget selected device");
 
-        var toolbar = new Gtk.Toolbar ();
-        toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
+        var discovering_label = new Gtk.Label (_("Discovering"));
+
+        var spinner = new Gtk.Spinner ();
+        spinner.active = true;
+
+        var discovering_grid = new Gtk.Grid ();
+        discovering_grid.halign = Gtk.Align.END;
+        discovering_grid.valign = Gtk.Align.CENTER;
+        discovering_grid.hexpand = true;
+        discovering_grid.column_spacing = 6;
+        discovering_grid.margin_end = 3;
+        discovering_grid.add (discovering_label);
+        discovering_grid.add (spinner);
+
+        discovering_revealer = new Gtk.Revealer ();
+        discovering_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
+        discovering_revealer.add (discovering_grid);
+
+        var toolbar = new Gtk.ActionBar ();
         toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         toolbar.add (remove_button);
+        toolbar.add (discovering_revealer);
+
+        var grid = new Gtk.Grid ();
+        grid.orientation = Gtk.Orientation.VERTICAL;
+        grid.add (scrolled);
+        grid.add (toolbar);
+
+        var frame = new Gtk.Frame (null);
+        frame.add (grid);
 
         content_area.orientation = Gtk.Orientation.VERTICAL;
         content_area.row_spacing = 0;
         content_area.add (frame);
-        content_area.add (toolbar);
 
         margin = 12;
         margin_bottom = 0;
@@ -98,6 +118,20 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
 
         list_box.selected_rows_changed.connect (update_toolbar);
 
+        if (manager.retrieve_finished) {
+            complete_setup ();
+        } else {
+            manager.notify["retrieve-finished"].connect (complete_setup);
+        }
+
+        status_switch.notify["active"].connect (() => {
+            manager.set_global_state.begin (status_switch.active);
+        });
+
+        show_all ();
+    }
+
+    private void complete_setup () {
         foreach (var device in manager.get_devices ()) {
             var adapter = manager.get_adapter_from_path (device.adapter);
             var row = new DeviceRow (device, adapter);
@@ -105,7 +139,18 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             list_box.add (row);
         }
 
-        manager.device_added.connect ((device) => {
+        var first_row = list_box.get_row_at_index (0);
+        if (first_row != null) {
+            list_box.select_row (first_row);
+            list_box.row_activated (first_row);
+        }
+
+        update_description ();
+
+        status_switch.active = manager.is_powered;
+
+        /* Now retrieve finished, we can connect manager signals */
+       manager.device_added.connect ((device) => {
             var adapter = manager.get_adapter_from_path (device.adapter);
             var row = new DeviceRow (device, adapter);
             row.status_changed.connect (update_toolbar);
@@ -126,50 +171,27 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         });
 
         manager.adapter_added.connect ((adapter) => {
-            if (main_adapter == null) {
-                set_adapter (adapter);
-            }
+            update_description ();
         });
 
         manager.adapter_removed.connect ((adapter) => {
-            if (main_adapter == adapter) {
-                var _adapters = manager.get_adapters ();
-                if (!_adapters.is_empty) {
-                    set_adapter (_adapters.to_array ()[0]);
-                } else {
-                    main_adapter = null;
-                    quit_plug ();
-                }
+            if (!manager.has_object) {
+                quit_plug ();
+            } else {
+                update_description ();
             }
         });
 
-        if (manager.retrieve_finished) {
-            weak Gtk.ListBoxRow? first_row = list_box.get_row_at_index (0);
-            if (first_row != null) {
-                list_box.select_row (first_row);
-                list_box.row_activated (first_row);
-            }
-        } else {
-            manager.notify["retrieve-finished"].connect (() => {
-                weak Gtk.ListBoxRow? first_row = list_box.get_row_at_index (0);
-                if (first_row != null) {
-                    list_box.select_row (first_row);
-                    list_box.row_activated (first_row);
-                }
-            });
-        }
-
-        if (manager.has_object) {
-            set_adapter (manager.get_adapters ().to_array ()[0]);
-            status_switch.active = main_adapter.powered;
-        }
-
-        status_switch.notify["active"].connect (() => {
-            foreach (var adapter in manager.get_adapters ()) {
-                adapter.powered = status_switch.active;
-                adapter.discoverable = status_switch.active;
-            }
+        manager.notify["discoverable"].connect (() => {
+            update_description ();
         });
+
+        manager.notify["is-powered"].connect (() => {
+            update_description ();
+        });
+
+        manager.bind_property ("is-discovering", discovering_revealer, "reveal-child", GLib.BindingFlags.DEFAULT);
+        manager.bind_property ("is-powered", status_switch, "active", GLib.BindingFlags.DEFAULT);
 
         show_all ();
     }
@@ -184,43 +206,21 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         remove_button.sensitive = selected_row.device.paired;
     }
 
-    private void set_adapter (Services.Adapter adapter) {
-        if (main_adapter != null) {
-            (main_adapter as DBusProxy).g_properties_changed.disconnect (on_adapter_properties_changed);
-        }
-
-        main_adapter = adapter;
-        (main_adapter as DBusProxy).g_properties_changed.connect (on_adapter_properties_changed);
-        update_description (main_adapter.name, main_adapter.discoverable, main_adapter.powered);
-    }
-
-    private void on_adapter_properties_changed (DBusProxy proxy, Variant changed, string[] invalid) {
-        var adapter = (Services.Adapter)proxy;
-        var powered = changed.lookup_value ("Powered", new VariantType ("b"));
-        var name = changed.lookup_value ("Name", new VariantType ("s"));
-        var discoverable = changed.lookup_value ("Discoverable", new VariantType ("b"));
-        var discovering = changed.lookup_value ("Discovering", new VariantType ("b"));
-
-        if (powered != null) {
-            status_switch.active = adapter.powered;
-        }
-
-        if (powered != null || discoverable != null || name != null) {
-            update_description (adapter.name, adapter.discoverable, adapter.powered);
-        }
-
-        if (discovering != null) {
-            spinner.active = adapter.discovering;
-        }
-    }
-
-    private void update_description (string? name, bool discoverable, bool powered) {
-        if (discoverable && powered) {
+    private void update_description () {
+        string? name = manager.get_name ();
+        var powered = manager.is_powered;
+        if (powered && manager.discoverable) {
             description = DISCOVERABLE.printf (name ?? _("Unknown"));
         } else if (!powered) {
             description = POWERED_OFF;
         } else {
             description = UNDISCOVERABLE;
+        }
+
+        if (powered) {
+            icon_name = "bluetooth";
+        } else {
+            icon_name = "bluetooth-disabled";
         }
     }
 
@@ -266,22 +266,12 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
             row1.set_header (label);
         } else if (row2 == null || row1.device.paired != row2.device.paired) {
+            /* This header may not appear, so cannot contain discovery spinner */
             var label = new Gtk.Label (_("Nearby Devices"));
             label.hexpand = true;
             label.xalign = 0;
             label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
-
-            spinner = new Gtk.Spinner ();
-            spinner.halign = Gtk.Align.END;
-
-            var grid = new Gtk.Grid ();
-            grid.margin = 3;
-            grid.margin_end = 6;
-            grid.orientation = Gtk.Orientation.HORIZONTAL;
-            grid.add (label);
-            grid.add (spinner);
-            grid.show_all ();
-            row1.set_header (grid);
+            row1.set_header (label);
         } else {
             row1.set_header (null);
         }

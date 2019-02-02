@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
-  <id>io.elementary.switchboard-plug-bluetooth</id>
+  <id>io.elementary.switchboard.bluetooth</id>
   <extends>io.elementary.switchboard</extends>
   <name>Bluetooth</name>
   <summary>Configure Bluetooth Settings</summary>
