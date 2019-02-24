@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-27 19:44+0100\n"
-"PO-Revision-Date: 2019-02-24 08:10+0000\n"
+"PO-Revision-Date: 2019-02-25 00:00+0000\n"
 "Last-Translator: Rafael Bautista Martínez <iuninefrendor@gmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/es/>\n"
@@ -58,7 +58,7 @@ msgstr "Olvidar dispositivo seleccionado"
 
 #: src/MainView.vala:68
 msgid "Discovering"
-msgstr "Buscando…"
+msgstr "Buscando"
 
 #: src/MainView.vala:209
 msgid "Unknown"
