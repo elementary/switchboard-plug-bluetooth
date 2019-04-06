@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-27 19:44+0100\n"
-"PO-Revision-Date: 2018-05-25 22:47+0000\n"
-"Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
-"Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2019-03-30 22:52+0000\n"
+"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.5.1\n"
 "X-Launchpad-Export-Date: 2017-01-01 05:47+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:39
@@ -62,7 +62,7 @@ msgstr "Bağlantı kesiliyor ..."
 
 #: src/MainView.vala:209
 msgid "Unknown"
-msgstr "Bilinmeyen"
+msgstr "Bilinmiyor"
 
 #: src/MainView.vala:259
 msgid "Paired Devices"
@@ -87,11 +87,11 @@ msgstr "Bağlı"
 
 #: src/DeviceRow.vala:46
 msgid "Connecting…"
-msgstr "Bağlanılıyor ..."
+msgstr "Bağlanılıyor…"
 
 #: src/DeviceRow.vala:48
 msgid "Disconnecting…"
-msgstr "Bağlantı kesiliyor ..."
+msgstr "Bağlantı kesiliyor…"
 
 #: src/DeviceRow.vala:50
 msgid "Unable to Connnect"
