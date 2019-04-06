@@ -171,9 +171,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
         connect_button.clicked.connect (() => {
             button_clicked.begin ();
-            if (device.paired) {
-                device.trusted = true;
-            }
+            device.trusted = device.paired;
         });
     }
 
