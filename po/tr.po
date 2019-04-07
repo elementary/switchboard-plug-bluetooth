@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-27 19:44+0100\n"
-"PO-Revision-Date: 2019-03-30 22:52+0000\n"
+"PO-Revision-Date: 2019-04-08 00:53+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/tr/>\n"
@@ -26,21 +26,21 @@ msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr "Bluetooth Ayarlarını Yapılandırma"
+msgstr "Bluetooth ayarlarını yapılandırın"
 
 #: src/MainView.vala:23
 msgid "Not discoverable"
-msgstr "Keşfedilebilir değil"
+msgstr "Bulunamaz"
 
 #: src/MainView.vala:24
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr "Bluetooth kapalıyken keşfedilebilir değildir"
+msgstr "Bluetooth kapalıyken bulunamaz"
 
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
-"Şuan \"%s\" olarak keşfedilebilir durumda. Bu sayfa kapalıyken keşfedilemez"
+"Şu anda \"%s\" olarak bulunabilir durumda. Bu sayfa kapalıyken bulunamaz"
 
 #: src/MainView.vala:47
 msgid "No Devices Found"
@@ -56,9 +56,8 @@ msgid "Forget selected device"
 msgstr "Seçilen cihazı unut"
 
 #: src/MainView.vala:68
-#, fuzzy
 msgid "Discovering"
-msgstr "Bağlantı kesiliyor ..."
+msgstr "Bulunuyor"
 
 #: src/MainView.vala:209
 msgid "Unknown"
@@ -99,7 +98,7 @@ msgstr "Bağlanılamıyor"
 
 #: src/DeviceRow.vala:52
 msgid "Not Connected"
-msgstr "Bağlı değil"
+msgstr "Bağlı Değil"
 
 #: src/DeviceRow.vala:120
 msgid "Sound Settings"
