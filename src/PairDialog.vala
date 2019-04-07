@@ -16,39 +16,48 @@
  */
 
 public class PairDialog : Granite.MessageDialog {
-    public PairDialog (ObjectPath device) {
-        Object (
-            buttons: Gtk.ButtonsType.CANCEL,
-            image_icon: new ThemedIcon ("dialog-question"),
-            primary_text: _("Confirm Bluetooth Pairing"),
-            secondary_text: _("\"%s\" would like to pair with this device.").printf ("Helix-Sama")
-        );
-
-        var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
-        confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+    public enum AuthType {
+        CONFIRMATION,
+        PASSKEY,
+        PIN
     }
 
-    public PairDialog.with_passkey (ObjectPath device, uint32 passkey) {
+    public ObjectPath object_path { get; construct; }
+    public AuthType auth_type { get; construct; }
+
+    public PairDialog (ObjectPath object_path) {
         Object (
+            auth_type: AuthType.CONFIRMATION,
+            buttons: Gtk.ButtonsType.CANCEL,
+            image_icon: new ThemedIcon ("dialog-question"),
+            object_path: object_path,
+            primary_text: _("Confirm Bluetooth Pairing")
+        );
+    }
+
+    public PairDialog.with_passkey (ObjectPath object_path, uint32 passkey) {
+        Object (
+            auth_type: AuthType.PASSKEY,
             buttons: Gtk.ButtonsType.CANCEL,
             image_icon: new ThemedIcon ("dialog-information"),
-            primary_text: _("Confirm Bluetooth Passkey"),
-            secondary_text: _("Make sure the code displayed on \"%s\" matches the one below.").printf ("Helix-Sama")
+            object_path: object_path,
+            primary_text: _("Confirm Bluetooth Passkey")
         );
 
-        var passkey_label = new Gtk.Label ((passkey).to_string ());
+        var passkey_label = new Gtk.Label ("%u".printf (passkey));
         passkey_label.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
 
         custom_bin.add (passkey_label);
         custom_bin.show_all ();
     }
 
-    public PairDialog.with_pin_code (ObjectPath device, string pincode) {
+    public PairDialog.with_pin_code (ObjectPath object_path, string pincode) {
         Object (
+            auth_type: AuthType.PIN,
             buttons: Gtk.ButtonsType.CANCEL,
             image_icon: new ThemedIcon ("dialog-information"),
-            primary_text: _("Confirm Bluetooth PIN"),
-            secondary_text: _("Make sure the code displayed on \"%s\" matches the one below.").printf ("Helix-Sama")
+            object_path: object_path,
+            primary_text: _("Confirm Bluetooth PIN")
         );
 
         var pin_label = new Gtk.Label (pincode);
@@ -59,9 +68,32 @@ public class PairDialog : Granite.MessageDialog {
     }
 
     construct {
+        Bluetooth.Services.Device device = Bus.get_proxy_sync (BusType.SYSTEM, "org.bluez", object_path, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
+
+        switch (auth_type) {
+            case AuthType.CONFIRMATION:
+                secondary_text = _("“%s” would like to pair with this device.").printf (device.name ?? device.address);
+
+                var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
+                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+                break;
+            case AuthType.PASSKEY:
+                secondary_text = _("Make sure the code displayed on “%s” matches the one below.").printf (device.name ?? device.address);
+            case AuthType.PIN:
+                secondary_text = _("Type the code displayed below on “%s” and press Enter.").printf (device.name ?? device.address);
+                break;
+        }
+
         modal = true;
 
         response.connect (on_response);
+
+        (device as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
+            var paired = changed.lookup_value ("Paired", new VariantType ("b"));
+            if (paired != null && device.paired) {
+                destroy ();
+            }
+        });
     }
 
     private void on_response (Gtk.Dialog source, int response_id) {
