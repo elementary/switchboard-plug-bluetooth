@@ -25,12 +25,12 @@ public class PairDialog : Granite.MessageDialog {
 
     public ObjectPath object_path { get; construct; }
     public AuthType auth_type { get; construct; }
+    public string passkey { get; construct; }
 
     public PairDialog (ObjectPath object_path) {
         Object (
             auth_type: AuthType.NORMAL,
             buttons: Gtk.ButtonsType.CANCEL,
-            image_icon: new ThemedIcon ("dialog-question"),
             object_path: object_path,
             primary_text: _("Confirm Bluetooth Pairing")
         );
@@ -40,68 +40,61 @@ public class PairDialog : Granite.MessageDialog {
         Object (
             auth_type: AuthType.PASSKEY,
             buttons: Gtk.ButtonsType.CANCEL,
-            image_icon: new ThemedIcon ("dialog-information"),
             object_path: object_path,
+            passkey: "%u".printf (passkey),
             primary_text: _("Confirm Bluetooth Passkey")
         );
-
-        var passkey_label = new Gtk.Label ("%u".printf (passkey));
-        passkey_label.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
-
-        custom_bin.add (passkey_label);
-        custom_bin.show_all ();
     }
 
     public PairDialog.request_confirmation (ObjectPath object_path, uint32 passkey) {
         Object (
             auth_type: AuthType.CONFIRMATION,
             buttons: Gtk.ButtonsType.CANCEL,
-            image_icon: new ThemedIcon ("dialog-information"),
             object_path: object_path,
+            passkey: "%u".printf (passkey),
             primary_text: _("Confirm Bluetooth Passkey")
         );
-
-        var passkey_label = new Gtk.Label ("%u".printf (passkey));
-        passkey_label.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
-
-        custom_bin.add (passkey_label);
-        custom_bin.show_all ();
     }
 
     public PairDialog.with_pin_code (ObjectPath object_path, string pincode) {
         Object (
             auth_type: AuthType.PIN,
             buttons: Gtk.ButtonsType.CANCEL,
-            image_icon: new ThemedIcon ("dialog-information"),
             object_path: object_path,
+            passkey: pincode,
             primary_text: _("Confirm Bluetooth PIN")
         );
-
-        var pin_label = new Gtk.Label (pincode);
-        pin_label.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
-
-        custom_bin.add (pin_label);
-        custom_bin.show_all ();
     }
 
     construct {
-        Bluetooth.Services.Device device = Bus.get_proxy_sync (BusType.SYSTEM, "org.bluez", object_path, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
-
-        var device_name = device.name ?? device.address;
+        Bluetooth.Services.Device device;
+        string device_name = _("Unknown Bluetooth Device");
+        try {
+            device = Bus.get_proxy_sync (BusType.SYSTEM, "org.bluez", object_path, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
+            image_icon = new ThemedIcon (device.icon ?? "bluetooth");
+            device_name = device.name ?? device.address;
+        } catch (IOError e) {
+            image_icon = new ThemedIcon ("bluetooth");
+            critical (e.message);
+        }
 
         switch (auth_type) {
             case AuthType.CONFIRMATION:
+                //badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Make sure the code displayed on “%s” matches the one below.").printf (device_name);
                 break;
             case AuthType.PASSKEY:
+                //badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("“%s” would like to pair with this device. Make sure the code displayed on “%s” matches the one below.").printf (device_name, device_name);
 
                 var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
                 confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
             case AuthType.PIN:
+                //badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Type the code displayed below on “%s” and press Enter.").printf (device_name);
                 break;
             case AuthType.NORMAL:
+                //badge_icon = new ThemedIcon ("dialog-question");
                 secondary_text = _("“%s” would like to pair with this device.").printf (device_name);
 
                 var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
@@ -109,12 +102,20 @@ public class PairDialog : Granite.MessageDialog {
                 break;
         }
 
+        if (passkey != null && passkey != "") {
+            var passkey_label = new Gtk.Label (passkey);
+            passkey_label.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
+
+            custom_bin.add (passkey_label);
+            custom_bin.show_all ();
+        }
+
         modal = true;
 
         response.connect ((response_id) => {
             switch (response_id) {
                 case Gtk.ResponseType.ACCEPT:
-                    device.pair ();
+                    device.pair.begin ();
                     break;
                 case Gtk.ResponseType.CANCEL:
                     destroy ();
