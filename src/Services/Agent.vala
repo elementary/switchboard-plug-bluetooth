@@ -74,11 +74,12 @@ public class Bluetooth.Services.Agent : Object {
     }
 
     public void display_passkey (ObjectPath device, uint32 passkey, uint16 entered) throws Error {
-        
+        var pair_dialog = new PairDialog.display_passkey (device, passkey, entered);
+        pair_dialog.present ();
     }
 
     public void request_confirmation (ObjectPath device, uint32 passkey) throws Error, BluezError {
-        var pair_dialog = new PairDialog.with_passkey (device, passkey);
+        var pair_dialog = new PairDialog.request_confirmation (device, passkey);
         pair_dialog.present ();
     }
 
