@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-27 19:44+0100\n"
+"POT-Creation-Date: 2019-06-26 22:44+0200\n"
 "PO-Revision-Date: 2017-04-27 15:03+0000\n"
 "Last-Translator: marius.a <marius.albina@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard/"
@@ -60,16 +60,16 @@ msgstr "Ignoră dispozitivul selectat"
 msgid "Discovering"
 msgstr "Se deconectează…"
 
-#: src/MainView.vala:209
+#: src/MainView.vala:213
 msgid "Unknown"
 msgstr ""
 
-#: src/MainView.vala:259
+#: src/MainView.vala:263
 msgid "Paired Devices"
 msgstr ""
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:266
+#: src/MainView.vala:270
 msgid "Nearby Devices"
 msgstr ""
 
@@ -117,15 +117,15 @@ msgstr "Setări mouse și touchpad"
 msgid "Printer Settings"
 msgstr "Setări imprimantă"
 
-#: src/DeviceRow.vala:223
+#: src/DeviceRow.vala:224
 msgid "Pair"
 msgstr ""
 
-#: src/DeviceRow.vala:235
+#: src/DeviceRow.vala:236
 msgid "Disconnect"
 msgstr "Deconectează"
 
-#: src/DeviceRow.vala:253
+#: src/DeviceRow.vala:254
 msgid "Connect"
 msgstr "Conectează"
 

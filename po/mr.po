@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-27 19:44+0100\n"
+"POT-Creation-Date: 2019-06-26 22:44+0200\n"
 "PO-Revision-Date: 2019-01-06 17:19+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
@@ -57,16 +57,16 @@ msgstr "निवडलेले डिव्हाइस विसरून ज
 msgid "Discovering"
 msgstr "शोधत आहे"
 
-#: src/MainView.vala:209
+#: src/MainView.vala:213
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#: src/MainView.vala:259
+#: src/MainView.vala:263
 msgid "Paired Devices"
 msgstr "जोडलेले डिव्हाइसेस"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:266
+#: src/MainView.vala:270
 msgid "Nearby Devices"
 msgstr "जवळपासचे डिव्हाइसेस"
 
@@ -114,14 +114,14 @@ msgstr "माऊस आणि टचपॅड सेटिंग्ज"
 msgid "Printer Settings"
 msgstr "प्रिंटर सेटिंग्ज"
 
-#: src/DeviceRow.vala:223
+#: src/DeviceRow.vala:224
 msgid "Pair"
 msgstr "जोडा"
 
-#: src/DeviceRow.vala:235
+#: src/DeviceRow.vala:236
 msgid "Disconnect"
 msgstr "डिस्कनेक्ट करा"
 
-#: src/DeviceRow.vala:253
+#: src/DeviceRow.vala:254
 msgid "Connect"
 msgstr "कनेक्ट करा"

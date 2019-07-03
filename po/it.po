@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-27 19:44+0100\n"
+"POT-Creation-Date: 2019-06-26 22:44+0200\n"
 "PO-Revision-Date: 2018-05-13 09:57+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
@@ -61,16 +61,16 @@ msgstr "Dimentica dispositivo selezionato"
 msgid "Discovering"
 msgstr "Disconnessione in corso…"
 
-#: src/MainView.vala:209
+#: src/MainView.vala:213
 msgid "Unknown"
 msgstr "Sconosciuto"
 
-#: src/MainView.vala:259
+#: src/MainView.vala:263
 msgid "Paired Devices"
 msgstr "Dispositivi accoppiati"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:266
+#: src/MainView.vala:270
 msgid "Nearby Devices"
 msgstr "Dispositivi vicini"
 
@@ -118,15 +118,15 @@ msgstr "Impostazioni mouse e touchpad"
 msgid "Printer Settings"
 msgstr "Impostazioni di stampa"
 
-#: src/DeviceRow.vala:223
+#: src/DeviceRow.vala:224
 msgid "Pair"
 msgstr "Accoppia"
 
-#: src/DeviceRow.vala:235
+#: src/DeviceRow.vala:236
 msgid "Disconnect"
 msgstr "Disconnetti"
 
-#: src/DeviceRow.vala:253
+#: src/DeviceRow.vala:254
 msgid "Connect"
 msgstr "Connetti"
 
