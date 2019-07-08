@@ -80,21 +80,21 @@ public class PairDialog : Granite.MessageDialog {
 
         switch (auth_type) {
             case AuthType.CONFIRMATION:
-                //badge_icon = new ThemedIcon ("dialog-password");
+                badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Make sure the code displayed on “%s” matches the one below.").printf (device_name);
                 break;
             case AuthType.PASSKEY:
-                //badge_icon = new ThemedIcon ("dialog-password");
+                badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("“%s” would like to pair with this device. Make sure the code displayed on “%s” matches the one below.").printf (device_name, device_name);
 
                 var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
                 confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
             case AuthType.PIN:
-                //badge_icon = new ThemedIcon ("dialog-password");
+                badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Type the code displayed below on “%s”, followed by Enter.").printf (device_name);
                 break;
             case AuthType.NORMAL:
-                //badge_icon = new ThemedIcon ("dialog-question");
+                badge_icon = new ThemedIcon ("dialog-question");
                 secondary_text = _("“%s” would like to pair with this device.").printf (device_name);
 
                 var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
