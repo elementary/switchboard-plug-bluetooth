@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2019-07-31 16:32-0700\n"
 "PO-Revision-Date: 2018-05-16 13:48+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
@@ -72,6 +72,51 @@ msgstr "Spárovaná zařízení"
 msgid "Nearby Devices"
 msgstr "Zařízení v okolí"
 
+#: src/PairDialog.vala:35
+#, fuzzy
+msgid "Confirm Bluetooth Pairing"
+msgstr "Upravit nastavení Bluetooth"
+
+#: src/PairDialog.vala:45 src/PairDialog.vala:55
+#, fuzzy
+msgid "Confirm Bluetooth Passkey"
+msgstr "Upravit nastavení Bluetooth"
+
+#: src/PairDialog.vala:65
+#, fuzzy
+msgid "Enter Bluetooth PIN"
+msgstr "Bluetooth"
+
+#: src/PairDialog.vala:71
+msgid "Unknown Bluetooth Device"
+msgstr ""
+
+#: src/PairDialog.vala:84
+#, c-format
+msgid "Make sure the code displayed on “%s” matches the one below."
+msgstr ""
+
+#: src/PairDialog.vala:88
+#, c-format
+msgid ""
+"“%s” would like to pair with this device. Make sure the code displayed on "
+"“%s” matches the one below."
+msgstr ""
+
+#: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
+msgid "Pair"
+msgstr "Spárovat"
+
+#: src/PairDialog.vala:94
+#, c-format
+msgid "Type the code displayed below on “%s”, followed by Enter."
+msgstr ""
+
+#: src/PairDialog.vala:98
+#, c-format
+msgid "“%s” would like to pair with this device."
+msgstr ""
+
 #: src/DeviceRow.vala:40
 msgid "Available"
 msgstr "Dostupná"
@@ -115,10 +160,6 @@ msgstr "Nastavení myši a touchpadu"
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
 msgstr "Nastavení tiskárny"
-
-#: src/DeviceRow.vala:224
-msgid "Pair"
-msgstr "Spárovat"
 
 #: src/DeviceRow.vala:236
 msgid "Disconnect"

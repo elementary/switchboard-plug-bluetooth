@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2019-07-31 16:32-0700\n"
 "PO-Revision-Date: 2019-05-13 23:03+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -70,6 +70,51 @@ msgstr "연결된 장치"
 msgid "Nearby Devices"
 msgstr "주변의 장치"
 
+#: src/PairDialog.vala:35
+#, fuzzy
+msgid "Confirm Bluetooth Pairing"
+msgstr "블루투스 설정 관리"
+
+#: src/PairDialog.vala:45 src/PairDialog.vala:55
+#, fuzzy
+msgid "Confirm Bluetooth Passkey"
+msgstr "블루투스 설정 관리"
+
+#: src/PairDialog.vala:65
+#, fuzzy
+msgid "Enter Bluetooth PIN"
+msgstr "블루투스"
+
+#: src/PairDialog.vala:71
+msgid "Unknown Bluetooth Device"
+msgstr ""
+
+#: src/PairDialog.vala:84
+#, c-format
+msgid "Make sure the code displayed on “%s” matches the one below."
+msgstr ""
+
+#: src/PairDialog.vala:88
+#, c-format
+msgid ""
+"“%s” would like to pair with this device. Make sure the code displayed on "
+"“%s” matches the one below."
+msgstr ""
+
+#: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
+msgid "Pair"
+msgstr "연결"
+
+#: src/PairDialog.vala:94
+#, c-format
+msgid "Type the code displayed below on “%s”, followed by Enter."
+msgstr ""
+
+#: src/PairDialog.vala:98
+#, c-format
+msgid "“%s” would like to pair with this device."
+msgstr ""
+
 #: src/DeviceRow.vala:40
 msgid "Available"
 msgstr "사용 가능"
@@ -113,10 +158,6 @@ msgstr "마우스와 터치패드 설정"
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
 msgstr "프린터 설정"
-
-#: src/DeviceRow.vala:224
-msgid "Pair"
-msgstr "연결"
 
 #: src/DeviceRow.vala:236
 msgid "Disconnect"

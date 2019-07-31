@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bluetooth-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2019-07-31 16:32-0700\n"
 "PO-Revision-Date: 2018-05-27 16:06+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -74,6 +74,51 @@ msgstr "Dispozitive asociate"
 msgid "Nearby Devices"
 msgstr "Aparate din apropiere"
 
+#: src/PairDialog.vala:35
+#, fuzzy
+msgid "Confirm Bluetooth Pairing"
+msgstr "Configurați setările Bluetooth"
+
+#: src/PairDialog.vala:45 src/PairDialog.vala:55
+#, fuzzy
+msgid "Confirm Bluetooth Passkey"
+msgstr "Configurați setările Bluetooth"
+
+#: src/PairDialog.vala:65
+#, fuzzy
+msgid "Enter Bluetooth PIN"
+msgstr "Blue tooth"
+
+#: src/PairDialog.vala:71
+msgid "Unknown Bluetooth Device"
+msgstr ""
+
+#: src/PairDialog.vala:84
+#, c-format
+msgid "Make sure the code displayed on “%s” matches the one below."
+msgstr ""
+
+#: src/PairDialog.vala:88
+#, c-format
+msgid ""
+"“%s” would like to pair with this device. Make sure the code displayed on "
+"“%s” matches the one below."
+msgstr ""
+
+#: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
+msgid "Pair"
+msgstr "Pereche"
+
+#: src/PairDialog.vala:94
+#, c-format
+msgid "Type the code displayed below on “%s”, followed by Enter."
+msgstr ""
+
+#: src/PairDialog.vala:98
+#, c-format
+msgid "“%s” would like to pair with this device."
+msgstr ""
+
 #: src/DeviceRow.vala:40
 msgid "Available"
 msgstr "Disponibil"
@@ -117,10 +162,6 @@ msgstr "Setări ptr mouse și touchpad"
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
 msgstr "Setările imprimantei"
-
-#: src/DeviceRow.vala:224
-msgid "Pair"
-msgstr "Pereche"
 
 #: src/DeviceRow.vala:236
 msgid "Disconnect"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2019-07-31 16:32-0700\n"
 "PO-Revision-Date: 2019-01-06 16:23+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
@@ -71,6 +71,51 @@ msgstr "Paritetut laitteet"
 msgid "Nearby Devices"
 msgstr "Lähellä olevat laitteet"
 
+#: src/PairDialog.vala:35
+#, fuzzy
+msgid "Confirm Bluetooth Pairing"
+msgstr "Määritä Bluetooth-asetukset"
+
+#: src/PairDialog.vala:45 src/PairDialog.vala:55
+#, fuzzy
+msgid "Confirm Bluetooth Passkey"
+msgstr "Määritä Bluetooth-asetukset"
+
+#: src/PairDialog.vala:65
+#, fuzzy
+msgid "Enter Bluetooth PIN"
+msgstr "Bluetooth"
+
+#: src/PairDialog.vala:71
+msgid "Unknown Bluetooth Device"
+msgstr ""
+
+#: src/PairDialog.vala:84
+#, c-format
+msgid "Make sure the code displayed on “%s” matches the one below."
+msgstr ""
+
+#: src/PairDialog.vala:88
+#, c-format
+msgid ""
+"“%s” would like to pair with this device. Make sure the code displayed on "
+"“%s” matches the one below."
+msgstr ""
+
+#: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
+msgid "Pair"
+msgstr "Parita"
+
+#: src/PairDialog.vala:94
+#, c-format
+msgid "Type the code displayed below on “%s”, followed by Enter."
+msgstr ""
+
+#: src/PairDialog.vala:98
+#, c-format
+msgid "“%s” would like to pair with this device."
+msgstr ""
+
 #: src/DeviceRow.vala:40
 msgid "Available"
 msgstr "Käytettävissä"
@@ -114,10 +159,6 @@ msgstr "Hiiren ja kosketuslevyn asetukset"
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
 msgstr "Tulostimen asetukset"
-
-#: src/DeviceRow.vala:224
-msgid "Pair"
-msgstr "Parita"
 
 #: src/DeviceRow.vala:236
 msgid "Disconnect"

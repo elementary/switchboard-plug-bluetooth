@@ -1,5 +1,6 @@
 src/Plug.vala
 src/MainView.vala
+src/PairDialog.vala
 src/DeviceRow.vala
 src/Services/Manager.vala
 src/Services/Device.vala

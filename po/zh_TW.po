@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2019-07-31 16:32-0700\n"
 "PO-Revision-Date: 2018-04-02 16:14+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
@@ -71,6 +71,51 @@ msgstr "已配對的裝置"
 msgid "Nearby Devices"
 msgstr "鄰近的裝置"
 
+#: src/PairDialog.vala:35
+#, fuzzy
+msgid "Confirm Bluetooth Pairing"
+msgstr "藍芽設定"
+
+#: src/PairDialog.vala:45 src/PairDialog.vala:55
+#, fuzzy
+msgid "Confirm Bluetooth Passkey"
+msgstr "藍芽設定"
+
+#: src/PairDialog.vala:65
+#, fuzzy
+msgid "Enter Bluetooth PIN"
+msgstr "藍芽"
+
+#: src/PairDialog.vala:71
+msgid "Unknown Bluetooth Device"
+msgstr ""
+
+#: src/PairDialog.vala:84
+#, c-format
+msgid "Make sure the code displayed on “%s” matches the one below."
+msgstr ""
+
+#: src/PairDialog.vala:88
+#, c-format
+msgid ""
+"“%s” would like to pair with this device. Make sure the code displayed on "
+"“%s” matches the one below."
+msgstr ""
+
+#: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
+msgid "Pair"
+msgstr "配對"
+
+#: src/PairDialog.vala:94
+#, c-format
+msgid "Type the code displayed below on “%s”, followed by Enter."
+msgstr ""
+
+#: src/PairDialog.vala:98
+#, c-format
+msgid "“%s” would like to pair with this device."
+msgstr ""
+
 #: src/DeviceRow.vala:40
 msgid "Available"
 msgstr "可用"
@@ -114,10 +159,6 @@ msgstr "滑鼠與觸控板設定"
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
 msgstr "印表機設定"
-
-#: src/DeviceRow.vala:224
-msgid "Pair"
-msgstr "配對"
 
 #: src/DeviceRow.vala:236
 msgid "Disconnect"
