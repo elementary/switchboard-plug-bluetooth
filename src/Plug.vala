@@ -46,10 +46,12 @@ public class Bluetooth.Plug : Switchboard.Plug {
     }
 
     public override void shown () {
+        manager.register_agent.begin ();
         manager.set_global_state.begin (true); /* Also sets discoverable true and starts discovery */
     }
 
     public override void hidden () {
+        manager.unregister_agent.begin ();
         manager.discoverable = false; /* Does not change is_powered or connections*/
         manager.stop_discovery.begin ();
     }
