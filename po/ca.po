@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-31 16:32-0700\n"
-"PO-Revision-Date: 2018-12-28 09:14+0000\n"
+"PO-Revision-Date: 2019-08-29 17:22+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:39
@@ -74,28 +74,26 @@ msgid "Nearby Devices"
 msgstr "Dispositius propers"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Configureu els paràmetres del Bluetooth"
+msgstr "Confirmeu l'aparellament de Bluetooth"
 
 #: src/PairDialog.vala:45 src/PairDialog.vala:55
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Configureu els paràmetres del Bluetooth"
+msgstr "Confirmeu la contrasenya del Bluetooth"
 
 #: src/PairDialog.vala:65
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Introduïu el PIN del Bluetooth"
 
 #: src/PairDialog.vala:71
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Dispositiu de Bluetooth desconegut"
 
 #: src/PairDialog.vala:84
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
+"Assegureu-vos que el codi que es mostra a %s coincideixi amb el següent:"
 
 #: src/PairDialog.vala:88
 #, c-format
@@ -103,6 +101,8 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"“%s” voldria aparellar-se amb aquest dispositiu. Assegureu-vos que el codi "
+"que es mostra a %s coincideixi amb el següent:"
 
 #: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
 msgid "Pair"
@@ -111,12 +111,12 @@ msgstr "Emparella"
 #: src/PairDialog.vala:94
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "Introduïu el codi que es mostra a continuació a %s, seguit de Retorn."
 
 #: src/PairDialog.vala:98
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "“%s” voldria aparellar-se amb aquest dispositiu."
 
 #: src/DeviceRow.vala:40
 msgid "Available"
