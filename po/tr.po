@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-31 16:32-0700\n"
-"PO-Revision-Date: 2019-05-13 23:03+0000\n"
+"PO-Revision-Date: 2019-08-30 21:22+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-01-01 05:47+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:39
@@ -44,16 +44,16 @@ msgstr ""
 
 #: src/MainView.vala:47
 msgid "No Devices Found"
-msgstr "Hiçbir Cihaz Bulunamadı"
+msgstr "Hiçbir Aygıt Bulunamadı"
 
 #: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
-"Lütfen cihazlarınızın görünür ve eşleştirmeye hazır olduğundan emin olun."
+"Lütfen aygıtlarınızın görünür ve eşleştirmeye hazır olduğundan emin olun."
 
 #: src/MainView.vala:66
 msgid "Forget selected device"
-msgstr "Seçilen cihazı unut"
+msgstr "Seçilen aygıtı unut"
 
 #: src/MainView.vala:68
 msgid "Discovering"
@@ -65,36 +65,35 @@ msgstr "Bilinmiyor"
 
 #: src/MainView.vala:263
 msgid "Paired Devices"
-msgstr "Eşleşmiş Cihazlar"
+msgstr "Eşleştirilen Aygıtlar"
 
 #. This header may not appear, so cannot contain discovery spinner
 #: src/MainView.vala:270
 msgid "Nearby Devices"
-msgstr "Yakındaki Cihazlar"
+msgstr "Yakındaki Aygıtlar"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Bluetooth Ayarlarını Yapılandırın"
+msgstr "Bluetooth Eşleştirmesini Onaylayın"
 
 #: src/PairDialog.vala:45 src/PairDialog.vala:55
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Bluetooth Ayarlarını Yapılandırın"
+msgstr "Bluetooth Geçiş Anahtarını Onaylayın"
 
 #: src/PairDialog.vala:65
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Bluetooth PIN Kodunu Girin"
 
 #: src/PairDialog.vala:71
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Bilinmeyen Bluetooth Aygıtı"
 
 #: src/PairDialog.vala:84
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
+"\"%s\" aygıtında görüntülenen kodun aşağıdaki kodla aynı olduğundan emin "
+"olun."
 
 #: src/PairDialog.vala:88
 #, c-format
@@ -102,6 +101,8 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"“%s” bu aygıt ile eşleştirmek istiyor. \"%s\" aygıtında görüntülenen kodun "
+"aşağıdaki kodla aynı olduğundan emin olun."
 
 #: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
 msgid "Pair"
@@ -111,11 +112,12 @@ msgstr "Eşleştir"
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
+"Aşağıda \"%s\" üzerinde gösterilen kodu yazın ve ardından Enter tuşuna basın."
 
 #: src/PairDialog.vala:98
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "“%s” bu aygıt ile eşleştirmek istiyor."
 
 #: src/DeviceRow.vala:40
 msgid "Available"
