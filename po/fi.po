@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-31 16:32-0700\n"
-"PO-Revision-Date: 2019-01-06 16:23+0000\n"
+"PO-Revision-Date: 2019-09-02 20:22+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-12-21 05:43+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:39
@@ -72,9 +72,8 @@ msgid "Nearby Devices"
 msgstr "Lähellä olevat laitteet"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Määritä Bluetooth-asetukset"
+msgstr "Vahvista Bluetooth-paritus"
 
 #: src/PairDialog.vala:45 src/PairDialog.vala:55
 #, fuzzy
@@ -82,13 +81,12 @@ msgid "Confirm Bluetooth Passkey"
 msgstr "Määritä Bluetooth-asetukset"
 
 #: src/PairDialog.vala:65
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Anna Bluetoothin PIN"
 
 #: src/PairDialog.vala:71
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Tuntematon Bluetooth-laite"
 
 #: src/PairDialog.vala:84
 #, c-format
@@ -114,7 +112,7 @@ msgstr ""
 #: src/PairDialog.vala:98
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "“%s” haluaa muodostaa parin tämän laitteen kanssa."
 
 #: src/DeviceRow.vala:40
 msgid "Available"
