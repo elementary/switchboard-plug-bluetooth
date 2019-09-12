@@ -18,8 +18,7 @@
  */
 
 [DBus (name = "org.bluez.Error")]
-public errordomain BluezError
-{
+public errordomain BluezError {
     REJECTED,
     CANCELED
 }
@@ -69,7 +68,6 @@ public class Bluetooth.Services.Agent : Object {
     }
 
     public uint32 request_passkey (ObjectPath device) throws Error, BluezError {
-        
         return 0;
     }
 
@@ -89,10 +87,8 @@ public class Bluetooth.Services.Agent : Object {
     }
 
     public void authorize_service (ObjectPath device, string uuid) throws Error, BluezError {
-        
     }
 
     public void cancel () throws Error {
-        
     }
 }

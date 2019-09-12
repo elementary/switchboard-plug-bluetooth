@@ -20,9 +20,9 @@
  */
 
 public class Bluetooth.MainView : Granite.SimpleSettingsPage {
-    private string UNDISCOVERABLE = _("Not discoverable");
-    private string POWERED_OFF = _("Not discoverable while Bluetooth is powered off");
-    private string DISCOVERABLE = _("Now discoverable as \"%s\". Not discoverable when this page is closed"); //TRANSLATORS: \"%s\" represents the name of the adapter
+    private const string UNDISCOVERABLE = _("Not discoverable");
+    private const string POWERED_OFF = _("Not discoverable while Bluetooth is powered off");
+    private const string DISCOVERABLE = _("Now discoverable as \"%s\". Not discoverable when this page is closed"); //TRANSLATORS: \"%s\" represents the name of the adapter
 
     private Gtk.ListBox list_box;
     private Gtk.Button remove_button;

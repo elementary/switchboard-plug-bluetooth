@@ -47,7 +47,7 @@ public class Bluetooth.Services.ObjectManager : Object {
     public bool is_discovering {get; private set; default = false; }
     public bool is_powered {get; private set; default = false; }
     public bool is_connected {get; private set; default = false; }
-    
+
     private bool is_registered = false;
 
     private Settings? settings = null;
