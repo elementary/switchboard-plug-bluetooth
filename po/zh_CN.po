@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-31 16:32-0700\n"
-"PO-Revision-Date: 2019-04-06 17:03+0000\n"
+"PO-Revision-Date: 2019-09-17 09:22+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-bluetooth/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.5.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-12-21 05:43+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:39
@@ -71,35 +71,32 @@ msgid "Nearby Devices"
 msgstr "附近的设备"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "配置蓝牙设置"
+msgstr "确认蓝牙匹配"
 
 #: src/PairDialog.vala:45 src/PairDialog.vala:55
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "配置蓝牙设置"
+msgstr "确认匹配代码"
 
 #: src/PairDialog.vala:65
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "蓝牙"
+msgstr "输入蓝牙 PIN 码"
 
 #: src/PairDialog.vala:71
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "未知蓝牙设备"
 
 #: src/PairDialog.vala:84
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
+msgstr "确保 “%s” 上显示的代码和以下代码相符。"
 
 #: src/PairDialog.vala:88
 #, c-format
 msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
-msgstr ""
+msgstr "“%s” 正尝试匹配此设备。确保 “%s” 上显示的代码和以下代码相符。"
 
 #: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
 msgid "Pair"
@@ -108,12 +105,12 @@ msgstr "匹配"
 #: src/PairDialog.vala:94
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "键入 “%s” 上显示的代码，然后回车。"
 
 #: src/PairDialog.vala:98
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "“%s” 正尝试匹配此设备。"
 
 #: src/DeviceRow.vala:40
 msgid "Available"
