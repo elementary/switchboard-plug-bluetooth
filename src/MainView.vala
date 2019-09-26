@@ -20,10 +20,6 @@
  */
 
 public class Bluetooth.MainView : Granite.SimpleSettingsPage {
-    private string UNDISCOVERABLE = _("Not discoverable");
-    private string POWERED_OFF = _("Not discoverable while Bluetooth is powered off");
-    private string DISCOVERABLE = _("Now discoverable as \"%s\". Not discoverable when this page is closed"); //TRANSLATORS: \"%s\" represents the name of the adapter
-
     private Gtk.ListBox list_box;
     private Gtk.Button remove_button;
     private Gtk.Revealer discovering_revealer;
@@ -210,11 +206,12 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         string? name = manager.get_name ();
         var powered = manager.is_powered;
         if (powered && manager.discoverable) {
-            description = DISCOVERABLE.printf (name ?? _("Unknown"));
+            //TRANSLATORS: \"%s\" represents the name of the adapter
+            description = _("Now discoverable as \"%s\". Not discoverable when this page is closed").printf (name ?? _("Unknown"));
         } else if (!powered) {
-            description = POWERED_OFF;
+            description = _("Not discoverable while Bluetooth is powered off");
         } else {
-            description = UNDISCOVERABLE;
+            description = _("Not discoverable");
         }
 
         if (powered) {
