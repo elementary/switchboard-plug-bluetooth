@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-31 16:32-0700\n"
-"PO-Revision-Date: 2019-09-06 15:22+0000\n"
-"Last-Translator: Daniel <riesp@protonmail.com>\n"
+"PO-Revision-Date: 2019-09-30 14:23+0000\n"
+"Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/gl/>\n"
 "Language: gl\n"
@@ -30,66 +30,71 @@ msgstr "Configurar axustes de Bluetooth"
 
 #: src/MainView.vala:23
 msgid "Not discoverable"
-msgstr ""
+msgstr "Non detectábel"
 
 #: src/MainView.vala:24
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "Non detectábel mentres Bluetooth está apagado"
 
 #: src/MainView.vala:25
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
+"Agora detectábel como \"%s\". Non detectábel cando esta páxina está pechada"
 
 #: src/MainView.vala:47
 msgid "No Devices Found"
-msgstr ""
+msgstr "Non se encontraron dispositivos"
 
 #: src/MainView.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
+"Asegúrese de que os seus dispositivos estean visíbeis e listos para o "
+"emparellamento."
 
 #: src/MainView.vala:66
 msgid "Forget selected device"
-msgstr ""
+msgstr "Esquecer dispositivo seleccionado"
 
 #: src/MainView.vala:68
 msgid "Discovering"
-msgstr ""
+msgstr "Procurando"
 
 #: src/MainView.vala:213
 msgid "Unknown"
-msgstr ""
+msgstr "Descoñecido"
 
 #: src/MainView.vala:263
 msgid "Paired Devices"
-msgstr ""
+msgstr "Dispositivos emparellados"
 
 #. This header may not appear, so cannot contain discovery spinner
 #: src/MainView.vala:270
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Dispositivos próximos"
 
 #: src/PairDialog.vala:35
 msgid "Confirm Bluetooth Pairing"
-msgstr ""
+msgstr "Confirmar o emparellamento Bluetooth"
 
 #: src/PairDialog.vala:45 src/PairDialog.vala:55
 msgid "Confirm Bluetooth Passkey"
-msgstr ""
+msgstr "Confirmar a clave de acceso Bluetooth"
 
 #: src/PairDialog.vala:65
 msgid "Enter Bluetooth PIN"
-msgstr ""
+msgstr "Introducir PIN Bluetooth"
 
 #: src/PairDialog.vala:71
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Dispositivo Bluetooth descoñecido"
 
 #: src/PairDialog.vala:84
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
+"Asegúrese de que o código que aparece en \"%s\" coincide co que aparece a "
+"continuación."
 
 #: src/PairDialog.vala:88
 #, c-format
@@ -97,69 +102,73 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"\"%s\" quere emparellar con este dispositivo. Asegúrese de que o código que "
+"aparece en \"%s\" coincide co que aparece a continuación."
 
 #: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
 msgid "Pair"
-msgstr ""
+msgstr "Par"
 
 #: src/PairDialog.vala:94
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
+"Escriba o código que aparece a continuación en \"%s\", seguido da tecla "
+"Enter."
 
 #: src/PairDialog.vala:98
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "\"%s\" quere emparellar con este dispositivo."
 
 #: src/DeviceRow.vala:40
 msgid "Available"
-msgstr ""
+msgstr "Dispoñíbel"
 
 #: src/DeviceRow.vala:42
 msgid "Pairing…"
-msgstr ""
+msgstr "Emparellamento…"
 
 #: src/DeviceRow.vala:44
 msgid "Connected"
-msgstr ""
+msgstr "Conectado"
 
 #: src/DeviceRow.vala:46
 msgid "Connecting…"
-msgstr ""
+msgstr "Conectando…"
 
 #: src/DeviceRow.vala:48
 msgid "Disconnecting…"
-msgstr ""
+msgstr "Desconectando…"
 
 #: src/DeviceRow.vala:50
 msgid "Unable to Connnect"
-msgstr ""
+msgstr "Non foi posíbel conectarse"
 
 #: src/DeviceRow.vala:52
 msgid "Not Connected"
-msgstr ""
+msgstr "Non conectado"
 
 #: src/DeviceRow.vala:120
 msgid "Sound Settings"
-msgstr ""
+msgstr "Configuración de son"
 
 #: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "Configuración de teclado"
 
 #: src/DeviceRow.vala:129
 msgid "Mouse & Touchpad Settings"
-msgstr ""
+msgstr "Configuración de rato e panel táctil"
 
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
-msgstr ""
+msgstr "Configuración da impresora"
 
 #: src/DeviceRow.vala:236
 msgid "Disconnect"
-msgstr ""
+msgstr "Desconectar"
 
 #: src/DeviceRow.vala:254
 msgid "Connect"
-msgstr ""
+msgstr "Conectar"
