@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-31 16:32-0700\n"
-"PO-Revision-Date: 2019-10-09 18:23+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"PO-Revision-Date: 2019-10-21 14:23+0000\n"
+"Last-Translator: derkomai <dvilelaf@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/es/>\n"
 "Language: es\n"
@@ -119,7 +119,7 @@ msgstr ""
 #: src/PairDialog.vala:98
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr "«%s» quiere emparejar con este dispositivo."
+msgstr "«%s» quiere emparejarse con este dispositivo."
 
 #: src/DeviceRow.vala:40
 msgid "Available"
@@ -127,7 +127,7 @@ msgstr "Disponible"
 
 #: src/DeviceRow.vala:42
 msgid "Pairing…"
-msgstr "Emparejamiento…"
+msgstr "Emparejando…"
 
 #: src/DeviceRow.vala:44
 msgid "Connected"
@@ -151,7 +151,7 @@ msgstr "No Conectado"
 
 #: src/DeviceRow.vala:120
 msgid "Sound Settings"
-msgstr "Configuración del Sonido"
+msgstr "Configuración de Sonido"
 
 #: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
