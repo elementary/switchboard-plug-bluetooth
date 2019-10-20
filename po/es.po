@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-31 16:32-0700\n"
 "PO-Revision-Date: 2019-10-21 14:23+0000\n"
-"Last-Translator: derkomai <dvilelaf@gmail.com>\n"
+"Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/es/>\n"
 "Language: es\n"
@@ -155,7 +155,7 @@ msgstr "Configuración de Sonido"
 
 #: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
-msgstr "Configuración del Teclado"
+msgstr "Configuración de Teclado"
 
 #: src/DeviceRow.vala:129
 msgid "Mouse & Touchpad Settings"
