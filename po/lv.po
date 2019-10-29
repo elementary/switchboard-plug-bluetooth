@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 16:32-0700\n"
+"POT-Creation-Date: 2019-10-29 15:38-0700\n"
 "PO-Revision-Date: 2016-12-15 05:28+0000\n"
 "Last-Translator: Gatis Kalnins <gatis.kalnins@metatrons.lv>\n"
 "Language-Team: Latvian <lv@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: src/Plug.vala:30 src/MainView.vala:39
+#: src/Plug.vala:30 src/MainView.vala:35
 msgid "Bluetooth"
 msgstr ""
 
@@ -26,45 +26,46 @@ msgstr ""
 msgid "Configure Bluetooth Settings"
 msgstr ""
 
-#: src/MainView.vala:23
-msgid "Not discoverable"
+#: src/MainView.vala:43
+msgid "No Devices Found"
 msgstr ""
 
-#: src/MainView.vala:24
-msgid "Not discoverable while Bluetooth is powered off"
+#: src/MainView.vala:44
+msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 
-#: src/MainView.vala:25
+#: src/MainView.vala:62
+msgid "Forget selected device"
+msgstr ""
+
+#: src/MainView.vala:64
+msgid "Discovering"
+msgstr ""
+
+#. TRANSLATORS: \"%s\" represents the name of the adapter
+#: src/MainView.vala:210
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 
-#: src/MainView.vala:47
-msgid "No Devices Found"
-msgstr ""
-
-#: src/MainView.vala:48
-msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
-
-#: src/MainView.vala:66
-msgid "Forget selected device"
-msgstr ""
-
-#: src/MainView.vala:68
-msgid "Discovering"
-msgstr ""
-
-#: src/MainView.vala:213
+#: src/MainView.vala:210
 msgid "Unknown"
 msgstr ""
 
-#: src/MainView.vala:263
+#: src/MainView.vala:212
+msgid "Not discoverable while Bluetooth is powered off"
+msgstr ""
+
+#: src/MainView.vala:214
+msgid "Not discoverable"
+msgstr ""
+
+#: src/MainView.vala:260
 msgid "Paired Devices"
 msgstr ""
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:270
+#: src/MainView.vala:267
 msgid "Nearby Devices"
 msgstr ""
 

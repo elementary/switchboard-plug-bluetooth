@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 16:32-0700\n"
+"POT-Creation-Date: 2019-10-29 15:38-0700\n"
 "PO-Revision-Date: 2017-04-27 15:03+0000\n"
 "Last-Translator: marius.a <marius.albina@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard/"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-01-27 06:39+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:39
+#: src/Plug.vala:30 src/MainView.vala:35
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -29,47 +29,48 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Configurează setările Bluetooth"
 
-#: src/MainView.vala:23
-#, fuzzy
-msgid "Not discoverable"
-msgstr "Acum detectabil ca „%s\""
-
-#: src/MainView.vala:24
-msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
-
-#: src/MainView.vala:25
-#, c-format
-msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr ""
-
-#: src/MainView.vala:47
+#: src/MainView.vala:43
 msgid "No Devices Found"
 msgstr ""
 
-#: src/MainView.vala:48
+#: src/MainView.vala:44
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 
-#: src/MainView.vala:66
+#: src/MainView.vala:62
 msgid "Forget selected device"
 msgstr "Ignoră dispozitivul selectat"
 
-#: src/MainView.vala:68
+#: src/MainView.vala:64
 #, fuzzy
 msgid "Discovering"
 msgstr "Se deconectează…"
 
-#: src/MainView.vala:213
+#. TRANSLATORS: \"%s\" represents the name of the adapter
+#: src/MainView.vala:210
+#, c-format
+msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
+msgstr ""
+
+#: src/MainView.vala:210
 msgid "Unknown"
 msgstr ""
 
-#: src/MainView.vala:263
+#: src/MainView.vala:212
+msgid "Not discoverable while Bluetooth is powered off"
+msgstr ""
+
+#: src/MainView.vala:214
+#, fuzzy
+msgid "Not discoverable"
+msgstr "Acum detectabil ca „%s\""
+
+#: src/MainView.vala:260
 msgid "Paired Devices"
 msgstr ""
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:270
+#: src/MainView.vala:267
 msgid "Nearby Devices"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 16:32-0700\n"
+"POT-Creation-Date: 2019-10-29 15:38-0700\n"
 "PO-Revision-Date: 2019-09-01 01:22+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:39
+#: src/Plug.vala:30 src/MainView.vala:35
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -28,48 +28,49 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Configurações de Bluetooth"
 
-#: src/MainView.vala:23
-msgid "Not discoverable"
-msgstr "Não detectável"
-
-#: src/MainView.vala:24
-msgid "Not discoverable while Bluetooth is powered off"
-msgstr "Não detectável enquanto o Bluetooth estiver desligado"
-
-#: src/MainView.vala:25
-#, c-format
-msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr ""
-"Agora visível como \"%s\". Não visível quando esta pagina estiver fechada"
-
-#: src/MainView.vala:47
+#: src/MainView.vala:43
 msgid "No Devices Found"
 msgstr "Nenhum dispositivo encontrado"
 
-#: src/MainView.vala:48
+#: src/MainView.vala:44
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Por favor tenha certeza que seus dispositivos estão visíveis e prontos para "
 "pareamento."
 
-#: src/MainView.vala:66
+#: src/MainView.vala:62
 msgid "Forget selected device"
 msgstr "Esquecer dispositivo selecionado"
 
-#: src/MainView.vala:68
+#: src/MainView.vala:64
 msgid "Discovering"
 msgstr "Encontrando"
 
-#: src/MainView.vala:213
+#. TRANSLATORS: \"%s\" represents the name of the adapter
+#: src/MainView.vala:210
+#, c-format
+msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
+msgstr ""
+"Agora visível como \"%s\". Não visível quando esta pagina estiver fechada"
+
+#: src/MainView.vala:210
 msgid "Unknown"
 msgstr "Desconhecido"
 
-#: src/MainView.vala:263
+#: src/MainView.vala:212
+msgid "Not discoverable while Bluetooth is powered off"
+msgstr "Não detectável enquanto o Bluetooth estiver desligado"
+
+#: src/MainView.vala:214
+msgid "Not discoverable"
+msgstr "Não detectável"
+
+#: src/MainView.vala:260
 msgid "Paired Devices"
 msgstr "Dispositivos pareados"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:270
+#: src/MainView.vala:267
 msgid "Nearby Devices"
 msgstr "Dispositivos próximos"
 

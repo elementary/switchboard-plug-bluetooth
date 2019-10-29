@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 16:32-0700\n"
+"POT-Creation-Date: 2019-10-29 15:38-0700\n"
 "PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:39
+#: src/Plug.vala:30 src/MainView.vala:35
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -28,48 +28,49 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Bluetooth eszközök beállítása"
 
-#: src/MainView.vala:23
-msgid "Not discoverable"
-msgstr "Nem észlelhető"
-
-#: src/MainView.vala:24
-msgid "Not discoverable while Bluetooth is powered off"
-msgstr "Nem észlelhető, amíg a Bluetooth ki van kapcsolva"
-
-#: src/MainView.vala:25
-#, c-format
-msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr "Most látható mint \"%s\". Nem lesz látható ha bezárja ezt az oldalt"
-
-#: src/MainView.vala:47
+#: src/MainView.vala:43
 msgid "No Devices Found"
 msgstr "Nem találhatók eszközök"
 
-#: src/MainView.vala:48
+#: src/MainView.vala:44
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Győződjön meg róla, hogy a készülékek láthatóak és készen állnak a "
 "párosításra."
 
-#: src/MainView.vala:66
+#: src/MainView.vala:62
 msgid "Forget selected device"
 msgstr "Kijelölt eszköz elfelejtése"
 
-#: src/MainView.vala:68
+#: src/MainView.vala:64
 #, fuzzy
 msgid "Discovering"
 msgstr "Kapcsolat bontása…"
 
-#: src/MainView.vala:213
+#. TRANSLATORS: \"%s\" represents the name of the adapter
+#: src/MainView.vala:210
+#, c-format
+msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
+msgstr "Most látható mint \"%s\". Nem lesz látható ha bezárja ezt az oldalt"
+
+#: src/MainView.vala:210
 msgid "Unknown"
 msgstr "Ismeretlen"
 
-#: src/MainView.vala:263
+#: src/MainView.vala:212
+msgid "Not discoverable while Bluetooth is powered off"
+msgstr "Nem észlelhető, amíg a Bluetooth ki van kapcsolva"
+
+#: src/MainView.vala:214
+msgid "Not discoverable"
+msgstr "Nem észlelhető"
+
+#: src/MainView.vala:260
 msgid "Paired Devices"
 msgstr "Párosított eszközök"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:270
+#: src/MainView.vala:267
 msgid "Nearby Devices"
 msgstr "Közeli eszközök"
 

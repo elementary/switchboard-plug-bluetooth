@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bluetooth-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 16:32-0700\n"
+"POT-Creation-Date: 2019-10-29 15:38-0700\n"
 "PO-Revision-Date: 2018-05-27 16:06+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/Plug.vala:30 src/MainView.vala:39
+#: src/Plug.vala:30 src/MainView.vala:35
 msgid "Bluetooth"
 msgstr "Blue tooth"
 
@@ -27,50 +27,51 @@ msgstr "Blue tooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Configurați setările Bluetooth"
 
-#: src/MainView.vala:23
-msgid "Not discoverable"
-msgstr "Nu poate fi descoperit"
+#: src/MainView.vala:43
+msgid "No Devices Found"
+msgstr "Nu au fost găsite dispozitive"
 
-#: src/MainView.vala:24
-msgid "Not discoverable while Bluetooth is powered off"
-msgstr "Nu poate fi descoperit în timp ce Bluetooth este oprit"
+#: src/MainView.vala:44
+msgid "Please ensure that your devices are visible and ready for pairing."
+msgstr ""
+"Asigurați-vă că dispozitivele dvs. sunt vizibile și sunt pregătite pentru "
+"împerechere."
 
-#: src/MainView.vala:25
+#: src/MainView.vala:62
+msgid "Forget selected device"
+msgstr "Uitați dispozitivul selectat"
+
+#: src/MainView.vala:64
+#, fuzzy
+msgid "Discovering"
+msgstr "Se deconectează …"
+
+#. TRANSLATORS: \"%s\" represents the name of the adapter
+#: src/MainView.vala:210
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Acum descoperit ca \"%s 1\". Nu poate fi detectat când această pagină este "
 "închisă"
 
-#: src/MainView.vala:47
-msgid "No Devices Found"
-msgstr "Nu au fost găsite dispozitive"
-
-#: src/MainView.vala:48
-msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
-"Asigurați-vă că dispozitivele dvs. sunt vizibile și sunt pregătite pentru "
-"împerechere."
-
-#: src/MainView.vala:66
-msgid "Forget selected device"
-msgstr "Uitați dispozitivul selectat"
-
-#: src/MainView.vala:68
-#, fuzzy
-msgid "Discovering"
-msgstr "Se deconectează …"
-
-#: src/MainView.vala:213
+#: src/MainView.vala:210
 msgid "Unknown"
 msgstr "Necunoscut"
 
-#: src/MainView.vala:263
+#: src/MainView.vala:212
+msgid "Not discoverable while Bluetooth is powered off"
+msgstr "Nu poate fi descoperit în timp ce Bluetooth este oprit"
+
+#: src/MainView.vala:214
+msgid "Not discoverable"
+msgstr "Nu poate fi descoperit"
+
+#: src/MainView.vala:260
 msgid "Paired Devices"
 msgstr "Dispozitive asociate"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:270
+#: src/MainView.vala:267
 msgid "Nearby Devices"
 msgstr "Aparate din apropiere"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 16:32-0700\n"
+"POT-Creation-Date: 2019-10-29 15:38-0700\n"
 "PO-Revision-Date: 2019-01-07 00:03+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:39
+#: src/Plug.vala:30 src/MainView.vala:35
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -28,46 +28,47 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Konfigurer Bluetooth-innstillingar"
 
-#: src/MainView.vala:23
-msgid "Not discoverable"
-msgstr "Kan ikkje finnast"
+#: src/MainView.vala:43
+msgid "No Devices Found"
+msgstr "Fann ingen einingar"
 
-#: src/MainView.vala:24
-msgid "Not discoverable while Bluetooth is powered off"
-msgstr "Kan ikkje finnast når Bluetooth er avslått"
+#: src/MainView.vala:44
+msgid "Please ensure that your devices are visible and ready for pairing."
+msgstr "Forsikre deg om at eininga di er synleg og klar for kopling."
 
-#: src/MainView.vala:25
+#: src/MainView.vala:62
+msgid "Forget selected device"
+msgstr "Gløym valde eining"
+
+#: src/MainView.vala:64
+msgid "Discovering"
+msgstr "Leitar"
+
+#. TRANSLATORS: \"%s\" represents the name of the adapter
+#: src/MainView.vala:210
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "No mogleg å finne som «%s». Ikkje mogleg å finne når denne sida er lukka"
 
-#: src/MainView.vala:47
-msgid "No Devices Found"
-msgstr "Fann ingen einingar"
-
-#: src/MainView.vala:48
-msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr "Forsikre deg om at eininga di er synleg og klar for kopling."
-
-#: src/MainView.vala:66
-msgid "Forget selected device"
-msgstr "Gløym valde eining"
-
-#: src/MainView.vala:68
-msgid "Discovering"
-msgstr "Leitar"
-
-#: src/MainView.vala:213
+#: src/MainView.vala:210
 msgid "Unknown"
 msgstr "Ukjend"
 
-#: src/MainView.vala:263
+#: src/MainView.vala:212
+msgid "Not discoverable while Bluetooth is powered off"
+msgstr "Kan ikkje finnast når Bluetooth er avslått"
+
+#: src/MainView.vala:214
+msgid "Not discoverable"
+msgstr "Kan ikkje finnast"
+
+#: src/MainView.vala:260
 msgid "Paired Devices"
 msgstr "Kopla einingar"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:270
+#: src/MainView.vala:267
 msgid "Nearby Devices"
 msgstr "Einingar i nærleiken"
 
