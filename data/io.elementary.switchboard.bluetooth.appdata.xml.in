@@ -4,10 +4,18 @@
   <extends>io.elementary.switchboard</extends>
   <name>Bluetooth</name>
   <summary>Configure Bluetooth Settings</summary>
+  <releases>
+    <release version="2.3.0" date="2019-10-29" urgency="medium">
+      <description>
+        <p>Pair with devices that require a password, key code, or confirmation</p>
+        <p>Updated translations</p>
+      </description>
+    </release>
+  </releases>
   <screenshots>
-      <screenshot type="default">
-          <image>https://raw.githubusercontent.com/elementary/switchboard-plug-bluetooth/master/data/screenshot.png</image>
-      </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-bluetooth/master/data/screenshot.png</image>
+    </screenshot>
   </screenshots>
   <url type="homepage">https://elementary.io</url>
   <url type="bugtracker">https://github.com/elementary/switchboard-plug-bluetooth/issues</url>
