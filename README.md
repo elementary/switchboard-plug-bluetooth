@@ -1,5 +1,5 @@
 # Switchboard Bluetooth Plug
-[![l10n](https://l10n.elementary.io/widgets/switchboard/switchboard-plug-bluetooth/svg-badge.svg)](https://l10n.elementary.io/projects/switchboard/switchboard-plug-bluetooth)
+[![Translation status](https://l10n.elementary.io/widgets/switchboard/-/switchboard-plug-bluetooth/svg-badge.svg)](https://l10n.elementary.io/engage/switchboard/?utm_source=widget)
 
 ![screenshot](data/screenshot.png?raw=true)
 
