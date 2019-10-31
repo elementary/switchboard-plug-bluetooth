@@ -1,3 +1,25 @@
+switchboard-plug-bluetooth (2.3.0) bionic; urgency=medium
+
+  * Release 2.3.0 (#94)
+  * Update translation files
+  * Add Release info for 2.3.0 (#93)
+  * Add Release to Actions (#91)
+  * Remove deb packaging from master (#92)
+  * Delete CODE_OF_CONDUCT.md
+  * run installation in CI (#89)
+  * Add Linter to CI (#85)
+  * Add linter exceptions to DBus interface
+  * Lint MainView, Agent, and Manager (#86)
+  * Test using GitHub CI (#84)
+  * build: fix install path for switchboard plug (#81)
+  * Plug: Change code name to RDNN
+  * Update translation files
+  * Add pairing Agent (#50)
+  * Add Silesian and update translation template
+  * Update extra POTFILES
+
+ -- elementary OS Team <builds@elementary.io>  Thu, 31 Oct 2019 17:39:59 +0000
+
 switchboard-plug-bluetooth (2.2.2) bionic; urgency=medium
 
   * New upstream release.
