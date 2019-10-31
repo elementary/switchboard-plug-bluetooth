@@ -5,7 +5,7 @@
   <name>Bluetooth</name>
   <summary>Configure Bluetooth Settings</summary>
   <releases>
-    <release version="2.3.0" date="2019-10-29" urgency="medium">
+    <release version="2.3.0" date="2019-10-31" urgency="medium">
       <description>
         <p>Pair with devices that require a password, key code, or confirmation</p>
         <p>Updated translations</p>
