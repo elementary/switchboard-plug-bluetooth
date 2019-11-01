@@ -224,7 +224,7 @@ public class Bluetooth.Services.ObjectManager : Object {
         agent = new Bluetooth.Services.Agent ();
         agent.notify["ready"].connect (() => {
             if (is_registered) {
-                register_agent ();
+                register_agent.begin ();
             }
         });
 
