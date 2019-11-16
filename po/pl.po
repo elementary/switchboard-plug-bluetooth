@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-29 15:38-0700\n"
-"PO-Revision-Date: 2019-01-01 00:37+0000\n"
+"PO-Revision-Date: 2019-11-17 20:24+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-12-22 05:48+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:35
@@ -75,23 +75,20 @@ msgid "Nearby Devices"
 msgstr "Urządzenia w pobliżu"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Skonfiguruj ustawienia Bluetooth"
+msgstr "Potwierdź parowanie Bluetooth"
 
 #: src/PairDialog.vala:45 src/PairDialog.vala:55
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Skonfiguruj ustawienia Bluetooth"
+msgstr "Potwierdź klucz hasła Bluetooth"
 
 #: src/PairDialog.vala:65
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Wpisz PIN Bluetooth"
 
 #: src/PairDialog.vala:71
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Nieznane urządzenie Bluetooth"
 
 #: src/PairDialog.vala:84
 #, c-format
