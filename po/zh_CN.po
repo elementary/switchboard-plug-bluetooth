@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-29 15:38-0700\n"
-"PO-Revision-Date: 2019-09-17 09:22+0000\n"
+"PO-Revision-Date: 2019-12-05 05:25+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-bluetooth/zh_Hans/>\n"
@@ -34,7 +34,7 @@ msgstr "未找到任何设备"
 
 #: src/MainView.vala:44
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr "请确保您的设备可见且已准备好匹配。"
+msgstr "请确保您的设备可见且能够匹配。"
 
 #: src/MainView.vala:62
 msgid "Forget selected device"
@@ -48,11 +48,11 @@ msgstr "正在寻找设备"
 #: src/MainView.vala:210
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr "当前能以 \"%s\" 的身份被检测到，关闭此页面后将无法被检测到"
+msgstr "当前能以 \"%s\" 的身份被附近设备检测到，关闭此页面后设备名称会被隐藏。"
 
 #: src/MainView.vala:210
 msgid "Unknown"
-msgstr "未知"
+msgstr "未知设备"
 
 #: src/MainView.vala:212
 msgid "Not discoverable while Bluetooth is powered off"
@@ -115,7 +115,7 @@ msgstr "“%s” 正尝试匹配此设备。"
 
 #: src/DeviceRow.vala:40
 msgid "Available"
-msgstr "可用设备"
+msgstr "可用"
 
 #: src/DeviceRow.vala:42
 msgid "Pairing…"
@@ -131,7 +131,7 @@ msgstr "正在连接…"
 
 #: src/DeviceRow.vala:48
 msgid "Disconnecting…"
-msgstr "正在断开连接…"
+msgstr "正在断开…"
 
 #: src/DeviceRow.vala:50
 msgid "Unable to Connnect"
