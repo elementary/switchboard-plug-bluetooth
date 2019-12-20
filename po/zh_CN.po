@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-29 15:38-0700\n"
-"PO-Revision-Date: 2019-12-05 05:25+0000\n"
+"PO-Revision-Date: 2019-12-20 16:09+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-bluetooth/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-21 05:43+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:35
@@ -48,7 +48,7 @@ msgstr "正在寻找设备"
 #: src/MainView.vala:210
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr "当前能以 \"%s\" 的身份被附近设备检测到，关闭此页面后设备名称会被隐藏。"
+msgstr "当前能以 \"%s\" 的身份被附近设备检测到，关闭此页面后设备名称会被隐藏"
 
 #: src/MainView.vala:210
 msgid "Unknown"
