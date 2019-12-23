@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-29 15:38-0700\n"
-"PO-Revision-Date: 2019-12-19 13:07+0000\n"
+"PO-Revision-Date: 2019-12-24 22:07+0000\n"
 "Last-Translator: Marko <marko.dolar@gmail.com>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/sl/>\n"
@@ -73,19 +73,16 @@ msgid "Nearby Devices"
 msgstr "Okoliške naprave"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Nastavitve za Bluetooth"
+msgstr "Potrdite Bluetooth seznanjenje"
 
 #: src/PairDialog.vala:45 src/PairDialog.vala:55
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Nastavitve za Bluetooth"
+msgstr "Potrdite prepustni Bluetooth ključ"
 
 #: src/PairDialog.vala:65
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Vnesite Bluetooth PIN"
 
 #: src/PairDialog.vala:71
 msgid "Unknown Bluetooth Device"
@@ -94,7 +91,7 @@ msgstr "Neznana Bluetooth naprava"
 #: src/PairDialog.vala:84
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
+msgstr "Preverite, da se koda prikazana na “%s” ujema s spodnjo."
 
 #: src/PairDialog.vala:88
 #, c-format
@@ -102,6 +99,8 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"“%s” bi se rad povezal s to napravo. Preverite, da se koda prikazana na “%s” "
+"ujema s spodnjo."
 
 #: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
 msgid "Pair"
