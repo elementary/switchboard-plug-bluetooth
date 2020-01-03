@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-29 15:38-0700\n"
-"PO-Revision-Date: 2018-05-18 00:07+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2020-01-04 11:07+0000\n"
+"Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:35
@@ -34,22 +34,23 @@ msgstr "Geen apparaten gevonden"
 
 #: src/MainView.vala:44
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Check of uw apparaten zichtbaar en klaar zijn om te verbinden."
 
 #: src/MainView.vala:62
 msgid "Forget selected device"
 msgstr "Geselecteerd apparaat vergeten"
 
 #: src/MainView.vala:64
-#, fuzzy
 msgid "Discovering"
-msgstr "Verbinding verbreken…"
+msgstr "Zoeken naar apparaten"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
 #: src/MainView.vala:210
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
+"Nu zichtbaar als \"%s\". Dit apparaat is niet zichtbaar als deze pagina "
+"gesloten is"
 
 #: src/MainView.vala:210
 msgid "Unknown"
@@ -57,7 +58,7 @@ msgstr "Onbekend"
 
 #: src/MainView.vala:212
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "Dit apparaat is niet zichtbaar als Bluetooth uitgeschakeld is"
 
 #: src/MainView.vala:214
 msgid "Not discoverable"
@@ -65,36 +66,33 @@ msgstr "Onzichtbaar"
 
 #: src/MainView.vala:260
 msgid "Paired Devices"
-msgstr ""
+msgstr "Gekoppelde apparaten"
 
 #. This header may not appear, so cannot contain discovery spinner
 #: src/MainView.vala:267
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Apparaten in de buurt"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Configureer bluetooth instellingen"
+msgstr "Bevestig Bluetooth koppeling"
 
 #: src/PairDialog.vala:45 src/PairDialog.vala:55
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Configureer bluetooth instellingen"
+msgstr "Bevestig Bluetooth wachtwoord"
 
 #: src/PairDialog.vala:65
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Vul de Bluetooth PINcode in"
 
 #: src/PairDialog.vala:71
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Onbekend Bluetooth apparaat"
 
 #: src/PairDialog.vala:84
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
+msgstr "Zorg ervoor dat de code op “%s” gelijk is aan de code hieronder."
 
 #: src/PairDialog.vala:88
 #, c-format
@@ -102,28 +100,30 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"“%s” wil verbinden met dit apparaat. Zorg ervoor dat de code, die te zien is "
+"op “%s” gelijk is aan de code hier beneden."
 
 #: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
 msgid "Pair"
-msgstr ""
+msgstr "Koppelen"
 
 #: src/PairDialog.vala:94
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "Voer de code hier beneden in op “%s”, gevolgd door een Enter."
 
 #: src/PairDialog.vala:98
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "“%s” wil graag verbinding maken met dit apparaat."
 
 #: src/DeviceRow.vala:40
 msgid "Available"
-msgstr ""
+msgstr "Beschikbaar"
 
 #: src/DeviceRow.vala:42
 msgid "Pairing…"
-msgstr ""
+msgstr "Koppelen…"
 
 #: src/DeviceRow.vala:44
 msgid "Connected"
