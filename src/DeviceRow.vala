@@ -47,7 +47,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 case DISCONNECTING:
                     return _("Disconnecting…");
                 case UNABLE_TO_CONNECT:
-                    return _("Unable to Connnect");
+                    return _("Unable to Connect");
                 default:
                     return _("Not Connected");
             }
