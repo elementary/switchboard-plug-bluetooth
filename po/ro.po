@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 15:38-0700\n"
+"POT-Creation-Date: 2020-01-16 18:25+0000\n"
 "PO-Revision-Date: 2017-04-27 15:03+0000\n"
 "Last-Translator: marius.a <marius.albina@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard/"
@@ -140,7 +140,9 @@ msgid "Disconnecting…"
 msgstr "Se deconectează…"
 
 #: src/DeviceRow.vala:50
-msgid "Unable to Connnect"
+#, fuzzy
+#| msgid "Unable to Connnect"
+msgid "Unable to Connect"
 msgstr "Nu se poate conecta"
 
 #: src/DeviceRow.vala:52

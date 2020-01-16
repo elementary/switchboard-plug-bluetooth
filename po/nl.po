@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 15:38-0700\n"
+"POT-Creation-Date: 2020-01-16 18:25+0000\n"
 "PO-Revision-Date: 2020-01-04 11:07+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -138,7 +138,9 @@ msgid "Disconnecting…"
 msgstr "Verbinding verbreken…"
 
 #: src/DeviceRow.vala:50
-msgid "Unable to Connnect"
+#, fuzzy
+#| msgid "Unable to Connnect"
+msgid "Unable to Connect"
 msgstr "Kan geen verbinding maken"
 
 #: src/DeviceRow.vala:52

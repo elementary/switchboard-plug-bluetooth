@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 15:38-0700\n"
+"POT-Creation-Date: 2020-01-16 18:25+0000\n"
 "PO-Revision-Date: 2018-11-07 01:45+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
@@ -140,7 +140,9 @@ msgid "Disconnecting…"
 msgstr "Prekidanje veze…"
 
 #: src/DeviceRow.vala:50
-msgid "Unable to Connnect"
+#, fuzzy
+#| msgid "Unable to Connnect"
+msgid "Unable to Connect"
 msgstr "Nemoguće povezivanje"
 
 #: src/DeviceRow.vala:52

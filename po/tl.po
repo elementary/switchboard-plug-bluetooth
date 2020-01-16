@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 15:38-0700\n"
+"POT-Creation-Date: 2020-01-16 18:25+0000\n"
 "PO-Revision-Date: 2017-02-21 18:51+0000\n"
 "Last-Translator: yavinfour <anjelo.passionist@gmail.com>\n"
 "Language-Team: Tagalog <tl@li.org>\n"
@@ -132,8 +132,10 @@ msgid "Disconnecting…"
 msgstr ""
 
 #: src/DeviceRow.vala:50
-msgid "Unable to Connnect"
-msgstr ""
+#, fuzzy
+#| msgid "Not Connected"
+msgid "Unable to Connect"
+msgstr "Hindi Konektado"
 
 #: src/DeviceRow.vala:52
 msgid "Not Connected"

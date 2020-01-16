@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 15:38-0700\n"
+"POT-Creation-Date: 2020-01-16 18:25+0000\n"
 "PO-Revision-Date: 2017-04-05 21:11+0000\n"
 "Last-Translator: Borislav Asenov Krumov <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
@@ -137,7 +137,9 @@ msgid "Disconnecting…"
 msgstr "Прекъсване на връзката..."
 
 #: src/DeviceRow.vala:50
-msgid "Unable to Connnect"
+#, fuzzy
+#| msgid "Unable to Connnect"
+msgid "Unable to Connect"
 msgstr "Не може да се свърже"
 
 #: src/DeviceRow.vala:52
