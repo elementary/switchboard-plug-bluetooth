@@ -1,3 +1,16 @@
+switchboard-plug-bluetooth (2.3.1) bionic; urgency=medium
+
+  * Release 2.3.1 (#110)
+  * Update translation files
+  * Update translation template
+  * Fixed typo in "Unable to Connnect" (#106)
+  * Update translation files
+  * Remove old translation template (#98)
+  * Add Gettext Updates to Actions
+  * Fix deprecations (#96)
+
+ -- elementary OS Team <builds@elementary.io>  Wed, 26 Feb 2020 21:21:25 +0000
+
 switchboard-plug-bluetooth (2.3.0) bionic; urgency=medium
 
   * Release 2.3.0 (#94)
