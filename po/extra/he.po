@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-26 21:21+0000\n"
-"PO-Revision-Date: 2019-11-27 20:25+0000\n"
+"PO-Revision-Date: 2020-03-26 23:09+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
 msgid "Bluetooth"
@@ -34,4 +34,4 @@ msgstr "תרגומים עודכנו"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:15
 msgid "Pair with devices that require a password, key code, or confirmation"
-msgstr ""
+msgstr "צימוד עם מכשירים שדורשים ססמה, קוד מפתח או אישור"
