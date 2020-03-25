@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-16 18:25+0000\n"
-"PO-Revision-Date: 2018-12-30 14:25+0000\n"
+"PO-Revision-Date: 2020-03-26 23:09+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:35
@@ -72,28 +72,25 @@ msgid "Nearby Devices"
 msgstr "התקנים בקרבת מקום"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "הגדרת תצורת בלוטות׳"
+msgstr "אישור צימוד בלוטות׳"
 
 #: src/PairDialog.vala:45 src/PairDialog.vala:55
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "הגדרת תצורת בלוטות׳"
+msgstr "אישור מפתח צופן בלוטות׳"
 
 #: src/PairDialog.vala:65
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "נא להקליד קוד בלוטות׳ סודי"
 
 #: src/PairDialog.vala:71
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "מכשיר בלוטות׳ בלתי ידוע"
 
 #: src/PairDialog.vala:84
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
+msgstr "נא לוודא שהקוד שמופיע על גבי „%s” תואם לזה שלהלן."
 
 #: src/PairDialog.vala:88
 #, c-format
@@ -101,6 +98,8 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"הגיעה בקשה מצד „%s” ליצור צימוד עם מכשיר זה. נא לוודא שהקוד שמופיע על גבי "
+"„%s” תואם לזה שמופיע להלן."
 
 #: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
 msgid "Pair"
@@ -109,12 +108,12 @@ msgstr "צימוד"
 #: src/PairDialog.vala:94
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "נא להקליד את הקוד שמופיע להלן אצל „%s” ולאחר מכן Enter."
 
 #: src/PairDialog.vala:98
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "הגיעה בקשה מצד „%s” לצימוד עם המכשיר הזה."
 
 #: src/DeviceRow.vala:40
 msgid "Available"
@@ -137,8 +136,6 @@ msgid "Disconnecting…"
 msgstr "מתבצע ניתוק…"
 
 #: src/DeviceRow.vala:50
-#, fuzzy
-#| msgid "Unable to Connnect"
 msgid "Unable to Connect"
 msgstr "לא ניתן להתחבר"
 
@@ -168,7 +165,7 @@ msgstr "ניתוק"
 
 #: src/DeviceRow.vala:254
 msgid "Connect"
-msgstr "חיבור"
+msgstr "התחברות"
 
 #~ msgid "Sharing Settings"
 #~ msgstr "הגדרות שיתוף"
