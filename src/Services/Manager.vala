@@ -18,14 +18,6 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-[DBus (name = "org.freedesktop.DBus.ObjectManager")]
-public interface Bluetooth.Services.DBusInterface : Object {
-    public signal void interfaces_added (ObjectPath object_path, HashTable<string, HashTable<string, Variant>> param);
-    public signal void interfaces_removed (ObjectPath object_path, string[] string_array);
-
-    public abstract HashTable<ObjectPath, HashTable<string, HashTable<string, Variant>>> get_managed_objects () throws Error;
-}
-
 [DBus (name = "org.bluez.AgentManager1")]
 public interface Bluetooth.Services.AgentManager : Object {
     public abstract void register_agent (ObjectPath agent, string capability) throws Error;
@@ -51,101 +43,132 @@ public class Bluetooth.Services.ObjectManager : Object {
     private bool is_registered = false;
 
     private Settings? settings = null;
-    private Bluetooth.Services.DBusInterface object_interface;
+    private GLib.DBusObjectManagerClient object_manager;
     private Bluetooth.Services.AgentManager agent_manager;
     private Bluetooth.Services.Agent agent;
-    private Gee.HashMap<string, Bluetooth.Services.Adapter> adapters;
-    private Gee.HashMap<string, Bluetooth.Services.Device> devices;
 
     construct {
-        adapters = new Gee.HashMap<string, Bluetooth.Services.Adapter> (null, null);
-        devices = new Gee.HashMap<string, Bluetooth.Services.Device> (null, null);
-
         var settings_schema = SettingsSchemaSource.get_default ().lookup (SCHEMA, true);
         if (settings_schema != null) {
             settings = new Settings (SCHEMA);
         }
-
-        Bus.get_proxy.begin<Bluetooth.Services.DBusInterface> (BusType.SYSTEM, "org.bluez", "/", DBusProxyFlags.NONE, null, (obj, res) => {
-            try {
-                object_interface = Bus.get_proxy.end (res);
-                object_interface.get_managed_objects ().foreach (add_path);
-                object_interface.interfaces_added.connect (add_path);
-                object_interface.interfaces_removed.connect (remove_path);
-            } catch (Error e) {
-                critical (e.message);
-            }
-
-            retrieve_finished = true;
-        });
+        create_manager.begin ();
 
         notify["discoverable"].connect (() => {
-            lock (adapters) {
-                foreach (var adapter in adapters.values) {
-                    adapter.discoverable = discoverable;
-                }
-            }
+            get_adapters ().foreach ((adapter) => adapter.discoverable = discoverable);
         });
     }
 
-    [CCode (instance_pos = -1)]
-    private void add_path (ObjectPath path, HashTable<string, HashTable<string, Variant>> param) {
-        if ("org.bluez.Adapter1" in param) {
-            try {
-                Bluetooth.Services.Adapter adapter = Bus.get_proxy_sync (BusType.SYSTEM, "org.bluez", path, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
-                lock (adapters) {
-                    adapters.set (path, adapter);
+    private async void create_manager () {
+        try {
+            object_manager = yield new GLib.DBusObjectManagerClient.for_bus.begin (
+                BusType.SYSTEM,
+                GLib.DBusObjectManagerClientFlags.NONE,
+                "org.bluez",
+                "/",
+                object_manager_proxy_get_type,
+                null
+            );
+            object_manager.get_objects ().foreach ((object) => {
+                object.get_interfaces ().foreach ((iface) => on_interface_added (object, iface));
+            });
+            object_manager.interface_added.connect (on_interface_added);
+            object_manager.interface_removed.connect (on_interface_removed);
+            object_manager.object_added.connect ((object) => {
+                object.get_interfaces ().foreach ((iface) => on_interface_added (object, iface));
+            });
+            object_manager.object_removed.connect ((object) => {
+                object.get_interfaces ().foreach ((iface) => on_interface_removed (object, iface));
+            });
+        } catch (Error e) {
+            critical (e.message);
+        }
+
+        retrieve_finished = true;
+    }
+
+    //TODO: Do not rely on this when it is possible to do it natively in Vala
+    [CCode (cname="bluetooth_services_device_proxy_get_type")]
+    extern static GLib.Type get_device_proxy_type ();
+
+    [CCode (cname="bluetooth_services_adapter_proxy_get_type")]
+    extern static GLib.Type get_adapter_proxy_type ();
+
+    [CCode (cname="bluetooth_services_agent_manager_proxy_get_type")]
+    extern static GLib.Type get_agent_manager_proxy_type ();
+
+    private GLib.Type object_manager_proxy_get_type (DBusObjectManagerClient manager, string object_path, string? interface_name) {
+        if (interface_name == null)
+            return typeof (GLib.DBusObjectProxy);
+
+        switch (interface_name) {
+            case "org.bluez.Device1":
+                return get_device_proxy_type ();
+            case "org.bluez.Adapter1":
+                return get_adapter_proxy_type ();
+            case "org.bluez.AgentManager1":
+                return get_agent_manager_proxy_type ();
+            default:
+                return typeof (GLib.DBusProxy);
+        }
+    }
+
+    private void on_interface_added (GLib.DBusObject object, GLib.DBusInterface iface) {
+        if (iface is Bluetooth.Services.Device) {
+            unowned Bluetooth.Services.Device device = (Bluetooth.Services.Device) iface;
+
+            device_added (device);
+            ((DBusProxy) device).g_properties_changed.connect ((changed, invalid) => {
+                var connected = changed.lookup_value ("Connected", GLib.VariantType.BOOLEAN);
+                if (connected != null) {
+                    check_global_state ();
                 }
-                has_object = true;
 
-                adapter_added (adapter);
+                var paired = changed.lookup_value ("Paired", GLib.VariantType.BOOLEAN);
+                if (paired != null) {
+                    check_global_state ();
+                }
+            });
 
-                (adapter as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
-                    var powered = changed.lookup_value ("Powered", GLib.VariantType.BOOLEAN);
-                    if (powered != null) {
-                        check_global_state ();
-                    }
+            check_global_state ();
+        } else if (iface is Bluetooth.Services.Adapter) {
+            unowned Bluetooth.Services.Adapter adapter = (Bluetooth.Services.Adapter) iface;
+            has_object = true;
 
-                    var discovering = changed.lookup_value ("Discovering", GLib.VariantType.BOOLEAN);
-                    if (discovering != null) {
-                        check_discovering ();
-                    }
-
-                    var adapter_discoverable = changed.lookup_value ("Discoverable", GLib.VariantType.BOOLEAN);
-                    if (adapter_discoverable != null) {
-                        check_discoverable ();
-                    }
-                });
-
-                check_global_state ();
-            } catch (Error e) {
-                debug ("Connecting to bluetooth adapter failed: %s", e.message);
-            }
-        } else if ("org.bluez.Device1" in param) {
-            try {
-                Bluetooth.Services.Device device = Bus.get_proxy_sync (BusType.SYSTEM, "org.bluez", path, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
-                lock (devices) {
-                    devices.set (path, device);
+            adapter_added (adapter);
+            ((DBusProxy) adapter).g_properties_changed.connect ((changed, invalid) => {
+                var powered = changed.lookup_value ("Powered", GLib.VariantType.BOOLEAN);
+                if (powered != null) {
+                    check_global_state ();
                 }
 
-                device_added (device);
+                var discovering = changed.lookup_value ("Discovering", GLib.VariantType.BOOLEAN);
+                if (discovering != null) {
+                    check_discovering ();
+                }
 
-                (device as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
-                    var connected = changed.lookup_value ("Connected", GLib.VariantType.BOOLEAN);
-                    if (connected != null) {
-                        check_global_state ();
-                    }
-                });
+                var adapter_discoverable = changed.lookup_value ("Discoverable", GLib.VariantType.BOOLEAN);
+                if (adapter_discoverable != null) {
+                    check_discoverable ();
+                }
+            });
 
-                check_global_state ();
-            } catch (Error e) {
-                debug ("Connecting to bluetooth device failed: %s", e.message);
-            }
+            check_global_state ();
+        }
+    }
+
+    private void on_interface_removed (GLib.DBusObject object, GLib.DBusInterface iface) {
+        if (iface is Bluetooth.Services.Device) {
+            device_removed ((Bluetooth.Services.Device) iface);
+        } else if (iface is Bluetooth.Services.Adapter) {
+            adapter_removed ((Bluetooth.Services.Adapter) iface);
+            has_object = !get_adapters ().is_empty;
         }
     }
 
     public void check_discovering () {
-        foreach (var adapter in adapters.values) {
+        var adapters = get_adapters ();
+        foreach (var adapter in adapters) {
             if (adapter.discovering != is_discovering) {
                 if (is_discovering) {
                     adapter.start_discovery.begin ();
@@ -157,74 +180,66 @@ public class Bluetooth.Services.ObjectManager : Object {
     }
 
     public void check_discoverable () {
-        foreach (var adapter in adapters.values) {
+        var adapters = get_adapters ();
+        foreach (var adapter in adapters) {
             if (adapter.discoverable != discoverable) {
                 adapter.discoverable = discoverable;
             }
         }
     }
 
-    [CCode (instance_pos = -1)]
-    public void remove_path (ObjectPath path) {
-        lock (adapters) {
-            var adapter = adapters.get (path);
-            if (adapter != null) {
-                adapters.unset (path);
-                has_object = !adapters.is_empty;
-
-                adapter_removed (adapter);
-                return;
-            }
-        }
-
-        lock (devices) {
-            var device = devices.get (path);
-            if (device != null) {
-                devices.unset (path);
-                device_removed (device);
-            }
-        }
-    }
-
     public string? get_name () {
-        lock (adapters) {
-            if (adapters.is_empty) {
-                return null;
-            } else {
-                return adapters.values.to_array ()[0].name;
-            }
+        var adapters = get_adapters ();
+        if (adapters.is_empty) {
+            return null;
+        } else {
+            return adapters.first ().name;
         }
     }
 
-    public Gee.Collection<Bluetooth.Services.Adapter> get_adapters () {
-        lock (adapters) {
-            return adapters.values;
-        }
+    public Gee.LinkedList<Bluetooth.Services.Adapter> get_adapters () {
+        var adapters = new Gee.LinkedList<Bluetooth.Services.Adapter> ();
+        object_manager.get_objects ().foreach ((object) => {
+            GLib.DBusInterface? iface = object.get_interface ("org.bluez.Adapter1");
+            if (iface == null)
+                return;
+
+            adapters.add (((Bluetooth.Services.Adapter) iface));
+        });
+
+        return (owned) adapters;
     }
 
     public Gee.Collection<Bluetooth.Services.Device> get_devices () {
-        lock (devices) {
-            return devices.values;
-        }
+        var devices = new Gee.LinkedList<Bluetooth.Services.Device> ();
+        object_manager.get_objects ().foreach ((object) => {
+            GLib.DBusInterface? iface = object.get_interface ("org.bluez.Device1");
+            if (iface == null)
+                return;
+
+            devices.add (((Bluetooth.Services.Device) iface));
+        });
+
+        return (owned) devices;
     }
 
     public Bluetooth.Services.Adapter? get_adapter_from_path (string path) {
-        lock (adapters) {
-            return adapters.get (path);
+        GLib.DBusObject? object = object_manager.get_object (path);
+        if (object != null) {
+            return (Bluetooth.Services.Adapter?) object.get_interface ("org.bluez.Adapter1");
         }
+
+        return null;
     }
 
-    private async void create_agent () {
-        try {
-            agent_manager = yield Bus.get_proxy<Bluetooth.Services.AgentManager> (BusType.SYSTEM, "org.bluez", "/org/bluez", DBusProxyFlags.NONE);
-        } catch (Error e) {
-            critical (e.message);
-        }
+    private async void create_agent (Gtk.Window? window) {
+        GLib.DBusObject? bluez_object = object_manager.get_object ("/org/bluez");
+        agent_manager = (Bluetooth.Services.AgentManager) bluez_object.get_interface ("org.bluez.AgentManager1");
 
-        agent = new Bluetooth.Services.Agent ();
+        agent = new Bluetooth.Services.Agent (window);
         agent.notify["ready"].connect (() => {
             if (is_registered) {
-                register_agent.begin ();
+                register_agent.begin (window);
             }
         });
 
@@ -233,10 +248,10 @@ public class Bluetooth.Services.ObjectManager : Object {
         });
     }
 
-    public async void register_agent () {
+    public async void register_agent (Gtk.Window? window) {
         is_registered = true;
         if (agent_manager == null) {
-            yield create_agent ();
+            yield create_agent (window);
         }
 
         if (agent.ready) {
@@ -281,39 +296,36 @@ public class Bluetooth.Services.ObjectManager : Object {
     }
 
     public async void start_discovery () {
-        lock (adapters) {
-            is_discovering = true;
-            foreach (var adapter in adapters.values) {
-                try {
-                    yield adapter.start_discovery ();
-                } catch (Error e) {
-                    critical (e.message);
-                }
+        var adapters = get_adapters ();
+        is_discovering = true;
+        foreach (var adapter in adapters) {
+            try {
+                yield adapter.start_discovery ();
+            } catch (Error e) {
+                critical (e.message);
             }
         }
     }
 
     public async void stop_discovery () {
-        lock (adapters) {
-            is_discovering = false;
-            foreach (var adapter in adapters.values) {
-                try {
-                    if (adapter.powered && adapter.discovering) {
-                        yield adapter.stop_discovery ();
-                    }
-                } catch (Error e) {
-                    critical (e.message);
+        var adapters = get_adapters ();
+        is_discovering = false;
+        foreach (var adapter in adapters) {
+            try {
+                if (adapter.powered && adapter.discovering) {
+                    yield adapter.stop_discovery ();
                 }
+            } catch (Error e) {
+                critical (e.message);
             }
         }
     }
 
     public bool get_connected () {
-        lock (devices) {
-            foreach (var device in devices.values) {
-                if (device.connected) {
-                    return true;
-                }
+        var devices = get_devices ();
+        foreach (var device in devices) {
+            if (device.connected) {
+                return true;
             }
         }
 
@@ -321,11 +333,10 @@ public class Bluetooth.Services.ObjectManager : Object {
     }
 
     public bool get_global_state () {
-        lock (adapters) {
-            foreach (var adapter in adapters.values) {
-                if (adapter.powered) {
-                    return true;
-                }
+        var adapters = get_adapters ();
+        foreach (var adapter in adapters) {
+            if (adapter.powered) {
+                return true;
             }
         }
 
@@ -345,11 +356,10 @@ public class Bluetooth.Services.ObjectManager : Object {
             yield stop_discovery ();
         }
 
-        lock (adapters) {
-            foreach (var adapter in adapters.values) {
-                adapter.powered = state;
-                adapter.discoverable = state;
-            }
+        var adapters = get_adapters ();
+        foreach (var adapter in adapters) {
+            adapter.powered = state;
+            adapter.discoverable = state;
         }
 
         if (settings != null) {
@@ -357,14 +367,13 @@ public class Bluetooth.Services.ObjectManager : Object {
         }
 
         if (!state) {
-            lock (devices) {
-                foreach (var device in devices.values) {
-                    if (device.connected) {
-                        try {
-                            yield device.disconnect ();
-                        } catch (Error e) {
-                            critical (e.message);
-                        }
+            var devices = get_devices ();
+            foreach (var device in devices) {
+                if (device.connected) {
+                    try {
+                        yield device.disconnect ();
+                    } catch (Error e) {
+                        critical (e.message);
                     }
                 }
             }

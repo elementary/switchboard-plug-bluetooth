@@ -26,9 +26,11 @@ public errordomain BluezError {
 [DBus (name = "org.bluez.Agent1")]
 public class Bluetooth.Services.Agent : Object {
     private const string PATH = "/org/bluez/agent/elementary";
+    Gtk.Window? main_window;
 
     [DBus (visible=false)]
-    public Agent () {
+    public Agent (Gtk.Window? main_window) {
+        this.main_window = main_window;
         Bus.own_name (BusType.SYSTEM, "org.bluez.AgentManager1", BusNameOwnerFlags.NONE,
             (connection, name) => {
                 try {
@@ -63,7 +65,7 @@ public class Bluetooth.Services.Agent : Object {
     }
 
     public void display_pin_code (ObjectPath device, string pincode) throws Error, BluezError {
-        var pair_dialog = new PairDialog.with_pin_code (device, pincode);
+        var pair_dialog = new PairDialog.with_pin_code (device, pincode, main_window);
         pair_dialog.present ();
     }
 
@@ -72,17 +74,17 @@ public class Bluetooth.Services.Agent : Object {
     }
 
     public void display_passkey (ObjectPath device, uint32 passkey, uint16 entered) throws Error {
-        var pair_dialog = new PairDialog.display_passkey (device, passkey, entered);
+        var pair_dialog = new PairDialog.display_passkey (device, passkey, entered, main_window);
         pair_dialog.present ();
     }
 
     public void request_confirmation (ObjectPath device, uint32 passkey) throws Error, BluezError {
-        var pair_dialog = new PairDialog.request_confirmation (device, passkey);
+        var pair_dialog = new PairDialog.request_confirmation (device, passkey, main_window);
         pair_dialog.present ();
     }
 
     public void request_authorization (ObjectPath device) throws Error, BluezError {
-        var pair_dialog = new PairDialog (device);
+        var pair_dialog = new PairDialog (device, main_window);
         pair_dialog.present ();
     }
 
