@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-16 18:25+0000\n"
-"PO-Revision-Date: 2020-04-10 14:19+0000\n"
+"PO-Revision-Date: 2020-04-11 15:10+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/hr/>\n"
@@ -31,26 +31,26 @@ msgstr "Prilagodite Bluetooth postavke"
 
 #: src/MainView.vala:43
 msgid "No Devices Found"
-msgstr ""
+msgstr "Nema pronađenih uređaja"
 
 #: src/MainView.vala:44
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Pobrinite se da je vaš uređaj vidljiv i spreman za uparivanje."
 
 #: src/MainView.vala:62
 msgid "Forget selected device"
 msgstr "Zaboravi odabrani uređaj"
 
 #: src/MainView.vala:64
-#, fuzzy
 msgid "Discovering"
-msgstr "Prekidanje povezivanja…"
+msgstr "Otkrivanje"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
 #: src/MainView.vala:210
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
+"Sada je otkriven kao \"%s\". Neće biti otkriven kada se ova stranica zatvori"
 
 #: src/MainView.vala:210
 msgid "Unknown"
@@ -58,45 +58,42 @@ msgstr "Nepoznato"
 
 #: src/MainView.vala:212
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "Nemoguće otkrivanje kada je Bluetooth isključen"
 
 #: src/MainView.vala:214
-#, fuzzy
 msgid "Not discoverable"
-msgstr "Sada je vidljiv kao \"%s\""
+msgstr "Nemoguće otkrivanje"
 
 #: src/MainView.vala:260
 msgid "Paired Devices"
-msgstr ""
+msgstr "Upareni uređaji"
 
 #. This header may not appear, so cannot contain discovery spinner
 #: src/MainView.vala:267
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Obližnji uređaji"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Prilagodite Bluetooth postavke"
+msgstr "Potvrdi Bluetooth uparivanje"
 
 #: src/PairDialog.vala:45 src/PairDialog.vala:55
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Prilagodite Bluetooth postavke"
+msgstr "Potvrdi Bluetooth lozinku"
 
 #: src/PairDialog.vala:65
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Upiši Bluetooth PIN"
 
 #: src/PairDialog.vala:71
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Nepoznati Bluetooth uređaj"
 
 #: src/PairDialog.vala:84
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
+"Pobrinite se da kôd prikazan na “%s” se podudara s onim navedenim dolje."
 
 #: src/PairDialog.vala:88
 #, c-format
@@ -104,28 +101,30 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"“%s” se želi upariti s ovim uređajem. Pobrinite se da kôd prikazan na “%s” "
+"se podudara s onim navedenim dolje."
 
 #: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
 msgid "Pair"
-msgstr ""
+msgstr "Upari"
 
 #: src/PairDialog.vala:94
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "Upišite kôd prikazan na “%s” i pritisnite tipku Enter ."
 
 #: src/PairDialog.vala:98
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "“%s” se želi upariti s ovim uređajem."
 
 #: src/DeviceRow.vala:40
 msgid "Available"
-msgstr ""
+msgstr "Dostupan"
 
 #: src/DeviceRow.vala:42
 msgid "Pairing…"
-msgstr ""
+msgstr "Uparivanje…"
 
 #: src/DeviceRow.vala:44
 msgid "Connected"
@@ -140,8 +139,6 @@ msgid "Disconnecting…"
 msgstr "Prekidanje povezivanja…"
 
 #: src/DeviceRow.vala:50
-#, fuzzy
-#| msgid "Unable to Connnect"
 msgid "Unable to Connect"
 msgstr "Nemoguće povezivanje"
 
