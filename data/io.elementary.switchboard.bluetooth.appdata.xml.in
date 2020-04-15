@@ -4,6 +4,8 @@
   <extends>io.elementary.switchboard</extends>
   <name>Bluetooth</name>
   <summary>Configure Bluetooth Settings</summary>
+  <icon type="stock">bluetooth</icon>
+  <translation type="gettext">bluetooth-plug</translation>
   <releases>
     <release version="2.3.1" date="2020-02-25" urgency="medium">
       <description>
