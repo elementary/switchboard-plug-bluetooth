@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-16 18:25+0000\n"
+"POT-Creation-Date: 2020-04-28 22:16+0000\n"
 "PO-Revision-Date: 2016-12-15 05:39+0000\n"
 "Last-Translator: Daniel Fore <Unknown>\n"
 "Language-Team: Telugu <te@li.org>\n"
@@ -73,40 +73,40 @@ msgstr ""
 msgid "Confirm Bluetooth Pairing"
 msgstr ""
 
-#: src/PairDialog.vala:45 src/PairDialog.vala:55
+#: src/PairDialog.vala:46 src/PairDialog.vala:57
 msgid "Confirm Bluetooth Passkey"
 msgstr ""
 
-#: src/PairDialog.vala:65
+#: src/PairDialog.vala:68
 msgid "Enter Bluetooth PIN"
 msgstr ""
 
-#: src/PairDialog.vala:71
+#: src/PairDialog.vala:75
 msgid "Unknown Bluetooth Device"
 msgstr ""
 
-#: src/PairDialog.vala:84
+#: src/PairDialog.vala:88
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
 
-#: src/PairDialog.vala:88
+#: src/PairDialog.vala:92
 #, c-format
 msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
 
-#: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
+#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:224
 msgid "Pair"
 msgstr ""
 
-#: src/PairDialog.vala:94
+#: src/PairDialog.vala:98
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
 
-#: src/PairDialog.vala:98
+#: src/PairDialog.vala:102
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr ""

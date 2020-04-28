@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-16 18:25+0000\n"
+"POT-Creation-Date: 2020-04-28 22:16+0000\n"
 "PO-Revision-Date: 2020-01-24 21:08+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -75,24 +75,24 @@ msgstr "जवळपासचे डिव्हाइसेस"
 msgid "Confirm Bluetooth Pairing"
 msgstr "ब्लूटूथ पेअरिंगची पुष्टी करा"
 
-#: src/PairDialog.vala:45 src/PairDialog.vala:55
+#: src/PairDialog.vala:46 src/PairDialog.vala:57
 msgid "Confirm Bluetooth Passkey"
 msgstr "ब्लूटूथ पासकीची पुष्टी करा"
 
-#: src/PairDialog.vala:65
+#: src/PairDialog.vala:68
 msgid "Enter Bluetooth PIN"
 msgstr "ब्लूटूथ पिन प्रविष्ट करा"
 
-#: src/PairDialog.vala:71
+#: src/PairDialog.vala:75
 msgid "Unknown Bluetooth Device"
 msgstr "अज्ञात ब्लूटूथ डिव्हाइस"
 
-#: src/PairDialog.vala:84
+#: src/PairDialog.vala:88
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "“%s” वर प्रदर्शित कोड खालीलपैकी जुळत असल्याचे सुनिश्चित करा."
 
-#: src/PairDialog.vala:88
+#: src/PairDialog.vala:92
 #, c-format
 msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
@@ -101,16 +101,16 @@ msgstr ""
 "\"%s\" या डिव्हाइससह जोडी करू इच्छित आहे. “%s” वर प्रदर्शित कोड खालीलपैकी जुळत "
 "असल्याचे सुनिश्चित करा."
 
-#: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
+#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:224
 msgid "Pair"
 msgstr "जोडा"
 
-#: src/PairDialog.vala:94
+#: src/PairDialog.vala:98
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr "खाली दिलेले कोड “%s” वर टाइप करा आणि त्यानंतर एंटर करा."
 
-#: src/PairDialog.vala:98
+#: src/PairDialog.vala:102
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "\"%s\" या डिव्हाइससह जोडी करू इच्छित आहे."
