@@ -2,7 +2,7 @@
 <component type="addon">
   <id>io.elementary.switchboard.bluetooth</id>
   <extends>io.elementary.switchboard</extends>
-  <name>Bluetooth</name>
+  <name>Bluetooth Settings</name>
   <summary>Configure Bluetooth Settings</summary>
   <icon type="stock">bluetooth</icon>
   <translation type="gettext">bluetooth-plug</translation>
