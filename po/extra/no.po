@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-26 21:21+0000\n"
+"POT-Creation-Date: 2020-04-28 22:16+0000\n"
 "PO-Revision-Date: 2018-05-11 08:56-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,18 +18,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
-msgid "Bluetooth"
+msgid "Bluetooth Settings"
 msgstr ""
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:6
 msgid "Configure Bluetooth Settings"
 msgstr ""
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:10
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:16
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:18
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:15
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:17
 msgid "Pair with devices that require a password, key code, or confirmation"
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-26 21:21+0000\n"
+"POT-Creation-Date: 2020-04-28 22:16+0000\n"
 "PO-Revision-Date: 2019-11-25 09:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -20,18 +20,23 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
-msgid "Bluetooth"
-msgstr "ब्लूटुथ"
+#, fuzzy
+#| msgid "Configure Bluetooth Settings"
+msgid "Bluetooth Settings"
+msgstr "ब्लूटूथ सेटिंग्ज कॉन्फिगर करा"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:6
 msgid "Configure Bluetooth Settings"
 msgstr "ब्लूटूथ सेटिंग्ज कॉन्फिगर करा"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:10
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:16
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:18
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:15
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:17
 msgid "Pair with devices that require a password, key code, or confirmation"
 msgstr "संकेतशब्द, की कोड किंवा पुष्टीकरण आवश्यक असलेल्या उपकरणांसह जोडा"
+
+#~ msgid "Bluetooth"
+#~ msgstr "ब्लूटुथ"
