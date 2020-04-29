@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2020-01-19 13:08+0000\n"
+"PO-Revision-Date: 2020-05-01 09:52+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/fr/>\n"
@@ -150,7 +150,7 @@ msgstr "Non connecté"
 
 #: src/DeviceRow.vala:120
 msgid "Sound Settings"
-msgstr "Paramètres du son"
+msgstr "Paramètres de son"
 
 #: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
@@ -162,7 +162,7 @@ msgstr "Paramètres de la souris et du pavé tactile"
 
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
-msgstr "Paramètres de l’imprimante"
+msgstr "Paramètres d'imprimantes"
 
 #: src/DeviceRow.vala:236
 msgid "Disconnect"
