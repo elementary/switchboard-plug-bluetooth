@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2020-01-21 16:08+0000\n"
+"PO-Revision-Date: 2020-05-01 09:52+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/pt/>\n"
@@ -26,7 +26,7 @@ msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr "Configurar Definições de Bluetooth"
+msgstr "Configurar definições de bluetooth"
 
 #: src/MainView.vala:43
 msgid "No Devices Found"
@@ -149,19 +149,19 @@ msgstr "Não Ligado"
 
 #: src/DeviceRow.vala:120
 msgid "Sound Settings"
-msgstr "Definições de som"
+msgstr "Definições de Som"
 
 #: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
-msgstr "Definições de teclado"
+msgstr "Definições do Teclado"
 
 #: src/DeviceRow.vala:129
 msgid "Mouse & Touchpad Settings"
-msgstr "Definições de rato & touchpad"
+msgstr "Definições do Rato e Touchpad"
 
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
-msgstr "Definições da impressora"
+msgstr "Definições da Impressora"
 
 #: src/DeviceRow.vala:236
 msgid "Disconnect"
