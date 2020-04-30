@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2020-03-26 23:09+0000\n"
+"PO-Revision-Date: 2020-05-01 09:52+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/he/>\n"
@@ -145,7 +145,7 @@ msgstr "אין חיבור"
 
 #: src/DeviceRow.vala:120
 msgid "Sound Settings"
-msgstr "הגדרות צליל"
+msgstr "הגדרות שמע"
 
 #: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
@@ -157,7 +157,7 @@ msgstr "הגדרות עכבר ומשטח מגע"
 
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
-msgstr "הגדרות מדפסת"
+msgstr "הגדרות מדפסות"
 
 #: src/DeviceRow.vala:236
 msgid "Disconnect"
