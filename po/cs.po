@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2018-05-16 13:48+0000\n"
-"Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2020-05-08 14:10+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:35
@@ -42,9 +42,8 @@ msgid "Forget selected device"
 msgstr "Zapomenout zvolené zařízení"
 
 #: src/MainView.vala:64
-#, fuzzy
 msgid "Discovering"
-msgstr "Odpojování…"
+msgstr "Hledání"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
 #: src/MainView.vala:210
@@ -74,28 +73,25 @@ msgid "Nearby Devices"
 msgstr "Zařízení v okolí"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Upravit nastavení Bluetooth"
+msgstr "Potvrdit spárování Bluetooth"
 
 #: src/PairDialog.vala:46 src/PairDialog.vala:57
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Upravit nastavení Bluetooth"
+msgstr "Potvrdit spárovací kód Bluetooth"
 
 #: src/PairDialog.vala:68
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Vložte Bluetooth PIN"
 
 #: src/PairDialog.vala:75
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Neznámé Bluetooth zařízení"
 
 #: src/PairDialog.vala:88
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
+msgstr "Ujistěte se, že kód zobrazený na „%s“ je stejný, jako ten níže."
 
 #: src/PairDialog.vala:92
 #, c-format
@@ -103,6 +99,8 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"„%s“ se chce spárovat s tímto zařízením. Ujistěte se, že kód zobrazený na "
+"„%s“ je stejný, jako ten níže."
 
 #: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:224
 msgid "Pair"
@@ -111,12 +109,12 @@ msgstr "Spárovat"
 #: src/PairDialog.vala:98
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "Opište kód zobrazený na zařízení „%s“ a poté stiskněte Enter."
 
 #: src/PairDialog.vala:102
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "„%s“ se chce spárovat s tímto zařízením."
 
 #: src/DeviceRow.vala:40
 msgid "Available"
