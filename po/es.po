@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2020-01-24 21:08+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"PO-Revision-Date: 2020-05-11 16:10+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/es/>\n"
 "Language: es\n"
@@ -152,11 +152,11 @@ msgstr "No Conectado"
 
 #: src/DeviceRow.vala:120
 msgid "Sound Settings"
-msgstr "Configuración de Sonido"
+msgstr "Configuración de sonido"
 
 #: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
-msgstr "Configuración de Teclado"
+msgstr "Configuración de teclado"
 
 #: src/DeviceRow.vala:129
 msgid "Mouse & Touchpad Settings"
@@ -164,7 +164,7 @@ msgstr "Configuración de Ratón y Touchpad"
 
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
-msgstr "Configuración de la Impresora"
+msgstr "Configuración de impresoras"
 
 #: src/DeviceRow.vala:236
 msgid "Disconnect"
