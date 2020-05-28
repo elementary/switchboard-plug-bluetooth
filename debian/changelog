@@ -1,3 +1,18 @@
+switchboard-plug-bluetooth (2.3.2) bionic; urgency=medium
+
+  * Release 2.3.2 (#125)
+  * Update translation files
+  * Update translation files
+  * Update translation template
+  * AppData: Add "Settings" to name (#121)
+  * AppData: Add Icon & Gettext domain (#119)
+  * Use GLib.DBusObjectManagerClient instead of doing everything by
+    ourself (#115)
+  * Update translation files
+  * Update translation template
+
+ -- elementary OS Team <builds@elementary.io>  Thu, 28 May 2020 20:13:20 +0000
+
 switchboard-plug-bluetooth (2.3.1) bionic; urgency=medium
 
   * Release 2.3.1 (#110)
