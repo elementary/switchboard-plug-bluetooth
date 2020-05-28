@@ -57,7 +57,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     private Gtk.Button connect_button;
     private Gtk.Image state;
     private Gtk.Label state_label;
-    private Gtk.LinkButton settings_button;
+    private Gtk.Button settings_button;
 
     public DeviceRow (Services.Device device, Services.Adapter adapter) {
         Object (device: device, adapter: adapter);
@@ -88,14 +88,11 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         label.hexpand = true;
         label.xalign = 0;
 
-        settings_button = new Gtk.LinkButton ("");
-        settings_button.always_show_image = true;
-        settings_button.image = new Gtk.Image.from_icon_name ("view-more-horizontal-symbolic", Gtk.IconSize.MENU);
-        settings_button.label = null;
-        settings_button.margin_end = 3;
-        settings_button.show_all ();
+        settings_button = new Gtk.Button ();
         settings_button.no_show_all = true;
         settings_button.visible = false;
+        settings_button.valign = Gtk.Align.CENTER;
+        size_group.add_widget (settings_button);
 
         connect_button = new Gtk.Button ();
         connect_button.valign = Gtk.Align.CENTER;
@@ -116,21 +113,17 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
         switch (device.icon) {
             case "audio-card":
-                settings_button.uri = "settings://sound";
-                settings_button.tooltip_text = _("Sound Settings");
+                settings_button.clicked.connect( ()=> {AppInfo.launch_default_for_uri ("settings://sound", null);});
                 break;
             case "input-gaming":
             case "input-keyboard":
-                settings_button.uri = "settings://input/keyboard";
-                settings_button.tooltip_text = _("Keyboard Settings");
+                settings_button.clicked.connect( ()=> {AppInfo.launch_default_for_uri ("settings://keyboard", null);});
                 break;
             case "input-mouse":
-                settings_button.uri = "settings://input/mouse";
-                settings_button.tooltip_text = _("Mouse & Touchpad Settings");
+                settings_button.clicked.connect( ()=> {AppInfo.launch_default_for_uri ("settings://mouse", null);});
                 break;
             case "printer":
-                settings_button.uri = "settings://printer";
-                settings_button.tooltip_text = _("Printer Settings");
+                settings_button.clicked.connect( ()=> {AppInfo.launch_default_for_uri ("settings://printer", null);});
                 break;
         }
 
@@ -236,9 +229,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 connect_button.label = _("Disconnect");
                 connect_button.sensitive = true;
                 state.icon_name = "user-available";
-                if (settings_button.uri != "") {
-                    settings_button.visible = true;
-                }
+                settings_button.label = _("Settings...");
+                settings_button.visible = true;
                 break;
             case Status.CONNECTING:
                 connect_button.sensitive = false;
