@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 15:38-0700\n"
-"PO-Revision-Date: 2019-11-03 14:24+0000\n"
+"POT-Creation-Date: 2020-04-28 22:16+0000\n"
+"PO-Revision-Date: 2020-05-01 09:52+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/pt/>\n"
@@ -17,22 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
-msgid "Bluetooth"
-msgstr "Bluetooth"
+msgid "Bluetooth Settings"
+msgstr "Definições de Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:6
 msgid "Configure Bluetooth Settings"
-msgstr "Configurar Definições de Bluetooth"
+msgstr "Configurar definições de bluetooth"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:10
-msgid "Pair with devices that require a password, key code, or confirmation"
-msgstr ""
-"Emparelhar com dispositivos que requerem uma palavra-passe, código de chave "
-"ou confirmação"
-
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:11
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:18
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:17
+msgid "Pair with devices that require a password, key code, or confirmation"
+msgstr ""
+"Emparelhar com dispositivos que requerem uma palavra-passe, código ou "
+"confirmação"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
