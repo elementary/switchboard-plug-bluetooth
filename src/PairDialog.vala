@@ -27,42 +27,46 @@ public class PairDialog : Granite.MessageDialog {
     public AuthType auth_type { get; construct; }
     public string passkey { get; construct; }
 
-    public PairDialog (ObjectPath object_path) {
+    public PairDialog (ObjectPath object_path, Gtk.Window? main_window) {
         Object (
             auth_type: AuthType.NORMAL,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
-            primary_text: _("Confirm Bluetooth Pairing")
+            primary_text: _("Confirm Bluetooth Pairing"),
+            transient_for: main_window
         );
     }
 
-    public PairDialog.display_passkey (ObjectPath object_path, uint32 passkey, uint16 entered) {
+    public PairDialog.display_passkey (ObjectPath object_path, uint32 passkey, uint16 entered, Gtk.Window? main_window) {
         Object (
             auth_type: AuthType.PASSKEY,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             passkey: "%u".printf (passkey),
-            primary_text: _("Confirm Bluetooth Passkey")
+            primary_text: _("Confirm Bluetooth Passkey"),
+            transient_for: main_window
         );
     }
 
-    public PairDialog.request_confirmation (ObjectPath object_path, uint32 passkey) {
+    public PairDialog.request_confirmation (ObjectPath object_path, uint32 passkey, Gtk.Window? main_window) {
         Object (
             auth_type: AuthType.CONFIRMATION,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             passkey: "%u".printf (passkey),
-            primary_text: _("Confirm Bluetooth Passkey")
+            primary_text: _("Confirm Bluetooth Passkey"),
+            transient_for: main_window
         );
     }
 
-    public PairDialog.with_pin_code (ObjectPath object_path, string pincode) {
+    public PairDialog.with_pin_code (ObjectPath object_path, string pincode, Gtk.Window? main_window) {
         Object (
             auth_type: AuthType.PIN,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             passkey: pincode,
-            primary_text: _("Enter Bluetooth PIN")
+            primary_text: _("Enter Bluetooth PIN"),
+            transient_for: main_window
         );
     }
 
@@ -123,7 +127,7 @@ public class PairDialog : Granite.MessageDialog {
             }
         });
 
-        (device as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
+        ((DBusProxy)device).g_properties_changed.connect ((changed, invalid) => {
             var paired = changed.lookup_value ("Paired", new VariantType ("b"));
             if (paired != null && device.paired) {
                 destroy ();

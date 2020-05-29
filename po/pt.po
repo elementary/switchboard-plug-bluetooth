@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 15:38-0700\n"
-"PO-Revision-Date: 2019-08-29 17:22+0000\n"
+"POT-Creation-Date: 2020-04-28 22:16+0000\n"
+"PO-Revision-Date: 2020-05-01 09:52+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-01-01 05:47+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:35
@@ -26,7 +26,7 @@ msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr "Configurar Definições de Bluetooth"
+msgstr "Configurar definições de bluetooth"
 
 #: src/MainView.vala:43
 msgid "No Devices Found"
@@ -78,25 +78,25 @@ msgstr "Dispositivos próximos"
 msgid "Confirm Bluetooth Pairing"
 msgstr "Confirmar o emparelhamento Bluetooth"
 
-#: src/PairDialog.vala:45 src/PairDialog.vala:55
+#: src/PairDialog.vala:46 src/PairDialog.vala:57
 msgid "Confirm Bluetooth Passkey"
 msgstr "Confirmar chave de acesso do Bluetooth"
 
-#: src/PairDialog.vala:65
+#: src/PairDialog.vala:68
 msgid "Enter Bluetooth PIN"
 msgstr "Introduza o PIN Bluetooth"
 
-#: src/PairDialog.vala:71
+#: src/PairDialog.vala:75
 msgid "Unknown Bluetooth Device"
 msgstr "Dispositivo Bluetooth Desconhecido"
 
-#: src/PairDialog.vala:84
+#: src/PairDialog.vala:88
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
 "Certifique-se de que o código exibido em \"%s\" corresponde ao código abaixo."
 
-#: src/PairDialog.vala:88
+#: src/PairDialog.vala:92
 #, c-format
 msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
@@ -105,16 +105,16 @@ msgstr ""
 "\"%s\" gostaria de emparelhar com este dispositivo. Certifique-se de que o "
 "código exibido em \"%s\" corresponde ao código abaixo."
 
-#: src/PairDialog.vala:90 src/PairDialog.vala:100 src/DeviceRow.vala:224
+#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:224
 msgid "Pair"
 msgstr "Emparelhar"
 
-#: src/PairDialog.vala:94
+#: src/PairDialog.vala:98
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr "Escreva o código exibido abaixo em \"%s\", seguido de Enter."
 
-#: src/PairDialog.vala:98
+#: src/PairDialog.vala:102
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "\"%s\" gostaria de emparelhar com este dispositivo."
@@ -140,8 +140,8 @@ msgid "Disconnecting…"
 msgstr "A desligar…"
 
 #: src/DeviceRow.vala:50
-msgid "Unable to Connnect"
-msgstr "Impossível ligar"
+msgid "Unable to Connect"
+msgstr "Incapaz de se ligar"
 
 #: src/DeviceRow.vala:52
 msgid "Not Connected"
@@ -149,19 +149,19 @@ msgstr "Não Ligado"
 
 #: src/DeviceRow.vala:120
 msgid "Sound Settings"
-msgstr "Definições de som"
+msgstr "Definições de Som"
 
 #: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
-msgstr "Definições de teclado"
+msgstr "Definições do Teclado"
 
 #: src/DeviceRow.vala:129
 msgid "Mouse & Touchpad Settings"
-msgstr "Definições de rato & touchpad"
+msgstr "Definições do Rato e Touchpad"
 
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
-msgstr "Definições da impressora"
+msgstr "Definições da Impressora"
 
 #: src/DeviceRow.vala:236
 msgid "Disconnect"
