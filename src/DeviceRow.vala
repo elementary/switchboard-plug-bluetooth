@@ -88,7 +88,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         label.hexpand = true;
         label.xalign = 0;
 
-        settings_button = new Gtk.Button.with_label (_("Settings..."));
+        settings_button = new Gtk.Button.with_label (_("Settings…"));
         settings_button.visible = false;
         settings_button.valign = Gtk.Align.CENTER;
         size_group.add_widget (settings_button);
