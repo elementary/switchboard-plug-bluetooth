@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2019-01-28 21:40+0000\n"
-"Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
-"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2020-06-02 12:11+0000\n"
+"Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
+"Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:52+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:35
@@ -72,28 +72,25 @@ msgid "Nearby Devices"
 msgstr "Nærværende Enheder"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Konfigurer Bluetooth-indstillinger"
+msgstr "Bekræft Bluetooth Parring"
 
 #: src/PairDialog.vala:46 src/PairDialog.vala:57
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Konfigurer Bluetooth-indstillinger"
+msgstr "Bekræft Bluetooth Passkey"
 
 #: src/PairDialog.vala:68
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Indtast Bluetooth PIN"
 
 #: src/PairDialog.vala:75
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Ukendt Bluetooth Enhed"
 
 #: src/PairDialog.vala:88
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
+msgstr "Sørg for at koden vist på “%s” stemmer overens med den nedenfor."
 
 #: src/PairDialog.vala:92
 #, c-format
@@ -101,6 +98,8 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"“%s” ønsker at danne par med denne enhed. Sørg for at koden vist på “%s” "
+"stemmer overens med nedenstående."
 
 #: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:224
 msgid "Pair"
@@ -109,12 +108,12 @@ msgstr "Par"
 #: src/PairDialog.vala:98
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "Indtast koden vist nedenfor på \"%s\", efterfulgt af Enter."
 
 #: src/PairDialog.vala:102
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "“%s” ønsker at danne par med denne enhed."
 
 #: src/DeviceRow.vala:40
 msgid "Available"
@@ -137,8 +136,6 @@ msgid "Disconnecting…"
 msgstr "Afbryder…"
 
 #: src/DeviceRow.vala:50
-#, fuzzy
-#| msgid "Unable to Connnect"
 msgid "Unable to Connect"
 msgstr "Kan ikke oprette forbindelse"
 
@@ -152,7 +149,7 @@ msgstr "Lydindstillinger"
 
 #: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
-msgstr "Tastaturindstillinger"
+msgstr "Tastatur Indstillinger"
 
 #: src/DeviceRow.vala:129
 msgid "Mouse & Touchpad Settings"
