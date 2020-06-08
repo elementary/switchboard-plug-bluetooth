@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2020-05-11 16:10+0000\n"
+"PO-Revision-Date: 2020-06-09 10:11+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/nl/>\n"
@@ -159,7 +159,7 @@ msgstr "Muis- en touchpadinstellingen"
 
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
-msgstr "Printerinstellingen"
+msgstr "Printer instellingen"
 
 #: src/DeviceRow.vala:236
 msgid "Disconnect"
