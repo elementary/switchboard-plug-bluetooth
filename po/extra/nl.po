@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2020-01-04 11:07+0000\n"
+"PO-Revision-Date: 2020-06-09 10:11+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/nl/>\n"
@@ -20,10 +20,8 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
-#, fuzzy
-#| msgid "Configure Bluetooth Settings"
 msgid "Bluetooth Settings"
-msgstr "Configureer bluetooth instellingen"
+msgstr "Bluetooth instellingen"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:6
 msgid "Configure Bluetooth Settings"
