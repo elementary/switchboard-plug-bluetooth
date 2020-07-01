@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2020-05-11 16:10+0000\n"
+"PO-Revision-Date: 2020-07-02 03:12+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/es/>\n"
@@ -50,8 +50,7 @@ msgstr "Buscando"
 #: src/MainView.vala:210
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr ""
-"Ahora detectable como \"%s\". No detectable cuando esta página está cerrada"
+msgstr "Ahora detectable como «%s». No detectable cuando se cierra esta página"
 
 #: src/MainView.vala:210
 msgid "Unknown"
@@ -59,7 +58,7 @@ msgstr "Desconocido"
 
 #: src/MainView.vala:212
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr "No detectable mientras Bluetooth está apagado"
+msgstr "No detectable mientras Bluetooth esté apagado"
 
 #: src/MainView.vala:214
 msgid "Not discoverable"
@@ -108,7 +107,7 @@ msgstr ""
 
 #: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:224
 msgid "Pair"
-msgstr "Par"
+msgstr "Emparejar"
 
 #: src/PairDialog.vala:98
 #, c-format
@@ -148,7 +147,7 @@ msgstr "No pudo conectarse"
 
 #: src/DeviceRow.vala:52
 msgid "Not Connected"
-msgstr "No Conectado"
+msgstr "No conectado"
 
 #: src/DeviceRow.vala:120
 msgid "Sound Settings"
@@ -160,7 +159,7 @@ msgstr "Configuración de teclado"
 
 #: src/DeviceRow.vala:129
 msgid "Mouse & Touchpad Settings"
-msgstr "Configuración de Ratón y Touchpad"
+msgstr "Configuración de ratón y panel táctil"
 
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
