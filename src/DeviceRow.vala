@@ -32,7 +32,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         CONNECTING,
         DISCONNECTING,
         NOT_CONNECTED,
-        UNABLE_TO_CONNECT;
+        UNABLE_TO_CONNECT,
+        UNABLE_TO_CONNECT_PAIRED;
 
         public string to_string () {
             switch (this) {
@@ -47,6 +48,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 case DISCONNECTING:
                     return _("Disconnecting…");
                 case UNABLE_TO_CONNECT:
+                case UNABLE_TO_CONNECT_PAIRED:
                     return _("Unable to Connect");
                 default:
                     return _("Not Connected");
@@ -54,6 +56,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         }
     }
 
+    private Gtk.Button remove_button;
     private Gtk.Button connect_button;
     private Gtk.Image state;
     private Gtk.Label state_label;
@@ -97,9 +100,26 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         settings_button.no_show_all = true;
         settings_button.visible = false;
 
+        remove_button = new Gtk.Button ();
+        remove_button.valign = Gtk.Align.CENTER;
+        remove_button.tooltip_text = _("Forget selected device");
+        remove_button.label = "Forget";
+        remove_button.show_all ();
+        remove_button.no_show_all = true;
+        remove_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+        remove_button.clicked.connect (() => {
+                try {
+                    adapter.remove_device (new ObjectPath (((DBusProxy) device).g_object_path));
+                } catch (Error e) {
+                    debug ("Removing bluetooth device failed: %s", e.message);
+                }
+            });
+
         connect_button = new Gtk.Button ();
         connect_button.valign = Gtk.Align.CENTER;
+
         size_group.add_widget (connect_button);
+        size_group.add_widget (remove_button);
 
         var grid = new Gtk.Grid ();
         grid.margin = 6;
@@ -109,31 +129,13 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         grid.attach (label, 1, 0, 1, 1);
         grid.attach (state_label, 1, 1, 1, 1);
         grid.attach (settings_button, 2, 0, 1, 2);
-        grid.attach (connect_button, 3, 0, 1, 2);
+        grid.attach (remove_button, 3, 0, 1, 2);
+        grid.attach (connect_button, 4, 0, 1, 2);
 
         add (grid);
         show_all ();
 
-        switch (device.icon) {
-            case "audio-card":
-                settings_button.uri = "settings://sound";
-                settings_button.tooltip_text = _("Sound Settings");
-                break;
-            case "input-gaming":
-            case "input-keyboard":
-                settings_button.uri = "settings://input/keyboard";
-                settings_button.tooltip_text = _("Keyboard Settings");
-                break;
-            case "input-mouse":
-                settings_button.uri = "settings://input/mouse";
-                settings_button.tooltip_text = _("Mouse & Touchpad Settings");
-                break;
-            case "printer":
-                settings_button.uri = "settings://printer";
-                settings_button.tooltip_text = _("Printer Settings");
-                break;
-        }
-
+        config_setting_button ();
         compute_status ();
         set_sensitive (adapter.powered);
 
@@ -176,6 +178,33 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         });
     }
 
+    private void config_setting_button () {
+
+        switch (device.icon) {
+            case "audio-card":
+                settings_button.uri = "settings://sound";
+                settings_button.tooltip_text = _("Sound Settings");
+                break;
+            case "input-gaming":
+            case "input-keyboard":
+                settings_button.uri = "settings://input/keyboard";
+                settings_button.tooltip_text = _("Keyboard Settings");
+                break;
+            case "input-mouse":
+                settings_button.uri = "settings://input/mouse";
+                settings_button.tooltip_text = _("Mouse & Touchpad Settings");
+                break;
+            case "printer":
+                settings_button.uri = "settings://printer";
+                settings_button.tooltip_text = _("Printer Settings");
+                break;
+            default:
+                settings_button.uri = null;
+                settings_button.tooltip_text = null;
+                break;
+        }
+    }
+
     private async void button_clicked () {
         if (!device.paired) {
             set_status (Status.PAIRING);
@@ -190,7 +219,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             try {
                 yield device.connect ();
             } catch (Error e) {
-                set_status (Status.UNABLE_TO_CONNECT);
+                set_status (Status.UNABLE_TO_CONNECT_PAIRED);
                 critical (e.message);
             }
         } else {
@@ -226,11 +255,13 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 settings_button.visible = false;
                 state.no_show_all = true;
                 state.visible = false;
+                remove_button.visible = false;
                 break;
             case Status.PAIRING:
                 connect_button.sensitive = false;
                 state.icon_name = "user-away";
                 settings_button.visible = false;
+                remove_button.visible = false;
                 break;
             case Status.CONNECTED:
                 connect_button.label = _("Disconnect");
@@ -239,27 +270,42 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 if (settings_button.uri != "") {
                     settings_button.visible = true;
                 }
+                remove_button.visible = true;
+                remove_button.sensitive = true;
                 break;
             case Status.CONNECTING:
                 connect_button.sensitive = false;
                 state.icon_name = "user-away";
                 settings_button.visible = false;
+                remove_button.visible = true;
+                remove_button.sensitive = false;
                 break;
             case Status.DISCONNECTING:
                 connect_button.sensitive = false;
                 state.icon_name = "user-away";
                 settings_button.visible = false;
+                remove_button.visible = false;
                 break;
             case Status.NOT_CONNECTED:
                 connect_button.label = _("Connect");
                 connect_button.sensitive = true;
                 state.icon_name = "user-offline";
                 settings_button.visible = false;
+                remove_button.visible = true;
+                remove_button.sensitive = true;
                 break;
             case Status.UNABLE_TO_CONNECT:
                 connect_button.sensitive = true;
                 state.icon_name = "user-busy";
                 settings_button.visible = false;
+                remove_button.visible = false;
+                break;
+            case Status.UNABLE_TO_CONNECT_PAIRED:
+                connect_button.sensitive = true;
+                state.icon_name = "user-busy";
+                settings_button.visible = false;
+                remove_button.visible = true;
+                remove_button.sensitive = true;
                 break;
         }
         status_changed ();
