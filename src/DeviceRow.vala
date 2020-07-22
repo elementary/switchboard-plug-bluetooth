@@ -101,7 +101,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         settings_button.no_show_all = true;
         settings_button.visible = false;
 
-        forget_button_image = new Gtk.Image.from_icon_name ("user-trash-symbolic", Gtk.IconSize.MENU);
+        forget_button_image = new Gtk.Image.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU);
         forget_button = new Gtk.EventBox ();
         forget_button.add (forget_button_image);
         forget_button.tooltip_text = _("Forget this device");
