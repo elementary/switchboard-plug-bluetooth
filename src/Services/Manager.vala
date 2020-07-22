@@ -234,7 +234,9 @@ public class Bluetooth.Services.ObjectManager : Object {
 
     private async void create_agent (Gtk.Window? window) {
         GLib.DBusObject? bluez_object = object_manager.get_object ("/org/bluez");
-        agent_manager = (Bluetooth.Services.AgentManager) bluez_object.get_interface ("org.bluez.AgentManager1");
+        if (bluez_object != null) {
+            agent_manager = (Bluetooth.Services.AgentManager) bluez_object.get_interface ("org.bluez.AgentManager1");
+        }
 
         agent = new Bluetooth.Services.Agent (window);
         agent.notify["ready"].connect (() => {
@@ -254,7 +256,7 @@ public class Bluetooth.Services.ObjectManager : Object {
             yield create_agent (window);
         }
 
-        if (agent.ready) {
+        if (agent_manager != null && agent.ready) {
             try {
                 agent_manager.register_agent (agent.get_path (), "DisplayYesNo");
             } catch (Error e) {
@@ -265,7 +267,7 @@ public class Bluetooth.Services.ObjectManager : Object {
 
     public async void unregister_agent () {
         is_registered = false;
-        if (agent.ready) {
+        if (agent_manager != null && agent.ready) {
             try {
                 agent_manager.unregister_agent (agent.get_path ());
             } catch (Error e) {
