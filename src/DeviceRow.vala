@@ -57,8 +57,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     }
 
     private Gtk.Button connect_button;
-    private Gtk.Image forget_button_image;
-    private Gtk.EventBox forget_button;
+    private Gtk.Button forget_button;
     private Gtk.Image state;
     private Gtk.Label state_label;
     private Gtk.LinkButton settings_button;
@@ -101,9 +100,9 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         settings_button.no_show_all = true;
         settings_button.visible = false;
 
-        forget_button_image = new Gtk.Image.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU);
-        forget_button = new Gtk.EventBox ();
-        forget_button.add (forget_button_image);
+        forget_button = new Gtk.Button ();
+        forget_button.image = new Gtk.Image.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU);
+        forget_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
         forget_button.tooltip_text = _("Forget this device");
         forget_button.margin_end = 3;
         forget_button.show_all ();
