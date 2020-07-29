@@ -100,21 +100,13 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         settings_button.no_show_all = true;
         settings_button.visible = false;
 
-        forget_button = new Gtk.Button ();
-        forget_button.image = new Gtk.Image.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU);
+        forget_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU) {
+            margin_end = 3,
+            no_show_all = true,
+            tooltip_text = _("Forget this device"),
+            visible = false
+        };
         forget_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-        forget_button.tooltip_text = _("Forget this device");
-        forget_button.margin_end = 3;
-        forget_button.show_all ();
-        forget_button.no_show_all = true;
-        forget_button.visible = false;
-        forget_button.button_release_event.connect (() => {
-                try {
-                    adapter.remove_device (new ObjectPath (((DBusProxy) device).g_object_path));
-                } catch (Error e) {
-                    debug ("Removing bluetooth device failed: %s", e.message);
-                }
-            });
 
         connect_button = new Gtk.Button ();
         connect_button.valign = Gtk.Align.CENTER;
@@ -176,6 +168,15 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             // If pairing is successful, mark devices as trusted so they autoconnect
             device.trusted = device.paired;
         });
+
+        forget_button.button_release_event.connect (() => {
+            try {
+                adapter.remove_device (new ObjectPath (((DBusProxy) device).g_object_path));
+            } catch (Error e) {
+                debug ("Forget bluetooth device failed: %s", e.message);
+            }
+        });
+
     }
 
     private void config_settings_button () {
