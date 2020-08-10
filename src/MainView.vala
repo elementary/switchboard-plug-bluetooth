@@ -22,6 +22,9 @@
 public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     private Gtk.ListBox list_box;
     private Gtk.Button remove_button;
+    private Gtk.Button rename_button;
+    private Gtk.Entry rename_entry;
+    private Gtk.Revealer rename_revealer;
     private Gtk.Revealer discovering_revealer;
 
     public Services.ObjectManager manager { get; construct set; }
@@ -60,7 +63,16 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
         remove_button.sensitive = false;
         remove_button.tooltip_text = _("Forget selected device");
-
+        rename_button = new Gtk.Button.from_icon_name ("bluetooth-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
+        rename_button.tooltip_text = _("Rename device");
+        rename_entry = new Gtk.Entry ();
+        rename_entry.secondary_icon_name = "view-refresh-symbolic";
+        rename_entry.secondary_icon_tooltip_text = _("Restore");
+        rename_revealer = new Gtk.Revealer ();
+        rename_revealer.margin_top = 1;
+        rename_revealer.margin_bottom = 1;
+        rename_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
+        rename_revealer.add (rename_entry);
         var discovering_label = new Gtk.Label (_("Discovering"));
 
         var spinner = new Gtk.Spinner ();
@@ -82,6 +94,8 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         var toolbar = new Gtk.ActionBar ();
         toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         toolbar.add (remove_button);
+        toolbar.add (rename_button);
+        toolbar.add (rename_revealer);
         toolbar.add (discovering_revealer);
 
         var grid = new Gtk.Grid ();
@@ -112,6 +126,30 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             }
         });
 
+        rename_button.clicked.connect (() => {
+            rename_revealer.set_reveal_child (!rename_revealer.child_revealed);
+        });
+        rename_revealer.notify["child-revealed"].connect (() => {
+            var adapters = manager.get_adapters ();
+            if (!rename_revealer.child_revealed) {
+                rename_button.tooltip_text = _("Rename device");
+                if (!adapters.is_empty) {
+                    adapters.first ().alias = rename_entry.text;
+                }
+            } else {
+                rename_button.tooltip_text = _("Save change");
+                if (!adapters.is_empty) {
+                    rename_entry.text = adapters.first ().alias;
+                }
+            }
+            update_description ();
+        });
+        rename_entry.icon_press.connect ((pos, event) => {
+            var adapters = manager.get_adapters ();
+            if (pos == Gtk.EntryIconPosition.SECONDARY) {
+                rename_entry.text = adapters.first ().name;
+            }
+        });
         list_box.selected_rows_changed.connect (update_toolbar);
 
         if (manager.retrieve_finished) {

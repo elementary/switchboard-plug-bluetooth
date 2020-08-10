@@ -193,7 +193,11 @@ public class Bluetooth.Services.ObjectManager : Object {
         if (adapters.is_empty) {
             return null;
         } else {
-            return adapters.first ().name;
+            if (adapters.first ().name == adapters.first ().alias) {
+                return adapters.first ().name;
+            } else {
+                return adapters.first ().alias;
+            }
         }
     }
 
