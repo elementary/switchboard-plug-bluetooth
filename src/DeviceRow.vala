@@ -127,7 +127,30 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         add (grid);
         show_all ();
 
-        config_settings_button ();
+        switch (device.icon) {
+            case "audio-card":
+                settings_button.uri = "settings://sound";
+                settings_button.tooltip_text = _("Sound Settings");
+                break;
+            case "input-gaming":
+            case "input-keyboard":
+                settings_button.uri = "settings://input/keyboard";
+                settings_button.tooltip_text = _("Keyboard Settings");
+                break;
+            case "input-mouse":
+                settings_button.uri = "settings://input/mouse";
+                settings_button.tooltip_text = _("Mouse & Touchpad Settings");
+                break;
+            case "printer":
+                settings_button.uri = "settings://printer";
+                settings_button.tooltip_text = _("Printer Settings");
+                break;
+            default:
+                settings_button.uri = null;
+                settings_button.tooltip_text = null;
+                break;
+        }
+
         compute_status ();
         set_sensitive (adapter.powered);
 
@@ -177,33 +200,6 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             }
         });
 
-    }
-
-    private void config_settings_button () {
-
-        switch (device.icon) {
-            case "audio-card":
-                settings_button.uri = "settings://sound";
-                settings_button.tooltip_text = _("Sound Settings");
-                break;
-            case "input-gaming":
-            case "input-keyboard":
-                settings_button.uri = "settings://input/keyboard";
-                settings_button.tooltip_text = _("Keyboard Settings");
-                break;
-            case "input-mouse":
-                settings_button.uri = "settings://input/mouse";
-                settings_button.tooltip_text = _("Mouse & Touchpad Settings");
-                break;
-            case "printer":
-                settings_button.uri = "settings://printer";
-                settings_button.tooltip_text = _("Printer Settings");
-                break;
-            default:
-                settings_button.uri = null;
-                settings_button.tooltip_text = null;
-                break;
-        }
     }
 
     private async void button_clicked () {
