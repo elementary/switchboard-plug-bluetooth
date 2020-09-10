@@ -69,6 +69,7 @@ public class Bluetooth.Services.ObjectManager : Object {
                 object_manager_proxy_get_type,
                 null
             );
+            if (object_manager == null) return;
             object_manager.get_objects ().foreach ((object) => {
                 object.get_interfaces ().foreach ((iface) => on_interface_added (object, iface));
             });
@@ -199,26 +200,30 @@ public class Bluetooth.Services.ObjectManager : Object {
 
     public Gee.LinkedList<Bluetooth.Services.Adapter> get_adapters () {
         var adapters = new Gee.LinkedList<Bluetooth.Services.Adapter> ();
-        object_manager.get_objects ().foreach ((object) => {
-            GLib.DBusInterface? iface = object.get_interface ("org.bluez.Adapter1");
-            if (iface == null)
-                return;
+        if (object_manager != null) {
+            object_manager.get_objects ().foreach ((object) => {
+                GLib.DBusInterface? iface = object.get_interface ("org.bluez.Adapter1");
+                if (iface == null)
+                    return;
 
-            adapters.add (((Bluetooth.Services.Adapter) iface));
-        });
+                adapters.add (((Bluetooth.Services.Adapter) iface));
+            });
+        }
 
         return (owned) adapters;
     }
 
     public Gee.Collection<Bluetooth.Services.Device> get_devices () {
         var devices = new Gee.LinkedList<Bluetooth.Services.Device> ();
-        object_manager.get_objects ().foreach ((object) => {
-            GLib.DBusInterface? iface = object.get_interface ("org.bluez.Device1");
-            if (iface == null)
-                return;
+        if (object_manager != null) {
+            object_manager.get_objects ().foreach ((object) => {
+                GLib.DBusInterface? iface = object.get_interface ("org.bluez.Device1");
+                if (iface == null)
+                    return;
 
-            devices.add (((Bluetooth.Services.Device) iface));
-        });
+                devices.add (((Bluetooth.Services.Device) iface));
+            });
+        }
 
         return (owned) devices;
     }
@@ -233,6 +238,7 @@ public class Bluetooth.Services.ObjectManager : Object {
     }
 
     private async void create_agent (Gtk.Window? window) {
+        if (object_manager == null) return;
         GLib.DBusObject? bluez_object = object_manager.get_object ("/org/bluez");
         if (bluez_object != null) {
             agent_manager = (Bluetooth.Services.AgentManager) bluez_object.get_interface ("org.bluez.AgentManager1");
