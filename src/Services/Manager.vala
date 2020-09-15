@@ -69,7 +69,9 @@ public class Bluetooth.Services.ObjectManager : Object {
                 object_manager_proxy_get_type,
                 null
             );
-            if (object_manager == null) return;
+            if (object_manager == null) {
+                return;
+            }
             object_manager.get_objects ().foreach ((object) => {
                 object.get_interfaces ().foreach ((iface) => on_interface_added (object, iface));
             });
@@ -238,7 +240,9 @@ public class Bluetooth.Services.ObjectManager : Object {
     }
 
     private async void create_agent (Gtk.Window? window) {
-        if (object_manager == null) return;
+        if (object_manager == null) {
+            return;
+        }
         GLib.DBusObject? bluez_object = object_manager.get_object ("/org/bluez");
         if (bluez_object != null) {
             agent_manager = (Bluetooth.Services.AgentManager) bluez_object.get_interface ("org.bluez.AgentManager1");
