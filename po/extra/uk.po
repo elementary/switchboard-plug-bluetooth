@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2020-09-17 00:14+0000\n"
+"PO-Revision-Date: 2020-09-18 23:14+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/uk/>\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
 msgid "Bluetooth Settings"
-msgstr ""
+msgstr "Параметри Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:6
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "Налаштування параметрів Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:18
@@ -36,3 +36,5 @@ msgstr "Оновлено переклади"
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:17
 msgid "Pair with devices that require a password, key code, or confirmation"
 msgstr ""
+"Пов'язування з пристроями, для яких потрібен пароль, код ключа або "
+"підтвердження"
