@@ -32,7 +32,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         CONNECTING,
         DISCONNECTING,
         NOT_CONNECTED,
-        UNABLE_TO_CONNECT;
+        UNABLE_TO_CONNECT,
+        UNABLE_TO_CONNECT_PAIRED;
 
         public string to_string () {
             switch (this) {
@@ -47,6 +48,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 case DISCONNECTING:
                     return _("Disconnecting…");
                 case UNABLE_TO_CONNECT:
+                case UNABLE_TO_CONNECT_PAIRED:
                     return _("Unable to Connect");
                 default:
                     return _("Not Connected");
@@ -55,6 +57,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     }
 
     private Gtk.Button connect_button;
+    private Gtk.Button forget_button;
     private Gtk.Image state;
     private Gtk.Label state_label;
     private Gtk.LinkButton settings_button;
@@ -97,8 +100,17 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         settings_button.no_show_all = true;
         settings_button.visible = false;
 
+        forget_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU) {
+            margin_end = 3,
+            no_show_all = true,
+            tooltip_text = _("Forget this device"),
+            visible = false
+        };
+        forget_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+
         connect_button = new Gtk.Button ();
         connect_button.valign = Gtk.Align.CENTER;
+
         size_group.add_widget (connect_button);
 
         var grid = new Gtk.Grid ();
@@ -109,7 +121,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         grid.attach (label, 1, 0, 1, 1);
         grid.attach (state_label, 1, 1, 1, 1);
         grid.attach (settings_button, 2, 0, 1, 2);
-        grid.attach (connect_button, 3, 0, 1, 2);
+        grid.attach (forget_button, 3, 0, 1, 2);
+        grid.attach (connect_button, 4, 0, 1, 2);
 
         add (grid);
         show_all ();
@@ -131,6 +144,10 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             case "printer":
                 settings_button.uri = "settings://printer";
                 settings_button.tooltip_text = _("Printer Settings");
+                break;
+            default:
+                settings_button.uri = null;
+                settings_button.tooltip_text = null;
                 break;
         }
 
@@ -174,6 +191,15 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             // If pairing is successful, mark devices as trusted so they autoconnect
             device.trusted = device.paired;
         });
+
+        forget_button.button_release_event.connect (() => {
+            try {
+                adapter.remove_device (new ObjectPath (((DBusProxy) device).g_object_path));
+            } catch (Error e) {
+                debug ("Forget bluetooth device failed: %s", e.message);
+            }
+        });
+
     }
 
     private async void button_clicked () {
@@ -190,7 +216,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             try {
                 yield device.connect ();
             } catch (Error e) {
-                set_status (Status.UNABLE_TO_CONNECT);
+                set_status (Status.UNABLE_TO_CONNECT_PAIRED);
                 critical (e.message);
             }
         } else {
@@ -226,11 +252,13 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 settings_button.visible = false;
                 state.no_show_all = true;
                 state.visible = false;
+                forget_button.visible = false;
                 break;
             case Status.PAIRING:
                 connect_button.sensitive = false;
                 state.icon_name = "user-away";
                 settings_button.visible = false;
+                forget_button.visible = false;
                 break;
             case Status.CONNECTED:
                 connect_button.label = _("Disconnect");
@@ -239,27 +267,43 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 if (settings_button.uri != "") {
                     settings_button.visible = true;
                 }
+                forget_button.sensitive = true;
+                forget_button.visible = true;
                 break;
             case Status.CONNECTING:
                 connect_button.sensitive = false;
                 state.icon_name = "user-away";
                 settings_button.visible = false;
+                forget_button.sensitive = false;
+                forget_button.visible = true;
                 break;
             case Status.DISCONNECTING:
                 connect_button.sensitive = false;
                 state.icon_name = "user-away";
                 settings_button.visible = false;
+                forget_button.sensitive = false;
+                forget_button.visible = true;
                 break;
             case Status.NOT_CONNECTED:
                 connect_button.label = _("Connect");
                 connect_button.sensitive = true;
                 state.icon_name = "user-offline";
                 settings_button.visible = false;
+                forget_button.sensitive = true;
+                forget_button.visible = true;
                 break;
             case Status.UNABLE_TO_CONNECT:
                 connect_button.sensitive = true;
                 state.icon_name = "user-busy";
                 settings_button.visible = false;
+                forget_button.visible = false;
+                break;
+            case Status.UNABLE_TO_CONNECT_PAIRED:
+                connect_button.sensitive = true;
+                state.icon_name = "user-offline";
+                settings_button.visible = false;
+                forget_button.sensitive = true;
+                forget_button.visible = true;
                 break;
         }
         status_changed ();
