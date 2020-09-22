@@ -112,7 +112,7 @@ public class PairDialog : Granite.MessageDialog {
                 secondary_text = _("Make sure the PIN on “%s” and the one you enter the PIN code below match.").printf (device_name);
                 var entry_pin = new Gtk.Entry ();
                 entry_pin.activates_default = true;
-                entry_pin.xalign =(float) 0.5;
+                entry_pin.xalign = 0.5f;
                 entry_pin.input_hints = Gtk.InputHints.NO_SPELLCHECK | Gtk.InputHints.NONE;
                 entry_pin.input_purpose = Gtk.InputPurpose.DIGITS;
                 entry_pin.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
@@ -133,7 +133,7 @@ public class PairDialog : Granite.MessageDialog {
                 secondary_text = _("Make sure the Passkey on “%s” and the one you enter the Passkey code below match.").printf (device_name);
                 var entry_passkey = new Gtk.Entry ();
                 entry_passkey.activates_default = true;
-                entry_passkey.xalign =(float) 0.5;
+                entry_passkey.xalign = 0.5f;
                 entry_passkey.input_hints = Gtk.InputHints.NONE;
                 entry_passkey.input_purpose = Gtk.InputPurpose.NUMBER ;
                 entry_passkey.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
