@@ -32,7 +32,7 @@ public class Bluetooth.Services.Agent : Object {
     [DBus (visible=false)]
     public Agent (Gtk.Window? main_window) {
         this.main_window = main_window;
-	    Bus.own_name ( BusType.SYSTEM, "org.bluez.Agent1", GLib.BusNameOwnerFlags.NONE,
+        Bus.own_name (BusType.SYSTEM, "org.bluez.Agent1", GLib.BusNameOwnerFlags.NONE,
             (connection, name) => {
                 try {
                     connection.register_object (PATH, this);

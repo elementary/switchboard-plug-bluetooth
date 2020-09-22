@@ -363,8 +363,8 @@ public class Bluetooth.Services.ObjectManager : Object {
 
     public async void bluetooth_rfkill (bool state) {
         try {
-	        var connecting = yield GLib.Bus.get (BusType.SESSION);
-	        yield connecting.call ("io.elementary.bluetooth.rfkill", "/io/elementary/bluetooth/rfkill", "io.elementary.bluetooth.rfkill", "BluetoothAirplaneMode", new Variant ("(b)", state), null, GLib.DBusCallFlags.ALLOW_INTERACTIVE_AUTHORIZATION, -1);
+            var connecting = yield GLib.Bus.get (BusType.SESSION);
+            yield connecting.call ("io.elementary.bluetooth.rfkill", "/io/elementary/bluetooth/rfkill", "io.elementary.bluetooth.rfkill", "BluetoothAirplaneMode", new Variant ("(b)", state), null, GLib.DBusCallFlags.ALLOW_INTERACTIVE_AUTHORIZATION, -1);
         } catch (GLib.Error e) {
             warning (" %s\n", e.message);
         }
