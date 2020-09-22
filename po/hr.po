@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:16+0000\n"
+"POT-Creation-Date: 2020-09-22 23:42+0000\n"
 "PO-Revision-Date: 2020-04-11 15:10+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-02 05:59+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:35
+#: src/Plug.vala:30 src/MainView.vala:34
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -29,47 +29,43 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Prilagodite Bluetooth postavke"
 
-#: src/MainView.vala:43
+#: src/MainView.vala:42
 msgid "No Devices Found"
 msgstr "Nema pronađenih uređaja"
 
-#: src/MainView.vala:44
+#: src/MainView.vala:43
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Pobrinite se da je vaš uređaj vidljiv i spreman za uparivanje."
 
-#: src/MainView.vala:62
-msgid "Forget selected device"
-msgstr "Zaboravi odabrani uređaj"
-
-#: src/MainView.vala:64
+#: src/MainView.vala:59
 msgid "Discovering"
 msgstr "Otkrivanje"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:210
+#: src/MainView.vala:177
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Sada je otkriven kao \"%s\". Neće biti otkriven kada se ova stranica zatvori"
 
-#: src/MainView.vala:210
+#: src/MainView.vala:177
 msgid "Unknown"
 msgstr "Nepoznato"
 
-#: src/MainView.vala:212
+#: src/MainView.vala:179
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Nemoguće otkrivanje kada je Bluetooth isključen"
 
-#: src/MainView.vala:214
+#: src/MainView.vala:181
 msgid "Not discoverable"
 msgstr "Nemoguće otkrivanje"
 
-#: src/MainView.vala:260
+#: src/MainView.vala:227
 msgid "Paired Devices"
 msgstr "Upareni uređaji"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:267
+#: src/MainView.vala:234
 msgid "Nearby Devices"
 msgstr "Obližnji uređaji"
 
@@ -104,7 +100,7 @@ msgstr ""
 "“%s” se želi upariti s ovim uređajem. Pobrinite se da kôd prikazan na “%s” "
 "se podudara s onim navedenim dolje."
 
-#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:224
+#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:250
 msgid "Pair"
 msgstr "Upari"
 
@@ -118,55 +114,61 @@ msgstr "Upišite kôd prikazan na “%s” i pritisnite tipku Enter ."
 msgid "“%s” would like to pair with this device."
 msgstr "“%s” se želi upariti s ovim uređajem."
 
-#: src/DeviceRow.vala:40
+#: src/DeviceRow.vala:41
 msgid "Available"
 msgstr "Dostupan"
 
-#: src/DeviceRow.vala:42
+#: src/DeviceRow.vala:43
 msgid "Pairing…"
 msgstr "Uparivanje…"
 
-#: src/DeviceRow.vala:44
+#: src/DeviceRow.vala:45
 msgid "Connected"
 msgstr "Povezano"
 
-#: src/DeviceRow.vala:46
+#: src/DeviceRow.vala:47
 msgid "Connecting…"
 msgstr "Povezivanje…"
 
-#: src/DeviceRow.vala:48
+#: src/DeviceRow.vala:49
 msgid "Disconnecting…"
 msgstr "Prekidanje povezivanja…"
 
-#: src/DeviceRow.vala:50
+#: src/DeviceRow.vala:52
 msgid "Unable to Connect"
 msgstr "Nemoguće povezivanje"
 
-#: src/DeviceRow.vala:52
+#: src/DeviceRow.vala:54
 msgid "Not Connected"
 msgstr "Nije povezano"
 
-#: src/DeviceRow.vala:120
+#: src/DeviceRow.vala:106
+#, fuzzy
+#| msgid "Forget selected device"
+msgid "Forget this device"
+msgstr "Zaboravi odabrani uređaj"
+
+#: src/DeviceRow.vala:133
 msgid "Sound Settings"
 msgstr "Postavke zvuka"
 
-#: src/DeviceRow.vala:125
+#: src/DeviceRow.vala:138
 msgid "Keyboard Settings"
 msgstr "Postavke tipkovnice"
 
-#: src/DeviceRow.vala:129
+#: src/DeviceRow.vala:142
 msgid "Mouse & Touchpad Settings"
 msgstr "Postavke miša i dodirnika"
 
-#: src/DeviceRow.vala:133
+#: src/DeviceRow.vala:146
 msgid "Printer Settings"
 msgstr "Postavke pisača"
 
-#: src/DeviceRow.vala:236
+#: src/DeviceRow.vala:264
 msgid "Disconnect"
 msgstr "Prekini povezivanje"
 
-#: src/DeviceRow.vala:254
+#: src/DeviceRow.vala:288
 msgid "Connect"
 msgstr "Povezivanje"
 
