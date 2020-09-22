@@ -149,6 +149,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             var paired = changed.lookup_value ("Paired", new VariantType ("b"));
             if (paired != null) {
                 compute_status ();
+                device.trusted = device.paired; //paired an trusted
+                device.connect.begin (); // connect after paired
                 this.changed ();
             }
 
@@ -171,8 +173,6 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
         connect_button.clicked.connect (() => {
             button_clicked.begin ();
-            // If pairing is successful, mark devices as trusted so they autoconnect
-            device.trusted = device.paired;
         });
     }
 
@@ -183,6 +183,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 yield device.pair ();
             } catch (Error e) {
                 set_status (Status.UNABLE_TO_CONNECT);
+                cancel_unable ();
                 critical (e.message);
             }
         } else if (!device.connected) {
@@ -203,7 +204,13 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             }
         }
     }
-
+    private void cancel_unable () {
+        try {
+            device.cancel_pairing (); //To stop pair failed time out or error inprogress
+        } catch (Error e) {
+            critical (e.message);
+        }
+    }
     private void compute_status () {
         if (!device.paired) {
             set_status (Status.UNPAIRED);

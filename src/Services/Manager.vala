@@ -26,7 +26,6 @@ public interface Bluetooth.Services.AgentManager : Object {
 }
 
 public class Bluetooth.Services.ObjectManager : Object {
-    private const string SCHEMA = "io.elementary.desktop.wingpanel.bluetooth";
     public signal void adapter_added (Bluetooth.Services.Adapter adapter);
     public signal void adapter_removed (Bluetooth.Services.Adapter adapter);
     public signal void device_added (Bluetooth.Services.Device device);
@@ -40,20 +39,12 @@ public class Bluetooth.Services.ObjectManager : Object {
     public bool is_powered {get; private set; default = false; }
     public bool is_connected {get; private set; default = false; }
 
-    private bool is_registered = false;
-
-    private Settings? settings = null;
     private GLib.DBusObjectManagerClient object_manager;
     private Bluetooth.Services.AgentManager agent_manager;
     private Bluetooth.Services.Agent agent;
 
     construct {
-        var settings_schema = SettingsSchemaSource.get_default ().lookup (SCHEMA, true);
-        if (settings_schema != null) {
-            settings = new Settings (SCHEMA);
-        }
         create_manager.begin ();
-
         notify["discoverable"].connect (() => {
             get_adapters ().foreach ((adapter) => adapter.discoverable = discoverable);
         });
@@ -157,6 +148,8 @@ public class Bluetooth.Services.ObjectManager : Object {
             });
 
             check_global_state ();
+        } else if (iface is Bluetooth.Services.AgentManager) {
+            agent_manager = (Bluetooth.Services.AgentManager) iface;
         }
     }
 
@@ -239,36 +232,15 @@ public class Bluetooth.Services.ObjectManager : Object {
         return null;
     }
 
-    private async void create_agent (Gtk.Window? window) {
-        if (object_manager == null) {
-            return;
-        }
-        GLib.DBusObject? bluez_object = object_manager.get_object ("/org/bluez");
-        if (bluez_object != null) {
-            agent_manager = (Bluetooth.Services.AgentManager) bluez_object.get_interface ("org.bluez.AgentManager1");
-        }
-
-        agent = new Bluetooth.Services.Agent (window);
-        agent.notify["ready"].connect (() => {
-            if (is_registered) {
-                register_agent.begin (window);
-            }
-        });
-
-        agent.unregistered.connect (() => {
-            is_registered = false;
-        });
-    }
-
     public async void register_agent (Gtk.Window? window) {
-        is_registered = true;
-        if (agent_manager == null) {
-            yield create_agent (window);
+        if (agent == null) {
+            agent = new Bluetooth.Services.Agent (window);
         }
 
-        if (agent_manager != null && agent.ready) {
+        if (agent_manager != null) {
             try {
                 agent_manager.register_agent (agent.get_path (), "DisplayYesNo");
+                agent_manager.request_default_agent (agent.get_path ());
             } catch (Error e) {
                 critical (e.message);
             }
@@ -276,8 +248,7 @@ public class Bluetooth.Services.ObjectManager : Object {
     }
 
     public async void unregister_agent () {
-        is_registered = false;
-        if (agent_manager != null && agent.ready) {
+        if (agent_manager != null) {
             try {
                 agent_manager.unregister_agent (agent.get_path ());
             } catch (Error e) {
@@ -359,23 +330,19 @@ public class Bluetooth.Services.ObjectManager : Object {
         if (state == is_powered && discoverable == state && is_discovering == state) {
             return;
         }
-
+        bluetooth_rfkill.begin (state); //send signal bus open rfkill bluetooth
         /* Set discoverable first so description is correct */
         discoverable = state;
         is_powered = state;
 
-        if (!state) {
-            yield stop_discovery ();
+        if (state) {
+            yield stop_discovery (); //make sure it really stops to avoid error GDBus.Error:org.bluez.Error.NotReady
         }
 
         var adapters = get_adapters ();
         foreach (var adapter in adapters) {
             adapter.powered = state;
             adapter.discoverable = state;
-        }
-
-        if (settings != null) {
-            settings.set_boolean ("bluetooth-enabled", state);
         }
 
         if (!state) {
@@ -391,6 +358,24 @@ public class Bluetooth.Services.ObjectManager : Object {
             }
         } else {
             start_discovery.begin ();
+        }
+    }
+
+    public async void bluetooth_rfkill (bool state) {
+        try {
+	        var connecting = yield GLib.Bus.get (BusType.SESSION);
+	        yield connecting.call (
+	            "io.elementary.bluetooth.rfkill",
+	            "/io/elementary/bluetooth/rfkill",
+	            "io.elementary.bluetooth.rfkill",
+	            "BluetoothAirplaneMode",
+	            new Variant ("(b)", state),
+	            null,
+	            GLib.DBusCallFlags.ALLOW_INTERACTIVE_AUTHORIZATION,
+	            -1
+	        );
+        } catch (GLib.Error e) {
+            warning (" %s\n", e.message);
         }
     }
 }

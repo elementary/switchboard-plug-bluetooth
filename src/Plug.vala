@@ -21,6 +21,8 @@
 public class Bluetooth.Plug : Switchboard.Plug {
     private MainView main_view;
     private Services.ObjectManager manager;
+    private Settings? setting_bluetooth = null;
+    private const string SCHEMA = "io.elementary.desktop.wingpanel.bluetooth";
 
     public Plug () {
         var settings = new Gee.TreeMap<string, string?> (null, null);
@@ -31,7 +33,10 @@ public class Bluetooth.Plug : Switchboard.Plug {
             description: _("Configure Bluetooth Settings"),
             icon: "bluetooth",
             supported_settings: settings);
-
+        var settings_schema = SettingsSchemaSource.get_default ().lookup (SCHEMA, true);
+        if (settings_schema != null) {
+            setting_bluetooth = new Settings (SCHEMA);
+        }
         manager = new Bluetooth.Services.ObjectManager ();
         manager.bind_property ("has-object", this, "can-show", GLib.BindingFlags.SYNC_CREATE);
     }
@@ -41,13 +46,27 @@ public class Bluetooth.Plug : Switchboard.Plug {
             main_view = new MainView (manager);
             main_view.quit_plug.connect (() => hidden ());
         }
-
+        main_view.destroy.connect (()=>{
+            manager.discoverable = false;
+            var loop = new MainLoop ();
+            var time = new TimeoutSource (50); //for wait until all bluez stoped service
+            time.set_callback (() => {
+                loop.quit ();
+                return false;
+            });
+            time.attach (loop.get_context ());
+            loop.run ();
+        });
         return main_view;
     }
 
     public override void shown () {
+        bool last_state = false;
+        if (setting_bluetooth != null) {
+            last_state = setting_bluetooth.get_boolean ("bluetooth-enabled");
+        }
         manager.register_agent.begin (main_view.get_toplevel () as Gtk.Window);
-        manager.set_global_state.begin (true); /* Also sets discoverable true and starts discovery */
+        manager.set_global_state.begin (last_state); /* Also sets discoverable true and starts discovery */
     }
 
     public override void hidden () {
