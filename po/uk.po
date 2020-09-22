@@ -8,87 +8,90 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2016-12-15 05:40+0000\n"
-"Last-Translator: Nazar <n.suhovich@gmail.com>\n"
-"Language-Team: Ukrainian <uk@li.org>\n"
+"PO-Revision-Date: 2020-09-18 23:14+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-bluetooth/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: src/Plug.vala:30 src/MainView.vala:35
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "Налаштування параметрів Bluetooth"
 
 #: src/MainView.vala:43
 msgid "No Devices Found"
-msgstr ""
+msgstr "Пристроїв не знайдено"
 
 #: src/MainView.vala:44
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Переконайтеся, що ваші пристрої видимі та готові до пов'язування."
 
 #: src/MainView.vala:62
 msgid "Forget selected device"
-msgstr ""
+msgstr "Забути вибраний пристрій"
 
 #: src/MainView.vala:64
 msgid "Discovering"
-msgstr ""
+msgstr "Пошук пристроїв"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
 #: src/MainView.vala:210
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr ""
+msgstr "Зараз видимий як \"%s\". Не буде видимим, якщо закрити цю сторінку"
 
 #: src/MainView.vala:210
 msgid "Unknown"
-msgstr ""
+msgstr "Невідомо"
 
 #: src/MainView.vala:212
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "Невидимий, коли Bluetooth вимкнено"
 
 #: src/MainView.vala:214
 msgid "Not discoverable"
-msgstr ""
+msgstr "Не видимий"
 
 #: src/MainView.vala:260
 msgid "Paired Devices"
-msgstr ""
+msgstr "Пов'язані пристрої"
 
 #. This header may not appear, so cannot contain discovery spinner
 #: src/MainView.vala:267
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Пристрої поруч"
 
 #: src/PairDialog.vala:35
 msgid "Confirm Bluetooth Pairing"
-msgstr ""
+msgstr "Підтвердити пов'язування через Bluetooth"
 
 #: src/PairDialog.vala:46 src/PairDialog.vala:57
 msgid "Confirm Bluetooth Passkey"
-msgstr ""
+msgstr "Підтверити пароль Bluetooth"
 
 #: src/PairDialog.vala:68
 msgid "Enter Bluetooth PIN"
-msgstr ""
+msgstr "Ввести PIN-код Bluetooth"
 
 #: src/PairDialog.vala:75
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Невідомий пристрій Bluetooth"
 
 #: src/PairDialog.vala:88
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
+msgstr "Переконайтесь, що показаний в “%s” код, збігається з наведеним далі."
 
 #: src/PairDialog.vala:92
 #, c-format
@@ -96,69 +99,71 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"“%s” хоче з'єднатися з цим пристроєм. Переконайтесь, що показаний в “%s” "
+"код, збігається з наведеним далі."
 
 #: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:224
 msgid "Pair"
-msgstr ""
+msgstr "Пов'язати"
 
 #: src/PairDialog.vala:98
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "Введіть код, що показано в “%s” та натисніть Enter."
 
 #: src/PairDialog.vala:102
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "“%s” хоче з'єднатися з цим пристроєм."
 
 #: src/DeviceRow.vala:40
 msgid "Available"
-msgstr ""
+msgstr "Доступно"
 
 #: src/DeviceRow.vala:42
 msgid "Pairing…"
-msgstr ""
+msgstr "Пов'язування…"
 
 #: src/DeviceRow.vala:44
 msgid "Connected"
-msgstr ""
+msgstr "З'єднано"
 
 #: src/DeviceRow.vala:46
 msgid "Connecting…"
-msgstr ""
+msgstr "З'єднання…"
 
 #: src/DeviceRow.vala:48
 msgid "Disconnecting…"
-msgstr ""
+msgstr "Від’єднання…"
 
 #: src/DeviceRow.vala:50
 msgid "Unable to Connect"
-msgstr ""
+msgstr "Не валося з'єднатися"
 
 #: src/DeviceRow.vala:52
 msgid "Not Connected"
-msgstr ""
+msgstr "Не з'єднано"
 
 #: src/DeviceRow.vala:120
 msgid "Sound Settings"
-msgstr ""
+msgstr "Параметри звуку"
 
 #: src/DeviceRow.vala:125
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "Параметри клавіатури"
 
 #: src/DeviceRow.vala:129
 msgid "Mouse & Touchpad Settings"
-msgstr ""
+msgstr "Параметри миші й сенсорної панелі"
 
 #: src/DeviceRow.vala:133
 msgid "Printer Settings"
-msgstr ""
+msgstr "Параметри пристрою друку"
 
 #: src/DeviceRow.vala:236
 msgid "Disconnect"
-msgstr ""
+msgstr "Від'єднати"
 
 #: src/DeviceRow.vala:254
 msgid "Connect"
-msgstr ""
+msgstr "Під'єднати"
