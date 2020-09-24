@@ -40,8 +40,6 @@ public class Bluetooth.Services.ObjectManager : Object {
     public bool is_powered {get; private set; default = false; }
     public bool is_connected {get; private set; default = false; }
 
-    private bool is_registered = false;
-
     private Settings? settings = null;
     private GLib.DBusObjectManagerClient object_manager;
     private Bluetooth.Services.AgentManager agent_manager;
@@ -157,6 +155,8 @@ public class Bluetooth.Services.ObjectManager : Object {
             });
 
             check_global_state ();
+        } else if (iface is Bluetooth.Services.AgentManager) {
+            agent_manager = (Bluetooth.Services.AgentManager) iface; // if nothing iface, agent_manager = null
         }
     }
 
@@ -239,36 +239,15 @@ public class Bluetooth.Services.ObjectManager : Object {
         return null;
     }
 
-    private async void create_agent (Gtk.Window? window) {
-        if (object_manager == null) {
-            return;
-        }
-        GLib.DBusObject? bluez_object = object_manager.get_object ("/org/bluez");
-        if (bluez_object != null) {
-            agent_manager = (Bluetooth.Services.AgentManager) bluez_object.get_interface ("org.bluez.AgentManager1");
-        }
-
-        agent = new Bluetooth.Services.Agent (window);
-        agent.notify["ready"].connect (() => {
-            if (is_registered) {
-                register_agent.begin (window);
-            }
-        });
-
-        agent.unregistered.connect (() => {
-            is_registered = false;
-        });
-    }
-
     public async void register_agent (Gtk.Window? window) {
-        is_registered = true;
-        if (agent_manager == null) {
-            yield create_agent (window);
+        if (agent == null) {
+            agent = new Bluetooth.Services.Agent (window);
         }
 
-        if (agent_manager != null && agent.ready) {
+        if (agent_manager != null) {
             try {
                 agent_manager.register_agent (agent.get_path (), "DisplayYesNo");
+                agent_manager.request_default_agent (agent.get_path ());
             } catch (Error e) {
                 critical (e.message);
             }
@@ -276,8 +255,7 @@ public class Bluetooth.Services.ObjectManager : Object {
     }
 
     public async void unregister_agent () {
-        is_registered = false;
-        if (agent_manager != null && agent.ready) {
+        if (agent_manager != null) {
             try {
                 agent_manager.unregister_agent (agent.get_path ());
             } catch (Error e) {

@@ -17,6 +17,8 @@
 
 public class PairDialog : Granite.MessageDialog {
     public enum AuthType {
+        REQUESTPIN,
+        REQUESTPASSKEY,
         CONFIRMATION,
         NORMAL,
         PASSKEY,
@@ -26,6 +28,8 @@ public class PairDialog : Granite.MessageDialog {
     public ObjectPath object_path { get; construct; }
     public AuthType auth_type { get; construct; }
     public string passkey { get; construct; }
+    public string pincodes { get; construct; }
+    public uint32 passkey_uint32 { get; construct; }
 
     public PairDialog (ObjectPath object_path, Gtk.Window? main_window) {
         Object (
@@ -33,6 +37,26 @@ public class PairDialog : Granite.MessageDialog {
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             primary_text: _("Confirm Bluetooth Pairing"),
+            transient_for: main_window
+        );
+    }
+
+    public PairDialog.request_pin_code (ObjectPath object_path, Gtk.Window? main_window) {
+        Object (
+            auth_type: AuthType.REQUESTPIN,
+            buttons: Gtk.ButtonsType.CANCEL,
+            object_path: object_path,
+            primary_text: _("Enter Bluetooth PIN"),
+            transient_for: main_window
+        );
+    }
+
+    public PairDialog.request_passkey (ObjectPath object_path, Gtk.Window? main_window) {
+        Object (
+            auth_type: AuthType.REQUESTPASSKEY,
+            buttons: Gtk.ButtonsType.CANCEL,
+            object_path: object_path,
+            primary_text: _("Enter Bluetooth Passkey"),
             transient_for: main_window
         );
     }
@@ -83,9 +107,53 @@ public class PairDialog : Granite.MessageDialog {
         }
 
         switch (auth_type) {
+            case AuthType.REQUESTPIN:
+                badge_icon = new ThemedIcon ("dialog-password");
+                secondary_text = _("Make sure the PIN on “%s” and the one you enter the PIN code below match.").printf (device_name);
+                var entry_pin = new Gtk.Entry ();
+                entry_pin.activates_default = true;
+                entry_pin.xalign = 0.5f;
+                entry_pin.input_hints = Gtk.InputHints.NO_SPELLCHECK | Gtk.InputHints.NONE;
+                entry_pin.input_purpose = Gtk.InputPurpose.DIGITS;
+                entry_pin.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
+                entry_pin.max_length = 16; // get from doc bluez
+                entry_pin.width_chars = 16;
+                entry_pin.changed.connect (()=>{
+                    pincodes = entry_pin.text;
+                });
+                custom_bin.margin_start = 25;
+                custom_bin.margin_end = 25;
+                custom_bin.add (entry_pin);
+                custom_bin.show_all ();
+                var confirm_button = add_button (_("Confirm"), Gtk.ResponseType.ACCEPT);
+                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+                break;
+            case AuthType.REQUESTPASSKEY:
+                badge_icon = new ThemedIcon ("dialog-password");
+                secondary_text = _("Make sure the Passkey on “%s” and the one you enter the Passkey code below match.").printf (device_name);
+                var entry_passkey = new Gtk.Entry ();
+                entry_passkey.activates_default = true;
+                entry_passkey.xalign = 0.5f;
+                entry_passkey.input_hints = Gtk.InputHints.NONE;
+                entry_passkey.input_purpose = Gtk.InputPurpose.NUMBER ;
+                entry_passkey.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
+                entry_passkey.max_length = 6; //get from doc bluez
+                entry_passkey.width_chars = 6;
+                entry_passkey.changed.connect (()=>{
+                    passkey_uint32 = (uint32) uint64.parse (entry_passkey.text);
+                });
+                custom_bin.margin_start = 110;
+                custom_bin.margin_end = 110;
+                custom_bin.add (entry_passkey);
+                custom_bin.show_all ();
+                var confirm_button = add_button (_("Confirm"), Gtk.ResponseType.ACCEPT);
+                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+                break;
             case AuthType.CONFIRMATION:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Make sure the code displayed on “%s” matches the one below.").printf (device_name);
+                var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
+                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
             case AuthType.PASSKEY:
                 badge_icon = new ThemedIcon ("dialog-password");
@@ -93,9 +161,12 @@ public class PairDialog : Granite.MessageDialog {
 
                 var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
                 confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+                break;
             case AuthType.PIN:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Type the code displayed below on “%s”, followed by Enter.").printf (device_name);
+                var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
+                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
             case AuthType.NORMAL:
                 badge_icon = new ThemedIcon ("dialog-question");
@@ -115,23 +186,27 @@ public class PairDialog : Granite.MessageDialog {
         }
 
         modal = true;
-
         response.connect ((response_id) => {
             switch (response_id) {
                 case Gtk.ResponseType.ACCEPT:
-                    device.pair.begin ();
+                    destroy (); //pass signal method-return
                     break;
                 case Gtk.ResponseType.CANCEL:
+                    device.blocked = true; // reject with signal block
+                    device.disconnect.begin (); // disconnect to close signal
                     destroy ();
                     break;
             }
         });
-
-        ((DBusProxy)device).g_properties_changed.connect ((changed, invalid) => {
-            var paired = changed.lookup_value ("Paired", new VariantType ("b"));
-            if (paired != null && device.paired) {
-                destroy ();
-            }
+        destroy.connect (()=>{
+            device.blocked = false; // remove bloking
         });
+    }
+
+    public string get_pincode () {
+        return pincodes;
+    }
+    public uint32 get_paskey () {
+        return passkey_uint32;
     }
 }

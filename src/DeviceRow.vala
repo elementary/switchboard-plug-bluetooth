@@ -166,6 +166,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             var paired = changed.lookup_value ("Paired", new VariantType ("b"));
             if (paired != null) {
                 compute_status ();
+                device.trusted = device.paired; //paired an trusted
                 this.changed ();
             }
 
