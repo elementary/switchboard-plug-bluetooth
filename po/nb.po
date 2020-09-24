@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:16+0000\n"
+"POT-Creation-Date: 2020-09-22 23:42+0000\n"
 "PO-Revision-Date: 2019-06-27 21:52+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2017-04-08 06:37+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:35
+#: src/Plug.vala:30 src/MainView.vala:34
 msgid "Bluetooth"
 msgstr "Blåtann"
 
@@ -28,47 +28,43 @@ msgstr "Blåtann"
 msgid "Configure Bluetooth Settings"
 msgstr "Behandle Blåtannsinnstillinger"
 
-#: src/MainView.vala:43
+#: src/MainView.vala:42
 msgid "No Devices Found"
 msgstr "Fant ingen enheter"
 
-#: src/MainView.vala:44
+#: src/MainView.vala:43
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Forsikre deg om at din enhet er synlig og parringsklar."
 
-#: src/MainView.vala:62
-msgid "Forget selected device"
-msgstr "Glem valgt enhet"
-
-#: src/MainView.vala:64
+#: src/MainView.vala:59
 #, fuzzy
 msgid "Discovering"
 msgstr "Oppdager"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:210
+#: src/MainView.vala:177
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "Nå oppdagbar som \"%s\". Ikke oppdagbar når denne siden er lukket"
 
-#: src/MainView.vala:210
+#: src/MainView.vala:177
 msgid "Unknown"
 msgstr "Ukjent"
 
-#: src/MainView.vala:212
+#: src/MainView.vala:179
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Kan ikke oppdages når Blåtann er skrudd av"
 
-#: src/MainView.vala:214
+#: src/MainView.vala:181
 msgid "Not discoverable"
 msgstr "Kan ikke oppdages"
 
-#: src/MainView.vala:260
+#: src/MainView.vala:227
 msgid "Paired Devices"
 msgstr "Parrede enheter"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:267
+#: src/MainView.vala:234
 msgid "Nearby Devices"
 msgstr "Enheter i nærheten"
 
@@ -103,7 +99,7 @@ msgid ""
 "“%s” matches the one below."
 msgstr ""
 
-#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:224
+#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:250
 msgid "Pair"
 msgstr "Parr"
 
@@ -117,57 +113,63 @@ msgstr ""
 msgid "“%s” would like to pair with this device."
 msgstr ""
 
-#: src/DeviceRow.vala:40
+#: src/DeviceRow.vala:41
 msgid "Available"
 msgstr "Tilgjengelig"
 
-#: src/DeviceRow.vala:42
+#: src/DeviceRow.vala:43
 msgid "Pairing…"
 msgstr "Parrer…"
 
-#: src/DeviceRow.vala:44
+#: src/DeviceRow.vala:45
 msgid "Connected"
 msgstr "Tilkoblet"
 
-#: src/DeviceRow.vala:46
+#: src/DeviceRow.vala:47
 msgid "Connecting…"
 msgstr "Kobler til…"
 
-#: src/DeviceRow.vala:48
+#: src/DeviceRow.vala:49
 msgid "Disconnecting…"
 msgstr "Kobler fra…"
 
-#: src/DeviceRow.vala:50
+#: src/DeviceRow.vala:52
 #, fuzzy
 #| msgid "Unable to Connnect"
 msgid "Unable to Connect"
 msgstr "Klarte ikke å koble til"
 
-#: src/DeviceRow.vala:52
+#: src/DeviceRow.vala:54
 msgid "Not Connected"
 msgstr "Ikke tilkoblet"
 
-#: src/DeviceRow.vala:120
+#: src/DeviceRow.vala:106
+#, fuzzy
+#| msgid "Forget selected device"
+msgid "Forget this device"
+msgstr "Glem valgt enhet"
+
+#: src/DeviceRow.vala:133
 msgid "Sound Settings"
 msgstr "Innstillinger for lyd"
 
-#: src/DeviceRow.vala:125
+#: src/DeviceRow.vala:138
 msgid "Keyboard Settings"
 msgstr "Innstillinger for tastatur"
 
-#: src/DeviceRow.vala:129
+#: src/DeviceRow.vala:142
 msgid "Mouse & Touchpad Settings"
 msgstr "Innstillinger for mus og pekeplate"
 
-#: src/DeviceRow.vala:133
+#: src/DeviceRow.vala:146
 msgid "Printer Settings"
 msgstr "Skriverinnstillinger"
 
-#: src/DeviceRow.vala:236
+#: src/DeviceRow.vala:264
 msgid "Disconnect"
 msgstr "Koble fra"
 
-#: src/DeviceRow.vala:254
+#: src/DeviceRow.vala:288
 msgid "Connect"
 msgstr "Koble til"
 

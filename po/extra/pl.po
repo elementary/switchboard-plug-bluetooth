@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:16+0000\n"
+"POT-Creation-Date: 2020-09-22 23:42+0000\n"
 "PO-Revision-Date: 2019-11-17 20:25+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -31,11 +31,12 @@ msgid "Configure Bluetooth Settings"
 msgstr "Skonfiguruj ustawienia Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:18
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:17
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:23
 msgid "Updated translations"
 msgstr "Zaktualizowane tłumaczenia"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:17
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
 msgid "Pair with devices that require a password, key code, or confirmation"
 msgstr ""
 

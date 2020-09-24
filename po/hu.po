@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:16+0000\n"
+"POT-Creation-Date: 2020-09-22 23:42+0000\n"
 "PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:35
+#: src/Plug.vala:30 src/MainView.vala:34
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -28,49 +28,45 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Bluetooth eszközök beállítása"
 
-#: src/MainView.vala:43
+#: src/MainView.vala:42
 msgid "No Devices Found"
 msgstr "Nem találhatók eszközök"
 
-#: src/MainView.vala:44
+#: src/MainView.vala:43
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Győződjön meg róla, hogy a készülékek láthatóak és készen állnak a "
 "párosításra."
 
-#: src/MainView.vala:62
-msgid "Forget selected device"
-msgstr "Kijelölt eszköz elfelejtése"
-
-#: src/MainView.vala:64
+#: src/MainView.vala:59
 #, fuzzy
 msgid "Discovering"
 msgstr "Kapcsolat bontása…"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:210
+#: src/MainView.vala:177
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "Most látható mint \"%s\". Nem lesz látható ha bezárja ezt az oldalt"
 
-#: src/MainView.vala:210
+#: src/MainView.vala:177
 msgid "Unknown"
 msgstr "Ismeretlen"
 
-#: src/MainView.vala:212
+#: src/MainView.vala:179
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Nem észlelhető, amíg a Bluetooth ki van kapcsolva"
 
-#: src/MainView.vala:214
+#: src/MainView.vala:181
 msgid "Not discoverable"
 msgstr "Nem észlelhető"
 
-#: src/MainView.vala:260
+#: src/MainView.vala:227
 msgid "Paired Devices"
 msgstr "Párosított eszközök"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:267
+#: src/MainView.vala:234
 msgid "Nearby Devices"
 msgstr "Közeli eszközök"
 
@@ -105,7 +101,7 @@ msgid ""
 "“%s” matches the one below."
 msgstr ""
 
-#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:224
+#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:250
 msgid "Pair"
 msgstr "Pár"
 
@@ -119,56 +115,62 @@ msgstr ""
 msgid "“%s” would like to pair with this device."
 msgstr ""
 
-#: src/DeviceRow.vala:40
+#: src/DeviceRow.vala:41
 msgid "Available"
 msgstr "Elérhető"
 
-#: src/DeviceRow.vala:42
+#: src/DeviceRow.vala:43
 msgid "Pairing…"
 msgstr "Párosítás…"
 
-#: src/DeviceRow.vala:44
+#: src/DeviceRow.vala:45
 msgid "Connected"
 msgstr "Kapcsolódva"
 
-#: src/DeviceRow.vala:46
+#: src/DeviceRow.vala:47
 msgid "Connecting…"
 msgstr "Kapcsolódás…"
 
-#: src/DeviceRow.vala:48
+#: src/DeviceRow.vala:49
 msgid "Disconnecting…"
 msgstr "Kapcsolat bontása…"
 
-#: src/DeviceRow.vala:50
+#: src/DeviceRow.vala:52
 #, fuzzy
 #| msgid "Unable to Connnect"
 msgid "Unable to Connect"
 msgstr "Nem lehet csatlakozni"
 
-#: src/DeviceRow.vala:52
+#: src/DeviceRow.vala:54
 msgid "Not Connected"
 msgstr "Nincs kapcsolódva"
 
-#: src/DeviceRow.vala:120
+#: src/DeviceRow.vala:106
+#, fuzzy
+#| msgid "Forget selected device"
+msgid "Forget this device"
+msgstr "Kijelölt eszköz elfelejtése"
+
+#: src/DeviceRow.vala:133
 msgid "Sound Settings"
 msgstr "Hangbeállítások"
 
-#: src/DeviceRow.vala:125
+#: src/DeviceRow.vala:138
 msgid "Keyboard Settings"
 msgstr "Billentyűzet beállítások"
 
-#: src/DeviceRow.vala:129
+#: src/DeviceRow.vala:142
 msgid "Mouse & Touchpad Settings"
 msgstr "Egér és Touchpad beállítások"
 
-#: src/DeviceRow.vala:133
+#: src/DeviceRow.vala:146
 msgid "Printer Settings"
 msgstr "Nyomtató beállítások"
 
-#: src/DeviceRow.vala:236
+#: src/DeviceRow.vala:264
 msgid "Disconnect"
 msgstr "Szétkapcsolás"
 
-#: src/DeviceRow.vala:254
+#: src/DeviceRow.vala:288
 msgid "Connect"
 msgstr "Kapcsolódás"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:16+0000\n"
+"POT-Creation-Date: 2020-09-22 23:42+0000\n"
 "PO-Revision-Date: 2020-07-02 03:12+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-21 05:43+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:35
+#: src/Plug.vala:30 src/MainView.vala:34
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -28,48 +28,44 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Configurar ajustes de Bluetooth"
 
-#: src/MainView.vala:43
+#: src/MainView.vala:42
 msgid "No Devices Found"
 msgstr "No se encontraron dispositivos"
 
-#: src/MainView.vala:44
+#: src/MainView.vala:43
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Asegúrese de que sus dispositivos estén visibles y listos para el "
 "emparejamiento."
 
-#: src/MainView.vala:62
-msgid "Forget selected device"
-msgstr "Olvidar dispositivo seleccionado"
-
-#: src/MainView.vala:64
+#: src/MainView.vala:59
 msgid "Discovering"
 msgstr "Buscando"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:210
+#: src/MainView.vala:177
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "Ahora detectable como «%s». No detectable cuando se cierra esta página"
 
-#: src/MainView.vala:210
+#: src/MainView.vala:177
 msgid "Unknown"
 msgstr "Desconocido"
 
-#: src/MainView.vala:212
+#: src/MainView.vala:179
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "No detectable mientras Bluetooth esté apagado"
 
-#: src/MainView.vala:214
+#: src/MainView.vala:181
 msgid "Not discoverable"
 msgstr "No detectable"
 
-#: src/MainView.vala:260
+#: src/MainView.vala:227
 msgid "Paired Devices"
 msgstr "Dispositivos emparejados"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:267
+#: src/MainView.vala:234
 msgid "Nearby Devices"
 msgstr "Dispositivos cercanos"
 
@@ -105,7 +101,7 @@ msgstr ""
 "«%s» quiere emparejar con este dispositivo. Asegúrese de que el código que "
 "aparece en «%s» coincide con el que aparece a continuación."
 
-#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:224
+#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:250
 msgid "Pair"
 msgstr "Emparejar"
 
@@ -121,55 +117,61 @@ msgstr ""
 msgid "“%s” would like to pair with this device."
 msgstr "«%s» quiere emparejarse con este dispositivo."
 
-#: src/DeviceRow.vala:40
+#: src/DeviceRow.vala:41
 msgid "Available"
 msgstr "Disponible"
 
-#: src/DeviceRow.vala:42
+#: src/DeviceRow.vala:43
 msgid "Pairing…"
 msgstr "Emparejando…"
 
-#: src/DeviceRow.vala:44
+#: src/DeviceRow.vala:45
 msgid "Connected"
 msgstr "Conectado"
 
-#: src/DeviceRow.vala:46
+#: src/DeviceRow.vala:47
 msgid "Connecting…"
 msgstr "Conectando…"
 
-#: src/DeviceRow.vala:48
+#: src/DeviceRow.vala:49
 msgid "Disconnecting…"
 msgstr "Desconectando…"
 
-#: src/DeviceRow.vala:50
+#: src/DeviceRow.vala:52
 msgid "Unable to Connect"
 msgstr "No pudo conectarse"
 
-#: src/DeviceRow.vala:52
+#: src/DeviceRow.vala:54
 msgid "Not Connected"
 msgstr "No conectado"
 
-#: src/DeviceRow.vala:120
+#: src/DeviceRow.vala:106
+#, fuzzy
+#| msgid "Forget selected device"
+msgid "Forget this device"
+msgstr "Olvidar dispositivo seleccionado"
+
+#: src/DeviceRow.vala:133
 msgid "Sound Settings"
 msgstr "Configuración de sonido"
 
-#: src/DeviceRow.vala:125
+#: src/DeviceRow.vala:138
 msgid "Keyboard Settings"
 msgstr "Configuración de teclado"
 
-#: src/DeviceRow.vala:129
+#: src/DeviceRow.vala:142
 msgid "Mouse & Touchpad Settings"
 msgstr "Configuración de ratón y panel táctil"
 
-#: src/DeviceRow.vala:133
+#: src/DeviceRow.vala:146
 msgid "Printer Settings"
 msgstr "Configuración de impresoras"
 
-#: src/DeviceRow.vala:236
+#: src/DeviceRow.vala:264
 msgid "Disconnect"
 msgstr "Desconectar"
 
-#: src/DeviceRow.vala:254
+#: src/DeviceRow.vala:288
 msgid "Connect"
 msgstr "Conectar"
 
