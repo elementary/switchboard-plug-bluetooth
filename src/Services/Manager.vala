@@ -26,7 +26,6 @@ public interface Bluetooth.Services.AgentManager : Object {
 }
 
 public class Bluetooth.Services.ObjectManager : Object {
-    private const string SCHEMA = "io.elementary.desktop.wingpanel.bluetooth";
     public signal void adapter_added (Bluetooth.Services.Adapter adapter);
     public signal void adapter_removed (Bluetooth.Services.Adapter adapter);
     public signal void device_added (Bluetooth.Services.Device device);
@@ -42,16 +41,11 @@ public class Bluetooth.Services.ObjectManager : Object {
 
     private bool is_registered = false;
 
-    private Settings? settings = null;
     private GLib.DBusObjectManagerClient object_manager;
     private Bluetooth.Services.AgentManager agent_manager;
     private Bluetooth.Services.Agent agent;
 
     construct {
-        var settings_schema = SettingsSchemaSource.get_default ().lookup (SCHEMA, true);
-        if (settings_schema != null) {
-            settings = new Settings (SCHEMA);
-        }
         create_manager.begin ();
 
         notify["discoverable"].connect (() => {
@@ -359,12 +353,12 @@ public class Bluetooth.Services.ObjectManager : Object {
         if (state == is_powered && discoverable == state && is_discovering == state) {
             return;
         }
-
+        bluetooth_rfkill.begin (state); //send signal bus open rfkill bluetooth
         /* Set discoverable first so description is correct */
         discoverable = state;
         is_powered = state;
 
-        if (!state) {
+        if (state) { //thi should state = true to avoid error GDBus.Error:org.bluez.Error.NotReady and can't discovering if modeswitch activate
             yield stop_discovery ();
         }
 
@@ -373,11 +367,7 @@ public class Bluetooth.Services.ObjectManager : Object {
             adapter.powered = state;
             adapter.discoverable = state;
         }
-
-        if (settings != null) {
-            settings.set_boolean ("bluetooth-enabled", state);
-        }
-
+        //i think dconf set bluetooth-enabled not needed because was activated on wingpanel
         if (!state) {
             var devices = get_devices ();
             foreach (var device in devices) {
@@ -391,6 +381,15 @@ public class Bluetooth.Services.ObjectManager : Object {
             }
         } else {
             start_discovery.begin ();
+        }
+    }
+
+    public async void bluetooth_rfkill (bool state) {
+        try {
+            var connecting = yield GLib.Bus.get (BusType.SESSION);
+            yield connecting.call ("io.elementary.bluetooth.rfkill", "/io/elementary/bluetooth/rfkill", "io.elementary.bluetooth.rfkill", "BluetoothAirplaneMode", new Variant ("(b)", state), null, GLib.DBusCallFlags.ALLOW_INTERACTIVE_AUTHORIZATION, -1);
+        } catch (GLib.Error e) {
+            warning (" %s\n", e.message);
         }
     }
 }
