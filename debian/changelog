@@ -1,3 +1,15 @@
+switchboard-plug-bluetooth (2.3.3) bionic; urgency=medium
+
+  * Release 2.3.3 (#147)
+  * Update translation files
+  * Update translation files
+  * Update translation template
+  * DeviceRow: add a forget button to each device (#133)
+  * Fix crash when no bluetooth available (#141)
+  * Add null checks for when Bluetooth unsupported (#132)
+
+ -- elementary OS Team <builds@elementary.io>  Thu, 08 Oct 2020 18:37:42 +0000
+
 switchboard-plug-bluetooth (2.3.2) bionic; urgency=medium
 
   * Release 2.3.2 (#125)
