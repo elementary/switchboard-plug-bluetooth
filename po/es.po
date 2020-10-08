@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-22 23:42+0000\n"
-"PO-Revision-Date: 2020-07-02 03:12+0000\n"
+"PO-Revision-Date: 2020-09-29 06:14+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/es/>\n"
@@ -146,10 +146,8 @@ msgid "Not Connected"
 msgstr "No conectado"
 
 #: src/DeviceRow.vala:106
-#, fuzzy
-#| msgid "Forget selected device"
 msgid "Forget this device"
-msgstr "Olvidar dispositivo seleccionado"
+msgstr "Olvidar este dispositivo"
 
 #: src/DeviceRow.vala:133
 msgid "Sound Settings"
