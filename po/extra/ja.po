@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-08 18:37+0000\n"
-"PO-Revision-Date: 2020-05-01 09:52+0000\n"
+"PO-Revision-Date: 2020-10-09 23:01+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/ja/>\n"
@@ -29,19 +29,19 @@ msgstr "Bluetooth の設定をします"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
 msgid "Fixes"
-msgstr ""
+msgstr "修正点"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
 msgid "Fix crash on devices without Bluetooth"
-msgstr ""
+msgstr "Bluetooth が搭載されていないデバイスにおいてペインを開くとクラッシュする不具合を修正"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:16
 msgid "Minor updates"
-msgstr ""
+msgstr "軽微なアップデート"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:18
 msgid "Move \"forget device\" button to each device row"
-msgstr ""
+msgstr "\"このデバイスの接続情報を削除\" ボタンを各デバイスに対して表示するように変更"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:19
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:25
