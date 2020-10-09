@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-08 18:37+0000\n"
-"PO-Revision-Date: 2020-05-01 09:52+0000\n"
+"PO-Revision-Date: 2020-10-09 23:01+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/pt/>\n"
@@ -29,19 +29,19 @@ msgstr "Configurar definições de bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
 msgid "Fixes"
-msgstr ""
+msgstr "Correções"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
 msgid "Fix crash on devices without Bluetooth"
-msgstr ""
+msgstr "Corrige falha em dispositivos sem Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:16
 msgid "Minor updates"
-msgstr ""
+msgstr "Pequenas atualizações"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:18
 msgid "Move \"forget device\" button to each device row"
-msgstr ""
+msgstr "Move o botão \"esquecer dispositivo\" para cada linha de dispositivo"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:19
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:25
