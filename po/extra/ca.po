@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-08 18:37+0000\n"
-"PO-Revision-Date: 2020-05-01 09:52+0000\n"
+"PO-Revision-Date: 2020-10-09 23:01+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/ca/>\n"
@@ -29,19 +29,19 @@ msgstr "Configureu els paràmetres del Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
 msgid "Fixes"
-msgstr ""
+msgstr "Correccions"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
 msgid "Fix crash on devices without Bluetooth"
-msgstr ""
+msgstr "Correcció de la fallada en dispositius sense Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:16
 msgid "Minor updates"
-msgstr ""
+msgstr "Actualitzacions menors"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:18
 msgid "Move \"forget device\" button to each device row"
-msgstr ""
+msgstr "Moviment del botó \"oblida el dispositiu\" a cada fila del dispositiu"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:19
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:25
