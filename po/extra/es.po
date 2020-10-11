@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-08 18:37+0000\n"
-"PO-Revision-Date: 2020-05-11 16:10+0000\n"
+"PO-Revision-Date: 2020-10-11 21:36+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/es/>\n"
@@ -29,19 +29,21 @@ msgstr "Configurar ajustes de Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
 msgid "Fixes"
-msgstr ""
+msgstr "Correcciones"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
 msgid "Fix crash on devices without Bluetooth"
-msgstr ""
+msgstr "Se arregló un cierre inesperado con dispositivos sin Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:16
 msgid "Minor updates"
-msgstr ""
+msgstr "Actualizaciones menores"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:18
 msgid "Move \"forget device\" button to each device row"
 msgstr ""
+"Se trasladó el botón «Olvidar dispositivo» hacia cada una de las filas de "
+"dispositivo"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:19
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:25
