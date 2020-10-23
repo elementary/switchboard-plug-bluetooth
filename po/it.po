@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-22 23:42+0000\n"
-"PO-Revision-Date: 2019-07-02 10:28+0000\n"
+"PO-Revision-Date: 2020-10-24 11:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-25 05:27+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:34
@@ -71,28 +71,27 @@ msgid "Nearby Devices"
 msgstr "Dispositivi vicini"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Configura le impostazioni del Bluetooth"
+msgstr "Conferma l'accoppiamento Bluetooth"
 
 #: src/PairDialog.vala:46 src/PairDialog.vala:57
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Configura le impostazioni del Bluetooth"
+msgstr "Conferma il codice di verifica Bluetooth"
 
 #: src/PairDialog.vala:68
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Inserisci il PIN Bluetooth "
 
 #: src/PairDialog.vala:75
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Dispositivo Bluetooth sconosciuto "
 
 #: src/PairDialog.vala:88
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
+"Assicurati che il codice visualizzato su \"%s\" corrisponda a quello qui "
+"sotto."
 
 #: src/PairDialog.vala:92
 #, c-format
@@ -100,6 +99,8 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"\"%s\" desidera accoppiarsi con questo dispositivo. Assicurati che il codice "
+"visualizzato su \"%s\" corrisponda a quello qui sotto."
 
 #: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:250
 msgid "Pair"
@@ -109,11 +110,12 @@ msgstr "Accoppia"
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
+"Digita il codice visualizzato di seguito su \"%s\" seguito dal tasto Invio."
 
 #: src/PairDialog.vala:102
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "\"%s\" desidera accoppiarsi con questo dispositivo."
 
 #: src/DeviceRow.vala:41
 msgid "Available"
@@ -136,8 +138,6 @@ msgid "Disconnecting…"
 msgstr "Disconnessione in corso…"
 
 #: src/DeviceRow.vala:52
-#, fuzzy
-#| msgid "Unable to Connnect"
 msgid "Unable to Connect"
 msgstr "Impossibile connettersi"
 
@@ -146,10 +146,8 @@ msgid "Not Connected"
 msgstr "Non connesso"
 
 #: src/DeviceRow.vala:106
-#, fuzzy
-#| msgid "Forget selected device"
 msgid "Forget this device"
-msgstr "Dimentica dispositivo selezionato"
+msgstr "Dimentica questo dispositivo"
 
 #: src/DeviceRow.vala:133
 msgid "Sound Settings"
@@ -165,7 +163,7 @@ msgstr "Impostazioni mouse e touchpad"
 
 #: src/DeviceRow.vala:146
 msgid "Printer Settings"
-msgstr "Impostazioni di stampa"
+msgstr "Impostazioni delle stampanti"
 
 #: src/DeviceRow.vala:264
 msgid "Disconnect"
