@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-22 23:42+0000\n"
-"PO-Revision-Date: 2019-01-02 21:34+0000\n"
-"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
-"Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2020-10-27 21:25+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-14 08:29+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:34
@@ -71,28 +71,28 @@ msgid "Nearby Devices"
 msgstr "Geräte in Ihrer Nähe"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Bluetooth-Einstellungen bearbeiten"
+msgstr "Bluetooth-Koppelung bestätigen"
 
 #: src/PairDialog.vala:46 src/PairDialog.vala:57
 #, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Bluetooth-Einstellungen bearbeiten"
+msgstr "Bluetooth-Code bestätigen"
 
 #: src/PairDialog.vala:68
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Bluetooth-PIN eingeben"
 
 #: src/PairDialog.vala:75
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Unbekanntes Bluetooth-Gerät"
 
 #: src/PairDialog.vala:88
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
+"Stellen Sie sicher, dass der auf »%s«angezeigte Code mit dem unten "
+"angezeigten übereinstimmt"
 
 #: src/PairDialog.vala:92
 #, c-format
@@ -100,6 +100,8 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"»%s« möchte sich mit diesem Gerät koppeln. Stellen Sie sicher, dass der "
+"Code, der auf »%s« angezeigt wird,  mit dem unten angezeigten übereinstimmt."
 
 #: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:250
 msgid "Pair"
@@ -109,11 +111,13 @@ msgstr "Koppeln"
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
+"Geben Sie den unten angezeigten Code auf »%s« ein, gefolgt von der "
+"Eingabetaste."
 
 #: src/PairDialog.vala:102
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "»%s« möchte sich mit diesem Gerät koppeln."
 
 #: src/DeviceRow.vala:41
 msgid "Available"
@@ -149,7 +153,7 @@ msgstr "Nicht verbunden"
 #, fuzzy
 #| msgid "Forget selected device"
 msgid "Forget this device"
-msgstr "Ausgewähltes Gerät entfernen"
+msgstr "Dieses Gerät vergessen"
 
 #: src/DeviceRow.vala:133
 msgid "Sound Settings"
