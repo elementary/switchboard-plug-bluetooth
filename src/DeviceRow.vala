@@ -86,7 +86,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         overlay.add (image);
         overlay.add_overlay (state);
 
-        string device_name = device.name;
+        string? device_name = device.name;
         if (device_name == null) {
             if (device.icon != null) {
                 switch (device.icon) {
