@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-27 21:26+0000\n"
-"PO-Revision-Date: 2020-05-15 12:45+0000\n"
-"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
+"PO-Revision-Date: 2020-10-28 11:21+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ar/>\n"
 "Language: ar\n"
@@ -147,10 +147,8 @@ msgid "Controller"
 msgstr ""
 
 #: src/DeviceRow.vala:100
-#, fuzzy
-#| msgid "Keyboard Settings"
 msgid "Keyboard"
-msgstr "إعدادات لوحة المفاتيح"
+msgstr "لوحة المفاتيح"
 
 #: src/DeviceRow.vala:103
 msgid "Mouse"
