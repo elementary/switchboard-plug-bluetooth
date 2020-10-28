@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-08 18:37+0000\n"
-"PO-Revision-Date: 2019-11-25 09:25+0000\n"
+"PO-Revision-Date: 2020-10-30 00:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/mr/>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
-#, fuzzy
-#| msgid "Configure Bluetooth Settings"
 msgid "Bluetooth Settings"
-msgstr "ब्लूटूथ सेटिंग्ज कॉन्फिगर करा"
+msgstr "ब्लूटूथ सेटिंग्ज"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:6
 msgid "Configure Bluetooth Settings"
@@ -31,19 +29,19 @@ msgstr "ब्लूटूथ सेटिंग्ज कॉन्फिगर 
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
 msgid "Fixes"
-msgstr ""
+msgstr "निराकारणे"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
 msgid "Fix crash on devices without Bluetooth"
-msgstr ""
+msgstr "ब्लूटूथशिवाय डिव्हाइसवर क्रॅश निराकरण करा"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:16
 msgid "Minor updates"
-msgstr ""
+msgstr "किरकोळ अद्यतने"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:18
 msgid "Move \"forget device\" button to each device row"
-msgstr ""
+msgstr "प्रत्येक डिव्हाइस पंक्तीवर \"डिव्हाइस विसरा\" बटण हलवा"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:19
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:25
