@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-27 21:26+0000\n"
-"PO-Revision-Date: 2020-06-09 10:11+0000\n"
-"Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
+"PO-Revision-Date: 2020-10-30 00:15+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/nl/>\n"
 "Language: nl\n"
@@ -143,29 +143,27 @@ msgstr "Niet verbonden"
 
 #: src/DeviceRow.vala:94
 msgid "Speaker"
-msgstr ""
+msgstr "Luidspreker"
 
 #: src/DeviceRow.vala:97
 msgid "Controller"
 msgstr ""
 
 #: src/DeviceRow.vala:100
-#, fuzzy
-#| msgid "Keyboard Settings"
 msgid "Keyboard"
-msgstr "Toetsenbord Instellingen"
+msgstr "Toetsenbord"
 
 #: src/DeviceRow.vala:103
 msgid "Mouse"
-msgstr ""
+msgstr "Muis"
 
 #: src/DeviceRow.vala:106
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: src/DeviceRow.vala:109
 msgid "Touchpad"
-msgstr ""
+msgstr "Touchpad"
 
 #: src/DeviceRow.vala:112
 msgid "Phone"
