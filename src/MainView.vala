@@ -72,7 +72,6 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         content_area.add (frame);
 
         margin = 12;
-        margin_bottom = 0;
 
         if (manager.retrieve_finished) {
             complete_setup ();
