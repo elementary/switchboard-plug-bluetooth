@@ -7,6 +7,16 @@
   <icon type="stock">bluetooth</icon>
   <translation type="gettext">bluetooth-plug</translation>
   <releases>
+    <release version="2.3.4" date="2020-12-23" urgency="medium">
+      <description>
+        <p>Minor updates</p>
+        <ul>
+          <li>Fallback to device type when name is not available</li>
+          <li>Show "Discovering" indicator in an overlay bar</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.3.3" date="2020-10-08" urgency="medium">
       <description>
         <p>Fixes</p>
