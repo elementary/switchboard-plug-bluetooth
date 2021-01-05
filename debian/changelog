@@ -1,3 +1,14 @@
+switchboard-plug-bluetooth (2.3.4) bionic; urgency=medium
+
+  * Release 2.3.4 (#156)
+  * MainView: fix bottom margin (#152)
+  * Update translation files
+  * Update translation template
+  * DeviceRow: If name is null, try to fall back to type (#150)
+  * Use OverlayBar instead of ActionBar (#149)
+
+ -- elementary OS Team <builds@elementary.io>  Tue, 05 Jan 2021 22:05:21 +0000
+
 switchboard-plug-bluetooth (2.3.3) bionic; urgency=medium
 
   * Release 2.3.3 (#147)
