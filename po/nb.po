@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-27 21:26+0000\n"
-"PO-Revision-Date: 2020-10-30 00:15+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-02-13 12:34+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-bluetooth/nb/>\n"
 "Language: nb\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-08 06:37+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:34
@@ -85,12 +85,12 @@ msgstr "Blåtann"
 
 #: src/PairDialog.vala:75
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Ukjent Blåtannsenhet"
 
 #: src/PairDialog.vala:88
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
+msgstr "Forsikre deg om at koden som vises på «%s» samsvarer med den nedenfor."
 
 #: src/PairDialog.vala:92
 #, c-format
@@ -98,20 +98,22 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"«%s» ønsker å tilknytte seg denne enheten. Forsikre deg om at koden som "
+"vises i «%s» samsvarer med den nedenfor."
 
 #: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:283
 msgid "Pair"
 msgstr "Parr"
 
 #: src/PairDialog.vala:98
-#, c-format
+#, c-format, fuzzy
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "Skriv inn koden som vises i «%s», etterfulgt av «↵»."
 
 #: src/PairDialog.vala:102
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "«%s» ønsker å tilknytte seg denne enheten."
 
 #: src/DeviceRow.vala:41
 msgid "Available"
@@ -149,7 +151,7 @@ msgstr "Høyttaler"
 
 #: src/DeviceRow.vala:97
 msgid "Controller"
-msgstr ""
+msgstr "Kontroller"
 
 #: src/DeviceRow.vala:100
 msgid "Keyboard"
@@ -161,7 +163,7 @@ msgstr "Mus"
 
 #: src/DeviceRow.vala:106
 msgid "Tablet"
-msgstr ""
+msgstr "Nettbrett"
 
 #: src/DeviceRow.vala:109
 msgid "Touchpad"
@@ -169,7 +171,7 @@ msgstr "Pekeplate"
 
 #: src/DeviceRow.vala:112
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 #: src/DeviceRow.vala:139
 #, fuzzy
