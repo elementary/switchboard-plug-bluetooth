@@ -110,14 +110,15 @@ public class PairDialog : Granite.MessageDialog {
             case AuthType.REQUESTPIN:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Make sure the PIN on “%s” and the one you enter the PIN code below match.").printf (device_name);
-                var entry_pin = new Gtk.Entry ();
-                entry_pin.activates_default = true;
-                entry_pin.xalign = 0.5f;
-                entry_pin.input_hints = Gtk.InputHints.NO_SPELLCHECK | Gtk.InputHints.NONE;
-                entry_pin.input_purpose = Gtk.InputPurpose.DIGITS;
+                var entry_pin = new Gtk.Entry () {
+                    activates_default = true,
+                    xalign = 0.5f,
+                    input_hints = Gtk.InputHints.NO_SPELLCHECK | Gtk.InputHints.NONE,
+                    input_purpose = Gtk.InputPurpose.DIGITS,
+                    max_length = 16, // get from doc bluez
+                    width_chars = 16
+                };
                 entry_pin.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
-                entry_pin.max_length = 16; // get from doc bluez
-                entry_pin.width_chars = 16;
                 entry_pin.changed.connect (()=>{
                     pincodes = entry_pin.text;
                 });
@@ -131,14 +132,15 @@ public class PairDialog : Granite.MessageDialog {
             case AuthType.REQUESTPASSKEY:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Make sure the Passkey on “%s” and the one you enter the Passkey code below match.").printf (device_name);
-                var entry_passkey = new Gtk.Entry ();
-                entry_passkey.activates_default = true;
-                entry_passkey.xalign = 0.5f;
-                entry_passkey.input_hints = Gtk.InputHints.NONE;
-                entry_passkey.input_purpose = Gtk.InputPurpose.NUMBER ;
+                var entry_passkey = new Gtk.Entry () {
+                    activates_default = true,
+                    xalign = 0.5f,
+                    input_hints = Gtk.InputHints.NONE,
+                    input_purpose = Gtk.InputPurpose.NUMBER,
+                    max_length = 6, //get from doc bluez
+                    width_chars = 6
+                };
                 entry_passkey.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
-                entry_passkey.max_length = 6; //get from doc bluez
-                entry_passkey.width_chars = 6;
                 entry_passkey.changed.connect (()=>{
                     passkey_uint32 = (uint32) uint64.parse (entry_passkey.text);
                 });
@@ -199,14 +201,14 @@ public class PairDialog : Granite.MessageDialog {
             }
         });
         destroy.connect (()=>{
-            device.blocked = false; // remove bloking
+            device.blocked = false; // remove blocking
         });
     }
 
     public string get_pincode () {
         return pincodes;
     }
-    public uint32 get_paskey () {
+    public uint32 get_upasskey () {
         return passkey_uint32;
     }
 }

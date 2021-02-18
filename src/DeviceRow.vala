@@ -186,20 +186,20 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
         compute_status ();
         set_sensitive (adapter.powered);
-
-        (adapter as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
+        // changed because to avoid :warning: Access to possible `null'. Perform a check or use an unsafe cast.:
+        ((DBusProxy) adapter).g_properties_changed.connect ((changed, invalid) => {
             var powered = changed.lookup_value ("Powered", new VariantType ("b"));
             if (powered != null) {
                 set_sensitive (adapter.powered);
                 this.changed ();
             }
         });
-
-        (device as DBusProxy).g_properties_changed.connect ((changed, invalid) => {
+        // changed because to avoid :warning: Access to possible `null'. Perform a check or use an unsafe cast.:
+        ((DBusProxy) device).g_properties_changed.connect ((changed, invalid) => {
             var paired = changed.lookup_value ("Paired", new VariantType ("b"));
             if (paired != null) {
                 compute_status ();
-                device.trusted = device.paired; //paired an trusted
+                device.trusted = device.paired; //paired and trusted
                 this.changed ();
             }
 
