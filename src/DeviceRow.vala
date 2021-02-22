@@ -86,7 +86,40 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         overlay.add (image);
         overlay.add_overlay (state);
 
-        var label = new Gtk.Label (device.name ?? device.address);
+        string? device_name = device.name;
+        if (device_name == null) {
+            if (device.icon != null) {
+                switch (device.icon) {
+                    case "audio-card":
+                        device_name = _("Speaker");
+                        break;
+                    case "input-gaming":
+                        device_name = _("Controller");
+                        break;
+                    case "input-keyboard":
+                        device_name = _("Keyboard");
+                        break;
+                    case "input-mouse":
+                        device_name = _("Mouse");
+                        break;
+                    case "input-tablet":
+                        device_name = _("Tablet");
+                        break;
+                    case "input-touchpad":
+                        device_name = _("Touchpad");
+                        break;
+                    case "phone":
+                        device_name = _("Phone");
+                        break;
+                    default:
+                        device_name = device.address;
+                }
+            } else {
+                device_name = device.address;
+            }
+        }
+
+        var label = new Gtk.Label (device_name);
         label.ellipsize = Pango.EllipsizeMode.END;
         label.hexpand = true;
         label.xalign = 0;
@@ -166,6 +199,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             var paired = changed.lookup_value ("Paired", new VariantType ("b"));
             if (paired != null) {
                 compute_status ();
+                device.connect.begin (); // connect after paired
                 this.changed ();
             }
 
