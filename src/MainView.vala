@@ -21,7 +21,7 @@
 
 public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     private Gtk.ListBox list_box;
-    private Gtk.Revealer discovering_revealer;
+    private Granite.Widgets.OverlayBar overlaybar;
 
     public Services.ObjectManager manager { get; construct set; }
 
@@ -56,42 +56,22 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         scrolled.expand = true;
         scrolled.add (list_box);
 
-        var discovering_label = new Gtk.Label (_("Discovering"));
+        var overlay = new Gtk.Overlay ();
+        overlay.add (scrolled);
 
-        var spinner = new Gtk.Spinner ();
-        spinner.active = true;
-
-        var discovering_grid = new Gtk.Grid ();
-        discovering_grid.halign = Gtk.Align.END;
-        discovering_grid.valign = Gtk.Align.CENTER;
-        discovering_grid.hexpand = true;
-        discovering_grid.column_spacing = 6;
-        discovering_grid.margin_end = 3;
-        discovering_grid.add (discovering_label);
-        discovering_grid.add (spinner);
-
-        discovering_revealer = new Gtk.Revealer ();
-        discovering_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
-        discovering_revealer.add (discovering_grid);
-
-        var toolbar = new Gtk.ActionBar ();
-        toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-        toolbar.add (discovering_revealer);
-
-        var grid = new Gtk.Grid ();
-        grid.orientation = Gtk.Orientation.VERTICAL;
-        grid.add (scrolled);
-        grid.add (toolbar);
+        overlaybar = new Granite.Widgets.OverlayBar (overlay) {
+            label = _("Discovering"),
+            active = true
+        };
 
         var frame = new Gtk.Frame (null);
-        frame.add (grid);
+        frame.add (overlay);
 
         content_area.orientation = Gtk.Orientation.VERTICAL;
         content_area.row_spacing = 0;
         content_area.add (frame);
 
         margin = 12;
-        margin_bottom = 0;
 
         if (manager.retrieve_finished) {
             complete_setup ();
@@ -163,7 +143,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             update_description ();
         });
 
-        manager.bind_property ("is-discovering", discovering_revealer, "reveal-child", GLib.BindingFlags.DEFAULT);
+        manager.bind_property ("is-discovering", overlaybar, "visible", GLib.BindingFlags.DEFAULT);
         manager.bind_property ("is-powered", status_switch, "active", GLib.BindingFlags.DEFAULT);
 
         show_all ();

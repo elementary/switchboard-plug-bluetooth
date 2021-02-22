@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-22 23:42+0000\n"
-"PO-Revision-Date: 2020-10-01 17:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2020-10-27 21:26+0000\n"
+"PO-Revision-Date: 2020-12-19 11:16+0000\n"
+"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/sr/>\n"
 "Language: sr\n"
@@ -26,72 +26,69 @@ msgstr "Блутут"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr "Подесите поставке блутута"
+msgstr "Подесите поставке Блутута"
 
 #: src/MainView.vala:42
 msgid "No Devices Found"
-msgstr ""
+msgstr "Нисам пронашао уређаје"
 
 #: src/MainView.vala:43
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Уверите се да су ваши уређаји видљиви и спремни за упаривање."
 
-#: src/MainView.vala:59
-#, fuzzy
+#: src/MainView.vala:63
 msgid "Discovering"
-msgstr "Прекидам везу…"
+msgstr "Откривам"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:177
+#: src/MainView.vala:158
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
+"Сада се може открити као „%s“. Не може се открити када је ова страница "
+"затворена"
 
-#: src/MainView.vala:177
+#: src/MainView.vala:158
 msgid "Unknown"
 msgstr "Непознато"
 
-#: src/MainView.vala:179
+#: src/MainView.vala:160
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "Који се не могу открити док је Блутут искључен"
 
-#: src/MainView.vala:181
-#, fuzzy
+#: src/MainView.vala:162
 msgid "Not discoverable"
-msgstr "Сада се може открити као „%s“"
+msgstr "Не може се открити"
 
-#: src/MainView.vala:227
+#: src/MainView.vala:208
 msgid "Paired Devices"
-msgstr ""
+msgstr "Упарени уређаји"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:234
+#: src/MainView.vala:215
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Уређаји у близини"
 
 #: src/PairDialog.vala:35
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Подесите поставке блутута"
+msgstr "Потврди упаривање Блутута"
 
 #: src/PairDialog.vala:46 src/PairDialog.vala:57
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Подесите поставке блутута"
+msgstr "Потврди лозинку Блутута"
 
 #: src/PairDialog.vala:68
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Блутут"
+msgstr "Упишите Блутут ПИН"
 
 #: src/PairDialog.vala:75
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Непознат Блутут уређај"
 
 #: src/PairDialog.vala:88
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
+msgstr "Уверите се да код приказан на „%s“ одговара овом испод."
 
 #: src/PairDialog.vala:92
 #, c-format
@@ -99,28 +96,30 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"„%s“ жели да се упари са овим уређајем. Уверите се да код приказан на „%s“ "
+"одговара овом испод."
 
-#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:250
+#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:283
 msgid "Pair"
-msgstr ""
+msgstr "Упарени"
 
 #: src/PairDialog.vala:98
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "Упишите доле приказани код на „%s“, за којим следи Унос."
 
 #: src/PairDialog.vala:102
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "„%s“ жели да се упари са овим уређајем."
 
 #: src/DeviceRow.vala:41
 msgid "Available"
-msgstr ""
+msgstr "Доступно"
 
 #: src/DeviceRow.vala:43
 msgid "Pairing…"
-msgstr ""
+msgstr "Упарујем…"
 
 #: src/DeviceRow.vala:45
 msgid "Connected"
@@ -135,8 +134,6 @@ msgid "Disconnecting…"
 msgstr "Прекидам везу…"
 
 #: src/DeviceRow.vala:52
-#, fuzzy
-#| msgid "Unable to Connnect"
 msgid "Unable to Connect"
 msgstr "Не могу да се повежем"
 
@@ -144,33 +141,59 @@ msgstr "Не могу да се повежем"
 msgid "Not Connected"
 msgstr "Неповезан"
 
-#: src/DeviceRow.vala:106
-#, fuzzy
-#| msgid "Forget selected device"
-msgid "Forget this device"
-msgstr "Заборави изабрани уређај"
+#: src/DeviceRow.vala:94
+msgid "Speaker"
+msgstr "Звучник"
 
-#: src/DeviceRow.vala:133
+#: src/DeviceRow.vala:97
+msgid "Controller"
+msgstr "Управљач"
+
+#: src/DeviceRow.vala:100
+msgid "Keyboard"
+msgstr "Тастатура"
+
+#: src/DeviceRow.vala:103
+msgid "Mouse"
+msgstr "Миш"
+
+#: src/DeviceRow.vala:106
+msgid "Tablet"
+msgstr "Таблет"
+
+#: src/DeviceRow.vala:109
+msgid "Touchpad"
+msgstr "Додирна табла"
+
+#: src/DeviceRow.vala:112
+msgid "Phone"
+msgstr "Телефон"
+
+#: src/DeviceRow.vala:139
+msgid "Forget this device"
+msgstr "Заборави овај уређај"
+
+#: src/DeviceRow.vala:166
 msgid "Sound Settings"
 msgstr "Подешавања звука"
 
-#: src/DeviceRow.vala:138
+#: src/DeviceRow.vala:171
 msgid "Keyboard Settings"
 msgstr "Подешавања тастатуре"
 
-#: src/DeviceRow.vala:142
+#: src/DeviceRow.vala:175
 msgid "Mouse & Touchpad Settings"
 msgstr "Подешавања миша и додирне табле"
 
-#: src/DeviceRow.vala:146
+#: src/DeviceRow.vala:179
 msgid "Printer Settings"
 msgstr "Подешавања штампача"
 
-#: src/DeviceRow.vala:264
+#: src/DeviceRow.vala:297
 msgid "Disconnect"
 msgstr "Прекини везу"
 
-#: src/DeviceRow.vala:288
+#: src/DeviceRow.vala:321
 msgid "Connect"
 msgstr "Повежи се"
 

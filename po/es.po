@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-22 23:42+0000\n"
-"PO-Revision-Date: 2020-09-29 06:14+0000\n"
+"POT-Creation-Date: 2020-10-27 21:26+0000\n"
+"PO-Revision-Date: 2020-11-03 10:15+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/es/>\n"
@@ -38,34 +38,34 @@ msgstr ""
 "Asegúrese de que sus dispositivos estén visibles y listos para el "
 "emparejamiento."
 
-#: src/MainView.vala:59
+#: src/MainView.vala:63
 msgid "Discovering"
 msgstr "Buscando"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:177
+#: src/MainView.vala:158
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "Ahora detectable como «%s». No detectable cuando se cierra esta página"
 
-#: src/MainView.vala:177
+#: src/MainView.vala:158
 msgid "Unknown"
 msgstr "Desconocido"
 
-#: src/MainView.vala:179
+#: src/MainView.vala:160
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "No detectable mientras Bluetooth esté apagado"
 
-#: src/MainView.vala:181
+#: src/MainView.vala:162
 msgid "Not discoverable"
 msgstr "No detectable"
 
-#: src/MainView.vala:227
+#: src/MainView.vala:208
 msgid "Paired Devices"
 msgstr "Dispositivos emparejados"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:234
+#: src/MainView.vala:215
 msgid "Nearby Devices"
 msgstr "Dispositivos cercanos"
 
@@ -101,7 +101,7 @@ msgstr ""
 "«%s» quiere emparejar con este dispositivo. Asegúrese de que el código que "
 "aparece en «%s» coincide con el que aparece a continuación."
 
-#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:250
+#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:283
 msgid "Pair"
 msgstr "Emparejar"
 
@@ -145,31 +145,59 @@ msgstr "No pudo conectarse"
 msgid "Not Connected"
 msgstr "No conectado"
 
+#: src/DeviceRow.vala:94
+msgid "Speaker"
+msgstr "Altavoz"
+
+#: src/DeviceRow.vala:97
+msgid "Controller"
+msgstr "Mando"
+
+#: src/DeviceRow.vala:100
+msgid "Keyboard"
+msgstr "Teclado"
+
+#: src/DeviceRow.vala:103
+msgid "Mouse"
+msgstr "Ratón"
+
 #: src/DeviceRow.vala:106
+msgid "Tablet"
+msgstr "Tableta"
+
+#: src/DeviceRow.vala:109
+msgid "Touchpad"
+msgstr "Panel táctil"
+
+#: src/DeviceRow.vala:112
+msgid "Phone"
+msgstr "Teléfono"
+
+#: src/DeviceRow.vala:139
 msgid "Forget this device"
 msgstr "Olvidar este dispositivo"
 
-#: src/DeviceRow.vala:133
+#: src/DeviceRow.vala:166
 msgid "Sound Settings"
 msgstr "Configuración de sonido"
 
-#: src/DeviceRow.vala:138
+#: src/DeviceRow.vala:171
 msgid "Keyboard Settings"
 msgstr "Configuración de teclado"
 
-#: src/DeviceRow.vala:142
+#: src/DeviceRow.vala:175
 msgid "Mouse & Touchpad Settings"
 msgstr "Configuración de ratón y panel táctil"
 
-#: src/DeviceRow.vala:146
+#: src/DeviceRow.vala:179
 msgid "Printer Settings"
 msgstr "Configuración de impresoras"
 
-#: src/DeviceRow.vala:264
+#: src/DeviceRow.vala:297
 msgid "Disconnect"
 msgstr "Desconectar"
 
-#: src/DeviceRow.vala:288
+#: src/DeviceRow.vala:321
 msgid "Connect"
 msgstr "Conectar"
 
