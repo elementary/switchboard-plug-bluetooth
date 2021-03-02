@@ -194,7 +194,6 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 this.changed ();
             }
         });
-        // changed because to avoid :warning: Access to possible `null'. Perform a check or use an unsafe cast.:
         ((DBusProxy) device).g_properties_changed.connect ((changed, invalid) => {
             var paired = changed.lookup_value ("Paired", new VariantType ("b"));
             if (paired != null) {
