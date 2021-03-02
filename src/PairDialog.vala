@@ -200,7 +200,7 @@ public class PairDialog : Granite.MessageDialog {
                     break;
             }
         });
-        destroy.connect (()=>{
+        destroy.connect (() => {
             device.blocked = false; // remove blocking
         });
     }
