@@ -53,7 +53,7 @@ public class PairDialog : Granite.MessageDialog {
 
     public PairDialog.request_passkey (ObjectPath object_path, Gtk.Window? main_window) {
         Object (
-            auth_type: AuthType.REQUESTPASSKEY,
+            auth_type: AuthType.REQUEST_PASSKEY,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             primary_text: _("Enter Bluetooth Passkey"),
