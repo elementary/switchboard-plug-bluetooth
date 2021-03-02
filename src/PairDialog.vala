@@ -43,7 +43,7 @@ public class PairDialog : Granite.MessageDialog {
 
     public PairDialog.request_pin_code (ObjectPath object_path, Gtk.Window? main_window) {
         Object (
-            auth_type: AuthType.REQUESTPIN,
+            auth_type: AuthType.REQUEST_PIN,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             primary_text: _("Enter Bluetooth PIN"),
