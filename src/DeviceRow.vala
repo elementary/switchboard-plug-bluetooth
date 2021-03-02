@@ -186,7 +186,6 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
         compute_status ();
         set_sensitive (adapter.powered);
-        // changed because to avoid :warning: Access to possible `null'. Perform a check or use an unsafe cast.:
         ((DBusProxy) adapter).g_properties_changed.connect ((changed, invalid) => {
             var powered = changed.lookup_value ("Powered", new VariantType ("b"));
             if (powered != null) {
