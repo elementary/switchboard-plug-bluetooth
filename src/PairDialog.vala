@@ -129,7 +129,7 @@ public class PairDialog : Granite.MessageDialog {
                 var confirm_button = add_button (_("Confirm"), Gtk.ResponseType.ACCEPT);
                 confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
-            case AuthType.REQUESTPASSKEY:
+            case AuthType.REQUEST_PASSKEY:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Make sure the Passkey on “%s” and the one you enter the Passkey code below match.").printf (device_name);
                 var entry_passkey = new Gtk.Entry () {
