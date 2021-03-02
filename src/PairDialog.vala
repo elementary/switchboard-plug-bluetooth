@@ -28,7 +28,7 @@ public class PairDialog : Granite.MessageDialog {
     public ObjectPath object_path { get; construct; }
     public AuthType auth_type { get; construct; }
     public string passkey { get; construct; }
-    public string pincodes { get; private set; }
+    public string pincode { get; private set; }
     public uint32 passkey_uint32 { get; private set; }
 
     public PairDialog (ObjectPath object_path, Gtk.Window? main_window) {
