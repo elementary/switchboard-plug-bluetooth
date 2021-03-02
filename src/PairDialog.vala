@@ -17,8 +17,8 @@
 
 public class PairDialog : Granite.MessageDialog {
     public enum AuthType {
-        REQUESTPIN,
-        REQUESTPASSKEY,
+        REQUEST_PIN,
+        REQUEST_PASSKEY,
         CONFIRMATION,
         NORMAL,
         PASSKEY,
