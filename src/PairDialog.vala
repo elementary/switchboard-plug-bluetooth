@@ -204,12 +204,4 @@ public class PairDialog : Granite.MessageDialog {
             device.blocked = false; // remove blocking
         });
     }
-
-    public string get_pincode () {
-        return pincodes;
-    }
-    
-    public uint32 get_upasskey () {
-        return passkey_uint32;
-    }
 }
