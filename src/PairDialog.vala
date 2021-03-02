@@ -208,6 +208,7 @@ public class PairDialog : Granite.MessageDialog {
     public string get_pincode () {
         return pincodes;
     }
+    
     public uint32 get_upasskey () {
         return passkey_uint32;
     }
