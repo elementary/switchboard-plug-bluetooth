@@ -120,7 +120,7 @@ public class PairDialog : Granite.MessageDialog {
                 };
                 entry_pin.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
                 entry_pin.changed.connect (() => {
-                    pincodes = entry_pin.text;
+                    pincode = entry_pin.text;
                 });
                 custom_bin.margin_start = 25;
                 custom_bin.margin_end = 25;
