@@ -68,7 +68,7 @@ public class Bluetooth.Services.Agent : Object {
         pair_dialog.present ();
         pair_dialog.run ();
         pair_dialog.destroy ();
-        return pair_dialog.get_upasskey ();
+        return pair_dialog.passkey_uint32;
     }
 
     public void display_passkey (ObjectPath device, uint32 passkey, uint16 entered) throws Error, BluezError {
