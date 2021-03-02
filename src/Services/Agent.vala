@@ -53,7 +53,7 @@ public class Bluetooth.Services.Agent : Object {
         pair_dialog.present ();
         pair_dialog.run ();
         pair_dialog.destroy ();
-        return pair_dialog.get_pincode ();
+        return pair_dialog.pincode;
     }
 
     public void display_pin_code (ObjectPath device, string pincode) throws Error, BluezError {
