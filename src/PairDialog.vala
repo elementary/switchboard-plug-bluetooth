@@ -107,7 +107,7 @@ public class PairDialog : Granite.MessageDialog {
         }
 
         switch (auth_type) {
-            case AuthType.REQUESTPIN:
+            case AuthType.REQUEST_PIN:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Enter the pin displayed on “%s”").printf (device_name);
                 var entry_pin = new Gtk.Entry () {
