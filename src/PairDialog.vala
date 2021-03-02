@@ -141,7 +141,7 @@ public class PairDialog : Granite.MessageDialog {
                     width_chars = 6
                 };
                 entry_passkey.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
-                entry_passkey.changed.connect (()=>{
+                entry_passkey.changed.connect (() => {
                     passkey_uint32 = (uint32) uint64.parse (entry_passkey.text);
                 });
                 custom_bin.margin_start = 110;
