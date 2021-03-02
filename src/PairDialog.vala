@@ -131,7 +131,7 @@ public class PairDialog : Granite.MessageDialog {
                 break;
             case AuthType.REQUEST_PASSKEY:
                 badge_icon = new ThemedIcon ("dialog-password");
-                secondary_text = _("Make sure the Passkey on “%s” and the one you enter the Passkey code below match.").printf (device_name);
+                secondary_text = _("Enter the passkey displayed on “%s”").printf (device_name);
                 var entry_passkey = new Gtk.Entry () {
                     activates_default = true,
                     xalign = 0.5f,
