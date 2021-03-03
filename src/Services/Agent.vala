@@ -86,6 +86,15 @@ public class Bluetooth.Services.Agent : Object {
     }
 
     public void display_passkey (ObjectPath device, uint32 passkey, uint16 entered) throws Error, BluezError {
+        // TODO: display_passkey can be called multiple times during a single pairing process. `entered` is incremented
+        // for each digit of the passkey that has been entered. We should update the existing dialog with this information
+        // somehow to indicate that the passkey is being accepted
+        if (pair_dialog != null && pair_dialog.passkey == "%u".printf (passkey)) {
+            return;
+        } else {
+            pair_dialog.destroy ();
+        }
+
         pair_dialog = new PairDialog.display_passkey (device, passkey, entered, main_window);
         pair_dialog.present ();
     }
