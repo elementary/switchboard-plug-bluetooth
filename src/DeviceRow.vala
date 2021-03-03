@@ -186,6 +186,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
         compute_status ();
         set_sensitive (adapter.powered);
+
         ((DBusProxy) adapter).g_properties_changed.connect ((changed, invalid) => {
             var powered = changed.lookup_value ("Powered", new VariantType ("b"));
             if (powered != null) {
@@ -193,15 +194,14 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 this.changed ();
             }
         });
+
         ((DBusProxy) device).g_properties_changed.connect ((changed, invalid) => {
             var paired = changed.lookup_value ("Paired", new VariantType ("b"));
             if (paired != null) {
                 compute_status ();
 
                 device.trusted = device.paired; //paired and trusted
-
                 device.connect.begin (); // connect after paired
-
                 this.changed ();
             }
 

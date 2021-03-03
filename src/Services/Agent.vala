@@ -48,48 +48,56 @@ public class Bluetooth.Services.Agent : Object {
     public void release () throws Error {
     }
 
+    private bool check_pairing_response (PairDialog dialog) throws BluezError {
+        var response = dialog.run ();
+        switch (response) {
+            case Gtk.ResponseType.ACCEPT:
+                dialog.destroy ();
+                return true;
+            default:
+                dialog.destroy ();
+                throw new BluezError.CANCELED ("Pairing cancelled");
+        }
+    }
+
     public string request_pin_code (ObjectPath device) throws Error, BluezError {
         pair_dialog = new PairDialog.request_pin_code (device, main_window);
-        pair_dialog.present ();
-        pair_dialog.run ();
-        pair_dialog.destroy ();
-        return pair_dialog.pincode;
+        if (check_pairing_response (pair_dialog)) {
+            return pair_dialog.entered_pincode;
+        }
+
+        // Unreachable as check_pairing response throws errors in false case
+        return "";
     }
 
     public void display_pin_code (ObjectPath device, string pincode) throws Error, BluezError {
-        pair_dialog = new PairDialog.with_pin_code (device, pincode, main_window);
+        pair_dialog = new PairDialog.display_pin_code (device, pincode, main_window);
         pair_dialog.present ();
-        pair_dialog.run ();
-        pair_dialog.destroy ();
     }
 
     public uint32 request_passkey (ObjectPath device) throws Error, BluezError {
         pair_dialog = new PairDialog.request_passkey (device, main_window);
-        pair_dialog.present ();
-        pair_dialog.run ();
-        pair_dialog.destroy ();
-        return pair_dialog.passkey_uint32;
+        if (check_pairing_response (pair_dialog)) {
+            return pair_dialog.entered_passkey;
+        }
+
+        // Unreachable as check_pairing response throws errors in false case
+        return 0;
     }
 
     public void display_passkey (ObjectPath device, uint32 passkey, uint16 entered) throws Error, BluezError {
         pair_dialog = new PairDialog.display_passkey (device, passkey, entered, main_window);
         pair_dialog.present ();
-        pair_dialog.run ();
-        pair_dialog.destroy ();
     }
 
     public void request_confirmation (ObjectPath device, uint32 passkey) throws Error, BluezError {
         pair_dialog = new PairDialog.request_confirmation (device, passkey, main_window);
-        pair_dialog.present ();
-        pair_dialog.run ();
-        pair_dialog.destroy ();
+        check_pairing_response (pair_dialog);
     }
 
     public void request_authorization (ObjectPath device) throws Error, BluezError {
-        pair_dialog = new PairDialog (device, main_window);
-        pair_dialog.present ();
-        pair_dialog.run ();  //Run used for stop send signal method-return to bluez
-        pair_dialog.destroy (); //after destroy signal method-return pass
+        pair_dialog = new PairDialog.request_authorization (device, main_window);
+        check_pairing_response (pair_dialog);
     }
 
     public void authorize_service (ObjectPath device, string uuid) throws Error, BluezError {

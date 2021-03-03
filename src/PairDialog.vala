@@ -19,21 +19,29 @@ public class PairDialog : Granite.MessageDialog {
     public enum AuthType {
         REQUEST_PIN,
         REQUEST_PASSKEY,
-        CONFIRMATION,
-        NORMAL,
-        PASSKEY,
-        PIN
+        REQUEST_CONFIRMATION,
+        REQUEST_AUTHORIZATION,
+        DISPLAY_PASSKEY,
+        DISPLAY_PIN
     }
 
     public ObjectPath object_path { get; construct; }
     public AuthType auth_type { get; construct; }
     public string passkey { get; construct; }
-    public string pincode { get; private set; }
-    public uint32 passkey_uint32 { get; private set; }
 
-    public PairDialog (ObjectPath object_path, Gtk.Window? main_window) {
+    public string entered_pincode { get; private set; }
+    public uint32 entered_passkey { get; private set; }
+
+    // Un-used default constructor
+    protected PairDialog () {
         Object (
-            auth_type: AuthType.NORMAL,
+            buttons: Gtk.ButtonsType.CANCEL
+        );
+    }
+
+    public PairDialog.request_authorization (ObjectPath object_path, Gtk.Window? main_window) {
+        Object (
+            auth_type: AuthType.REQUEST_AUTHORIZATION,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             primary_text: _("Confirm Bluetooth Pairing"),
@@ -63,7 +71,7 @@ public class PairDialog : Granite.MessageDialog {
 
     public PairDialog.display_passkey (ObjectPath object_path, uint32 passkey, uint16 entered, Gtk.Window? main_window) {
         Object (
-            auth_type: AuthType.PASSKEY,
+            auth_type: AuthType.DISPLAY_PASSKEY,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             passkey: "%u".printf (passkey),
@@ -74,7 +82,7 @@ public class PairDialog : Granite.MessageDialog {
 
     public PairDialog.request_confirmation (ObjectPath object_path, uint32 passkey, Gtk.Window? main_window) {
         Object (
-            auth_type: AuthType.CONFIRMATION,
+            auth_type: AuthType.REQUEST_CONFIRMATION,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             passkey: "%u".printf (passkey),
@@ -83,9 +91,9 @@ public class PairDialog : Granite.MessageDialog {
         );
     }
 
-    public PairDialog.with_pin_code (ObjectPath object_path, string pincode, Gtk.Window? main_window) {
+    public PairDialog.display_pin_code (ObjectPath object_path, string pincode, Gtk.Window? main_window) {
         Object (
-            auth_type: AuthType.PIN,
+            auth_type: AuthType.DISPLAY_PIN,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             passkey: pincode,
@@ -120,7 +128,7 @@ public class PairDialog : Granite.MessageDialog {
                 };
                 entry_pin.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
                 entry_pin.changed.connect (() => {
-                    pincode = entry_pin.text;
+                    entered_pincode = entry_pin.text;
                 });
                 custom_bin.margin_start = 25;
                 custom_bin.margin_end = 25;
@@ -142,35 +150,31 @@ public class PairDialog : Granite.MessageDialog {
                 };
                 entry_passkey.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
                 entry_passkey.changed.connect (() => {
-                    passkey_uint32 = uint.parse (entry_passkey.text);
+                    entered_passkey = uint.parse (entry_passkey.text);
                 });
                 custom_bin.margin_start = 110;
                 custom_bin.margin_end = 110;
                 custom_bin.add (entry_passkey);
                 custom_bin.show_all ();
+
                 var confirm_button = add_button (_("Confirm"), Gtk.ResponseType.ACCEPT);
                 confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
-            case AuthType.CONFIRMATION:
+            case AuthType.REQUEST_CONFIRMATION:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Make sure the code displayed on “%s” matches the one below.").printf (device_name);
                 var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
                 confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
-            case AuthType.PASSKEY:
+            case AuthType.DISPLAY_PASSKEY:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("“%s” would like to pair with this device. Make sure the code displayed on “%s” matches the one below.").printf (device_name, device_name);
-
-                var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
-                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
-            case AuthType.PIN:
+            case AuthType.DISPLAY_PIN:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Type the code displayed below on “%s”, followed by Enter.").printf (device_name);
-                var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
-                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
-            case AuthType.NORMAL:
+            case AuthType.REQUEST_AUTHORIZATION:
                 badge_icon = new ThemedIcon ("dialog-question");
                 secondary_text = _("“%s” would like to pair with this device.").printf (device_name);
 
@@ -188,20 +192,5 @@ public class PairDialog : Granite.MessageDialog {
         }
 
         modal = true;
-        response.connect ((response_id) => {
-            switch (response_id) {
-                case Gtk.ResponseType.ACCEPT:
-                    destroy (); //pass signal method-return
-                    break;
-                case Gtk.ResponseType.CANCEL:
-                    device.blocked = true; // reject with signal block
-                    device.disconnect.begin (); // disconnect to close signal
-                    destroy ();
-                    break;
-            }
-        });
-        destroy.connect (() => {
-            device.blocked = false; // remove blocking
-        });
     }
 }
