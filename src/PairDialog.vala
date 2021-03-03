@@ -130,8 +130,8 @@ public class PairDialog : Granite.MessageDialog {
                 entry_pin.changed.connect (() => {
                     entered_pincode = entry_pin.text;
                 });
-                custom_bin.margin_start = 25;
-                custom_bin.margin_end = 25;
+
+                custom_bin.halign = Gtk.Align.CENTER;
                 custom_bin.add (entry_pin);
                 custom_bin.show_all ();
                 var confirm_button = add_button (_("Confirm"), Gtk.ResponseType.ACCEPT);
@@ -152,11 +152,10 @@ public class PairDialog : Granite.MessageDialog {
                 entry_passkey.changed.connect (() => {
                     entered_passkey = uint.parse (entry_passkey.text);
                 });
-                custom_bin.margin_start = 110;
-                custom_bin.margin_end = 110;
+
+                custom_bin.halign = Gtk.Align.CENTER;
                 custom_bin.add (entry_passkey);
                 custom_bin.show_all ();
-
                 var confirm_button = add_button (_("Confirm"), Gtk.ResponseType.ACCEPT);
                 confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
