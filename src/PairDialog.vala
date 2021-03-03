@@ -121,9 +121,8 @@ public class PairDialog : Granite.MessageDialog {
                 var entry_pin = new Gtk.Entry () {
                     activates_default = true,
                     xalign = 0.5f,
-                    input_hints = Gtk.InputHints.NO_SPELLCHECK | Gtk.InputHints.NONE,
-                    input_purpose = Gtk.InputPurpose.DIGITS,
-                    max_length = 16, // get from doc bluez
+                    input_hints = Gtk.InputHints.NO_SPELLCHECK,
+                    max_length = 16, // bluez docs state this is a 1-16 character alphanumeric string
                     width_chars = 16
                 };
                 entry_pin.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
@@ -143,9 +142,9 @@ public class PairDialog : Granite.MessageDialog {
                 var entry_passkey = new Gtk.Entry () {
                     activates_default = true,
                     xalign = 0.5f,
-                    input_hints = Gtk.InputHints.NONE,
-                    input_purpose = Gtk.InputPurpose.NUMBER,
-                    max_length = 6, //get from doc bluez
+                    input_hints = Gtk.InputHints.NO_SPELLCHECK,
+                    input_purpose = Gtk.InputPurpose.DIGITS,
+                    max_length = 6, // bluez docs state this is a numeric value between 0-999999
                     width_chars = 6
                 };
                 entry_passkey.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
