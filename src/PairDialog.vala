@@ -117,7 +117,7 @@ public class PairDialog : Granite.MessageDialog {
         switch (auth_type) {
             case AuthType.REQUEST_PIN:
                 badge_icon = new ThemedIcon ("dialog-password");
-                secondary_text = _("Enter the pin displayed on “%s”").printf (device_name);
+                secondary_text = _("Enter the Bluetooth PIN for “%s”").printf (device_name);
                 var entry_pin = new Gtk.Entry () {
                     activates_default = true,
                     xalign = 0.5f,
@@ -138,7 +138,7 @@ public class PairDialog : Granite.MessageDialog {
                 break;
             case AuthType.REQUEST_PASSKEY:
                 badge_icon = new ThemedIcon ("dialog-password");
-                secondary_text = _("Enter the passkey displayed on “%s”").printf (device_name);
+                secondary_text = _("Enter the Bluetooth passkey for “%s”").printf (device_name);
                 var entry_passkey = new Gtk.Entry () {
                     activates_default = true,
                     xalign = 0.5f,
