@@ -195,7 +195,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             }
         });
 
-        ((DBusProxy)adapter).g_properties_changed.connect ((changed, invalid) => {
+        ((DBusProxy)device).g_properties_changed.connect ((changed, invalid) => {
             var paired = changed.lookup_value ("Paired", new VariantType ("b"));
             if (paired != null) {
                 compute_status ();
