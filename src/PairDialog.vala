@@ -17,12 +17,12 @@
 
 public class PairDialog : Granite.MessageDialog {
     public enum AuthType {
-        REQUEST_PIN,
+        REQUEST_PIN_CODE,
         REQUEST_PASSKEY,
         REQUEST_CONFIRMATION,
         REQUEST_AUTHORIZATION,
         DISPLAY_PASSKEY,
-        DISPLAY_PIN
+        DISPLAY_PIN_CODE
     }
 
     public ObjectPath object_path { get; construct; }
@@ -33,7 +33,7 @@ public class PairDialog : Granite.MessageDialog {
     public uint32 entered_passkey { get; private set; }
 
     // Un-used default constructor
-    protected PairDialog () {
+    private PairDialog () {
         Object (
             buttons: Gtk.ButtonsType.CANCEL
         );
@@ -51,7 +51,7 @@ public class PairDialog : Granite.MessageDialog {
 
     public PairDialog.request_pin_code (ObjectPath object_path, Gtk.Window? main_window) {
         Object (
-            auth_type: AuthType.REQUEST_PIN,
+            auth_type: AuthType.REQUEST_PIN_CODE,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             primary_text: _("Enter Bluetooth PIN"),
@@ -93,7 +93,7 @@ public class PairDialog : Granite.MessageDialog {
 
     public PairDialog.display_pin_code (ObjectPath object_path, string pincode, Gtk.Window? main_window) {
         Object (
-            auth_type: AuthType.DISPLAY_PIN,
+            auth_type: AuthType.DISPLAY_PIN_CODE,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             passkey: pincode,
@@ -115,7 +115,7 @@ public class PairDialog : Granite.MessageDialog {
         }
 
         switch (auth_type) {
-            case AuthType.REQUEST_PIN:
+            case AuthType.REQUEST_PIN_CODE:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Enter the Bluetooth PIN for “%s”").printf (device_name);
                 var entry_pin = new Gtk.Entry () {
@@ -168,7 +168,7 @@ public class PairDialog : Granite.MessageDialog {
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("“%s” would like to pair with this device. Make sure the code displayed on “%s” matches the one below.").printf (device_name, device_name);
                 break;
-            case AuthType.DISPLAY_PIN:
+            case AuthType.DISPLAY_PIN_CODE:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Type the code displayed below on “%s”, followed by Enter.").printf (device_name);
                 break;
