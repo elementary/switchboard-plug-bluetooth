@@ -61,7 +61,7 @@ public class Bluetooth.Services.ObjectManager : Object {
 
     private async void create_manager () {
         try {
-            object_manager = yield new GLib.DBusObjectManagerClient.for_bus.begin (
+            object_manager = yield new GLib.DBusObjectManagerClient.for_bus (
                 BusType.SYSTEM,
                 GLib.DBusObjectManagerClientFlags.NONE,
                 "org.bluez",
