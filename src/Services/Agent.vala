@@ -65,7 +65,7 @@ public class Bluetooth.Services.Agent : Object {
     }
 
     public void display_pin_code (ObjectPath device, string pincode) throws Error, BluezError {
-        var pair_dialog = new PairDialog.with_pin_code (device, pincode, main_window);
+        var pair_dialog = new PairDialog.display_pin_code (device, pincode, main_window);
         pair_dialog.present ();
     }
 
@@ -84,7 +84,7 @@ public class Bluetooth.Services.Agent : Object {
     }
 
     public void request_authorization (ObjectPath device) throws Error, BluezError {
-        var pair_dialog = new PairDialog (device, main_window);
+        var pair_dialog = new PairDialog.request_authorization (device, main_window);
         pair_dialog.present ();
     }
 
