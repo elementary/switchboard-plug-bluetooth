@@ -26,6 +26,7 @@ public class PairDialog : Granite.MessageDialog {
     public ObjectPath object_path { get; construct; }
     public AuthType auth_type { get; construct; }
     public string passkey { get; construct; }
+    public bool cancelled { get; set; }
 
     // Un-used default constructor
     private PairDialog () {
@@ -93,6 +94,9 @@ public class PairDialog : Granite.MessageDialog {
             case AuthType.REQUEST_CONFIRMATION:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Make sure the code displayed on “%s” matches the one below.").printf (device_name);
+
+                var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
+                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
             case AuthType.DISPLAY_PASSKEY:
                 badge_icon = new ThemedIcon ("dialog-password");
@@ -100,6 +104,7 @@ public class PairDialog : Granite.MessageDialog {
 
                 var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
                 confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+                break;
             case AuthType.DISPLAY_PIN_CODE:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Type the code displayed below on “%s”, followed by Enter.").printf (device_name);
@@ -122,23 +127,5 @@ public class PairDialog : Granite.MessageDialog {
         }
 
         modal = true;
-
-        response.connect ((response_id) => {
-            switch (response_id) {
-                case Gtk.ResponseType.ACCEPT:
-                    device.pair.begin ();
-                    break;
-                case Gtk.ResponseType.CANCEL:
-                    destroy ();
-                    break;
-            }
-        });
-
-        ((DBusProxy)device).g_properties_changed.connect ((changed, invalid) => {
-            var paired = changed.lookup_value ("Paired", new VariantType ("b"));
-            if (paired != null && device.paired) {
-                destroy ();
-            }
-        });
     }
 }
