@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 19:42+0000\n"
-"PO-Revision-Date: 2021-03-09 19:42+0000\n"
+"PO-Revision-Date: 2021-03-10 09:51+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/pt/>\n"
@@ -29,13 +29,15 @@ msgstr "Configurar definições de bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
 msgid "Security update"
-msgstr ""
+msgstr "Atualização de segurança"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
 msgstr ""
+"Corrige uma vulnerabilidade que permitiria o emparelhamento de um "
+"dispositivo sem autorização explícita do utilizador (CVE-2021-21367)"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:34
