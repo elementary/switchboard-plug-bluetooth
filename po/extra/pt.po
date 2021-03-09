@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 17:25+0000\n"
-"PO-Revision-Date: 2020-10-09 23:01+0000\n"
+"PO-Revision-Date: 2021-03-09 19:42+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
 msgid "Bluetooth Settings"
@@ -34,11 +34,11 @@ msgstr "Pequenas atualizações"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
 msgid "Fallback to device type when name is not available"
-msgstr ""
+msgstr "Reverter para o tipo de dispositivo quando o nome não está disponível"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:15
 msgid "Show \"Discovering\" indicator in an overlay bar"
-msgstr ""
+msgstr "Mostrar o indicador \"Descobrir\" numa barra sobreposta"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:16
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:29
