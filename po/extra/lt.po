@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 17:25+0000\n"
+"POT-Creation-Date: 2021-03-09 19:42+0000\n"
 "PO-Revision-Date: 2019-05-13 23:03+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -32,39 +32,49 @@ msgid "Configure Bluetooth Settings"
 msgstr "Konfigūruoti Bluetooth nustatymus"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:26
-msgid "Minor updates"
+msgid "Security update"
 msgstr ""
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
-msgid "Fallback to device type when name is not available"
+msgid ""
+"Fix a vulnerability that would allow a device to be paired without explicit "
+"user authorization (CVE-2021-21367)"
 msgstr ""
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:15
-msgid "Show \"Discovering\" indicator in an overlay bar"
-msgstr ""
-
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:16
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:29
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:35
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:40
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:46
-msgid "Updated translations"
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:34
+msgid "Minor updates"
 msgstr ""
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
-msgid "Fixes"
+msgid "Fallback to device type when name is not available"
+msgstr ""
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:23
+msgid "Show \"Discovering\" indicator in an overlay bar"
 msgstr ""
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:24
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:37
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:43
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:48
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:54
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:30
+msgid "Fixes"
+msgstr ""
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:32
 msgid "Fix crash on devices without Bluetooth"
 msgstr ""
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:28
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:36
 msgid "Move \"forget device\" button to each device row"
 msgstr ""
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:45
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:53
 msgid "Pair with devices that require a password, key code, or confirmation"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 17:25+0000\n"
+"POT-Creation-Date: 2021-03-09 19:42+0000\n"
 "PO-Revision-Date: 2020-10-30 00:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -28,39 +28,49 @@ msgid "Configure Bluetooth Settings"
 msgstr "ब्लूटूथ सेटिंग्ज कॉन्फिगर करा"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:26
+msgid "Security update"
+msgstr ""
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
+msgid ""
+"Fix a vulnerability that would allow a device to be paired without explicit "
+"user authorization (CVE-2021-21367)"
+msgstr ""
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:34
 msgid "Minor updates"
 msgstr "किरकोळ अद्यतने"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
 msgid "Fallback to device type when name is not available"
 msgstr ""
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:15
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:23
 msgid "Show \"Discovering\" indicator in an overlay bar"
 msgstr ""
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:16
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:29
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:35
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:40
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:46
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:24
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:37
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:43
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:48
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:54
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:30
 msgid "Fixes"
 msgstr "निराकारणे"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:24
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:32
 msgid "Fix crash on devices without Bluetooth"
 msgstr "ब्लूटूथशिवाय डिव्हाइसवर क्रॅश निराकरण करा"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:28
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:36
 msgid "Move \"forget device\" button to each device row"
 msgstr "प्रत्येक डिव्हाइस पंक्तीवर \"डिव्हाइस विसरा\" बटण हलवा"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:45
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:53
 msgid "Pair with devices that require a password, key code, or confirmation"
 msgstr "संकेतशब्द, की कोड किंवा पुष्टीकरण आवश्यक असलेल्या उपकरणांसह जोडा"
 
