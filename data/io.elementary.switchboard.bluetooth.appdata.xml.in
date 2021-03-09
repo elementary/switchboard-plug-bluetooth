@@ -7,6 +7,14 @@
   <icon type="stock">bluetooth</icon>
   <translation type="gettext">bluetooth-plug</translation>
   <releases>
+    <release version="2.3.5" date="2021-03-09" urgency="critical">
+      <description>
+        <p>Security update</p>
+        <ul>
+          <li>Fix a vulnerability that would allow a device to be paired without explicit user authorization (CVE-2021-21367)</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.3.4" date="2020-12-23" urgency="medium">
       <description>
         <p>Minor updates</p>
