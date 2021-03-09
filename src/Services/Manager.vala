@@ -269,6 +269,7 @@ public class Bluetooth.Services.ObjectManager : Object {
         if (agent_manager != null && agent.ready) {
             try {
                 agent_manager.register_agent (agent.get_path (), "DisplayYesNo");
+                agent_manager.request_default_agent (agent.get_path ());
             } catch (Error e) {
                 critical (e.message);
             }
