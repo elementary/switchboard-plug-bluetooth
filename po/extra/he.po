@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 17:25+0000\n"
-"PO-Revision-Date: 2021-01-24 14:30+0000\n"
+"PO-Revision-Date: 2021-03-09 19:42+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/he/>\n"
@@ -34,11 +34,11 @@ msgstr "עדכונים קלים"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
 msgid "Fallback to device type when name is not available"
-msgstr ""
+msgstr "לסגת לסוג מכשיר כאשר השם לא זמין"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:15
 msgid "Show \"Discovering\" indicator in an overlay bar"
-msgstr ""
+msgstr "להציג מחוון „מתבצע גילוי” בסרגל על"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:16
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:29
