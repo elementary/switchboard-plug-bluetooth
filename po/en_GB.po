@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 21:26+0000\n"
+"POT-Creation-Date: 2021-03-09 17:25+0000\n"
 "PO-Revision-Date: 2021-02-14 15:23+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -41,54 +41,59 @@ msgid "Discovering"
 msgstr "Discovering"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:158
+#: src/MainView.vala:157
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "Now discoverable as \"%s\". Not discoverable when this page is closed"
 
-#: src/MainView.vala:158
+#: src/MainView.vala:157
 msgid "Unknown"
 msgstr "Unknown"
 
-#: src/MainView.vala:160
+#: src/MainView.vala:159
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Not discoverable while Bluetooth is powered off"
 
-#: src/MainView.vala:162
+#: src/MainView.vala:161
 msgid "Not discoverable"
 msgstr "Not discoverable"
 
-#: src/MainView.vala:208
+#: src/MainView.vala:207
 msgid "Paired Devices"
 msgstr "Paired Devices"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:215
+#: src/MainView.vala:214
 msgid "Nearby Devices"
 msgstr "Nearby Devices"
 
-#: src/PairDialog.vala:35
+#: src/PairDialog.vala:43
 msgid "Confirm Bluetooth Pairing"
 msgstr "Confirm Bluetooth Pairing"
 
-#: src/PairDialog.vala:46 src/PairDialog.vala:57
+#: src/PairDialog.vala:54 src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
 msgstr "Confirm Bluetooth Passkey"
 
-#: src/PairDialog.vala:68
+#: src/PairDialog.vala:76
 msgid "Enter Bluetooth PIN"
 msgstr "Enter Bluetooth PIN"
 
-#: src/PairDialog.vala:75
+#: src/PairDialog.vala:83
 msgid "Unknown Bluetooth Device"
 msgstr "Unknown Bluetooth Device"
 
-#: src/PairDialog.vala:88
+#: src/PairDialog.vala:96
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "Make sure the code displayed on “%s” matches the one below."
 
-#: src/PairDialog.vala:92
+#: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
+#: src/DeviceRow.vala:284
+msgid "Pair"
+msgstr "Pair"
+
+#: src/PairDialog.vala:103
 #, c-format
 msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
@@ -97,16 +102,12 @@ msgstr ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 
-#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:283
-msgid "Pair"
-msgstr "Pair"
-
-#: src/PairDialog.vala:98
+#: src/PairDialog.vala:110
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr "Type the code displayed below on “%s”, followed by Enter."
 
-#: src/PairDialog.vala:102
+#: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "“%s” would like to pair with this device."
@@ -187,11 +188,11 @@ msgstr "Mouse & Touchpad Settings"
 msgid "Printer Settings"
 msgstr "Printer Settings"
 
-#: src/DeviceRow.vala:297
+#: src/DeviceRow.vala:298
 msgid "Disconnect"
 msgstr "Disconnect"
 
-#: src/DeviceRow.vala:321
+#: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "Connect"
 
