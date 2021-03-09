@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 21:26+0000\n"
+"POT-Creation-Date: 2021-03-09 17:25+0000\n"
 "PO-Revision-Date: 2020-10-30 00:15+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -41,70 +41,71 @@ msgid "Discovering"
 msgstr "探查中"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:158
+#: src/MainView.vala:157
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "現在可被偵測為「%s」。關閉此頁則不被偵測"
 
-#: src/MainView.vala:158
+#: src/MainView.vala:157
 msgid "Unknown"
 msgstr "未知"
 
-#: src/MainView.vala:160
+#: src/MainView.vala:159
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "藍牙關閉時不被偵測"
 
-#: src/MainView.vala:162
+#: src/MainView.vala:161
 msgid "Not discoverable"
 msgstr "不被偵測"
 
-#: src/MainView.vala:208
+#: src/MainView.vala:207
 msgid "Paired Devices"
 msgstr "已配對的裝置"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:215
+#: src/MainView.vala:214
 msgid "Nearby Devices"
 msgstr "鄰近的裝置"
 
-#: src/PairDialog.vala:35
+#: src/PairDialog.vala:43
 msgid "Confirm Bluetooth Pairing"
 msgstr "確認藍牙配對"
 
-#: src/PairDialog.vala:46 src/PairDialog.vala:57
+#: src/PairDialog.vala:54 src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
 msgstr "確認藍牙通關碼"
 
-#: src/PairDialog.vala:68
+#: src/PairDialog.vala:76
 msgid "Enter Bluetooth PIN"
 msgstr "請輸入藍牙 PIN 碼"
 
-#: src/PairDialog.vala:75
+#: src/PairDialog.vala:83
 msgid "Unknown Bluetooth Device"
 msgstr "未知的藍牙裝置"
 
-#: src/PairDialog.vala:88
+#: src/PairDialog.vala:96
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "確認「%s」上顯示的代碼與下方相同。"
 
-#: src/PairDialog.vala:92
+#: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
+#: src/DeviceRow.vala:284
+msgid "Pair"
+msgstr "配對"
+
+#: src/PairDialog.vala:103
 #, c-format
 msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr "「%s」希望與這個裝置配對。請確認「%s」上顯示的代碼與下方相同。"
 
-#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:283
-msgid "Pair"
-msgstr "配對"
-
-#: src/PairDialog.vala:98
+#: src/PairDialog.vala:110
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr "請在「%s」輸入下方代碼，接著按下 Enter。"
 
-#: src/PairDialog.vala:102
+#: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "「%s」想要和這個裝置配對。"
@@ -187,11 +188,11 @@ msgstr "滑鼠與觸控板設定"
 msgid "Printer Settings"
 msgstr "印表機設定"
 
-#: src/DeviceRow.vala:297
+#: src/DeviceRow.vala:298
 msgid "Disconnect"
 msgstr "中斷連結"
 
-#: src/DeviceRow.vala:321
+#: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "連接"
 
