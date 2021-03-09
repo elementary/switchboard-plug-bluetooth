@@ -1,3 +1,18 @@
+switchboard-plug-bluetooth (2.3.5) bionic; urgency=medium
+
+  * Release 2.3.5 (#167)
+  * Make switchboard the default agent (#169)
+  * Update translation files
+  * Update translation template
+  * Merge pull request from GHSA-5p3g-j69g-w2mq
+  * PairDialog: Rename auth types for clarity (#164)
+  * Fix compiler warnings (#162)
+  * Manager: Remove unnceccesary begin (#163)
+  * Update DeviceRow.vala (#144)
+  * LINGUAS: sort, remove en_US
+
+ -- elementary OS Team <builds@elementary.io>  Tue, 09 Mar 2021 19:42:46 +0000
+
 switchboard-plug-bluetooth (2.3.4) bionic; urgency=medium
 
   * Release 2.3.4 (#156)
