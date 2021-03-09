@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 19:42+0000\n"
-"PO-Revision-Date: 2021-02-14 15:23+0000\n"
+"PO-Revision-Date: 2021-03-10 09:51+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/bluetooth-plug-extra/en_GB/>\n"
@@ -29,13 +29,15 @@ msgstr "Configure Bluetooth Settings"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
 msgid "Security update"
-msgstr ""
+msgstr "Security update"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
 msgstr ""
+"Fix a vulnerability that would allow a device to be paired without explicit "
+"user authorisation (CVE-2021-21367)"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:34
@@ -44,11 +46,11 @@ msgstr "Minor updates"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
 msgid "Fallback to device type when name is not available"
-msgstr ""
+msgstr "Fallback to device type when name is not available"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:23
 msgid "Show \"Discovering\" indicator in an overlay bar"
-msgstr ""
+msgstr "Show \"Discovering\" indicator in an overlay bar"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:24
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:37
