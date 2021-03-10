@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 19:42+0000\n"
-"PO-Revision-Date: 2021-03-10 09:51+0000\n"
+"PO-Revision-Date: 2021-03-11 00:14+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ru/>\n"
@@ -38,9 +38,8 @@ msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Пожалуйста, убедитесь что ваши устройства видны и готовы к связыванию."
 
 #: src/MainView.vala:63
-#, fuzzy
 msgid "Discovering"
-msgstr "Отключение…"
+msgstr "Обнаружение"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
 #: src/MainView.vala:157
@@ -71,28 +70,25 @@ msgid "Nearby Devices"
 msgstr "Устройства поблизости"
 
 #: src/PairDialog.vala:43
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Настроить параметры Bluetooth"
+msgstr "Подтвердить сопряжение Bluetooth"
 
 #: src/PairDialog.vala:54 src/PairDialog.vala:65
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Настроить параметры Bluetooth"
+msgstr "Подтвердить пароль Bluetooth"
 
 #: src/PairDialog.vala:76
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Введите PIN-код Bluetooth"
 
 #: src/PairDialog.vala:83
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Неизвестное устройство Bluetooth"
 
 #: src/PairDialog.vala:96
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
+msgstr "Убедитесь, что код, показанный в «%s», совпадает с приведенным ниже."
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
 #: src/DeviceRow.vala:284
@@ -105,16 +101,18 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"«%s» хочет соединиться с этим устройством. Убедитесь, что показанный в «%s» "
+"код совпадает с приведенным ниже."
 
 #: src/PairDialog.vala:110
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "Введите код, показанный в «%s», и нажмите Enter."
 
 #: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "«%s» хочет соединиться с этим устройством."
 
 #: src/DeviceRow.vala:41
 msgid "Available"
@@ -137,10 +135,8 @@ msgid "Disconnecting…"
 msgstr "Отключение…"
 
 #: src/DeviceRow.vala:52
-#, fuzzy
-#| msgid "Unable to Connnect"
 msgid "Unable to Connect"
-msgstr "Не удаётся подключить"
+msgstr "Не удалось подключить"
 
 #: src/DeviceRow.vala:54
 msgid "Not Connected"
@@ -152,7 +148,7 @@ msgstr "Динамик"
 
 #: src/DeviceRow.vala:97
 msgid "Controller"
-msgstr ""
+msgstr "Контроллер"
 
 #: src/DeviceRow.vala:100
 msgid "Keyboard"
@@ -172,13 +168,11 @@ msgstr "Сенсорная панель"
 
 #: src/DeviceRow.vala:112
 msgid "Phone"
-msgstr ""
+msgstr "Телефон"
 
 #: src/DeviceRow.vala:139
-#, fuzzy
-#| msgid "Forget selected device"
 msgid "Forget this device"
-msgstr "Забыть выбранное устройство"
+msgstr "Забыть это устройство"
 
 #: src/DeviceRow.vala:166
 msgid "Sound Settings"
