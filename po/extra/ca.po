@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-08 18:37+0000\n"
-"PO-Revision-Date: 2020-10-09 23:01+0000\n"
+"POT-Creation-Date: 2021-03-09 19:42+0000\n"
+"PO-Revision-Date: 2021-03-10 09:51+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
 msgid "Bluetooth Settings"
@@ -28,29 +28,51 @@ msgid "Configure Bluetooth Settings"
 msgstr "Configureu els paràmetres del Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
-msgid "Fixes"
-msgstr "Correccions"
+msgid "Security update"
+msgstr "Actualització de seguretat"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
-msgid "Fix crash on devices without Bluetooth"
-msgstr "Correcció de la fallada en dispositius sense Bluetooth"
+msgid ""
+"Fix a vulnerability that would allow a device to be paired without explicit "
+"user authorization (CVE-2021-21367)"
+msgstr ""
+"Solució d'una vulnerabilitat que permetria aparellar un dispositiu sense "
+"autorització explícita de l'usuari (CVE-2021-21367)"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:16
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:34
 msgid "Minor updates"
 msgstr "Actualitzacions menors"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:18
-msgid "Move \"forget device\" button to each device row"
-msgstr "Moviment del botó \"oblida el dispositiu\" a cada fila del dispositiu"
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
+msgid "Fallback to device type when name is not available"
+msgstr "Alternativa al tipus de dispositiu quan el nom no està disponible"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:19
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:25
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:30
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:36
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:23
+msgid "Show \"Discovering\" indicator in an overlay bar"
+msgstr "Es mostra l'indicador \"Descobrint\" en una barra de superposició."
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:24
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:37
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:43
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:48
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:54
 msgid "Updated translations"
 msgstr "Traduccions actualitzades"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:35
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:30
+msgid "Fixes"
+msgstr "Correccions"
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:32
+msgid "Fix crash on devices without Bluetooth"
+msgstr "Correcció de la fallada en dispositius sense Bluetooth"
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:36
+msgid "Move \"forget device\" button to each device row"
+msgstr "Moviment del botó \"oblida el dispositiu\" a cada fila del dispositiu"
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:53
 msgid "Pair with devices that require a password, key code, or confirmation"
 msgstr ""
 "Aparelleu-vos amb dispositius que requereixen una contrasenya, codi o "

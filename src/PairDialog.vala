@@ -28,6 +28,7 @@ public class PairDialog : Granite.MessageDialog {
     public ObjectPath object_path { get; construct; }
     public AuthType auth_type { get; construct; }
     public string passkey { get; construct; }
+    public bool cancelled { get; set; }
 
     public string entered_pincode { get; private set; }
     public uint32 entered_passkey { get; private set; }
@@ -161,12 +162,16 @@ public class PairDialog : Granite.MessageDialog {
             case AuthType.REQUEST_CONFIRMATION:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Make sure the code displayed on “%s” matches the one below.").printf (device_name);
+
                 var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
                 confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
             case AuthType.DISPLAY_PASSKEY:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("“%s” would like to pair with this device. Make sure the code displayed on “%s” matches the one below.").printf (device_name, device_name);
+
+                var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
+                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
             case AuthType.DISPLAY_PIN_CODE:
                 badge_icon = new ThemedIcon ("dialog-password");

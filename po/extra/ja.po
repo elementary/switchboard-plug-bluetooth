@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-08 18:37+0000\n"
-"PO-Revision-Date: 2020-10-09 23:01+0000\n"
+"POT-Creation-Date: 2021-03-09 19:42+0000\n"
+"PO-Revision-Date: 2021-03-11 00:14+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
 msgid "Bluetooth Settings"
@@ -28,29 +28,52 @@ msgid "Configure Bluetooth Settings"
 msgstr "Bluetooth の設定をします"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
-msgid "Fixes"
-msgstr "修正点"
+msgid "Security update"
+msgstr "セキュリティーアップデート"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
-msgid "Fix crash on devices without Bluetooth"
-msgstr "Bluetooth が搭載されていないデバイスにおいてペインを開くとクラッシュする不具合を修正"
+msgid ""
+"Fix a vulnerability that would allow a device to be paired without explicit "
+"user authorization (CVE-2021-21367)"
+msgstr "ユーザーの明示的な認証なしにデバイスのペアリングが許可される脆弱性を修正 (CVE-2021-21367)"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:16
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:34
 msgid "Minor updates"
 msgstr "軽微なアップデート"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:18
-msgid "Move \"forget device\" button to each device row"
-msgstr "\"このデバイスの接続情報を削除\" ボタンを各デバイスに対して表示するように変更"
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
+msgid "Fallback to device type when name is not available"
+msgstr "デバイス名が利用できない場合、代わりにデバイスの種類を表示するように変更"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:19
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:25
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:30
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:36
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:23
+msgid "Show \"Discovering\" indicator in an overlay bar"
+msgstr "オーバーレイバーに検索中であることを表示するように変更"
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:24
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:37
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:43
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:48
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:54
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:35
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:30
+msgid "Fixes"
+msgstr "修正点"
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:32
+msgid "Fix crash on devices without Bluetooth"
+msgstr ""
+"Bluetooth が搭載されていないデバイスにおいてペインを開くとクラッシュする不具"
+"合を修正"
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:36
+msgid "Move \"forget device\" button to each device row"
+msgstr ""
+"\"このデバイスの接続情報を削除\" ボタンを各デバイスに対して表示するように変更"
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:53
 msgid "Pair with devices that require a password, key code, or confirmation"
 msgstr "パスワードやキーコード、確認を必要とするデバイスとのペアリングに対応"
 
