@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 19:42+0000\n"
-"PO-Revision-Date: 2021-03-11 00:14+0000\n"
+"PO-Revision-Date: 2021-03-16 16:50+0000\n"
 "Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/es/>\n"
@@ -36,6 +36,8 @@ msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
 msgstr ""
+"Se corrigió una vulnerabilidad que permitiría emparejar un dispositivo sin "
+"la autorización explícita del usuario (CVE-2021-21367)"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:34
@@ -44,11 +46,11 @@ msgstr "Actualizaciones menores"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
 msgid "Fallback to device type when name is not available"
-msgstr ""
+msgstr "Se recurre al tipo de dispositivo cuando el nombre no está disponible"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:23
 msgid "Show \"Discovering\" indicator in an overlay bar"
-msgstr ""
+msgstr "Se muestra el indicador «Explorando» en una barra superpuesta"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:24
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:37
