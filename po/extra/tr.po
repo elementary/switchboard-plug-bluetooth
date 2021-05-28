@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 19:42+0000\n"
-"PO-Revision-Date: 2021-05-05 21:17+0000\n"
+"PO-Revision-Date: 2021-05-28 16:46+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/tr/>\n"
@@ -36,6 +36,8 @@ msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
 msgstr ""
+"Kullanıcı yetkilendirmesi olmadan bir cihazın eşleştirilmesine izin verecek "
+"bir güvenlik açığı düzeltildi (CVE-2021-21367)"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:34
