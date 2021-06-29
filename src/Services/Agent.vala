@@ -28,6 +28,8 @@ public class Bluetooth.Services.Agent : Object {
     private const string PATH = "/org/bluez/agent/elementary";
     Gtk.Window? main_window;
 
+    private PairDialog pair_dialog;
+
     [DBus (visible=false)]
     public Agent (Gtk.Window? main_window) {
         this.main_window = main_window;
@@ -60,37 +62,104 @@ public class Bluetooth.Services.Agent : Object {
         unregistered ();
     }
 
-    public string request_pin_code (ObjectPath device) throws Error, BluezError {
-        return "";
+    public async string request_pin_code (ObjectPath device) throws Error, BluezError {
+        throw new BluezError.REJECTED ("Pairing method not supported");
     }
 
-    public void display_pin_code (ObjectPath device, string pincode) throws Error, BluezError {
-        var pair_dialog = new PairDialog.with_pin_code (device, pincode, main_window);
+    // Called to display a pin code on-screen that needs to be entered on the other device. Can return
+    // instantly
+    public async void display_pin_code (ObjectPath device, string pincode) throws Error, BluezError {
+        pair_dialog = new PairDialog.display_pin_code (device, pincode, main_window);
         pair_dialog.present ();
     }
 
-    public uint32 request_passkey (ObjectPath device) throws Error, BluezError {
-        return 0;
+    public async uint32 request_passkey (ObjectPath device) throws Error, BluezError {
+        throw new BluezError.REJECTED ("Pairing method not supported");
     }
 
-    public void display_passkey (ObjectPath device, uint32 passkey, uint16 entered) throws Error {
-        var pair_dialog = new PairDialog.display_passkey (device, passkey, entered, main_window);
+    // Called to display a passkey on-screen that needs to be entered on the other device. Can return
+    // instantly
+    public async void display_passkey (ObjectPath device, uint32 passkey, uint16 entered) throws Error {
+        pair_dialog = new PairDialog.display_passkey (device, passkey, entered, main_window);
         pair_dialog.present ();
     }
 
-    public void request_confirmation (ObjectPath device, uint32 passkey) throws Error, BluezError {
-        var pair_dialog = new PairDialog.request_confirmation (device, passkey, main_window);
-        pair_dialog.present ();
+    // Called to request confirmation from the user that they want to pair with the given device and that
+    // the passkey matches. **MUST** throw BluezError if pairing is to be rejected. This is handled in
+    // `check_pairing_response`. If the method returns without an error, pairing is authorized
+    public async void request_confirmation (ObjectPath device, uint32 passkey) throws Error, BluezError {
+        pair_dialog = new PairDialog.request_confirmation (device, passkey, main_window);
+        yield check_pairing_response (pair_dialog);
     }
 
-    public void request_authorization (ObjectPath device) throws Error, BluezError {
-        var pair_dialog = new PairDialog (device, main_window);
-        pair_dialog.present ();
+    // Called to request confirmation from the user that they want to pair with the given device
+    // **MUST** throw BluezError if pairing is to be rejected. This is handled in `check_pairing_response`
+    // If the method returns without an error, pairing is authorized
+    public async void request_authorization (ObjectPath device) throws Error, BluezError {
+        pair_dialog = new PairDialog.request_authorization (device, main_window);
+        yield check_pairing_response (pair_dialog);
     }
 
-    public void authorize_service (ObjectPath device, string uuid) throws Error, BluezError {
+    // Called to authorize the use of a specific service (Audio/HID/etc), so we restrict this to paired
+    // devices only
+    public void authorize_service (ObjectPath device_path, string uuid) throws Error, BluezError {
+        var device = get_device_from_object_path (device_path);
+
+        bool paired = device.paired;
+        bool trusted = device.trusted;
+
+        // Shouldn't really happen as trusted devices should be automatically authorized, but lets handle it anyway
+        if (paired && trusted) {
+            // allow
+            return;
+        }
+
+        // A device that has been paired, but not yet trusted, trust it and allow it to access
+        // services
+        if (paired && !trusted) {
+            device.trusted = true;
+            // allow
+            return;
+        }
+
+        // Reject everything else
+        throw new BluezError.REJECTED ("Rejecting service auth, not paired or trusted");
     }
 
     public void cancel () throws Error {
+        if (pair_dialog != null) {
+            pair_dialog.cancelled = true;
+            pair_dialog.destroy ();
+        }
+    }
+
+    private async void check_pairing_response (PairDialog dialog) throws BluezError {
+        SourceFunc callback = check_pairing_response.callback;
+        BluezError? error = null;
+
+        dialog.response.connect ((response) => {
+            if (response != Gtk.ResponseType.ACCEPT || dialog.cancelled) {
+                if (dialog.cancelled) {
+                    error = new BluezError.CANCELED ("Pairing cancelled");
+                } else {
+                    error = new BluezError.REJECTED ("Pairing rejected");
+                }
+            }
+
+            Idle.add ((owned)callback);
+            dialog.destroy ();
+        });
+
+        dialog.present ();
+
+        yield;
+
+        if (error != null) {
+            throw error;
+        }
+    }
+
+    private Device get_device_from_object_path (ObjectPath object_path) throws GLib.Error {
+        return Bus.get_proxy_sync<Device> (BusType.SYSTEM, "org.bluez", object_path, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
     }
 }

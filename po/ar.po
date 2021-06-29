@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 21:26+0000\n"
-"PO-Revision-Date: 2020-10-28 11:21+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2021-03-09 19:42+0000\n"
+"PO-Revision-Date: 2021-04-26 17:51+0000\n"
+"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ar/>\n"
 "Language: ar\n"
@@ -18,20 +18,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:34
 msgid "Bluetooth"
-msgstr ""
+msgstr "البلوتوث"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "تخصيص إعدادات البلوتوث"
 
 #: src/MainView.vala:42
 msgid "No Devices Found"
-msgstr ""
+msgstr "لا توجد أجهزة تم اكتشافها"
 
 #: src/MainView.vala:43
 msgid "Please ensure that your devices are visible and ready for pairing."
@@ -42,70 +42,71 @@ msgid "Discovering"
 msgstr ""
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:158
+#: src/MainView.vala:157
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 
-#: src/MainView.vala:158
+#: src/MainView.vala:157
 msgid "Unknown"
 msgstr "غير معروف"
 
-#: src/MainView.vala:160
+#: src/MainView.vala:159
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr ""
 
-#: src/MainView.vala:162
+#: src/MainView.vala:161
 msgid "Not discoverable"
 msgstr ""
 
-#: src/MainView.vala:208
+#: src/MainView.vala:207
 msgid "Paired Devices"
 msgstr ""
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:215
+#: src/MainView.vala:214
 msgid "Nearby Devices"
 msgstr ""
 
-#: src/PairDialog.vala:35
+#: src/PairDialog.vala:43
 msgid "Confirm Bluetooth Pairing"
 msgstr ""
 
-#: src/PairDialog.vala:46 src/PairDialog.vala:57
+#: src/PairDialog.vala:54 src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
 msgstr ""
 
-#: src/PairDialog.vala:68
+#: src/PairDialog.vala:76
 msgid "Enter Bluetooth PIN"
 msgstr ""
 
-#: src/PairDialog.vala:75
+#: src/PairDialog.vala:83
 msgid "Unknown Bluetooth Device"
 msgstr ""
 
-#: src/PairDialog.vala:88
+#: src/PairDialog.vala:96
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
 
-#: src/PairDialog.vala:92
+#: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
+#: src/DeviceRow.vala:284
+msgid "Pair"
+msgstr ""
+
+#: src/PairDialog.vala:103
 #, c-format
 msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
 
-#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:283
-msgid "Pair"
-msgstr ""
-
-#: src/PairDialog.vala:98
+#: src/PairDialog.vala:110
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
 
-#: src/PairDialog.vala:102
+#: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr ""
@@ -120,7 +121,7 @@ msgstr ""
 
 #: src/DeviceRow.vala:45
 msgid "Connected"
-msgstr ""
+msgstr "متصل"
 
 #: src/DeviceRow.vala:47
 msgid "Connecting…"
@@ -172,7 +173,7 @@ msgstr ""
 
 #: src/DeviceRow.vala:166
 msgid "Sound Settings"
-msgstr ""
+msgstr "إعدادات الصوت"
 
 #: src/DeviceRow.vala:171
 msgid "Keyboard Settings"
@@ -184,12 +185,12 @@ msgstr ""
 
 #: src/DeviceRow.vala:179
 msgid "Printer Settings"
-msgstr ""
+msgstr "إعدادات الطابعة"
 
-#: src/DeviceRow.vala:297
+#: src/DeviceRow.vala:298
 msgid "Disconnect"
 msgstr ""
 
-#: src/DeviceRow.vala:321
+#: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr ""

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 21:26+0000\n"
-"PO-Revision-Date: 2021-02-13 12:34+0000\n"
+"POT-Creation-Date: 2021-03-09 19:42+0000\n"
+"PO-Revision-Date: 2021-06-03 15:50+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-bluetooth/nb/>\n"
@@ -42,57 +42,61 @@ msgid "Discovering"
 msgstr "Oppdager"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:158
+#: src/MainView.vala:157
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "Nå oppdagbar som \"%s\". Ikke oppdagbar når denne siden er lukket"
 
-#: src/MainView.vala:158
+#: src/MainView.vala:157
 msgid "Unknown"
 msgstr "Ukjent"
 
-#: src/MainView.vala:160
+#: src/MainView.vala:159
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Kan ikke oppdages når Blåtann er skrudd av"
 
-#: src/MainView.vala:162
+#: src/MainView.vala:161
 msgid "Not discoverable"
 msgstr "Kan ikke oppdages"
 
-#: src/MainView.vala:208
+#: src/MainView.vala:207
 msgid "Paired Devices"
 msgstr "Parrede enheter"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:215
+#: src/MainView.vala:214
 msgid "Nearby Devices"
 msgstr "Enheter i nærheten"
 
-#: src/PairDialog.vala:35
+#: src/PairDialog.vala:43
 #, fuzzy
 msgid "Confirm Bluetooth Pairing"
 msgstr "Behandle Blåtannsinnstillinger"
 
-#: src/PairDialog.vala:46 src/PairDialog.vala:57
+#: src/PairDialog.vala:54 src/PairDialog.vala:65
 #, fuzzy
 msgid "Confirm Bluetooth Passkey"
 msgstr "Behandle Blåtannsinnstillinger"
 
-#: src/PairDialog.vala:68
-#, fuzzy
+#: src/PairDialog.vala:76
 msgid "Enter Bluetooth PIN"
-msgstr "Blåtann"
+msgstr "Skriv inn Blåtanns-PIN"
 
-#: src/PairDialog.vala:75
+#: src/PairDialog.vala:83
 msgid "Unknown Bluetooth Device"
 msgstr "Ukjent Blåtannsenhet"
 
-#: src/PairDialog.vala:88
+#: src/PairDialog.vala:96
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "Forsikre deg om at koden som vises på «%s» samsvarer med den nedenfor."
 
-#: src/PairDialog.vala:92
+#: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
+#: src/DeviceRow.vala:284
+msgid "Pair"
+msgstr "Parr"
+
+#: src/PairDialog.vala:103
 #, c-format
 msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
@@ -101,16 +105,12 @@ msgstr ""
 "«%s» ønsker å tilknytte seg denne enheten. Forsikre deg om at koden som "
 "vises i «%s» samsvarer med den nedenfor."
 
-#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:283
-msgid "Pair"
-msgstr "Parr"
-
-#: src/PairDialog.vala:98
-#, c-format, fuzzy
+#: src/PairDialog.vala:110
+#, fuzzy, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr "Skriv inn koden som vises i «%s», etterfulgt av «↵»."
 
-#: src/PairDialog.vala:102
+#: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "«%s» ønsker å tilknytte seg denne enheten."
@@ -174,18 +174,16 @@ msgid "Phone"
 msgstr "Telefon"
 
 #: src/DeviceRow.vala:139
-#, fuzzy
-#| msgid "Forget selected device"
 msgid "Forget this device"
-msgstr "Glem valgt enhet"
+msgstr "Glem denne enheten"
 
 #: src/DeviceRow.vala:166
 msgid "Sound Settings"
-msgstr "Innstillinger for lyd"
+msgstr "Lydinnstillinger"
 
 #: src/DeviceRow.vala:171
 msgid "Keyboard Settings"
-msgstr "Innstillinger for tastatur"
+msgstr "Tastaturinnstillinger"
 
 #: src/DeviceRow.vala:175
 msgid "Mouse & Touchpad Settings"
@@ -195,11 +193,11 @@ msgstr "Innstillinger for mus og pekeplate"
 msgid "Printer Settings"
 msgstr "Skriverinnstillinger"
 
-#: src/DeviceRow.vala:297
+#: src/DeviceRow.vala:298
 msgid "Disconnect"
 msgstr "Koble fra"
 
-#: src/DeviceRow.vala:321
+#: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "Koble til"
 

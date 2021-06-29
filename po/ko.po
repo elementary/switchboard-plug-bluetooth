@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 21:26+0000\n"
+"POT-Creation-Date: 2021-03-09 19:42+0000\n"
 "PO-Revision-Date: 2020-10-28 11:21+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -41,73 +41,74 @@ msgid "Discovering"
 msgstr "검색 중입니다"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:158
+#: src/MainView.vala:157
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "이제 \"%s\"로 검색됩니다. 이 페이지를 닫으면 검색되지 않습니다"
 
-#: src/MainView.vala:158
+#: src/MainView.vala:157
 msgid "Unknown"
 msgstr "알 수 없음"
 
-#: src/MainView.vala:160
+#: src/MainView.vala:159
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "블루투스의 전원이 꺼져서 찾을 수 없음"
 
-#: src/MainView.vala:162
+#: src/MainView.vala:161
 msgid "Not discoverable"
 msgstr "찾을 수 없음"
 
-#: src/MainView.vala:208
+#: src/MainView.vala:207
 msgid "Paired Devices"
 msgstr "연결된 장치"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:215
+#: src/MainView.vala:214
 msgid "Nearby Devices"
 msgstr "주변의 장치"
 
-#: src/PairDialog.vala:35
+#: src/PairDialog.vala:43
 #, fuzzy
 msgid "Confirm Bluetooth Pairing"
 msgstr "블루투스 설정 관리"
 
-#: src/PairDialog.vala:46 src/PairDialog.vala:57
+#: src/PairDialog.vala:54 src/PairDialog.vala:65
 #, fuzzy
 msgid "Confirm Bluetooth Passkey"
 msgstr "블루투스 설정 관리"
 
-#: src/PairDialog.vala:68
+#: src/PairDialog.vala:76
 #, fuzzy
 msgid "Enter Bluetooth PIN"
 msgstr "블루투스"
 
-#: src/PairDialog.vala:75
+#: src/PairDialog.vala:83
 msgid "Unknown Bluetooth Device"
 msgstr ""
 
-#: src/PairDialog.vala:88
+#: src/PairDialog.vala:96
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
 
-#: src/PairDialog.vala:92
+#: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
+#: src/DeviceRow.vala:284
+msgid "Pair"
+msgstr "연결"
+
+#: src/PairDialog.vala:103
 #, c-format
 msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
 
-#: src/PairDialog.vala:94 src/PairDialog.vala:104 src/DeviceRow.vala:283
-msgid "Pair"
-msgstr "연결"
-
-#: src/PairDialog.vala:98
+#: src/PairDialog.vala:110
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
 
-#: src/PairDialog.vala:102
+#: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr ""
@@ -192,11 +193,11 @@ msgstr "마우스와 터치패드 설정"
 msgid "Printer Settings"
 msgstr "프린터 설정"
 
-#: src/DeviceRow.vala:297
+#: src/DeviceRow.vala:298
 msgid "Disconnect"
 msgstr "연결 해제"
 
-#: src/DeviceRow.vala:321
+#: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "연결"
 

@@ -17,19 +17,27 @@
 
 public class PairDialog : Granite.MessageDialog {
     public enum AuthType {
-        CONFIRMATION,
-        NORMAL,
-        PASSKEY,
-        PIN
+        REQUEST_CONFIRMATION,
+        REQUEST_AUTHORIZATION,
+        DISPLAY_PASSKEY,
+        DISPLAY_PIN_CODE
     }
 
     public ObjectPath object_path { get; construct; }
     public AuthType auth_type { get; construct; }
     public string passkey { get; construct; }
+    public bool cancelled { get; set; }
 
-    public PairDialog (ObjectPath object_path, Gtk.Window? main_window) {
+    // Un-used default constructor
+    private PairDialog () {
         Object (
-            auth_type: AuthType.NORMAL,
+            buttons: Gtk.ButtonsType.CANCEL
+        );
+    }
+
+    public PairDialog.request_authorization (ObjectPath object_path, Gtk.Window? main_window) {
+        Object (
+            auth_type: AuthType.REQUEST_AUTHORIZATION,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             primary_text: _("Confirm Bluetooth Pairing"),
@@ -39,7 +47,7 @@ public class PairDialog : Granite.MessageDialog {
 
     public PairDialog.display_passkey (ObjectPath object_path, uint32 passkey, uint16 entered, Gtk.Window? main_window) {
         Object (
-            auth_type: AuthType.PASSKEY,
+            auth_type: AuthType.DISPLAY_PASSKEY,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             passkey: "%u".printf (passkey),
@@ -50,7 +58,7 @@ public class PairDialog : Granite.MessageDialog {
 
     public PairDialog.request_confirmation (ObjectPath object_path, uint32 passkey, Gtk.Window? main_window) {
         Object (
-            auth_type: AuthType.CONFIRMATION,
+            auth_type: AuthType.REQUEST_CONFIRMATION,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             passkey: "%u".printf (passkey),
@@ -59,9 +67,9 @@ public class PairDialog : Granite.MessageDialog {
         );
     }
 
-    public PairDialog.with_pin_code (ObjectPath object_path, string pincode, Gtk.Window? main_window) {
+    public PairDialog.display_pin_code (ObjectPath object_path, string pincode, Gtk.Window? main_window) {
         Object (
-            auth_type: AuthType.PIN,
+            auth_type: AuthType.DISPLAY_PIN_CODE,
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             passkey: pincode,
@@ -83,21 +91,25 @@ public class PairDialog : Granite.MessageDialog {
         }
 
         switch (auth_type) {
-            case AuthType.CONFIRMATION:
+            case AuthType.REQUEST_CONFIRMATION:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Make sure the code displayed on “%s” matches the one below.").printf (device_name);
+
+                var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
+                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
-            case AuthType.PASSKEY:
+            case AuthType.DISPLAY_PASSKEY:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("“%s” would like to pair with this device. Make sure the code displayed on “%s” matches the one below.").printf (device_name, device_name);
 
                 var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
                 confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-            case AuthType.PIN:
+                break;
+            case AuthType.DISPLAY_PIN_CODE:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Type the code displayed below on “%s”, followed by Enter.").printf (device_name);
                 break;
-            case AuthType.NORMAL:
+            case AuthType.REQUEST_AUTHORIZATION:
                 badge_icon = new ThemedIcon ("dialog-question");
                 secondary_text = _("“%s” would like to pair with this device.").printf (device_name);
 
@@ -115,23 +127,5 @@ public class PairDialog : Granite.MessageDialog {
         }
 
         modal = true;
-
-        response.connect ((response_id) => {
-            switch (response_id) {
-                case Gtk.ResponseType.ACCEPT:
-                    device.pair.begin ();
-                    break;
-                case Gtk.ResponseType.CANCEL:
-                    destroy ();
-                    break;
-            }
-        });
-
-        ((DBusProxy)device).g_properties_changed.connect ((changed, invalid) => {
-            var paired = changed.lookup_value ("Paired", new VariantType ("b"));
-            if (paired != null && device.paired) {
-                destroy ();
-            }
-        });
     }
 }

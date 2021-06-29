@@ -55,7 +55,7 @@ public class Bluetooth.Services.ObjectManager : Object {
 
     private async void create_manager () {
         try {
-            object_manager = yield new GLib.DBusObjectManagerClient.for_bus.begin (
+            object_manager = yield new GLib.DBusObjectManagerClient.for_bus (
                 BusType.SYSTEM,
                 GLib.DBusObjectManagerClientFlags.NONE,
                 "org.bluez",
@@ -263,6 +263,7 @@ public class Bluetooth.Services.ObjectManager : Object {
         if (agent_manager != null && agent.ready) {
             try {
                 agent_manager.register_agent (agent.get_path (), "DisplayYesNo");
+                agent_manager.request_default_agent (agent.get_path ());
             } catch (Error e) {
                 critical (e.message);
             }
