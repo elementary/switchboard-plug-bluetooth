@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 19:42+0000\n"
-"PO-Revision-Date: 2021-03-10 09:51+0000\n"
+"PO-Revision-Date: 2021-07-05 13:54+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/uk/>\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
 msgid "Bluetooth Settings"
-msgstr "Параметри Bluetooth"
+msgstr "Налаштування Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:6
 msgid "Configure Bluetooth Settings"
-msgstr "Налаштування параметрів Bluetooth"
+msgstr "Налаштування конфігурацій Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
 msgid "Security update"
