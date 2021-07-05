@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 19:42+0000\n"
-"PO-Revision-Date: 2021-07-03 16:14+0000\n"
+"PO-Revision-Date: 2021-07-05 13:54+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/uk/>\n"
@@ -27,7 +27,7 @@ msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr "Налаштування параметрів Bluetooth"
+msgstr "Налаштування конфігурацій Bluetooth"
 
 #: src/MainView.vala:42
 msgid "No Devices Found"
@@ -179,15 +179,15 @@ msgstr "Налаштування звуку"
 
 #: src/DeviceRow.vala:171
 msgid "Keyboard Settings"
-msgstr "Параметри клавіатури"
+msgstr "Налаштування клавіатури"
 
 #: src/DeviceRow.vala:175
 msgid "Mouse & Touchpad Settings"
-msgstr "Параметри миші й сенсорної панелі"
+msgstr "Налаштування миші й сенсорної панелі"
 
 #: src/DeviceRow.vala:179
 msgid "Printer Settings"
-msgstr "Параметри пристрою друку"
+msgstr "Налаштування принтера"
 
 #: src/DeviceRow.vala:298
 msgid "Disconnect"
