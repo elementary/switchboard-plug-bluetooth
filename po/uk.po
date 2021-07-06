@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 19:42+0000\n"
-"PO-Revision-Date: 2021-07-05 13:54+0000\n"
+"PO-Revision-Date: 2021-07-06 19:07+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/uk/>\n"
@@ -45,7 +45,7 @@ msgstr "Виявлення"
 #: src/MainView.vala:157
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr "Зараз видимий як \"%s\". Не буде видимим, якщо закрити цю сторінку"
+msgstr "Зараз видимий як «%s». Не буде видимим, якщо закрити цю сторінку"
 
 #: src/MainView.vala:157
 msgid "Unknown"
