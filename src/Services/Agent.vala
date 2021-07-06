@@ -15,6 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
+ *            : Torikul habib <torik.habib@gmail.com>
  */
 
 [DBus (name = "org.bluez.Error")]
@@ -28,42 +29,32 @@ public class Bluetooth.Services.Agent : Object {
     private const string PATH = "/org/bluez/agent/elementary";
     Gtk.Window? main_window;
 
-    private PairDialog pair_dialog;
+    private PairDialog? pair_dialog;
 
     [DBus (visible=false)]
     public Agent (Gtk.Window? main_window) {
         this.main_window = main_window;
-        Bus.own_name (BusType.SYSTEM, "org.bluez.AgentManager1", BusNameOwnerFlags.NONE,
+        Bus.own_name (BusType.SYSTEM, "org.bluez.Agent1", GLib.BusNameOwnerFlags.NONE,
             (connection, name) => {
                 try {
                     connection.register_object (PATH, this);
-                    ready = true;
                 } catch (Error e) {
                     critical (e.message);
                 }
-            },
-            (connection, name) => {},
-            (connection, name) => {}
+            }
         );
     }
-
-    [DBus (visible=false)]
-    public bool ready { get; private set; }
-
-    [DBus (visible=false)]
-    public signal void unregistered ();
-
-    [DBus (visible=false)]
-    public GLib.ObjectPath get_path () {
+    public GLib.ObjectPath get_path () throws Error {
         return new GLib.ObjectPath (PATH);
     }
-
     public void release () throws Error {
-        unregistered ();
     }
 
     public async string request_pin_code (ObjectPath device) throws Error, BluezError {
-        throw new BluezError.REJECTED ("Pairing method not supported");
+        pair_dialog = new PairDialog.request_pin_code (device, main_window);
+        yield check_pairing_response (pair_dialog);
+
+        return pair_dialog.entered_pincode;
     }
 
     // Called to display a pin code on-screen that needs to be entered on the other device. Can return
@@ -74,12 +65,24 @@ public class Bluetooth.Services.Agent : Object {
     }
 
     public async uint32 request_passkey (ObjectPath device) throws Error, BluezError {
-        throw new BluezError.REJECTED ("Pairing method not supported");
+        pair_dialog = new PairDialog.request_passkey (device, main_window);
+        yield check_pairing_response (pair_dialog);
+
+        return pair_dialog.entered_passkey;
     }
 
     // Called to display a passkey on-screen that needs to be entered on the other device. Can return
     // instantly
     public async void display_passkey (ObjectPath device, uint32 passkey, uint16 entered) throws Error {
+        // TODO: display_passkey can be called multiple times during a single pairing process. `entered` is incremented
+        // for each digit of the passkey that has been entered. We should update the existing dialog with this information
+        // somehow to indicate that the passkey is being accepted
+        if (pair_dialog != null && pair_dialog.passkey == "%u".printf (passkey)) {
+            return;
+        } else {
+            pair_dialog.destroy ();
+        }
+
         pair_dialog = new PairDialog.display_passkey (device, passkey, entered, main_window);
         pair_dialog.present ();
     }

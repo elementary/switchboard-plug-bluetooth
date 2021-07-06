@@ -17,6 +17,8 @@
 
 public class PairDialog : Granite.MessageDialog {
     public enum AuthType {
+        REQUEST_PIN_CODE,
+        REQUEST_PASSKEY,
         REQUEST_CONFIRMATION,
         REQUEST_AUTHORIZATION,
         DISPLAY_PASSKEY,
@@ -27,6 +29,9 @@ public class PairDialog : Granite.MessageDialog {
     public AuthType auth_type { get; construct; }
     public string passkey { get; construct; }
     public bool cancelled { get; set; }
+
+    public string entered_pincode { get; private set; }
+    public uint32 entered_passkey { get; private set; }
 
     // Un-used default constructor
     private PairDialog () {
@@ -41,6 +46,26 @@ public class PairDialog : Granite.MessageDialog {
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             primary_text: _("Confirm Bluetooth Pairing"),
+            transient_for: main_window
+        );
+    }
+
+    public PairDialog.request_pin_code (ObjectPath object_path, Gtk.Window? main_window) {
+        Object (
+            auth_type: AuthType.REQUEST_PIN_CODE,
+            buttons: Gtk.ButtonsType.CANCEL,
+            object_path: object_path,
+            primary_text: _("Enter Bluetooth PIN"),
+            transient_for: main_window
+        );
+    }
+
+    public PairDialog.request_passkey (ObjectPath object_path, Gtk.Window? main_window) {
+        Object (
+            auth_type: AuthType.REQUEST_PASSKEY,
+            buttons: Gtk.ButtonsType.CANCEL,
+            object_path: object_path,
+            primary_text: _("Enter Bluetooth Passkey"),
             transient_for: main_window
         );
     }
@@ -91,6 +116,49 @@ public class PairDialog : Granite.MessageDialog {
         }
 
         switch (auth_type) {
+            case AuthType.REQUEST_PIN_CODE:
+                badge_icon = new ThemedIcon ("dialog-password");
+                secondary_text = _("Enter the Bluetooth PIN for “%s”").printf (device_name);
+                var entry_pin = new Gtk.Entry () {
+                    activates_default = true,
+                    xalign = 0.5f,
+                    input_hints = Gtk.InputHints.NO_SPELLCHECK,
+                    max_length = 16, // bluez docs state this is a 1-16 character alphanumeric string
+                    width_chars = 16
+                };
+                entry_pin.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
+                entry_pin.changed.connect (() => {
+                    entered_pincode = entry_pin.text;
+                });
+
+                custom_bin.halign = Gtk.Align.CENTER;
+                custom_bin.add (entry_pin);
+                custom_bin.show_all ();
+                var confirm_button = add_button (_("Confirm"), Gtk.ResponseType.ACCEPT);
+                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+                break;
+            case AuthType.REQUEST_PASSKEY:
+                badge_icon = new ThemedIcon ("dialog-password");
+                secondary_text = _("Enter the Bluetooth passkey for “%s”").printf (device_name);
+                var entry_passkey = new Gtk.Entry () {
+                    activates_default = true,
+                    xalign = 0.5f,
+                    input_hints = Gtk.InputHints.NO_SPELLCHECK,
+                    input_purpose = Gtk.InputPurpose.DIGITS,
+                    max_length = 6, // bluez docs state this is a numeric value between 0-999999
+                    width_chars = 6
+                };
+                entry_passkey.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
+                entry_passkey.changed.connect (() => {
+                    entered_passkey = uint.parse (entry_passkey.text);
+                });
+
+                custom_bin.halign = Gtk.Align.CENTER;
+                custom_bin.add (entry_passkey);
+                custom_bin.show_all ();
+                var confirm_button = add_button (_("Confirm"), Gtk.ResponseType.ACCEPT);
+                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+                break;
             case AuthType.REQUEST_CONFIRMATION:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Make sure the code displayed on “%s” matches the one below.").printf (device_name);
