@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 19:42+0000\n"
+"POT-Creation-Date: 2021-07-14 18:03+0000\n"
 "PO-Revision-Date: 2021-07-05 13:54+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -29,10 +29,25 @@ msgid "Configure Bluetooth Settings"
 msgstr "Налаштування конфігурацій Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:28
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:42
+msgid "Minor updates"
+msgstr "Незначні оновлення"
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:32
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:45
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:51
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:56
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:62
+msgid "Updated translations"
+msgstr "Оновлено переклади"
+
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
 msgid "Security update"
 msgstr "Оновлення безпеки"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
@@ -40,40 +55,27 @@ msgstr ""
 "Виправлено вразливість, яка дозволяла пристрою під'єднуватись без явного "
 "дозволу користувача (CVE-2021-21367)"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:34
-msgid "Minor updates"
-msgstr "Незначні оновлення"
-
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:30
 msgid "Fallback to device type when name is not available"
 msgstr "Вказання типу пристрою, коли назва недоступна"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:23
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:31
 msgid "Show \"Discovering\" indicator in an overlay bar"
 msgstr "Показ індикатора «Виявлення» на панелі"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:24
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:37
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:43
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:48
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:54
-msgid "Updated translations"
-msgstr "Оновлено переклади"
-
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:30
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:38
 msgid "Fixes"
 msgstr "Виправлення"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:32
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:40
 msgid "Fix crash on devices without Bluetooth"
 msgstr "Виправте збої роботи на пристроях без Bluetooth"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:36
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:44
 msgid "Move \"forget device\" button to each device row"
 msgstr "Кнопку «забути пристрій» показано біля кожного рядка з пристроєм"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:53
+#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:61
 msgid "Pair with devices that require a password, key code, or confirmation"
 msgstr ""
 "Пов'язування з пристроями, для яких потрібен пароль, код ключа або "
