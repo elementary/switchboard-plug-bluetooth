@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2021-07-06 19:07+0000\n"
+"PO-Revision-Date: 2021-07-18 00:36+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/uk/>\n"
@@ -87,7 +87,7 @@ msgstr "Невідомий пристрій Bluetooth"
 #: src/PairDialog.vala:96
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr "Переконайтесь, що показаний в “%s” код, збігається з наведеним далі."
+msgstr "Переконайтесь, що показаний в «%s» код, збігається з наведеним далі."
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
 #: src/DeviceRow.vala:284
@@ -100,18 +100,18 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
-"“%s” хоче з'єднатися з цим пристроєм. Переконайтесь, що показаний в “%s” "
+"«%s» хоче з'єднатися з цим пристроєм. Переконайтесь, що показаний у «%s» "
 "код, збігається з наведеним далі."
 
 #: src/PairDialog.vala:110
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr "Введіть код, що показано в “%s” та натисніть Enter."
+msgstr "Введіть код, що показано в «%s» та натисніть Enter."
 
 #: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr "“%s” хоче з'єднатися з цим пристроєм."
+msgstr "«%s» хоче з'єднатися з цим пристроєм."
 
 #: src/DeviceRow.vala:41
 msgid "Available"
