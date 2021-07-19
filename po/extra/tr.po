@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2021-06-15 03:58+0000\n"
+"PO-Revision-Date: 2021-07-19 21:31+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/tr/>\n"
@@ -60,7 +60,7 @@ msgstr "Ad kullanılabilir olmadığında cihaz türüne geri dön"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:31
 msgid "Show \"Discovering\" indicator in an overlay bar"
-msgstr ""
+msgstr "Bir katman çubuğunda \"Bulunuyor\" göstergesini göster"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:38
 msgid "Fixes"
