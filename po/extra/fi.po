@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2021-07-21 23:47+0000\n"
+"PO-Revision-Date: 2021-07-24 17:19+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/fi/>\n"
@@ -33,7 +33,7 @@ msgstr "Määritä Bluetooth-asetukset"
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:28
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:42
 msgid "Minor updates"
-msgstr ""
+msgstr "Pienet päivitykset"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:32
