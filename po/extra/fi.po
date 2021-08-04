@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2021-07-24 17:19+0000\n"
+"PO-Revision-Date: 2021-08-04 12:13+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/fi/>\n"
@@ -20,10 +20,8 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
-#, fuzzy
-#| msgid "Configure Bluetooth Settings"
 msgid "Bluetooth Settings"
-msgstr "Määritä Bluetooth-asetukset"
+msgstr "Bluetooth-asetukset"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:6
 msgid "Configure Bluetooth Settings"
@@ -46,7 +44,7 @@ msgstr "Päivityksiä kielikäännöksiin"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
 msgid "Security update"
-msgstr ""
+msgstr "Tietoturvapäivitys"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
 msgid ""
@@ -64,7 +62,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:38
 msgid "Fixes"
-msgstr ""
+msgstr "Korjaukset"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:40
 msgid "Fix crash on devices without Bluetooth"
