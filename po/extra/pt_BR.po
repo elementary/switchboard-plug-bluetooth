@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2021-08-09 14:57+0000\n"
+"PO-Revision-Date: 2021-08-09 16:35+0000\n"
 "Last-Translator: lucaspifonseca <lucaspifonseca@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "switchboard/bluetooth-plug-extra/pt_BR/>\n"
@@ -68,7 +68,7 @@ msgstr "Correções"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:40
 msgid "Fix crash on devices without Bluetooth"
-msgstr "Corrigir falha em dispositivos sem Bluetooth"
+msgstr "Corrige falha em dispositivos sem Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:44
 msgid "Move \"forget device\" button to each device row"
@@ -76,8 +76,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:61
 msgid "Pair with devices that require a password, key code, or confirmation"
-msgstr ""
-"Emparelhe com dispositivos que exigem senha, código de chave ou confirmação"
+msgstr "Parear com dispositivos que exigem uma senha, chave ou confirmação"
 
 #~ msgid "Bluetooth"
 #~ msgstr "Bluetooth"
