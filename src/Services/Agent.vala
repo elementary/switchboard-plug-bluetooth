@@ -28,6 +28,8 @@ public errordomain BluezError {
 public class Bluetooth.Services.Agent : Object {
     private const string PATH = "/org/bluez/agent/elementary";
     Gtk.Window? main_window;
+    string entered_pincode;
+    uint32 entered_passkey;
 
     private PairDialog? pair_dialog;
 
@@ -51,10 +53,15 @@ public class Bluetooth.Services.Agent : Object {
     }
 
     public async string request_pin_code (ObjectPath device) throws Error, BluezError {
+        if (get_device_from_object_path (device).paired) {
+            return entered_pincode;
+        }
+
         pair_dialog = new PairDialog.request_pin_code (device, main_window);
         yield check_pairing_response (pair_dialog);
-
-        return pair_dialog.entered_pincode;
+        //store pincode in one session pairing
+        entered_pincode = pair_dialog.entered_pincode;
+        return entered_pincode;
     }
 
     // Called to display a pin code on-screen that needs to be entered on the other device. Can return
@@ -65,10 +72,15 @@ public class Bluetooth.Services.Agent : Object {
     }
 
     public async uint32 request_passkey (ObjectPath device) throws Error, BluezError {
+        if (get_device_from_object_path (device).paired) {
+            return entered_passkey;
+        }
+
         pair_dialog = new PairDialog.request_passkey (device, main_window);
         yield check_pairing_response (pair_dialog);
-
-        return pair_dialog.entered_passkey;
+        //store passkey in one session pairing
+        entered_passkey = pair_dialog.entered_passkey;
+        return entered_passkey;
     }
 
     // Called to display a passkey on-screen that needs to be entered on the other device. Can return
