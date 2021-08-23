@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2020-10-30 00:15+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-08-23 13:53+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/sk/>\n"
 "Language: sk\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:34
@@ -26,25 +26,25 @@ msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr ""
+msgstr "Upraviť nastavenia Bluetooth"
 
 #: src/MainView.vala:42
 msgid "No Devices Found"
-msgstr ""
+msgstr "Neboli nájdené žiadne zariadenia"
 
 #: src/MainView.vala:43
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Uistite sa, že vaše zariadenia sú viditeľné a pripravené na párovanie."
 
 #: src/MainView.vala:63
 msgid "Discovering"
-msgstr ""
+msgstr "Hľadanie"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
 #: src/MainView.vala:157
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
-msgstr ""
+msgstr "Teraz objaviteľné ako „%s“. Neobjaviteľné po zatvorení tejto stránky"
 
 #: src/MainView.vala:157
 msgid "Unknown"
@@ -52,46 +52,46 @@ msgstr "Neznáme"
 
 #: src/MainView.vala:159
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "Neobjaviteľné, keď je Bluetooth vypnutý"
 
 #: src/MainView.vala:161
 msgid "Not discoverable"
-msgstr ""
+msgstr "Neobjaviteľné"
 
 #: src/MainView.vala:207
 msgid "Paired Devices"
-msgstr ""
+msgstr "Spárované zariadenia"
 
 #. This header may not appear, so cannot contain discovery spinner
 #: src/MainView.vala:214
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Zariadenia v blízkosti"
 
 #: src/PairDialog.vala:43
 msgid "Confirm Bluetooth Pairing"
-msgstr ""
+msgstr "Potvrdiť párovanie Bluetooth"
 
 #: src/PairDialog.vala:54 src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
-msgstr ""
+msgstr "Potvrdiť párovací kód Bluetooth"
 
 #: src/PairDialog.vala:76
 msgid "Enter Bluetooth PIN"
-msgstr ""
+msgstr "Vložte Bluetooth PIN"
 
 #: src/PairDialog.vala:83
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Neznáme Bluetooth zariadenie"
 
 #: src/PairDialog.vala:96
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
+msgstr "Uistite sa, že kód zobrazený na „%s“ je rovnaký ako ten nižšie."
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
 #: src/DeviceRow.vala:284
 msgid "Pair"
-msgstr ""
+msgstr "Spárovať"
 
 #: src/PairDialog.vala:103
 #, c-format
@@ -99,24 +99,26 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"„%s“ sa chce spárovať s týmto zariadením. Uistite sa, že kód zobrazený na "
+"„%s“ je rovnaký ako ten nižšie."
 
 #: src/PairDialog.vala:110
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "Opíšte kód zobrazený nižšie na „%s“ a potom stlačte Enter."
 
 #: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "„%s“ sa chce spárovať s týmto zariadením."
 
 #: src/DeviceRow.vala:41
 msgid "Available"
-msgstr ""
+msgstr "Dostupné"
 
 #: src/DeviceRow.vala:43
 msgid "Pairing…"
-msgstr ""
+msgstr "Párovanie…"
 
 #: src/DeviceRow.vala:45
 msgid "Connected"
@@ -128,15 +130,15 @@ msgstr "Pripájanie…"
 
 #: src/DeviceRow.vala:49
 msgid "Disconnecting…"
-msgstr ""
+msgstr "Odpájanie…"
 
 #: src/DeviceRow.vala:52
 msgid "Unable to Connect"
-msgstr ""
+msgstr "Nepodarilo sa pripojiť"
 
 #: src/DeviceRow.vala:54
 msgid "Not Connected"
-msgstr ""
+msgstr "Nepripojené"
 
 #: src/DeviceRow.vala:94
 msgid "Speaker"
@@ -144,7 +146,7 @@ msgstr "Reproduktor"
 
 #: src/DeviceRow.vala:97
 msgid "Controller"
-msgstr ""
+msgstr "Ovládač"
 
 #: src/DeviceRow.vala:100
 msgid "Keyboard"
@@ -156,7 +158,7 @@ msgstr "Myš"
 
 #: src/DeviceRow.vala:106
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: src/DeviceRow.vala:109
 msgid "Touchpad"
@@ -164,27 +166,27 @@ msgstr "Touchpad"
 
 #: src/DeviceRow.vala:112
 msgid "Phone"
-msgstr ""
+msgstr "Telefón"
 
 #: src/DeviceRow.vala:139
 msgid "Forget this device"
-msgstr ""
+msgstr "Zabudnúť toto zariadenie"
 
 #: src/DeviceRow.vala:166
 msgid "Sound Settings"
-msgstr ""
+msgstr "Nastavenia zvuku"
 
 #: src/DeviceRow.vala:171
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "Nastavenia klávesnice"
 
 #: src/DeviceRow.vala:175
 msgid "Mouse & Touchpad Settings"
-msgstr ""
+msgstr "Nastavenia myši a touchpadu"
 
 #: src/DeviceRow.vala:179
 msgid "Printer Settings"
-msgstr ""
+msgstr "Nastavenia tlačiarne"
 
 #: src/DeviceRow.vala:298
 msgid "Disconnect"
@@ -192,4 +194,4 @@ msgstr "Odpojiť"
 
 #: src/DeviceRow.vala:322
 msgid "Connect"
-msgstr ""
+msgstr "Pripojiť"
