@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2021-08-23 13:11+0000\n"
+"PO-Revision-Date: 2021-08-24 21:51+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/hu/>\n"
@@ -26,7 +26,7 @@ msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr "Bluetooth eszközök beállítása"
+msgstr "Bluetooth-beállítások kezelése"
 
 #: src/MainView.vala:42
 msgid "No Devices Found"
@@ -39,9 +39,8 @@ msgstr ""
 "párosításra."
 
 #: src/MainView.vala:63
-#, fuzzy
 msgid "Discovering"
-msgstr "Kapcsolat bontása…"
+msgstr "Felderítés"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
 #: src/MainView.vala:157
@@ -71,33 +70,30 @@ msgid "Nearby Devices"
 msgstr "Közeli eszközök"
 
 #: src/PairDialog.vala:43
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Bluetooth eszközök beállítása"
+msgstr "Bluetooth-eszköz párosításának megerősítése"
 
 #: src/PairDialog.vala:54 src/PairDialog.vala:65
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Bluetooth eszközök beállítása"
+msgstr "Bluetooth párosítási kódjának megerősítése"
 
 #: src/PairDialog.vala:76
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Bluetooth PIN megadása"
 
 #: src/PairDialog.vala:83
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Ismeretlen Bluetooth-eszköz"
 
 #: src/PairDialog.vala:96
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
+msgstr "Győződjön meg róla, hogy a(z) \"%s\" kódja megegyezik az alábbival."
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
 #: src/DeviceRow.vala:284
 msgid "Pair"
-msgstr "Pár"
+msgstr "Párosítás"
 
 #: src/PairDialog.vala:103
 #, c-format
@@ -105,16 +101,20 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"\"%s\" szeretne párosodni ezzel az eszközzel. Győződjön meg róla, hogy a(z) "
+"\"%s\" kódja megegyezik az alábbival."
 
 #: src/PairDialog.vala:110
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
+"Írja be a lejjebb látható kódot a(z) \"%s\" eszközön, majd nyomjon egy "
+"Entert."
 
 #: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "\"%s\" párosodni szeretne ezzel az eszközzel."
 
 #: src/DeviceRow.vala:41
 msgid "Available"
@@ -126,25 +126,23 @@ msgstr "Párosítás…"
 
 #: src/DeviceRow.vala:45
 msgid "Connected"
-msgstr "Kapcsolódva"
+msgstr "Csatlakoztatva"
 
 #: src/DeviceRow.vala:47
 msgid "Connecting…"
-msgstr "Kapcsolódás…"
+msgstr "Csatlakoztatás…"
 
 #: src/DeviceRow.vala:49
 msgid "Disconnecting…"
 msgstr "Kapcsolat bontása…"
 
 #: src/DeviceRow.vala:52
-#, fuzzy
-#| msgid "Unable to Connnect"
 msgid "Unable to Connect"
-msgstr "Nem lehet csatlakozni"
+msgstr "Csatlakozás sikertelen"
 
 #: src/DeviceRow.vala:54
 msgid "Not Connected"
-msgstr "Nincs kapcsolódva"
+msgstr "Nincs csatlakoztatva"
 
 #: src/DeviceRow.vala:94
 msgid "Speaker"
@@ -152,7 +150,7 @@ msgstr "Hangszóró"
 
 #: src/DeviceRow.vala:97
 msgid "Controller"
-msgstr ""
+msgstr "Kontroller"
 
 #: src/DeviceRow.vala:100
 msgid "Keyboard"
@@ -164,7 +162,7 @@ msgstr "Egér"
 
 #: src/DeviceRow.vala:106
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: src/DeviceRow.vala:109
 msgid "Touchpad"
@@ -172,13 +170,11 @@ msgstr "Touchpad"
 
 #: src/DeviceRow.vala:112
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 #: src/DeviceRow.vala:139
-#, fuzzy
-#| msgid "Forget selected device"
 msgid "Forget this device"
-msgstr "Kijelölt eszköz elfelejtése"
+msgstr "Eszköz elfelejtése"
 
 #: src/DeviceRow.vala:166
 msgid "Sound Settings"
@@ -190,7 +186,7 @@ msgstr "Billentyűzetbeállítások"
 
 #: src/DeviceRow.vala:175
 msgid "Mouse & Touchpad Settings"
-msgstr "Egér és Touchpad beállítások"
+msgstr "Egér és touchpad beállításai"
 
 #: src/DeviceRow.vala:179
 msgid "Printer Settings"
@@ -202,4 +198,4 @@ msgstr "Szétkapcsolás"
 
 #: src/DeviceRow.vala:322
 msgid "Connect"
-msgstr "Kapcsolódás"
+msgstr "Csatlakoztatás"
