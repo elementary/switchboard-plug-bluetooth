@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2021-08-24 21:51+0000\n"
+"PO-Revision-Date: 2021-08-27 17:04+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/hu/>\n"
@@ -126,11 +126,11 @@ msgstr "Párosítás…"
 
 #: src/DeviceRow.vala:45
 msgid "Connected"
-msgstr "Csatlakoztatva"
+msgstr "Kapcsolódva"
 
 #: src/DeviceRow.vala:47
 msgid "Connecting…"
-msgstr "Csatlakoztatás…"
+msgstr "Kapcsolódás…"
 
 #: src/DeviceRow.vala:49
 msgid "Disconnecting…"
@@ -198,4 +198,4 @@ msgstr "Szétkapcsolás"
 
 #: src/DeviceRow.vala:322
 msgid "Connect"
-msgstr "Csatlakoztatás"
+msgstr "Kapcsolódás"
