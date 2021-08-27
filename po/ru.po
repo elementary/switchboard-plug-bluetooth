@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2021-08-26 12:30+0000\n"
+"PO-Revision-Date: 2021-08-27 20:33+0000\n"
 "Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ru/>\n"
@@ -27,7 +27,7 @@ msgstr "Bluetooth"
 
 #: src/Plug.vala:31
 msgid "Configure Bluetooth Settings"
-msgstr "Настроить параметры Bluetooth"
+msgstr "Настройка параметров Bluetooth"
 
 #: src/MainView.vala:42
 msgid "No Devices Found"
