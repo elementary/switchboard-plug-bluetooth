@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2020-10-28 11:21+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-11-02 09:20+0000\n"
+"Last-Translator: DarkKnightComes <darkknightcomes@gmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/pl/>\n"
 "Language: pl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-22 05:48+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:34
@@ -102,16 +102,18 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"\"%s\" chce się sparować z tym urządzeniem. Upewnij się, że kod wyświetlony "
+"na \"%s\" odpowiada temu poniżej."
 
 #: src/PairDialog.vala:110
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "Wpisz kod widoczny poniżej na \"%s\", a następnie wciśnij Enter."
 
 #: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "\"%s\" chce się sparować z tym urządzeniem."
 
 #: src/DeviceRow.vala:41
 msgid "Available"
@@ -134,10 +136,8 @@ msgid "Disconnecting…"
 msgstr "Rozłączanie…"
 
 #: src/DeviceRow.vala:52
-#, fuzzy
-#| msgid "Unable to Connnect"
 msgid "Unable to Connect"
-msgstr "Nie można się połączyć"
+msgstr "Nie można połączyć"
 
 #: src/DeviceRow.vala:54
 msgid "Not Connected"
@@ -149,7 +149,7 @@ msgstr "Głośnik"
 
 #: src/DeviceRow.vala:97
 msgid "Controller"
-msgstr ""
+msgstr "Kontroler"
 
 #: src/DeviceRow.vala:100
 msgid "Keyboard"
@@ -169,13 +169,11 @@ msgstr "Panel dotykowy"
 
 #: src/DeviceRow.vala:112
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 #: src/DeviceRow.vala:139
-#, fuzzy
-#| msgid "Forget selected device"
 msgid "Forget this device"
-msgstr "Zapomnij zaznaczone urządzenie"
+msgstr "Zapomnij to urządzenie"
 
 #: src/DeviceRow.vala:166
 msgid "Sound Settings"
