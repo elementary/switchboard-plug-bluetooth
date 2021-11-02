@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2021-11-01 10:01+0000\n"
+"PO-Revision-Date: 2021-11-02 05:56+0000\n"
 "Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/bluetooth-plug-extra/zh_Hans/>\n"
@@ -50,31 +50,31 @@ msgstr "安全更新"
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
-msgstr ""
+msgstr "修复允许设备在没有明确用户授权的情况下配对的漏洞 (CVE-2021-21367)"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:30
 msgid "Fallback to device type when name is not available"
-msgstr ""
+msgstr "名称不可用时回退到设备类型"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:31
 msgid "Show \"Discovering\" indicator in an overlay bar"
-msgstr ""
+msgstr "在顶栏中显示“发现”指示器"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:38
 msgid "Fixes"
-msgstr ""
+msgstr "修复"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:40
 msgid "Fix crash on devices without Bluetooth"
-msgstr ""
+msgstr "修复没有蓝牙的设备崩溃"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:44
 msgid "Move \"forget device\" button to each device row"
-msgstr ""
+msgstr "将“忘记设备”按钮移动到每个设备行"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:61
 msgid "Pair with devices that require a password, key code, or confirmation"
-msgstr ""
+msgstr "设备配对需要密码、密钥代码或确认"
 
 #~ msgid "Bluetooth"
 #~ msgstr "蓝牙"
