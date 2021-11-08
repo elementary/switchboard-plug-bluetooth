@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2021-11-04 08:10+0000\n"
+"PO-Revision-Date: 2021-11-08 08:35+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/pl/>\n"
@@ -21,10 +21,8 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
-#, fuzzy
-#| msgid "Configure Bluetooth Settings"
 msgid "Bluetooth Settings"
-msgstr "Skonfiguruj ustawienia Bluetooth"
+msgstr "Ustawienia Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:6
 msgid "Configure Bluetooth Settings"
@@ -47,37 +45,40 @@ msgstr "Zaktualizowane tłumaczenia"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
 msgid "Security update"
-msgstr ""
+msgstr "Aktualizacja bezpieczeństwa"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
 msgstr ""
+"Naprawiono problem pozwalający urządzeniu na sparowanie bez wyraźnej zgody "
+"użytkownika (CVE-2021-21367)"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:30
 msgid "Fallback to device type when name is not available"
-msgstr ""
+msgstr "Wykorzystanie typu urządzenia gdy nazwa nie jest dostępna"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:31
 msgid "Show \"Discovering\" indicator in an overlay bar"
-msgstr ""
+msgstr "Dodano indykator „Wykrywanie” w pasku przykrywającym"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:38
 msgid "Fixes"
-msgstr ""
+msgstr "Poprawki"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:40
 msgid "Fix crash on devices without Bluetooth"
-msgstr ""
+msgstr "Napraw awarie na urządzeniach bez Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:44
 msgid "Move \"forget device\" button to each device row"
-msgstr ""
+msgstr "Przenieś przycisk „zapomnij urządzenie” do każdego wiersza urządzeń"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:61
 msgid "Pair with devices that require a password, key code, or confirmation"
 msgstr ""
+"Sparuj z urządzeniami, które wymagają hasła, kodu klucza lub potwierdzenia"
 
 #~ msgid "Bluetooth"
 #~ msgstr "Bluetooth"
