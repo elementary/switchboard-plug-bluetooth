@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2021-08-27 14:50+0000\n"
+"PO-Revision-Date: 2021-12-25 22:41+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/hu/>\n"
@@ -31,7 +31,7 @@ msgstr "Bluetooth-beállítások kezelése"
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:28
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:42
 msgid "Minor updates"
-msgstr ""
+msgstr "Kisebb frissítések"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:32
@@ -44,7 +44,7 @@ msgstr "Frissített fordítások"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
 msgid "Security update"
-msgstr ""
+msgstr "Biztonsági frissítés"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
 msgid ""
@@ -62,7 +62,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:38
 msgid "Fixes"
-msgstr ""
+msgstr "Javítások"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:40
 msgid "Fix crash on devices without Bluetooth"
