@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2022-01-10 12:16+0000\n"
+"PO-Revision-Date: 2022-01-10 21:59+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/cs/>\n"
@@ -44,33 +44,36 @@ msgstr "Aktualizovány překlady"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
 msgid "Security update"
-msgstr ""
+msgstr "Aktualizace zabezpečení"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
 msgstr ""
+"Opravena zranitelnost který by umožňovala spárování zařízení bez výslovného "
+"pověření uživatele (CVE-2021-21367)"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:30
 msgid "Fallback to device type when name is not available"
-msgstr ""
+msgstr "Pokud není k dispozici název, náhradně je použit typ zařízení"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:31
 msgid "Show \"Discovering\" indicator in an overlay bar"
-msgstr ""
+msgstr "Zobrazování indikátoru „Objevování“ v překryvném pruhu"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:38
 msgid "Fixes"
-msgstr ""
+msgstr "Opravy"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:40
 msgid "Fix crash on devices without Bluetooth"
-msgstr ""
+msgstr "Opraven pád u zařízení postrádajících Bluetooth"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:44
 msgid "Move \"forget device\" button to each device row"
 msgstr ""
+"Přesunuto tlačítko „zapomenout zařízení“ do každého z řádků se zařízením"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:61
 msgid "Pair with devices that require a password, key code, or confirmation"
