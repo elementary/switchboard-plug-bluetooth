@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2020-10-30 00:15+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2022-01-15 13:59+0000\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
 #: src/Plug.vala:30 src/MainView.vala:34
@@ -148,7 +148,7 @@ msgstr "Luidspreker"
 
 #: src/DeviceRow.vala:97
 msgid "Controller"
-msgstr ""
+msgstr "Controller"
 
 #: src/DeviceRow.vala:100
 msgid "Keyboard"
@@ -168,13 +168,11 @@ msgstr "Touchpad"
 
 #: src/DeviceRow.vala:112
 msgid "Phone"
-msgstr ""
+msgstr "Telefoon"
 
 #: src/DeviceRow.vala:139
-#, fuzzy
-#| msgid "Forget selected device"
 msgid "Forget this device"
-msgstr "Geselecteerd apparaat vergeten"
+msgstr "Dit apparaat vergeten"
 
 #: src/DeviceRow.vala:166
 msgid "Sound Settings"
