@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2021-08-09 14:19+0000\n"
+"PO-Revision-Date: 2022-04-09 01:40+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/ja/>\n"
@@ -31,7 +31,7 @@ msgstr "Bluetooth の設定をします"
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:28
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:42
 msgid "Minor updates"
-msgstr "軽微なアップデート"
+msgstr "そのほかのアップデート"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:32
