@@ -49,7 +49,7 @@ public class Bluetooth.Plug : Switchboard.Plug {
     }
 
     public override void shown () {
-        manager.register_agent.begin (main_view.get_toplevel () as Gtk.Window);
+        manager.register_agent.begin (main_view.get_root () as Gtk.Window);
         manager.set_global_state.begin (true); /* Also sets discoverable true and starts discovery */
     }
 

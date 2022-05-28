@@ -20,8 +20,8 @@ shared_module(
         dependency('glib-2.0'),
         dependency('gio-2.0'),
         dependency('gobject-2.0'),
-        dependency('granite', version: '>=5.2.4'),
-        dependency('gtk+-3.0'),
+        dependency('granite-7', version: '>=5.2.4'),
+        dependency('gtk4'),
         meson.get_compiler('vala').find_library('posix'),
         switchboard_dep
     ],
