@@ -9,7 +9,7 @@ You'll need the following dependencies:
 
 * libgranite-7-dev
 * libgtk-4-dev
-* libswitchboard-2.0-dev
+* libswitchboard-3-dev
 * meson
 * valac
 

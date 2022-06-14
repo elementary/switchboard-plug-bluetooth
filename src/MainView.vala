@@ -21,7 +21,7 @@
 
 public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     private Gtk.ListBox list_box;
-    private Granite.Widgets.OverlayBar overlaybar;
+    private Granite.OverlayBar overlaybar;
 
     public Services.ObjectManager manager { get; construct set; }
 
@@ -59,7 +59,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             child = scrolled
         };
 
-        overlaybar = new Granite.Widgets.OverlayBar (overlay) {
+        overlaybar = new Granite.OverlayBar (overlay) {
             label = _("Discovering"),
             active = true
         };

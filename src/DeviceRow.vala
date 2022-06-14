@@ -180,7 +180,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 settings_button.tooltip_text = _("Printer Settings");
                 break;
             default:
-                settings_button.uri = null;
+                settings_button.uri = "";
                 settings_button.tooltip_text = null;
                 break;
         }
