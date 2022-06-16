@@ -43,6 +43,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         };
 
         list_box = new Gtk.ListBox ();
+        list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare_rows);
         list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
         list_box.set_placeholder (empty_alert);

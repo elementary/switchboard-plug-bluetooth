@@ -146,11 +146,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         size_group.add_widget (connect_button);
 
         var grid = new Gtk.Grid () {
-            column_spacing = 6,
-            margin_top = 6,
-            margin_end = 6,
-            margin_bottom = 6,
-            margin_start = 6
+            column_spacing = 6
         };
         grid.attach (overlay, 0, 0, 1, 2);
         grid.attach (label, 1, 0);
