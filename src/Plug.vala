@@ -54,9 +54,12 @@ public class Bluetooth.Plug : Switchboard.Plug {
     }
 
     public override void hidden () {
+        Application.get_default ().hold ();
         manager.unregister_agent.begin ();
         manager.discoverable = false; /* Does not change is_powered or connections*/
-        manager.stop_discovery.begin ();
+        manager.stop_discovery.begin (() => {
+            Application.get_default ().release ();
+        });
     }
 
     public override void search_callback (string location) {
