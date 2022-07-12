@@ -314,6 +314,7 @@ public class Bluetooth.Services.ObjectManager : Object {
         foreach (var adapter in adapters) {
             try {
                 yield adapter.start_discovery ();
+                debug ("Adapter %s started", adapter.name);
             } catch (Error e) {
                 critical (e.message);
             }
@@ -327,6 +328,7 @@ public class Bluetooth.Services.ObjectManager : Object {
             try {
                 if (adapter.powered && adapter.discovering) {
                     yield adapter.stop_discovery ();
+                    debug ("Adapter %s stopped", adapter.name);
                 }
             } catch (Error e) {
                 critical (e.message);
