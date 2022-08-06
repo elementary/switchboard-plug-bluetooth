@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2022-08-06 13:11+0000\n"
+"PO-Revision-Date: 2022-08-06 13:58+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ko/>\n"
@@ -108,7 +108,7 @@ msgstr "\"%s\"에 아래 표시된 코드를 입력하고 Enter 키를 누릅니
 #: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "\"%s\"이(가) 이 장치와 페어링 하려고 합니다."
 
 #: src/DeviceRow.vala:41
 msgid "Available"
@@ -131,8 +131,6 @@ msgid "Disconnecting…"
 msgstr "연결 끊는 중…"
 
 #: src/DeviceRow.vala:52
-#, fuzzy
-#| msgid "Unable to Connnect"
 msgid "Unable to Connect"
 msgstr "연결할 수 없음"
 
@@ -146,7 +144,7 @@ msgstr "스피커"
 
 #: src/DeviceRow.vala:97
 msgid "Controller"
-msgstr ""
+msgstr "제어 장치"
 
 #: src/DeviceRow.vala:100
 msgid "Keyboard"
@@ -158,7 +156,7 @@ msgstr "마우스"
 
 #: src/DeviceRow.vala:106
 msgid "Tablet"
-msgstr ""
+msgstr "태블릿"
 
 #: src/DeviceRow.vala:109
 msgid "Touchpad"
@@ -166,13 +164,11 @@ msgstr "터치패드"
 
 #: src/DeviceRow.vala:112
 msgid "Phone"
-msgstr ""
+msgstr "전화"
 
 #: src/DeviceRow.vala:139
-#, fuzzy
-#| msgid "Forget selected device"
 msgid "Forget this device"
-msgstr "선택했던 장치 지우기"
+msgstr "장치 잊기"
 
 #: src/DeviceRow.vala:166
 msgid "Sound Settings"
