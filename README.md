@@ -7,9 +7,9 @@
 
 You'll need the following dependencies:
 
-* libgranite-dev >= 5.2.4
-* libgtk-3-dev
-* libswitchboard-2.0-dev
+* libgranite-7-dev
+* libgtk-4-dev
+* libswitchboard-3-dev
 * meson
 * valac
 

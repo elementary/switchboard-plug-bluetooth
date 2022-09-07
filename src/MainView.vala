@@ -21,7 +21,7 @@
 
 public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     private Gtk.ListBox list_box;
-    private Granite.Widgets.OverlayBar overlaybar;
+    private Granite.OverlayBar overlaybar;
 
     public Services.ObjectManager manager { get; construct set; }
 
@@ -38,40 +38,45 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     }
 
     construct {
-        var empty_alert = new Granite.Widgets.AlertView (
-            _("No Devices Found"),
-            _("Please ensure that your devices are visible and ready for pairing."),
-            ""
-        );
-        empty_alert.show_all ();
+        var empty_alert = new Granite.Placeholder (_("No Devices Found")) {
+            description = _("Please ensure that your devices are visible and ready for pairing.")
+        };
 
         list_box = new Gtk.ListBox ();
+        list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare_rows);
         list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
         list_box.set_placeholder (empty_alert);
         list_box.selection_mode = Gtk.SelectionMode.BROWSE;
         list_box.activate_on_single_click = true;
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.expand = true;
-        scrolled.add (list_box);
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = list_box,
+            hexpand = true,
+            vexpand = true
+        };
 
-        var overlay = new Gtk.Overlay ();
-        overlay.add (scrolled);
+        var overlay = new Gtk.Overlay () {
+            child = scrolled
+        };
 
-        overlaybar = new Granite.Widgets.OverlayBar (overlay) {
+        overlaybar = new Granite.OverlayBar (overlay) {
             label = _("Discovering"),
             active = true
         };
 
-        var frame = new Gtk.Frame (null);
-        frame.add (overlay);
+        var frame = new Gtk.Frame (null) {
+            child = overlay
+        };
 
         content_area.orientation = Gtk.Orientation.VERTICAL;
         content_area.row_spacing = 0;
-        content_area.add (frame);
+        content_area.attach (frame, 0, 0);
 
-        margin = 12;
+        margin_top = 12;
+        margin_end = 12;
+        margin_bottom = 12;
+        margin_start = 12;
 
         if (manager.retrieve_finished) {
             complete_setup ();
@@ -82,15 +87,13 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         status_switch.notify["active"].connect (() => {
             manager.set_global_state.begin (status_switch.active);
         });
-
-        show_all ();
     }
 
     private void complete_setup () {
         foreach (var device in manager.get_devices ()) {
             var adapter = manager.get_adapter_from_path (device.adapter);
             var row = new DeviceRow (device, adapter);
-            list_box.add (row);
+            list_box.append (row);
         }
 
         var first_row = list_box.get_row_at_index (0);
@@ -107,7 +110,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
        manager.device_added.connect ((device) => {
             var adapter = manager.get_adapter_from_path (device.adapter);
             var row = new DeviceRow (device, adapter);
-            list_box.add (row);
+            list_box.append (row);
             if (list_box.get_selected_row () == null) {
                 list_box.select_row (row);
                 list_box.row_activated (row);
@@ -115,11 +118,14 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         });
 
         manager.device_removed.connect_after ((device) => {
-            foreach (var row in list_box.get_children ()) {
-                if (((DeviceRow) row).device == device) {
-                    list_box.remove (row);
+            var child = list_box.get_first_child ();
+            while (child != null) {
+                if (((DeviceRow) child).device == device) {
+                    list_box.remove (child);
                     break;
                 }
+
+                child = child.get_next_sibling ();
             }
         });
 
@@ -145,8 +151,6 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
 
         manager.bind_property ("is-discovering", overlaybar, "visible", GLib.BindingFlags.DEFAULT);
         manager.bind_property ("is-powered", status_switch, "active", GLib.BindingFlags.DEFAULT);
-
-        show_all ();
     }
 
     private void update_description () {
@@ -204,17 +208,11 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
     [CCode (instance_pos = -1)]
     private void title_rows (DeviceRow row1, DeviceRow? row2) {
         if (row2 == null && row1.device.paired) {
-            var label = new Gtk.Label (_("Paired Devices"));
-            label.xalign = 0;
-            label.margin = 3;
-            label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+            var label = new Granite.HeaderLabel (_("Paired Devices"));
             row1.set_header (label);
         } else if (row2 == null || row1.device.paired != row2.device.paired) {
             /* This header may not appear, so cannot contain discovery spinner */
-            var label = new Gtk.Label (_("Nearby Devices"));
-            label.hexpand = true;
-            label.xalign = 0;
-            label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+            var label = new Granite.HeaderLabel (_("Nearby Devices"));
             row1.set_header (label);
         } else {
             row1.set_header (null);

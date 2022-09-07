@@ -71,9 +71,11 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var image = new Gtk.Image.from_icon_name (device.icon ?? "bluetooth", Gtk.IconSize.DND);
+        var image = new Gtk.Image.from_icon_name (device.icon ?? "bluetooth") {
+            pixel_size = 32
+        };
 
-        state = new Gtk.Image.from_icon_name ("user-offline", Gtk.IconSize.MENU);
+        state = new Gtk.Image.from_icon_name ("user-offline");
         state.halign = Gtk.Align.END;
         state.valign = Gtk.Align.END;
 
@@ -81,9 +83,10 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         state_label.xalign = 0;
         state_label.use_markup = true;
 
-        var overlay = new Gtk.Overlay ();
-        overlay.tooltip_text = device.address;
-        overlay.add (image);
+        var overlay = new Gtk.Overlay () {
+            child = image,
+            tooltip_text = device.address
+        };
         overlay.add_overlay (state);
 
         string? device_name = device.name;
@@ -124,44 +127,39 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         label.hexpand = true;
         label.xalign = 0;
 
-        settings_button = new Gtk.LinkButton ("");
-        settings_button.always_show_image = true;
-        settings_button.image = new Gtk.Image.from_icon_name ("view-more-horizontal-symbolic", Gtk.IconSize.MENU);
-        settings_button.label = null;
+        settings_button = new Gtk.LinkButton ("") {
+            child = new Gtk.Image.from_icon_name ("view-more-horizontal-symbolic")
+        };
         settings_button.margin_end = 3;
-        settings_button.show_all ();
-        settings_button.no_show_all = true;
         settings_button.visible = false;
 
-        forget_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU) {
+        forget_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic") {
             margin_end = 3,
-            no_show_all = true,
             tooltip_text = _("Forget this device"),
             visible = false
         };
-        forget_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        forget_button.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
 
         connect_button = new Gtk.Button ();
         connect_button.valign = Gtk.Align.CENTER;
 
         size_group.add_widget (connect_button);
 
-        var grid = new Gtk.Grid ();
-        grid.margin = 6;
-        grid.column_spacing = 6;
-        grid.orientation = Gtk.Orientation.HORIZONTAL;
+        var grid = new Gtk.Grid () {
+            column_spacing = 6
+        };
         grid.attach (overlay, 0, 0, 1, 2);
-        grid.attach (label, 1, 0, 1, 1);
-        grid.attach (state_label, 1, 1, 1, 1);
+        grid.attach (label, 1, 0);
+        grid.attach (state_label, 1, 1);
         grid.attach (settings_button, 2, 0, 1, 2);
         grid.attach (forget_button, 3, 0, 1, 2);
         grid.attach (connect_button, 4, 0, 1, 2);
 
-        add (grid);
-        show_all ();
+        child = grid;
 
         switch (device.icon) {
             case "audio-card":
+            case "audio-headset":
                 settings_button.uri = "settings://sound";
                 settings_button.tooltip_text = _("Sound Settings");
                 break;
@@ -179,7 +177,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 settings_button.tooltip_text = _("Printer Settings");
                 break;
             default:
-                settings_button.uri = null;
+                settings_button.uri = "";
                 settings_button.tooltip_text = null;
                 break;
         }
@@ -226,7 +224,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             device.trusted = device.paired;
         });
 
-        forget_button.button_release_event.connect (() => {
+        forget_button.clicked.connect (() => {
             try {
                 adapter.remove_device (new ObjectPath (((DBusProxy) device).g_object_path));
             } catch (Error e) {
@@ -276,7 +274,6 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
     private void set_status (Status status) {
         state_label.label = GLib.Markup.printf_escaped ("<span font_size='small'>%s</span>", status.to_string ());
-        state.no_show_all = false;
         state.visible = true;
 
         switch (status) {
@@ -284,7 +281,6 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 connect_button.label = _("Pair");
                 connect_button.sensitive = true;
                 settings_button.visible = false;
-                state.no_show_all = true;
                 state.visible = false;
                 forget_button.visible = false;
                 break;

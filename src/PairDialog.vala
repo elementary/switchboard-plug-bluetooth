@@ -96,14 +96,14 @@ public class PairDialog : Granite.MessageDialog {
                 secondary_text = _("Make sure the code displayed on “%s” matches the one below.").printf (device_name);
 
                 var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
-                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+                confirm_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
             case AuthType.DISPLAY_PASSKEY:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("“%s” would like to pair with this device. Make sure the code displayed on “%s” matches the one below.").printf (device_name, device_name);
 
                 var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
-                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+                confirm_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
             case AuthType.DISPLAY_PIN_CODE:
                 badge_icon = new ThemedIcon ("dialog-password");
@@ -114,7 +114,7 @@ public class PairDialog : Granite.MessageDialog {
                 secondary_text = _("“%s” would like to pair with this device.").printf (device_name);
 
                 var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
-                confirm_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+                confirm_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
         }
 
@@ -122,8 +122,7 @@ public class PairDialog : Granite.MessageDialog {
             var passkey_label = new Gtk.Label (passkey);
             passkey_label.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
 
-            custom_bin.add (passkey_label);
-            custom_bin.show_all ();
+            custom_bin.append (passkey_label);
         }
 
         modal = true;
