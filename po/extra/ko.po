@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:03+0000\n"
-"PO-Revision-Date: 2019-05-13 23:03+0000\n"
+"PO-Revision-Date: 2022-08-08 08:46+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/ko/>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
-#, fuzzy
-#| msgid "Configure Bluetooth Settings"
 msgid "Bluetooth Settings"
-msgstr "블루투스 설정 관리"
+msgstr "블루투스 설정"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:6
 msgid "Configure Bluetooth Settings"
@@ -33,7 +31,7 @@ msgstr "블루투스 설정 관리"
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:28
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:42
 msgid "Minor updates"
-msgstr ""
+msgstr "소소한 업데이트"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:32
@@ -42,41 +40,41 @@ msgstr ""
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:56
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:62
 msgid "Updated translations"
-msgstr ""
+msgstr "최신 번역"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
 msgid "Security update"
-msgstr ""
+msgstr "보안 업데이트"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
-msgstr ""
+msgstr "명시적인 사용자 승인 없이 장치를 페어링 할 수 있는 취약점 수정(CVE-2021-21367)"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:30
 msgid "Fallback to device type when name is not available"
-msgstr ""
+msgstr "이름을 사용할 수 없는 경우 장치 종류로 대체"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:31
 msgid "Show \"Discovering\" indicator in an overlay bar"
-msgstr ""
+msgstr "오버레이바에 \"탐색 중\" 인디케이터 보이기"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:38
 msgid "Fixes"
-msgstr ""
+msgstr "수정"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:40
 msgid "Fix crash on devices without Bluetooth"
-msgstr ""
+msgstr "블루투스가 없는 장치에서 충돌 수정"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:44
 msgid "Move \"forget device\" button to each device row"
-msgstr ""
+msgstr "\"기기 삭제\" 버튼을 각 기기로 이동"
 
 #: data/io.elementary.switchboard.bluetooth.appdata.xml.in:61
 msgid "Pair with devices that require a password, key code, or confirmation"
-msgstr ""
+msgstr "암호, 키 코드 또는 확인이 필요한 장치와 페어링"
 
 #~ msgid "Bluetooth"
 #~ msgstr "블루투스"
