@@ -159,6 +159,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
         switch (device.icon) {
             case "audio-card":
+            case "audio-headset":
                 settings_button.uri = "settings://sound";
                 settings_button.tooltip_text = _("Sound Settings");
                 break;
