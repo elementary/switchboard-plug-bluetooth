@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
-  <id>io.elementary.switchboard.bluetooth</id>
-  <extends>io.elementary.switchboard</extends>
+  <id>io.elementary.settings.bluetooth</id>
+  <extends>io.elementary.settings</extends>
   <name>Bluetooth Settings</name>
   <summary>Configure Bluetooth Settings</summary>
   <icon type="stock">bluetooth</icon>
-  <translation type="gettext">bluetooth-plug</translation>
-  <releases>    
+  <releases>
     <release version="2.3.6" date="2021-07-13" urgency="medium">
       <description>
         <p>Minor updates</p>
@@ -65,7 +64,7 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-bluetooth/master/data/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-bluetooth/main/data/screenshot.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://elementary.io</url>

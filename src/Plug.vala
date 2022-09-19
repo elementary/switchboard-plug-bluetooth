@@ -29,7 +29,7 @@ public class Bluetooth.Plug : Switchboard.Plug {
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("network/bluetooth", null);
         Object (category: Category.NETWORK,
-            code_name: "io.elementary.switchboard.bluetooth",
+            code_name: "io.elementary.settings.bluetooth",
             display_name: _("Bluetooth"),
             description: _("Configure Bluetooth Settings"),
             icon: "bluetooth",
