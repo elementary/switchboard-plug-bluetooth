@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 18:03+0000\n"
+"POT-Creation-Date: 2022-09-19 12:15-0700\n"
 "PO-Revision-Date: 2022-01-15 13:59+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -20,52 +20,52 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:34
+#: src/Plug.vala:33 src/MainView.vala:34
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: src/Plug.vala:31
+#: src/Plug.vala:34
 msgid "Configure Bluetooth Settings"
 msgstr "Configureer bluetooth instellingen"
 
-#: src/MainView.vala:42
+#: src/MainView.vala:41
 msgid "No Devices Found"
 msgstr "Geen apparaten gevonden"
 
-#: src/MainView.vala:43
+#: src/MainView.vala:42
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Check of uw apparaten zichtbaar en klaar zijn om te verbinden."
 
-#: src/MainView.vala:63
+#: src/MainView.vala:64
 msgid "Discovering"
 msgstr "Zoeken naar apparaten"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:157
+#: src/MainView.vala:156
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Nu zichtbaar als \"%s\". Dit apparaat is niet zichtbaar als deze pagina "
 "gesloten is"
 
-#: src/MainView.vala:157
+#: src/MainView.vala:156
 msgid "Unknown"
 msgstr "Onbekend"
 
-#: src/MainView.vala:159
+#: src/MainView.vala:158
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Dit apparaat is niet zichtbaar als Bluetooth uitgeschakeld is"
 
-#: src/MainView.vala:161
+#: src/MainView.vala:160
 msgid "Not discoverable"
 msgstr "Onzichtbaar"
 
-#: src/MainView.vala:207
+#: src/MainView.vala:206
 msgid "Paired Devices"
 msgstr "Gekoppelde apparaten"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:214
+#: src/MainView.vala:210
 msgid "Nearby Devices"
 msgstr "Apparaten in de buurt"
 
@@ -91,7 +91,7 @@ msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "Zorg ervoor dat de code op “%s” gelijk is aan de code hieronder."
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
-#: src/DeviceRow.vala:284
+#: src/DeviceRow.vala:281
 msgid "Pair"
 msgstr "Koppelen"
 
@@ -142,59 +142,59 @@ msgstr "Kan geen verbinding maken"
 msgid "Not Connected"
 msgstr "Niet verbonden"
 
-#: src/DeviceRow.vala:94
+#: src/DeviceRow.vala:97
 msgid "Speaker"
 msgstr "Luidspreker"
 
-#: src/DeviceRow.vala:97
+#: src/DeviceRow.vala:100
 msgid "Controller"
 msgstr "Controller"
 
-#: src/DeviceRow.vala:100
+#: src/DeviceRow.vala:103
 msgid "Keyboard"
 msgstr "Toetsenbord"
 
-#: src/DeviceRow.vala:103
+#: src/DeviceRow.vala:106
 msgid "Mouse"
 msgstr "Muis"
 
-#: src/DeviceRow.vala:106
+#: src/DeviceRow.vala:109
 msgid "Tablet"
 msgstr "Tablet"
 
-#: src/DeviceRow.vala:109
+#: src/DeviceRow.vala:112
 msgid "Touchpad"
 msgstr "Touchpad"
 
-#: src/DeviceRow.vala:112
+#: src/DeviceRow.vala:115
 msgid "Phone"
 msgstr "Telefoon"
 
-#: src/DeviceRow.vala:139
+#: src/DeviceRow.vala:138
 msgid "Forget this device"
 msgstr "Dit apparaat vergeten"
 
-#: src/DeviceRow.vala:166
+#: src/DeviceRow.vala:164
 msgid "Sound Settings"
 msgstr "Geluidsinstellingen"
 
-#: src/DeviceRow.vala:171
+#: src/DeviceRow.vala:169
 msgid "Keyboard Settings"
 msgstr "Toetsenbord Instellingen"
 
-#: src/DeviceRow.vala:175
+#: src/DeviceRow.vala:173
 msgid "Mouse & Touchpad Settings"
 msgstr "Muis- en touchpadinstellingen"
 
-#: src/DeviceRow.vala:179
+#: src/DeviceRow.vala:177
 msgid "Printer Settings"
 msgstr "Printer instellingen"
 
-#: src/DeviceRow.vala:298
+#: src/DeviceRow.vala:294
 msgid "Disconnect"
 msgstr "Verbinding verbreken"
 
-#: src/DeviceRow.vala:322
+#: src/DeviceRow.vala:318
 msgid "Connect"
 msgstr "Verbinden"
 

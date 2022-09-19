@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 18:03+0000\n"
+"POT-Creation-Date: 2022-09-19 12:15-0700\n"
 "PO-Revision-Date: 2020-10-30 00:15+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -20,51 +20,51 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
-#: src/Plug.vala:30 src/MainView.vala:34
+#: src/Plug.vala:33 src/MainView.vala:34
 msgid "Bluetooth"
 msgstr "Bludento"
 
-#: src/Plug.vala:31
+#: src/Plug.vala:34
 msgid "Configure Bluetooth Settings"
 msgstr "Agordi bludenton"
 
-#: src/MainView.vala:42
+#: src/MainView.vala:41
 msgid "No Devices Found"
 msgstr "Neniu aparato trovita"
 
-#: src/MainView.vala:43
+#: src/MainView.vala:42
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Bonvolu certiĝi, ke viaj aparatoj estas detekteblaj kaj pretaj je kuplo."
 
-#: src/MainView.vala:63
+#: src/MainView.vala:64
 msgid "Discovering"
 msgstr "Detektanta"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:157
+#: src/MainView.vala:156
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "Nun detektebla kiel „%s“. Ne detektebla kiam ĉi paĝo estas fermita"
 
-#: src/MainView.vala:157
+#: src/MainView.vala:156
 msgid "Unknown"
 msgstr "Nekonata"
 
-#: src/MainView.vala:159
+#: src/MainView.vala:158
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Ne detektebla dum bludento estas malŝaltita"
 
-#: src/MainView.vala:161
+#: src/MainView.vala:160
 msgid "Not discoverable"
 msgstr "Ne detektebla"
 
-#: src/MainView.vala:207
+#: src/MainView.vala:206
 msgid "Paired Devices"
 msgstr "Kuplitaj aparatoj"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:214
+#: src/MainView.vala:210
 msgid "Nearby Devices"
 msgstr "Proksimaj aparatoj"
 
@@ -90,7 +90,7 @@ msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "Certiĝu pri kongruo de la kodo montrita ĉe „%s“ kun tiu malsupre."
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
-#: src/DeviceRow.vala:284
+#: src/DeviceRow.vala:281
 msgid "Pair"
 msgstr "Kupli"
 
@@ -135,7 +135,6 @@ msgstr "Malkonektanta…"
 
 #: src/DeviceRow.vala:52
 #, fuzzy
-#| msgid "Unable to Connnect"
 msgid "Unable to Connect"
 msgstr "Maleblas konektiĝi"
 
@@ -143,60 +142,59 @@ msgstr "Maleblas konektiĝi"
 msgid "Not Connected"
 msgstr "Ne konektita"
 
-#: src/DeviceRow.vala:94
+#: src/DeviceRow.vala:97
 msgid "Speaker"
 msgstr "Laŭtparolilo"
 
-#: src/DeviceRow.vala:97
+#: src/DeviceRow.vala:100
 msgid "Controller"
 msgstr ""
 
-#: src/DeviceRow.vala:100
+#: src/DeviceRow.vala:103
 msgid "Keyboard"
 msgstr "Klavaro"
 
-#: src/DeviceRow.vala:103
+#: src/DeviceRow.vala:106
 msgid "Mouse"
 msgstr "Muso"
 
-#: src/DeviceRow.vala:106
+#: src/DeviceRow.vala:109
 msgid "Tablet"
 msgstr "Tabulkomputilo"
 
-#: src/DeviceRow.vala:109
+#: src/DeviceRow.vala:112
 msgid "Touchpad"
 msgstr "Tuŝplato"
 
-#: src/DeviceRow.vala:112
+#: src/DeviceRow.vala:115
 msgid "Phone"
 msgstr ""
 
-#: src/DeviceRow.vala:139
+#: src/DeviceRow.vala:138
 #, fuzzy
-#| msgid "Forget selected device"
 msgid "Forget this device"
 msgstr "Forgesi la elektitan aparaton"
 
-#: src/DeviceRow.vala:166
+#: src/DeviceRow.vala:164
 msgid "Sound Settings"
 msgstr "Sonaj agordoj"
 
-#: src/DeviceRow.vala:171
+#: src/DeviceRow.vala:169
 msgid "Keyboard Settings"
 msgstr "Klavaraj agordoj"
 
-#: src/DeviceRow.vala:175
+#: src/DeviceRow.vala:173
 msgid "Mouse & Touchpad Settings"
 msgstr "Musaj kaj tuŝplataj agordoj"
 
-#: src/DeviceRow.vala:179
+#: src/DeviceRow.vala:177
 msgid "Printer Settings"
 msgstr "Printilaj agordoj"
 
-#: src/DeviceRow.vala:298
+#: src/DeviceRow.vala:294
 msgid "Disconnect"
 msgstr "Malkonekti"
 
-#: src/DeviceRow.vala:322
+#: src/DeviceRow.vala:318
 msgid "Connect"
 msgstr "Konekti"
