@@ -1,4 +1,4 @@
-# Switchboard Bluetooth Plug
+# Bluetooth Settings
 [![Translation status](https://l10n.elementary.io/widgets/switchboard/-/switchboard-plug-bluetooth/svg-badge.svg)](https://l10n.elementary.io/engage/switchboard/?utm_source=widget)
 
 ![screenshot](data/screenshot.png?raw=true)
