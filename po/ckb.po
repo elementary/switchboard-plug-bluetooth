@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-19 12:15-0700\n"
-"PO-Revision-Date: 2022-09-21 15:36+0000\n"
+"PO-Revision-Date: 2022-09-27 14:02+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-bluetooth/ckb/>\n"
@@ -128,7 +128,7 @@ msgstr "پەیوەستبوو"
 
 #: src/DeviceRow.vala:47
 msgid "Connecting…"
-msgstr "پەیوەندیکردن…"
+msgstr "پەیوەستبوون…"
 
 #: src/DeviceRow.vala:49
 msgid "Disconnecting…"
