@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-19 12:15-0700\n"
-"PO-Revision-Date: 2022-09-30 10:20+0000\n"
+"PO-Revision-Date: 2022-09-30 10:21+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ru/>\n"
@@ -46,7 +46,7 @@ msgstr "Обнаружение"
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
-"Сейчас обнаруживается как «%s». Не будет обнаруживается, если закрыть эту "
+"Сейчас обнаруживается как «%s». Не будет обнаруживаться, если закрыть эту "
 "страницу"
 
 #: src/MainView.vala:156
@@ -55,7 +55,7 @@ msgstr "Неизвестно"
 
 #: src/MainView.vala:158
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr "Недоступно при отключенном Bluetooth"
+msgstr "Недоступно при отключённом Bluetooth"
 
 #: src/MainView.vala:160
 msgid "Not discoverable"
@@ -89,7 +89,7 @@ msgstr "Неизвестное устройство Bluetooth"
 #: src/PairDialog.vala:96
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr "Убедитесь, что код, показанный в «%s», совпадает с приведенным ниже."
+msgstr "Убедитесь, что код, показанный в «%s», совпадает с приведённым ниже."
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
 #: src/DeviceRow.vala:281
@@ -103,7 +103,7 @@ msgid ""
 "“%s” matches the one below."
 msgstr ""
 "«%s» хочет соединиться с этим устройством. Убедитесь, что показанный в «%s» "
-"код совпадает с приведенным ниже."
+"код совпадает с приведённым ниже."
 
 #: src/PairDialog.vala:110
 #, c-format
