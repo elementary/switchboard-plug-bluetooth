@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-19 12:15-0700\n"
-"PO-Revision-Date: 2020-10-30 00:15+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-02-02 23:25+0000\n"
+"Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-bluetooth/nn/>\n"
 "Language: nn\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
 #: src/Plug.vala:33 src/MainView.vala:34
@@ -69,28 +69,25 @@ msgid "Nearby Devices"
 msgstr "Einingar i nærleiken"
 
 #: src/PairDialog.vala:43
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Konfigurer Bluetooth-innstillingar"
+msgstr "Bekreft at du vil kopla til med Bluetooth"
 
 #: src/PairDialog.vala:54 src/PairDialog.vala:65
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Konfigurer Bluetooth-innstillingar"
+msgstr "Bekreft passkoden for Bluetooth"
 
 #: src/PairDialog.vala:76
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Skriv inn PIN-koden for Bluetooth"
 
 #: src/PairDialog.vala:83
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Ukjend Bluetooth-eining"
 
 #: src/PairDialog.vala:96
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
+msgstr "Sjekk at koden som blir vist på \"%s\" er lik den nedanfor."
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
 #: src/DeviceRow.vala:281
@@ -103,16 +100,19 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"\"%s\" vil kopla til denne eininga. Sjekk at koden som er vist på \"%s\" er "
+"lik den nedanfor."
 
 #: src/PairDialog.vala:110
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
+"Skriv inn koden som er vist nedanfor på \"%s\". Trykk deretter på Enter."
 
 #: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "\"%s\" vil kopla til denne eininga."
 
 #: src/DeviceRow.vala:41
 msgid "Available"
@@ -135,7 +135,6 @@ msgid "Disconnecting…"
 msgstr "Koplar frå…"
 
 #: src/DeviceRow.vala:52
-#, fuzzy
 msgid "Unable to Connect"
 msgstr "Kunne ikkje kopla til"
 
@@ -149,7 +148,7 @@ msgstr "Høgtalar"
 
 #: src/DeviceRow.vala:100
 msgid "Controller"
-msgstr ""
+msgstr "Kontroll"
 
 #: src/DeviceRow.vala:103
 msgid "Keyboard"
@@ -161,7 +160,7 @@ msgstr "Mus"
 
 #: src/DeviceRow.vala:109
 msgid "Tablet"
-msgstr ""
+msgstr "Nettbrett"
 
 #: src/DeviceRow.vala:112
 msgid "Touchpad"
@@ -169,12 +168,11 @@ msgstr "Peikeplate"
 
 #: src/DeviceRow.vala:115
 msgid "Phone"
-msgstr ""
+msgstr "Mobil"
 
 #: src/DeviceRow.vala:138
-#, fuzzy
 msgid "Forget this device"
-msgstr "Gløym valde eining"
+msgstr "Gløym denne eininga"
 
 #: src/DeviceRow.vala:164
 msgid "Sound Settings"
