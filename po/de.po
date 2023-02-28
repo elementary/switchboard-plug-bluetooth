@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-19 12:15-0700\n"
-"PO-Revision-Date: 2021-08-24 03:26+0000\n"
+"PO-Revision-Date: 2023-03-01 03:25+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-03-14 08:29+0000\n"
 
 #: src/Plug.vala:33 src/MainView.vala:34
@@ -47,7 +47,8 @@ msgstr "Erkennen"
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
-"Jetzt als %s sichtbar. Nicht sichtbar, wenn diese Seite geschlossen ist"
+"Jetzt als »%s« sichtbar. Nicht mehr sichtbar, wenn diese Seite geschlossen "
+"ist"
 
 #: src/MainView.vala:156
 msgid "Unknown"
