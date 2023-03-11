@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-19 12:15-0700\n"
-"PO-Revision-Date: 2023-03-11 14:18+0000\n"
+"PO-Revision-Date: 2023-03-12 14:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ka/>\n"
@@ -30,7 +30,7 @@ msgstr "ბლუთუზის მორგება"
 
 #: src/MainView.vala:41
 msgid "No Devices Found"
-msgstr ""
+msgstr "მოწყობილობების პოვნა ვერ მოხერხდა"
 
 #: src/MainView.vala:42
 msgid "Please ensure that your devices are visible and ready for pairing."
@@ -38,7 +38,7 @@ msgstr ""
 
 #: src/MainView.vala:64
 msgid "Discovering"
-msgstr ""
+msgstr "აღმოჩენა"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
 #: src/MainView.vala:156
@@ -52,36 +52,36 @@ msgstr "უცნობი"
 
 #: src/MainView.vala:158
 msgid "Not discoverable while Bluetooth is powered off"
-msgstr ""
+msgstr "აღმოჩენადი არაა, როცა ბლუთუზი გამორთულია"
 
 #: src/MainView.vala:160
 msgid "Not discoverable"
-msgstr ""
+msgstr "არააღმოჩენადი"
 
 #: src/MainView.vala:206
 msgid "Paired Devices"
-msgstr ""
+msgstr "შეწყვილებული მოწყობილობები"
 
 #. This header may not appear, so cannot contain discovery spinner
 #: src/MainView.vala:210
 msgid "Nearby Devices"
-msgstr ""
+msgstr "ახლომახლო მოწყობილობები"
 
 #: src/PairDialog.vala:43
 msgid "Confirm Bluetooth Pairing"
-msgstr ""
+msgstr "დაადასტურეთ ბლუთუზის შეწყვილება"
 
 #: src/PairDialog.vala:54 src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
-msgstr ""
+msgstr "დაადასტურეთ ბლუთუზის გასაღები"
 
 #: src/PairDialog.vala:76
 msgid "Enter Bluetooth PIN"
-msgstr ""
+msgstr "შეიყვანეთ ბლუთუზის PIN კოდი"
 
 #: src/PairDialog.vala:83
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "უცნობი ბლუთუზის მოწყობილობა"
 
 #: src/PairDialog.vala:96
 #, c-format
@@ -91,7 +91,7 @@ msgstr ""
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
 #: src/DeviceRow.vala:281
 msgid "Pair"
-msgstr ""
+msgstr "დაწყვილება"
 
 #: src/PairDialog.vala:103
 #, c-format
@@ -108,15 +108,15 @@ msgstr ""
 #: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "“%s” ამ მოწყობილობასთან დაწყვილება სურს."
 
 #: src/DeviceRow.vala:41
 msgid "Available"
-msgstr ""
+msgstr "ხელმისაწვდომი"
 
 #: src/DeviceRow.vala:43
 msgid "Pairing…"
-msgstr ""
+msgstr "დაწყვილება…"
 
 #: src/DeviceRow.vala:45
 msgid "Connected"
@@ -124,27 +124,27 @@ msgstr "დაკავშირებული"
 
 #: src/DeviceRow.vala:47
 msgid "Connecting…"
-msgstr ""
+msgstr "დაკავშირება…"
 
 #: src/DeviceRow.vala:49
 msgid "Disconnecting…"
-msgstr ""
+msgstr "გათიშვა…"
 
 #: src/DeviceRow.vala:52
 msgid "Unable to Connect"
-msgstr ""
+msgstr "დაკავშირება შეუძლებელია"
 
 #: src/DeviceRow.vala:54
 msgid "Not Connected"
-msgstr ""
+msgstr "დაკავშირებული არაა"
 
 #: src/DeviceRow.vala:97
 msgid "Speaker"
-msgstr ""
+msgstr "დინამიკი"
 
 #: src/DeviceRow.vala:100
 msgid "Controller"
-msgstr ""
+msgstr "კონტროლერი"
 
 #: src/DeviceRow.vala:103
 msgid "Keyboard"
@@ -152,11 +152,11 @@ msgstr "კლავიატურა"
 
 #: src/DeviceRow.vala:106
 msgid "Mouse"
-msgstr "მაუსი"
+msgstr "თაგუნა"
 
 #: src/DeviceRow.vala:109
 msgid "Tablet"
-msgstr ""
+msgstr "ტაბლეტი"
 
 #: src/DeviceRow.vala:112
 msgid "Touchpad"
@@ -164,27 +164,27 @@ msgstr "თაჩპედი"
 
 #: src/DeviceRow.vala:115
 msgid "Phone"
-msgstr ""
+msgstr "ტელეფონი"
 
 #: src/DeviceRow.vala:138
 msgid "Forget this device"
-msgstr ""
+msgstr "ამ მოწყობილობის დავიწყება"
 
 #: src/DeviceRow.vala:164
 msgid "Sound Settings"
-msgstr ""
+msgstr "ხმის მორგება"
 
 #: src/DeviceRow.vala:169
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "კლავიატურის მორგება"
 
 #: src/DeviceRow.vala:173
 msgid "Mouse & Touchpad Settings"
-msgstr ""
+msgstr "თაგუნას და თაჩპედის მორგება"
 
 #: src/DeviceRow.vala:177
 msgid "Printer Settings"
-msgstr ""
+msgstr "პრინტერის მორგება"
 
 #: src/DeviceRow.vala:294
 msgid "Disconnect"
@@ -192,4 +192,4 @@ msgstr "კავშირის გაწყვეტა"
 
 #: src/DeviceRow.vala:318
 msgid "Connect"
-msgstr ""
+msgstr "დაკავშირება"
