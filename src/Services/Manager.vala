@@ -143,7 +143,10 @@ public class Bluetooth.Services.ObjectManager : Object {
                 }
 
                 if (powered != null) {
-                    check_global_state ();
+                    Idle.add (() => {
+                        check_global_state ();
+                        return Source.REMOVE;
+                    });
                 }
             });
         }
@@ -157,7 +160,12 @@ public class Bluetooth.Services.ObjectManager : Object {
         } else if (iface is Bluetooth.Services.Adapter) {
             adapter_removed ((Bluetooth.Services.Adapter) iface);
             has_object = !get_adapters ().is_empty;
+            Idle.add (() => {
+                check_global_state ();
+                return Source.REMOVE;
+            });
         }
+
     }
 
     public void check_discovering () {
