@@ -118,17 +118,12 @@ public class Bluetooth.Services.ObjectManager : Object {
             device_added (device);
             ((DBusProxy) device).g_properties_changed.connect ((changed, invalid) => {
                 var connected = changed.lookup_value ("Connected", GLib.VariantType.BOOLEAN);
-                if (connected != null) {
-                    check_global_state ();
-                }
-
                 var paired = changed.lookup_value ("Paired", GLib.VariantType.BOOLEAN);
-                if (paired != null) {
+                if (connected != null || paired != null) {
                     check_global_state ();
                 }
             });
 
-            check_global_state ();
         } else if (iface is Bluetooth.Services.Adapter) {
             unowned Bluetooth.Services.Adapter adapter = (Bluetooth.Services.Adapter) iface;
             has_object = true;
@@ -136,9 +131,6 @@ public class Bluetooth.Services.ObjectManager : Object {
             adapter_added (adapter);
             ((DBusProxy) adapter).g_properties_changed.connect ((changed, invalid) => {
                 var powered = changed.lookup_value ("Powered", GLib.VariantType.BOOLEAN);
-                if (powered != null) {
-                    check_global_state ();
-                }
 
                 var discovering = changed.lookup_value ("Discovering", GLib.VariantType.BOOLEAN);
                 if (discovering != null) {
@@ -149,10 +141,14 @@ public class Bluetooth.Services.ObjectManager : Object {
                 if (adapter_discoverable != null) {
                     check_discoverable ();
                 }
-            });
 
-            check_global_state ();
+                if (powered != null) {
+                    check_global_state ();
+                }
+            });
         }
+
+        check_global_state ();
     }
 
     private void on_interface_removed (GLib.DBusObject object, GLib.DBusInterface iface) {
@@ -282,26 +278,20 @@ public class Bluetooth.Services.ObjectManager : Object {
         }
     }
 
-    public void check_global_state () {
-        /* As this is called within a signal handler and emits a signal
-         * it should be in a Idle loop  else races occur */
-        Idle.add (() => {
-            var powered = get_global_state ();
-            var connected = get_connected ();
+    private void check_global_state () {
+        var powered = get_global_state ();
+        var connected = get_connected ();
 
-            /* Only signal if actually changed */
-            if (powered != is_powered || connected != is_connected) {
-                if (!powered) {
-                    discoverable = false;
-                }
-
-                is_connected = connected;
-                is_powered = powered;
+        /* Only signal if actually changed */
+        if (powered != is_powered || connected != is_connected) {
+            if (!powered) {
+                discoverable = false;
             }
 
-            return false;
-        });
-    }
+            is_connected = connected;
+            is_powered = powered;
+        }
+}
 
     public async void start_discovery () {
         var adapters = get_adapters ();
