@@ -42,16 +42,11 @@ public class Bluetooth.Services.ObjectManager : Object {
 
     private bool is_registered = false;
 
-    private Settings? settings = null;
     private GLib.DBusObjectManagerClient object_manager;
     private Bluetooth.Services.AgentManager agent_manager;
     private Bluetooth.Services.Agent agent;
 
     construct {
-        var settings_schema = SettingsSchemaSource.get_default ().lookup (SCHEMA, true);
-        if (settings_schema != null) {
-            settings = new Settings (SCHEMA);
-        }
         create_manager.begin ();
 
         notify["discoverable"].connect (() => {
@@ -375,10 +370,6 @@ public class Bluetooth.Services.ObjectManager : Object {
         foreach (var adapter in adapters) {
             adapter.powered = state;
             adapter.discoverable = state;
-        }
-
-        if (settings != null) {
-            settings.set_boolean ("bluetooth-enabled", state);
         }
 
         if (!state) {
