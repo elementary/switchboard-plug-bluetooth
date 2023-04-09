@@ -114,7 +114,6 @@ public class Bluetooth.Services.ObjectManager : Object {
     private void on_interface_added (GLib.DBusObject object, GLib.DBusInterface iface) {
         if (iface is Bluetooth.Services.Device) {
             unowned Bluetooth.Services.Device device = (Bluetooth.Services.Device) iface;
-
             device_added (device);
             ((DBusProxy) device).g_properties_changed.connect ((changed, invalid) => {
                 var connected = changed.lookup_value ("Connected", GLib.VariantType.BOOLEAN);
@@ -123,11 +122,9 @@ public class Bluetooth.Services.ObjectManager : Object {
                     check_global_state ();
                 }
             });
-
         } else if (iface is Bluetooth.Services.Adapter) {
             unowned Bluetooth.Services.Adapter adapter = (Bluetooth.Services.Adapter) iface;
             has_object = true;
-
             adapter_added (adapter);
             ((DBusProxy) adapter).g_properties_changed.connect ((changed, invalid) => {
                 var powered = changed.lookup_value ("Powered", GLib.VariantType.BOOLEAN);
@@ -159,7 +156,6 @@ public class Bluetooth.Services.ObjectManager : Object {
             has_object = !get_adapters ().is_empty;
             check_global_state ();
         }
-
     }
 
     public void check_discovering () {
@@ -293,7 +289,7 @@ public class Bluetooth.Services.ObjectManager : Object {
             is_connected = connected;
             is_powered = powered;
         }
-}
+    }
 
     public async void start_discovery () {
         var adapters = get_adapters ();
