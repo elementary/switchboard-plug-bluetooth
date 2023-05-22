@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-19 12:15-0700\n"
-"PO-Revision-Date: 2020-10-30 00:15+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-23 18:06+0000\n"
+"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
+"io>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/id/>\n"
 "Language: id\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-12-25 05:27+0000\n"
 
 #: src/Plug.vala:33 src/MainView.vala:34
@@ -26,7 +27,7 @@ msgstr "Bluetooth"
 
 #: src/Plug.vala:34
 msgid "Configure Bluetooth Settings"
-msgstr "Pengaturan Bluetooth"
+msgstr "Atur Pengaturan Bluetooth"
 
 #: src/MainView.vala:41
 msgid "No Devices Found"
@@ -37,9 +38,8 @@ msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Pastikan perangkat Anda terlihat dan siap dipasangkan."
 
 #: src/MainView.vala:64
-#, fuzzy
 msgid "Discovering"
-msgstr "Memutus sambungan…"
+msgstr "Menemukan"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
 #: src/MainView.vala:156
@@ -63,7 +63,7 @@ msgstr "Tidak dapat ditemukan"
 
 #: src/MainView.vala:206
 msgid "Paired Devices"
-msgstr "Perangkat yang Disandingkan"
+msgstr "Perangkat yang Dipasangkan"
 
 #. This header may not appear, so cannot contain discovery spinner
 #: src/MainView.vala:210
@@ -71,33 +71,31 @@ msgid "Nearby Devices"
 msgstr "Perangkat Terdekat"
 
 #: src/PairDialog.vala:43
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Pengaturan Bluetooth"
+msgstr "Konfirmasi Pemasangan Bluetooth"
 
 #: src/PairDialog.vala:54 src/PairDialog.vala:65
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Pengaturan Bluetooth"
+msgstr "Konfirmasi Kunci Sandi Bluetooth"
 
 #: src/PairDialog.vala:76
-#, fuzzy
 msgid "Enter Bluetooth PIN"
-msgstr "Bluetooth"
+msgstr "Masukkan PIN Bluetooth"
 
 #: src/PairDialog.vala:83
 msgid "Unknown Bluetooth Device"
-msgstr ""
+msgstr "Perangkat Bluetooth Tak Dikenal"
 
 #: src/PairDialog.vala:96
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
+"Pastikan kode yang ditampilkan pada “%s” cocok dengan yang di bawah ini."
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
 #: src/DeviceRow.vala:281
 msgid "Pair"
-msgstr "Pasang"
+msgstr "Pasangkan"
 
 #: src/PairDialog.vala:103
 #, c-format
@@ -105,16 +103,18 @@ msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
 msgstr ""
+"“%s” ingin memasangkan dengan perangkat ini. Pastikan kode yang ditampilkan "
+"pada “%s” cocok dengan yang di bawah ini."
 
 #: src/PairDialog.vala:110
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr ""
+msgstr "Ketik kode yang ditampilkan di bawah ini pada “%s”, diikuti oleh Enter."
 
 #: src/PairDialog.vala:114
 #, c-format
 msgid "“%s” would like to pair with this device."
-msgstr ""
+msgstr "“%s” ingin memasangkan dengan perangkat ini."
 
 #: src/DeviceRow.vala:41
 msgid "Available"
@@ -130,16 +130,15 @@ msgstr "Tersambung"
 
 #: src/DeviceRow.vala:47
 msgid "Connecting…"
-msgstr "Menyambung…"
+msgstr "Menyambungkan…"
 
 #: src/DeviceRow.vala:49
 msgid "Disconnecting…"
 msgstr "Memutus sambungan…"
 
 #: src/DeviceRow.vala:52
-#, fuzzy
 msgid "Unable to Connect"
-msgstr "Tidak dapat tersambung"
+msgstr "Tidak dapat Menyambungkan"
 
 #: src/DeviceRow.vala:54
 msgid "Not Connected"
@@ -151,7 +150,7 @@ msgstr "Pengeras Suara"
 
 #: src/DeviceRow.vala:100
 msgid "Controller"
-msgstr ""
+msgstr "Pengendali"
 
 #: src/DeviceRow.vala:103
 msgid "Keyboard"
@@ -159,24 +158,23 @@ msgstr "Papan Ketik"
 
 #: src/DeviceRow.vala:106
 msgid "Mouse"
-msgstr ""
+msgstr "Mouse"
 
 #: src/DeviceRow.vala:109
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: src/DeviceRow.vala:112
 msgid "Touchpad"
-msgstr ""
+msgstr "Touchpad"
 
 #: src/DeviceRow.vala:115
 msgid "Phone"
-msgstr ""
+msgstr "Telepon"
 
 #: src/DeviceRow.vala:138
-#, fuzzy
 msgid "Forget this device"
-msgstr "Lupakan alat terpilih"
+msgstr "Lupakan perangkat ini"
 
 #: src/DeviceRow.vala:164
 msgid "Sound Settings"
@@ -184,11 +182,11 @@ msgstr "Pengaturan Suara"
 
 #: src/DeviceRow.vala:169
 msgid "Keyboard Settings"
-msgstr "Pengaturan Keyboard"
+msgstr "Pengaturan Papan Ketik"
 
 #: src/DeviceRow.vala:173
 msgid "Mouse & Touchpad Settings"
-msgstr "Pengaturan Tetikus & Touchpad"
+msgstr "Pengaturan Mouse & Touchpad"
 
 #: src/DeviceRow.vala:177
 msgid "Printer Settings"
@@ -196,11 +194,11 @@ msgstr "Pengaturan Printer"
 
 #: src/DeviceRow.vala:294
 msgid "Disconnect"
-msgstr "Memutuskan"
+msgstr "Putuskan"
 
 #: src/DeviceRow.vala:318
 msgid "Connect"
-msgstr "Sambung"
+msgstr "Sambungkan"
 
 #~ msgid "Sharing Settings"
 #~ msgstr "Pengaturan Berbagi Pakai"
