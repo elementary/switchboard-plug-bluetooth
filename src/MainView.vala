@@ -144,7 +144,8 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         });
 
         manager.bind_property ("is-discovering", overlaybar, "visible", GLib.BindingFlags.DEFAULT);
-        manager.bind_property ("is-powered", status_switch, "active", GLib.BindingFlags.BIDIRECTIONAL | GLib.BindingFlags.SYNC_CREATE);
+        // Manager is powered is read-only
+        manager.bind_property ("is-powered", status_switch, "active", GLib.BindingFlags.DEFAULT);
 
         show_all ();
     }
