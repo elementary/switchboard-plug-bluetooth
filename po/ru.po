@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-19 12:15-0700\n"
+"POT-Creation-Date: 2023-10-12 22:19+0000\n"
 "PO-Revision-Date: 2022-09-30 10:21+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -35,7 +35,8 @@ msgstr "Устройства не найдены"
 
 #: src/MainView.vala:42
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr "Пожалуйста, убедитесь, что ваши устройства видны и готовы к связыванию."
+msgstr ""
+"Пожалуйста, убедитесь, что ваши устройства видны и готовы к связыванию."
 
 #: src/MainView.vala:64
 msgid "Discovering"
