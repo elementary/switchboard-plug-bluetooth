@@ -1,4 +1,4 @@
-switchboard-plug-bluetooth (2.3.6) bionic; urgency=medium
+io.elementary.settings-bluetooth (2.3.6) bionic; urgency=medium
 
   * Release 2.3.6 (#179)
   * Update translation files
@@ -6,7 +6,7 @@ switchboard-plug-bluetooth (2.3.6) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Wed, 14 Jul 2021 18:03:15 +0000
 
-switchboard-plug-bluetooth (2.3.5) bionic; urgency=medium
+io.elementary.settings-bluetooth (2.3.5) bionic; urgency=medium
 
   * Release 2.3.5 (#167)
   * Make switchboard the default agent (#169)
@@ -21,7 +21,7 @@ switchboard-plug-bluetooth (2.3.5) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Tue, 09 Mar 2021 19:42:46 +0000
 
-switchboard-plug-bluetooth (2.3.4) bionic; urgency=medium
+io.elementary.settings-bluetooth (2.3.4) bionic; urgency=medium
 
   * Release 2.3.4 (#156)
   * MainView: fix bottom margin (#152)
@@ -32,7 +32,7 @@ switchboard-plug-bluetooth (2.3.4) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Tue, 05 Jan 2021 22:05:21 +0000
 
-switchboard-plug-bluetooth (2.3.3) bionic; urgency=medium
+io.elementary.settings-bluetooth (2.3.3) bionic; urgency=medium
 
   * Release 2.3.3 (#147)
   * Update translation files
@@ -44,7 +44,7 @@ switchboard-plug-bluetooth (2.3.3) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Thu, 08 Oct 2020 18:37:42 +0000
 
-switchboard-plug-bluetooth (2.3.2) bionic; urgency=medium
+io.elementary.settings-bluetooth (2.3.2) bionic; urgency=medium
 
   * Release 2.3.2 (#125)
   * Update translation files
@@ -59,7 +59,7 @@ switchboard-plug-bluetooth (2.3.2) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Thu, 28 May 2020 20:13:20 +0000
 
-switchboard-plug-bluetooth (2.3.1) bionic; urgency=medium
+io.elementary.settings-bluetooth (2.3.1) bionic; urgency=medium
 
   * Release 2.3.1 (#110)
   * Update translation files
@@ -72,7 +72,7 @@ switchboard-plug-bluetooth (2.3.1) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Wed, 26 Feb 2020 21:21:25 +0000
 
-switchboard-plug-bluetooth (2.3.0) bionic; urgency=medium
+io.elementary.settings-bluetooth (2.3.0) bionic; urgency=medium
 
   * Release 2.3.0 (#94)
   * Update translation files
@@ -94,37 +94,37 @@ switchboard-plug-bluetooth (2.3.0) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Thu, 31 Oct 2019 17:39:59 +0000
 
-switchboard-plug-bluetooth (2.2.2) bionic; urgency=medium
+io.elementary.settings-bluetooth (2.2.2) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <codygarver@gmail.com>  Mon, 08 Apr 2019 21:53:50 -0500
 
-switchboard-plug-bluetooth (2.2.1) bionic; urgency=medium
+io.elementary.settings-bluetooth (2.2.1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <codygarver@gmail.com>  Fri, 25 Jan 2019 00:49:14 -0600
 
-switchboard-plug-bluetooth (2.2.0) bionic; urgency=medium
+io.elementary.settings-bluetooth (2.2.0) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <codygarver@gmail.com>  Thu, 24 Jan 2019 07:45:42 -0600
 
-switchboard-plug-bluetooth (2.1.2) bionic; urgency=medium
+io.elementary.settings-bluetooth (2.1.2) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Mon, 15 Oct 2018 16:08:47 -0500
 
-switchboard-plug-bluetooth (0.1.1) bionic; urgency=medium
+io.elementary.settings-bluetooth (0.1.1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Fri, 08 Jun 2018 08:48:46 -0500
 
-switchboard-plug-bluetooth (0.1) xenial; urgency=medium
+io.elementary.settings-bluetooth (0.1) xenial; urgency=medium
 
   * Initial release.
 
