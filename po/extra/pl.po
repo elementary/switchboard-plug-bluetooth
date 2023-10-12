@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 18:03+0000\n"
+"POT-Creation-Date: 2023-10-12 22:19+0000\n"
 "PO-Revision-Date: 2021-11-08 08:35+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -20,34 +20,33 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:5
+#: data/bluetooth.metainfo.xml.in:10
 msgid "Bluetooth Settings"
 msgstr "Ustawienia Bluetooth"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:6
+#: data/bluetooth.metainfo.xml.in:11
 msgid "Configure Bluetooth Settings"
 msgstr "Skonfiguruj ustawienia Bluetooth"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:12
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:28
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:42
+#: data/bluetooth.metainfo.xml.in:27
+msgid "elementary, Inc."
+msgstr ""
+
+#: data/bluetooth.metainfo.xml.in:34 data/bluetooth.metainfo.xml.in:52
+#: data/bluetooth.metainfo.xml.in:67
 msgid "Minor updates"
 msgstr "Pomniejsze aktualizacje"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:14
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:32
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:45
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:51
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:56
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:62
+#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:56
+#: data/bluetooth.metainfo.xml.in:70 data/bluetooth.metainfo.xml.in:77
 msgid "Updated translations"
 msgstr "Zaktualizowane tłumaczenia"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:20
+#: data/bluetooth.metainfo.xml.in:43
 msgid "Security update"
 msgstr "Aktualizacja bezpieczeństwa"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:22
+#: data/bluetooth.metainfo.xml.in:45
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
@@ -55,30 +54,29 @@ msgstr ""
 "Naprawiono problem pozwalający urządzeniu na sparowanie bez wyraźnej zgody "
 "użytkownika (CVE-2021-21367)"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:30
+#: data/bluetooth.metainfo.xml.in:54
 msgid "Fallback to device type when name is not available"
 msgstr "Wykorzystanie typu urządzenia gdy nazwa nie jest dostępna"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:31
+#: data/bluetooth.metainfo.xml.in:55
 msgid "Show \"Discovering\" indicator in an overlay bar"
 msgstr "Dodano indykator „Wykrywanie” w pasku przykrywającym"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:38
+#: data/bluetooth.metainfo.xml.in:63
 msgid "Fixes"
 msgstr "Poprawki"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:40
+#: data/bluetooth.metainfo.xml.in:65
 msgid "Fix crash on devices without Bluetooth"
 msgstr "Napraw awarie na urządzeniach bez Bluetooth"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:44
+#: data/bluetooth.metainfo.xml.in:69
 msgid "Move \"forget device\" button to each device row"
 msgstr "Przenieś przycisk „zapomnij urządzenie” do każdego wiersza urządzeń"
 
-#: data/io.elementary.switchboard.bluetooth.appdata.xml.in:61
-msgid "Pair with devices that require a password, key code, or confirmation"
-msgstr ""
-"Sparuj z urządzeniami, które wymagają hasła, kodu klucza lub potwierdzenia"
+#~ msgid "Pair with devices that require a password, key code, or confirmation"
+#~ msgstr ""
+#~ "Sparuj z urządzeniami, które wymagają hasła, kodu klucza lub potwierdzenia"
 
 #~ msgid "Bluetooth"
 #~ msgstr "Bluetooth"
