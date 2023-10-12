@@ -2,9 +2,32 @@
 <component type="addon">
   <id>io.elementary.settings.bluetooth</id>
   <extends>io.elementary.settings</extends>
+  <translation type="gettext">io.elementary.settings.bluetooth</translation>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+
+  <icon type="stock">bluetooth</icon>
   <name>Bluetooth Settings</name>
   <summary>Configure Bluetooth Settings</summary>
-  <icon type="stock">bluetooth</icon>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-bluetooth/main/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+
+  <content_rating type="oars-1.1" />
+
+  <url type="bugtracker">https://github.com/elementary/switchboard-plug-bluetooth/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/switchboard-plug-bluetooth/discussions</url>
+  <url type="homepage">https://elementary.io/</url>
+  <url type="translate">https://l10n.elementary.io/engage/switchboard/</url>
+
+  <developer_name>elementary, Inc.</developer_name>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
+
   <releases>
     <release version="2.3.6" date="2021-07-13" urgency="medium">
       <description>
@@ -14,6 +37,7 @@
         </ul>
       </description>
     </release>
+
     <release version="2.3.5" date="2021-03-09" urgency="critical">
       <description>
         <p>Security update</p>
@@ -22,6 +46,7 @@
         </ul>
       </description>
     </release>
+
     <release version="2.3.4" date="2020-12-23" urgency="medium">
       <description>
         <p>Minor updates</p>
@@ -32,6 +57,7 @@
         </ul>
       </description>
     </release>
+
     <release version="2.3.3" date="2020-10-08" urgency="medium">
       <description>
         <p>Fixes</p>
@@ -45,30 +71,14 @@
         </ul>
       </description>
     </release>
+
     <release version="2.3.2" date="2020-05-28" urgency="medium">
       <description>
         <p>Updated translations</p>
       </description>
     </release>
-    <release version="2.3.1" date="2020-02-25" urgency="medium">
-      <description>
-        <p>Updated translations</p>
-      </description>
-    </release>
-    <release version="2.3.0" date="2019-10-31" urgency="medium">
-      <description>
-        <p>Pair with devices that require a password, key code, or confirmation</p>
-        <p>Updated translations</p>
-      </description>
-    </release>
+
+    <release version="2.3.1" date="2020-02-25" urgency="medium" />
+    <release version="2.3.0" date="2019-10-31" urgency="medium" />
   </releases>
-  <screenshots>
-    <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-bluetooth/main/data/screenshot.png</image>
-    </screenshot>
-  </screenshots>
-  <url type="homepage">https://elementary.io</url>
-  <url type="bugtracker">https://github.com/elementary/switchboard-plug-bluetooth/issues</url>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-2.0+</project_license>
 </component>
