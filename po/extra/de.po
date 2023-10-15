@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-12 22:19+0000\n"
-"PO-Revision-Date: 2021-07-21 14:31+0000\n"
-"Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
+"PO-Revision-Date: 2023-10-17 15:10+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/de/>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: data/bluetooth.metainfo.xml.in:10
 msgid "Bluetooth Settings"
@@ -29,7 +29,7 @@ msgstr "Bluetooth-Einstellungen bearbeiten"
 
 #: data/bluetooth.metainfo.xml.in:27
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/bluetooth.metainfo.xml.in:34 data/bluetooth.metainfo.xml.in:52
 #: data/bluetooth.metainfo.xml.in:67
