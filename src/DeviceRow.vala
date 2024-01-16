@@ -128,20 +128,23 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         label.xalign = 0;
 
         settings_button = new Gtk.LinkButton ("") {
-            child = new Gtk.Image.from_icon_name ("view-more-horizontal-symbolic")
-        };
-        settings_button.margin_end = 3;
-        settings_button.visible = false;
-
-        forget_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic") {
+            child = new Gtk.Image.from_icon_name ("view-more-horizontal-symbolic"),
             margin_end = 3,
-            tooltip_text = _("Forget this device"),
+            valign = CENTER,
             visible = false
         };
-        forget_button.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
 
-        connect_button = new Gtk.Button ();
-        connect_button.valign = Gtk.Align.CENTER;
+        forget_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic") {
+            has_frame = false,
+            margin_end = 3,
+            tooltip_text = _("Forget this device"),
+            valign = CENTER,
+            visible = false
+        };
+
+        connect_button = new Gtk.Button () {
+            valign = CENTER
+        };
 
         size_group.add_widget (connect_button);
 
