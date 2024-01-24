@@ -19,7 +19,7 @@
  *              Oleksandr Lynok <oleksandr.lynok@gmail.com>
  */
 
-public class Bluetooth.MainView : Granite.SimpleSettingsPage {
+public class Bluetooth.MainView : Switchboard.SimpleSettingsPage {
     private Gtk.ListBox list_box;
     private Granite.OverlayBar overlaybar;
 
@@ -69,9 +69,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             child = overlay
         };
 
-        content_area.orientation = Gtk.Orientation.VERTICAL;
-        content_area.row_spacing = 0;
-        content_area.attach (frame, 0, 0);
+        child = frame;
 
         if (manager.retrieve_finished) {
             complete_setup ();
