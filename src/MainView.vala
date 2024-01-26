@@ -19,7 +19,7 @@
  *              Oleksandr Lynok <oleksandr.lynok@gmail.com>
  */
 
-public class Bluetooth.MainView : Switchboard.SimpleSettingsPage {
+public class Bluetooth.MainView : Switchboard.SettingsPage {
     private Gtk.ListBox list_box;
     private Granite.OverlayBar overlaybar;
 
