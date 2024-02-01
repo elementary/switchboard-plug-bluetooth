@@ -29,11 +29,9 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
     public MainView (Services.ObjectManager manager) {
         Object (
-            icon_name: "bluetooth",
             manager: manager,
             title: _("Bluetooth"),
-            activatable: true,
-            description: ""
+            activatable: true
         );
     }
 
@@ -159,9 +157,9 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         }
 
         if (powered) {
-            icon_name = "bluetooth";
+            icon = new ThemedIcon ("bluetooth");
         } else {
-            icon_name = "bluetooth-disabled";
+            icon = new ThemedIcon ("bluetooth-disabled");
         }
     }
 
