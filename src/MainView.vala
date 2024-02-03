@@ -19,7 +19,7 @@
  *              Oleksandr Lynok <oleksandr.lynok@gmail.com>
  */
 
-public class Bluetooth.MainView : Granite.SimpleSettingsPage {
+public class Bluetooth.MainView : Switchboard.SettingsPage {
     private Gtk.ListBox list_box;
     private Granite.OverlayBar overlaybar;
 
@@ -29,11 +29,9 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
 
     public MainView (Services.ObjectManager manager) {
         Object (
-            icon_name: "bluetooth",
             manager: manager,
             title: _("Bluetooth"),
-            activatable: true,
-            description: ""
+            activatable: true
         );
     }
 
@@ -69,9 +67,7 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
             child = overlay
         };
 
-        content_area.orientation = Gtk.Orientation.VERTICAL;
-        content_area.row_spacing = 0;
-        content_area.attach (frame, 0, 0);
+        child = frame;
 
         if (manager.retrieve_finished) {
             complete_setup ();
@@ -161,9 +157,9 @@ public class Bluetooth.MainView : Granite.SimpleSettingsPage {
         }
 
         if (powered) {
-            icon_name = "bluetooth";
+            icon = new ThemedIcon ("bluetooth");
         } else {
-            icon_name = "bluetooth-disabled";
+            icon = new ThemedIcon ("bluetooth-disabled");
         }
     }
 
