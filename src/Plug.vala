@@ -19,6 +19,7 @@
  */
 
 public class Bluetooth.Plug : Switchboard.Plug {
+    private Gtk.Box box;
     private MainView main_view;
     private Services.ObjectManager manager;
 
@@ -40,12 +41,24 @@ public class Bluetooth.Plug : Switchboard.Plug {
     }
 
     public override Gtk.Widget get_widget () {
-        if (main_view == null) {
-            main_view = new MainView (manager);
+        if (box == null) {
+            var headerbar = new Adw.HeaderBar () {
+                show_title = false
+            };
+            headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
+
+            main_view = new MainView (manager) {
+                vexpand = true
+            };
+
+            box = new Gtk.Box (VERTICAL, 0);
+            box.append (headerbar);
+            box.append (main_view);
+
             main_view.quit_plug.connect (() => hidden ());
         }
 
-        return main_view;
+        return box;
     }
 
     public override void shown () {
