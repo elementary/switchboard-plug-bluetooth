@@ -7,7 +7,7 @@
 
 You'll need the following dependencies:
 
-* libadwaita-1-dev
+* libadwaita-1-dev >=1.4.0
 * libgranite-7-dev
 * libgtk-4-dev
 * libswitchboard-3-dev
