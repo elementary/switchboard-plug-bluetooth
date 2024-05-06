@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-12 22:19+0000\n"
-"PO-Revision-Date: 2024-02-19 12:12+0000\n"
+"PO-Revision-Date: 2024-05-07 05:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2016-12-21 05:43+0000\n"
 
 #: src/Plug.vala:33 src/MainView.vala:34
@@ -86,8 +86,7 @@ msgstr "不明な Bluetooth デバイス"
 #: src/PairDialog.vala:96
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
-msgstr ""
-"“%s” に表示されているコードが以下のものに一致することを確認してください。"
+msgstr "“%s” に表示されているコードが以下と一致することを確認してください。"
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
 #: src/DeviceRow.vala:281
@@ -99,9 +98,8 @@ msgstr "ペアリング"
 msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
-msgstr ""
-"“%s” はこのデバイスとペアリングしようとしています。“%s” に表示されているコー"
-"ドが以下のものに一致することを確認してください。"
+msgstr "“%s” はこのデバイスとペアリングしようとしています。“%s” "
+"に表示されているコードが以下と一致することを確認してください。"
 
 #: src/PairDialog.vala:110
 #, c-format
