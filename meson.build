@@ -1,7 +1,7 @@
 project(
     'bluetooth',
     'vala', 'c',
-    version: '2.3.6'
+    version: '8.0.0'
 )
 
 gettext_name = 'io.elementary.settings.' + meson.project_name()
