@@ -31,6 +31,19 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.0.0" date="2024-05-22" urgency="medium">
+      <description>
+        <p>Minor updates</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/switchboard-plug-bluetooth/issues/157">Bluetooth stopped working after quitting system settings</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-bluetooth/issues/214">No padding left and right of settings icon</issue>
+      </issues>
+    </release>
+
     <release version="2.3.6" date="2021-07-13" urgency="medium">
       <description>
         <p>Minor updates</p>
@@ -74,12 +87,7 @@
       </description>
     </release>
 
-    <release version="2.3.2" date="2020-05-28" urgency="medium">
-      <description>
-        <p>Updated translations</p>
-      </description>
-    </release>
-
+    <release version="2.3.2" date="2020-05-28" urgency="medium" />
     <release version="2.3.1" date="2020-02-25" urgency="medium" />
     <release version="2.3.0" date="2019-10-31" urgency="medium" />
   </releases>
