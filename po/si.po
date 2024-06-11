@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-12 22:19+0000\n"
+"POT-Creation-Date: 2024-06-11 17:47+0000\n"
 "PO-Revision-Date: 2020-10-01 17:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Sinhala <https://l10n.elementary.io/projects/switchboard/"
@@ -20,50 +20,50 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
-#: src/Plug.vala:33 src/MainView.vala:34
+#: src/Plug.vala:34 src/MainView.vala:33
 msgid "Bluetooth"
 msgstr ""
 
-#: src/Plug.vala:34
+#: src/Plug.vala:35
 msgid "Configure Bluetooth Settings"
 msgstr ""
 
-#: src/MainView.vala:41
+#: src/MainView.vala:39
 msgid "No Devices Found"
 msgstr ""
 
-#: src/MainView.vala:42
+#: src/MainView.vala:40
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 
-#: src/MainView.vala:64
+#: src/MainView.vala:62
 msgid "Discovering"
 msgstr ""
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:156
+#: src/MainView.vala:152
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 
-#: src/MainView.vala:156
+#: src/MainView.vala:152
 msgid "Unknown"
 msgstr "අඥාත"
 
-#: src/MainView.vala:158
+#: src/MainView.vala:154
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr ""
 
-#: src/MainView.vala:160
+#: src/MainView.vala:156
 msgid "Not discoverable"
 msgstr ""
 
-#: src/MainView.vala:206
+#: src/MainView.vala:202
 msgid "Paired Devices"
 msgstr ""
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:210
+#: src/MainView.vala:206
 msgid "Nearby Devices"
 msgstr ""
 
@@ -89,7 +89,7 @@ msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
-#: src/DeviceRow.vala:281
+#: src/DeviceRow.vala:285
 msgid "Pair"
 msgstr ""
 
@@ -166,30 +166,30 @@ msgstr ""
 msgid "Phone"
 msgstr ""
 
-#: src/DeviceRow.vala:138
+#: src/DeviceRow.vala:140
 msgid "Forget this device"
 msgstr ""
 
-#: src/DeviceRow.vala:164
+#: src/DeviceRow.vala:168
 msgid "Sound Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:169
+#: src/DeviceRow.vala:173
 msgid "Keyboard Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:173
+#: src/DeviceRow.vala:177
 msgid "Mouse & Touchpad Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:177
+#: src/DeviceRow.vala:181
 msgid "Printer Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:294
+#: src/DeviceRow.vala:298
 msgid "Disconnect"
 msgstr ""
 
-#: src/DeviceRow.vala:318
+#: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr ""

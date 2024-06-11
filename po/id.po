@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-12 22:19+0000\n"
+"POT-Creation-Date: 2024-06-11 17:47+0000\n"
 "PO-Revision-Date: 2023-05-23 18:06+0000\n"
 "Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
 "io>\n"
@@ -21,52 +21,52 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-12-25 05:27+0000\n"
 
-#: src/Plug.vala:33 src/MainView.vala:34
+#: src/Plug.vala:34 src/MainView.vala:33
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: src/Plug.vala:34
+#: src/Plug.vala:35
 msgid "Configure Bluetooth Settings"
 msgstr "Atur Pengaturan Bluetooth"
 
-#: src/MainView.vala:41
+#: src/MainView.vala:39
 msgid "No Devices Found"
 msgstr "Tidak ada Perangkat Ditemukan"
 
-#: src/MainView.vala:42
+#: src/MainView.vala:40
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Pastikan perangkat Anda terlihat dan siap dipasangkan."
 
-#: src/MainView.vala:64
+#: src/MainView.vala:62
 msgid "Discovering"
 msgstr "Menemukan"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:156
+#: src/MainView.vala:152
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Sekarang dapat ditemukan sebagai \"%s\". Tidak dapat ditemukan saat halaman "
 "ini ditutup"
 
-#: src/MainView.vala:156
+#: src/MainView.vala:152
 msgid "Unknown"
 msgstr "Tidak diketahui"
 
-#: src/MainView.vala:158
+#: src/MainView.vala:154
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Tidak dapat ditemukan ketika Bluetooth mati"
 
-#: src/MainView.vala:160
+#: src/MainView.vala:156
 msgid "Not discoverable"
 msgstr "Tidak dapat ditemukan"
 
-#: src/MainView.vala:206
+#: src/MainView.vala:202
 msgid "Paired Devices"
 msgstr "Perangkat yang Dipasangkan"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:210
+#: src/MainView.vala:206
 msgid "Nearby Devices"
 msgstr "Perangkat Terdekat"
 
@@ -93,7 +93,7 @@ msgstr ""
 "Pastikan kode yang ditampilkan pada “%s” cocok dengan yang di bawah ini."
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
-#: src/DeviceRow.vala:281
+#: src/DeviceRow.vala:285
 msgid "Pair"
 msgstr "Pasangkan"
 
@@ -173,31 +173,31 @@ msgstr "Touchpad"
 msgid "Phone"
 msgstr "Telepon"
 
-#: src/DeviceRow.vala:138
+#: src/DeviceRow.vala:140
 msgid "Forget this device"
 msgstr "Lupakan perangkat ini"
 
-#: src/DeviceRow.vala:164
+#: src/DeviceRow.vala:168
 msgid "Sound Settings"
 msgstr "Pengaturan Suara"
 
-#: src/DeviceRow.vala:169
+#: src/DeviceRow.vala:173
 msgid "Keyboard Settings"
 msgstr "Pengaturan Papan Ketik"
 
-#: src/DeviceRow.vala:173
+#: src/DeviceRow.vala:177
 msgid "Mouse & Touchpad Settings"
 msgstr "Pengaturan Mouse & Touchpad"
 
-#: src/DeviceRow.vala:177
+#: src/DeviceRow.vala:181
 msgid "Printer Settings"
 msgstr "Pengaturan Printer"
 
-#: src/DeviceRow.vala:294
+#: src/DeviceRow.vala:298
 msgid "Disconnect"
 msgstr "Putuskan"
 
-#: src/DeviceRow.vala:318
+#: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "Sambungkan"
 
