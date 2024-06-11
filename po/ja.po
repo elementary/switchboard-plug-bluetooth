@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-12 22:19+0000\n"
-"PO-Revision-Date: 2024-05-07 05:13+0000\n"
+"PO-Revision-Date: 2024-05-27 07:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/ja/>\n"
@@ -127,7 +127,7 @@ msgstr "接続済み"
 
 #: src/DeviceRow.vala:47
 msgid "Connecting…"
-msgstr "接続しています…"
+msgstr "接続試行中…"
 
 #: src/DeviceRow.vala:49
 msgid "Disconnecting…"
