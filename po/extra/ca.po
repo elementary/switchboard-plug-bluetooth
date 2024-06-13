@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:47+0000\n"
-"PO-Revision-Date: 2023-10-17 15:10+0000\n"
+"PO-Revision-Date: 2024-06-13 08:33+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #: data/bluetooth.metainfo.xml.in:10
 msgid "Bluetooth Settings"
@@ -39,6 +39,8 @@ msgstr "Actualitzacions menors"
 #: data/bluetooth.metainfo.xml.in:38
 msgid "Fix missing link to audio settings for some headphones"
 msgstr ""
+"Correcció de l'enllaç que faltava a la configuració d'àudio d'alguns "
+"auriculars"
 
 #: data/bluetooth.metainfo.xml.in:39 data/bluetooth.metainfo.xml.in:52
 #: data/bluetooth.metainfo.xml.in:72 data/bluetooth.metainfo.xml.in:86
