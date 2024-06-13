@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:47+0000\n"
-"PO-Revision-Date: 2024-06-13 15:50+0000\n"
+"PO-Revision-Date: 2024-06-13 17:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/es/>\n"
@@ -39,6 +39,8 @@ msgstr "Actualizaciones menores"
 #: data/bluetooth.metainfo.xml.in:38
 msgid "Fix missing link to audio settings for some headphones"
 msgstr ""
+"Se corrige un enlace flotante a configuración de audio para algunos tipos de "
+"audífonos"
 
 #: data/bluetooth.metainfo.xml.in:39 data/bluetooth.metainfo.xml.in:52
 #: data/bluetooth.metainfo.xml.in:72 data/bluetooth.metainfo.xml.in:86
@@ -59,7 +61,9 @@ msgstr ""
 
 #: data/bluetooth.metainfo.xml.in:70
 msgid "Fallback to device type when name is not available"
-msgstr "Se recurre al tipo de dispositivo cuando el nombre no está disponible"
+msgstr ""
+"Se utiliza como alternativa el tipo de dispositivo cuando su nombre no está "
+"disponible"
 
 #: data/bluetooth.metainfo.xml.in:71
 msgid "Show \"Discovering\" indicator in an overlay bar"
@@ -71,13 +75,13 @@ msgstr "Correcciones"
 
 #: data/bluetooth.metainfo.xml.in:81
 msgid "Fix crash on devices without Bluetooth"
-msgstr "Se arregló un cierre inesperado con dispositivos sin Bluetooth"
+msgstr "Se corrigió una falla grave con dispositivos sin Bluetooth"
 
 #: data/bluetooth.metainfo.xml.in:85
 msgid "Move \"forget device\" button to each device row"
 msgstr ""
 "Se trasladó el botón «Olvidar dispositivo» hacia cada una de las filas de "
-"dispositivo"
+"dispositivos"
 
 #~ msgid "Pair with devices that require a password, key code, or confirmation"
 #~ msgstr ""
