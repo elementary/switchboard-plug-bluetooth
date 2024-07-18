@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-12 22:19+0000\n"
+"POT-Creation-Date: 2024-06-11 17:47+0000\n"
 "PO-Revision-Date: 2021-11-02 05:56+0000\n"
 "Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -27,47 +27,51 @@ msgstr "蓝牙设置"
 msgid "Configure Bluetooth Settings"
 msgstr "配置蓝牙设置"
 
-#: data/bluetooth.metainfo.xml.in:27
+#: data/bluetooth.metainfo.xml.in:28
 msgid "elementary, Inc."
 msgstr ""
 
-#: data/bluetooth.metainfo.xml.in:34 data/bluetooth.metainfo.xml.in:52
-#: data/bluetooth.metainfo.xml.in:67
+#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:50
+#: data/bluetooth.metainfo.xml.in:68 data/bluetooth.metainfo.xml.in:83
 msgid "Minor updates"
 msgstr "次要更新"
 
-#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:56
-#: data/bluetooth.metainfo.xml.in:70 data/bluetooth.metainfo.xml.in:77
+#: data/bluetooth.metainfo.xml.in:38
+msgid "Fix missing link to audio settings for some headphones"
+msgstr ""
+
+#: data/bluetooth.metainfo.xml.in:39 data/bluetooth.metainfo.xml.in:52
+#: data/bluetooth.metainfo.xml.in:72 data/bluetooth.metainfo.xml.in:86
 msgid "Updated translations"
 msgstr "翻译更新"
 
-#: data/bluetooth.metainfo.xml.in:43
+#: data/bluetooth.metainfo.xml.in:59
 msgid "Security update"
 msgstr "安全更新"
 
-#: data/bluetooth.metainfo.xml.in:45
+#: data/bluetooth.metainfo.xml.in:61
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
 msgstr "修复允许设备在没有明确用户授权的情况下配对的漏洞 (CVE-2021-21367)"
 
-#: data/bluetooth.metainfo.xml.in:54
+#: data/bluetooth.metainfo.xml.in:70
 msgid "Fallback to device type when name is not available"
 msgstr "名称不可用时回退到设备类型"
 
-#: data/bluetooth.metainfo.xml.in:55
+#: data/bluetooth.metainfo.xml.in:71
 msgid "Show \"Discovering\" indicator in an overlay bar"
 msgstr "在顶栏中显示“发现”指示器"
 
-#: data/bluetooth.metainfo.xml.in:63
+#: data/bluetooth.metainfo.xml.in:79
 msgid "Fixes"
 msgstr "修复"
 
-#: data/bluetooth.metainfo.xml.in:65
+#: data/bluetooth.metainfo.xml.in:81
 msgid "Fix crash on devices without Bluetooth"
 msgstr "修复没有蓝牙的设备崩溃"
 
-#: data/bluetooth.metainfo.xml.in:69
+#: data/bluetooth.metainfo.xml.in:85
 msgid "Move \"forget device\" button to each device row"
 msgstr "将“忘记设备”按钮移动到每个设备行"
 

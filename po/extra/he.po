@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-12 22:19+0000\n"
-"PO-Revision-Date: 2023-10-17 15:10+0000\n"
+"POT-Creation-Date: 2024-06-11 17:47+0000\n"
+"PO-Revision-Date: 2024-07-04 16:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/bluetooth.metainfo.xml.in:10
 msgid "Bluetooth Settings"
@@ -27,25 +27,29 @@ msgstr "הגדרות בלוטות׳"
 msgid "Configure Bluetooth Settings"
 msgstr "הגדרת תצורת בלוטות׳"
 
-#: data/bluetooth.metainfo.xml.in:27
+#: data/bluetooth.metainfo.xml.in:28
 msgid "elementary, Inc."
 msgstr "elementary בע״מ"
 
-#: data/bluetooth.metainfo.xml.in:34 data/bluetooth.metainfo.xml.in:52
-#: data/bluetooth.metainfo.xml.in:67
+#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:50
+#: data/bluetooth.metainfo.xml.in:68 data/bluetooth.metainfo.xml.in:83
 msgid "Minor updates"
 msgstr "עדכונים קלים"
 
-#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:56
-#: data/bluetooth.metainfo.xml.in:70 data/bluetooth.metainfo.xml.in:77
+#: data/bluetooth.metainfo.xml.in:38
+msgid "Fix missing link to audio settings for some headphones"
+msgstr "תוקן קישור חסר להגדרות שמע לחלק מהאוזניות"
+
+#: data/bluetooth.metainfo.xml.in:39 data/bluetooth.metainfo.xml.in:52
+#: data/bluetooth.metainfo.xml.in:72 data/bluetooth.metainfo.xml.in:86
 msgid "Updated translations"
 msgstr "תרגומים עודכנו"
 
-#: data/bluetooth.metainfo.xml.in:43
+#: data/bluetooth.metainfo.xml.in:59
 msgid "Security update"
 msgstr "עדכון אבטחה"
 
-#: data/bluetooth.metainfo.xml.in:45
+#: data/bluetooth.metainfo.xml.in:61
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
@@ -53,23 +57,23 @@ msgstr ""
 "תוקנה חולשה שאיפשרה למכשיר ליצור צימוד ללא אישור מפורש מהמשתמש "
 "(CVE-2021-21367)"
 
-#: data/bluetooth.metainfo.xml.in:54
+#: data/bluetooth.metainfo.xml.in:70
 msgid "Fallback to device type when name is not available"
 msgstr "לסגת לסוג מכשיר כאשר השם לא זמין"
 
-#: data/bluetooth.metainfo.xml.in:55
+#: data/bluetooth.metainfo.xml.in:71
 msgid "Show \"Discovering\" indicator in an overlay bar"
 msgstr "להציג מחוון „מתבצע גילוי” בסרגל על"
 
-#: data/bluetooth.metainfo.xml.in:63
+#: data/bluetooth.metainfo.xml.in:79
 msgid "Fixes"
 msgstr "תיקונים"
 
-#: data/bluetooth.metainfo.xml.in:65
+#: data/bluetooth.metainfo.xml.in:81
 msgid "Fix crash on devices without Bluetooth"
 msgstr "תיקון קריסה במכשירים בלי בלוטות׳"
 
-#: data/bluetooth.metainfo.xml.in:69
+#: data/bluetooth.metainfo.xml.in:85
 msgid "Move \"forget device\" button to each device row"
 msgstr "„לשכוח התקן” הועבר לכל שורת התקן"
 

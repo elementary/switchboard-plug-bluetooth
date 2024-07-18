@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-12 22:19+0000\n"
-"PO-Revision-Date: 2023-10-20 18:10+0000\n"
+"POT-Creation-Date: 2024-06-11 17:47+0000\n"
+"PO-Revision-Date: 2024-06-12 23:16+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "bluetooth-plug-extra/pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #: data/bluetooth.metainfo.xml.in:10
 msgid "Bluetooth Settings"
@@ -28,25 +28,29 @@ msgstr "Ustawienia Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Skonfiguruj ustawienia Bluetooth"
 
-#: data/bluetooth.metainfo.xml.in:27
+#: data/bluetooth.metainfo.xml.in:28
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/bluetooth.metainfo.xml.in:34 data/bluetooth.metainfo.xml.in:52
-#: data/bluetooth.metainfo.xml.in:67
+#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:50
+#: data/bluetooth.metainfo.xml.in:68 data/bluetooth.metainfo.xml.in:83
 msgid "Minor updates"
 msgstr "Pomniejsze aktualizacje"
 
-#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:56
-#: data/bluetooth.metainfo.xml.in:70 data/bluetooth.metainfo.xml.in:77
+#: data/bluetooth.metainfo.xml.in:38
+msgid "Fix missing link to audio settings for some headphones"
+msgstr "Naprawiono brakujący link do ustawień audio dla niektórych słuchawek"
+
+#: data/bluetooth.metainfo.xml.in:39 data/bluetooth.metainfo.xml.in:52
+#: data/bluetooth.metainfo.xml.in:72 data/bluetooth.metainfo.xml.in:86
 msgid "Updated translations"
 msgstr "Zaktualizowane tłumaczenia"
 
-#: data/bluetooth.metainfo.xml.in:43
+#: data/bluetooth.metainfo.xml.in:59
 msgid "Security update"
 msgstr "Aktualizacja bezpieczeństwa"
 
-#: data/bluetooth.metainfo.xml.in:45
+#: data/bluetooth.metainfo.xml.in:61
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
@@ -54,23 +58,23 @@ msgstr ""
 "Naprawiono problem pozwalający urządzeniu na sparowanie bez wyraźnej zgody "
 "użytkownika (CVE-2021-21367)"
 
-#: data/bluetooth.metainfo.xml.in:54
+#: data/bluetooth.metainfo.xml.in:70
 msgid "Fallback to device type when name is not available"
 msgstr "Wykorzystanie typu urządzenia gdy nazwa nie jest dostępna"
 
-#: data/bluetooth.metainfo.xml.in:55
+#: data/bluetooth.metainfo.xml.in:71
 msgid "Show \"Discovering\" indicator in an overlay bar"
 msgstr "Dodano indykator „Wykrywanie” w pasku przykrywającym"
 
-#: data/bluetooth.metainfo.xml.in:63
+#: data/bluetooth.metainfo.xml.in:79
 msgid "Fixes"
 msgstr "Poprawki"
 
-#: data/bluetooth.metainfo.xml.in:65
+#: data/bluetooth.metainfo.xml.in:81
 msgid "Fix crash on devices without Bluetooth"
 msgstr "Napraw awarie na urządzeniach bez Bluetooth"
 
-#: data/bluetooth.metainfo.xml.in:69
+#: data/bluetooth.metainfo.xml.in:85
 msgid "Move \"forget device\" button to each device row"
 msgstr "Przenieś przycisk „zapomnij urządzenie” do każdego wiersza urządzeń"
 

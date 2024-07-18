@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-12 22:19+0000\n"
+"POT-Creation-Date: 2024-06-11 17:47+0000\n"
 "PO-Revision-Date: 2023-03-01 03:25+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -20,54 +20,54 @@ msgstr ""
 "X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-03-14 08:29+0000\n"
 
-#: src/Plug.vala:33 src/MainView.vala:34
+#: src/Plug.vala:34 src/MainView.vala:33
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: src/Plug.vala:34
+#: src/Plug.vala:35
 msgid "Configure Bluetooth Settings"
 msgstr "Bluetooth-Einstellungen bearbeiten"
 
-#: src/MainView.vala:41
+#: src/MainView.vala:39
 msgid "No Devices Found"
 msgstr "Kein Gerät erkannt"
 
-#: src/MainView.vala:42
+#: src/MainView.vala:40
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Bitte stellen Sie sicher, dass Ihre Geräte sichtbar und bereit zum Koppeln "
 "sind."
 
-#: src/MainView.vala:64
+#: src/MainView.vala:62
 msgid "Discovering"
 msgstr "Erkennen"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:156
+#: src/MainView.vala:152
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Jetzt als »%s« sichtbar. Nicht mehr sichtbar, wenn diese Seite geschlossen "
 "ist"
 
-#: src/MainView.vala:156
+#: src/MainView.vala:152
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: src/MainView.vala:158
+#: src/MainView.vala:154
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Nicht sichtbar, wenn Bluetooth ausgeschaltet ist"
 
-#: src/MainView.vala:160
+#: src/MainView.vala:156
 msgid "Not discoverable"
 msgstr "Nicht sichtbar"
 
-#: src/MainView.vala:206
+#: src/MainView.vala:202
 msgid "Paired Devices"
 msgstr "Gekoppelte Geräte"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:210
+#: src/MainView.vala:206
 msgid "Nearby Devices"
 msgstr "Geräte in Ihrer Nähe"
 
@@ -95,7 +95,7 @@ msgstr ""
 "angezeigten übereinstimmt."
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
-#: src/DeviceRow.vala:281
+#: src/DeviceRow.vala:285
 msgid "Pair"
 msgstr "Koppeln"
 
@@ -176,31 +176,31 @@ msgstr "Tastfeld"
 msgid "Phone"
 msgstr "Telefon"
 
-#: src/DeviceRow.vala:138
+#: src/DeviceRow.vala:140
 msgid "Forget this device"
 msgstr "Dieses Gerät vergessen"
 
-#: src/DeviceRow.vala:164
+#: src/DeviceRow.vala:168
 msgid "Sound Settings"
 msgstr "Audioeinstellungen"
 
-#: src/DeviceRow.vala:169
+#: src/DeviceRow.vala:173
 msgid "Keyboard Settings"
 msgstr "Tastatureinstellungen"
 
-#: src/DeviceRow.vala:173
+#: src/DeviceRow.vala:177
 msgid "Mouse & Touchpad Settings"
 msgstr "Maus- und Touchpad-Einstellungen"
 
-#: src/DeviceRow.vala:177
+#: src/DeviceRow.vala:181
 msgid "Printer Settings"
 msgstr "Druckereinstellungen"
 
-#: src/DeviceRow.vala:294
+#: src/DeviceRow.vala:298
 msgid "Disconnect"
 msgstr "Verbindung trennen"
 
-#: src/DeviceRow.vala:318
+#: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "Verbinden"
 

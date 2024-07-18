@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-12 22:19+0000\n"
+"POT-Creation-Date: 2024-06-11 17:47+0000\n"
 "PO-Revision-Date: 2020-10-30 00:15+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,56 +16,56 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-02 05:59+0000\n"
 
-#: src/Plug.vala:33 src/MainView.vala:34
+#: src/Plug.vala:34 src/MainView.vala:33
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: src/Plug.vala:34
+#: src/Plug.vala:35
 msgid "Configure Bluetooth Settings"
 msgstr "Prilagodite Bluetooth postavke"
 
-#: src/MainView.vala:41
+#: src/MainView.vala:39
 msgid "No Devices Found"
 msgstr "Nema pronađenih uređaja"
 
-#: src/MainView.vala:42
+#: src/MainView.vala:40
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Pobrinite se da je vaš uređaj vidljiv i spreman za uparivanje."
 
-#: src/MainView.vala:64
+#: src/MainView.vala:62
 msgid "Discovering"
 msgstr "Otkrivanje"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:156
+#: src/MainView.vala:152
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Sada je otkriven kao \"%s\". Neće biti otkriven kada se ova stranica zatvori"
 
-#: src/MainView.vala:156
+#: src/MainView.vala:152
 msgid "Unknown"
 msgstr "Nepoznato"
 
-#: src/MainView.vala:158
+#: src/MainView.vala:154
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Nemoguće otkrivanje kada je Bluetooth isključen"
 
-#: src/MainView.vala:160
+#: src/MainView.vala:156
 msgid "Not discoverable"
 msgstr "Nemoguće otkrivanje"
 
-#: src/MainView.vala:206
+#: src/MainView.vala:202
 msgid "Paired Devices"
 msgstr "Upareni uređaji"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:210
+#: src/MainView.vala:206
 msgid "Nearby Devices"
 msgstr "Obližnji uređaji"
 
@@ -92,7 +92,7 @@ msgstr ""
 "Pobrinite se da kôd prikazan na “%s” se podudara s onim navedenim dolje."
 
 #: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
-#: src/DeviceRow.vala:281
+#: src/DeviceRow.vala:285
 msgid "Pair"
 msgstr "Upari"
 
@@ -171,32 +171,32 @@ msgstr "Dodirnik"
 msgid "Phone"
 msgstr ""
 
-#: src/DeviceRow.vala:138
+#: src/DeviceRow.vala:140
 #, fuzzy
 msgid "Forget this device"
 msgstr "Zaboravi odabrani uređaj"
 
-#: src/DeviceRow.vala:164
+#: src/DeviceRow.vala:168
 msgid "Sound Settings"
 msgstr "Postavke zvuka"
 
-#: src/DeviceRow.vala:169
+#: src/DeviceRow.vala:173
 msgid "Keyboard Settings"
 msgstr "Postavke tipkovnice"
 
-#: src/DeviceRow.vala:173
+#: src/DeviceRow.vala:177
 msgid "Mouse & Touchpad Settings"
 msgstr "Postavke miša i dodirnika"
 
-#: src/DeviceRow.vala:177
+#: src/DeviceRow.vala:181
 msgid "Printer Settings"
 msgstr "Postavke pisača"
 
-#: src/DeviceRow.vala:294
+#: src/DeviceRow.vala:298
 msgid "Disconnect"
 msgstr "Prekini povezivanje"
 
-#: src/DeviceRow.vala:318
+#: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "Povezivanje"
 

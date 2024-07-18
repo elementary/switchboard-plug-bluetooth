@@ -162,6 +162,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
         switch (device.icon) {
             case "audio-card":
+            case "audio-headphones":
             case "audio-headset":
                 settings_button.uri = "settings://sound";
                 settings_button.tooltip_text = _("Sound Settings");
@@ -172,7 +173,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 settings_button.tooltip_text = _("Keyboard Settings");
                 break;
             case "input-mouse":
-                settings_button.uri = "settings://input/mouse";
+                settings_button.uri = "settings://input/pointer/mouse";
                 settings_button.tooltip_text = _("Mouse & Touchpad Settings");
                 break;
             case "printer":

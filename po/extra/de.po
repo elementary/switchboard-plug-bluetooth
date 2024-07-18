@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-12 22:19+0000\n"
+"POT-Creation-Date: 2024-06-11 17:47+0000\n"
 "PO-Revision-Date: 2023-10-17 15:10+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -27,25 +27,29 @@ msgstr "Bluetooth-Einstellungen"
 msgid "Configure Bluetooth Settings"
 msgstr "Bluetooth-Einstellungen bearbeiten"
 
-#: data/bluetooth.metainfo.xml.in:27
+#: data/bluetooth.metainfo.xml.in:28
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/bluetooth.metainfo.xml.in:34 data/bluetooth.metainfo.xml.in:52
-#: data/bluetooth.metainfo.xml.in:67
+#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:50
+#: data/bluetooth.metainfo.xml.in:68 data/bluetooth.metainfo.xml.in:83
 msgid "Minor updates"
 msgstr "Kleinere Aktualisierungen"
 
-#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:56
-#: data/bluetooth.metainfo.xml.in:70 data/bluetooth.metainfo.xml.in:77
+#: data/bluetooth.metainfo.xml.in:38
+msgid "Fix missing link to audio settings for some headphones"
+msgstr ""
+
+#: data/bluetooth.metainfo.xml.in:39 data/bluetooth.metainfo.xml.in:52
+#: data/bluetooth.metainfo.xml.in:72 data/bluetooth.metainfo.xml.in:86
 msgid "Updated translations"
 msgstr "Aktualisierte Übersetzungen"
 
-#: data/bluetooth.metainfo.xml.in:43
+#: data/bluetooth.metainfo.xml.in:59
 msgid "Security update"
 msgstr "Sicherheitsupdate"
 
-#: data/bluetooth.metainfo.xml.in:45
+#: data/bluetooth.metainfo.xml.in:61
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
@@ -53,23 +57,23 @@ msgstr ""
 "Behebt ein Sicherheitsrisiko, dass es einem Gerät erlaubte, ohne Bestätigung "
 "gekoppelt zu werden (CVE-2021-21367)"
 
-#: data/bluetooth.metainfo.xml.in:54
+#: data/bluetooth.metainfo.xml.in:70
 msgid "Fallback to device type when name is not available"
 msgstr "Auf Gerätetyp zurückgreifen, wenn Gerätename nicht verfügbar ist"
 
-#: data/bluetooth.metainfo.xml.in:55
+#: data/bluetooth.metainfo.xml.in:71
 msgid "Show \"Discovering\" indicator in an overlay bar"
 msgstr "Zeige \"Geräte finden\" Indikator in einer Overlay Bar"
 
-#: data/bluetooth.metainfo.xml.in:63
+#: data/bluetooth.metainfo.xml.in:79
 msgid "Fixes"
 msgstr "Fehlerbehebungen"
 
-#: data/bluetooth.metainfo.xml.in:65
+#: data/bluetooth.metainfo.xml.in:81
 msgid "Fix crash on devices without Bluetooth"
 msgstr "Fehler behoben, der auf Geräten ohne Bluetooth zum Absturz führte"
 
-#: data/bluetooth.metainfo.xml.in:69
+#: data/bluetooth.metainfo.xml.in:85
 msgid "Move \"forget device\" button to each device row"
 msgstr "\"Gerät vergessen\"-Button zu dem jeweiligen Gerät verschoben"
 
