@@ -1,3 +1,9 @@
+io.elementary.settings.bluetooth (8.0.0) noble; urgency=medium
+
+  * Release 8.0.0
+
+ -- Danielle Foré <danielle@elementary.io>  Tue, 06 Aug 2024 08:28:14 -0700
+
 io.elementary.settings.bluetooth (2.3.6) bionic; urgency=medium
 
   * Release 2.3.6 (#179)
