@@ -12,7 +12,7 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-bluetooth/main/data/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-bluetooth/8.0.0/data/screenshot.png</image>
     </screenshot>
   </screenshots>
 
@@ -31,7 +31,7 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="8.0.0" date="2024-05-22" urgency="medium">
+    <release version="8.0.0" date="2024-07-24" urgency="medium">
       <description>
         <p>Minor updates</p>
         <ul>
@@ -45,7 +45,7 @@
       </issues>
     </release>
 
-    <release version="2.3.6" date="2021-07-13" urgency="medium">
+    <release version="2.3.6" date="2021-08-06" urgency="medium">
       <description>
         <p>Minor updates</p>
         <ul>
