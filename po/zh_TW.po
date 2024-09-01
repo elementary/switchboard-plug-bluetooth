@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:47+0000\n"
-"PO-Revision-Date: 2020-10-30 00:15+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-09-01 23:41+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-bluetooth/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
 #: src/Plug.vala:34 src/MainView.vala:33
@@ -144,7 +144,7 @@ msgstr "喇叭"
 
 #: src/DeviceRow.vala:100
 msgid "Controller"
-msgstr ""
+msgstr "手把"
 
 #: src/DeviceRow.vala:103
 msgid "Keyboard"
@@ -156,7 +156,7 @@ msgstr "滑鼠"
 
 #: src/DeviceRow.vala:109
 msgid "Tablet"
-msgstr ""
+msgstr "繪圖板"
 
 #: src/DeviceRow.vala:112
 msgid "Touchpad"
@@ -164,12 +164,11 @@ msgstr "觸控板"
 
 #: src/DeviceRow.vala:115
 msgid "Phone"
-msgstr ""
+msgstr "手機"
 
 #: src/DeviceRow.vala:140
-#, fuzzy
 msgid "Forget this device"
-msgstr "忘記選取裝置"
+msgstr "忘記這台裝置"
 
 #: src/DeviceRow.vala:168
 msgid "Sound Settings"
