@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:47+0000\n"
-"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"PO-Revision-Date: 2024-09-05 21:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-bluetooth/zh_Hant/>\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: src/Plug.vala:34 src/MainView.vala:33
 msgid "Bluetooth"
-msgstr "藍芽"
+msgstr "藍牙"
 
 #: src/Plug.vala:35
 msgid "Configure Bluetooth Settings"
-msgstr "調整藍芽設定"
+msgstr "調整藍牙設定"
 
 #: src/MainView.vala:39
 msgid "No Devices Found"
@@ -120,11 +120,11 @@ msgstr "配對中…"
 
 #: src/DeviceRow.vala:45
 msgid "Connected"
-msgstr "已連結"
+msgstr "已連接"
 
 #: src/DeviceRow.vala:47
 msgid "Connecting…"
-msgstr "連結中…"
+msgstr "連接中…"
 
 #: src/DeviceRow.vala:49
 msgid "Disconnecting…"
@@ -132,11 +132,11 @@ msgstr "中斷連接中…"
 
 #: src/DeviceRow.vala:52
 msgid "Unable to Connect"
-msgstr "無法連結"
+msgstr "無法連接"
 
 #: src/DeviceRow.vala:54
 msgid "Not Connected"
-msgstr "未連結"
+msgstr "未連接"
 
 #: src/DeviceRow.vala:97
 msgid "Speaker"
@@ -188,7 +188,7 @@ msgstr "印表機設定"
 
 #: src/DeviceRow.vala:298
 msgid "Disconnect"
-msgstr "中斷連結"
+msgstr "中斷連接"
 
 #: src/DeviceRow.vala:322
 msgid "Connect"
