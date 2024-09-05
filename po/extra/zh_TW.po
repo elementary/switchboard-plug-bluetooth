@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:47+0000\n"
-"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"PO-Revision-Date: 2024-09-05 21:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/bluetooth-plug-extra/zh_Hant/>\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: data/bluetooth.metainfo.xml.in:10
 msgid "Bluetooth Settings"
-msgstr "藍芽設定"
+msgstr "藍牙設定"
 
 #: data/bluetooth.metainfo.xml.in:11
 msgid "Configure Bluetooth Settings"
-msgstr "調整藍芽設定"
+msgstr "調整藍牙設定"
 
 #: data/bluetooth.metainfo.xml.in:28
 msgid "elementary, Inc."
@@ -53,7 +53,7 @@ msgstr "安全性更新"
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
-msgstr ""
+msgstr "修正造成裝置能夠在使用者未明確授權的脆弱性 (CVE-2021-21367)"
 
 #: data/bluetooth.metainfo.xml.in:70
 msgid "Fallback to device type when name is not available"
@@ -61,7 +61,7 @@ msgstr "裝置名稱不可用時改為使用裝置類型"
 
 #: data/bluetooth.metainfo.xml.in:71
 msgid "Show \"Discovering\" indicator in an overlay bar"
-msgstr ""
+msgstr "用覆蓋列顯示「探查中」指示器"
 
 #: data/bluetooth.metainfo.xml.in:79
 msgid "Fixes"
@@ -69,7 +69,7 @@ msgstr "修正"
 
 #: data/bluetooth.metainfo.xml.in:81
 msgid "Fix crash on devices without Bluetooth"
-msgstr "修正在沒有藍芽的裝置上崩潰的問題"
+msgstr "修正在沒有藍牙的裝置上崩潰的問題"
 
 #: data/bluetooth.metainfo.xml.in:85
 msgid "Move \"forget device\" button to each device row"
