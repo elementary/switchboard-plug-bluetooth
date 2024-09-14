@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:47+0000\n"
-"PO-Revision-Date: 2020-10-30 00:15+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-09-14 02:16+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-bluetooth/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -17,16 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
 #: src/Plug.vala:34 src/MainView.vala:33
 msgid "Bluetooth"
-msgstr "藍芽"
+msgstr "藍牙"
 
 #: src/Plug.vala:35
 msgid "Configure Bluetooth Settings"
-msgstr "藍芽設定"
+msgstr "調整藍牙設定"
 
 #: src/MainView.vala:39
 msgid "No Devices Found"
@@ -120,11 +120,11 @@ msgstr "配對中…"
 
 #: src/DeviceRow.vala:45
 msgid "Connected"
-msgstr "已連結"
+msgstr "已連接"
 
 #: src/DeviceRow.vala:47
 msgid "Connecting…"
-msgstr "連結中…"
+msgstr "連接中…"
 
 #: src/DeviceRow.vala:49
 msgid "Disconnecting…"
@@ -132,11 +132,11 @@ msgstr "中斷連接中…"
 
 #: src/DeviceRow.vala:52
 msgid "Unable to Connect"
-msgstr "無法連結"
+msgstr "無法連接"
 
 #: src/DeviceRow.vala:54
 msgid "Not Connected"
-msgstr "未連結"
+msgstr "未連接"
 
 #: src/DeviceRow.vala:97
 msgid "Speaker"
@@ -144,7 +144,7 @@ msgstr "喇叭"
 
 #: src/DeviceRow.vala:100
 msgid "Controller"
-msgstr ""
+msgstr "手把"
 
 #: src/DeviceRow.vala:103
 msgid "Keyboard"
@@ -156,7 +156,7 @@ msgstr "滑鼠"
 
 #: src/DeviceRow.vala:109
 msgid "Tablet"
-msgstr ""
+msgstr "繪圖板"
 
 #: src/DeviceRow.vala:112
 msgid "Touchpad"
@@ -164,20 +164,19 @@ msgstr "觸控板"
 
 #: src/DeviceRow.vala:115
 msgid "Phone"
-msgstr ""
+msgstr "手機"
 
 #: src/DeviceRow.vala:140
-#, fuzzy
 msgid "Forget this device"
-msgstr "忘記選取裝置"
+msgstr "忘記這台裝置"
 
 #: src/DeviceRow.vala:168
 msgid "Sound Settings"
-msgstr "音訊設定"
+msgstr "音效設定值"
 
 #: src/DeviceRow.vala:173
 msgid "Keyboard Settings"
-msgstr "鍵盤設定"
+msgstr "鍵盤設定值"
 
 #: src/DeviceRow.vala:177
 msgid "Mouse & Touchpad Settings"
@@ -189,7 +188,7 @@ msgstr "印表機設定"
 
 #: src/DeviceRow.vala:298
 msgid "Disconnect"
-msgstr "中斷連結"
+msgstr "中斷連接"
 
 #: src/DeviceRow.vala:322
 msgid "Connect"
