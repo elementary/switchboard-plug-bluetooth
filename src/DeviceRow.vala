@@ -75,7 +75,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             pixel_size = 32
         };
 
-        state = new Gtk.Image.from_icon_name ("user-offline");
+        state = new Gtk.Image.from_icon_name ("emblem-disabled");
         state.halign = Gtk.Align.END;
         state.valign = Gtk.Align.END;
 
@@ -290,14 +290,14 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 break;
             case Status.PAIRING:
                 connect_button.sensitive = false;
-                state.icon_name = "user-away";
+                state.icon_name = "emblem-mixed";
                 settings_button.visible = false;
                 forget_button.visible = false;
                 break;
             case Status.CONNECTED:
                 connect_button.label = _("Disconnect");
                 connect_button.sensitive = true;
-                state.icon_name = "user-available";
+                state.icon_name = "emblem-enabled";
                 if (settings_button.uri != "") {
                     settings_button.visible = true;
                 }
@@ -306,14 +306,14 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 break;
             case Status.CONNECTING:
                 connect_button.sensitive = false;
-                state.icon_name = "user-away";
+                state.icon_name = "emblem-mixed";
                 settings_button.visible = false;
                 forget_button.sensitive = false;
                 forget_button.visible = true;
                 break;
             case Status.DISCONNECTING:
                 connect_button.sensitive = false;
-                state.icon_name = "user-away";
+                state.icon_name = "emblem-mixed";
                 settings_button.visible = false;
                 forget_button.sensitive = false;
                 forget_button.visible = true;
@@ -321,20 +321,20 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             case Status.NOT_CONNECTED:
                 connect_button.label = _("Connect");
                 connect_button.sensitive = true;
-                state.icon_name = "user-offline";
+                state.icon_name = "emblem-disabled";
                 settings_button.visible = false;
                 forget_button.sensitive = true;
                 forget_button.visible = true;
                 break;
             case Status.UNABLE_TO_CONNECT:
                 connect_button.sensitive = true;
-                state.icon_name = "user-busy";
+                state.icon_name = "emblem-error";
                 settings_button.visible = false;
                 forget_button.visible = false;
                 break;
             case Status.UNABLE_TO_CONNECT_PAIRED:
                 connect_button.sensitive = true;
-                state.icon_name = "user-offline";
+                state.icon_name = "emblem-error";
                 settings_button.visible = false;
                 forget_button.sensitive = true;
                 forget_button.visible = true;
