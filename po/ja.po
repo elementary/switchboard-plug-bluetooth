@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-11 17:47+0000\n"
+"POT-Creation-Date: 2024-10-21 22:24+0000\n"
 "PO-Revision-Date: 2024-06-20 12:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -98,13 +98,15 @@ msgstr "ペアリング"
 msgid ""
 "“%s” would like to pair with this device. Make sure the code displayed on "
 "“%s” matches the one below."
-msgstr "“%s”はこのデバイスとペアリングしようとしています。“%s”に表示されているコード"
+msgstr ""
+"“%s”はこのデバイスとペアリングしようとしています。“%s”に表示されているコード"
 "が以下と一致することを確認してください。"
 
 #: src/PairDialog.vala:110
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
-msgstr "以下に表示されているコードを“%s”に入力してから、Enter キーを押してください。"
+msgstr ""
+"以下に表示されているコードを“%s”に入力してから、Enter キーを押してください。"
 
 #: src/PairDialog.vala:114
 #, c-format
