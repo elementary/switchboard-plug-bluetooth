@@ -1,3 +1,9 @@
+io.elementary.settings.bluetooth (8.0.1) noble; urgency=medium
+
+  * Release 8.0.1
+
+ -- elementary OS Team <builds@elementary.io>  Wed, 23 Oct 2024 10:05:35 -0700
+
 io.elementary.settings.bluetooth (8.0.0) noble; urgency=medium
 
   * Release 8.0.0
