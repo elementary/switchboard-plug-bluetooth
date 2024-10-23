@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-11 17:47+0000\n"
+"POT-Creation-Date: 2024-10-21 22:24+0000\n"
 "PO-Revision-Date: 2024-08-07 18:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -31,47 +31,49 @@ msgstr "ब्लूटूथ सेटिंग्ज कॉन्फिगर 
 msgid "elementary, Inc."
 msgstr "एलिमेंटरी, Inc ."
 
-#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:50
-#: data/bluetooth.metainfo.xml.in:68 data/bluetooth.metainfo.xml.in:83
+#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:45
+#: data/bluetooth.metainfo.xml.in:59 data/bluetooth.metainfo.xml.in:77
+#: data/bluetooth.metainfo.xml.in:92
 msgid "Minor updates"
 msgstr "किरकोळ अद्यतने"
 
-#: data/bluetooth.metainfo.xml.in:38
-msgid "Fix missing link to audio settings for some headphones"
-msgstr ""
-
-#: data/bluetooth.metainfo.xml.in:39 data/bluetooth.metainfo.xml.in:52
-#: data/bluetooth.metainfo.xml.in:72 data/bluetooth.metainfo.xml.in:86
+#: data/bluetooth.metainfo.xml.in:38 data/bluetooth.metainfo.xml.in:48
+#: data/bluetooth.metainfo.xml.in:61 data/bluetooth.metainfo.xml.in:81
+#: data/bluetooth.metainfo.xml.in:95
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/bluetooth.metainfo.xml.in:59
+#: data/bluetooth.metainfo.xml.in:47
+msgid "Fix missing link to audio settings for some headphones"
+msgstr ""
+
+#: data/bluetooth.metainfo.xml.in:68
 msgid "Security update"
 msgstr ""
 
-#: data/bluetooth.metainfo.xml.in:61
+#: data/bluetooth.metainfo.xml.in:70
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
 msgstr ""
 
-#: data/bluetooth.metainfo.xml.in:70
+#: data/bluetooth.metainfo.xml.in:79
 msgid "Fallback to device type when name is not available"
 msgstr ""
 
-#: data/bluetooth.metainfo.xml.in:71
+#: data/bluetooth.metainfo.xml.in:80
 msgid "Show \"Discovering\" indicator in an overlay bar"
 msgstr ""
 
-#: data/bluetooth.metainfo.xml.in:79
+#: data/bluetooth.metainfo.xml.in:88
 msgid "Fixes"
 msgstr "निराकारणे"
 
-#: data/bluetooth.metainfo.xml.in:81
+#: data/bluetooth.metainfo.xml.in:90
 msgid "Fix crash on devices without Bluetooth"
 msgstr "ब्लूटूथशिवाय डिव्हाइसवर क्रॅश निराकरण करा"
 
-#: data/bluetooth.metainfo.xml.in:85
+#: data/bluetooth.metainfo.xml.in:94
 msgid "Move \"forget device\" button to each device row"
 msgstr "प्रत्येक डिव्हाइस पंक्तीवर \"डिव्हाइस विसरा\" बटण हलवा"
 
