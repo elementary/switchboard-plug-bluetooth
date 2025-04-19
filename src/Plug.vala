@@ -62,13 +62,11 @@ public class Bluetooth.Plug : Switchboard.Plug {
     }
 
     public override void shown () {
-        manager.register_agent.begin (main_view.get_root () as Gtk.Window);
         manager.set_global_state.begin (true); /* Also sets discoverable true and starts discovery */
     }
 
     public override void hidden () {
         Application.get_default ().hold ();
-        manager.unregister_agent.begin ();
         manager.discoverable = false; /* Does not change is_powered or connections*/
         manager.stop_discovery.begin (() => {
             Application.get_default ().release ();
