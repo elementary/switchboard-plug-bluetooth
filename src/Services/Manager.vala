@@ -86,9 +86,6 @@ public class Bluetooth.Services.ObjectManager : Object {
     [CCode (cname="bluetooth_services_adapter_proxy_get_type")]
     extern static GLib.Type get_adapter_proxy_type ();
 
-    [CCode (cname="bluetooth_services_agent_manager_proxy_get_type")]
-    extern static GLib.Type get_agent_manager_proxy_type ();
-
     private GLib.Type object_manager_proxy_get_type (DBusObjectManagerClient manager, string object_path, string? interface_name) {
         if (interface_name == null)
             return typeof (GLib.DBusObjectProxy);
@@ -98,8 +95,6 @@ public class Bluetooth.Services.ObjectManager : Object {
                 return get_device_proxy_type ();
             case "org.bluez.Adapter1":
                 return get_adapter_proxy_type ();
-            case "org.bluez.AgentManager1":
-                return get_agent_manager_proxy_type ();
             default:
                 return typeof (GLib.DBusProxy);
         }
