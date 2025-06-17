@@ -26,7 +26,8 @@ public interface Bluetooth.Services.AgentManager : Object {
 }
 
 public class Bluetooth.Services.ObjectManager : Object {
-    private const string SCHEMA = "io.elementary.desktop.wingpanel.bluetooth";
+    private const string DAEMON_SCHEMA = "io.elementary.desktop.bluetooth";
+    private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel.bluetooth";
     public signal void adapter_added (Bluetooth.Services.Adapter adapter);
     public signal void adapter_removed (Bluetooth.Services.Adapter adapter);
     public signal void device_added (Bluetooth.Services.Device device);
@@ -48,9 +49,14 @@ public class Bluetooth.Services.ObjectManager : Object {
     private Bluetooth.Services.Agent agent;
 
     construct {
-        var settings_schema = SettingsSchemaSource.get_default ().lookup (SCHEMA, true);
+        var settings_schema = SettingsSchemaSource.get_default ().lookup (DAEMON_SCHEMA, true);
         if (settings_schema != null) {
-            settings = new Settings (SCHEMA);
+            settings = new Settings (DAEMON_SCHEMA);
+        } else {
+            settings_schema = SettingsSchemaSource.get_default ().lookup (PANEL_SCHEMA, true);
+            if (settings_schema != null) {
+                settings = new Settings (PANEL_SCHEMA);
+            }
         }
         create_manager.begin ();
 
