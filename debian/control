@@ -14,7 +14,9 @@ Homepage: https://github.com/elementary/switchboard-plug-bluetooth
 
 Package: io.elementary.settings.bluetooth
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: io.elementary.bluetooth-daemon (>= 1.1.0),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Enhances: switchboard
 Description: Bluetooth plug for Switchboard
  This plug configures bluetooth devices.
