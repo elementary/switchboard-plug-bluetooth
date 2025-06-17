@@ -42,6 +42,7 @@ public class Bluetooth.Services.ObjectManager : Object {
     public bool is_connected {get; private set; default = false; }
 
     private bool is_registered = false;
+    private string enabled_key = "enabled";
 
     private Settings? settings = null;
     private GLib.DBusObjectManagerClient object_manager;
@@ -56,6 +57,7 @@ public class Bluetooth.Services.ObjectManager : Object {
             settings_schema = SettingsSchemaSource.get_default ().lookup (PANEL_SCHEMA, true);
             if (settings_schema != null) {
                 settings = new Settings (PANEL_SCHEMA);
+                enabled_key = "bluetooth-enabled";
             }
         }
         create_manager.begin ();
@@ -384,7 +386,7 @@ public class Bluetooth.Services.ObjectManager : Object {
         }
 
         if (settings != null) {
-            settings.set_boolean ("bluetooth-enabled", state);
+            settings.set_boolean (enabled_key, state);
         }
 
         if (!state) {
