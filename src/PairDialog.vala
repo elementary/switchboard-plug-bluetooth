@@ -51,7 +51,7 @@ public class PairDialog : Granite.MessageDialog {
             buttons: Gtk.ButtonsType.CANCEL,
             object_path: object_path,
             passkey: "%u".printf (passkey),
-            primary_text: _("Confirm Bluetooth Passkey"),
+            primary_text: _("Enter Bluetooth Passkey"),
             transient_for: main_window
         );
     }
@@ -109,12 +109,6 @@ public class PairDialog : Granite.MessageDialog {
                 confirm_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
                 break;
             case AuthType.DISPLAY_PASSKEY:
-                badge_icon = new ThemedIcon ("dialog-password");
-                secondary_text = _("“%s” would like to pair with this device. Make sure the code displayed on “%s” matches the one below.").printf (device_name, device_name);
-
-                var confirm_button = add_button (_("Pair"), Gtk.ResponseType.ACCEPT);
-                confirm_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
-                break;
             case AuthType.DISPLAY_PIN_CODE:
                 badge_icon = new ThemedIcon ("dialog-password");
                 secondary_text = _("Type the code displayed below on “%s”, followed by Enter.").printf (device_name);
