@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-21 22:24+0000\n"
+"POT-Creation-Date: 2025-06-18 19:42+0000\n"
 "PO-Revision-Date: 2020-10-30 00:15+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
-#: src/Plug.vala:34 src/MainView.vala:33
+#: src/Plug.vala:34 src/MainView.vala:32
 msgid "Bluetooth"
 msgstr "Bludento"
 
@@ -28,43 +28,43 @@ msgstr "Bludento"
 msgid "Configure Bluetooth Settings"
 msgstr "Agordi bludenton"
 
-#: src/MainView.vala:39
+#: src/MainView.vala:40
 msgid "No Devices Found"
 msgstr "Neniu aparato trovita"
 
-#: src/MainView.vala:40
+#: src/MainView.vala:41
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Bonvolu certiĝi, ke viaj aparatoj estas detekteblaj kaj pretaj je kuplo."
 
-#: src/MainView.vala:62
+#: src/MainView.vala:63
 msgid "Discovering"
 msgstr "Detektanta"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "Nun detektebla kiel „%s“. Ne detektebla kiam ĉi paĝo estas fermita"
 
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 msgid "Unknown"
 msgstr "Nekonata"
 
-#: src/MainView.vala:154
+#: src/MainView.vala:155
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Ne detektebla dum bludento estas malŝaltita"
 
-#: src/MainView.vala:156
+#: src/MainView.vala:157
 msgid "Not discoverable"
 msgstr "Ne detektebla"
 
-#: src/MainView.vala:202
+#: src/MainView.vala:203
 msgid "Paired Devices"
 msgstr "Kuplitaj aparatoj"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:206
+#: src/MainView.vala:207
 msgid "Nearby Devices"
 msgstr "Proksimaj aparatoj"
 
@@ -72,7 +72,13 @@ msgstr "Proksimaj aparatoj"
 msgid "Confirm Bluetooth Pairing"
 msgstr "Konfirmi bludentan kupladon"
 
-#: src/PairDialog.vala:54 src/PairDialog.vala:65
+#: src/PairDialog.vala:54
+#, fuzzy
+#| msgid "Confirm Bluetooth Passkey"
+msgid "Enter Bluetooth Passkey"
+msgstr "Konfirmi bludentan pasnombron"
+
+#: src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
 msgstr "Konfirmi bludentan pasnombron"
 
@@ -89,26 +95,16 @@ msgstr "Nekonata bludenta aparato"
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "Certiĝu pri kongruo de la kodo montrita ĉe „%s“ kun tiu malsupre."
 
-#: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
-#: src/DeviceRow.vala:285
+#: src/PairDialog.vala:98 src/PairDialog.vala:110 src/DeviceRow.vala:285
 msgid "Pair"
 msgstr "Kupli"
 
-#: src/PairDialog.vala:103
-#, c-format
-msgid ""
-"“%s” would like to pair with this device. Make sure the code displayed on "
-"“%s” matches the one below."
-msgstr ""
-"„%s“ petas kupladon kun ĉi aparato. Certiĝu pri kongruo de la kodo montrita "
-"ĉe „%s“ kun tiu malsupre."
-
-#: src/PairDialog.vala:110
+#: src/PairDialog.vala:104
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr "Tajpu la ĉi malsupran kodon ĉe „%s“, kaj premu la enigan klavon."
 
-#: src/PairDialog.vala:114
+#: src/PairDialog.vala:108
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "„%s“ petas kupladon kun ĉi aparato."
@@ -198,3 +194,11 @@ msgstr "Malkonekti"
 #: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "Konekti"
+
+#, c-format
+#~ msgid ""
+#~ "“%s” would like to pair with this device. Make sure the code displayed on "
+#~ "“%s” matches the one below."
+#~ msgstr ""
+#~ "„%s“ petas kupladon kun ĉi aparato. Certiĝu pri kongruo de la kodo "
+#~ "montrita ĉe „%s“ kun tiu malsupre."

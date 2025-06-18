@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-21 22:24+0000\n"
+"POT-Creation-Date: 2025-06-18 19:42+0000\n"
 "PO-Revision-Date: 2023-03-01 03:25+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-03-14 08:29+0000\n"
 
-#: src/Plug.vala:34 src/MainView.vala:33
+#: src/Plug.vala:34 src/MainView.vala:32
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -28,46 +28,46 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Bluetooth-Einstellungen bearbeiten"
 
-#: src/MainView.vala:39
+#: src/MainView.vala:40
 msgid "No Devices Found"
 msgstr "Kein Gerät erkannt"
 
-#: src/MainView.vala:40
+#: src/MainView.vala:41
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Bitte stellen Sie sicher, dass Ihre Geräte sichtbar und bereit zum Koppeln "
 "sind."
 
-#: src/MainView.vala:62
+#: src/MainView.vala:63
 msgid "Discovering"
 msgstr "Erkennen"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Jetzt als »%s« sichtbar. Nicht mehr sichtbar, wenn diese Seite geschlossen "
 "ist"
 
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: src/MainView.vala:154
+#: src/MainView.vala:155
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Nicht sichtbar, wenn Bluetooth ausgeschaltet ist"
 
-#: src/MainView.vala:156
+#: src/MainView.vala:157
 msgid "Not discoverable"
 msgstr "Nicht sichtbar"
 
-#: src/MainView.vala:202
+#: src/MainView.vala:203
 msgid "Paired Devices"
 msgstr "Gekoppelte Geräte"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:206
+#: src/MainView.vala:207
 msgid "Nearby Devices"
 msgstr "Geräte in Ihrer Nähe"
 
@@ -75,7 +75,13 @@ msgstr "Geräte in Ihrer Nähe"
 msgid "Confirm Bluetooth Pairing"
 msgstr "Bluetooth-Koppelung bestätigen"
 
-#: src/PairDialog.vala:54 src/PairDialog.vala:65
+#: src/PairDialog.vala:54
+#, fuzzy
+#| msgid "Confirm Bluetooth Passkey"
+msgid "Enter Bluetooth Passkey"
+msgstr "Bluetooth-Code bestätigen"
+
+#: src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
 msgstr "Bluetooth-Code bestätigen"
 
@@ -94,28 +100,18 @@ msgstr ""
 "Stellen Sie sicher, dass der auf »%s«angezeigte Code mit dem unten "
 "angezeigten übereinstimmt."
 
-#: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
-#: src/DeviceRow.vala:285
+#: src/PairDialog.vala:98 src/PairDialog.vala:110 src/DeviceRow.vala:285
 msgid "Pair"
 msgstr "Koppeln"
 
-#: src/PairDialog.vala:103
-#, c-format
-msgid ""
-"“%s” would like to pair with this device. Make sure the code displayed on "
-"“%s” matches the one below."
-msgstr ""
-"»%s« möchte sich mit diesem Gerät koppeln. Stellen Sie sicher, dass der "
-"Code, der auf »%s« angezeigt wird, mit dem unten angezeigten übereinstimmt."
-
-#: src/PairDialog.vala:110
+#: src/PairDialog.vala:104
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
 "Geben Sie den unten angezeigten Code auf »%s« ein, gefolgt von der "
 "Eingabetaste."
 
-#: src/PairDialog.vala:114
+#: src/PairDialog.vala:108
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "»%s« möchte sich mit diesem Gerät koppeln."
@@ -203,6 +199,15 @@ msgstr "Verbindung trennen"
 #: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "Verbinden"
+
+#, c-format
+#~ msgid ""
+#~ "“%s” would like to pair with this device. Make sure the code displayed on "
+#~ "“%s” matches the one below."
+#~ msgstr ""
+#~ "»%s« möchte sich mit diesem Gerät koppeln. Stellen Sie sicher, dass der "
+#~ "Code, der auf »%s« angezeigt wird, mit dem unten angezeigten "
+#~ "übereinstimmt."
 
 #~ msgid "Sharing Settings"
 #~ msgstr "Freigabeeinstellungen"

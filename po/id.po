@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-21 22:24+0000\n"
+"POT-Creation-Date: 2025-06-18 19:42+0000\n"
 "PO-Revision-Date: 2023-05-23 18:06+0000\n"
-"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
-"io>\n"
+"Last-Translator: Faisal Rachmadin "
+"<frachmadin@users.noreply.l10n.elementary.io>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-bluetooth/id/>\n"
 "Language: id\n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-12-25 05:27+0000\n"
 
-#: src/Plug.vala:34 src/MainView.vala:33
+#: src/Plug.vala:34 src/MainView.vala:32
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -29,44 +29,44 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Atur Pengaturan Bluetooth"
 
-#: src/MainView.vala:39
+#: src/MainView.vala:40
 msgid "No Devices Found"
 msgstr "Tidak ada Perangkat Ditemukan"
 
-#: src/MainView.vala:40
+#: src/MainView.vala:41
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Pastikan perangkat Anda terlihat dan siap dipasangkan."
 
-#: src/MainView.vala:62
+#: src/MainView.vala:63
 msgid "Discovering"
 msgstr "Menemukan"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Sekarang dapat ditemukan sebagai \"%s\". Tidak dapat ditemukan saat halaman "
 "ini ditutup"
 
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 msgid "Unknown"
 msgstr "Tidak diketahui"
 
-#: src/MainView.vala:154
+#: src/MainView.vala:155
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Tidak dapat ditemukan ketika Bluetooth mati"
 
-#: src/MainView.vala:156
+#: src/MainView.vala:157
 msgid "Not discoverable"
 msgstr "Tidak dapat ditemukan"
 
-#: src/MainView.vala:202
+#: src/MainView.vala:203
 msgid "Paired Devices"
 msgstr "Perangkat yang Dipasangkan"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:206
+#: src/MainView.vala:207
 msgid "Nearby Devices"
 msgstr "Perangkat Terdekat"
 
@@ -74,7 +74,13 @@ msgstr "Perangkat Terdekat"
 msgid "Confirm Bluetooth Pairing"
 msgstr "Konfirmasi Pemasangan Bluetooth"
 
-#: src/PairDialog.vala:54 src/PairDialog.vala:65
+#: src/PairDialog.vala:54
+#, fuzzy
+#| msgid "Confirm Bluetooth Passkey"
+msgid "Enter Bluetooth Passkey"
+msgstr "Konfirmasi Kunci Sandi Bluetooth"
+
+#: src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
 msgstr "Konfirmasi Kunci Sandi Bluetooth"
 
@@ -92,27 +98,17 @@ msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
 "Pastikan kode yang ditampilkan pada “%s” cocok dengan yang di bawah ini."
 
-#: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
-#: src/DeviceRow.vala:285
+#: src/PairDialog.vala:98 src/PairDialog.vala:110 src/DeviceRow.vala:285
 msgid "Pair"
 msgstr "Pasangkan"
 
-#: src/PairDialog.vala:103
-#, c-format
-msgid ""
-"“%s” would like to pair with this device. Make sure the code displayed on "
-"“%s” matches the one below."
-msgstr ""
-"“%s” ingin memasangkan dengan perangkat ini. Pastikan kode yang ditampilkan "
-"pada “%s” cocok dengan yang di bawah ini."
-
-#: src/PairDialog.vala:110
+#: src/PairDialog.vala:104
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
 "Ketik kode yang ditampilkan di bawah ini pada “%s”, diikuti oleh Enter."
 
-#: src/PairDialog.vala:114
+#: src/PairDialog.vala:108
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "“%s” ingin memasangkan dengan perangkat ini."
@@ -200,6 +196,14 @@ msgstr "Putuskan"
 #: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "Sambungkan"
+
+#, c-format
+#~ msgid ""
+#~ "“%s” would like to pair with this device. Make sure the code displayed on "
+#~ "“%s” matches the one below."
+#~ msgstr ""
+#~ "“%s” ingin memasangkan dengan perangkat ini. Pastikan kode yang "
+#~ "ditampilkan pada “%s” cocok dengan yang di bawah ini."
 
 #~ msgid "Sharing Settings"
 #~ msgstr "Pengaturan Berbagi Pakai"
