@@ -222,11 +222,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
             }
         });
 
-        connect_button.clicked.connect (() => {
-            button_clicked.begin ();
-            // If pairing is successful, mark devices as trusted so they autoconnect
-            device.trusted = device.paired;
-        });
+        connect_button.clicked.connect (() => on_activate.begin ());
 
         forget_button.clicked.connect (() => {
             try {
@@ -238,11 +234,13 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
 
     }
 
-    private async void button_clicked () {
+    public async void on_activate () {
         if (!device.paired) {
             set_status (Status.PAIRING);
             try {
                 yield device.pair ();
+                // If pairing is successful, mark devices as trusted so they autoconnect
+                device.trusted = device.paired;
             } catch (Error e) {
                 set_status (Status.UNABLE_TO_CONNECT);
                 critical (e.message);

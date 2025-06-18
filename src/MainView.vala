@@ -41,13 +41,14 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
             description = _("Please ensure that your devices are visible and ready for pairing.")
         };
 
-        list_box = new Gtk.ListBox ();
+        list_box = new Gtk.ListBox () {
+            activate_on_single_click = false,
+            selection_mode = BROWSE
+        };
         list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare_rows);
         list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
         list_box.set_placeholder (empty_alert);
-        list_box.selection_mode = Gtk.SelectionMode.BROWSE;
-        list_box.activate_on_single_click = true;
 
         var scrolled = new Gtk.ScrolledWindow () {
             child = list_box,
@@ -75,6 +76,10 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         } else {
             manager.notify["retrieve-finished"].connect (complete_setup);
         }
+
+        list_box.row_activated.connect ((row) => {
+            ((DeviceRow) row).on_activate.begin ();
+        });
 
         status_switch.notify["active"].connect (() => {
             manager.set_global_state.begin (status_switch.active);
