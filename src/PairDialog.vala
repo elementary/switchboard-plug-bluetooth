@@ -89,10 +89,8 @@ public class PairDialog : Granite.MessageDialog {
             // Close when pins or passkeys are accepted for example
             ((DBusProxy)device).g_properties_changed.connect ((changed, invalid) => {
                 var paired = changed.lookup_value ("Paired", new VariantType ("b"));
-                if (paired != null) {
-                    if (device.paired) {
-                        response (Gtk.ResponseType.ACCEPT);
-                    }
+                if (paired != null && device.paired) {
+                    response (Gtk.ResponseType.ACCEPT);
                 }
             });
         } catch (IOError e) {
