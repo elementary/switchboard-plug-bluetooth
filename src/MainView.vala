@@ -83,8 +83,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
     private void complete_setup () {
         foreach (var device in manager.get_devices ()) {
-            var adapter = manager.get_adapter_from_path (device.adapter);
-            var row = new DeviceRow (device, adapter);
+            var row = new DeviceRow (device);
             list_box.append (row);
         }
 
@@ -100,8 +99,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
         /* Now retrieve finished, we can connect manager signals */
        manager.device_added.connect ((device) => {
-            var adapter = manager.get_adapter_from_path (device.adapter);
-            var row = new DeviceRow (device, adapter);
+            var row = new DeviceRow (device);
             list_box.append (row);
             if (list_box.get_selected_row () == null) {
                 list_box.select_row (row);
