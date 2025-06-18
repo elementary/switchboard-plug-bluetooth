@@ -85,6 +85,16 @@ public class PairDialog : Granite.MessageDialog {
             device = Bus.get_proxy_sync (BusType.SYSTEM, "org.bluez", object_path, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
             image_icon = new ThemedIcon (device.icon ?? "bluetooth");
             device_name = device.name ?? device.address;
+
+            // Close when pins or passkeys are accepted for example
+            ((DBusProxy)device).g_properties_changed.connect ((changed, invalid) => {
+                var paired = changed.lookup_value ("Paired", new VariantType ("b"));
+                if (paired != null) {
+                    if (device.paired) {
+                        response (Gtk.ResponseType.ACCEPT);
+                    }
+                }
+            });
         } catch (IOError e) {
             image_icon = new ThemedIcon ("bluetooth");
             critical (e.message);

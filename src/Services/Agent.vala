@@ -70,7 +70,7 @@ public class Bluetooth.Services.Agent : Object {
     // instantly
     public async void display_pin_code (ObjectPath device, string pincode) throws Error, BluezError {
         pair_dialog = new PairDialog.display_pin_code (device, pincode, main_window);
-        pair_dialog.present ();
+        yield check_pairing_response (pair_dialog);
     }
 
     public async uint32 request_passkey (ObjectPath device) throws Error, BluezError {
@@ -81,7 +81,7 @@ public class Bluetooth.Services.Agent : Object {
     // instantly
     public async void display_passkey (ObjectPath device, uint32 passkey, uint16 entered) throws Error {
         pair_dialog = new PairDialog.display_passkey (device, passkey, entered, main_window);
-        pair_dialog.present ();
+        yield check_pairing_response (pair_dialog);
     }
 
     // Called to request confirmation from the user that they want to pair with the given device and that
