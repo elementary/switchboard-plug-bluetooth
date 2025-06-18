@@ -23,19 +23,20 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
     private Gtk.ListBox list_box;
     private Granite.OverlayBar overlaybar;
 
-    public Services.ObjectManager manager { get; construct set; }
+    private Services.ObjectManager manager;
 
     public signal void quit_plug ();
 
-    public MainView (Services.ObjectManager manager) {
+    public MainView () {
         Object (
-            manager: manager,
             title: _("Bluetooth"),
             activatable: true
         );
     }
 
     construct {
+        manager = Bluetooth.Services.ObjectManager.get_default ();
+
         var empty_alert = new Granite.Placeholder (_("No Devices Found")) {
             description = _("Please ensure that your devices are visible and ready for pairing.")
         };

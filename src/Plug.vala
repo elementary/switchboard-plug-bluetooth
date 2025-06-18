@@ -36,7 +36,7 @@ public class Bluetooth.Plug : Switchboard.Plug {
             icon: "bluetooth",
             supported_settings: settings);
 
-        manager = new Bluetooth.Services.ObjectManager ();
+        manager = Bluetooth.Services.ObjectManager.get_default ();
         manager.bind_property ("has-object", this, "can-show", GLib.BindingFlags.SYNC_CREATE);
     }
 
@@ -47,7 +47,7 @@ public class Bluetooth.Plug : Switchboard.Plug {
             };
             headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
 
-            main_view = new MainView (manager) {
+            main_view = new MainView () {
                 vexpand = true
             };
 
