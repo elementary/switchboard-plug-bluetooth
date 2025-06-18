@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-21 22:24+0000\n"
+"POT-Creation-Date: 2025-06-18 19:42+0000\n"
 "PO-Revision-Date: 2022-09-30 10:21+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
-#: src/Plug.vala:34 src/MainView.vala:33
+#: src/Plug.vala:34 src/MainView.vala:32
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -29,45 +29,45 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Настройка параметров Bluetooth"
 
-#: src/MainView.vala:39
+#: src/MainView.vala:40
 msgid "No Devices Found"
 msgstr "Устройства не найдены"
 
-#: src/MainView.vala:40
+#: src/MainView.vala:41
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Пожалуйста, убедитесь, что ваши устройства видны и готовы к связыванию."
 
-#: src/MainView.vala:62
+#: src/MainView.vala:63
 msgid "Discovering"
 msgstr "Обнаружение"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Сейчас обнаруживается как «%s». Не будет обнаруживаться, если закрыть эту "
 "страницу"
 
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 msgid "Unknown"
 msgstr "Неизвестно"
 
-#: src/MainView.vala:154
+#: src/MainView.vala:155
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Недоступно при отключённом Bluetooth"
 
-#: src/MainView.vala:156
+#: src/MainView.vala:157
 msgid "Not discoverable"
 msgstr "Недоступно"
 
-#: src/MainView.vala:202
+#: src/MainView.vala:203
 msgid "Paired Devices"
 msgstr "Привязанные устройства"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:206
+#: src/MainView.vala:207
 msgid "Nearby Devices"
 msgstr "Устройства поблизости"
 
@@ -75,7 +75,13 @@ msgstr "Устройства поблизости"
 msgid "Confirm Bluetooth Pairing"
 msgstr "Подтвердить сопряжение Bluetooth"
 
-#: src/PairDialog.vala:54 src/PairDialog.vala:65
+#: src/PairDialog.vala:54
+#, fuzzy
+#| msgid "Confirm Bluetooth Passkey"
+msgid "Enter Bluetooth Passkey"
+msgstr "Подтвердить пароль Bluetooth"
+
+#: src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
 msgstr "Подтвердить пароль Bluetooth"
 
@@ -92,26 +98,16 @@ msgstr "Неизвестное устройство Bluetooth"
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "Убедитесь, что код, показанный в «%s», совпадает с приведённым ниже."
 
-#: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
-#: src/DeviceRow.vala:285
+#: src/PairDialog.vala:98 src/PairDialog.vala:110 src/DeviceRow.vala:285
 msgid "Pair"
 msgstr "Связать"
 
-#: src/PairDialog.vala:103
-#, c-format
-msgid ""
-"“%s” would like to pair with this device. Make sure the code displayed on "
-"“%s” matches the one below."
-msgstr ""
-"«%s» хочет соединиться с этим устройством. Убедитесь, что показанный в «%s» "
-"код совпадает с приведённым ниже."
-
-#: src/PairDialog.vala:110
+#: src/PairDialog.vala:104
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr "Введите код, показанный в «%s», и нажмите Enter."
 
-#: src/PairDialog.vala:114
+#: src/PairDialog.vala:108
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "«%s» хочет соединиться с этим устройством."
@@ -199,6 +195,14 @@ msgstr "Отключиться"
 #: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "Подключить"
+
+#, c-format
+#~ msgid ""
+#~ "“%s” would like to pair with this device. Make sure the code displayed on "
+#~ "“%s” matches the one below."
+#~ msgstr ""
+#~ "«%s» хочет соединиться с этим устройством. Убедитесь, что показанный в "
+#~ "«%s» код совпадает с приведённым ниже."
 
 #~ msgid "Sharing Settings"
 #~ msgstr "Параметры общего доступа"

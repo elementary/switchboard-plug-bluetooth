@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-21 22:24+0000\n"
+"POT-Creation-Date: 2025-06-18 19:42+0000\n"
 "PO-Revision-Date: 2024-03-26 21:13+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-01-01 05:47+0000\n"
 
-#: src/Plug.vala:34 src/MainView.vala:33
+#: src/Plug.vala:34 src/MainView.vala:32
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -28,45 +28,45 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Configurar definições de bluetooth"
 
-#: src/MainView.vala:39
+#: src/MainView.vala:40
 msgid "No Devices Found"
 msgstr "Nenhum dispositivo encontrado"
 
-#: src/MainView.vala:40
+#: src/MainView.vala:41
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Por favor assegura que os teus dispositivos estão visiveis e preparados para "
 "o emparelhamento."
 
-#: src/MainView.vala:62
+#: src/MainView.vala:63
 msgid "Discovering"
 msgstr "Procurando"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Agora detetável como \"%s\". Não detetável quando esta página está fechada"
 
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 msgid "Unknown"
 msgstr "Desconhecida"
 
-#: src/MainView.vala:154
+#: src/MainView.vala:155
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Não detetável enquanto o Bluetooth estiver desligado"
 
-#: src/MainView.vala:156
+#: src/MainView.vala:157
 msgid "Not discoverable"
 msgstr "Não detetável"
 
-#: src/MainView.vala:202
+#: src/MainView.vala:203
 msgid "Paired Devices"
 msgstr "Dispositivos emparelhados"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:206
+#: src/MainView.vala:207
 msgid "Nearby Devices"
 msgstr "Dispositivos próximos"
 
@@ -74,7 +74,13 @@ msgstr "Dispositivos próximos"
 msgid "Confirm Bluetooth Pairing"
 msgstr "Confirmar o emparelhamento Bluetooth"
 
-#: src/PairDialog.vala:54 src/PairDialog.vala:65
+#: src/PairDialog.vala:54
+#, fuzzy
+#| msgid "Confirm Bluetooth Passkey"
+msgid "Enter Bluetooth Passkey"
+msgstr "Confirmar chave de acesso do Bluetooth"
+
+#: src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
 msgstr "Confirmar chave de acesso do Bluetooth"
 
@@ -92,26 +98,16 @@ msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
 "Certifique-se de que o código exibido em \"%s\" corresponde ao código abaixo."
 
-#: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
-#: src/DeviceRow.vala:285
+#: src/PairDialog.vala:98 src/PairDialog.vala:110 src/DeviceRow.vala:285
 msgid "Pair"
 msgstr "Emparelhar"
 
-#: src/PairDialog.vala:103
-#, c-format
-msgid ""
-"“%s” would like to pair with this device. Make sure the code displayed on "
-"“%s” matches the one below."
-msgstr ""
-"\"%s\" gostaria de emparelhar com este dispositivo. Certifique-se de que o "
-"código exibido em \"%s\" corresponde ao código abaixo."
-
-#: src/PairDialog.vala:110
+#: src/PairDialog.vala:104
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr "Escreva o código exibido abaixo em \"%s\", seguido de Enter."
 
-#: src/PairDialog.vala:114
+#: src/PairDialog.vala:108
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "\"%s\" gostaria de emparelhar com este dispositivo."
@@ -199,6 +195,14 @@ msgstr "Desligar"
 #: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "Ligar"
+
+#, c-format
+#~ msgid ""
+#~ "“%s” would like to pair with this device. Make sure the code displayed on "
+#~ "“%s” matches the one below."
+#~ msgstr ""
+#~ "\"%s\" gostaria de emparelhar com este dispositivo. Certifique-se de que "
+#~ "o código exibido em \"%s\" corresponde ao código abaixo."
 
 #~ msgid "Sharing Settings"
 #~ msgstr "Definições de partilha"

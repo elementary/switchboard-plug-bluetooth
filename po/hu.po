@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-21 22:24+0000\n"
+"POT-Creation-Date: 2025-06-18 19:42+0000\n"
 "PO-Revision-Date: 2024-03-18 23:13+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
-#: src/Plug.vala:34 src/MainView.vala:33
+#: src/Plug.vala:34 src/MainView.vala:32
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -28,44 +28,44 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Bluetooth-beállítások kezelése"
 
-#: src/MainView.vala:39
+#: src/MainView.vala:40
 msgid "No Devices Found"
 msgstr "Nem találhatók eszközök"
 
-#: src/MainView.vala:40
+#: src/MainView.vala:41
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Győződjön meg róla, hogy a készülékek láthatóak és készen állnak a "
 "párosításra."
 
-#: src/MainView.vala:62
+#: src/MainView.vala:63
 msgid "Discovering"
 msgstr "Felderítés"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "Most látható mint \"%s\". Nem lesz látható ha bezárja ezt az oldalt"
 
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 msgid "Unknown"
 msgstr "Ismeretlen"
 
-#: src/MainView.vala:154
+#: src/MainView.vala:155
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Nem észlelhető, amíg a Bluetooth ki van kapcsolva"
 
-#: src/MainView.vala:156
+#: src/MainView.vala:157
 msgid "Not discoverable"
 msgstr "Nem észlelhető"
 
-#: src/MainView.vala:202
+#: src/MainView.vala:203
 msgid "Paired Devices"
 msgstr "Párosított eszközök"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:206
+#: src/MainView.vala:207
 msgid "Nearby Devices"
 msgstr "Közeli eszközök"
 
@@ -73,7 +73,13 @@ msgstr "Közeli eszközök"
 msgid "Confirm Bluetooth Pairing"
 msgstr "Bluetooth-eszköz párosításának megerősítése"
 
-#: src/PairDialog.vala:54 src/PairDialog.vala:65
+#: src/PairDialog.vala:54
+#, fuzzy
+#| msgid "Confirm Bluetooth Passkey"
+msgid "Enter Bluetooth Passkey"
+msgstr "Bluetooth párosítási kódjának megerősítése"
+
+#: src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
 msgstr "Bluetooth párosítási kódjának megerősítése"
 
@@ -90,28 +96,18 @@ msgstr "Ismeretlen Bluetooth-eszköz"
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "Győződjön meg róla, hogy a(z) \"%s\" kódja megegyezik az alábbival."
 
-#: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
-#: src/DeviceRow.vala:285
+#: src/PairDialog.vala:98 src/PairDialog.vala:110 src/DeviceRow.vala:285
 msgid "Pair"
 msgstr "Párosítás"
 
-#: src/PairDialog.vala:103
-#, c-format
-msgid ""
-"“%s” would like to pair with this device. Make sure the code displayed on "
-"“%s” matches the one below."
-msgstr ""
-"\"%s\" szeretne párosodni ezzel az eszközzel. Győződjön meg róla, hogy a(z) "
-"\"%s\" kódja megegyezik az alábbival."
-
-#: src/PairDialog.vala:110
+#: src/PairDialog.vala:104
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
 "Írja be a lejjebb látható kódot a(z) \"%s\" eszközön, majd nyomjon egy "
 "Entert."
 
-#: src/PairDialog.vala:114
+#: src/PairDialog.vala:108
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "\"%s\" párosodni szeretne ezzel az eszközzel."
@@ -199,3 +195,11 @@ msgstr "Szétkapcsolás"
 #: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "Kapcsolódás"
+
+#, c-format
+#~ msgid ""
+#~ "“%s” would like to pair with this device. Make sure the code displayed on "
+#~ "“%s” matches the one below."
+#~ msgstr ""
+#~ "\"%s\" szeretne párosodni ezzel az eszközzel. Győződjön meg róla, hogy "
+#~ "a(z) \"%s\" kódja megegyezik az alábbival."

@@ -49,6 +49,13 @@ public class Bluetooth.Services.ObjectManager : Object {
     private Bluetooth.Services.AgentManager agent_manager;
     private Bluetooth.Services.Agent agent;
 
+    private static GLib.Once<ObjectManager> instance;
+    public static unowned ObjectManager get_default () {
+        return instance.once (() => { return new ObjectManager (); });
+    }
+
+    private ObjectManager () {}
+
     construct {
         var settings_schema = SettingsSchemaSource.get_default ().lookup (DAEMON_SCHEMA, true);
         if (settings_schema != null) {

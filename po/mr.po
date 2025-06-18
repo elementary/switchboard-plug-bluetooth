@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-21 22:24+0000\n"
+"POT-Creation-Date: 2025-06-18 19:42+0000\n"
 "PO-Revision-Date: 2020-10-30 00:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
-#: src/Plug.vala:34 src/MainView.vala:33
+#: src/Plug.vala:34 src/MainView.vala:32
 msgid "Bluetooth"
 msgstr "ब्लूटुथ"
 
@@ -28,42 +28,42 @@ msgstr "ब्लूटुथ"
 msgid "Configure Bluetooth Settings"
 msgstr "ब्लूटूथ सेटिंग्ज कॉन्फिगर करा"
 
-#: src/MainView.vala:39
+#: src/MainView.vala:40
 msgid "No Devices Found"
 msgstr "कोणतीही डिव्हाइसेस सापडली नाहीत"
 
-#: src/MainView.vala:40
+#: src/MainView.vala:41
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "कृपया आपले डिव्हाइस दृश्यमान आणि जोडण्यासाठी सज्ज असल्याचे सुनिश्चित करा."
 
-#: src/MainView.vala:62
+#: src/MainView.vala:63
 msgid "Discovering"
 msgstr "शोधत आहे"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "आता \"%s\" म्हणून शोधण्यायोग्य. हे पृष्ठ बंद असताना शोधण्यायोग्य नाही"
 
-#: src/MainView.vala:152
+#: src/MainView.vala:153
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#: src/MainView.vala:154
+#: src/MainView.vala:155
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "ब्लूटुथ बंद असताना शोधण्यायोग्य नाही"
 
-#: src/MainView.vala:156
+#: src/MainView.vala:157
 msgid "Not discoverable"
 msgstr "शोधण्यायोग्य नाही"
 
-#: src/MainView.vala:202
+#: src/MainView.vala:203
 msgid "Paired Devices"
 msgstr "जोडलेले डिव्हाइसेस"
 
 #. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:206
+#: src/MainView.vala:207
 msgid "Nearby Devices"
 msgstr "जवळपासचे डिव्हाइसेस"
 
@@ -71,7 +71,13 @@ msgstr "जवळपासचे डिव्हाइसेस"
 msgid "Confirm Bluetooth Pairing"
 msgstr "ब्लूटूथ पेअरिंगची पुष्टी करा"
 
-#: src/PairDialog.vala:54 src/PairDialog.vala:65
+#: src/PairDialog.vala:54
+#, fuzzy
+#| msgid "Confirm Bluetooth Passkey"
+msgid "Enter Bluetooth Passkey"
+msgstr "ब्लूटूथ पासकीची पुष्टी करा"
+
+#: src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
 msgstr "ब्लूटूथ पासकीची पुष्टी करा"
 
@@ -88,26 +94,16 @@ msgstr "अज्ञात ब्लूटूथ डिव्हाइस"
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "“%s” वर प्रदर्शित कोड खालीलपैकी जुळत असल्याचे सुनिश्चित करा."
 
-#: src/PairDialog.vala:98 src/PairDialog.vala:105 src/PairDialog.vala:116
-#: src/DeviceRow.vala:285
+#: src/PairDialog.vala:98 src/PairDialog.vala:110 src/DeviceRow.vala:285
 msgid "Pair"
 msgstr "जोडा"
 
-#: src/PairDialog.vala:103
-#, c-format
-msgid ""
-"“%s” would like to pair with this device. Make sure the code displayed on "
-"“%s” matches the one below."
-msgstr ""
-"\"%s\" या डिव्हाइससह जोडी करू इच्छित आहे. “%s” वर प्रदर्शित कोड खालीलपैकी जुळत "
-"असल्याचे सुनिश्चित करा."
-
-#: src/PairDialog.vala:110
+#: src/PairDialog.vala:104
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr "खाली दिलेले कोड “%s” वर टाइप करा आणि त्यानंतर एंटर करा."
 
-#: src/PairDialog.vala:114
+#: src/PairDialog.vala:108
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "\"%s\" या डिव्हाइससह जोडी करू इच्छित आहे."
@@ -195,3 +191,11 @@ msgstr "डिस्कनेक्ट करा"
 #: src/DeviceRow.vala:322
 msgid "Connect"
 msgstr "जोडा"
+
+#, c-format
+#~ msgid ""
+#~ "“%s” would like to pair with this device. Make sure the code displayed on "
+#~ "“%s” matches the one below."
+#~ msgstr ""
+#~ "\"%s\" या डिव्हाइससह जोडी करू इच्छित आहे. “%s” वर प्रदर्शित कोड खालीलपैकी जुळत "
+#~ "असल्याचे सुनिश्चित करा."
