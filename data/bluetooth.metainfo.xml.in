@@ -39,6 +39,7 @@
         </ul>
       </description>
       <issues>
+        <issue url="https://github.com/elementary/switchboard-plug-bluetooth/issues/188">Devices are duplicated when there are multiple Bluetooth adapters</issue>
         <issue url="https://github.com/elementary/switchboard-plug-bluetooth/issues/192">Incorrect "DISPLAY_PASSKEY" prompt used for bluetooth keyboard pairing</issue>
         <issue url="https://github.com/elementary/switchboard-plug-bluetooth/issues/200">The buttons of the Bluetooth password confirmation window do not work</issue>
       </issues>
