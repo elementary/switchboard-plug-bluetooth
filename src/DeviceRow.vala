@@ -19,11 +19,11 @@
  */
 
 public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
-    public Services.Device device { get; construct; }
-    public unowned Services.Adapter adapter { get; construct; }
-    private static Gtk.SizeGroup size_group;
-
     public signal void status_changed ();
+
+    public Services.Device device { get; construct; }
+
+    private static Gtk.SizeGroup size_group;
 
     private enum Status {
         UNPAIRED,
@@ -62,8 +62,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     private Gtk.Label state_label;
     private Gtk.LinkButton settings_button;
 
-    public DeviceRow (Services.Device device, Services.Adapter adapter) {
-        Object (device: device, adapter: adapter);
+    public DeviceRow (Services.Device device) {
+        Object (device: device);
     }
 
     static construct {
@@ -79,9 +79,10 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         state.halign = Gtk.Align.END;
         state.valign = Gtk.Align.END;
 
-        state_label = new Gtk.Label (null);
-        state_label.xalign = 0;
-        state_label.use_markup = true;
+        state_label = new Gtk.Label (null) {
+            xalign = 0
+        };
+        state_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         var overlay = new Gtk.Overlay () {
             child = image,
@@ -186,6 +187,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 break;
         }
 
+        var adapter = Services.ObjectManager.get_default ().get_adapter_from_path (device.adapter);
+
         compute_status ();
         set_sensitive (adapter.powered);
 
@@ -275,7 +278,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     }
 
     private void set_status (Status status) {
-        state_label.label = GLib.Markup.printf_escaped ("<span font_size='small'>%s</span>", status.to_string ());
+        state_label.label = status.to_string ();
         state.visible = true;
 
         switch (status) {
