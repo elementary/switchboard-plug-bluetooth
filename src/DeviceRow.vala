@@ -19,11 +19,11 @@
  */
 
 public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
-    public Services.Device device { get; construct; }
-    public unowned Services.Adapter adapter { get; construct; }
-    private static Gtk.SizeGroup size_group;
-
     public signal void status_changed ();
+
+    public Services.Device device { get; construct; }
+
+    private static Gtk.SizeGroup size_group;
 
     private enum Status {
         UNPAIRED,
@@ -62,8 +62,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     private Gtk.Label state_label;
     private Gtk.LinkButton settings_button;
 
-    public DeviceRow (Services.Device device, Services.Adapter adapter) {
-        Object (device: device, adapter: adapter);
+    public DeviceRow (Services.Device device) {
+        Object (device: device);
     }
 
     static construct {
@@ -186,6 +186,8 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
                 settings_button.tooltip_text = null;
                 break;
         }
+
+        var adapter = Services.ObjectManager.get_default ().get_adapter_from_path (device.adapter);
 
         compute_status ();
         set_sensitive (adapter.powered);
