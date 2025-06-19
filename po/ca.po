@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-18 19:42+0000\n"
-"PO-Revision-Date: 2020-10-30 00:15+0000\n"
+"PO-Revision-Date: 2025-06-20 08:55+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
+"Language-Team: Catalan <https://l10n.elementaryos.org/projects/settings/"
 "switchboard-plug-bluetooth/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
 #: src/Plug.vala:34 src/MainView.vala:32
@@ -75,10 +75,8 @@ msgid "Confirm Bluetooth Pairing"
 msgstr "Confirmeu l'aparellament de Bluetooth"
 
 #: src/PairDialog.vala:54
-#, fuzzy
-#| msgid "Confirm Bluetooth Passkey"
 msgid "Enter Bluetooth Passkey"
-msgstr "Confirmeu la contrasenya del Bluetooth"
+msgstr "Introduïu la contrasenya del Bluetooth"
 
 #: src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
