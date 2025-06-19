@@ -79,9 +79,10 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
         state.halign = Gtk.Align.END;
         state.valign = Gtk.Align.END;
 
-        state_label = new Gtk.Label (null);
-        state_label.xalign = 0;
-        state_label.use_markup = true;
+        state_label = new Gtk.Label (null) {
+            xalign = 0
+        };
+        state_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         var overlay = new Gtk.Overlay () {
             child = image,
@@ -279,7 +280,7 @@ public class Bluetooth.DeviceRow : Gtk.ListBoxRow {
     }
 
     private void set_status (Status status) {
-        state_label.label = GLib.Markup.printf_escaped ("<span font_size='small'>%s</span>", status.to_string ());
+        state_label.label = status.to_string ();
         state.visible = true;
 
         switch (status) {
