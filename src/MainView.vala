@@ -1,31 +1,17 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
-/*-
- * Copyright (c) 2016-2018 elementary LLC.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- * Authored by: Corentin Noël <corentin@elementary.io>
- *              Oleksandr Lynok <oleksandr.lynok@gmail.com>
- */
+/*
+* SPDX-License-Identifier: LGPL-3.0-or-later
+* SPDX-FileCopyrightText: 2016-2025 elementary, Inc. (https://elementary.io)
+*
+* Authored by: Corentin Noël <corentin@elementary.io>
+*              Oleksandr Lynok <oleksandr.lynok@gmail.com>
+*/
 
 public class Bluetooth.MainView : Switchboard.SettingsPage {
-    private Gtk.ListBox list_box;
-    private Granite.OverlayBar overlaybar;
-
-    private Services.ObjectManager manager;
-
     public signal void quit_plug ();
+
+    private GLib.ListStore device_model;
+    private Granite.OverlayBar overlaybar;
+    private Services.ObjectManager manager;
 
     public MainView () {
         Object (
@@ -35,18 +21,16 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
     }
 
     construct {
-        manager = Bluetooth.Services.ObjectManager.get_default ();
-
         var empty_alert = new Granite.Placeholder (_("No Devices Found")) {
             description = _("Please ensure that your devices are visible and ready for pairing.")
         };
 
-        list_box = new Gtk.ListBox () {
+        var list_box = new Gtk.ListBox () {
             activate_on_single_click = false,
             selection_mode = BROWSE
         };
         list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
-        list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare_rows);
+        list_box.bind_model (device_model, create_widget_func);
         list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
         list_box.set_placeholder (empty_alert);
 
@@ -71,6 +55,9 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
         child = frame;
 
+        device_model = new GLib.ListStore (typeof (Services.Device));
+
+        manager = Bluetooth.Services.ObjectManager.get_default ();
         if (manager.retrieve_finished) {
             complete_setup ();
         } else {
@@ -88,14 +75,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
     private void complete_setup () {
         foreach (var device in manager.get_devices ()) {
-            var row = new DeviceRow (device);
-            list_box.append (row);
-        }
-
-        var first_row = list_box.get_row_at_index (0);
-        if (first_row != null) {
-            list_box.select_row (first_row);
-            list_box.row_activated (first_row);
+            on_device_added (device);
         }
 
         update_description ();
@@ -103,26 +83,9 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         status_switch.active = manager.is_powered;
 
         /* Now retrieve finished, we can connect manager signals */
-       manager.device_added.connect ((device) => {
-            var row = new DeviceRow (device);
-            list_box.append (row);
-            if (list_box.get_selected_row () == null) {
-                list_box.select_row (row);
-                list_box.row_activated (row);
-            }
-        });
+        manager.device_added.connect (on_device_added);
 
-        manager.device_removed.connect_after ((device) => {
-            var child = list_box.get_first_child ();
-            while (child != null) {
-                if (((DeviceRow) child).device == device) {
-                    list_box.remove (child);
-                    break;
-                }
-
-                child = child.get_next_sibling ();
-            }
-        });
+        manager.device_removed.connect_after (on_device_removed);
 
         manager.adapter_added.connect ((adapter) => {
             update_description ();
@@ -148,6 +111,33 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         manager.bind_property ("is-powered", status_switch, "active", GLib.BindingFlags.DEFAULT);
     }
 
+    private void on_device_added (Services.Device device) {
+        uint pos = -1;
+        if (device_model.find (device, out pos)) {
+            return;
+        }
+
+        ((DBusProxy) device).g_properties_changed.connect (on_device_changed);
+
+        device_model.insert_sorted (device, compare_func);
+    }
+
+    // Exists as separate function so we can disconnect when devices are removed
+    private void on_device_changed () {
+        device_model.sort (compare_func);
+    }
+
+    private void on_device_removed (Services.Device device) {
+        uint pos = -1;
+        if (!device_model.find (device, out pos)) {
+            return;
+        }
+
+        ((DBusProxy) device).g_properties_changed.disconnect (on_device_changed);
+
+        device_model.remove (pos);
+    }
+
     private void update_description () {
         string? name = manager.get_name ();
         var powered = manager.is_powered;
@@ -167,10 +157,9 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         }
     }
 
-    [CCode (instance_pos = -1)]
-    private int compare_rows (DeviceRow row1, DeviceRow row2) {
-        unowned Services.Device device1 = row1.device;
-        unowned Services.Device device2 = row2.device;
+    private int compare_func (Object obj1, Object obj2) {
+        unowned var device1 = (Services.Device) obj1;
+        unowned var device2 = (Services.Device) obj2;
         if (device1.paired && !device2.paired) {
             return -1;
         }
@@ -198,6 +187,10 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         var name1 = device1.name ?? device1.address;
         var name2 = device2.name ?? device2.address;
         return name1.collate (name2);
+    }
+
+    private Gtk.Widget create_widget_func (Object obj) {
+        return new DeviceRow ((Services.Device) obj);
     }
 
     [CCode (instance_pos = -1)]
