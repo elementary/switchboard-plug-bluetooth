@@ -56,6 +56,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
         var paired_list = new Gtk.ListBox () {
             activate_on_single_click = false,
+            overflow = HIDDEN,
             selection_mode = BROWSE
         };
         paired_list.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
@@ -69,6 +70,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
         var list_box = new Gtk.ListBox () {
             activate_on_single_click = false,
+            overflow = HIDDEN,
             selection_mode = BROWSE
         };
         list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
