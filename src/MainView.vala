@@ -9,6 +9,7 @@
 public class Bluetooth.MainView : Switchboard.SettingsPage {
     public signal void quit_plug ();
 
+    private Gtk.SortListModel paired_sorter;
     private GLib.ListStore device_model;
     private Granite.OverlayBar overlaybar;
     private Services.ObjectManager manager;
@@ -25,27 +26,58 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
         var paired_model = new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
             var device = (Services.Device) obj;
+
+            if (device.paired) {
+                ((DBusProxy) device).g_properties_changed.connect (on_device_changed);
+            }
+
             return device.paired;
         }));
 
-        // var paired_sorter = new Gtk.SortListModel (
-        //     paired_model,
-        //     new Gtk.CustomSorter (
-        //         (CompareDataFunc<GLib.Object>) compare_func
-        //     )
-        // );
+        var sorter = new Gtk.CustomSorter ((obj1, obj2) => {
+            unowned var device1 = (Services.Device) obj1;
+            unowned var device2 = (Services.Device) obj2;
+
+            if (device1.connected && !device2.connected) {
+                return -1;
+            }
+
+            if (!device1.connected && device2.connected) {
+                return 1;
+            }
+
+            if (device1.name != null && device2.name == null) {
+                return -1;
+            }
+
+            if (device1.name == null && device2.name != null) {
+                return 1;
+            }
+
+            var name1 = device1.name ?? device1.address;
+            var name2 = device2.name ?? device2.address;
+            return name1.collate (name2);
+        });
+
+        paired_sorter = new Gtk.SortListModel (
+            paired_model,
+            sorter
+        );
 
         var nearby_model = new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
             var device = (Services.Device) obj;
+
+            if (device.name == null && device.icon == null) {
+                return false;
+            }
+
             return !device.paired;
         }));
 
-        // var nearby_sorter = new Gtk.SortListModel (
-        //     nearby_model,
-        //     new Gtk.CustomSorter (
-        //         (CompareDataFunc<GLib.Object>) compare_func
-        //     )
-        // );
+        var nearby_sorter = new Gtk.SortListModel (
+            nearby_model,
+            sorter
+        );
 
         var paired_placeholder = new Granite.Placeholder (_("No Paired Devices")) {
             description = _("Bluetooth devices will appear here when paired with this device.")
@@ -57,7 +89,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         };
         paired_list.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         paired_list.add_css_class (Granite.STYLE_CLASS_CARD);
-        paired_list.bind_model (paired_model, create_widget_func);
+        paired_list.bind_model (paired_sorter, create_widget_func);
         paired_list.set_placeholder (paired_placeholder);
 
         var empty_alert = new Granite.Placeholder (_("No Devices Found")) {
@@ -70,7 +102,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         };
         list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         list_box.add_css_class (Granite.STYLE_CLASS_CARD);
-        list_box.bind_model (nearby_model, create_widget_func);
+        list_box.bind_model (nearby_sorter, create_widget_func);
         list_box.set_placeholder (empty_alert);
 
         var paired_header = new Granite.HeaderLabel (_("Paired Devices")) {
@@ -151,14 +183,12 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
             return;
         }
 
-        ((DBusProxy) device).g_properties_changed.connect (on_device_changed);
-
         device_model.append (device);
     }
 
     // Exists as separate function so we can disconnect when devices are removed
     private void on_device_changed () {
-        // device_model.sort (compare_func);
+        // FIXME: how to resort?
     }
 
     private void on_device_removed (Services.Device device) {
@@ -194,13 +224,6 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
     private int compare_func (Object obj1, Object obj2) {
         unowned var device1 = (Services.Device) obj1;
         unowned var device2 = (Services.Device) obj2;
-        if (device1.paired && !device2.paired) {
-            return -1;
-        }
-
-        if (!device1.paired && device2.paired) {
-            return 1;
-        }
 
         if (device1.connected && !device2.connected) {
             return -1;
