@@ -9,7 +9,6 @@
 public class Bluetooth.MainView : Switchboard.SettingsPage {
     public signal void quit_plug ();
 
-    private Gtk.SortListModel paired_sorter;
     private GLib.ListStore device_model;
     private Granite.OverlayBar overlaybar;
     private Services.ObjectManager manager;
@@ -23,16 +22,6 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
     construct {
         device_model = new GLib.ListStore (typeof (Services.Device));
-
-        var paired_model = new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
-            var device = (Services.Device) obj;
-
-            if (device.paired) {
-                ((DBusProxy) device).g_properties_changed.connect (on_device_changed);
-            }
-
-            return device.paired;
-        }));
 
         var sorter = new Gtk.CustomSorter ((obj1, obj2) => {
             unowned var device1 = (Services.Device) obj1;
@@ -59,8 +48,16 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
             return name1.collate (name2);
         });
 
-        paired_sorter = new Gtk.SortListModel (
-            paired_model,
+        var paired_model = new Gtk.SortListModel (
+            new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
+                var device = (Services.Device) obj;
+
+                if (device.paired) {
+                    ((DBusProxy) device).g_properties_changed.connect (on_device_changed);
+                }
+
+                return device.paired;
+            })),
             sorter
         );
 
@@ -87,7 +84,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         };
         paired_list.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         paired_list.add_css_class (Granite.STYLE_CLASS_CARD);
-        paired_list.bind_model (paired_sorter, create_widget_func);
+        paired_list.bind_model (paired_model, create_widget_func);
         paired_list.set_placeholder (paired_placeholder);
 
         var empty_alert = new Granite.Placeholder (_("No Devices Found")) {
