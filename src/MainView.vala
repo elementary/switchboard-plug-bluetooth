@@ -9,6 +9,7 @@
 public class Bluetooth.MainView : Switchboard.SettingsPage {
     public signal void quit_plug ();
 
+    private Gtk.SortListModel paired_model;
     private GLib.ListStore device_model;
     private Gtk.Spinner discovery_spinner;
     private Services.ObjectManager manager;
@@ -23,7 +24,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
     construct {
         device_model = new GLib.ListStore (typeof (Services.Device));
 
-        var paired_model = new Gtk.SortListModel (
+        paired_model = new Gtk.SortListModel (
             new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
                 var device = (Services.Device) obj;
 
@@ -166,7 +167,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
     // Exists as separate function so we can disconnect when devices are removed
     private void on_device_changed () {
-        // FIXME: how to resort?
+        paired_model.sorter.changed (DIFFERENT);
     }
 
     private void on_device_removed (Services.Device device) {
