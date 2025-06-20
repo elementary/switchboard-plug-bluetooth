@@ -10,7 +10,6 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
     public signal void quit_plug ();
 
     private GLib.ListStore device_model;
-    private Granite.OverlayBar overlaybar;
     private Services.ObjectManager manager;
 
     public MainView () {
