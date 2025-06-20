@@ -10,6 +10,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
     public signal void quit_plug ();
 
     private GLib.ListStore device_model;
+    private Gtk.Spinner discovery_spinner;
     private Services.ObjectManager manager;
 
     public MainView () {
@@ -108,12 +109,14 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
             mnemonic_widget = list_box
         };
 
+        discovery_spinner = new Gtk.Spinner ();
+
         var nearby_box = new Gtk.Box (HORIZONTAL, 6) {
             margin_top = 24,
             margin_bottom = 6,
         };
         nearby_box.append (nearby_header);
-        nearby_box.append (new Gtk.Spinner () { spinning = true });
+        nearby_box.append (discovery_spinner);
 
         var box = new Gtk.Box (VERTICAL, 0);
         box.append (paired_header);
@@ -173,7 +176,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
             update_description ();
         });
 
-        manager.bind_property ("is-discovering", overlaybar, "visible", GLib.BindingFlags.DEFAULT);
+        manager.bind_property ("is-discovering", discovery_spinner, "spinning", DEFAULT);
         manager.bind_property ("is-powered", status_switch, "active", GLib.BindingFlags.DEFAULT);
     }
 
