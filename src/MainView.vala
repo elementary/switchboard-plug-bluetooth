@@ -23,31 +23,6 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
     construct {
         device_model = new GLib.ListStore (typeof (Services.Device));
 
-        var sorter = new Gtk.CustomSorter ((obj1, obj2) => {
-            unowned var device1 = (Services.Device) obj1;
-            unowned var device2 = (Services.Device) obj2;
-
-            if (device1.connected && !device2.connected) {
-                return -1;
-            }
-
-            if (!device1.connected && device2.connected) {
-                return 1;
-            }
-
-            if (device1.name != null && device2.name == null) {
-                return -1;
-            }
-
-            if (device1.name == null && device2.name != null) {
-                return 1;
-            }
-
-            var name1 = device1.name ?? device1.address;
-            var name2 = device2.name ?? device2.address;
-            return name1.collate (name2);
-        });
-
         var paired_model = new Gtk.SortListModel (
             new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
                 var device = (Services.Device) obj;
@@ -58,7 +33,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
                 return device.paired;
             })),
-            sorter
+            new Gtk.CustomSorter ((GLib.CompareDataFunc<GLib.Object>) Services.Device.compare)
         );
 
         var nearby_model = new Gtk.SortListModel (
@@ -71,7 +46,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
                 return !device.paired;
             })),
-            sorter
+            new Gtk.CustomSorter ((GLib.CompareDataFunc<GLib.Object>) Services.Device.compare)
         );
 
         var paired_placeholder = new Granite.Placeholder (_("No Paired Devices")) {
@@ -222,31 +197,6 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         } else {
             icon = new ThemedIcon ("bluetooth-disabled");
         }
-    }
-
-    private int compare_func (Object obj1, Object obj2) {
-        unowned var device1 = (Services.Device) obj1;
-        unowned var device2 = (Services.Device) obj2;
-
-        if (device1.connected && !device2.connected) {
-            return -1;
-        }
-
-        if (!device1.connected && device2.connected) {
-            return 1;
-        }
-
-        if (device1.name != null && device2.name == null) {
-            return -1;
-        }
-
-        if (device1.name == null && device2.name != null) {
-            return 1;
-        }
-
-        var name1 = device1.name ?? device1.address;
-        var name2 = device2.name ?? device2.address;
-        return name1.collate (name2);
     }
 
     private Gtk.Widget create_widget_func (Object obj) {
