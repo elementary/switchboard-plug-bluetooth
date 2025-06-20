@@ -27,17 +27,32 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
             description = _("Please ensure that your devices are visible and ready for pairing.")
         };
 
-        var list_box = new Gtk.ListBox () {
-            activate_on_single_click = false,
-            selection_mode = BROWSE
-        };
-        list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
-        list_box.bind_model (device_model, create_widget_func);
-        list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
-        list_box.set_placeholder (empty_alert);
+        var no_selection = new Gtk.NoSelection (device_model);
+
+        var item_factory = new Gtk.SignalListItemFactory ();
+        item_factory.setup.connect ((obj) => {
+            var list_item = (Gtk.ListItem) obj;
+            list_item.child = new DeviceRow ();
+        });
+
+        item_factory.bind.connect ((obj) => {
+            var list_item = (Gtk.ListItem) obj;
+            ((DeviceRow) list_item.child).package = (Services.Device) list_item.item;
+        });
+
+        var list_view = new Gtk.ListView (no_selection, item_factory);
+
+        // var list_box = new Gtk.ListBox () {
+        //     activate_on_single_click = false,
+        //     selection_mode = BROWSE
+        // };
+        // list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
+        // list_box.bind_model (device_model, create_widget_func);
+        // list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
+        // list_box.set_placeholder (empty_alert);
 
         var scrolled = new Gtk.ScrolledWindow () {
-            child = list_box,
+            child = list_view,
             hexpand = true,
             vexpand = true
         };
@@ -54,6 +69,9 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         var frame = new Gtk.Frame (null) {
             child = overlay
         };
+
+        var box = new Gtk.Box (VERTICAL, 0);
+        box.append ()
 
         child = frame;
 
@@ -187,10 +205,6 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         var name1 = device1.name ?? device1.address;
         var name2 = device2.name ?? device2.address;
         return name1.collate (name2);
-    }
-
-    private Gtk.Widget create_widget_func (Object obj) {
-        return new DeviceRow ((Services.Device) obj);
     }
 
     [CCode (instance_pos = -1)]
