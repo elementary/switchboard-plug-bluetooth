@@ -64,18 +64,16 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
             sorter
         );
 
-        var nearby_model = new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
-            var device = (Services.Device) obj;
+        var nearby_model = new Gtk.SortListModel (
+            new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
+                var device = (Services.Device) obj;
 
-            if (device.name == null && device.icon == null) {
-                return false;
-            }
+                if (device.name == null && device.icon == null) {
+                    return false;
+                }
 
-            return !device.paired;
-        }));
-
-        var nearby_sorter = new Gtk.SortListModel (
-            nearby_model,
+                return !device.paired;
+            })),
             sorter
         );
 
@@ -102,7 +100,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         };
         list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         list_box.add_css_class (Granite.STYLE_CLASS_CARD);
-        list_box.bind_model (nearby_sorter, create_widget_func);
+        list_box.bind_model (nearby_model, create_widget_func);
         list_box.set_placeholder (empty_alert);
 
         var paired_header = new Granite.HeaderLabel (_("Paired Devices")) {
