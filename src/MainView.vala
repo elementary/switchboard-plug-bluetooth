@@ -106,14 +106,20 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         };
 
         var nearby_header = new Granite.HeaderLabel (_("Nearby Devices")) {
-            margin_bottom = 6,
             mnemonic_widget = list_box
         };
+
+        var nearby_box = new Gtk.Box (HORIZONTAL, 6) {
+            margin_top = 24,
+            margin_bottom = 6,
+        };
+        nearby_box.append (nearby_header);
+        nearby_box.append (new Gtk.Spinner () { spinning = true });
 
         var box = new Gtk.Box (VERTICAL, 0);
         box.append (paired_header);
         box.append (paired_list);
-        box.append (nearby_header);
+        box.append (nearby_box);
         box.append (list_box);
 
         child = box;
