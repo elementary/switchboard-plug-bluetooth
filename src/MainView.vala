@@ -21,6 +21,8 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
     }
 
     construct {
+        device_model = new GLib.ListStore (typeof (Services.Device));
+
         var empty_alert = new Granite.Placeholder (_("No Devices Found")) {
             description = _("Please ensure that your devices are visible and ready for pairing.")
         };
@@ -54,8 +56,6 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         };
 
         child = frame;
-
-        device_model = new GLib.ListStore (typeof (Services.Device));
 
         manager = Bluetooth.Services.ObjectManager.get_default ();
         if (manager.retrieve_finished) {
