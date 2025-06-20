@@ -23,6 +23,43 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
     construct {
         device_model = new GLib.ListStore (typeof (Services.Device));
 
+        var paired_model = new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
+            var device = (Services.Device) obj;
+            return device.paired;
+        }));
+
+        // var paired_sorter = new Gtk.SortListModel (
+        //     paired_model,
+        //     new Gtk.CustomSorter (
+        //         (CompareDataFunc<GLib.Object>) compare_func
+        //     )
+        // );
+
+        var nearby_model = new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
+            var device = (Services.Device) obj;
+            return !device.paired;
+        }));
+
+        // var nearby_sorter = new Gtk.SortListModel (
+        //     nearby_model,
+        //     new Gtk.CustomSorter (
+        //         (CompareDataFunc<GLib.Object>) compare_func
+        //     )
+        // );
+
+        var paired_placeholder = new Granite.Placeholder (_("No Paired Devices")) {
+            description = _("Bluetooth devices will appear here when paired with this device.")
+        };
+
+        var paired_list = new Gtk.ListBox () {
+            activate_on_single_click = false,
+            selection_mode = BROWSE
+        };
+        paired_list.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
+        paired_list.add_css_class (Granite.STYLE_CLASS_CARD);
+        paired_list.bind_model (paired_model, create_widget_func);
+        paired_list.set_placeholder (paired_placeholder);
+
         var empty_alert = new Granite.Placeholder (_("No Devices Found")) {
             description = _("Please ensure that your devices are visible and ready for pairing.")
         };
@@ -32,30 +69,27 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
             selection_mode = BROWSE
         };
         list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
-        list_box.bind_model (device_model, create_widget_func);
-        list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
+        list_box.add_css_class (Granite.STYLE_CLASS_CARD);
+        list_box.bind_model (nearby_model, create_widget_func);
         list_box.set_placeholder (empty_alert);
 
-        var scrolled = new Gtk.ScrolledWindow () {
-            child = list_box,
-            hexpand = true,
-            vexpand = true
+        var paired_header = new Granite.HeaderLabel (_("Paired Devices")) {
+            margin_bottom = 6,
+            mnemonic_widget = paired_list
         };
 
-        var overlay = new Gtk.Overlay () {
-            child = scrolled
+        var nearby_header = new Granite.HeaderLabel (_("Nearby Devices")) {
+            margin_bottom = 6,
+            mnemonic_widget = list_box
         };
 
-        overlaybar = new Granite.OverlayBar (overlay) {
-            label = _("Discovering"),
-            active = true
-        };
+        var box = new Gtk.Box (VERTICAL, 0);
+        box.append (paired_header);
+        box.append (paired_list);
+        box.append (nearby_header);
+        box.append (list_box);
 
-        var frame = new Gtk.Frame (null) {
-            child = overlay
-        };
-
-        child = frame;
+        child = box;
 
         manager = Bluetooth.Services.ObjectManager.get_default ();
         if (manager.retrieve_finished) {
@@ -119,12 +153,12 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
         ((DBusProxy) device).g_properties_changed.connect (on_device_changed);
 
-        device_model.insert_sorted (device, compare_func);
+        device_model.append (device);
     }
 
     // Exists as separate function so we can disconnect when devices are removed
     private void on_device_changed () {
-        device_model.sort (compare_func);
+        // device_model.sort (compare_func);
     }
 
     private void on_device_removed (Services.Device device) {
@@ -191,19 +225,5 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
     private Gtk.Widget create_widget_func (Object obj) {
         return new DeviceRow ((Services.Device) obj);
-    }
-
-    [CCode (instance_pos = -1)]
-    private void title_rows (DeviceRow row1, DeviceRow? row2) {
-        if (row2 == null && row1.device.paired) {
-            var label = new Granite.HeaderLabel (_("Paired Devices"));
-            row1.set_header (label);
-        } else if (row2 == null || row1.device.paired != row2.device.paired) {
-            /* This header may not appear, so cannot contain discovery spinner */
-            var label = new Granite.HeaderLabel (_("Nearby Devices"));
-            row1.set_header (label);
-        } else {
-            row1.set_header (null);
-        }
     }
 }
