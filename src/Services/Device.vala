@@ -42,4 +42,26 @@ public interface Bluetooth.Services.Device : Object {
     public abstract string name { owned get; }
     public abstract uint16 appearance { owned get; }
     public abstract uint32 @class { owned get; }
+
+    public static int compare (Device device1, Device device2) {
+        if (device1.connected && !device2.connected) {
+            return -1;
+        }
+
+        if (!device1.connected && device2.connected) {
+            return 1;
+        }
+
+        if (device1.name != null && device2.name == null) {
+            return -1;
+        }
+
+        if (device1.name == null && device2.name != null) {
+            return 1;
+        }
+
+        var name1 = device1.name ?? device1.address;
+        var name2 = device2.name ?? device2.address;
+        return name1.collate (name2);
+    }
 }

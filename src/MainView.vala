@@ -9,8 +9,9 @@
 public class Bluetooth.MainView : Switchboard.SettingsPage {
     public signal void quit_plug ();
 
+    private Gtk.SortListModel paired_model;
     private GLib.ListStore device_model;
-    private Granite.OverlayBar overlaybar;
+    private Gtk.Spinner discovery_spinner;
     private Services.ObjectManager manager;
 
     public MainView () {
@@ -23,39 +24,85 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
     construct {
         device_model = new GLib.ListStore (typeof (Services.Device));
 
+        paired_model = new Gtk.SortListModel (
+            new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
+                var device = (Services.Device) obj;
+
+                if (device.paired) {
+                    ((DBusProxy) device).g_properties_changed.connect (on_device_changed);
+                }
+
+                return device.paired;
+            })),
+            new Gtk.CustomSorter ((GLib.CompareDataFunc<GLib.Object>) Services.Device.compare)
+        );
+
+        var nearby_model = new Gtk.SortListModel (
+            new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
+                var device = (Services.Device) obj;
+
+                if (device.name == null && device.icon == null) {
+                    return false;
+                }
+
+                return !device.paired;
+            })),
+            new Gtk.CustomSorter ((GLib.CompareDataFunc<GLib.Object>) Services.Device.compare)
+        );
+
+        var paired_placeholder = new Granite.Placeholder (_("No Paired Devices")) {
+            description = _("Bluetooth devices will appear here when paired with this device.")
+        };
+
+        var paired_list = new Gtk.ListBox () {
+            activate_on_single_click = false,
+            overflow = HIDDEN,
+            selection_mode = BROWSE
+        };
+        paired_list.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
+        paired_list.add_css_class (Granite.STYLE_CLASS_CARD);
+        paired_list.bind_model (paired_model, create_widget_func);
+        paired_list.set_placeholder (paired_placeholder);
+
         var empty_alert = new Granite.Placeholder (_("No Devices Found")) {
             description = _("Please ensure that your devices are visible and ready for pairing.")
         };
 
         var list_box = new Gtk.ListBox () {
             activate_on_single_click = false,
+            overflow = HIDDEN,
             selection_mode = BROWSE
         };
         list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
-        list_box.bind_model (device_model, create_widget_func);
-        list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
+        list_box.add_css_class (Granite.STYLE_CLASS_CARD);
+        list_box.bind_model (nearby_model, create_widget_func);
         list_box.set_placeholder (empty_alert);
 
-        var scrolled = new Gtk.ScrolledWindow () {
-            child = list_box,
-            hexpand = true,
-            vexpand = true
+        var paired_header = new Granite.HeaderLabel (_("Paired Devices")) {
+            margin_bottom = 6,
+            mnemonic_widget = paired_list
         };
 
-        var overlay = new Gtk.Overlay () {
-            child = scrolled
+        var nearby_header = new Granite.HeaderLabel (_("Nearby Devices")) {
+            mnemonic_widget = list_box
         };
 
-        overlaybar = new Granite.OverlayBar (overlay) {
-            label = _("Discovering"),
-            active = true
-        };
+        discovery_spinner = new Gtk.Spinner ();
 
-        var frame = new Gtk.Frame (null) {
-            child = overlay
+        var nearby_box = new Gtk.Box (HORIZONTAL, 6) {
+            margin_top = 24,
+            margin_bottom = 6,
         };
+        nearby_box.append (nearby_header);
+        nearby_box.append (discovery_spinner);
 
-        child = frame;
+        var box = new Gtk.Box (VERTICAL, 0);
+        box.append (paired_header);
+        box.append (paired_list);
+        box.append (nearby_box);
+        box.append (list_box);
+
+        child = box;
 
         manager = Bluetooth.Services.ObjectManager.get_default ();
         if (manager.retrieve_finished) {
@@ -107,7 +154,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
             update_description ();
         });
 
-        manager.bind_property ("is-discovering", overlaybar, "visible", GLib.BindingFlags.DEFAULT);
+        manager.bind_property ("is-discovering", discovery_spinner, "spinning", DEFAULT);
         manager.bind_property ("is-powered", status_switch, "active", GLib.BindingFlags.DEFAULT);
     }
 
@@ -117,14 +164,12 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
             return;
         }
 
-        ((DBusProxy) device).g_properties_changed.connect (on_device_changed);
-
-        device_model.insert_sorted (device, compare_func);
+        device_model.append (device);
     }
 
     // Exists as separate function so we can disconnect when devices are removed
     private void on_device_changed () {
-        device_model.sort (compare_func);
+        paired_model.sorter.changed (DIFFERENT);
     }
 
     private void on_device_removed (Services.Device device) {
@@ -157,53 +202,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         }
     }
 
-    private int compare_func (Object obj1, Object obj2) {
-        unowned var device1 = (Services.Device) obj1;
-        unowned var device2 = (Services.Device) obj2;
-        if (device1.paired && !device2.paired) {
-            return -1;
-        }
-
-        if (!device1.paired && device2.paired) {
-            return 1;
-        }
-
-        if (device1.connected && !device2.connected) {
-            return -1;
-        }
-
-        if (!device1.connected && device2.connected) {
-            return 1;
-        }
-
-        if (device1.name != null && device2.name == null) {
-            return -1;
-        }
-
-        if (device1.name == null && device2.name != null) {
-            return 1;
-        }
-
-        var name1 = device1.name ?? device1.address;
-        var name2 = device2.name ?? device2.address;
-        return name1.collate (name2);
-    }
-
     private Gtk.Widget create_widget_func (Object obj) {
         return new DeviceRow ((Services.Device) obj);
-    }
-
-    [CCode (instance_pos = -1)]
-    private void title_rows (DeviceRow row1, DeviceRow? row2) {
-        if (row2 == null && row1.device.paired) {
-            var label = new Granite.HeaderLabel (_("Paired Devices"));
-            row1.set_header (label);
-        } else if (row2 == null || row1.device.paired != row2.device.paired) {
-            /* This header may not appear, so cannot contain discovery spinner */
-            var label = new Granite.HeaderLabel (_("Nearby Devices"));
-            row1.set_header (label);
-        } else {
-            row1.set_header (null);
-        }
     }
 }
