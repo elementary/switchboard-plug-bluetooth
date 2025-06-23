@@ -165,7 +165,6 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         device_model.append (device);
     }
 
-    // Exists as separate function so we can disconnect when devices are removed
     private void on_device_changed (Variant changed, string[] invalidated) {
         var paired = changed.lookup_value ("Paired", new VariantType ("b"));
         if (paired != null) {
