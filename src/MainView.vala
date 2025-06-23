@@ -9,6 +9,7 @@
 public class Bluetooth.MainView : Switchboard.SettingsPage {
     public signal void quit_plug ();
 
+    private Gtk.SortListModel nearby_model;
     private Gtk.SortListModel paired_model;
     private GLib.ListStore device_model;
     private Gtk.Spinner discovery_spinner;
@@ -27,17 +28,12 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         paired_model = new Gtk.SortListModel (
             new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
                 var device = (Services.Device) obj;
-
-                if (device.paired) {
-                    ((DBusProxy) device).g_properties_changed.connect (on_device_changed);
-                }
-
                 return device.paired;
             })),
             new Gtk.CustomSorter ((GLib.CompareDataFunc<GLib.Object>) Services.Device.compare)
         );
 
-        var nearby_model = new Gtk.SortListModel (
+        nearby_model = new Gtk.SortListModel (
             new Gtk.FilterListModel (device_model, new Gtk.CustomFilter ((obj) => {
                 var device = (Services.Device) obj;
 
@@ -164,12 +160,39 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
             return;
         }
 
+        ((DBusProxy) device).g_properties_changed.connect (on_device_changed);
+
         device_model.append (device);
     }
 
     // Exists as separate function so we can disconnect when devices are removed
-    private void on_device_changed () {
-        paired_model.sorter.changed (DIFFERENT);
+    private void on_device_changed (Variant changed, string[] invalidated) {
+        var paired = changed.lookup_value ("Paired", new VariantType ("b"));
+        if (paired != null) {
+            var nearby_filter = ((Gtk.FilterListModel) nearby_model.model).filter;
+            var paired_filter = ((Gtk.FilterListModel) paired_model.model).filter;
+
+            if (paired.get_boolean ()) {
+                nearby_filter.changed (MORE_STRICT);
+                paired_filter.changed (LESS_STRICT);
+            } else {
+                nearby_filter.changed (LESS_STRICT);
+                paired_filter.changed (MORE_STRICT);
+            }
+
+            return;
+        }
+
+        var connected = changed.lookup_value ("Connected", new VariantType ("b"));
+        if (connected != null) {
+            paired_model.sorter.changed (DIFFERENT);
+            return;
+        }
+
+        var name = changed.lookup_value ("Name", new VariantType ("s"));
+        if (name != null) {
+            paired_model.sorter.changed (DIFFERENT);
+        }
     }
 
     private void on_device_removed (Services.Device device) {
