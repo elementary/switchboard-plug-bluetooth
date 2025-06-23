@@ -57,6 +57,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         };
         paired_list.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         paired_list.add_css_class (Granite.STYLE_CLASS_CARD);
+        paired_list.add_css_class (Granite.STYLE_CLASS_ROUNDED);
         paired_list.bind_model (paired_model, create_widget_func);
         paired_list.set_placeholder (paired_placeholder);
 
@@ -71,6 +72,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         };
         list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         list_box.add_css_class (Granite.STYLE_CLASS_CARD);
+        list_box.add_css_class (Granite.STYLE_CLASS_ROUNDED);
         list_box.bind_model (nearby_model, create_widget_func);
         list_box.set_placeholder (empty_alert);
 
