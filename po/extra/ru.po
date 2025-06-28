@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-18 19:42+0000\n"
+"POT-Creation-Date: 2025-06-28 20:26+0000\n"
 "PO-Revision-Date: 2024-06-20 12:16+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -32,28 +32,28 @@ msgstr "Настройка параметров Bluetooth"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:45
-#: data/bluetooth.metainfo.xml.in:59 data/bluetooth.metainfo.xml.in:77
-#: data/bluetooth.metainfo.xml.in:92
+#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:50
+#: data/bluetooth.metainfo.xml.in:59 data/bluetooth.metainfo.xml.in:73
+#: data/bluetooth.metainfo.xml.in:91 data/bluetooth.metainfo.xml.in:106
 msgid "Minor updates"
 msgstr "Незначительные обновления"
 
-#: data/bluetooth.metainfo.xml.in:38 data/bluetooth.metainfo.xml.in:48
-#: data/bluetooth.metainfo.xml.in:61 data/bluetooth.metainfo.xml.in:81
-#: data/bluetooth.metainfo.xml.in:95
+#: data/bluetooth.metainfo.xml.in:38 data/bluetooth.metainfo.xml.in:52
+#: data/bluetooth.metainfo.xml.in:62 data/bluetooth.metainfo.xml.in:75
+#: data/bluetooth.metainfo.xml.in:95 data/bluetooth.metainfo.xml.in:109
 msgid "Updated translations"
 msgstr "Обновлены переводы"
 
-#: data/bluetooth.metainfo.xml.in:47
+#: data/bluetooth.metainfo.xml.in:61
 msgid "Fix missing link to audio settings for some headphones"
 msgstr ""
 "Исправлена отсутствующая ссылка на настройки звука для некоторых наушников"
 
-#: data/bluetooth.metainfo.xml.in:68
+#: data/bluetooth.metainfo.xml.in:82
 msgid "Security update"
 msgstr "Обновления безопасности"
 
-#: data/bluetooth.metainfo.xml.in:70
+#: data/bluetooth.metainfo.xml.in:84
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
@@ -61,23 +61,23 @@ msgstr ""
 "Устранена уязвимость, которая позволяет подключать устройство без явного "
 "разрешения пользователя (CVE-2021-21367)"
 
-#: data/bluetooth.metainfo.xml.in:79
+#: data/bluetooth.metainfo.xml.in:93
 msgid "Fallback to device type when name is not available"
 msgstr "Указание типа устройства, когда название недоступно"
 
-#: data/bluetooth.metainfo.xml.in:80
+#: data/bluetooth.metainfo.xml.in:94
 msgid "Show \"Discovering\" indicator in an overlay bar"
 msgstr "Отображение индикатора «Определение» на панели"
 
-#: data/bluetooth.metainfo.xml.in:88
+#: data/bluetooth.metainfo.xml.in:102
 msgid "Fixes"
 msgstr "Исправления"
 
-#: data/bluetooth.metainfo.xml.in:90
+#: data/bluetooth.metainfo.xml.in:104
 msgid "Fix crash on devices without Bluetooth"
 msgstr "Исправлен сбой на устройствах без Bluetooth"
 
-#: data/bluetooth.metainfo.xml.in:94
+#: data/bluetooth.metainfo.xml.in:108
 msgid "Move \"forget device\" button to each device row"
 msgstr "Кнопка «Забыть устройство» теперь отображается рядом с устройством"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-18 19:42+0000\n"
+"POT-Creation-Date: 2025-06-28 20:26+0000\n"
 "PO-Revision-Date: 2024-06-13 08:33+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -31,29 +31,29 @@ msgstr "Configureu els paràmetres del Bluetooth"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:45
-#: data/bluetooth.metainfo.xml.in:59 data/bluetooth.metainfo.xml.in:77
-#: data/bluetooth.metainfo.xml.in:92
+#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:50
+#: data/bluetooth.metainfo.xml.in:59 data/bluetooth.metainfo.xml.in:73
+#: data/bluetooth.metainfo.xml.in:91 data/bluetooth.metainfo.xml.in:106
 msgid "Minor updates"
 msgstr "Actualitzacions menors"
 
-#: data/bluetooth.metainfo.xml.in:38 data/bluetooth.metainfo.xml.in:48
-#: data/bluetooth.metainfo.xml.in:61 data/bluetooth.metainfo.xml.in:81
-#: data/bluetooth.metainfo.xml.in:95
+#: data/bluetooth.metainfo.xml.in:38 data/bluetooth.metainfo.xml.in:52
+#: data/bluetooth.metainfo.xml.in:62 data/bluetooth.metainfo.xml.in:75
+#: data/bluetooth.metainfo.xml.in:95 data/bluetooth.metainfo.xml.in:109
 msgid "Updated translations"
 msgstr "Traduccions actualitzades"
 
-#: data/bluetooth.metainfo.xml.in:47
+#: data/bluetooth.metainfo.xml.in:61
 msgid "Fix missing link to audio settings for some headphones"
 msgstr ""
 "Correcció de l'enllaç que faltava a la configuració d'àudio d'alguns "
 "auriculars"
 
-#: data/bluetooth.metainfo.xml.in:68
+#: data/bluetooth.metainfo.xml.in:82
 msgid "Security update"
 msgstr "Actualització de seguretat"
 
-#: data/bluetooth.metainfo.xml.in:70
+#: data/bluetooth.metainfo.xml.in:84
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
@@ -61,23 +61,23 @@ msgstr ""
 "Solució d'una vulnerabilitat que permetria aparellar un dispositiu sense "
 "autorització explícita de l'usuari (CVE-2021-21367)"
 
-#: data/bluetooth.metainfo.xml.in:79
+#: data/bluetooth.metainfo.xml.in:93
 msgid "Fallback to device type when name is not available"
 msgstr "Alternativa al tipus de dispositiu quan el nom no està disponible"
 
-#: data/bluetooth.metainfo.xml.in:80
+#: data/bluetooth.metainfo.xml.in:94
 msgid "Show \"Discovering\" indicator in an overlay bar"
 msgstr "Es mostra l'indicador \"Descobrint\" en una barra de superposició."
 
-#: data/bluetooth.metainfo.xml.in:88
+#: data/bluetooth.metainfo.xml.in:102
 msgid "Fixes"
 msgstr "Correccions"
 
-#: data/bluetooth.metainfo.xml.in:90
+#: data/bluetooth.metainfo.xml.in:104
 msgid "Fix crash on devices without Bluetooth"
 msgstr "Correcció de la fallada en dispositius sense Bluetooth"
 
-#: data/bluetooth.metainfo.xml.in:94
+#: data/bluetooth.metainfo.xml.in:108
 msgid "Move \"forget device\" button to each device row"
 msgstr "Moviment del botó \"oblida el dispositiu\" a cada fila del dispositiu"
 

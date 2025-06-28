@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-18 19:42+0000\n"
+"POT-Creation-Date: 2025-06-28 20:26+0000\n"
 "PO-Revision-Date: 2024-11-30 16:16+0000\n"
 "Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -31,28 +31,28 @@ msgstr "Definir configurações de Bluetooth"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:45
-#: data/bluetooth.metainfo.xml.in:59 data/bluetooth.metainfo.xml.in:77
-#: data/bluetooth.metainfo.xml.in:92
+#: data/bluetooth.metainfo.xml.in:36 data/bluetooth.metainfo.xml.in:50
+#: data/bluetooth.metainfo.xml.in:59 data/bluetooth.metainfo.xml.in:73
+#: data/bluetooth.metainfo.xml.in:91 data/bluetooth.metainfo.xml.in:106
 msgid "Minor updates"
 msgstr "Atualizações menores"
 
-#: data/bluetooth.metainfo.xml.in:38 data/bluetooth.metainfo.xml.in:48
-#: data/bluetooth.metainfo.xml.in:61 data/bluetooth.metainfo.xml.in:81
-#: data/bluetooth.metainfo.xml.in:95
+#: data/bluetooth.metainfo.xml.in:38 data/bluetooth.metainfo.xml.in:52
+#: data/bluetooth.metainfo.xml.in:62 data/bluetooth.metainfo.xml.in:75
+#: data/bluetooth.metainfo.xml.in:95 data/bluetooth.metainfo.xml.in:109
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
-#: data/bluetooth.metainfo.xml.in:47
+#: data/bluetooth.metainfo.xml.in:61
 msgid "Fix missing link to audio settings for some headphones"
 msgstr ""
 "Corrija o link perdido nas configurações de áudio de alguns fones de ouvido"
 
-#: data/bluetooth.metainfo.xml.in:68
+#: data/bluetooth.metainfo.xml.in:82
 msgid "Security update"
 msgstr "Atualização de segurança"
 
-#: data/bluetooth.metainfo.xml.in:70
+#: data/bluetooth.metainfo.xml.in:84
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
@@ -60,23 +60,23 @@ msgstr ""
 "Corrige uma vulnerabilidade que possibilitaria que um dispositivo fosse "
 "pareado sem autorização explícita do usuário (CVE-2021-21367)"
 
-#: data/bluetooth.metainfo.xml.in:79
+#: data/bluetooth.metainfo.xml.in:93
 msgid "Fallback to device type when name is not available"
 msgstr "Reverter para o tipo de dispositivo quando o nome não está disponível"
 
-#: data/bluetooth.metainfo.xml.in:80
+#: data/bluetooth.metainfo.xml.in:94
 msgid "Show \"Discovering\" indicator in an overlay bar"
 msgstr "Mostrar o indicador \"Procurando\" numa barra sobreposta"
 
-#: data/bluetooth.metainfo.xml.in:88
+#: data/bluetooth.metainfo.xml.in:102
 msgid "Fixes"
 msgstr "Correções"
 
-#: data/bluetooth.metainfo.xml.in:90
+#: data/bluetooth.metainfo.xml.in:104
 msgid "Fix crash on devices without Bluetooth"
 msgstr "Corrige falha em dispositivos sem Bluetooth"
 
-#: data/bluetooth.metainfo.xml.in:94
+#: data/bluetooth.metainfo.xml.in:108
 msgid "Move \"forget device\" button to each device row"
 msgstr "Mover o botão \"esquecer dispositivo\" para cada linha do dispositivo"
 
