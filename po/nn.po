@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-18 19:42+0000\n"
+"POT-Creation-Date: 2025-06-28 20:26+0000\n"
 "PO-Revision-Date: 2023-02-02 23:25+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
-#: src/Plug.vala:34 src/MainView.vala:32
+#: src/Plug.vala:34 src/MainView.vala:20
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -28,45 +28,50 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Konfigurer Bluetooth-innstillingar"
 
-#: src/MainView.vala:40
+#: src/MainView.vala:49
+#, fuzzy
+#| msgid "Paired Devices"
+msgid "No Paired Devices"
+msgstr "Kopla einingar"
+
+#: src/MainView.vala:50
+msgid "Bluetooth devices will appear here when paired with this device."
+msgstr ""
+
+#: src/MainView.vala:64
 msgid "No Devices Found"
 msgstr "Fann ingen einingar"
 
-#: src/MainView.vala:41
+#: src/MainView.vala:65
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Forsikre deg om at eininga di er synleg og klar for kopling."
 
-#: src/MainView.vala:63
-msgid "Discovering"
-msgstr "Leitar"
+#: src/MainView.vala:79
+msgid "Paired Devices"
+msgstr "Kopla einingar"
+
+#: src/MainView.vala:84
+msgid "Nearby Devices"
+msgstr "Einingar i nærleiken"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:153
+#: src/MainView.vala:215
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "No mogleg å finne som «%s». Ikkje mogleg å finne når denne sida er lukka"
 
-#: src/MainView.vala:153
+#: src/MainView.vala:215
 msgid "Unknown"
 msgstr "Ukjend"
 
-#: src/MainView.vala:155
+#: src/MainView.vala:217
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Kan ikkje finnast når Bluetooth er avslått"
 
-#: src/MainView.vala:157
+#: src/MainView.vala:219
 msgid "Not discoverable"
 msgstr "Kan ikkje finnast"
-
-#: src/MainView.vala:203
-msgid "Paired Devices"
-msgstr "Kopla einingar"
-
-#. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:207
-msgid "Nearby Devices"
-msgstr "Einingar i nærleiken"
 
 #: src/PairDialog.vala:43
 msgid "Confirm Bluetooth Pairing"
@@ -90,22 +95,22 @@ msgstr "Skriv inn PIN-koden for Bluetooth"
 msgid "Unknown Bluetooth Device"
 msgstr "Ukjend Bluetooth-eining"
 
-#: src/PairDialog.vala:96
+#: src/PairDialog.vala:104
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "Sjekk at koden som blir vist på \"%s\" er lik den nedanfor."
 
-#: src/PairDialog.vala:98 src/PairDialog.vala:110 src/DeviceRow.vala:285
+#: src/PairDialog.vala:106 src/PairDialog.vala:118 src/DeviceRow.vala:286
 msgid "Pair"
 msgstr "Kople til"
 
-#: src/PairDialog.vala:104
+#: src/PairDialog.vala:112
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
 "Skriv inn koden som er vist nedanfor på \"%s\". Trykk deretter på Enter."
 
-#: src/PairDialog.vala:108
+#: src/PairDialog.vala:116
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "\"%s\" vil kopla til denne eininga."
@@ -138,61 +143,64 @@ msgstr "Kunne ikkje kopla til"
 msgid "Not Connected"
 msgstr "Ikkje kopla til"
 
-#: src/DeviceRow.vala:97
+#: src/DeviceRow.vala:98
 msgid "Speaker"
 msgstr "Høgtalar"
 
-#: src/DeviceRow.vala:100
+#: src/DeviceRow.vala:101
 msgid "Controller"
 msgstr "Kontroll"
 
-#: src/DeviceRow.vala:103
+#: src/DeviceRow.vala:104
 msgid "Keyboard"
 msgstr "Tastatur"
 
-#: src/DeviceRow.vala:106
+#: src/DeviceRow.vala:107
 msgid "Mouse"
 msgstr "Mus"
 
-#: src/DeviceRow.vala:109
+#: src/DeviceRow.vala:110
 msgid "Tablet"
 msgstr "Nettbrett"
 
-#: src/DeviceRow.vala:112
+#: src/DeviceRow.vala:113
 msgid "Touchpad"
 msgstr "Peikeplate"
 
-#: src/DeviceRow.vala:115
+#: src/DeviceRow.vala:116
 msgid "Phone"
 msgstr "Mobil"
 
-#: src/DeviceRow.vala:140
+#: src/DeviceRow.vala:141
 msgid "Forget this device"
 msgstr "Gløym denne eininga"
 
-#: src/DeviceRow.vala:168
+#: src/DeviceRow.vala:169
 msgid "Sound Settings"
 msgstr "Lydinstillingar"
 
-#: src/DeviceRow.vala:173
+#: src/DeviceRow.vala:174
 msgid "Keyboard Settings"
 msgstr "Tastaturinstillingar"
 
-#: src/DeviceRow.vala:177
+#: src/DeviceRow.vala:178
 msgid "Mouse & Touchpad Settings"
 msgstr "Mus og berøringsflate-instillingar"
 
-#: src/DeviceRow.vala:181
+#: src/DeviceRow.vala:182
 msgid "Printer Settings"
 msgstr "Skrivarinstillingar"
 
-#: src/DeviceRow.vala:298
+#: src/DeviceRow.vala:299
 msgid "Disconnect"
 msgstr "Kople frå"
 
-#: src/DeviceRow.vala:322
+#: src/DeviceRow.vala:323
 msgid "Connect"
 msgstr "Kople til"
+
+#~ msgid "Discovering"
+#~ msgstr "Leitar"
 
 #, c-format
 #~ msgid ""

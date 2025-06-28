@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-18 19:42+0000\n"
+"POT-Creation-Date: 2025-06-28 20:26+0000\n"
 "PO-Revision-Date: 2021-11-02 09:20+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-22 05:48+0000\n"
 
-#: src/Plug.vala:34 src/MainView.vala:32
+#: src/Plug.vala:34 src/MainView.vala:20
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -29,46 +29,51 @@ msgstr "Bluetooth"
 msgid "Configure Bluetooth Settings"
 msgstr "Skonfiguruj ustawienia Bluetooth"
 
-#: src/MainView.vala:40
+#: src/MainView.vala:49
+#, fuzzy
+#| msgid "Paired Devices"
+msgid "No Paired Devices"
+msgstr "Sparowane urządzenia"
+
+#: src/MainView.vala:50
+msgid "Bluetooth devices will appear here when paired with this device."
+msgstr ""
+
+#: src/MainView.vala:64
 msgid "No Devices Found"
 msgstr "Nie odnaleziono urządzeń"
 
-#: src/MainView.vala:41
+#: src/MainView.vala:65
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Prosimy upewnić się, że urządzenia są widzialne i gotowe do sparowania."
 
-#: src/MainView.vala:63
-msgid "Discovering"
-msgstr "Wykrywanie"
+#: src/MainView.vala:79
+msgid "Paired Devices"
+msgstr "Sparowane urządzenia"
+
+#: src/MainView.vala:84
+msgid "Nearby Devices"
+msgstr "Urządzenia w pobliżu"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:153
+#: src/MainView.vala:215
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Od teraz wykrywalne jako \"%s\". Niewykrywalne, gdy ta strona jest zamknięta"
 
-#: src/MainView.vala:153
+#: src/MainView.vala:215
 msgid "Unknown"
 msgstr "Nieznane"
 
-#: src/MainView.vala:155
+#: src/MainView.vala:217
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Niewykrywalne gdy Bluetooth jest wyłączony"
 
-#: src/MainView.vala:157
+#: src/MainView.vala:219
 msgid "Not discoverable"
 msgstr "Niewykrywalne"
-
-#: src/MainView.vala:203
-msgid "Paired Devices"
-msgstr "Sparowane urządzenia"
-
-#. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:207
-msgid "Nearby Devices"
-msgstr "Urządzenia w pobliżu"
 
 #: src/PairDialog.vala:43
 msgid "Confirm Bluetooth Pairing"
@@ -92,21 +97,21 @@ msgstr "Wpisz PIN Bluetooth"
 msgid "Unknown Bluetooth Device"
 msgstr "Nieznane urządzenie Bluetooth"
 
-#: src/PairDialog.vala:96
+#: src/PairDialog.vala:104
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "Upewnij się, że kod wyświetlony na „%s” odpowiada temu poniżej."
 
-#: src/PairDialog.vala:98 src/PairDialog.vala:110 src/DeviceRow.vala:285
+#: src/PairDialog.vala:106 src/PairDialog.vala:118 src/DeviceRow.vala:286
 msgid "Pair"
 msgstr "Sparuj"
 
-#: src/PairDialog.vala:104
+#: src/PairDialog.vala:112
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr "Wpisz kod widoczny poniżej na \"%s\", a następnie wciśnij Enter."
 
-#: src/PairDialog.vala:108
+#: src/PairDialog.vala:116
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "\"%s\" chce się sparować z tym urządzeniem."
@@ -139,61 +144,64 @@ msgstr "Nie można połączyć"
 msgid "Not Connected"
 msgstr "Niepołączony"
 
-#: src/DeviceRow.vala:97
+#: src/DeviceRow.vala:98
 msgid "Speaker"
 msgstr "Głośnik"
 
-#: src/DeviceRow.vala:100
+#: src/DeviceRow.vala:101
 msgid "Controller"
 msgstr "Kontroler"
 
-#: src/DeviceRow.vala:103
+#: src/DeviceRow.vala:104
 msgid "Keyboard"
 msgstr "Klawiatura"
 
-#: src/DeviceRow.vala:106
+#: src/DeviceRow.vala:107
 msgid "Mouse"
 msgstr "Myszka"
 
-#: src/DeviceRow.vala:109
+#: src/DeviceRow.vala:110
 msgid "Tablet"
 msgstr "Tablet"
 
-#: src/DeviceRow.vala:112
+#: src/DeviceRow.vala:113
 msgid "Touchpad"
 msgstr "Panel dotykowy"
 
-#: src/DeviceRow.vala:115
+#: src/DeviceRow.vala:116
 msgid "Phone"
 msgstr "Telefon"
 
-#: src/DeviceRow.vala:140
+#: src/DeviceRow.vala:141
 msgid "Forget this device"
 msgstr "Zapomnij to urządzenie"
 
-#: src/DeviceRow.vala:168
+#: src/DeviceRow.vala:169
 msgid "Sound Settings"
 msgstr "Ustawienia dźwięku"
 
-#: src/DeviceRow.vala:173
+#: src/DeviceRow.vala:174
 msgid "Keyboard Settings"
 msgstr "Ustawienia klawiatury"
 
-#: src/DeviceRow.vala:177
+#: src/DeviceRow.vala:178
 msgid "Mouse & Touchpad Settings"
 msgstr "Ustawienia myszy i panelu dotykowego"
 
-#: src/DeviceRow.vala:181
+#: src/DeviceRow.vala:182
 msgid "Printer Settings"
 msgstr "Ustawienia drukarki"
 
-#: src/DeviceRow.vala:298
+#: src/DeviceRow.vala:299
 msgid "Disconnect"
 msgstr "Rozłącz"
 
-#: src/DeviceRow.vala:322
+#: src/DeviceRow.vala:323
 msgid "Connect"
 msgstr "Połącz"
+
+#~ msgid "Discovering"
+#~ msgstr "Wykrywanie"
 
 #, c-format
 #~ msgid ""

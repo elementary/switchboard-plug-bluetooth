@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-18 19:42+0000\n"
+"POT-Creation-Date: 2025-06-28 20:26+0000\n"
 "PO-Revision-Date: 2024-09-14 02:16+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
-#: src/Plug.vala:34 src/MainView.vala:32
+#: src/Plug.vala:34 src/MainView.vala:20
 msgid "Bluetooth"
 msgstr "藍牙"
 
@@ -28,44 +28,49 @@ msgstr "藍牙"
 msgid "Configure Bluetooth Settings"
 msgstr "調整藍牙設定"
 
-#: src/MainView.vala:40
+#: src/MainView.vala:49
+#, fuzzy
+#| msgid "Paired Devices"
+msgid "No Paired Devices"
+msgstr "已配對的裝置"
+
+#: src/MainView.vala:50
+msgid "Bluetooth devices will appear here when paired with this device."
+msgstr ""
+
+#: src/MainView.vala:64
 msgid "No Devices Found"
 msgstr "找不到裝置"
 
-#: src/MainView.vala:41
+#: src/MainView.vala:65
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "請確認您的裝置可被探查而且準備好配對。"
 
-#: src/MainView.vala:63
-msgid "Discovering"
-msgstr "探查中"
+#: src/MainView.vala:79
+msgid "Paired Devices"
+msgstr "已配對的裝置"
+
+#: src/MainView.vala:84
+msgid "Nearby Devices"
+msgstr "鄰近的裝置"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:153
+#: src/MainView.vala:215
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "現在可被偵測為「%s」。關閉此頁則不被偵測"
 
-#: src/MainView.vala:153
+#: src/MainView.vala:215
 msgid "Unknown"
 msgstr "未知"
 
-#: src/MainView.vala:155
+#: src/MainView.vala:217
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "藍牙關閉時不被偵測"
 
-#: src/MainView.vala:157
+#: src/MainView.vala:219
 msgid "Not discoverable"
 msgstr "不被偵測"
-
-#: src/MainView.vala:203
-msgid "Paired Devices"
-msgstr "已配對的裝置"
-
-#. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:207
-msgid "Nearby Devices"
-msgstr "鄰近的裝置"
 
 #: src/PairDialog.vala:43
 msgid "Confirm Bluetooth Pairing"
@@ -89,21 +94,21 @@ msgstr "請輸入藍牙 PIN 碼"
 msgid "Unknown Bluetooth Device"
 msgstr "未知的藍牙裝置"
 
-#: src/PairDialog.vala:96
+#: src/PairDialog.vala:104
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "確認「%s」上顯示的代碼與下方相同。"
 
-#: src/PairDialog.vala:98 src/PairDialog.vala:110 src/DeviceRow.vala:285
+#: src/PairDialog.vala:106 src/PairDialog.vala:118 src/DeviceRow.vala:286
 msgid "Pair"
 msgstr "配對"
 
-#: src/PairDialog.vala:104
+#: src/PairDialog.vala:112
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr "請在「%s」輸入下方代碼，接著按下 Enter。"
 
-#: src/PairDialog.vala:108
+#: src/PairDialog.vala:116
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "「%s」想要和這個裝置配對。"
@@ -136,61 +141,64 @@ msgstr "無法連接"
 msgid "Not Connected"
 msgstr "未連接"
 
-#: src/DeviceRow.vala:97
+#: src/DeviceRow.vala:98
 msgid "Speaker"
 msgstr "喇叭"
 
-#: src/DeviceRow.vala:100
+#: src/DeviceRow.vala:101
 msgid "Controller"
 msgstr "手把"
 
-#: src/DeviceRow.vala:103
+#: src/DeviceRow.vala:104
 msgid "Keyboard"
 msgstr "鍵盤"
 
-#: src/DeviceRow.vala:106
+#: src/DeviceRow.vala:107
 msgid "Mouse"
 msgstr "滑鼠"
 
-#: src/DeviceRow.vala:109
+#: src/DeviceRow.vala:110
 msgid "Tablet"
 msgstr "繪圖板"
 
-#: src/DeviceRow.vala:112
+#: src/DeviceRow.vala:113
 msgid "Touchpad"
 msgstr "觸控板"
 
-#: src/DeviceRow.vala:115
+#: src/DeviceRow.vala:116
 msgid "Phone"
 msgstr "手機"
 
-#: src/DeviceRow.vala:140
+#: src/DeviceRow.vala:141
 msgid "Forget this device"
 msgstr "忘記這台裝置"
 
-#: src/DeviceRow.vala:168
+#: src/DeviceRow.vala:169
 msgid "Sound Settings"
 msgstr "音效設定值"
 
-#: src/DeviceRow.vala:173
+#: src/DeviceRow.vala:174
 msgid "Keyboard Settings"
 msgstr "鍵盤設定值"
 
-#: src/DeviceRow.vala:177
+#: src/DeviceRow.vala:178
 msgid "Mouse & Touchpad Settings"
 msgstr "滑鼠與觸控板設定"
 
-#: src/DeviceRow.vala:181
+#: src/DeviceRow.vala:182
 msgid "Printer Settings"
 msgstr "印表機設定"
 
-#: src/DeviceRow.vala:298
+#: src/DeviceRow.vala:299
 msgid "Disconnect"
 msgstr "中斷連接"
 
-#: src/DeviceRow.vala:322
+#: src/DeviceRow.vala:323
 msgid "Connect"
 msgstr "連接"
+
+#~ msgid "Discovering"
+#~ msgstr "探查中"
 
 #, c-format
 #~ msgid ""

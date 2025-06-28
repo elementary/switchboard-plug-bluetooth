@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-18 19:42+0000\n"
+"POT-Creation-Date: 2025-06-28 20:26+0000\n"
 "PO-Revision-Date: 2020-10-30 00:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
-#: src/Plug.vala:34 src/MainView.vala:32
+#: src/Plug.vala:34 src/MainView.vala:20
 msgid "Bluetooth"
 msgstr "ब्लूटुथ"
 
@@ -28,44 +28,49 @@ msgstr "ब्लूटुथ"
 msgid "Configure Bluetooth Settings"
 msgstr "ब्लूटूथ सेटिंग्ज कॉन्फिगर करा"
 
-#: src/MainView.vala:40
+#: src/MainView.vala:49
+#, fuzzy
+#| msgid "Paired Devices"
+msgid "No Paired Devices"
+msgstr "जोडलेले डिव्हाइसेस"
+
+#: src/MainView.vala:50
+msgid "Bluetooth devices will appear here when paired with this device."
+msgstr ""
+
+#: src/MainView.vala:64
 msgid "No Devices Found"
 msgstr "कोणतीही डिव्हाइसेस सापडली नाहीत"
 
-#: src/MainView.vala:41
+#: src/MainView.vala:65
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "कृपया आपले डिव्हाइस दृश्यमान आणि जोडण्यासाठी सज्ज असल्याचे सुनिश्चित करा."
 
-#: src/MainView.vala:63
-msgid "Discovering"
-msgstr "शोधत आहे"
+#: src/MainView.vala:79
+msgid "Paired Devices"
+msgstr "जोडलेले डिव्हाइसेस"
+
+#: src/MainView.vala:84
+msgid "Nearby Devices"
+msgstr "जवळपासचे डिव्हाइसेस"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:153
+#: src/MainView.vala:215
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "आता \"%s\" म्हणून शोधण्यायोग्य. हे पृष्ठ बंद असताना शोधण्यायोग्य नाही"
 
-#: src/MainView.vala:153
+#: src/MainView.vala:215
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#: src/MainView.vala:155
+#: src/MainView.vala:217
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "ब्लूटुथ बंद असताना शोधण्यायोग्य नाही"
 
-#: src/MainView.vala:157
+#: src/MainView.vala:219
 msgid "Not discoverable"
 msgstr "शोधण्यायोग्य नाही"
-
-#: src/MainView.vala:203
-msgid "Paired Devices"
-msgstr "जोडलेले डिव्हाइसेस"
-
-#. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:207
-msgid "Nearby Devices"
-msgstr "जवळपासचे डिव्हाइसेस"
 
 #: src/PairDialog.vala:43
 msgid "Confirm Bluetooth Pairing"
@@ -89,21 +94,21 @@ msgstr "ब्लूटूथ पिन प्रविष्ट करा"
 msgid "Unknown Bluetooth Device"
 msgstr "अज्ञात ब्लूटूथ डिव्हाइस"
 
-#: src/PairDialog.vala:96
+#: src/PairDialog.vala:104
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr "“%s” वर प्रदर्शित कोड खालीलपैकी जुळत असल्याचे सुनिश्चित करा."
 
-#: src/PairDialog.vala:98 src/PairDialog.vala:110 src/DeviceRow.vala:285
+#: src/PairDialog.vala:106 src/PairDialog.vala:118 src/DeviceRow.vala:286
 msgid "Pair"
 msgstr "जोडा"
 
-#: src/PairDialog.vala:104
+#: src/PairDialog.vala:112
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr "खाली दिलेले कोड “%s” वर टाइप करा आणि त्यानंतर एंटर करा."
 
-#: src/PairDialog.vala:108
+#: src/PairDialog.vala:116
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr "\"%s\" या डिव्हाइससह जोडी करू इच्छित आहे."
@@ -136,61 +141,64 @@ msgstr "कनेक्ट करण्यात अक्षम"
 msgid "Not Connected"
 msgstr "जोडलेले नाही"
 
-#: src/DeviceRow.vala:97
+#: src/DeviceRow.vala:98
 msgid "Speaker"
 msgstr "स्पीकर"
 
-#: src/DeviceRow.vala:100
+#: src/DeviceRow.vala:101
 msgid "Controller"
 msgstr "नियंत्रक"
 
-#: src/DeviceRow.vala:103
+#: src/DeviceRow.vala:104
 msgid "Keyboard"
 msgstr "कीबोर्ड"
 
-#: src/DeviceRow.vala:106
+#: src/DeviceRow.vala:107
 msgid "Mouse"
 msgstr "माऊस"
 
-#: src/DeviceRow.vala:109
+#: src/DeviceRow.vala:110
 msgid "Tablet"
 msgstr "टॅब्लेट"
 
-#: src/DeviceRow.vala:112
+#: src/DeviceRow.vala:113
 msgid "Touchpad"
 msgstr "टचपॅड"
 
-#: src/DeviceRow.vala:115
+#: src/DeviceRow.vala:116
 msgid "Phone"
 msgstr "फोन"
 
-#: src/DeviceRow.vala:140
+#: src/DeviceRow.vala:141
 msgid "Forget this device"
 msgstr "हे डिव्हाइस विसरून जा"
 
-#: src/DeviceRow.vala:168
+#: src/DeviceRow.vala:169
 msgid "Sound Settings"
 msgstr "ध्वनी सेटिंग्ज"
 
-#: src/DeviceRow.vala:173
+#: src/DeviceRow.vala:174
 msgid "Keyboard Settings"
 msgstr "कीबोर्ड सेटिंग्ज"
 
-#: src/DeviceRow.vala:177
+#: src/DeviceRow.vala:178
 msgid "Mouse & Touchpad Settings"
 msgstr "माऊस आणि टचपॅड सेटिंग्ज"
 
-#: src/DeviceRow.vala:181
+#: src/DeviceRow.vala:182
 msgid "Printer Settings"
 msgstr "प्रिंटर सेटिंग्ज"
 
-#: src/DeviceRow.vala:298
+#: src/DeviceRow.vala:299
 msgid "Disconnect"
 msgstr "डिस्कनेक्ट करा"
 
-#: src/DeviceRow.vala:322
+#: src/DeviceRow.vala:323
 msgid "Connect"
 msgstr "जोडा"
+
+#~ msgid "Discovering"
+#~ msgstr "शोधत आहे"
 
 #, c-format
 #~ msgid ""

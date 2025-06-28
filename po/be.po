@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-18 19:42+0000\n"
+"POT-Creation-Date: 2025-06-28 20:26+0000\n"
 "PO-Revision-Date: 2020-10-28 11:21+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Belarusian <https://l10n.elementary.io/projects/switchboard/"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-19 05:54+0000\n"
 
-#: src/Plug.vala:34 src/MainView.vala:32
+#: src/Plug.vala:34 src/MainView.vala:20
 msgid "Bluetooth"
 msgstr ""
 
@@ -29,43 +29,46 @@ msgstr ""
 msgid "Configure Bluetooth Settings"
 msgstr ""
 
-#: src/MainView.vala:40
+#: src/MainView.vala:49
+msgid "No Paired Devices"
+msgstr ""
+
+#: src/MainView.vala:50
+msgid "Bluetooth devices will appear here when paired with this device."
+msgstr ""
+
+#: src/MainView.vala:64
 msgid "No Devices Found"
 msgstr ""
 
-#: src/MainView.vala:41
+#: src/MainView.vala:65
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 
-#: src/MainView.vala:63
-msgid "Discovering"
+#: src/MainView.vala:79
+msgid "Paired Devices"
+msgstr ""
+
+#: src/MainView.vala:84
+msgid "Nearby Devices"
 msgstr ""
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:153
+#: src/MainView.vala:215
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 
-#: src/MainView.vala:153
+#: src/MainView.vala:215
 msgid "Unknown"
 msgstr "Невядома"
 
-#: src/MainView.vala:155
+#: src/MainView.vala:217
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr ""
 
-#: src/MainView.vala:157
+#: src/MainView.vala:219
 msgid "Not discoverable"
-msgstr ""
-
-#: src/MainView.vala:203
-msgid "Paired Devices"
-msgstr ""
-
-#. This header may not appear, so cannot contain discovery spinner
-#: src/MainView.vala:207
-msgid "Nearby Devices"
 msgstr ""
 
 #: src/PairDialog.vala:43
@@ -88,21 +91,21 @@ msgstr ""
 msgid "Unknown Bluetooth Device"
 msgstr ""
 
-#: src/PairDialog.vala:96
+#: src/PairDialog.vala:104
 #, c-format
 msgid "Make sure the code displayed on “%s” matches the one below."
 msgstr ""
 
-#: src/PairDialog.vala:98 src/PairDialog.vala:110 src/DeviceRow.vala:285
+#: src/PairDialog.vala:106 src/PairDialog.vala:118 src/DeviceRow.vala:286
 msgid "Pair"
 msgstr ""
 
-#: src/PairDialog.vala:104
+#: src/PairDialog.vala:112
 #, c-format
 msgid "Type the code displayed below on “%s”, followed by Enter."
 msgstr ""
 
-#: src/PairDialog.vala:108
+#: src/PairDialog.vala:116
 #, c-format
 msgid "“%s” would like to pair with this device."
 msgstr ""
@@ -135,58 +138,58 @@ msgstr ""
 msgid "Not Connected"
 msgstr ""
 
-#: src/DeviceRow.vala:97
+#: src/DeviceRow.vala:98
 msgid "Speaker"
 msgstr ""
 
-#: src/DeviceRow.vala:100
+#: src/DeviceRow.vala:101
 msgid "Controller"
 msgstr ""
 
-#: src/DeviceRow.vala:103
+#: src/DeviceRow.vala:104
 msgid "Keyboard"
 msgstr "Клавіятура"
 
-#: src/DeviceRow.vala:106
+#: src/DeviceRow.vala:107
 msgid "Mouse"
 msgstr ""
 
-#: src/DeviceRow.vala:109
+#: src/DeviceRow.vala:110
 msgid "Tablet"
 msgstr ""
 
-#: src/DeviceRow.vala:112
+#: src/DeviceRow.vala:113
 msgid "Touchpad"
 msgstr ""
 
-#: src/DeviceRow.vala:115
+#: src/DeviceRow.vala:116
 msgid "Phone"
 msgstr ""
 
-#: src/DeviceRow.vala:140
+#: src/DeviceRow.vala:141
 msgid "Forget this device"
 msgstr ""
 
-#: src/DeviceRow.vala:168
+#: src/DeviceRow.vala:169
 msgid "Sound Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:173
+#: src/DeviceRow.vala:174
 msgid "Keyboard Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:177
+#: src/DeviceRow.vala:178
 msgid "Mouse & Touchpad Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:181
+#: src/DeviceRow.vala:182
 msgid "Printer Settings"
 msgstr ""
 
-#: src/DeviceRow.vala:298
+#: src/DeviceRow.vala:299
 msgid "Disconnect"
 msgstr ""
 
-#: src/DeviceRow.vala:322
+#: src/DeviceRow.vala:323
 msgid "Connect"
 msgstr ""
