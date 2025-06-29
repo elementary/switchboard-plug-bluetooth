@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-28 20:26+0000\n"
-"PO-Revision-Date: 2025-06-20 08:55+0000\n"
+"PO-Revision-Date: 2025-06-30 01:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementaryos.org/projects/settings/"
 "switchboard-plug-bluetooth/ja/>\n"
@@ -29,14 +29,12 @@ msgid "Configure Bluetooth Settings"
 msgstr "Bluetooth の設定をします"
 
 #: src/MainView.vala:49
-#, fuzzy
-#| msgid "Paired Devices"
 msgid "No Paired Devices"
-msgstr "ペアリング中のデバイス"
+msgstr "ペアリング済みのデバイスなし"
 
 #: src/MainView.vala:50
 msgid "Bluetooth devices will appear here when paired with this device."
-msgstr ""
+msgstr "このデバイスとペアリングされた Bluetooth デバイスがここに表示されます。"
 
 #: src/MainView.vala:64
 msgid "No Devices Found"
@@ -48,7 +46,7 @@ msgstr "デバイスが検出可能でペアリングの準備ができている
 
 #: src/MainView.vala:79
 msgid "Paired Devices"
-msgstr "ペアリング中のデバイス"
+msgstr "ペアリング済みのデバイス"
 
 #: src/MainView.vala:84
 msgid "Nearby Devices"
