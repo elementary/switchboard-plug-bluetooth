@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-28 20:26+0000\n"
-"PO-Revision-Date: 2025-06-21 15:55+0000\n"
+"PO-Revision-Date: 2025-06-30 01:55+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <italo@gp-mail.com>\n"
 "Language-Team: Spanish <https://l10n.elementaryos.org/projects/settings/"
 "switchboard-plug-bluetooth/es/>\n"
@@ -29,14 +29,13 @@ msgid "Configure Bluetooth Settings"
 msgstr "Configurar ajustes de Bluetooth"
 
 #: src/MainView.vala:49
-#, fuzzy
-#| msgid "Paired Devices"
 msgid "No Paired Devices"
-msgstr "Dispositivos emparejados"
+msgstr "No hay dispositivos emparejados"
 
 #: src/MainView.vala:50
 msgid "Bluetooth devices will appear here when paired with this device."
 msgstr ""
+"Los dispositivos Bluetooth aparecerán aquí al emparejar con este equipo."
 
 #: src/MainView.vala:64
 msgid "No Devices Found"
