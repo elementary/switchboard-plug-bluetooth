@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-28 20:26+0000\n"
-"PO-Revision-Date: 2020-11-03 10:15+0000\n"
+"PO-Revision-Date: 2025-07-03 09:55+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
+"Language-Team: French <https://l10n.elementaryos.org/projects/settings/"
 "switchboard-plug-bluetooth/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-12-21 05:43+0000\n"
 
 #: src/Plug.vala:34 src/MainView.vala:20
@@ -29,14 +29,13 @@ msgid "Configure Bluetooth Settings"
 msgstr "Configurer les paramètres Bluetooth"
 
 #: src/MainView.vala:49
-#, fuzzy
-#| msgid "Paired Devices"
 msgid "No Paired Devices"
-msgstr "Appareils associés"
+msgstr "Aucun appareil associé"
 
 #: src/MainView.vala:50
 msgid "Bluetooth devices will appear here when paired with this device."
 msgstr ""
+"Les appareils Bluetooth apparaîtront ici une fois appairés avec cet appareil."
 
 #: src/MainView.vala:64
 msgid "No Devices Found"
@@ -80,10 +79,8 @@ msgid "Confirm Bluetooth Pairing"
 msgstr "Confirmer l'appairage Bluetooth"
 
 #: src/PairDialog.vala:54
-#, fuzzy
-#| msgid "Confirm Bluetooth Passkey"
 msgid "Enter Bluetooth Passkey"
-msgstr "Confirmer la clé Bluetooth"
+msgstr "Entrez la clé Bluetooth"
 
 #: src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
