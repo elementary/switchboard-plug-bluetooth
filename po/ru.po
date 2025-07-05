@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-28 20:26+0000\n"
-"PO-Revision-Date: 2025-06-27 15:55+0000\n"
+"PO-Revision-Date: 2025-07-06 15:55+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementaryos.org/projects/settings/"
 "switchboard-plug-bluetooth/ru/>\n"
@@ -30,14 +30,13 @@ msgid "Configure Bluetooth Settings"
 msgstr "Настройка параметров Bluetooth"
 
 #: src/MainView.vala:49
-#, fuzzy
-#| msgid "Paired Devices"
 msgid "No Paired Devices"
-msgstr "Привязанные устройства"
+msgstr "Нет привязанных устройств"
 
 #: src/MainView.vala:50
 msgid "Bluetooth devices will appear here when paired with this device."
 msgstr ""
+"Bluetooth-устройства появятся здесь после сопряжения с этим устройством."
 
 #: src/MainView.vala:64
 msgid "No Devices Found"
@@ -45,8 +44,7 @@ msgstr "Устройства не найдены"
 
 #: src/MainView.vala:65
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
-"Пожалуйста, убедитесь, что ваши устройства видны и готовы к связыванию."
+msgstr "Пожалуйста, убедитесь, что ваши устройства видны и готовы к сопряжению."
 
 #: src/MainView.vala:79
 msgid "Paired Devices"
@@ -121,7 +119,7 @@ msgstr "Доступно"
 
 #: src/DeviceRow.vala:43
 msgid "Pairing…"
-msgstr "Связывается…"
+msgstr "Сопряжение…"
 
 #: src/DeviceRow.vala:45
 msgid "Connected"
