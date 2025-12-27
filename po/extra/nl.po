@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-28 20:26+0000\n"
-"PO-Revision-Date: 2024-08-07 18:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2025-12-28 16:55+0000\n"
+"Last-Translator: Bas Ernst <50556177+ErnstBas@users.noreply.github.com>\n"
+"Language-Team: Dutch <https://l10n.elementaryos.org/projects/settings/"
 "bluetooth-plug-extra/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: data/bluetooth.metainfo.xml.in:10
 msgid "Bluetooth Settings"
@@ -46,36 +46,40 @@ msgstr "Bijgewerkte vertalingen"
 #: data/bluetooth.metainfo.xml.in:61
 msgid "Fix missing link to audio settings for some headphones"
 msgstr ""
+"Repareer ontbrekende link naar de audio-instellingen voor sommige "
+"hoofdtelefoons"
 
 #: data/bluetooth.metainfo.xml.in:82
 msgid "Security update"
-msgstr ""
+msgstr "Beveiligingsupdate"
 
 #: data/bluetooth.metainfo.xml.in:84
 msgid ""
 "Fix a vulnerability that would allow a device to be paired without explicit "
 "user authorization (CVE-2021-21367)"
 msgstr ""
+"Een kwetsbaarheid vehelpen die mogelijk maakt dat een apparaat gekoppeld "
+"wordt zonder expliciete gebruikerstoestemming (CVE-2021-21367)"
 
 #: data/bluetooth.metainfo.xml.in:93
 msgid "Fallback to device type when name is not available"
-msgstr ""
+msgstr "Terugvallen naar het apparaattype wanneer de naam niet beschikbaar is"
 
 #: data/bluetooth.metainfo.xml.in:94
 msgid "Show \"Discovering\" indicator in an overlay bar"
-msgstr ""
+msgstr "Toon \"Ontdekken\"-indicator in een overlaybalk"
 
 #: data/bluetooth.metainfo.xml.in:102
 msgid "Fixes"
-msgstr ""
+msgstr "Reparaties"
 
 #: data/bluetooth.metainfo.xml.in:104
 msgid "Fix crash on devices without Bluetooth"
-msgstr ""
+msgstr "Crash herstellen op apparaten zonder Bluetooth"
 
 #: data/bluetooth.metainfo.xml.in:108
 msgid "Move \"forget device\" button to each device row"
-msgstr ""
+msgstr "Verplaats knop \"vergeet apparaat\" naar iedere apparaatrij"
 
 #~ msgid "Pair with devices that require a password, key code, or confirmation"
 #~ msgstr ""
