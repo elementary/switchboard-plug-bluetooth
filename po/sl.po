@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-28 20:26+0000\n"
-"PO-Revision-Date: 2020-10-30 00:15+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-bluetooth/sl/>\n"
+"PO-Revision-Date: 2026-01-22 21:55+0000\n"
+"Last-Translator: Jernej Virag <jernej@virag.si>\n"
+"Language-Team: Slovenian <https://l10n.elementaryos.org/projects/settings/"
+"bluetooth/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-12-29 05:03+0000\n"
 
 #: src/Plug.vala:34 src/MainView.vala:20
@@ -30,14 +30,13 @@ msgid "Configure Bluetooth Settings"
 msgstr "Nastavitve za Bluetooth"
 
 #: src/MainView.vala:49
-#, fuzzy
-#| msgid "Paired Devices"
 msgid "No Paired Devices"
-msgstr "Seznanjene naprave"
+msgstr "Ni seznanjenih naprav"
 
 #: src/MainView.vala:50
 msgid "Bluetooth devices will appear here when paired with this device."
 msgstr ""
+"Bluetooth naprave se bodo prikazale tukaj, ko bodo seznanjene s to napravo."
 
 #: src/MainView.vala:64
 msgid "No Devices Found"
@@ -78,14 +77,12 @@ msgid "Confirm Bluetooth Pairing"
 msgstr "Potrdite Bluetooth seznanjenje"
 
 #: src/PairDialog.vala:54
-#, fuzzy
-#| msgid "Confirm Bluetooth Passkey"
 msgid "Enter Bluetooth Passkey"
-msgstr "Potrdite prepustni Bluetooth ključ"
+msgstr "Vnesite Bluetooth ključ"
 
 #: src/PairDialog.vala:65
 msgid "Confirm Bluetooth Passkey"
-msgstr "Potrdite prepustni Bluetooth ključ"
+msgstr "Potrdite Bluetooth ključ"
 
 #: src/PairDialog.vala:76
 msgid "Enter Bluetooth PIN"
@@ -144,11 +141,11 @@ msgstr "Brez povezave"
 
 #: src/DeviceRow.vala:98
 msgid "Speaker"
-msgstr "zvočnik"
+msgstr "Zvočnik"
 
 #: src/DeviceRow.vala:101
 msgid "Controller"
-msgstr ""
+msgstr "Krmilnik"
 
 #: src/DeviceRow.vala:104
 msgid "Keyboard"
@@ -160,7 +157,7 @@ msgstr "Miška"
 
 #: src/DeviceRow.vala:110
 msgid "Tablet"
-msgstr ""
+msgstr "Tablica"
 
 #: src/DeviceRow.vala:113
 msgid "Touchpad"
@@ -168,12 +165,11 @@ msgstr "Sledilna ploščica"
 
 #: src/DeviceRow.vala:116
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 #: src/DeviceRow.vala:141
-#, fuzzy
 msgid "Forget this device"
-msgstr "Pozabi izbrano napravo"
+msgstr "Pozabi to napravo"
 
 #: src/DeviceRow.vala:169
 msgid "Sound Settings"
