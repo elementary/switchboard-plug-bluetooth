@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-28 20:26+0000\n"
-"PO-Revision-Date: 2026-06-29 01:01+0000\n"
+"PO-Revision-Date: 2026-07-25 20:01+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/settings/"
 "bluetooth/el/>\n"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: src/MainView.vala:64
 msgid "No Devices Found"
-msgstr ""
+msgstr "Δεν βρέθηκαν συσκευές"
 
 #: src/MainView.vala:65
 msgid "Please ensure that your devices are visible and ready for pairing."
@@ -50,7 +50,7 @@ msgstr ""
 
 #: src/MainView.vala:84
 msgid "Nearby Devices"
-msgstr ""
+msgstr "Κοντινές συσκευές"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
 #: src/MainView.vala:215
@@ -71,9 +71,8 @@ msgid "Not discoverable"
 msgstr ""
 
 #: src/PairDialog.vala:43
-#, fuzzy
 msgid "Confirm Bluetooth Pairing"
-msgstr "Διαμόρφωση ρυθμίσεων Bluetooth"
+msgstr "Επιβεβαίωση σύζευξης Bluetooth"
 
 #: src/PairDialog.vala:54
 #, fuzzy
@@ -81,9 +80,8 @@ msgid "Enter Bluetooth Passkey"
 msgstr "Διαμόρφωση ρυθμίσεων Bluetooth"
 
 #: src/PairDialog.vala:65
-#, fuzzy
 msgid "Confirm Bluetooth Passkey"
-msgstr "Διαμόρφωση ρυθμίσεων Bluetooth"
+msgstr "Επιβεβαίωση κλειδιού πρόσβασης Bluetooth"
 
 #: src/PairDialog.vala:76
 #, fuzzy
