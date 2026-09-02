@@ -123,7 +123,6 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         update_description ();
 
         status_switch.active = manager.is_powered;
-        status_switch.visible = manager.has_object;
 
         /* Now retrieve finished, we can connect manager signals */
         manager.device_added.connect (on_device_added);
@@ -156,7 +155,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
 
         manager.bind_property ("is-discovering", discovery_spinner, "spinning", DEFAULT);
         manager.bind_property ("is-powered", status_switch, "active", GLib.BindingFlags.DEFAULT);
-        manager.bind_property ("has-object", status_switch, "visible", GLib.BindingFlags.DEFAULT);
+        manager.bind_property ("has-object", status_switch, "visible", GLib.BindingFlags.SYNC_CREATE);
     }
 
     private void on_device_added (Services.Device device) {
