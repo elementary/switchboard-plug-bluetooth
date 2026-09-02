@@ -325,9 +325,9 @@ public class Bluetooth.Services.ObjectManager : Object {
 
     public async void start_discovery () {
         var adapters = get_adapters ();
-        is_discovering = true;
         foreach (var adapter in adapters) {
             try {
+                is_discovering = true;
                 yield adapter.start_discovery ();
                 debug ("Adapter %s started", adapter.name);
             } catch (Error e) {
