@@ -103,11 +103,8 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         child = box;
 
         manager = Bluetooth.Services.ObjectManager.get_default ();
-        if (manager.retrieve_finished) {
-            complete_setup ();
-        } else {
-            manager.notify["retrieve-finished"].connect (complete_setup);
-        }
+        complete_setup ();
+        manager.notify["retrieve-finished"].connect (complete_setup);
 
         list_box.row_activated.connect ((row) => {
             ((DeviceRow) row).on_activate.begin ();
@@ -152,8 +149,13 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
             update_description ();
         });
 
+        manager.notify["has-object"].connect (() => {
+            update_description ();
+        });
+
         manager.bind_property ("is-discovering", discovery_spinner, "spinning", DEFAULT);
         manager.bind_property ("is-powered", status_switch, "active", GLib.BindingFlags.DEFAULT);
+        manager.bind_property ("has-object", status_switch, "visible", GLib.BindingFlags.SYNC_CREATE);
     }
 
     private void on_device_added (Services.Device device) {
@@ -210,20 +212,24 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
     private void update_description () {
         string? name = manager.get_name ();
         var powered = manager.is_powered;
-        if (powered && manager.discoverable) {
+        var available = manager.has_object;
+        if (powered && manager.discoverable && available) {
             //TRANSLATORS: \"%s\" represents the name of the adapter
             description = _("Now discoverable as \"%s\". Not discoverable when this page is closed").printf (name ?? _("Unknown"));
         } else if (!powered) {
             description = _("Not discoverable while Bluetooth is powered off");
+        } else if (!available) {
+            description = _("No Bluetooth adapters available");
         } else {
             description = _("Not discoverable");
         }
 
-        if (powered) {
+        if (powered && available) {
             icon = new ThemedIcon ("bluetooth");
         } else {
             icon = new ThemedIcon ("bluetooth-disabled");
         }
+        child.visible = available;
     }
 
     private Gtk.Widget create_widget_func (Object obj) {
