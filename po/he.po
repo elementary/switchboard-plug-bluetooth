@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-28 20:26+0000\n"
+"POT-Creation-Date: 2026-09-03 02:50+0000\n"
 "PO-Revision-Date: 2025-10-06 12:55+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementaryos.org/projects/settings/"
@@ -53,20 +53,24 @@ msgid "Nearby Devices"
 msgstr "התקנים בקרבת מקום"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:215
+#: src/MainView.vala:218
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "כעת חשוף בשם „%s”. החשיפה תיפסק עם סגירת העמוד"
 
-#: src/MainView.vala:215
+#: src/MainView.vala:218
 msgid "Unknown"
 msgstr "לא ידוע"
 
-#: src/MainView.vala:217
+#: src/MainView.vala:220
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "בלתי חשוף בזמן שהבלוטות׳ כבוי"
 
-#: src/MainView.vala:219
+#: src/MainView.vala:222
+msgid "No Bluetooth adapters available"
+msgstr ""
+
+#: src/MainView.vala:224
 msgid "Not discoverable"
 msgstr "בלתי חשוף"
 

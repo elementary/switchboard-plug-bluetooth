@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-28 20:26+0000\n"
+"POT-Creation-Date: 2026-09-03 02:50+0000\n"
 "PO-Revision-Date: 2022-09-27 14:02+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -56,21 +56,25 @@ msgid "Nearby Devices"
 msgstr "ئامێرەکانی دەوروبەر"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:215
+#: src/MainView.vala:218
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "ئیستا بەناوی \"%s\" دەبێنرێتەوە، بەڵام بە داخستنی ئەم پەڕەیە چیتر نابینرێت"
 
-#: src/MainView.vala:215
+#: src/MainView.vala:218
 msgid "Unknown"
 msgstr "نەزانراو"
 
-#: src/MainView.vala:217
+#: src/MainView.vala:220
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "ئامێرەکەت نابینرێتەوە کاتێک بلوتوس داخراوە"
 
-#: src/MainView.vala:219
+#: src/MainView.vala:222
+msgid "No Bluetooth adapters available"
+msgstr ""
+
+#: src/MainView.vala:224
 msgid "Not discoverable"
 msgstr "نابیندرێتەوە"
 

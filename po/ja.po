@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-28 20:26+0000\n"
+"POT-Creation-Date: 2026-09-03 02:50+0000\n"
 "PO-Revision-Date: 2025-08-30 22:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementaryos.org/projects/settings/"
@@ -34,7 +34,8 @@ msgstr "ペアリング済みのデバイスなし"
 
 #: src/MainView.vala:50
 msgid "Bluetooth devices will appear here when paired with this device."
-msgstr "このデバイスとペアリングされた Bluetooth デバイスがここに表示されます。"
+msgstr ""
+"このデバイスとペアリングされた Bluetooth デバイスがここに表示されます。"
 
 #: src/MainView.vala:64
 msgid "No Devices Found"
@@ -53,20 +54,24 @@ msgid "Nearby Devices"
 msgstr "近くのデバイス"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:215
+#: src/MainView.vala:218
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr "\"%s\" として検出できます。このページが閉じている場合は検出できません"
 
-#: src/MainView.vala:215
+#: src/MainView.vala:218
 msgid "Unknown"
 msgstr "不明"
 
-#: src/MainView.vala:217
+#: src/MainView.vala:220
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Bluetooth の電源がオフの間は検出できません"
 
-#: src/MainView.vala:219
+#: src/MainView.vala:222
+msgid "No Bluetooth adapters available"
+msgstr ""
+
+#: src/MainView.vala:224
 msgid "Not discoverable"
 msgstr "検出不可"
 

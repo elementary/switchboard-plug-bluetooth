@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-28 20:26+0000\n"
+"POT-Creation-Date: 2026-09-03 02:50+0000\n"
 "PO-Revision-Date: 2025-07-28 04:55+0000\n"
 "Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementaryos.org/projects/"
@@ -57,21 +57,25 @@ msgid "Nearby Devices"
 msgstr "Dispositivos próximos"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:215
+#: src/MainView.vala:218
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Agora visível como \"%s\". Não visível quando esta pagina estiver fechada"
 
-#: src/MainView.vala:215
+#: src/MainView.vala:218
 msgid "Unknown"
 msgstr "Desconhecido"
 
-#: src/MainView.vala:217
+#: src/MainView.vala:220
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Não detectável enquanto o Bluetooth estiver desligado"
 
-#: src/MainView.vala:219
+#: src/MainView.vala:222
+msgid "No Bluetooth adapters available"
+msgstr ""
+
+#: src/MainView.vala:224
 msgid "Not discoverable"
 msgstr "Não detectável"
 

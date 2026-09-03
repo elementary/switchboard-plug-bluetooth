@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-28 20:26+0000\n"
+"POT-Creation-Date: 2026-09-03 02:50+0000\n"
 "PO-Revision-Date: 2025-07-06 15:55+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementaryos.org/projects/settings/"
@@ -44,7 +44,8 @@ msgstr "Устройства не найдены"
 
 #: src/MainView.vala:65
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr "Пожалуйста, убедитесь, что ваши устройства видны и готовы к сопряжению."
+msgstr ""
+"Пожалуйста, убедитесь, что ваши устройства видны и готовы к сопряжению."
 
 #: src/MainView.vala:79
 msgid "Paired Devices"
@@ -55,22 +56,26 @@ msgid "Nearby Devices"
 msgstr "Устройства поблизости"
 
 #. TRANSLATORS: \"%s\" represents the name of the adapter
-#: src/MainView.vala:215
+#: src/MainView.vala:218
 #, c-format
 msgid "Now discoverable as \"%s\". Not discoverable when this page is closed"
 msgstr ""
 "Сейчас обнаруживается как «%s». Не будет обнаруживаться, если закрыть эту "
 "страницу"
 
-#: src/MainView.vala:215
+#: src/MainView.vala:218
 msgid "Unknown"
 msgstr "Неизвестно"
 
-#: src/MainView.vala:217
+#: src/MainView.vala:220
 msgid "Not discoverable while Bluetooth is powered off"
 msgstr "Недоступно при отключённом Bluetooth"
 
-#: src/MainView.vala:219
+#: src/MainView.vala:222
+msgid "No Bluetooth adapters available"
+msgstr ""
+
+#: src/MainView.vala:224
 msgid "Not discoverable"
 msgstr "Недоступно"
 
