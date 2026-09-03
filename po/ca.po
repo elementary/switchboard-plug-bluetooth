@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-03 02:50+0000\n"
-"PO-Revision-Date: 2025-07-01 08:55+0000\n"
+"PO-Revision-Date: 2026-09-03 17:18+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementaryos.org/projects/settings/"
-"switchboard-plug-bluetooth/ca/>\n"
+"bluetooth/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:16+0000\n"
 
 #: src/Plug.vala:34 src/MainView.vala:20
@@ -73,7 +73,7 @@ msgstr "No és visible mentre el Bluetooth estigui apagat."
 
 #: src/MainView.vala:222
 msgid "No Bluetooth adapters available"
-msgstr ""
+msgstr "No hi ha cap adaptador de Bluetooth disponible."
 
 #: src/MainView.vala:224
 msgid "Not discoverable"
