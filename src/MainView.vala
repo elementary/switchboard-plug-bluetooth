@@ -216,7 +216,7 @@ public class Bluetooth.MainView : Switchboard.SettingsPage {
         if (powered && manager.discoverable && available) {
             //TRANSLATORS: \"%s\" represents the name of the adapter
             description = _("Now discoverable as \"%s\". Not discoverable when this page is closed").printf (name ?? _("Unknown"));
-        } else if (!powered) {
+        } else if (!powered && available) {
             description = _("Not discoverable while Bluetooth is powered off");
         } else if (!available) {
             description = _("No Bluetooth adapters available");
